@@ -40,34 +40,34 @@
 
 ### 2. Danh sách bài tập:
 
-1	Giới thiệu
-2	Swift Basic
-3	View
-4	IBOutlet & Actions
-5	Touch Event
-6	Swift OOP
-7	MVC
-8	Navigation
-9	Custom View
-10	AutoLayout
-11	Protocol
-12	TabbarController
-13	TableView - Simple TableView
-14	TableView - Master Detail
-15	TableView - Section
-16	TableView - Index
-17	TableView - CustomCell
-18	TableView - Actions
-19	TableView - Search
-20	CollectionView - Basic
-21	CollectionView - Avance
-22	Core Location
-23	MapView - Basic
-24	MapView - Overlay
-25	Connect API
-26	Realm - Basic
-27	Closure
-28	GCD
+1. Giới thiệu
+2. Swift Basic
+3. View
+4. IBOutlet & Actions
+5. Touch Event
+6. Swift OOP
+7. MVC
+8. Navigation
+9. Custom View
+10. AutoLayout
+11. Protocol
+12. TabbarController
+13. TableView - Simple TableView
+14. TableView - Master Detail
+15. TableView - Section
+16. TableView - Index
+17. TableView - CustomCell
+18. TableView - Actions
+19. TableView - Search
+20. CollectionView - Basic
+21. CollectionView - Advance
+22. Core Location
+23. MapView - Basic
+24. MapView - Overlay
+25. Connect API
+26. Realm - Basic
+27. Closure
+28. GCD
 
 ---
 
