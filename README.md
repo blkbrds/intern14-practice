@@ -40,7 +40,7 @@
 
 ### 2. Danh sách bài tập:
 
-1. Giới thiệu
+1. [Giới thiệu](./_documents/01_GioiThieu.md)
 2. Swift Basic
 3. View
 4. IBOutlet & Actions
