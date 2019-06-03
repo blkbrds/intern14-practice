@@ -4,7 +4,7 @@
 
 - GitHub Team: <https://github.com/orgs/blkbrds/teams/intern14>
 - Repo: <https://github.com/blkbrds/intern14-practice>
-- Điểm danh: 
+- Điểm danh: <https://docs.google.com/spreadsheets/d/1TJF160A3JUTXJCaJvDfbK4Qu6XHumMNC6OL2Q_-hOAs/edit#gid=1956239081>
 - Bài tập: <https://drive.google.com/drive/folders/0BxWOSUJTvrjAN1ItMm1SdE44TUE>
 - Lý thuyết: <https://drive.google.com/drive/folders/0BxWOSUJTvrjAWTZfbXBIdnlUV2c>
 
