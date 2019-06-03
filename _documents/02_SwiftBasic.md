@@ -28,7 +28,7 @@
   * Trả về nhiều giá trị 1 lần
 * **<u>Bài tập 3</u>: Giải hệ phương trình bậc nhất 2 ẩn số**
 
-![Hệ phương trình bậc 1](./_images/img_001.png)
+![Hệ phương trình bậc 1](../_images/img_001.png)
 
 * **<u>Bài tập 4</u>: Tính các chuỗi số**
 

@@ -41,7 +41,7 @@
 ### 2. Danh sách bài tập:
 
 1. [Giới thiệu](./_documents/01_GioiThieu.md)
-2. Swift Basic
+2. [Swift Basic](./_documents/02_SwiftBasic.md)
 3. View
 4. IBOutlet & Actions
 5. Touch Event
