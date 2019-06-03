@@ -1,4 +1,4 @@
-# Bài 01 : Giới thiệu
+# Bài 02 : Swift Basic
 
 ### 1. Mục tiêu
 
