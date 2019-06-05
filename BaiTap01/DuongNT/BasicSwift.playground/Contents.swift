@@ -2,8 +2,8 @@ import UIKit
 
 // Bài tập 1:
 // use "-" instead of args label in func
-func calculateGlobular(_ r : Double) -> (dienTich: Double, theTich: Double){
-    return (4 * Double.pi * pow(r, 2),(4 * Double.pi * pow(r, 3)) / 3)
+func calculateGlobular(_ r: Double) -> (dienTich: Double, theTich: Double) {
+    return (4 * Double.pi * pow(r, 2), (4 * Double.pi * pow(r, 3)) / 3)
 }
 let hinhCau = calculateGlobular(4)
 print("""
