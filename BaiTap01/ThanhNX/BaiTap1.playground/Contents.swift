@@ -67,3 +67,40 @@ func hePT (_ a: Int, _ b: Int, _ c: Int, _ d: Int, _ e: Int, _ f: Int) -> dapan3
 }
 print("He Phuong Trinh Co Nghiem")
 print(hePT(2, 1, 4, 3, 2, 7))
+
+print("Bai 4: ")
+/*Tính các chuỗi số
+
+    Tổng của 100 số Fibonacy đầu tiên
+    Liệt kê 100 số Fibonacy đầu tiên
+    Tính sin(x), cos(x) bằng công thức Chuỗi Taylor
+    Liệt kê các số hạnh phúc bé hơn 10.000*/
+
+var fibonaciList: [UInt64] = []
+func Fibonaci (n: UInt64) -> (UInt64){
+    var a: UInt64 = 0
+    var b: UInt64 = 1
+    var sum: UInt64 = 0
+    for i: UInt64 in 0...n{
+        if i <= 1 {
+            sum = i
+        }else {
+            sum = a + b
+            a = b
+            b = sum
+            fibonaciList.append(sum)
+        }
+    }
+    return sum
+}
+Fibonaci(n: 50)
+print("50 so Fibonaci dau tien la \(fibonaciList)")
+
+func sumFibonaci(E: UInt64) -> (UInt64){
+    var sum: UInt64 = 0
+    for i: UInt64 in 1...E{
+        sum += Fibonaci(n: E)
+    }
+    return sum
+}
+print("Tong 50 so Fibonaci dau tien: \(sumFibonaci(E: 50))" )
