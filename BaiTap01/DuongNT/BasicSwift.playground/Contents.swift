@@ -14,15 +14,15 @@ print("""
 
 // Bài tập 2:
 enum PhuongTrinh {
-    case PhuongTrinhBacMot(Double)
-    case PhuongTrinhBacHai(Double, Double)
+    case phuongTrinhBacMot(Double)
+    case phuongTrinhBacHai(Double, Double)
 }
 func phuongTrinhBacHai(_ a: Double, _ b: Double, _ c: Double) -> PhuongTrinh? {
     var nghiem1: Double?
     var nghiem2: Double?
     
     if a == 0 && b != 0 {
-        return PhuongTrinh.PhuongTrinhBacMot(-c / b)
+        return .phuongTrinhBacMot(-c / b)
     } else {
         let delta = pow(b, 2) - 4 * a * c
         if delta > 0 {
@@ -36,7 +36,7 @@ func phuongTrinhBacHai(_ a: Double, _ b: Double, _ c: Double) -> PhuongTrinh? {
         
         // check vô nghiệm
         guard let nghiem1 = nghiem1, let nghiem2 = nghiem2 else { return nil }
-        return PhuongTrinh.PhuongTrinhBacHai(nghiem1, nghiem2)
+        return .phuongTrinhBacHai(nghiem1, nghiem2)
     }
 }
 
@@ -49,7 +49,7 @@ if let phuongTrinh = phuongTrinhBacHai(1, 0, 1) {
 
 // Bài tập 3
 // Return d, dx, dy to check result
-func hePhuongTrinh (_ a1: Double, _ b1: Double, _ c1: Double, _ a2: Double, _ b2: Double, _ c2: Double ) -> (d: Double, dx: Double, dy: Double) {
+func hePhuongTrinh(_ a1: Double, _ b1: Double, _ c1: Double, _ a2: Double, _ b2: Double, _ c2: Double ) -> (d: Double, dx: Double, dy: Double) {
     return (a1 * b2 - a2 * b1, c1 * b2 - c2 * b1, a1 * c2 - a2 * c1)
 }
 let hePT = hePhuongTrinh(5, 6, 8, 5, 6, 8)
@@ -86,7 +86,7 @@ func valueFibonacy(_ index: Int) -> Int {
 
 var sum = 0
 var listFibonacy = [Int]()
-for index in 0...50 {
+for index in 0..<50 {
     sum += valueFibonacy(index)
     listFibonacy.append(valueFibonacy(index))
 }
@@ -95,20 +95,20 @@ print("2/ Liệt kê 50 số Fibonacy đầu tiên: \(listFibonacy)")
 
 func giaiThua(_ n: Double) -> Double {
     if n > 1 {
-        return n*giaiThua(n-1)
+        return n * giaiThua(n - 1)
     } else {
         return 1.0
     }
 }
 
-func sinx (_ x: Double,_ n: Int) -> Double {
+func sinx(_ x: Double,_ n: Int) -> Double {
     var sinx = 0.0
     for temp in 0..<n {
         sinx += pow(-1, Double(temp)) * pow(x, Double(2 * temp + 1)) / giaiThua(Double(2 * temp + 1))
     }
     return sinx
 }
-func cosx (_ x: Double,_ n: Int) -> Double {
+func cosx(_ x: Double,_ n: Int) -> Double {
     return sqrt(1 - pow(sinx(x, n), 2))
 }
 print("""
@@ -135,11 +135,11 @@ func checkHappyNumber(_ number: Int) -> Bool {
         x1 = number / Int((pow(10, (Double(length) / 2))))
         x2 = number % Int((pow(10, (Double(length) / 2))))
         while x1 != 0 {
-            sum1 += (x1 % 10)
+            sum1 += x1 % 10
             x1 /= 10
         }
         while x2 != 0 {
-            sum2 += (x2 % 10)
+            sum2 += x2 % 10
             x2 /= 10
         }
         return sum1 == sum2
@@ -151,9 +151,9 @@ func checkNguyenTo(_ number: Int) -> Bool {
     var index = 0
     var count = 0
     if (number % 2) == 0 {
-        index = Int(number/2)
+        index = Int(number / 2)
     } else if number > 1 {
-        index = Int(Double(number - 1)/2)
+        index = Int(Double(number - 1) / 2)
     } else {
         index = number
     }
@@ -162,7 +162,7 @@ func checkNguyenTo(_ number: Int) -> Bool {
             count += 1
         }
     }
-    if count > 1{
+    if count > 1 {
         return false
     }
     return true
