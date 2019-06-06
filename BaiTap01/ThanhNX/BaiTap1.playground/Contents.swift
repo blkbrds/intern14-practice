@@ -128,3 +128,12 @@ func cosTaylor (_ x: Double,_ n: UInt) -> Double {
 }
 
 print("Tinh cos x bang chuoi Taylor: \(cosTaylor(5, 10))")
+
+//Bai 5
+print("Bai 5: ")
+
+func chuoiString(_ mom: String,_ son: String) -> UInt {
+    return UInt(mom.components(separatedBy: son).count - 1)
+}
+
+print("So lan xuat hien cua chuoi con trong chuoi me: \(chuoiString("abcdabcdabcdabcd", "abcd"))")
