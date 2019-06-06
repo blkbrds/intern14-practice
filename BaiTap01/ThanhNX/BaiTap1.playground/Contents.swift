@@ -54,7 +54,7 @@ func hePT (_ a: Int, _ b: Int, _ c: Int, _ d: Int, _ e: Int, _ f: Int) -> dapan3
     let m = (a * e) - (d * b)
     let n = (c * e) - (f * b)
     let q = (a * f) - (d * c)
-    
+
     if m == 0 {
         if c == f {
             return .VoSoNghiem
@@ -98,9 +98,33 @@ print("50 so Fibonaci dau tien la \(fibonaciList)")
 
 func sumFibonaci(E: UInt64) -> (UInt64){
     var sum: UInt64 = 0
-    for i: UInt64 in 1...E{
+    for index in 1...E{
         sum += Fibonaci(n: E)
     }
     return sum
 }
 print("Tong 50 so Fibonaci dau tien: \(sumFibonaci(E: 50))" )
+
+func factorial(_ n: Double) -> Double{
+    if n > 0 {
+        return n * factorial(n - 1)
+    }else {
+        return 1
+    }
+}
+
+func sinTaylor (_ x: Double,_ n: UInt) -> Double {
+    var sinx = 0.0
+    for temp in 0..<n{
+        sinx += pow(-1, Double(temp)) * pow(x, Double(2 * temp + 1)) / factorial(Double(2 * temp + 1))
+    }
+    return sinx
+}
+
+print("Tinh sin x bang chuoi Taylor: \(sinTaylor(5, 10))")
+
+func cosTaylor (_ x: Double,_ n: UInt) -> Double {
+    return sqrt(1 - pow(sinTaylor(5, 10), 2))
+}
+
+print("Tinh cos x bang chuoi Taylor: \(cosTaylor(5, 10))")
