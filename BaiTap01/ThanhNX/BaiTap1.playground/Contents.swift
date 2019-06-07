@@ -12,9 +12,7 @@ print("Acreage and Volume of Globular Radius = 15 is: \(display.0) and Volume is
 print("Bai 2: ")
 //Bai 2: ax2 + bx + c = 0
 enum dapAn2 {
-    case VoNghiem
-    case CoMotNghiem (Float)
-    case Co2Nghiem (Float, Float)
+    case VoNghiem, CoMotNghiem (Float), Co2Nghiem (Float, Float)
 //    var name: String {
 //        switch self {
 //        case .VoNghiem:
@@ -35,13 +33,13 @@ func ptBac2(_ a: Float,_ b: Float, _ c: Float) -> dapAn2 {
         if b == 0 {
             return .VoNghiem
         } else {
-            return .CoMotNghiem(-c / b)
+            return .CoMotNghiem (-c / b)
         }
     } else {
         if delta < 0 {
             return .VoNghiem
         } else if delta == 0 {
-            return .CoMotNghiem(-b / (2 * a))
+            return .CoMotNghiem (-b / (2 * a))
         } else {
             return .Co2Nghiem (((-b + sqrtf(delta)) / (2 * a)) , ((-b - sqrtf(delta)) / (2 * a)))
         }
@@ -56,24 +54,19 @@ print("Bai 3:")
 //       dx + ey = f
 
 enum dapan3 {
-    case VoNghiem
-    case VoSoNghiem
-    case Co2Nghiem(Int, Int)
+    case VoNghiem, VoSoNghiem, Co2Nghiem(Int, Int)
 }
 
 func hePT (_ a: Int, _ b: Int, _ c: Int, _ d: Int, _ e: Int, _ f: Int) -> dapan3 {
-    let m = (a * e) - (d * b)
-    let n = (c * e) - (f * b)
-    let q = (a * f) - (d * c)
 
-    if m == 0 {
+    if (a * e) - (d * b) == 0 {
         if c == f {
             return .VoSoNghiem
         } else {
             return .VoNghiem
         }
     } else {
-        return .Co2Nghiem(n / m, q / m)
+        return .Co2Nghiem(((c * e) - (f * b)) / ((a * e) - (d * b)), ((a * f) - (d * c)) / ((a * e) - (d * b)))
     }
 }
 print("He Phuong Trinh Co Nghiem")
@@ -89,9 +82,7 @@ print("Bai 4: ")
 
 var fibonaciList: [UInt64] = []
 func Fibonaci(n: UInt64) -> UInt64 {
-    var a: UInt64 = 0
-    var b: UInt64 = 1
-    var sum: UInt64 = 0
+    var a: UInt64 = 0, b: UInt64 = 1, sum: UInt64 = 0
     for i: UInt64 in 0...n {
         if i <= 1 {
             sum = i
