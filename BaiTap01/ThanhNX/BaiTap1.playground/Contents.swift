@@ -7,8 +7,7 @@ func acreageAndVolumeGlobular(_ radius: Double) -> (Double, Double) {
 }
 
 let display = acreageAndVolumeGlobular(15)
-print("Acreage and Volume of Globular Radius = 15")
-print("Acreage is: \(display.0) and Volume is: \(display.1)")
+print("Acreage and Volume of Globular Radius = 15 is: \(display.0) and Volume is: \(display.1)")
 
 print("Bai 2: ")
 //Bai 2: ax2 + bx + c = 0
@@ -157,3 +156,21 @@ func arrayRandom(_ arr: Array<Int>) -> Array<Int> {
 }
 
 print("Array after random: \(arrayRandom([0, 1, 2, 3, 4, 5, 6, 7, 8, 9]))")
+
+//Bai 7
+print("Bai 7: ")
+
+func arrayReplace(_ arr: Array<Int>,elemToReplace: Int,substitutionElem: Int) -> Array<Int> {
+    //Tao mang moi
+    var newArrray: [Int] = []
+    for i in 0..<arr.count {
+        if arr[i] == elemToReplace {
+            newArrray.append(substitutionElem)
+        } else {
+            newArrray.append(arr[i])
+        }
+    }
+    return newArrray
+}
+
+print("Array After Replace: \(arrayReplace([1,2,1], elemToReplace:  1, substitutionElem:  3))")
