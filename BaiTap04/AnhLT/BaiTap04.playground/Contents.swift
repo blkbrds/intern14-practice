@@ -119,11 +119,7 @@ func sinx (_ x: Double,_ n: Int) -> Double {
 func cosx (_ x: Double,_ n: Int) -> Double {
     return sqrt(1 - pow(sinx(x, n), 2))
 }
-print("""
-    4.3/Sinx, Cosx bằng công thức Chuỗi Taylor:
-    Sin(0.3) = \(sinx(0.3, 10))
-    Cos(0.3) = \(cosx(0.3, 10))
-    """)
+print("Calculate Sinx, Cosx by Taylor sequence: \nSin(0.3) = \(sinx(0.3, 10)) \nCos(0.3) = \(cosx(0.3, 10))")
 
 //BaiTap05
 func sequenceOfString(_ momstring: String, _ sonString: String ) -> Int{
