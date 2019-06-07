@@ -16,6 +16,18 @@ enum dapAn2 {
     case VoNghiem
     case CoMotNghiem (Float)
     case Co2Nghiem (Float, Float)
+//    var name: String {
+//        switch self {
+//        case .VoNghiem:
+//            return "Phuong trinh vo nghiem"
+//        case .CoMotNghiem:
+//            return "Phuong trinh co mot nghiem: "
+//        case .Co2Nghiem:
+//            return "Phuong trinh co hai nghiem: "
+//        default:
+//            return "=============="
+//        }
+//    }
 }
 
 func ptBac2(_ a: Float,_ b: Float, _ c: Float) -> dapAn2 {
@@ -23,15 +35,15 @@ func ptBac2(_ a: Float,_ b: Float, _ c: Float) -> dapAn2 {
     if a == 0 {
         if b == 0 {
             return .VoNghiem
-        }else{
+        } else {
             return .CoMotNghiem(-c / b)
         }
-    }else{
+    } else {
         if delta < 0 {
             return .VoNghiem
         } else if delta == 0 {
             return .CoMotNghiem(-b / (2 * a))
-        }else{
+        } else {
             return .Co2Nghiem (((-b + sqrtf(delta)) / (2 * a)) , ((-b - sqrtf(delta)) / (2 * a)))
         }
     }
@@ -58,10 +70,10 @@ func hePT (_ a: Int, _ b: Int, _ c: Int, _ d: Int, _ e: Int, _ f: Int) -> dapan3
     if m == 0 {
         if c == f {
             return .VoSoNghiem
-        }else{
+        } else {
             return .VoNghiem
         }
-    }else{
+    } else {
         return .Co2Nghiem(n / m, q / m)
     }
 }
@@ -77,14 +89,14 @@ print("Bai 4: ")
     Liệt kê các số hạnh phúc bé hơn 10.000*/
 
 var fibonaciList: [UInt64] = []
-func Fibonaci (n: UInt64) -> (UInt64){
+func Fibonaci(n: UInt64) -> UInt64 {
     var a: UInt64 = 0
     var b: UInt64 = 1
     var sum: UInt64 = 0
-    for i: UInt64 in 0...n{
+    for i: UInt64 in 0...n {
         if i <= 1 {
             sum = i
-        }else {
+        } else {
             sum = a + b
             a = b
             b = sum
@@ -96,26 +108,26 @@ func Fibonaci (n: UInt64) -> (UInt64){
 Fibonaci(n: 50)
 print("50 so Fibonaci dau tien la \(fibonaciList)")
 
-func sumFibonaci(E: UInt64) -> (UInt64){
+func sumFibonaci(E: UInt64) -> UInt64 {
     var sum: UInt64 = 0
-    for index in 1...E{
+    for _ in 1...E {
         sum += Fibonaci(n: E)
     }
     return sum
 }
 print("Tong 50 so Fibonaci dau tien: \(sumFibonaci(E: 50))" )
 
-func factorial(_ n: Double) -> Double{
+func factorial(_ n: Double) -> Double {
     if n > 0 {
         return n * factorial(n - 1)
-    }else {
+    } else {
         return 1
     }
 }
 
 func sinTaylor (_ x: Double,_ n: UInt) -> Double {
     var sinx = 0.0
-    for temp in 0..<n{
+    for temp in 0..<n {
         sinx += pow(-1, Double(temp)) * pow(x, Double(2 * temp + 1)) / factorial(Double(2 * temp + 1))
     }
     return sinx
@@ -137,3 +149,11 @@ func chuoiString(_ mom: String,_ son: String) -> UInt {
 }
 
 print("So lan xuat hien cua chuoi con trong chuoi me: \(chuoiString("abcdabcdabcdabcd", "abcd"))")
+
+//Bai 6
+print("Bai 6: ")
+func arrayRandom(_ arr: Array<Int>) -> Array<Int> {
+    return arr.shuffled()
+}
+
+print("Array after random: \(arrayRandom([0, 1, 2, 3, 4, 5, 6, 7, 8, 9]))")
