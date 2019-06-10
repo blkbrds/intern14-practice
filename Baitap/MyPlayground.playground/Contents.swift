@@ -1,50 +1,50 @@
 import UIKit
 // Bai2
-enum equationResults{
-    case oneResult(Double)
-    case noResult
-    case doubleResult(Double)
-    case twoResult(Double,Double)
+enum EquationResults{
+    case OneResult(Double)
+    case NoResult
+    case DoubleResult(Double)
+    case TwoResult(Double,Double)
 }
-func quadraticEquation (a: Double, b: Double, c:Double) -> equationResults {
+func quadraticEquation (a: Double, b: Double, c:Double) -> EquationResults {
     let delta = pow(b, 2) - 4 * a * c
     if a==0{
         if b==0{
-            return .noResult
+            return .NoResult
         } else {
-            return .doubleResult(-c/b)
+            return .DoubleResult(-c/b)
         }
     } else if delta < 0 {
-        return .noResult
+        return .NoResult
     } else if delta == 0 {
-        return .doubleResult (-b / (2 * a))
+        return .DoubleResult (-b / (2 * a))
     } else {
-        return .twoResult(((-b + sqrt(delta)) / (2 * a)), (( -b - sqrt(delta)) / ( 2 * a)))
+        return .TwoResult(((-b + sqrt(delta)) / (2 * a)), (( -b - sqrt(delta)) / ( 2 * a)))
     }
 }
 
 print(quadraticEquation(a: 0, b: 0, c: -4))
 // Bai 3
-enum equationResults2{
-    case noResult
-    case unlimitedResult
-    case twoResult(Double, Double)
+enum EquationResults2{
+    case NoResult
+    case UnlimitedResult
+    case TwoResult(Double, Double)
 }
-func superLativeEquationsTwoHidden(_ a1: Double,_ b1: Double,_ c1: Double,_ a2: Double,_ b2: Double,_ c2: Double)-> equationResults2 {
+func superLativeEquationsTwoHidden(_ a1: Double,_ b1: Double,_ c1: Double,_ a2: Double,_ b2: Double,_ c2: Double)-> EquationResults2 {
     let D, Dx, Dy: Double
     D = a1 * b2 - a2 * b1
     Dx = c1 * b2 - c2 * b1
     Dy = a1 * c2 - a2 * c1
     if D == 0 {
         if c1 == c2 {
-            return .unlimitedResult
+            return .UnlimitedResult
         }
         else {
-            return .noResult
+            return .NoResult
         }
     }
     else {
-        return .twoResult(Dx / D , Dy / D)
+        return .TwoResult(Dx / D , Dy / D)
     }
 }
 print(superLativeEquationsTwoHidden(1,  2,  3,  3,  4,  5))
