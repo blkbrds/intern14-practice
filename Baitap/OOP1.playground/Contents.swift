@@ -6,7 +6,7 @@ class Fraction {
     private(set) var denominator: Double?
     
     init( _ numerator: Double, _ denominator: Double?) {
-        self .numerator = numerator
+        self.numerator = numerator
         if denominator == 0 {
             self.denominator = nil
             print("The \(Fraction.self) is an invalid fraction")
