@@ -11,8 +11,9 @@ print("Acreage and Volume of Globular Radius = 15 is: \(display.0) and Volume is
 
 print("Bai 2: ")
 //Bai 2: ax2 + bx + c = 0
-enum dapAn2 {
-    case VoNghiem, CoMotNghiem (Float), Co2Nghiem (Float, Float)
+
+enum DapAn2 {
+    case voNghiem, coMotNghiem (Float), co2Nghiem (Float, Float)
 //    var name: String {
 //        switch self {
 //        case .VoNghiem:
@@ -27,21 +28,21 @@ enum dapAn2 {
 //    }
 }
 
-func ptBac2(_ a: Float,_ b: Float, _ c: Float) -> dapAn2 {
+func ptBac2(_ a: Float, _ b: Float, _ c: Float) -> DapAn2 {
     let delta: Float = powf(b, 2) - 4 * a * c
     if a == 0 {
         if b == 0 {
-            return .VoNghiem
+            return .voNghiem
         } else {
-            return .CoMotNghiem (-c / b)
+            return .coMotNghiem(-c / b)
         }
     } else {
         if delta < 0 {
-            return .VoNghiem
+            return .voNghiem
         } else if delta == 0 {
-            return .CoMotNghiem (-b / (2 * a))
+            return .coMotNghiem(-b / (2 * a))
         } else {
-            return .Co2Nghiem (((-b + sqrtf(delta)) / (2 * a)) , ((-b - sqrtf(delta)) / (2 * a)))
+            return .co2Nghiem(((-b + sqrtf(delta)) / (2 * a)) , ((-b - sqrtf(delta)) / (2 * a)))
         }
     }
 }
@@ -53,13 +54,13 @@ print("Bai 3:")
 //Bai 3: ax + by = c
 //       dx + ey = f
 
-enum dapan3 {
+#warning("enum")
+enum DapAn3 {
     case VoNghiem, VoSoNghiem, Co2Nghiem(Int, Int)
 }
 
-func hePT (_ a: Int, _ b: Int, _ c: Int, _ d: Int, _ e: Int, _ f: Int) -> dapan3 {
-
-    if (a * e) - (d * b) == 0 {
+func hePT(_ a: Int, _ b: Int, _ c: Int, _ d: Int, _ e: Int, _ f: Int) -> DapAn3 {
+    if (a * e - d * b) == 0 {
         if c == f {
             return .VoSoNghiem
         } else {
@@ -81,9 +82,10 @@ print("Bai 4: ")
     Liệt kê các số hạnh phúc bé hơn 10.000*/
 
 var fibonaciList: [UInt64] = []
-func Fibonaci(n: UInt64) -> UInt64 {
+#warning("ten ham cu phap lac da, phai bat dau bang 1 dong tu")
+func fibonaci(n: UInt64) -> UInt64 {
     var a: UInt64 = 0, b: UInt64 = 1, sum: UInt64 = 0
-    for i: UInt64 in 0...n {
+    for i: UInt64 in 0..<n {
         if i <= 1 {
             sum = i
         } else {
@@ -95,17 +97,16 @@ func Fibonaci(n: UInt64) -> UInt64 {
     }
     return sum
 }
-Fibonaci(n: 50)
+fibonaci(n: 50)
 print("50 so Fibonaci dau tien la \(fibonaciList)")
-
-func sumFibonaci(E: UInt64) -> UInt64 {
+func sumFibonaci(sumFibonaci: UInt64) -> UInt64 {
     var sum: UInt64 = 0
-    for _ in 1...E {
-        sum += Fibonaci(n: E)
+    for _ in 1...sumFibonaci {
+        sum += fibonaci(n: sumFibonaci)
     }
     return sum
 }
-print("Tong 50 so Fibonaci dau tien: \(sumFibonaci(E: 50))" )
+print("Tong 50 so Fibonaci dau tien: \(sumFibonaci(sumFibonaci: 50))" )
 
 func factorial(_ n: Double) -> Double {
     if n > 0 {
@@ -115,7 +116,7 @@ func factorial(_ n: Double) -> Double {
     }
 }
 
-func sinTaylor (_ x: Double,_ n: UInt) -> Double {
+func sinTaylor(_ x: Double, _ n: UInt) -> Double {
     var sinx = 0.0
     for temp in 0..<n {
         sinx += pow(-1, Double(temp)) * pow(x, Double(2 * temp + 1)) / factorial(Double(2 * temp + 1))
@@ -131,27 +132,62 @@ func cosTaylor (_ x: Double,_ n: UInt) -> Double {
 
 print("Tinh cos x bang chuoi Taylor: \(cosTaylor(5, 10))")
 
-//Bai 5
-print("Bai 5: ")
-
-func chuoiString(_ mom: String,_ son: String) -> UInt {
-    return UInt(mom.components(separatedBy: son).count - 1)
+func checkHappyNumber(_ number: Int) -> (Bool) {
+    var num = number
+    var length = 0
+    var previous = 0
+    var next = 0
+    var preLength = 0
+    var nextLength = 0
+    while  num != 0 {
+        length += 1
+        num /= 10
+    }
+    if (length % 2) == 0 {
+        previous = number / Int((pow(10, (Double(length) / 2))))
+        next = number % Int((pow(10, (Double(length) / 2))))
+        while previous != 0 {
+            preLength += previous % 10
+            previous /= 10
+        }
+        while next != 0 {
+            nextLength += next % 10
+            next /= 10
+        }
+        return preLength == nextLength
+    } else {
+        return false
+    }
 }
 
-print("So lan xuat hien cua chuoi con trong chuoi me: \(chuoiString("abcdabcdabcdabcd", "abcd"))")
+var arrHappyNumber: [Int] = []
+for i in 1..<10000 {
+    if checkHappyNumber(i) == true {
+        arrHappyNumber.append(i)
+    }
+}
+print("So hanh phuc nho hon 10000: \(arrHappyNumber)")
+
+//Bai 5
+print("Bai 5: ")
+func findString(_ momStr: String, _ sonStr: String) -> UInt {
+    return UInt(momStr.components(separatedBy: sonStr).count - 1)
+}
+
+print("So lan xuat hien cua chuoi con trong chuoi me: \(findString("abcdabcdabcdabcd", "abcd"))")
 
 //Bai 6
 print("Bai 6: ")
-func arrayRandom(_ arr: Array<Int>) -> Array<Int> {
+func randomArray(_ arr: [Int]) -> [Int] {
     return arr.shuffled()
 }
 
-print("Array after random: \(arrayRandom([0, 1, 2, 3, 4, 5, 6, 7, 8, 9]))")
+print("Array after random: \(randomArray([0, 1, 2, 3, 4, 5, 6, 7, 8, 9]))")
 
 //Bai 7
 print("Bai 7: ")
 
-func arrayReplace(_ arr: Array<Int>,elemToReplace: Int,substitutionElem: Int) -> Array<Int> {
+func replaceArray(_ arr: [Int], elemToReplace: Int, substitutionElem: Int) -> Array<Int> {
     //Tao mang moi
     var newArrray: [Int] = []
     for i in 0..<arr.count {
@@ -164,4 +200,4 @@ func arrayReplace(_ arr: Array<Int>,elemToReplace: Int,substitutionElem: Int) ->
     return newArrray
 }
 
-print("Array After Replace: \(arrayReplace([1,2,1], elemToReplace:  1, substitutionElem:  3))")
+print("Array After Replace: \(replaceArray([1,2,1], elemToReplace:  1, substitutionElem:  3))")
