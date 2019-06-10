@@ -14,18 +14,6 @@ print("Bai 2: ")
 
 enum DapAn2 {
     case voNghiem, coMotNghiem (Float), co2Nghiem (Float, Float)
-//    var name: String {
-//        switch self {
-//        case .VoNghiem:
-//            return "Phuong trinh vo nghiem"
-//        case .CoMotNghiem:
-//            return "Phuong trinh co mot nghiem: "
-//        case .Co2Nghiem:
-//            return "Phuong trinh co hai nghiem: "
-//        default:
-//            return "=============="
-//        }
-//    }
 }
 
 func ptBac2(_ a: Float, _ b: Float, _ c: Float) -> DapAn2 {
@@ -54,20 +42,19 @@ print("Bai 3:")
 //Bai 3: ax + by = c
 //       dx + ey = f
 
-#warning("enum")
 enum DapAn3 {
-    case VoNghiem, VoSoNghiem, Co2Nghiem(Int, Int)
+    case voNghiem, voSoNghiem, co2Nghiem(Int, Int)
 }
 
 func hePT(_ a: Int, _ b: Int, _ c: Int, _ d: Int, _ e: Int, _ f: Int) -> DapAn3 {
     if (a * e - d * b) == 0 {
         if c == f {
-            return .VoSoNghiem
+            return .voSoNghiem
         } else {
-            return .VoNghiem
+            return .voNghiem
         }
     } else {
-        return .Co2Nghiem(((c * e) - (f * b)) / ((a * e) - (d * b)), ((a * f) - (d * c)) / ((a * e) - (d * b)))
+        return .co2Nghiem(((c * e) - (f * b)) / ((a * e) - (d * b)), ((a * f) - (d * c)) / ((a * e) - (d * b)))
     }
 }
 print("He Phuong Trinh Co Nghiem")
@@ -82,7 +69,6 @@ print("Bai 4: ")
     Liệt kê các số hạnh phúc bé hơn 10.000*/
 
 var fibonaciList: [UInt64] = []
-#warning("ten ham cu phap lac da, phai bat dau bang 1 dong tu")
 func fibonaci(n: UInt64) -> UInt64 {
     var a: UInt64 = 0, b: UInt64 = 1, sum: UInt64 = 0
     for i: UInt64 in 0..<n {
