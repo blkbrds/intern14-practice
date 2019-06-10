@@ -4,10 +4,10 @@ enum equationResults{
     case oneResult(Double)
     case noResult
     case doubleResult(Double)
-    case twoReslt(Double,Double)
+    case twoResult(Double,Double)
 }
 func quadraticEquation (a: Double, b: Double, c:Double) -> equationResults {
-    let delta = pow(b, 2) - 4*a*c
+    let delta = pow(b, 2) - 4 * a * c
     if a==0{
         if b==0{
             return .noResult
@@ -17,37 +17,37 @@ func quadraticEquation (a: Double, b: Double, c:Double) -> equationResults {
     } else if delta < 0 {
         return .noResult
     } else if delta == 0 {
-        return .doubleResult (-b/(2*a))
-    } else  {
-        return .twoReslt(((-b+sqrt(delta))/(2*a)), ((-b-sqrt(delta))/(2*a)))
+        return .doubleResult (-b / (2 * a))
+    } else {
+        return .twoResult(((-b + sqrt(delta)) / (2 * a)), (( -b - sqrt(delta)) / ( 2 * a)))
     }
 }
 
 print(quadraticEquation(a: 0, b: 0, c: -4))
 // Bai 3
-enum EquationResults{
-    case NoResult
-    case UnlimitedResult
-    case TwoResult(Double, Double)
+enum equationResults2{
+    case noResult
+    case unlimitedResult
+    case twoResult(Double, Double)
 }
-func SuperLativeEquationsTwoHidden (_ a1: Double,_ b1: Double,_ c1: Double,_ a2: Double,_ b2: Double,_ c2:Double)-> EquationResults{
-    let D, Dx, Dy :Double
+func superLativeEquationsTwoHidden(_ a1: Double,_ b1: Double,_ c1: Double,_ a2: Double,_ b2: Double,_ c2: Double)-> equationResults2 {
+    let D, Dx, Dy: Double
     D = a1 * b2 - a2 * b1
     Dx = c1 * b2 - c2 * b1
     Dy = a1 * c2 - a2 * c1
     if D == 0 {
-        if c1==c2 {
-            return .UnlimitedResult
+        if c1 == c2 {
+            return .unlimitedResult
         }
         else {
-            return .NoResult
+            return .noResult
         }
     }
     else {
-        return .TwoResult(Dx/D, Dy/D)
+        return .twoResult(Dx / D , Dy / D)
     }
 }
-print(SuperLativeEquationsTwoHidden( 1,  2,  3,  3,  4,  5))
+print(superLativeEquationsTwoHidden(1,  2,  3,  3,  4,  5))
 // Bai4
 func fibonacci(n: Int) -> Int {
     var arrayFibonacci: [Int] = []
@@ -72,14 +72,10 @@ func fibonacci(n: Int) -> Int {
 print(fibonacci(n: 50))
 
 
-
-
 func sum(n: Int) -> Int {
     return fibonacci(n: n + 2) - 1
 }
 
-
-import UIKit
 
 func classifyString (_ parent: String, _ child: String) -> Int {
     return Int(parent.components(separatedBy: child).count - 1)
@@ -89,10 +85,10 @@ print("The number of apperances of ab in the string abaaaabbbabababbaaabababa is
 func shuffledArray(unshuffledArray: Array<Int>) -> Array<Int> {
     return unshuffledArray.shuffled()
 }
-print(shuffledArray(unshuffledArray: [0,1,2,3,4,5,6,7,8,9]))
+print(shuffledArray(unshuffledArray: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]))
 
 // Bai 7
-func replacingArray(_ oldArray: Array<Int>,_ elemToReplace: Int,_ substitutionElem: Int) -> Array<Int> {
+func replacingArray(_ oldArray: Array<Int>, _ elemToReplace: Int, _ substitutionElem: Int) -> Array<Int> {
     var newArray: [Int] = []
     for i in 0..<oldArray.count {
         if oldArray[i] == elemToReplace {
