@@ -9,12 +9,12 @@ var result1 = globular(radius: 4)
 print("\nQuestion 1:\n\n The glubular has the acreage is \(result1.acreage). \n The globular has the volume is \(result1.volume). ")
 
 //Bai 2 giải phương trình bậc 2
-enum handleSolution2 {
+enum HandleSolution2 {
     case oneSolution(Float)
     case twoSolution(Float,Float)
     case noSolution2
 }
-func quardaticEquation2(_ a: Float,_ b: Float,_ c: Float) -> handleSolution2{
+func quardaticEquation2(_ a: Float,_ b: Float,_ c: Float) -> HandleSolution2 {
     let del = pow(b,2) - (4*a*c)
     if a == 0 {
         if b == 0 {
@@ -35,12 +35,12 @@ func quardaticEquation2(_ a: Float,_ b: Float,_ c: Float) -> handleSolution2{
 print("\nQuestion2:\n\n The result of equation:\n  \(quardaticEquation2(3,8,5))")
 
 //Bai3 Giải hệ phương trình bậc nhất 2 ẩn
-enum handleSolution3 {
+enum HandleSolution3 {
     case noSolution3
     case countlessSolution
     case twoSolution3(Float,Float)
 }
-func Equation1(a1: Float,b1: Float,c1: Float, a2: Float,b2: Float,c2: Float) -> handleSolution3 {
+func Equation1(a1: Float,b1: Float,c1: Float, a2: Float,b2: Float,c2: Float) -> HandleSolution3 {
     var d,d1,d2 : Float
     d = a1 * b2 - (a2 * b1)
     d1 = c1 * b2 - (c2 * b1)
@@ -59,7 +59,7 @@ print("\nQuestion 3:\n\n  Equations have solutions \(Equation1(a1: 1, b1: 2, c1:
 
 //Bai4 Fibonacy
 var arrFibonacy = [UInt64]()
-func Fibonacy(_ n: UInt64) -> (UInt64) {
+func fibonacy(_ n: UInt64) -> (UInt64) {
     var a : UInt64 = 0
     var b : UInt64 = 1
     var next : UInt64 = 0
@@ -75,7 +75,7 @@ func Fibonacy(_ n: UInt64) -> (UInt64) {
     }
     return (next)
 }
-Fibonacy(50)
+fibonacy(50)
 
 //Cách gọn
 //func Fibonacci(n: Double) -> Double {
@@ -91,10 +91,10 @@ Fibonacy(50)
 print ("\nQuestion 4:\n\n The first 50 fibonaci numbers: \(arrFibonacy)")
 
 //Tổng số
-func sumFirst50Fibonacy(_ N: UInt64) -> (UInt64) {
+func sumFirst50Fibonacy(_ inputNumber: UInt64) -> (UInt64) {
     var sum : UInt64 = 0
-    for i : UInt64 in 1...N {
-        sum += Fibonacy(i)
+    for index : UInt64 in 1...inputNumber {
+        sum += fibonacy(index)
     }
     return sum
 }
@@ -136,7 +136,7 @@ func checkHappyNumber(_ number: Int) -> (Bool) {
         length += 1
         num /= 10
     }
-    if (length % 2) == 0 {
+    if length % 2 == 0 {
         previous = number / Int((pow(10, (Double(length) / 2))))
         next = number % Int((pow(10, (Double(length) / 2))))
         while previous != 0 {
@@ -154,9 +154,9 @@ func checkHappyNumber(_ number: Int) -> (Bool) {
 }
 
 var arrHappyNumber = [Int]()
-for i in 1..<10000 {
-    if checkHappyNumber(i) == true {
-        arrHappyNumber.append(i)
+for index in 1..<10000 {
+    if checkHappyNumber(index) == true {
+        arrHappyNumber.append(index)
     }
 }
 print("\nList happy number less 10000:  \(arrHappyNumber)")
@@ -189,11 +189,11 @@ print("\nQuestion 6:\n\n The array after sorted: \(sortRandomArray(array))")
 // Bài 7 Replace Element
 func bearrayReplace(_ inpuArray: [Int],_ elemToReplace: Int,_ substitutionElem: Int) -> [Int] {
     var tempArrray = [Int]()
-    for i in 0..<inputArray.count {
-        if inputArray[i] == elemToReplace {
+    for index in 0..<inputArray.count {
+        if inputArray[index] == elemToReplace {
             tempArrray.append(substitutionElem)
         } else {
-            tempArrray.append(inputArray[i])
+            tempArrray.append(inputArray[index])
         }
     }
     return tempArrray
