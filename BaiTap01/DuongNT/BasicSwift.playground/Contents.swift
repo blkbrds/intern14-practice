@@ -1,10 +1,11 @@
 import UIKit
 
 // Bài tập 1:
-// use "-" instead of args label in func
+// Use "-" instead of args label in func
 func calculateGlobular(_ r: Double) -> (dienTich: Double, theTich: Double) {
     return (4 * Double.pi * pow(r, 2), (4 * Double.pi * pow(r, 3)) / 3)
 }
+
 let hinhCau = calculateGlobular(4)
 print("""
     Diện tích và thể tích hình cầu có bán kính là 4!
@@ -14,15 +15,26 @@ print("""
 
 // Bài tập 2:
 enum PhuongTrinh {
-    case phuongTrinhBacMot(Double)
-    case phuongTrinhBacHai(Double, Double)
+    case phuongTrinhVoNghiem
+    case phuongTrinhMotNghiem(Double)
+    case phuongTrinhHaiNghiem(Double, Double)
+    case phuongTrinhVoSoNghiem
 }
+
 func phuongTrinhBacHai(_ a: Double, _ b: Double, _ c: Double) -> PhuongTrinh? {
     var nghiem1: Double?
     var nghiem2: Double?
     
-    if a == 0 && b != 0 {
-        return .phuongTrinhBacMot(-c / b)
+    if a == 0 {
+        if b == 0 {
+            if c == 0 {
+                return .phuongTrinhVoSoNghiem
+            } else {
+                return .phuongTrinhVoNghiem
+            }
+        } else {
+            return .phuongTrinhMotNghiem(-c / b)
+        }
     } else {
         let delta = pow(b, 2) - 4 * a * c
         if delta > 0 {
@@ -32,19 +44,19 @@ func phuongTrinhBacHai(_ a: Double, _ b: Double, _ c: Double) -> PhuongTrinh? {
             let nghiem: Double = -b / (2 * a)
             nghiem1 = nghiem
             nghiem2 = nghiem
+        } else {
+            return .phuongTrinhVoNghiem
         }
         
         // check vô nghiệm
         guard let nghiem1 = nghiem1, let nghiem2 = nghiem2 else { return nil }
-        return .phuongTrinhBacHai(nghiem1, nghiem2)
+        return .phuongTrinhHaiNghiem(nghiem1, nghiem2)
     }
 }
 
 // unwrap optional
-if let phuongTrinh = phuongTrinhBacHai(1, 0, 1) {
+if let phuongTrinh = phuongTrinhBacHai(2, 0, 1) {
     print(phuongTrinh)
-} else {
-    print("Vô nghiệm!!!")
 }
 
 // Bài tập 3
@@ -52,8 +64,8 @@ if let phuongTrinh = phuongTrinhBacHai(1, 0, 1) {
 func hePhuongTrinh(_ a1: Double, _ b1: Double, _ c1: Double, _ a2: Double, _ b2: Double, _ c2: Double ) -> (d: Double, dx: Double, dy: Double) {
     return (a1 * b2 - a2 * b1, c1 * b2 - c2 * b1, a1 * c2 - a2 * c1)
 }
-let hePT = hePhuongTrinh(5, 6, 8, 5, 6, 8)
 
+let hePT = hePhuongTrinh(5, 6, 8, 5, 6, 8)
 if hePT.d != 0 {
     print("Phương trình có cặp nghiệm là (\(hePT.dx/hePT.d),\(hePT.dy/hePT.d))")
 } else if hePT.dx != 0 {
@@ -101,16 +113,18 @@ func giaiThua(_ n: Double) -> Double {
     }
 }
 
-func sinx(_ x: Double,_ n: Int) -> Double {
+func sinx(_ x: Double, _ n: Int) -> Double {
     var sinx = 0.0
     for temp in 0..<n {
         sinx += pow(-1, Double(temp)) * pow(x, Double(2 * temp + 1)) / giaiThua(Double(2 * temp + 1))
     }
     return sinx
 }
-func cosx(_ x: Double,_ n: Int) -> Double {
+
+func cosx(_ x: Double, _ n: Int) -> Double {
     return sqrt(1 - pow(sinx(x, n), 2))
 }
+
 print("""
     3/ Sinx, Cosx bằng công thức Chuỗi Taylor:
     Sin(0.875) = \(sinx(0.875, 10))
@@ -147,17 +161,18 @@ func checkHappyNumber(_ number: Int) -> Bool {
         return false
     }
 }
+
 func checkNguyenTo(_ number: Int) -> Bool {
     var index = 0
     var count = 0
     if (number % 2) == 0 {
-        index = Int(number / 2)
+        index = number / 2
     } else if number > 1 {
-        index = Int(Double(number - 1) / 2)
+        index = (number - 1) / 2
     } else {
         index = number
     }
-    for item in 1...Int(index) {
+    for item in 1...index {
         if (number % item) == 0 {
             count += 1
         }
@@ -167,12 +182,15 @@ func checkNguyenTo(_ number: Int) -> Bool {
     }
     return true
 }
+
 var listHappyNumber = [Int]()
 for index in 1..<10000 {
     if checkHappyNumber(index) && checkNguyenTo(index) {
         listHappyNumber.append(index)
     }
 }
+
+print(checkNguyenTo(6))
 print("4/ List happy number less 10000: \(listHappyNumber)")
 
 // Bài 5
@@ -182,14 +200,14 @@ func checkExistCount(_ parent: String, _ child: String) -> Int {
 }
 checkExistCount("abaaaabbbabababbaaabababa", "ab")
 
-//  Bài 6
-func permutateArray(_ array: Array<Int>) -> Array<Int> {
+// Bài 6
+func permutateArray(_ array: [Int]) -> [Int] {
     return array.shuffled()
 }
 permutateArray([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
 
 // Bài 7
-func bearrayReplace(_ inputArray: Array<Int>,_ elemToReplace: Int,_ substitutionElem: Int) -> Array<Int> {
+func bearrayReplace(_ inputArray: [Int], _ elemToReplace: Int, _ substitutionElem: Int) -> [Int] {
     var newArrray = [Int]()
     for index in 0..<inputArray.count {
         if inputArray[index] == elemToReplace {
