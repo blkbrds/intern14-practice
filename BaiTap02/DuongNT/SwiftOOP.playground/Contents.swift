@@ -14,8 +14,8 @@ class PhanSo {
     }
 
     func output() -> String {
-        if let mauSo = self.mauSo {
-            return "Result: \(self.tuSo) / \(mauSo)"
+        if let mauSo = mauSo {
+            return "Result: \(tuSo) / \(mauSo)"
         }
         return "Not Exist"
     }
@@ -38,14 +38,14 @@ class PhanSo {
     }
     
     func rutGon() -> PhanSo? {
-        guard let mauSo = self.mauSo else { return nil }
-        let result = PhanSo(tuSo: self.tuSo / self.ucln(self.tuSo , mauSo), mauSo: mauSo / self.ucln(self.tuSo , mauSo))
+        guard let mauSo = mauSo else { return nil }
+        let result = PhanSo(tuSo: tuSo / ucln(tuSo , mauSo), mauSo: mauSo / ucln(tuSo , mauSo))
         return result
     }
 
     func cong(phanSo: PhanSo) -> PhanSo? {
-        guard let mauSo1 = phanSo.mauSo, let mauSo2 = self.mauSo else { return nil }
-        let result = PhanSo(tuSo: self.tuSo * mauSo1 + mauSo2 * phanSo.tuSo, mauSo: mauSo2 * mauSo1)
+        guard let mauSo1 = phanSo.mauSo, let mauSo2 = mauSo else { return nil }
+        let result = PhanSo(tuSo: tuSo * mauSo1 + mauSo2 * phanSo.tuSo, mauSo: mauSo2 * mauSo1)
         return result
     }
 
@@ -57,8 +57,8 @@ class PhanSo {
     }
 
     func tru(phanSo: PhanSo) -> PhanSo? {
-        guard let mauSo1 = phanSo.mauSo, let mauSo2 = self.mauSo else { return nil }
-        let result = PhanSo(tuSo: self.tuSo * mauSo1 - mauSo2 * phanSo.tuSo, mauSo: mauSo2 * mauSo1)
+        guard let mauSo1 = phanSo.mauSo, let mauSo2 = mauSo else { return nil }
+        let result = PhanSo(tuSo: tuSo * mauSo1 - mauSo2 * phanSo.tuSo, mauSo: mauSo2 * mauSo1)
         return result
     }
 
@@ -70,8 +70,8 @@ class PhanSo {
     }
 
     func nhan(phanSo: PhanSo) -> PhanSo? {
-        guard let mauSo1 = phanSo.mauSo, let mauSo2 = self.mauSo else { return nil }
-        let result = PhanSo(tuSo: self.tuSo * phanSo.tuSo, mauSo: mauSo2 * mauSo1)
+        guard let mauSo1 = phanSo.mauSo, let mauSo2 = mauSo else { return nil }
+        let result = PhanSo(tuSo: tuSo * phanSo.tuSo, mauSo: mauSo2 * mauSo1)
         return result
     }
 
@@ -83,18 +83,15 @@ class PhanSo {
     }
 
     func chia(phanSo: PhanSo) -> PhanSo? {
-        guard let mauSo1 = phanSo.mauSo, let mauSo2 = self.mauSo else { return nil }
+        guard let mauSo1 = phanSo.mauSo, let mauSo2 = mauSo else { return nil }
         if phanSo.tuSo == 0 {
-            return PhanSo(tuSo: 0 , mauSo:0)
+            return nil
         }
-        let result = PhanSo(tuSo: self.tuSo * mauSo1, mauSo: mauSo2 * phanSo.tuSo)
+        let result = PhanSo(tuSo: tuSo * mauSo1, mauSo: mauSo2 * phanSo.tuSo)
         return result
     }
 
     static func /(phanSo1: PhanSo, phanSo2: PhanSo) -> PhanSo {
-        if phanSo2.tuSo == 0 {
-            return PhanSo(tuSo: 0, mauSo: 0)
-        }
         if let mauSo1 = phanSo1.mauSo, let mauSo2 = phanSo2.mauSo {
             return PhanSo(tuSo: phanSo1.tuSo * mauSo2 , mauSo: mauSo1 * phanSo2.tuSo)
         }
@@ -102,7 +99,7 @@ class PhanSo {
     }
 }
 let ps1 = PhanSo(tuSo: 9, mauSo: 9)
-var ps2 = PhanSo(tuSo: 1, mauSo: 4)
+var ps2 = PhanSo(tuSo: 0, mauSo: 4)
 
 
 if let ps3 = (ps1 * ps2 - ps1).rutGon() {
