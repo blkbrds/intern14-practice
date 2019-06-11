@@ -65,20 +65,23 @@ import UIKit
 //print(a?.div(b)?.printFrac())
 
 print("Bai 2: ")
-class daGiac {
+class DaGiac {
     private var soCanh: Int
     private var arrCanh:[Int] = []
     init(soCanh: Int, arrCanh: [Int] = []) {
         self.soCanh = soCanh
-        self.arrCanh = arrCanh
         if soCanh <= 2 {
-            print("Khong phai da giac")
+            
+        } else {
+            self.arrCanh = arrCanh
         }
     }
     
     func chuVi() -> Int {
         var cv = 0
-        if soCanh != arrCanh.count {
+        if soCanh <= 2 {
+            print("Khong phai da giac")
+        } else if soCanh != arrCanh.count {
             print("Nhap sai so canh")
         } else {
             for i in arrCanh {
@@ -88,6 +91,12 @@ class daGiac {
         return cv
     }
 }
+
 var a = [1, 2, 3]
-var b = daGiac(soCanh: 3, arrCanh: a)
+var b = DaGiac(soCanh: 2, arrCanh: a)
 print("Chu vi cua da giac la: \(b.chuVi())")
+
+print("Bai 3: ")
+class TamGiac: DaGiac {
+    
+}
