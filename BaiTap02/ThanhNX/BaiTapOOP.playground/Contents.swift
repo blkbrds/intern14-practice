@@ -1,18 +1,18 @@
 import UIKit
-//print("Bai 1: ")
-//class Fraction {
-//    private(set) var tuSo: Double
-//    private(set) var mauSo: Double
-//
-//    init?(tuSo: Double, mauSo: Double) {
-//        self.tuSo = tuSo
-//        if mauSo == 0 {
-//            print("Error")
-//            return nil
-//        }
-//        self.mauSo = mauSo
-//    }
-//
+print("Bai 1: ")
+class Fraction {
+    private(set) var tuSo: Double
+    private(set) var mauSo: Double
+
+    init?(tuSo: Double, mauSo: Double) {
+        self.tuSo = tuSo
+        if mauSo == 0 {
+            print("Error Fraction")
+            return nil
+        }
+        self.mauSo = mauSo
+    }
+
 //    func findUCLN() -> Int {
 //        var a = Fraction.self
 //        var b = Fraction.self
@@ -30,39 +30,63 @@ import UIKit
 //        var i: Int = Int(findUCLN())
 //
 //    }
-//
-//    func sum(_ b: Fraction?) -> Fraction? {
-//        guard let b = b else { return nil }
-//        return Fraction(tuSo: tuSo * b.mauSo + b.tuSo * mauSo, mauSo: mauSo * b.mauSo)
-//    }
-//
-//    func sub(_ b: Fraction?) -> Fraction? {
-//        guard let b = b else { return nil }
-//        return Fraction(tuSo: tuSo * b.mauSo - b.tuSo * mauSo, mauSo: mauSo * b.mauSo)
-//    }
-//
-//    func mul(_ b: Fraction?) -> Fraction? {
-//        guard let b = b else { return nil }
-//        return Fraction(tuSo: tuSo * b.tuSo, mauSo: mauSo * b.mauSo)
-//    }
-//
-//    func div(_ b: Fraction?) -> Fraction? {
-//        guard let b = b else { return nil }
-//        return Fraction(tuSo: tuSo * b.mauSo, mauSo: mauSo * b.tuSo)
-//    }
-//
-//    func printFrac() -> String {
-//        return "Phan so: \(tuSo) / \(mauSo)"
-//    }
-//}
-//
-//var a = Fraction(tuSo: 1, mauSo: 2)
-//var b = Fraction(tuSo: 1, mauSo: 2)
-////print(a?.findUCLN())
-//print(a?.sum(b)?.printFrac())
-//print(a?.sub(b)?.printFrac())
-//print(a?.mul(b)?.printFrac())
-//print(a?.div(b)?.printFrac())
+
+    func sum(_ b: Fraction?) -> Fraction? {
+        guard let b = b else { return nil }
+        return Fraction(tuSo: tuSo * b.mauSo + b.tuSo * mauSo, mauSo: mauSo * b.mauSo)
+    }
+
+    func sub(_ b: Fraction?) -> Fraction? {
+        guard let b = b else { return nil }
+        return Fraction(tuSo: tuSo * b.mauSo - b.tuSo * mauSo, mauSo: mauSo * b.mauSo)
+    }
+
+    func mul(_ b: Fraction?) -> Fraction? {
+        guard let b = b else { return nil }
+        return Fraction(tuSo: tuSo * b.tuSo, mauSo: mauSo * b.mauSo)
+    }
+
+    func div(_ b: Fraction?) -> Fraction? {
+        guard let b = b else { return nil }
+        return Fraction(tuSo: tuSo * b.mauSo, mauSo: mauSo * b.tuSo)
+    }
+
+    func printFrac() -> String {
+        return "Phan so: \(tuSo) / \(mauSo)"
+    }
+}
+
+var a = Fraction(tuSo: 1, mauSo: 2)
+var b = Fraction(tuSo: 0, mauSo: 2)
+//print(a?.findUCLN())
+
+print("Cong phan so ")
+if let ps1 = a, let ps2 = b {
+    if let sum = ps1.sum(ps2) {
+        print(sum.printFrac())
+    }
+}
+
+print("Tru phan so ")
+if let ps1 = a, let ps2 = b {
+    if let sub = ps1.sub(ps2) {
+        print(sub.printFrac())
+    }
+}
+
+print("Nhan phan so")
+if let ps1 = a, let ps2 = b {
+    if let mul = ps1.mul(ps2) {
+        print(mul.printFrac())
+    }
+}
+
+print("Chia phan so")
+if let ps1 = a, let ps2 = b {
+    if let div = ps1.div(ps2) {
+        print(div.printFrac())
+    }
+}
 
 print("Bai 2: ")
 class DaGiac {
@@ -91,9 +115,9 @@ class DaGiac {
     }
 }
 
-var a = [1.0, 2.0, 3.0, 4.0]
-var b = DaGiac(soCanh: 4, arrCanh: a)
-print("Chu vi cua da giac la: \(b.chuVi())")
+var e = [1.0, 2.0, 3.0, 4.0]
+var f = DaGiac(soCanh: 4, arrCanh: e)
+print("Chu vi cua da giac la: \(f.chuVi())")
 
 print("Bai 3: ")
 class TamGiac: DaGiac {
