@@ -66,22 +66,21 @@ import UIKit
 
 print("Bai 2: ")
 class DaGiac {
-    private var soCanh: Int
-    private var arrCanh:[Int] = []
-    init(soCanh: Int, arrCanh: [Int] = []) {
+    fileprivate var soCanh: Double
+    fileprivate var arrCanh:[Double] = []
+    init(soCanh: Double, arrCanh: [Double] = []) {
         self.soCanh = soCanh
-        if soCanh <= 2 {
-            
-        } else {
+        guard soCanh <= 2 else {
             self.arrCanh = arrCanh
+            return
         }
     }
     
-    func chuVi() -> Int {
-        var cv = 0
+    fileprivate func chuVi() -> Double {
+        var cv = 0.0
         if soCanh <= 2 {
             print("Khong phai da giac")
-        } else if soCanh != arrCanh.count {
+        } else if soCanh != Double(arrCanh.count) {
             print("Nhap sai so canh")
         } else {
             for i in arrCanh {
@@ -92,11 +91,40 @@ class DaGiac {
     }
 }
 
-var a = [1, 2, 3]
-var b = DaGiac(soCanh: 2, arrCanh: a)
+var a = [1.0, 2.0, 3.0, 4.0]
+var b = DaGiac(soCanh: 4, arrCanh: a)
 print("Chu vi cua da giac la: \(b.chuVi())")
 
 print("Bai 3: ")
 class TamGiac: DaGiac {
-    
+//    override init(soCanh: Int, arrCanh: [Int]) {
+//        super.init(soCanh: soCanh, arrCanh: arrCanh)
+//    }
+    var cv = 0.0
+    override func chuVi() -> Double {
+        if soCanh != Double(arrCanh.count) {
+            print("Nhap sai so canh")
+        } else if soCanh != 3 {
+            print("Khong phai tam giac")
+        } else {
+            for i: Double in arrCanh {
+                cv += i
+            }
+        }
+        return cv
+    }
+    fileprivate func dienTich() -> Double {
+        var s = 1.0
+        let p: Double = (arrCanh[0] + arrCanh[1] + arrCanh[2]) / 2
+        if soCanh != 3 {
+            print("Khong phai tam giac")
+        } else {
+            s = sqrt(p * (p - arrCanh[0]) * (p - arrCanh[1]) * (p - arrCanh[1]))
+        }
+        return s
+    }
 }
+
+var c = [5.0, 6.0, 7.0]
+var d = TamGiac(soCanh: 3, arrCanh: c)
+print("Dien Tich Tam Giac la : \(d.dienTich())")
