@@ -99,7 +99,7 @@ class DaGiac {
             return
         }
     }
-    
+
     fileprivate func chuVi() -> Double {
         var cv = 0.0
         if soCanh <= 2 {
@@ -152,3 +152,21 @@ class TamGiac: DaGiac {
 var c = [5.0, 6.0, 7.0]
 var d = TamGiac(soCanh: 3, arrCanh: c)
 print("Dien Tich Tam Giac la : \(d.dienTich())")
+
+print("Bai 10:")
+class A {
+    fileprivate var n: UInt64
+    init(n: UInt64) {
+        self.n = n
+    }
+    func sumA() -> UInt64 {
+        var sum: UInt64 = 0
+        for i in 1...n {
+            sum += i
+        }
+        return sum
+    }
+}
+
+var n = A(n: 100)
+print("Tong S tu 1 den n la: \(n.sumA())")
