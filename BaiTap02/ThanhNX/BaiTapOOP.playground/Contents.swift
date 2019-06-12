@@ -13,23 +13,22 @@ class Fraction {
         self.mauSo = mauSo
     }
 
-//    func findUCLN() -> Int {
-//        var a = Fraction.self
-//        var b = Fraction.self
-//        while a != b {
-//            if a > b {
-//                a -= b
-//            } else {
-//                b -= a
-//            }
-//        }
-//        return a
-//    }
-//
-//    func rutGon() -> Int {
-//        var i: Int = Int(findUCLN())
-//
-//    }
+    func findUCLN(_ num1: Double, _ num2: Double) -> Double {
+        var a: Double = abs(num1)
+        var b: Double = abs(num2)
+        if a == 0 && b == 0 {
+            return 0
+        } else {
+            while a != b {
+                if a > b {
+                    a -= b
+                } else {
+                    b -= a
+                }
+            }
+        }
+        return a
+    }
 
     func sum(_ b: Fraction?) -> Fraction? {
         guard let b = b else { return nil }
@@ -52,13 +51,12 @@ class Fraction {
     }
 
     func printFrac() -> String {
-        return "Phan so: \(tuSo) / \(mauSo)"
+        return "Phan so: \(tuSo / findUCLN(tuSo, mauSo)) / \(mauSo / findUCLN(tuSo, mauSo))"
     }
 }
 
 var a = Fraction(tuSo: 1, mauSo: 2)
-var b = Fraction(tuSo: 0, mauSo: 2)
-//print(a?.findUCLN())
+var b = Fraction(tuSo: 3, mauSo: 4)
 
 print("Cong phan so ")
 if let ps1 = a, let ps2 = b {
@@ -102,28 +100,29 @@ class DaGiac {
 
     fileprivate func chuVi() -> Double {
         var cv = 0.0
-        if soCanh <= 2 {
-            print("Khong phai da giac")
-        } else if soCanh != Double(arrCanh.count) {
-            print("Nhap sai so canh")
-        } else {
-            for i in arrCanh {
-                cv += i
+        guard !arrCanh.contains(0.0) || soCanh > 2 || soCanh == Double(arrCanh.count) else {
+            print("Khong phai da giac, hoac nhap sai so canh")
+            return cv
+        }
+        for value in arrCanh {
+            if value == 0 {
+                cv = 0.0
+                print("Khong the co canh bang 0")
+                break
+            } else {
+                cv += value
             }
         }
         return cv
     }
 }
 
-var e = [1.0, 2.0, 3.0, 4.0]
+var e = [1.0, 5.0, 3.0, 4.0]
 var f = DaGiac(soCanh: 4, arrCanh: e)
 print("Chu vi cua da giac la: \(f.chuVi())")
 
 print("Bai 3: ")
 class TamGiac: DaGiac {
-//    override init(soCanh: Int, arrCanh: [Int]) {
-//        super.init(soCanh: soCanh, arrCanh: arrCanh)
-//    }
     var cv = 0.0
     override func chuVi() -> Double {
         if soCanh != Double(arrCanh.count) {
@@ -131,12 +130,13 @@ class TamGiac: DaGiac {
         } else if soCanh != 3 {
             print("Khong phai tam giac")
         } else {
-            for i: Double in arrCanh {
+            for i in arrCanh {
                 cv += i
             }
         }
         return cv
     }
+    
     fileprivate func dienTich() -> Double {
         var s = 1.0
         let p: Double = (arrCanh[0] + arrCanh[1] + arrCanh[2]) / 2
@@ -149,18 +149,18 @@ class TamGiac: DaGiac {
     }
 }
 
-var c = [5.0, 6.0, 7.0]
+var c = [5.0, 6.0, 0.0]
 var d = TamGiac(soCanh: 3, arrCanh: c)
 print("Dien Tich Tam Giac la : \(d.dienTich())")
 
 print("Bai 10:")
 class A {
-    fileprivate var n: UInt64
-    init(n: UInt64) {
+    fileprivate var n: Int
+    init(n: Int) {
         self.n = n
     }
-    func sumA() -> UInt64 {
-        var sum: UInt64 = 0
+    func sumA() -> Int {
+        var sum: Int = 0
         for i in 1...n {
             sum += i
         }
