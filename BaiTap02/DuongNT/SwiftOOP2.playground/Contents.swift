@@ -63,11 +63,40 @@ class TamGiac: DaGiac {
         }
         return sum
     }
+    
+    func checkPitago() -> Bool {
+        if let tamGiac = TamGiac(listDoDai)  {
+            if pow(Double(tamGiac.listDoDai[0]), 2) == pow(Double(tamGiac.listDoDai[1]), 2) + pow(Double(tamGiac.listDoDai[2]), 2) {
+                return true
+            } else if pow(Double(tamGiac.listDoDai[1]), 2) == pow(Double(tamGiac.listDoDai[0]), 2) + pow(Double(tamGiac.listDoDai[2]), 2) {
+                return true
+            } else if pow(Double(tamGiac.listDoDai[2]), 2) == pow(Double(tamGiac.listDoDai[1]), 2) + pow(Double(tamGiac.listDoDai[0]), 2) {
+                return true
+            } else {
+                return false
+            }
+        } else {
+            return false
+        }
+    }
+    
+    func inCanh() -> String {
+        var list = ""
+        if let tamGiac = TamGiac(listDoDai) {
+            for temp in tamGiac.listDoDai {
+                list += ("\(temp); ")
+            }
+        } else {
+            return list
+        }
+        return list
+    }
 }
 
-var tamGiac2 = TamGiac([1, 2, 5])
+var tamGiac2 = TamGiac([3, 4, 5])
 if let output = tamGiac2?.output() {
     output
+    tamGiac2?.checkPitago()
 } else {
     print("Không phải tam giác")
 }
@@ -76,4 +105,17 @@ if let output = daGiac?.output() {
     output
 } else {
     print("Không phải đa giác")
+}
+
+// Bai 4
+
+var listTamGiac = [TamGiac([3, 4, 2]), TamGiac([13, 12, 5]), TamGiac([1, 3, 5]), TamGiac([3, 4, 5])]
+for tamGiac in listTamGiac {
+    if let tamGiac = tamGiac {
+        if tamGiac.checkPitago() {
+            print(tamGiac.inCanh())
+        }
+    } else {
+        print("Error")
+    }
 }
