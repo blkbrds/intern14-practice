@@ -115,10 +115,18 @@ class DaGiac {
         }
         return cv
     }
+    
+    fileprivate func printCanh() -> Void {
+        for value in arrCanh {
+            print("Canh cua da giac: \(value)")
+        }
+    }
 }
 
 var e = [1.0, 5.0, 3.0, 4.0]
 var f = DaGiac(soCanh: 4, arrCanh: e)
+
+f.printCanh()
 print("Chu vi cua da giac la: \(f.chuVi())")
 
 print("Bai 3: ")
