@@ -305,35 +305,48 @@ print("Dien Tich Tam Giac la : \(d.dienTich())")
 //        }
 //    }
 //}
-
+//
 print("Bai 5: ")
 struct CStack {
     fileprivate var arrStack : [Int] = [1, 2, 3]
     fileprivate var maxStack = 5
-    
+
     func isEmpty() -> Bool {
         return arrStack.isEmpty
     }
-    
-    func maxStackArray() -> Bool {
+
+    func isFull() -> Bool {
         return arrStack.count == maxStack
     }
-    
+
     mutating func push(_ element: Int) {
-        arrStack.append(element)
+        if !isFull() {
+            arrStack.append(element)
+        } else {
+            print("Stack Full")
+        }
     }
-    
+
     mutating func pop() -> Int? {
         return arrStack.popLast()
     }
 }
 var stack = CStack()
 stack.isEmpty()
-stack.maxStackArray()
+stack.isFull()
 stack.push(4)
+stack.push(5)
+stack.push(6)
 print(stack.arrStack)
+stack.isFull()
 stack.pop()
 print(stack.arrStack)
+
+print("Bai 9: ")
+
+class MangMotChieu {
+    
+}
 
 print("Bai 10:")
 class A {
