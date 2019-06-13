@@ -88,7 +88,7 @@ if let ps1 = a, let ps2 = b {
 
 print("Bai 2: ")
 class DaGiac {
-    fileprivate var soCanh: Double
+    fileprivate var soCanh: Double = 0
     fileprivate var arrCanh:[Double] = []
     init(soCanh: Double, arrCanh: [Double] = []) {
         self.soCanh = soCanh
@@ -115,7 +115,7 @@ class DaGiac {
         }
         return cv
     }
-    
+
     fileprivate func printCanh() -> Void {
         for value in arrCanh {
             print("Canh cua da giac: \(value)")
@@ -123,8 +123,7 @@ class DaGiac {
     }
 }
 
-var e = [1.0, 5.0, 3.0, 4.0]
-var f = DaGiac(soCanh: 4, arrCanh: e)
+var f = DaGiac(soCanh: 4, arrCanh: [1.0, 5.0, 3.0, 4.0])
 
 f.printCanh()
 print("Chu vi cua da giac la: \(f.chuVi())")
@@ -144,22 +143,197 @@ class TamGiac: DaGiac {
         }
         return cv
     }
-    
+
     fileprivate func dienTich() -> Double {
         var s = 1.0
         let p: Double = (arrCanh[0] + arrCanh[1] + arrCanh[2]) / 2
         if soCanh != 3 {
             print("Khong phai tam giac")
         } else {
-            s = sqrt(p * (p - arrCanh[0]) * (p - arrCanh[1]) * (p - arrCanh[1]))
+            s = sqrt(p * (p - arrCanh[0]) * (p - arrCanh[1]) * (p - arrCanh[2]))
         }
         return s
     }
 }
 
-var c = [5.0, 6.0, 0.0]
-var d = TamGiac(soCanh: 3, arrCanh: c)
+var d = TamGiac(soCanh: 3, arrCanh: [9.0, 5.0, 6.0])
 print("Dien Tich Tam Giac la : \(d.dienTich())")
+
+//print("Bai 4: ")
+//class TamGiac4 {
+//    private var a = 0.0
+//    private var b = 0.0
+//    private var c = 0.0
+//
+//    init(a: Double, b: Double, c: Double) {
+//        self.a = a
+//        self.b = b
+//        self.c = c
+//    }
+//
+//    func isPythagoras() -> (Bool, [Double]) {
+//        if a == sqrt(pow(b, 2) + pow(c, 2))
+//            || b == sqrt(pow(a, 2) + pow(c, 2))
+//            || c == sqrt(pow(b, 2) + pow(a, 2)) {
+//            return (true, [a, b, c])
+//        }
+//        return (false, [])
+//    }
+//}
+//
+//var input: [TamGiac4] = [TamGiac4(a: 1, b: 2, c: 3),
+//                        TamGiac4(a: 2, b: 3, c: 4),
+//                        TamGiac4(a: 3, b: 4, c: 5)]
+//
+//class CheckTamGiac {
+//    var tamGiacs: [TamGiac4]
+//
+//    init(tamGiacs: [TamGiac4]) {
+//        self.tamGiacs = tamGiacs
+//    }
+//
+//    func checkPytagoras(_ tg: [TamGiac4]) -> Void {
+////        for tamG in tamGiacs {
+////            let check = tamG.isPythagoras()
+////            if check.0 {
+////                print(check.1)
+////            }
+////        }
+//        tamGiacs.forEach { (tg) in
+//            let check = tg.isPythagoras()
+//            if check.0 {
+//                print(check.1)
+//            }
+//        }
+//    }
+//}
+//class InputTamGiac {
+//    fileprivate var arrTamGiac: [[Double]] = []
+//
+//    init(arrTamGiac: [Double] = [], arrCanhTG: [Double] = []) {
+//        self.arrTamGiac = arrTamGiac
+//        guard arrCanhTG.count != 3 else {
+//            self.arrCanhTG = arrCanhTG
+//            return
+//        }
+//    }
+//
+//    fileprivate func isPythagoras(_ arr: [Double] = []) -> Bool {
+//        if arr.count != 3 {
+//            return false
+//        } else {
+//            if arr[0] == sqrt(pow(arr[1], 2) + pow(arr[2], 2))
+//                || arr[1] == sqrt(pow(arr[0], 2) + pow(arr[2], 2))
+//                || arr[2] == sqrt(pow(arr[1], 2) + pow(arr[0], 2)) {
+//                return true
+//            }
+//        }
+//        return true
+//    }
+//
+//    fileprivate func printCanhTG () -> Void {
+//        for index in arrTamGiac {
+//            for value in arrCanhTG {
+//                if isPythagoras(arrCanhTG) == true {
+//                    print("Canh cua tam giac thoa man Pytago: \(arrCanhTG[value])")
+//                }
+//            }
+//        }
+//    }
+//}
+//print("Bai 8: ")
+//class Date {
+//    fileprivate var day: Int = 1
+//    fileprivate var month: Int = 1
+//    fileprivate var year: Int = 1
+//
+//    init(day: Int, month: Int, year: Int) {
+//        self.day = day
+//        self.month = month
+//        self.year = year
+//    }
+//
+//    func normalize() -> Bool {
+//        if day >= 1 && day <= 30 {
+//            if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) && month == 2 {
+//                day <= 29
+//                return true
+//            }
+//            return true
+//        } else {
+//            return false
+//        }
+//
+//        if month >= 1 && month <= 12 {
+//            return true
+//        } else {
+//            return false
+//        }
+//    }
+//
+//    func daysln() -> Int {
+//        switch month {
+//        case 1:
+//            return 31
+//        case 2:
+//            guard (year % 4 == 0 && year % 100 != 0) || year % 400 == 0 else {
+//                return 28
+//            }
+//            return 29
+//        case 3:
+//            return 31
+//        case 4:
+//            return 30
+//        case 5:
+//            return 31
+//        case 6:
+//            return 30
+//        case 7:
+//            return 31
+//        case 8:
+//            return 31
+//        case 9:
+//            return 30
+//        case 10:
+//            return 31
+//        case 11:
+//            return 30
+//        case 12:
+//            return 31
+//        default:
+//            return 0
+//        }
+//    }
+//}
+
+print("Bai 5: ")
+struct CStack {
+    fileprivate var arrStack : [Int] = [1, 2, 3]
+    fileprivate var maxStack = 5
+    
+    func isEmpty() -> Bool {
+        return arrStack.isEmpty
+    }
+    
+    func maxStackArray() -> Bool {
+        return arrStack.count == maxStack
+    }
+    
+    mutating func push(_ element: Int) {
+        arrStack.append(element)
+    }
+    
+    mutating func pop() -> Int? {
+        return arrStack.popLast()
+    }
+}
+var stack = CStack()
+stack.isEmpty()
+stack.maxStackArray()
+stack.push(4)
+print(stack.arrStack)
+stack.pop()
+print(stack.arrStack)
 
 print("Bai 10:")
 class A {
