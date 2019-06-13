@@ -345,9 +345,39 @@ print(stack.arrStack)
 print("Bai 9: ")
 
 class MangMotChieu {
+    fileprivate var mang1Chieu: [Int]
     
+    init(mang1Chieu: [Int]) {
+        self.mang1Chieu = mang1Chieu
+    }
+    
+    fileprivate func printMang1Chieu() -> Void {
+        for value in mang1Chieu {
+            print(value)
+        }
+    }
+    
+    private var max = 0
+    private var min = 9
+    
+    fileprivate func printMinMax() -> (Int, Int) {
+        for value in mang1Chieu {
+            if max < value {
+                max = value
+            }
+        }
+        for value in mang1Chieu {
+            if min > value {
+                min = value
+            }
+        }
+        return (min, max)
+    }
 }
 
+var m = MangMotChieu(mang1Chieu: [5, 2, 3, 4, 9])
+m.printMang1Chieu()
+m.printMinMax()
 print("Bai 10:")
 class A {
     fileprivate var n: Int
