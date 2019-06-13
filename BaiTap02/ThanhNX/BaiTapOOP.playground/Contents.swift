@@ -159,88 +159,52 @@ class TamGiac: DaGiac {
 var d = TamGiac(soCanh: 3, arrCanh: [9.0, 5.0, 6.0])
 print("Dien Tich Tam Giac la : \(d.dienTich())")
 
-//print("Bai 4: ")
-//class TamGiac4 {
-//    private var a = 0.0
-//    private var b = 0.0
-//    private var c = 0.0
-//
-//    init(a: Double, b: Double, c: Double) {
-//        self.a = a
-//        self.b = b
-//        self.c = c
-//    }
-//
-//    func isPythagoras() -> (Bool, [Double]) {
-//        if a == sqrt(pow(b, 2) + pow(c, 2))
-//            || b == sqrt(pow(a, 2) + pow(c, 2))
-//            || c == sqrt(pow(b, 2) + pow(a, 2)) {
-//            return (true, [a, b, c])
-//        }
-//        return (false, [])
-//    }
-//}
-//
-//var input: [TamGiac4] = [TamGiac4(a: 1, b: 2, c: 3),
-//                        TamGiac4(a: 2, b: 3, c: 4),
-//                        TamGiac4(a: 3, b: 4, c: 5)]
-//
-//class CheckTamGiac {
-//    var tamGiacs: [TamGiac4]
-//
-//    init(tamGiacs: [TamGiac4]) {
-//        self.tamGiacs = tamGiacs
-//    }
-//
-//    func checkPytagoras(_ tg: [TamGiac4]) -> Void {
-////        for tamG in tamGiacs {
-////            let check = tamG.isPythagoras()
-////            if check.0 {
-////                print(check.1)
-////            }
-////        }
-//        tamGiacs.forEach { (tg) in
-//            let check = tg.isPythagoras()
-//            if check.0 {
-//                print(check.1)
-//            }
-//        }
-//    }
-//}
-//class InputTamGiac {
-//    fileprivate var arrTamGiac: [[Double]] = []
-//
-//    init(arrTamGiac: [Double] = [], arrCanhTG: [Double] = []) {
-//        self.arrTamGiac = arrTamGiac
-//        guard arrCanhTG.count != 3 else {
-//            self.arrCanhTG = arrCanhTG
-//            return
-//        }
-//    }
-//
-//    fileprivate func isPythagoras(_ arr: [Double] = []) -> Bool {
-//        if arr.count != 3 {
-//            return false
-//        } else {
-//            if arr[0] == sqrt(pow(arr[1], 2) + pow(arr[2], 2))
-//                || arr[1] == sqrt(pow(arr[0], 2) + pow(arr[2], 2))
-//                || arr[2] == sqrt(pow(arr[1], 2) + pow(arr[0], 2)) {
-//                return true
-//            }
-//        }
-//        return true
-//    }
-//
-//    fileprivate func printCanhTG () -> Void {
-//        for index in arrTamGiac {
-//            for value in arrCanhTG {
-//                if isPythagoras(arrCanhTG) == true {
-//                    print("Canh cua tam giac thoa man Pytago: \(arrCanhTG[value])")
-//                }
-//            }
-//        }
-//    }
-//}
+print("Bai 4: ")
+class TamGiac4 {
+    private var a = 0.0
+    private var b = 0.0
+    private var c = 0.0
+
+    init(a: Double, b: Double, c: Double) {
+        self.a = a
+        self.b = b
+        self.c = c
+    }
+
+    fileprivate func isPythagoras() -> (dung: Bool,inMang: [Double]) {
+        if a == sqrt(pow(b, 2) + pow(c, 2))
+            || b == sqrt(pow(a, 2) + pow(c, 2))
+            || c == sqrt(pow(b, 2) + pow(a, 2)) {
+            return (true, [a, b, c])
+        }
+        return (false, [])
+    }
+}
+
+var input: [TamGiac4] = [TamGiac4(a: 1, b: 2, c: 3),
+                        TamGiac4(a: 2, b: 3, c: 4),
+                        TamGiac4(a: 3, b: 4, c: 5)]
+
+class CheckTamGiac {
+    var tamGiacs: [TamGiac4]
+
+    init(tamGiacs: [TamGiac4]) {
+        self.tamGiacs = tamGiacs
+    }
+
+    func checkPytagoras(_ tg: [TamGiac4]) -> Void {
+        tamGiacs.forEach { (tg) in
+            let check = tg.isPythagoras()
+            if check.dung {
+                print(check.inMang)
+            }
+        }
+    }
+}
+
+let checkTamGiac = CheckTamGiac(tamGiacs: input)
+checkTamGiac.checkPytagoras(input)
+
 print("Bai 5: ")
 struct CStack {
     fileprivate var arrStack : [Int] = [1, 2, 3]
