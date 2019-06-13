@@ -241,6 +241,210 @@ print("Dien Tich Tam Giac la : \(d.dienTich())")
 //        }
 //    }
 //}
+print("Bai 5: ")
+struct CStack {
+    fileprivate var arrStack : [Int] = [1, 2, 3]
+    fileprivate var maxStack = 5
+    
+    func isEmpty() -> Bool {
+        return arrStack.isEmpty
+    }
+    
+    func isFull() -> Bool {
+        return arrStack.count == maxStack
+    }
+    
+    mutating func push(_ element: Int) {
+        if !isFull() {
+            arrStack.append(element)
+        } else {
+            print("Stack Full")
+        }
+    }
+    
+    mutating func pop() -> Int? {
+        return arrStack.popLast()
+    }
+}
+var stack = CStack()
+stack.isEmpty()
+stack.isFull()
+stack.push(4)
+stack.push(5)
+stack.push(6)
+print(stack.arrStack)
+stack.isFull()
+stack.pop()
+print(stack.arrStack)
+
+print("Bai 6: ")
+class HinhVe {
+    fileprivate var pi = Double.pi
+    fileprivate var a: Double
+    fileprivate var b: Double
+    
+    init(_ a: Double,_ b: Double) {
+        self.a = a
+        self.b = b
+    }
+    func paintShape() {
+        print("Hinh ve chua xac dinh")
+    }
+}
+
+class HaiChieu: HinhVe {
+    
+    init(a: Double, b: Double) {
+        super.init(a, b)
+    }
+    
+    fileprivate func chuVi() -> Double {
+        return a + b
+    }
+    
+    fileprivate func dienTich() -> Double {
+        return a * b
+    }
+}
+
+class HinhTron: HaiChieu {
+    private var r: Double
+    init(a: Double, b: Double, r: Double) {
+        self.r = r
+        super.init(a: a, b: b)
+    }
+    
+    override func paintShape() {
+        print("Hinh Tron")
+    }
+    
+    override func chuVi() -> Double {
+        return r * 2 * pi
+    }
+    
+    override func dienTich() -> Double {
+        return pow(r, 2) * pi
+    }
+}
+
+class HinhVuong: HaiChieu {
+    override init(a: Double, b: Double) {
+        super.init(a: a, b: b)
+    }
+    
+    override func paintShape() {
+        print("Hinh Vuong")
+    }
+    
+    override func chuVi() -> Double {
+        return a * 4
+    }
+    
+    override func dienTich() -> Double {
+        return a * b
+    }
+}
+
+class TamGiac6: HaiChieu {
+    private var c: Double
+    init(a: Double, b: Double, c: Double) {
+        self.c = c
+        super.init(a: a, b: b)
+    }
+    
+    override func paintShape() {
+        print("Hinh Tam Giac")
+    }
+    
+    override func chuVi() -> Double {
+        return a + b + c
+    }
+    
+    override func dienTich() -> Double {
+        return sqrt(((a + b + c) / 2) * (((a + b + c) / 2) - a) * (((a + b + c) / 2) - b) * (((a + b + c) / 2) - c))
+    }
+}
+
+class BaChieu: HinhVe {
+    fileprivate var c: Double
+    
+    init(_ a: Double,_ b: Double,_ c: Double) {
+        self.c = c
+        super.init(a, b)
+    }
+    
+    fileprivate func dienTich() -> Double {
+        return a * b * c
+    }
+    
+    fileprivate func theTich() -> Double {
+        return pow(a, 2) * pow(b, 2) * pow(c, 2)
+    }
+}
+
+class HinhCau: BaChieu {
+    private var r: Double
+    init(a: Double, b: Double, c: Double, r: Double) {
+        self.r = r
+        super.init(a, b, c)
+    }
+    
+    override func paintShape() {
+        print("Hinh Cau")
+    }
+    
+    override func dienTich() -> Double {
+        return 4 * pi * pow(r, 2)
+    }
+    
+    override func theTich() -> Double {
+        return (4 * pi * pow(r, 3)) / 3
+    }
+}
+
+class LapPhuong: BaChieu {
+    init(a: Double, b: Double, c: Double) {
+        super.init(a, b, c)
+    }
+    
+    override func paintShape() {
+        print("Hinh Lap Phuong")
+    }
+    
+    override func dienTich() -> Double {
+        return 6 * pow(a, 2)
+    }
+    
+    fileprivate func dienTichXungQuanh() -> Double {
+        return 4 * pow(a, 2)
+    }
+    
+    override func theTich() -> Double {
+        return pow(a, 3)
+    }
+}
+
+var ht = HinhTron(a: 0, b: 0, r: 5)
+print("Chu vi hinh tron: \(ht.chuVi())")
+print("Dien tich hinh tron: \(ht.dienTich())")
+
+var hv = HinhVuong(a: 5, b: 5)
+print("Chu vi hinh vuong: \(hv.chuVi())")
+print("Dien tich hinh vuong: \(hv.dienTich())")
+
+var tg = TamGiac6(a: 5, b: 6, c: 7)
+print("Chu vi tam giac: \(tg.chuVi())")
+print("Dien tich tam giac: \(tg.dienTich())")
+
+var hc = HinhCau(a: 0, b: 0, c: 0, r: 5)
+print("Dien tich hinh cau: \(hc.dienTich())")
+print("The tich hinh cau: \(hc.theTich())")
+
+var lp = LapPhuong(a: 5, b: 5, c: 5)
+print("Dien tich toan phan hinh lap phuong: \(lp.dienTich())")
+print("Dien tich xung quanh hinh lap phuong: \(lp.dienTichXungQuanh())")
+print("The tich hinh lap phuong: \(lp.theTich())")
+
 //print("Bai 8: ")
 //class Date {
 //    fileprivate var day: Int = 1
@@ -306,41 +510,7 @@ print("Dien Tich Tam Giac la : \(d.dienTich())")
 //    }
 //}
 //
-print("Bai 5: ")
-struct CStack {
-    fileprivate var arrStack : [Int] = [1, 2, 3]
-    fileprivate var maxStack = 5
 
-    func isEmpty() -> Bool {
-        return arrStack.isEmpty
-    }
-
-    func isFull() -> Bool {
-        return arrStack.count == maxStack
-    }
-
-    mutating func push(_ element: Int) {
-        if !isFull() {
-            arrStack.append(element)
-        } else {
-            print("Stack Full")
-        }
-    }
-
-    mutating func pop() -> Int? {
-        return arrStack.popLast()
-    }
-}
-var stack = CStack()
-stack.isEmpty()
-stack.isFull()
-stack.push(4)
-stack.push(5)
-stack.push(6)
-print(stack.arrStack)
-stack.isFull()
-stack.pop()
-print(stack.arrStack)
 
 print("Bai 9: ")
 
@@ -376,8 +546,8 @@ class MangMotChieu {
 }
 
 var m = MangMotChieu(mang1Chieu: [5, 2, 3, 4, 9])
-m.printMang1Chieu()
-m.printMinMax()
+print("Mang 1 chieu: \(m.printMang1Chieu())")
+print("Min max: \(m.printMinMax())")
 print("Bai 10:")
 class A {
     fileprivate var n: Int
