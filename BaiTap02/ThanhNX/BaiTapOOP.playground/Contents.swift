@@ -13,6 +13,7 @@ class Fraction {
         self.mauSo = mauSo
     }
 
+
     func findUCLN(_ num1: Double, _ num2: Double) -> Double {
         var a: Double = abs(num1)
         var b: Double = abs(num2)
@@ -473,18 +474,18 @@ class Date {
     fileprivate var year = 1
     fileprivate var monthPrint = 1
     
-    init?(day: Int, month: Int, year: Int) {
-        guard day <= 31 && day >= 1 else { return nil }
+    init(day: Int, month: Int, year: Int) {
         self.day = day
-        guard month <= 12 && month >= 1 else { return nil }
         self.month = month
-        guard year >= 1 else { return nil }
         self.year = year
     }
+    fileprivate func normalize() -> Bool {
+        return day <= 31 && day >= 1 && month <= 12 && month >= 1 && year >= 1
+    }
     
-    fileprivate func daysln(month: Int) -> Int? {
-        guard month <= 12 && month >= 1 else {
-            return nil
+    fileprivate func daysln(month: Int) -> Int {
+        guard normalize() else {
+            return 0
         }
         switch month {
         case 1, 3, 5, 7, 8, 10, 12:
@@ -518,14 +519,10 @@ class Date {
 }
 
 var date1 = Date(day: 18, month: 01, year: 1996)
-var dayPrint = date1?.daysln(month: 9)
-if let date = date1 , let dayPrint = dayPrint {
-    date1?.print8()
-    print("Number of day in month \(date.monthPrint) of \(date.year) is : \(dayPrint)")
-    date1?.advance()
-} else {
-    print("Date Error")
-}
+var dayPrint = date1.daysln(month: 9)
+date1.print8()
+print("Number of day in month \(date1.monthPrint) of \(date1.year) is : \(dayPrint)")
+date1.advance()
 
 print("Bai 9: ")
 
