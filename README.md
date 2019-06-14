@@ -42,7 +42,7 @@
 
 1. [Giới thiệu](./_documents/01_GioiThieu.md)
 2. [Swift Basic](./_documents/02_SwiftBasic.md)
-3. View
+3. [View](https://drive.google.com/file/d/1W7-qWDDkcBO5jzWcNQeLYMUQ7p0F4GN6/view?usp=sharing)
 4. IBOutlet & Actions
 5. Touch Event
 6. Swift OOP
