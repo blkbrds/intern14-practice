@@ -15,15 +15,6 @@ class CStack {
         stackArray.append(element)
         return stackArray
     }
-//    func checkStack(){
-//        if stackArray.count == 0 {
-//            print("The stack is emty")
-//        }
-//
-//        else {
-//            print("The stack is full")
-//        }
-//    }
     func popStack() -> [Int] {
         stackArray.popLast()
         return stackArray
