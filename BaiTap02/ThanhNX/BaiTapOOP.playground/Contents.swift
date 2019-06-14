@@ -209,15 +209,15 @@ print("Bai 5: ")
 struct CStack {
     fileprivate var arrStack : [Int] = [1, 2, 3]
     fileprivate var maxStack = 5
-    
+
     func isEmpty() -> Bool {
         return arrStack.isEmpty
     }
-    
+
     func isFull() -> Bool {
         return arrStack.count == maxStack
     }
-    
+
     mutating func push(_ element: Int) {
         if !isFull() {
             arrStack.append(element)
@@ -225,7 +225,7 @@ struct CStack {
             print("Stack Full")
         }
     }
-    
+
     mutating func pop() -> Int? {
         return arrStack.popLast()
     }
@@ -246,7 +246,7 @@ class HinhVe {
     fileprivate var pi = Double.pi
     fileprivate var a: Double
     fileprivate var b: Double
-    
+
     init(_ a: Double,_ b: Double) {
         self.a = a
         self.b = b
@@ -257,15 +257,15 @@ class HinhVe {
 }
 
 class HaiChieu: HinhVe {
-    
+
     init(a: Double, b: Double) {
         super.init(a, b)
     }
-    
+
     fileprivate func chuVi() -> Double {
         return a + b
     }
-    
+
     fileprivate func dienTich() -> Double {
         return a * b
     }
@@ -277,15 +277,15 @@ class HinhTron: HaiChieu {
         self.r = r
         super.init(a: a, b: b)
     }
-    
+
     override func paintShape() {
         print("Hinh Tron")
     }
-    
+
     override func chuVi() -> Double {
         return r * 2 * pi
     }
-    
+
     override func dienTich() -> Double {
         return pow(r, 2) * pi
     }
@@ -295,15 +295,15 @@ class HinhVuong: HaiChieu {
     override init(a: Double, b: Double) {
         super.init(a: a, b: b)
     }
-    
+
     override func paintShape() {
         print("Hinh Vuong")
     }
-    
+
     override func chuVi() -> Double {
         return a * 4
     }
-    
+
     override func dienTich() -> Double {
         return a * b
     }
@@ -315,15 +315,15 @@ class TamGiac6: HaiChieu {
         self.c = c
         super.init(a: a, b: b)
     }
-    
+
     override func paintShape() {
         print("Hinh Tam Giac")
     }
-    
+
     override func chuVi() -> Double {
         return a + b + c
     }
-    
+
     override func dienTich() -> Double {
         return sqrt(((a + b + c) / 2) * (((a + b + c) / 2) - a) * (((a + b + c) / 2) - b) * (((a + b + c) / 2) - c))
     }
@@ -331,16 +331,16 @@ class TamGiac6: HaiChieu {
 
 class BaChieu: HinhVe {
     fileprivate var c: Double
-    
+
     init(_ a: Double,_ b: Double,_ c: Double) {
         self.c = c
         super.init(a, b)
     }
-    
+
     fileprivate func dienTich() -> Double {
         return a * b * c
     }
-    
+
     fileprivate func theTich() -> Double {
         return pow(a, 2) * pow(b, 2) * pow(c, 2)
     }
@@ -352,15 +352,15 @@ class HinhCau: BaChieu {
         self.r = r
         super.init(a, b, c)
     }
-    
+
     override func paintShape() {
         print("Hinh Cau")
     }
-    
+
     override func dienTich() -> Double {
         return 4 * pi * pow(r, 2)
     }
-    
+
     override func theTich() -> Double {
         return (4 * pi * pow(r, 3)) / 3
     }
@@ -370,19 +370,19 @@ class LapPhuong: BaChieu {
     init(a: Double, b: Double, c: Double) {
         super.init(a, b, c)
     }
-    
+
     override func paintShape() {
         print("Hinh Lap Phuong")
     }
-    
+
     override func dienTich() -> Double {
         return 6 * pow(a, 2)
     }
-    
+
     fileprivate func dienTichXungQuanh() -> Double {
         return 4 * pow(a, 2)
     }
-    
+
     override func theTich() -> Double {
         return pow(a, 3)
     }
@@ -408,6 +408,63 @@ var lp = LapPhuong(a: 5, b: 5, c: 5)
 print("Dien tich toan phan hinh lap phuong: \(lp.dienTich())")
 print("Dien tich xung quanh hinh lap phuong: \(lp.dienTichXungQuanh())")
 print("The tich hinh lap phuong: \(lp.theTich())")
+
+print("Bai 7: ")
+
+class Student {
+    fileprivate var fullName: String
+    fileprivate var birthDay: Int
+    fileprivate var totalScore: Double
+    
+    init(fullName: String, birthDay: Int, totalScore: Double) {
+        self.fullName = fullName
+        self.birthDay = birthDay
+        self.totalScore = totalScore
+    }
+}
+
+class ClassManager {
+    private var students: [Student] = []
+    
+    init(students: [Student]) {
+        self.students = students
+    }
+    
+    fileprivate func bubbleSort() -> [Student] {
+        var arr: [Student] = students
+        for i in 0..<arr.count {
+            for j in 1..<arr.count - i {
+                if arr[j].totalScore < arr[j - 1].totalScore {
+                    let tmp = arr[j - 1]
+                    arr[j - 1] = arr[j]
+                    arr[j] = tmp
+                } else if arr[j].totalScore == arr[j - 1].totalScore {
+                    for i in 0..<arr.count {
+                        for j in 1..<arr.count - i {
+                            if arr[j].birthDay < arr[j - 1].birthDay {
+                                let tmp = arr[j - 1]
+                                arr[j - 1] = arr[j]
+                                arr[j] = tmp
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        return arr
+    }
+}
+
+var st1 = Student(fullName: "nguyen xuan thanh", birthDay: 1996, totalScore: 9)
+var st2 = Student(fullName: "bui van thanh", birthDay: 1999, totalScore: 8)
+var st3 = Student(fullName: "tran thi kim thoa", birthDay: 1998, totalScore: 8)
+
+var sts = [st1, st2, st3]
+var lop1 = ClassManager(students: sts)
+var x = lop1.bubbleSort()
+x.forEach { (st) in
+    print(st.fullName)
+}
 
 //print("Bai 8: ")
 //class Date {
