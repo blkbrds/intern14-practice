@@ -493,7 +493,7 @@ class Date {
             return 31
         case 2:
             guard (year % 4 == 0 && year % 100 != 0) || year % 400 == 0 else {
-                self.month = monthPrint
+                monthPrint = month
                 return 28
             }
             monthPrint = month
@@ -507,18 +507,97 @@ class Date {
     }
     
     fileprivate func advance() -> Void {
-        let d = day + 1
-        let m = month
-        let y = year
+        var d = 0
+        var m = 0
+        var y = 0
+        if normalize() {
+        if month == 12{
+            if day == 31 {
+                d = day - 30
+                m = month - 11
+                y = year + 1
+            } else {
+                d = day + 1
+                m = month
+                y = year
+            }
+        } else if month == 1, month == 3, month == 5, month == 7, month == 8, month == 10 {
+            if day == 31 {
+                d = day - 30
+                m = month + 1
+                y = year
+            } else {
+                d = day + 1
+                m = month
+                y = year
+            }
+        } else if month == 4, month == 6, month == 9, month == 11 {
+            if day == 31 {
+                d = day - 30
+                m = month + 1
+                y = year
+            } else {
+                d = day + 1
+                m = month
+                y = year
+            }
+        } else {
+            if (year % 4 == 0 && year % 100 != 0) || year % 400 == 0 {
+                if day == 29 {
+                    d = day - 28
+                    m = month + 1
+                    y = year
+                } else {
+                    d = day + 1
+                    m = month
+                    y = year
+                }
+            } else {
+                if day == 28 {
+                    d = day - 27
+                    m = month + 1
+                    y = year
+                } else {
+                    d = day + 1
+                    m = month
+                    y = year
+                }
+            }
+            }
+        }
+            
+//            if month == 12 {
+//                if day == 31 {
+//                    d = day - 30
+//                    m = month - 11
+//                    y = year + 1
+//                }
+//            } else {
+//                d = day + 1
+//                m = month + 1
+//            }
+//        } else if month == 2 {
+//            guard (year % 4 == 0 && year % 100 != 0) || year % 400 == 0 else {
+//                return d = day + 1
+//            }
+//            monthPrint = month
+//            return d = day - 29
+//        } else {
+//            guard day != 30 else {
+//                return d = day - 29
+//            }
+//            d = day + 1
         print("Next Date: \(d) - \(m) - \(y)")
     }
     
     fileprivate func print8() {
-        print("Date: \(day) - \(month) - \(year)")
+        if normalize() {
+            print("Date: \(day) - \(month) - \(year)")
+        }
     }
 }
 
-var date1 = Date(day: 18, month: 01, year: 1996)
+var date1 = Date(day: 31, month: 02, year: 1996)
 var dayPrint = date1.daysln(month: 9)
 date1.print8()
 print("Number of day in month \(date1.monthPrint) of \(date1.year) is : \(dayPrint)")
