@@ -415,7 +415,7 @@ class Student {
     fileprivate var fullName: String
     fileprivate var birthDay: Int
     fileprivate var totalScore: Double
-    
+
     init(fullName: String, birthDay: Int, totalScore: Double) {
         self.fullName = fullName
         self.birthDay = birthDay
@@ -425,11 +425,11 @@ class Student {
 
 class ClassManager {
     private var students: [Student] = []
-    
+
     init(students: [Student]) {
         self.students = students
     }
-    
+
     fileprivate func bubbleSort() -> [Student] {
         var arr: [Student] = students
         for i in 0..<arr.count {
@@ -466,72 +466,66 @@ x.forEach { (st) in
     print(st.fullName)
 }
 
-//print("Bai 8: ")
-//class Date {
-//    fileprivate var day: Int = 1
-//    fileprivate var month: Int = 1
-//    fileprivate var year: Int = 1
-//
-//    init(day: Int, month: Int, year: Int) {
-//        self.day = day
-//        self.month = month
-//        self.year = year
-//    }
-//
-//    func normalize() -> Bool {
-//        if day >= 1 && day <= 30 {
-//            if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) && month == 2 {
-//                day <= 29
-//                return true
-//            }
-//            return true
-//        } else {
-//            return false
-//        }
-//
-//        if month >= 1 && month <= 12 {
-//            return true
-//        } else {
-//            return false
-//        }
-//    }
-//
-//    func daysln() -> Int {
-//        switch month {
-//        case 1:
-//            return 31
-//        case 2:
-//            guard (year % 4 == 0 && year % 100 != 0) || year % 400 == 0 else {
-//                return 28
-//            }
-//            return 29
-//        case 3:
-//            return 31
-//        case 4:
-//            return 30
-//        case 5:
-//            return 31
-//        case 6:
-//            return 30
-//        case 7:
-//            return 31
-//        case 8:
-//            return 31
-//        case 9:
-//            return 30
-//        case 10:
-//            return 31
-//        case 11:
-//            return 30
-//        case 12:
-//            return 31
-//        default:
-//            return 0
-//        }
-//    }
-//}
-//
+print("Bai 8: ")
+class Date {
+    fileprivate var day = 1
+    fileprivate var month = 1
+    fileprivate var year = 1
+    fileprivate var monthPrint = 1
+    
+    init?(day: Int, month: Int, year: Int) {
+        guard day <= 31 && day >= 1 else { return nil }
+        self.day = day
+        guard month <= 12 && month >= 1 else { return nil }
+        self.month = month
+        guard year >= 1 else { return nil }
+        self.year = year
+    }
+    
+    fileprivate func daysln(month: Int) -> Int? {
+        guard month <= 12 && month >= 1 else {
+            return nil
+        }
+        switch month {
+        case 1, 3, 5, 7, 8, 10, 12:
+            monthPrint = month
+            return 31
+        case 2:
+            guard (year % 4 == 0 && year % 100 != 0) || year % 400 == 0 else {
+                self.month = monthPrint
+                return 28
+            }
+            monthPrint = month
+            return 29
+        case 4, 6, 9, 11:
+            monthPrint = month
+            return 30
+        default:
+            return 0
+        }
+    }
+    
+    fileprivate func advance() -> Void {
+        let d = day + 1
+        let m = month
+        let y = year
+        print("Next Date: \(d) - \(m) - \(y)")
+    }
+    
+    fileprivate func print8() {
+        print("Date: \(day) - \(month) - \(year)")
+    }
+}
 
+var date1 = Date(day: 18, month: 01, year: 1996)
+var dayPrint = date1?.daysln(month: 9)
+if let date = date1 , let dayPrint = dayPrint {
+    date1?.print8()
+    print("Number of day in month \(date.monthPrint) of \(date.year) is : \(dayPrint)")
+    date1?.advance()
+} else {
+    print("Date Error")
+}
 
 print("Bai 9: ")
 
