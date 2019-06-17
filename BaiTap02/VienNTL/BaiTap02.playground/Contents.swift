@@ -15,19 +15,12 @@ class PhanSo {
     }
 
     func inPS() -> String {
-        switch mauSo {
-        case 0:
-            return "The fraction doesn't EXITS"
-        case 1:
-            return "\(tuSo)"
-        default:
-            return  "\(tuSo / ucln(tuSo, mauSo)) / \(mauSo / ucln(tuSo, mauSo))"
-        }
+    return  "\(tuSo) / \(mauSo)"
     }
 
     func congPS(_ ps: PhanSo?) -> PhanSo? {
         if let ps = ps {
-            let result = PhanSo(tuSo * ps.mauSo + ps.tuSo * mauSo, mauSo * ps.mauSo)
+            let result = PhanSo((tuSo * ps.mauSo + ps.tuSo * mauSo) / ucln(tuSo, mauSo), (mauSo * ps.mauSo) / ucln(tuSo, mauSo) )
             return result
         }
         return nil
@@ -35,7 +28,7 @@ class PhanSo {
 
     func truSP(_ ps: PhanSo?) -> PhanSo? {
         if let ps = ps {
-            let result = PhanSo(tuSo * ps.mauSo - ps.tuSo * mauSo, mauSo * ps.mauSo)
+            let result = PhanSo((tuSo * ps.mauSo - ps.tuSo * mauSo) / ucln(tuSo, mauSo), (mauSo * ps.mauSo) / ucln(tuSo, mauSo))
             return result
         }
         return nil
@@ -43,7 +36,7 @@ class PhanSo {
 
     func nhanPS(_ ps: PhanSo?) -> PhanSo? {
         if let ps = ps {
-            let result = PhanSo(tuSo * ps.tuSo, mauSo * ps.mauSo)
+            let result = PhanSo(tuSo * ps.tuSo / ucln(tuSo, mauSo), mauSo * ps.mauSo / ucln(tuSo, mauSo))
             return result
         }
         return nil
@@ -51,7 +44,7 @@ class PhanSo {
 
     func chiaPS(_ ps: PhanSo?) -> PhanSo? {
         if let ps = ps {
-            let result = PhanSo(tuSo * ps.mauSo, mauSo * ps.tuSo)
+            let result = PhanSo(tuSo * ps.mauSo / ucln(tuSo, mauSo), mauSo * ps.tuSo / ucln(tuSo, mauSo))
             return result
         }
         return nil
@@ -155,10 +148,10 @@ class TamGiac: DaGiac {
 
     func DienTich() -> Double {
         var dienTich: Double = 0
-        let chuVi: Double = chuVi(3, arrayEdgeTriangle)
-        for  in 0...1  {
-            let tempDienTich: Double = chuVi * (chuVi - arrayEdgeTriangle[index]) * (chuVi - arrayEdgeTriangle[index + 1]) * (chuVi - arrayEdgeTriangle[index + 2])
-            dienTich = sqrt(tempDt)
+        let ChuVi: Double = chuVi(3, arrayEdgeTriangle)
+        for index in 0...1  {
+            let tempDienTich: Double = ChuVi * (ChuVi - arrayEdgeTriangle[index]) * (ChuVi - arrayEdgeTriangle[index + 1]) * (ChuVi - arrayEdgeTriangle[index + 2])
+            dienTich = sqrt(tempDienTich)
         }
         return dienTich
     }
@@ -283,7 +276,7 @@ class Tron: HaiChieu {
         return pi * pow(r, 2)
     }
 }
-class TamGiac: HaiChieu {
+class TamGiac2: HaiChieu {
     private(set) var c: Double
 
     init(_ a: Double, _ b: Double, _ c: Double ) {
@@ -321,10 +314,10 @@ class LapPhuong: BaChieu {
         return chieuDai * chieuDai * chieuDai
     }
     override func dienTich() -> Double {
-        return 6 * pow(a, 2)
+        return 6 * pow(chieuDai, 2)
     }
     func dienTichXungQuanh() -> Double {
-        return 4 * pow(a, 2)
+        return 4 * pow(chieuDai, 2)
     }
 }
 // Bài 7:
@@ -474,5 +467,4 @@ class IntNumberSum {
     }
 
 }
-var qc = IntNumberSum(10)
-print("\(qc.sumA())")
+
