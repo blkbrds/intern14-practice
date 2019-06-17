@@ -26,6 +26,6 @@ if let a = A(number: -100) {
     a.sumOfNumber()
 }
 else {
-    print("This is not a array of integers")
+    print("This is not an array of integers")
 }
 
