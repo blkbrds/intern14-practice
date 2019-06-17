@@ -483,7 +483,7 @@ var st3 = Student(fullName: "tran thi kim thoa", birthDay: 1998, totalScore: 8)
 var sts = [st1, st2, st3]
 var lop1 = ClassManager(students: sts)
 var x = lop1.bubbleSort()
-y.forEach { (st) in
+x.forEach { (st) in
     print(st.fullName)
 }
 
