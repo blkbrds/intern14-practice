@@ -454,6 +454,26 @@ class ClassManager {
         }
         return arr
     }
+    
+    fileprivate func getChar(_ string: String, atIndex i: Int) -> String {
+        if i < string.count {
+            return String(string[string.index(string.startIndex, offsetBy: i)])
+        }
+        return ""
+    }
+    
+    fileprivate func printFullName() -> [Student] {
+        var tempArr: [Student] = students
+        for index in 0..<tempArr.count {
+            for index2 in 0..<tempArr[index].fullName.count {
+                let temp = tempArr[index].fullName
+                if (getChar(temp, atIndex: index2 - 1) == " ") {
+                    getChar(temp, atIndex: index2).uppercased()
+                }
+            }
+        }
+        return tempArr
+    }
 }
 
 var st1 = Student(fullName: "nguyen xuan thanh", birthDay: 1996, totalScore: 9)
@@ -463,7 +483,7 @@ var st3 = Student(fullName: "tran thi kim thoa", birthDay: 1998, totalScore: 8)
 var sts = [st1, st2, st3]
 var lop1 = ClassManager(students: sts)
 var x = lop1.bubbleSort()
-x.forEach { (st) in
+y.forEach { (st) in
     print(st.fullName)
 }
 
@@ -547,6 +567,10 @@ class Date {
                     d = day - 28
                     m = month + 1
                     y = year
+                } else if day == 30, day == 31 {
+                    d = 0
+                    m = 0
+                    y = 0
                 } else {
                     d = day + 1
                     m = month
@@ -557,36 +581,18 @@ class Date {
                     d = day - 27
                     m = month + 1
                     y = year
+                } else if day == 29, day == 30, day == 31 {
+                    d = 0
+                    m = 0
+                    y = 0
                 } else {
                     d = day + 1
                     m = month
                     y = year
                 }
             }
-            }
         }
-            
-//            if month == 12 {
-//                if day == 31 {
-//                    d = day - 30
-//                    m = month - 11
-//                    y = year + 1
-//                }
-//            } else {
-//                d = day + 1
-//                m = month + 1
-//            }
-//        } else if month == 2 {
-//            guard (year % 4 == 0 && year % 100 != 0) || year % 400 == 0 else {
-//                return d = day + 1
-//            }
-//            monthPrint = month
-//            return d = day - 29
-//        } else {
-//            guard day != 30 else {
-//                return d = day - 29
-//            }
-//            d = day + 1
+    }
         print("Next Date: \(d) - \(m) - \(y)")
     }
     
@@ -597,7 +603,7 @@ class Date {
     }
 }
 
-var date1 = Date(day: 31, month: 02, year: 1996)
+var date1 = Date(day: 29, month: 02, year: 1996)
 var dayPrint = date1.daysln(month: 9)
 date1.print8()
 print("Number of day in month \(date1.monthPrint) of \(date1.year) is : \(dayPrint)")
