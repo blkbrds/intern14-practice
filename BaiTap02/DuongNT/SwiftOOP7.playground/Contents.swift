@@ -25,17 +25,17 @@ class QuanLiHocSinh {
     func sort() -> [HocSinh] {
         var tempArr = hocSinh
         for i in 0..<tempArr.count {
-            for j in 1..<tempArr.count - i {
-                if tempArr[j].tongDiem < tempArr[j - 1].tongDiem {
-                    let tmp = tempArr[j - 1]
-                    tempArr[j - 1] = tempArr[j]
+            for j in 0..<(tempArr.count - i - 1) {
+                if tempArr[j].tongDiem > tempArr[j + 1].tongDiem {
+                    let tmp = tempArr[j + 1]
+                    tempArr[j + 1] = tempArr[j]
                     tempArr[j] = tmp
-                } else if tempArr[j].tongDiem == tempArr[j - 1].tongDiem {
+                } else if tempArr[j].tongDiem == tempArr[j + 1].tongDiem {
                     for i in 0..<tempArr.count {
-                        for j in 1..<tempArr.count - i {
-                            if tempArr[j].namSinh < tempArr[j - 1].namSinh {
-                                let tmp = tempArr[j - 1]
-                                tempArr[j - 1] = tempArr[j]
+                        for j in 0..<(tempArr.count - i - 1) {
+                            if tempArr[j].namSinh > tempArr[j + 1].namSinh {
+                                let tmp = tempArr[j + 1]
+                                tempArr[j + 1] = tempArr[j]
                                 tempArr[j] = tmp
                             }
                         }

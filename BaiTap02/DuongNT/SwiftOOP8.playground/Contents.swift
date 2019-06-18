@@ -33,7 +33,7 @@ class Date {
             case 4, 6, 9, 11:
                 return 30
             case 2:
-                if year % 4 == 0 {
+                if year % 400 == 0 || year % 4 == 0 && year % 100 != 0 {
                     return 29
                 } else {
                     return 28
