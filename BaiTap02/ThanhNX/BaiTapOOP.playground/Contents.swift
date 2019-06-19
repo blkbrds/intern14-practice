@@ -3,7 +3,7 @@ print("Bai 1: ")
 class Fraction {
     private(set) var tuSo: Double
     private(set) var mauSo: Double
-
+    
     init?(tuSo: Double, mauSo: Double) {
         self.tuSo = tuSo
         if mauSo == 0 {
@@ -12,11 +12,11 @@ class Fraction {
         }
         self.mauSo = mauSo
     }
-
-
+    
+    
     func findUCLN(_ num1: Double, _ num2: Double) -> Double {
-        var a: Double = abs(num1)
-        var b: Double = abs(num2)
+        var a = abs(num1)
+        var b = abs(num2)
         if a == 0 && b == 0 {
             return 0
         } else {
@@ -30,27 +30,27 @@ class Fraction {
         }
         return a
     }
-
+    
     func sum(_ b: Fraction?) -> Fraction? {
         guard let b = b else { return nil }
         return Fraction(tuSo: tuSo * b.mauSo + b.tuSo * mauSo, mauSo: mauSo * b.mauSo)
     }
-
+    
     func sub(_ b: Fraction?) -> Fraction? {
         guard let b = b else { return nil }
         return Fraction(tuSo: tuSo * b.mauSo - b.tuSo * mauSo, mauSo: mauSo * b.mauSo)
     }
-
+    
     func mul(_ b: Fraction?) -> Fraction? {
         guard let b = b else { return nil }
         return Fraction(tuSo: tuSo * b.tuSo, mauSo: mauSo * b.mauSo)
     }
-
+    
     func div(_ b: Fraction?) -> Fraction? {
         guard let b = b else { return nil }
         return Fraction(tuSo: tuSo * b.mauSo, mauSo: mauSo * b.tuSo)
     }
-
+    
     func printFrac() -> String {
         return "Phan so: \(tuSo / findUCLN(tuSo, mauSo)) / \(mauSo / findUCLN(tuSo, mauSo))"
     }
@@ -98,7 +98,7 @@ class DaGiac {
             return
         }
     }
-
+    
     fileprivate func chuVi() -> Double {
         var cv = 0.0
         guard !arrCanh.contains(0.0) || soCanh > 2 || soCanh == Double(arrCanh.count) else {
@@ -116,7 +116,7 @@ class DaGiac {
         }
         return cv
     }
-
+    
     fileprivate func printCanh() -> Void {
         for value in arrCanh {
             print("Canh cua da giac: \(value)")
@@ -144,7 +144,7 @@ class TamGiac: DaGiac {
         }
         return cv
     }
-
+    
     fileprivate func dienTich() -> Double {
         var s = 1.0
         let p: Double = (arrCanh[0] + arrCanh[1] + arrCanh[2]) / 2
@@ -165,13 +165,22 @@ class TamGiac4 {
     private var a = 0.0
     private var b = 0.0
     private var c = 0.0
-
+    
     init(a: Double, b: Double, c: Double) {
+        guard a > 0 else {
+            return
+        }
         self.a = a
+        guard b > 0 else {
+            return
+        }
         self.b = b
+        guard c > 0 else {
+            return
+        }
         self.c = c
     }
-
+    
     fileprivate func isPythagoras() -> (dung: Bool,inMang: [Double]) {
         if a == sqrt(pow(b, 2) + pow(c, 2))
             || b == sqrt(pow(a, 2) + pow(c, 2))
@@ -183,16 +192,16 @@ class TamGiac4 {
 }
 
 var input: [TamGiac4] = [TamGiac4(a: 1, b: 2, c: 3),
-                        TamGiac4(a: 2, b: 3, c: 4),
-                        TamGiac4(a: 3, b: 4, c: 5)]
+                         TamGiac4(a: 2, b: 3, c: 4),
+                         TamGiac4(a: 3, b: 4, c: 5)]
 
 class CheckTamGiac {
     var tamGiacs: [TamGiac4]
-
+    
     init(tamGiacs: [TamGiac4]) {
         self.tamGiacs = tamGiacs
     }
-
+    
     func checkPytagoras(_ tg: [TamGiac4]) -> Void {
         tamGiacs.forEach { (tg) in
             let check = tg.isPythagoras()
@@ -210,15 +219,15 @@ print("Bai 5: ")
 struct CStack {
     fileprivate var arrStack : [Int] = [1, 2, 3]
     fileprivate var maxStack = 5
-
+    
     func isEmpty() -> Bool {
         return arrStack.isEmpty
     }
-
+    
     func isFull() -> Bool {
         return arrStack.count == maxStack
     }
-
+    
     mutating func push(_ element: Int) {
         if !isFull() {
             arrStack.append(element)
@@ -226,7 +235,7 @@ struct CStack {
             print("Stack Full")
         }
     }
-
+    
     mutating func pop() -> Int? {
         return arrStack.popLast()
     }
@@ -244,10 +253,10 @@ print(stack.arrStack)
 
 print("Bai 6: ")
 class HinhVe {
-    fileprivate var pi = Double.pi
+    final let pi = Double.pi
     fileprivate var a: Double
     fileprivate var b: Double
-
+    
     init(_ a: Double,_ b: Double) {
         self.a = a
         self.b = b
@@ -258,15 +267,15 @@ class HinhVe {
 }
 
 class HaiChieu: HinhVe {
-
+    
     init(a: Double, b: Double) {
         super.init(a, b)
     }
-
+    
     fileprivate func chuVi() -> Double {
         return a + b
     }
-
+    
     fileprivate func dienTich() -> Double {
         return a * b
     }
@@ -278,15 +287,15 @@ class HinhTron: HaiChieu {
         self.r = r
         super.init(a: a, b: b)
     }
-
+    
     override func paintShape() {
         print("Hinh Tron")
     }
-
+    
     override func chuVi() -> Double {
         return r * 2 * pi
     }
-
+    
     override func dienTich() -> Double {
         return pow(r, 2) * pi
     }
@@ -296,15 +305,15 @@ class HinhVuong: HaiChieu {
     override init(a: Double, b: Double) {
         super.init(a: a, b: b)
     }
-
+    
     override func paintShape() {
         print("Hinh Vuong")
     }
-
+    
     override func chuVi() -> Double {
         return a * 4
     }
-
+    
     override func dienTich() -> Double {
         return a * b
     }
@@ -316,15 +325,15 @@ class TamGiac6: HaiChieu {
         self.c = c
         super.init(a: a, b: b)
     }
-
+    
     override func paintShape() {
         print("Hinh Tam Giac")
     }
-
+    
     override func chuVi() -> Double {
         return a + b + c
     }
-
+    
     override func dienTich() -> Double {
         return sqrt(((a + b + c) / 2) * (((a + b + c) / 2) - a) * (((a + b + c) / 2) - b) * (((a + b + c) / 2) - c))
     }
@@ -332,16 +341,16 @@ class TamGiac6: HaiChieu {
 
 class BaChieu: HinhVe {
     fileprivate var c: Double
-
+    
     init(_ a: Double,_ b: Double,_ c: Double) {
         self.c = c
         super.init(a, b)
     }
-
+    
     fileprivate func dienTich() -> Double {
         return a * b * c
     }
-
+    
     fileprivate func theTich() -> Double {
         return pow(a, 2) * pow(b, 2) * pow(c, 2)
     }
@@ -353,15 +362,15 @@ class HinhCau: BaChieu {
         self.r = r
         super.init(a, b, c)
     }
-
+    
     override func paintShape() {
         print("Hinh Cau")
     }
-
+    
     override func dienTich() -> Double {
         return 4 * pi * pow(r, 2)
     }
-
+    
     override func theTich() -> Double {
         return (4 * pi * pow(r, 3)) / 3
     }
@@ -371,19 +380,19 @@ class LapPhuong: BaChieu {
     init(a: Double, b: Double, c: Double) {
         super.init(a, b, c)
     }
-
+    
     override func paintShape() {
         print("Hinh Lap Phuong")
     }
-
+    
     override func dienTich() -> Double {
         return 6 * pow(a, 2)
     }
-
+    
     fileprivate func dienTichXungQuanh() -> Double {
         return 4 * pow(a, 2)
     }
-
+    
     override func theTich() -> Double {
         return pow(a, 3)
     }
@@ -416,7 +425,7 @@ class Student {
     fileprivate var fullName: String
     fileprivate var birthDay: Int
     fileprivate var totalScore: Double
-
+    
     init(fullName: String, birthDay: Int, totalScore: Double) {
         self.fullName = fullName
         self.birthDay = birthDay
@@ -426,22 +435,22 @@ class Student {
 
 class ClassManager {
     private var students: [Student] = []
-
+    
     init(students: [Student]) {
         self.students = students
     }
-
+    
     fileprivate func bubbleSort() -> [Student] {
         var arr: [Student] = students
         for i in 0..<arr.count {
-            for j in 1..<arr.count - i {
+            for j in 0..<arr.count - i - 1 {
                 if arr[j].totalScore < arr[j - 1].totalScore {
                     let tmp = arr[j - 1]
                     arr[j - 1] = arr[j]
                     arr[j] = tmp
                 } else if arr[j].totalScore == arr[j - 1].totalScore {
                     for i in 0..<arr.count {
-                        for j in 1..<arr.count - i {
+                        for j in 0..<arr.count - i - 1 {
                             if arr[j].birthDay < arr[j - 1].birthDay {
                                 let tmp = arr[j - 1]
                                 arr[j - 1] = arr[j]
@@ -531,68 +540,68 @@ class Date {
         var m = 0
         var y = 0
         if normalize() {
-        if month == 12{
-            if day == 31 {
-                d = day - 30
-                m = month - 11
-                y = year + 1
-            } else {
-                d = day + 1
-                m = month
-                y = year
-            }
-        } else if month == 1, month == 3, month == 5, month == 7, month == 8, month == 10 {
-            if day == 31 {
-                d = day - 30
-                m = month + 1
-                y = year
-            } else {
-                d = day + 1
-                m = month
-                y = year
-            }
-        } else if month == 4, month == 6, month == 9, month == 11 {
-            if day == 31 {
-                d = day - 30
-                m = month + 1
-                y = year
-            } else {
-                d = day + 1
-                m = month
-                y = year
-            }
-        } else {
-            if (year % 4 == 0 && year % 100 != 0) || year % 400 == 0 {
-                if day == 29 {
-                    d = day - 28
+            if month == 12{
+                if day == 31 {
+                    d = day - 30
+                    m = month - 11
+                    y = year + 1
+                } else {
+                    d = day + 1
+                    m = month
+                    y = year
+                }
+            } else if month == 1, month == 3, month == 5, month == 7, month == 8, month == 10 {
+                if day == 31 {
+                    d = day - 30
                     m = month + 1
                     y = year
-                } else if day == 30, day == 31 {
-                    d = 0
-                    m = 0
-                    y = 0
+                } else {
+                    d = day + 1
+                    m = month
+                    y = year
+                }
+            } else if month == 4, month == 6, month == 9, month == 11 {
+                if day == 31 {
+                    d = day - 30
+                    m = month + 1
+                    y = year
                 } else {
                     d = day + 1
                     m = month
                     y = year
                 }
             } else {
-                if day == 28 {
-                    d = day - 27
-                    m = month + 1
-                    y = year
-                } else if day == 29, day == 30, day == 31 {
-                    d = 0
-                    m = 0
-                    y = 0
+                if (year % 4 == 0 && year % 100 != 0) || year % 400 == 0 {
+                    if day == 29 {
+                        d = day - 28
+                        m = month + 1
+                        y = year
+                    } else if day == 30, day == 31 {
+                        d = 0
+                        m = 0
+                        y = 0
+                    } else {
+                        d = day + 1
+                        m = month
+                        y = year
+                    }
                 } else {
-                    d = day + 1
-                    m = month
-                    y = year
+                    if day == 28 {
+                        d = day - 27
+                        m = month + 1
+                        y = year
+                    } else if day == 29, day == 30, day == 31 {
+                        d = 0
+                        m = 0
+                        y = 0
+                    } else {
+                        d = day + 1
+                        m = month
+                        y = year
+                    }
                 }
             }
         }
-    }
         print("Next Date: \(d) - \(m) - \(y)")
     }
     
@@ -652,7 +661,7 @@ class A {
         self.n = n
     }
     func sumA() -> Int {
-        var sum: Int = 0
+        var sum = 0
         for i in 1...n {
             sum += i
         }
@@ -660,5 +669,5 @@ class A {
     }
 }
 
-var n = A(n: 100)
+var n = A(n: 10)
 print("Tong S tu 1 den n la: \(n.sumA())")
