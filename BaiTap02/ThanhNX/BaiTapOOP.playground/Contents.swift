@@ -15,8 +15,8 @@ class Fraction {
 
 
     func findUCLN(_ num1: Double, _ num2: Double) -> Double {
-        var a: Double = abs(num1)
-        var b: Double = abs(num2)
+        var a = abs(num1)
+        var b = abs(num2)
         if a == 0 && b == 0 {
             return 0
         } else {
@@ -167,8 +167,17 @@ class TamGiac4 {
     private var c = 0.0
 
     init(a: Double, b: Double, c: Double) {
+        guard a > 0 else {
+            return
+        }
         self.a = a
+        guard b > 0 else {
+            return
+        }
         self.b = b
+        guard c > 0 else {
+            return
+        }
         self.c = c
     }
 
@@ -244,7 +253,7 @@ print(stack.arrStack)
 
 print("Bai 6: ")
 class HinhVe {
-    fileprivate var pi = Double.pi
+    final let pi = Double.pi
     fileprivate var a: Double
     fileprivate var b: Double
 
@@ -434,14 +443,14 @@ class ClassManager {
     fileprivate func bubbleSort() -> [Student] {
         var arr: [Student] = students
         for i in 0..<arr.count {
-            for j in 1..<arr.count - i {
+            for j in 0..<arr.count - i - 1 {
                 if arr[j].totalScore < arr[j - 1].totalScore {
                     let tmp = arr[j - 1]
                     arr[j - 1] = arr[j]
                     arr[j] = tmp
                 } else if arr[j].totalScore == arr[j - 1].totalScore {
                     for i in 0..<arr.count {
-                        for j in 1..<arr.count - i {
+                        for j in 0..<arr.count - i - 1 {
                             if arr[j].birthDay < arr[j - 1].birthDay {
                                 let tmp = arr[j - 1]
                                 arr[j - 1] = arr[j]
@@ -652,7 +661,7 @@ class A {
         self.n = n
     }
     func sumA() -> Int {
-        var sum: Int = 0
+        var sum = 0
         for i in 1...n {
             sum += i
         }
@@ -660,5 +669,5 @@ class A {
     }
 }
 
-var n = A(n: 100)
+var n = A(n: 10)
 print("Tong S tu 1 den n la: \(n.sumA())")
