@@ -461,7 +461,7 @@ class ClassManager {
                 }
             }
         }
-        return arr
+        return arr        
     }
     
     fileprivate func getChar(_ string: String, atIndex i: Int) -> String {
