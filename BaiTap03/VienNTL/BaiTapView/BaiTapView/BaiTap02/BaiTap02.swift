@@ -17,6 +17,7 @@ class User {
         self.avatar = avatar
     }
 }
+
 class BaiTap02: UIViewController {
     
     var users: [User] = [
@@ -35,6 +36,7 @@ class BaiTap02: UIViewController {
         super.viewDidLoad()
         outPut()
     }
+    
     func addProfileView(frame: CGRect, name: String, avatarImage: UIImage ) -> UIView {
         let container = UIView(frame: frame)
         container.backgroundColor = .black
@@ -48,13 +50,14 @@ class BaiTap02: UIViewController {
         // Username
         let userName = UILabel(frame: CGRect(x: 0, y: 100, width: 100, height: 30))
         userName.text = name
-        userName.textAlignment = NSTextAlignment.center
+        userName.textAlignment = .center
         userName.backgroundColor = UIColor(red: 116 / 255.0, green: 185 / 255.0, blue: 255 / 255.0, alpha: 1)
         userName.textColor = .blue
         container.addSubview(userName)
         
         return container
     }
+    
     func outPut() {
         var x: CGFloat = 20
         var y: CGFloat = 50
@@ -67,7 +70,6 @@ class BaiTap02: UIViewController {
                 x = 20
                 y += 130 + 20
             }
-            print("index= \(index), x= \(x), y= \(y)")
         }
     }
 }
