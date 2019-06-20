@@ -32,28 +32,23 @@ class Bai2ViewController: UIViewController {
         User(name: "Thong", avatar: #imageLiteral(resourceName: "img8"))]
     
     override func viewDidLoad() {
+        struct Config {
+            static let nameWidth: CGFloat = 100
+            static let nameHeight: CGFloat = 130
+        }
         super.viewDidLoad()
-        UIScreen.main.bounds.width
         func prints() {
+            var x: CGFloat = 50
+            var y: CGFloat = 50
             for index in 0..<users.count {
-                var x: Int
-                var y: Int
-                if index < 3 {
-                    x = index * 100
-                    y = 100
-                } else if index < 6 {
-                    x = (index - 3) * 100
-                    y = 250
-                } else {
-                    x = (index - 6) * 100
-                    y = 400
-                }
-                
-                let frame = CGRect(x: x, y: y, width: 100, height: 130)
-                let containerView = addAvatarView(frame: frame,
-                                                  name: users[index].name,
-                                                  avatarImage: users[index].avatar)
+                let frame = CGRect(x: x, y: y, width: Config.nameWidth, height: Config.nameHeight)
+                let containerView = addAvatarView(frame: frame, name: users[index].name, avatarImage: users[index].avatar)
                 view.addSubview(containerView)
+                x += 120
+                if x >= UIScreen.main.bounds.width - Config.nameWidth {
+                    x = 50
+                    y += 150
+                }
             }
         }
         

@@ -35,30 +35,24 @@ class Bai4ViewController: UIViewController {
                              Calculator(cal: "/")]
 
     override func viewDidLoad() {
+        struct Config {
+            static let calWidth: CGFloat = 70
+            static let calHeight: CGFloat = 50
+        }
         super.viewDidLoad()
         func prints() {
-            for index in 1...cal.count {
-                var x: Int
-                var y: Int
-                
-                if index < 5 {
-                    x = index * 70
-                    y = 300
-                } else if index < 9 {
-                    x = (index - 4) * 70
-                    y = 400
-                } else if index < 13 {
-                    x = (index - 8) * 70
-                    y = 500
-                } else {
-                    x = (index - 12) * 70
-                    y = 600
-                }
-                
-                let frame = CGRect(x: x, y: y, width: 70, height: 50)
-                let containerView = calculatorView(frame: frame, cal: cal[index - 1].cal)
+            var x: CGFloat = 70
+            var y: CGFloat = 300
+            for index in 0..<cal.count {
+                let frame = CGRect(x: x, y: y, width: Config.calWidth, height: Config.calHeight)
+                let containerView = calculatorView(frame: frame, cal: cal[index].cal)
                 view.addSubview(containerView)
                 
+                x += 70
+                if x >= UIScreen.main.bounds.width - Config.calWidth {
+                    x = 70
+                    y += 100
+                }
             }
             let calView = calcuView(frame: CGRect(x: 70, y: 200, width: 260, height: 60))
             view.addSubview(calView)
@@ -101,7 +95,6 @@ class Bai4ViewController: UIViewController {
     func calcuView(frame: CGRect) -> UIView {
         let calView = UIView(frame: frame)
         calView.backgroundColor = .clear
-        //UIColor(red: 116 / 255, green: 185 / 255, blue: 255 / 255, alpha: 1)
         calView.layer.borderColor = UIColor(red: 116 / 255, green: 185 / 255, blue: 255 / 255, alpha: 1).cgColor
         calView.layer.borderWidth = 1
         let labelUILabel = UILabel(frame: CGRect(x: 1, y: 1, width: 250, height: 58))

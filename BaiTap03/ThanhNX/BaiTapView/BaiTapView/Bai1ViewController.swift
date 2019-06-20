@@ -14,15 +14,15 @@ class Bai1ViewController: UIViewController {
         super.viewDidLoad()
 
         let frame = CGRect(x: 50, y: 100, width: 100, height: 100)
-        let userAvatar = UIImageView(image: UIImage(named: "avatar"))
+        let userAvatar = UIImageView(image: UIImage(named: "img6"))
         userAvatar.frame = frame
         userAvatar.contentMode = .scaleToFill
         view.addSubview(userAvatar)
         
         let userName = UILabel(frame: CGRect(x: 50, y: 200, width: 100, height: 30))
-        userName.text = "Name1"
+        userName.text = "Thanh"
         userName.textAlignment = NSTextAlignment.center
-        userName.backgroundColor = UIColor(red: 116/255.0, green: 185/255.0, blue: 255/255.0, alpha: 1)
+        userName.backgroundColor = UIColor(red: 116 / 255.0, green: 185 / 255.0, blue: 255 / 255.0, alpha: 1)
         userName.textColor = .white
         view.addSubview(userName)
     }
