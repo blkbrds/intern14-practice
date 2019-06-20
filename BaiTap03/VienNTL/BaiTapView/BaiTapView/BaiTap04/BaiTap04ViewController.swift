@@ -38,7 +38,7 @@ class BaiTap04ViewController: UIViewController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        let frameFirst = CGRect(x: 25, y: 50, width: UIScreen.main.bounds.width - 50, height: 100)
+        let frameFirst = CGRect(x: 25, y: 50, width: UIScreen.main.bounds.width - 50, height: 150)
         view.addSubview(resultView(frameFirst))
         output()
     }
@@ -80,7 +80,7 @@ class BaiTap04ViewController: UIViewController {
     
     func output() {
         var x: CGFloat = 25
-        var y: CGFloat = 180
+        var y: CGFloat = 230
         for index in 0..<buttonList.count {
             let frame = CGRect(x: x, y: y, width: 65, height: 65)
             let buttonView = addButtonView(frame, buttonList[index].nameButton)
@@ -88,7 +88,7 @@ class BaiTap04ViewController: UIViewController {
             x += 86
             if x >= UIScreen.main.bounds.width - 50 {
                 x = 25
-                y += 70
+                y += 90
             }
         }
     }
@@ -99,11 +99,11 @@ class BaiTap04ViewController: UIViewController {
         containerView.layer.borderWidth = 1
         containerView.layer.borderColor = UIColor(red: 240 / 255.0, green: 147 / 255.0, blue: 43 / 255.0, alpha: 1).cgColor
         
-        let frameResultView = CGRect(x: 0, y: 0, width: containerView.bounds.width - 20, height: 100)
+        let frameResultView = CGRect(x: 0, y: 0, width: containerView.bounds.width - 20, height: containerView.bounds.height)
         let resultView = UILabel(frame: frameResultView)
         resultView.backgroundColor = .black
         resultView.text = "0"
-        resultView.font = UIFont.systemFont(ofSize: 50.0)
+        resultView.font = UIFont.systemFont(ofSize: 60.0)
         resultView.textAlignment = .right
         resultView.textColor = .black
         resultView.backgroundColor = .white
