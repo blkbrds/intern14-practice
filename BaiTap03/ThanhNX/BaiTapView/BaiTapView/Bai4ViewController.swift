@@ -74,6 +74,7 @@ class Bai4ViewController: UIViewController {
         containerView.addSubview(button)
         button.layer.borderColor = UIColor(red: 48 / 255, green: 51 / 255, blue: 107 / 255, alpha: 1).cgColor
         button.layer.borderWidth = 1
+        button.titleLabel?.font = UIFont.systemFont(ofSize: 30)
         if button.titleLabel?.text == "AC" {
             button.backgroundColor = .orange
         } else if button.titleLabel?.text == "=" {
@@ -97,13 +98,15 @@ class Bai4ViewController: UIViewController {
         calView.backgroundColor = .clear
         calView.layer.borderColor = UIColor(red: 116 / 255, green: 185 / 255, blue: 255 / 255, alpha: 1).cgColor
         calView.layer.borderWidth = 1
+        
         let labelUILabel = UILabel(frame: CGRect(x: 1, y: 1, width: 250, height: 58))
         labelUILabel.text = "0"
+        labelUILabel.font = UIFont.systemFont(ofSize: 40)
         labelUILabel.textColor = .black
         labelUILabel.textAlignment = .right
         labelUILabel.backgroundColor = .white
-        
         calView.addSubview(labelUILabel)
+        
         return calView
     }
 }

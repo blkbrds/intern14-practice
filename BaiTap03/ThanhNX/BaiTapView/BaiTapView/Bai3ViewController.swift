@@ -18,7 +18,7 @@ class Bai3ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let slideViews = sliderView(frame: CGRect(x: x, y: y, width: Config.sliderWidth, height: Config.sliderHeight), number: 75)
+        let slideViews = sliderView(frame: CGRect(x: x, y: y, width: Config.sliderWidth, height: Config.sliderHeight), number: 30)
         view.addSubview(slideViews)
     }
     
