@@ -54,9 +54,7 @@ class BaiTap04ViewController: UIViewController {
         button.layer.borderColor = UIColor(red: 249 / 255.0, green: 249 / 255.0, blue: 254 / 255.0, alpha: 1).cgColor
         button.layer.borderWidth = 1
         containerView.addSubview(button)
-//        if button.titleLabel?.text == "AC" {
-//            button.backgroundColor = UIColor(red: 244 / 255.0, green: 158 / 255.0, blue: 63 / 255.0, alpha: 1)
-//        }
+        
         switch button.titleLabel?.text {
         case "AC":
             button.backgroundColor = UIColor(red: 44 / 255.0, green: 50 / 255.0, blue: 80 / 255.0, alpha: 1)
@@ -75,6 +73,7 @@ class BaiTap04ViewController: UIViewController {
         default:
             button.backgroundColor = UIColor(red: 63 / 255.0, green: 68 / 255.0, blue: 97 / 255.0, alpha: 1)
         }
+        
         return containerView
     }
     
