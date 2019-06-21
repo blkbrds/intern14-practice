@@ -45,8 +45,8 @@
 3. [View](https://drive.google.com/file/d/1W7-qWDDkcBO5jzWcNQeLYMUQ7p0F4GN6/view?usp=sharing)
 4. [IBOutlet & Actions](https://drive.google.com/file/d/1TiSqXVlGbi0aoiKFBal8r5032x7gJMdC/view?usp=sharing)
 5. [Touch Event](https://drive.google.com/file/d/17lFo_-fukfKwd3XPkC_sobDLUzyQHLxp/view?usp=sharing)
-6. Swift OOP
-7. MVC
+6. [Swift OOP](<https://drive.google.com/file/d/1GEfD6XmTjrRqDZ5U-gDAJXDcs5lCgzDD/view>)
+7. [MVC](<https://drive.google.com/file/d/1MpDe5aVbq8N5dWoFhi6NpWn4OcatzSKX/view>)
 8. Navigation
 9. Custom View
 10. AutoLayout
