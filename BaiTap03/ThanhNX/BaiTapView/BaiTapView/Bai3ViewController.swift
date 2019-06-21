@@ -9,8 +9,8 @@
 import UIKit
 
 class Bai3ViewController: UIViewController {
-    let x = (UIScreen.main.bounds.width / 2) - (Config.sliderWidth / 2)
-    let y = (UIScreen.main.bounds.height / 2) - (Config.sliderHeight / 2)
+    let x = UIScreen.main.bounds.width / 2 - Config.sliderWidth / 2
+    let y = UIScreen.main.bounds.height / 2 - Config.sliderHeight / 2
     struct Config {
         static let sliderWidth: CGFloat = 60
         static let sliderHeight: CGFloat = 280

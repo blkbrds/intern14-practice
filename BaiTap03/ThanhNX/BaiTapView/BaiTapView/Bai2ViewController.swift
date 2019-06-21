@@ -19,6 +19,10 @@ class User {
 }
 
 class Bai2ViewController: UIViewController {
+    struct Config {
+        static let nameWidth: CGFloat = 100
+        static let nameHeight: CGFloat = 130
+    }
     
     var users: [User] = [
         User(name: "Thanh", avatar: #imageLiteral(resourceName: "img1")),
@@ -31,28 +35,20 @@ class Bai2ViewController: UIViewController {
         User(name: "Thu", avatar: #imageLiteral(resourceName: "img3")),
         User(name: "Thong", avatar: #imageLiteral(resourceName: "img8"))]
     
-    override func viewDidLoad() {
-        struct Config {
-            static let nameWidth: CGFloat = 100
-            static let nameHeight: CGFloat = 130
-        }
+    override func viewDidLoad() {        
         super.viewDidLoad()
-        func prints() {
-            var x: CGFloat = 50
-            var y: CGFloat = 50
-            for index in 0..<users.count {
-                let frame = CGRect(x: x, y: y, width: Config.nameWidth, height: Config.nameHeight)
-                let containerView = addAvatarView(frame: frame, name: users[index].name, avatarImage: users[index].avatar)
-                view.addSubview(containerView)
-                x += 120
-                if x >= UIScreen.main.bounds.width - Config.nameWidth {
-                    x = 50
-                    y += 150
-                }
+        var x: CGFloat = 50
+        var y: CGFloat = 50
+        for index in 0..<users.count {
+            let frame = CGRect(x: x, y: y, width: Config.nameWidth, height: Config.nameHeight)
+            let containerView = addAvatarView(frame: frame, name: users[index].name, avatarImage: users[index].avatar)
+            view.addSubview(containerView)
+            x += 120
+            if x >= UIScreen.main.bounds.width - Config.nameWidth {
+                x = 50
+                y += 150
             }
         }
-        
-        _ = prints()
     }
     
     func addAvatarView(frame: CGRect, name: String, avatarImage: UIImage) -> UIView {
@@ -67,7 +63,7 @@ class Bai2ViewController: UIViewController {
         let userNameLabel = UILabel(frame: CGRect(x: 0, y: 100, width: 90, height: 30))
         userNameLabel.text = name
         userNameLabel.textAlignment = .center
-        userNameLabel.backgroundColor = UIColor(red: 116/255, green: 185/255, blue: 255/255, alpha: 1)
+        userNameLabel.backgroundColor = UIColor(red: 116 / 255, green: 185 / 255, blue: 255 / 255, alpha: 1)
         userNameLabel.textColor = .white
         containerView.addSubview(userNameLabel)
         

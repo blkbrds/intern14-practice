@@ -16,6 +16,10 @@ class Calculator {
 }
 
 class Bai4ViewController: UIViewController {
+    struct Config {
+        static let calWidth: CGFloat = 70
+        static let calHeight: CGFloat = 50
+    }
     
     var cal: [Calculator] = [Calculator(cal: "1"),
                              Calculator(cal: "2"),
@@ -35,30 +39,22 @@ class Bai4ViewController: UIViewController {
                              Calculator(cal: "/")]
 
     override func viewDidLoad() {
-        struct Config {
-            static let calWidth: CGFloat = 70
-            static let calHeight: CGFloat = 50
-        }
         super.viewDidLoad()
-        func prints() {
-            var x: CGFloat = 70
-            var y: CGFloat = 300
-            for index in 0..<cal.count {
-                let frame = CGRect(x: x, y: y, width: Config.calWidth, height: Config.calHeight)
-                let containerView = calculatorView(frame: frame, cal: cal[index].cal)
-                view.addSubview(containerView)
-                
-                x += 70
-                if x >= UIScreen.main.bounds.width - Config.calWidth {
-                    x = 70
-                    y += 100
-                }
+        var x: CGFloat = 70
+        var y: CGFloat = 300
+        for index in 0..<cal.count {
+            let frame = CGRect(x: x, y: y, width: Config.calWidth, height: Config.calHeight)
+            let containerView = calculatorView(frame: frame, cal: cal[index].cal)
+            view.addSubview(containerView)
+            
+            x += 70
+            if x >= UIScreen.main.bounds.width - Config.calWidth {
+                x = 70
+                y += 100
             }
-            let calView = calcuView(frame: CGRect(x: 70, y: 200, width: 260, height: 60))
-            view.addSubview(calView)
         }
-        
-        _ = prints()
+        let calView = calcuView(frame: CGRect(x: 70, y: 200, width: 260, height: 60))
+        view.addSubview(calView)
     }
     
     func calculatorView(frame: CGRect, cal: String) -> UIView {
