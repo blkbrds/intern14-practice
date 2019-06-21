@@ -13,7 +13,7 @@ class BaiTap03ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         let x =  CGRect(x: 10, y: 25, width: UIScreen.main.bounds.width - 20, height: 500)
-        view.addSubview(sliderView(x, 75))
+        view.addSubview(sliderView(x, 20))
     }
     
     func sliderView(_ frame: CGRect, _ number: CGFloat) -> UIView {
@@ -26,9 +26,9 @@ class BaiTap03ViewController: UIViewController {
         columnView.backgroundColor = UIColor(red: 235 / 255.0, green: 77 / 255.0, blue: 75 / 255.0, alpha: 1)
         containerView.addSubview(columnView)
         
+        let located = number * columnView.bounds.height / 100
         
-        
-        let button = UIButton(frame: CGRect(x: columnView.bounds.width * 0.5, y: columnView.bounds.height * 0.5, width: 50, height: 50))
+        let button = UIButton(frame: CGRect(x: columnView.bounds.width * 0.5, y: columnView.bounds.height - located, width: 50, height: 50))
         button.backgroundColor = .white
         button.setTitle("\(Int(number))", for: .normal)
         button.setTitleColor(.black, for: .normal)
