@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		B0128DA822C08C72003335D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0128DA722C08C72003335D9 /* AppDelegate.swift */; };
-		B0128DAA22C08C72003335D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0128DA922C08C72003335D9 /* ViewController.swift */; };
 		B0128DAF22C08C72003335D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0128DAE22C08C72003335D9 /* Assets.xcassets */; };
 		B0128DBB22C08CE5003335D9 /* Bai1OAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0128DB922C08CE5003335D9 /* Bai1OAViewController.swift */; };
 		B0128DBC22C08CE5003335D9 /* Bai1OAViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0128DBA22C08CE5003335D9 /* Bai1OAViewController.xib */; };
+		B0128DC222C0CF39003335D9 /* Bai2OAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0128DC022C0CF39003335D9 /* Bai2OAViewController.swift */; };
+		B0128DC322C0CF39003335D9 /* Bai2OAViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0128DC122C0CF39003335D9 /* Bai2OAViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B0128DA422C08C72003335D9 /* IBOutletAndIBAction.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IBOutletAndIBAction.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0128DA722C08C72003335D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B0128DA922C08C72003335D9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B0128DAE22C08C72003335D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B0128DB322C08C72003335D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B0128DB922C08CE5003335D9 /* Bai1OAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bai1OAViewController.swift; sourceTree = "<group>"; };
 		B0128DBA22C08CE5003335D9 /* Bai1OAViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Bai1OAViewController.xib; sourceTree = "<group>"; };
+		B0128DC022C0CF39003335D9 /* Bai2OAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bai2OAViewController.swift; sourceTree = "<group>"; };
+		B0128DC122C0CF39003335D9 /* Bai2OAViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Bai2OAViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,31 @@
 		B0128DA622C08C72003335D9 /* IBOutletAndIBAction */ = {
 			isa = PBXGroup;
 			children = (
+				B0128DBF22C0CF1E003335D9 /* Bai2 */,
+				B0128DBE22C0CECA003335D9 /* Bai1 */,
 				B0128DA722C08C72003335D9 /* AppDelegate.swift */,
-				B0128DA922C08C72003335D9 /* ViewController.swift */,
 				B0128DAE22C08C72003335D9 /* Assets.xcassets */,
 				B0128DB322C08C72003335D9 /* Info.plist */,
+			);
+			path = IBOutletAndIBAction;
+			sourceTree = "<group>";
+		};
+		B0128DBE22C0CECA003335D9 /* Bai1 */ = {
+			isa = PBXGroup;
+			children = (
 				B0128DB922C08CE5003335D9 /* Bai1OAViewController.swift */,
 				B0128DBA22C08CE5003335D9 /* Bai1OAViewController.xib */,
 			);
-			path = IBOutletAndIBAction;
+			name = Bai1;
+			sourceTree = "<group>";
+		};
+		B0128DBF22C0CF1E003335D9 /* Bai2 */ = {
+			isa = PBXGroup;
+			children = (
+				B0128DC022C0CF39003335D9 /* Bai2OAViewController.swift */,
+				B0128DC122C0CF39003335D9 /* Bai2OAViewController.xib */,
+			);
+			path = Bai2;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0128DAF22C08C72003335D9 /* Assets.xcassets in Resources */,
+				B0128DC322C0CF39003335D9 /* Bai2OAViewController.xib in Resources */,
 				B0128DBC22C08CE5003335D9 /* Bai1OAViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -134,8 +154,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0128DAA22C08C72003335D9 /* ViewController.swift in Sources */,
 				B0128DA822C08C72003335D9 /* AppDelegate.swift in Sources */,
+				B0128DC222C0CF39003335D9 /* Bai2OAViewController.swift in Sources */,
 				B0128DBB22C08CE5003335D9 /* Bai1OAViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
