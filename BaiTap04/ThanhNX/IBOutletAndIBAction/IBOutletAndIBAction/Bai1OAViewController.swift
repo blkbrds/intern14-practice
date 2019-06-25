@@ -17,7 +17,7 @@ class Bai1OAViewController: UIViewController {
         static let timeHeight: CGFloat = 20
     }
         
-    @IBOutlet weak var time2Label: UILabel!
+    @IBOutlet private weak var time2Label: UILabel!
     var timeLabel = UILabel()
     
     override func viewDidLoad() {

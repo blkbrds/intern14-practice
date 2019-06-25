@@ -12,16 +12,16 @@ class Bai2OAViewController: UIViewController {
     let x = UIScreen.main.bounds.width / 2 - Config.allWidth / 2
     let y = UIScreen.main.bounds.height / 2 - Config.allHeight / 2
     
-    @IBOutlet weak var chuoiLabel: UILabel!
-    @IBOutlet weak var nhoLabel: UILabel!
-    @IBOutlet weak var taoLabel: UILabel!
-    @IBOutlet weak var chuoiButton: UIButton!
-    @IBOutlet weak var nhoButton: UIButton!
-    @IBOutlet weak var taoButton: UIButton!
-    @IBOutlet weak var allButton: UIButton!
-    @IBOutlet weak var chuoiView: UIView!
-    @IBOutlet weak var nhoView: UIView!
-    @IBOutlet weak var taoView: UIView!
+    @IBOutlet private weak var chuoiLabel: UILabel!
+    @IBOutlet private weak var nhoLabel: UILabel!
+    @IBOutlet private weak var taoLabel: UILabel!
+    @IBOutlet private weak var chuoiButton: UIButton!
+    @IBOutlet private weak var nhoButton: UIButton!
+    @IBOutlet private weak var taoButton: UIButton!
+    @IBOutlet private weak var allButton: UIButton!
+    @IBOutlet private weak var chuoiView: UIView!
+    @IBOutlet private weak var nhoView: UIView!
+    @IBOutlet private weak var taoView: UIView!
     
     struct Config {
         static let allWidth: CGFloat = 110
@@ -48,25 +48,25 @@ class Bai2OAViewController: UIViewController {
         
     }
     
-    @IBAction func chuoiButtonTouchUpInside(_ sender: Any) {
+    @IBAction private func chuoiButtonTouchUpInside(_ sender: Any) {
         if let str = chuoiLabel.text, let num = Int(str) {
             chuoiLabel.text = "\(num + 1)"
         }
         print("Chuoi")
     }
-    @IBAction func nhoButtonTouchUpInside(_ sender: Any) {
+    @IBAction private func nhoButtonTouchUpInside(_ sender: Any) {
         if let str = nhoLabel.text, let num = Int(str) {
             nhoLabel.text = "\(num + 1)"
         }
         print("Nho")
     }
-    @IBAction func taoButtonTouchUpInside(_ sender: Any) {
+    @IBAction private func taoButtonTouchUpInside(_ sender: Any) {
         if let str = taoLabel.text, let num = Int(str) {
             taoLabel.text = "\(num + 1)"
         }
         print("Tao")
     }
-    @IBAction func allButtonTouchUpInside(_ sender: Any) {
+    @IBAction private func allButtonTouchUpInside(_ sender: Any) {
         if let str = chuoiLabel.text, let num = Int(str) {
             chuoiLabel.text = "\(num + 1)"
         }

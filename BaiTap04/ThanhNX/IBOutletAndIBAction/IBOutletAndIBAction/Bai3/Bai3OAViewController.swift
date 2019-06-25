@@ -9,8 +9,8 @@
 import UIKit
 
 class User {
-    var name: String
-    var avatar: UIImage
+    fileprivate var name: String
+    fileprivate var avatar: UIImage
     
     init(name: String, avatar: UIImage) {
         self.name = name
