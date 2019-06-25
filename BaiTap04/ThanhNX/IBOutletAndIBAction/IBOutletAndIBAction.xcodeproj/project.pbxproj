@@ -13,6 +13,8 @@
 		B0128DBC22C08CE5003335D9 /* Bai1OAViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0128DBA22C08CE5003335D9 /* Bai1OAViewController.xib */; };
 		B0128DC222C0CF39003335D9 /* Bai2OAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0128DC022C0CF39003335D9 /* Bai2OAViewController.swift */; };
 		B0128DC322C0CF39003335D9 /* Bai2OAViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0128DC122C0CF39003335D9 /* Bai2OAViewController.xib */; };
+		B0128DCC22C1E011003335D9 /* Bai3OAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0128DCA22C1E011003335D9 /* Bai3OAViewController.swift */; };
+		B0128DCD22C1E011003335D9 /* Bai3OAViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0128DCB22C1E011003335D9 /* Bai3OAViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		B0128DBA22C08CE5003335D9 /* Bai1OAViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Bai1OAViewController.xib; sourceTree = "<group>"; };
 		B0128DC022C0CF39003335D9 /* Bai2OAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bai2OAViewController.swift; sourceTree = "<group>"; };
 		B0128DC122C0CF39003335D9 /* Bai2OAViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Bai2OAViewController.xib; sourceTree = "<group>"; };
+		B0128DCA22C1E011003335D9 /* Bai3OAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bai3OAViewController.swift; sourceTree = "<group>"; };
+		B0128DCB22C1E011003335D9 /* Bai3OAViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Bai3OAViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 		B0128DA622C08C72003335D9 /* IBOutletAndIBAction */ = {
 			isa = PBXGroup;
 			children = (
+				B0128DC522C1CEC6003335D9 /* Bai3 */,
 				B0128DBF22C0CF1E003335D9 /* Bai2 */,
 				B0128DBE22C0CECA003335D9 /* Bai1 */,
 				B0128DA722C08C72003335D9 /* AppDelegate.swift */,
@@ -81,6 +86,15 @@
 				B0128DC122C0CF39003335D9 /* Bai2OAViewController.xib */,
 			);
 			path = Bai2;
+			sourceTree = "<group>";
+		};
+		B0128DC522C1CEC6003335D9 /* Bai3 */ = {
+			isa = PBXGroup;
+			children = (
+				B0128DCA22C1E011003335D9 /* Bai3OAViewController.swift */,
+				B0128DCB22C1E011003335D9 /* Bai3OAViewController.xib */,
+			);
+			path = Bai3;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,6 +158,7 @@
 				B0128DAF22C08C72003335D9 /* Assets.xcassets in Resources */,
 				B0128DC322C0CF39003335D9 /* Bai2OAViewController.xib in Resources */,
 				B0128DBC22C08CE5003335D9 /* Bai1OAViewController.xib in Resources */,
+				B0128DCD22C1E011003335D9 /* Bai3OAViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,6 +172,7 @@
 				B0128DA822C08C72003335D9 /* AppDelegate.swift in Sources */,
 				B0128DC222C0CF39003335D9 /* Bai2OAViewController.swift in Sources */,
 				B0128DBB22C08CE5003335D9 /* Bai1OAViewController.swift in Sources */,
+				B0128DCC22C1E011003335D9 /* Bai3OAViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
