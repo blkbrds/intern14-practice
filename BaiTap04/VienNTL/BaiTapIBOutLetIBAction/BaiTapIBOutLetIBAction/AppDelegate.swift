@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.backgroundColor = .white
         window?.makeKeyAndVisible()
         
-        let Home = BaiTap01ViewController()
+        let Home = BaiTap02ViewController()
         window?.rootViewController = Home
         
         return true

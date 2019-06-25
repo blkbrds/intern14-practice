@@ -10,7 +10,7 @@ import UIKit
 
 class BaiTap01ViewController: UIViewController {
 
-    @IBOutlet weak var dateTime: UIButton!
+    @IBOutlet weak var dateTimeButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -29,6 +29,6 @@ class BaiTap01ViewController: UIViewController {
             let position = touch.location(in: self.view)
             print("\(position.x),\(position.y)")
         }
-        changeTime(dateTime)
+        changeTime(dateTimeButton)
     }
 }
