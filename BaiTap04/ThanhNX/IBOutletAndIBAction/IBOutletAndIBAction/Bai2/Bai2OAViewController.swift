@@ -8,20 +8,6 @@
 
 import UIKit
 
-class TraiCay {
-    var chuoi: Int = 0
-    var nho: Int = 0
-    var tao: Int = 0
-    
-    init(chuoi: Int, nho: Int, tao: Int) {
-        if chuoi >= 0, nho >= 0, tao >= 0 {
-            self.chuoi = chuoi
-            self.nho = nho
-            self.tao = tao
-        }
-    }
-}
-
 class Bai2OAViewController: UIViewController {
     let x = UIScreen.main.bounds.width / 2 - Config.allWidth / 2
     let y = UIScreen.main.bounds.height / 2 - Config.allHeight / 2
@@ -59,17 +45,37 @@ class Bai2OAViewController: UIViewController {
         allButton.layer.cornerRadius = 10
         allButton.setTitle("+1 All", for: .normal)
         allButton.setTitleColor(.black, for: .normal)
+        
     }
+    
     @IBAction func chuoiButtonTouchUpInside(_ sender: Any) {
+        if let str = chuoiLabel.text, let num = Int(str) {
+            chuoiLabel.text = "\(num + 1)"
+        }
         print("Chuoi")
     }
     @IBAction func nhoButtonTouchUpInside(_ sender: Any) {
+        if let str = nhoLabel.text, let num = Int(str) {
+            nhoLabel.text = "\(num + 1)"
+        }
         print("Nho")
     }
     @IBAction func taoButtonTouchUpInside(_ sender: Any) {
+        if let str = taoLabel.text, let num = Int(str) {
+            taoLabel.text = "\(num + 1)"
+        }
         print("Tao")
     }
     @IBAction func allButtonTouchUpInside(_ sender: Any) {
+        if let str = chuoiLabel.text, let num = Int(str) {
+            chuoiLabel.text = "\(num + 1)"
+        }
+        if let str = nhoLabel.text, let num = Int(str) {
+            nhoLabel.text = "\(num + 1)"
+        }
+        if let str = taoLabel.text, let num = Int(str) {
+            taoLabel.text = "\(num + 1)"
+        }
         print("All")
     }
 }
