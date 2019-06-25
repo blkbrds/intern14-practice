@@ -14,6 +14,8 @@
 		319807F022BC91B20072F58A /* BaiTap1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319807EF22BC91B20072F58A /* BaiTap1.swift */; };
 		319807F222BC93690072F58A /* BaiTap2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319807F122BC93690072F58A /* BaiTap2.swift */; };
 		319807F422BC9B080072F58A /* BaiTap3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319807F322BC9B080072F58A /* BaiTap3.swift */; };
+		31F39C7122C1AAFB009D1C9E /* BaiTap4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F39C7022C1AAFB009D1C9E /* BaiTap4.swift */; };
+		31F39C7322C1D2C9009D1C9E /* BaiTap5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F39C7222C1D2C9009D1C9E /* BaiTap5.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		319807EF22BC91B20072F58A /* BaiTap1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaiTap1.swift; sourceTree = "<group>"; };
 		319807F122BC93690072F58A /* BaiTap2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaiTap2.swift; sourceTree = "<group>"; };
 		319807F322BC9B080072F58A /* BaiTap3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaiTap3.swift; sourceTree = "<group>"; };
+		31F39C7022C1AAFB009D1C9E /* BaiTap4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaiTap4.swift; sourceTree = "<group>"; };
+		31F39C7222C1D2C9009D1C9E /* BaiTap5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaiTap5.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,8 @@
 				319807EF22BC91B20072F58A /* BaiTap1.swift */,
 				319807F122BC93690072F58A /* BaiTap2.swift */,
 				319807F322BC9B080072F58A /* BaiTap3.swift */,
+				31F39C7022C1AAFB009D1C9E /* BaiTap4.swift */,
+				31F39C7222C1D2C9009D1C9E /* BaiTap5.swift */,
 			);
 			path = BaiTapView;
 			sourceTree = "<group>";
@@ -144,7 +150,9 @@
 				319807DE22BC90D00072F58A /* AppDelegate.swift in Sources */,
 				319807F022BC91B20072F58A /* BaiTap1.swift in Sources */,
 				319807F222BC93690072F58A /* BaiTap2.swift in Sources */,
+				31F39C7322C1D2C9009D1C9E /* BaiTap5.swift in Sources */,
 				319807F422BC9B080072F58A /* BaiTap3.swift in Sources */,
+				31F39C7122C1AAFB009D1C9E /* BaiTap4.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
