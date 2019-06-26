@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.backgroundColor = .white
         window?.makeKeyAndVisible()
         
-        let bai1OAViewController = Bai4OAViewController()
+        let bai1OAViewController = Bai5OAViewController()
         window?.rootViewController = bai1OAViewController
         
         return true
