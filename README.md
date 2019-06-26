@@ -48,8 +48,8 @@
 6. [Swift OOP](<https://drive.google.com/file/d/1GEfD6XmTjrRqDZ5U-gDAJXDcs5lCgzDD/view>)
 7. [MVC](<https://drive.google.com/file/d/1MpDe5aVbq8N5dWoFhi6NpWn4OcatzSKX/view>)
 8. [Navigation](<https://drive.google.com/file/d/10jR21DnFmomJzJceiDy7cnz9MvePkW_n/view>)
-9. Custom View
-10. AutoLayout
+9. [Custom View](https://drive.google.com/file/d/12Tr74fvqAh4T6E2QWD1PHjlFa9jv_NYu/view?usp=sharing)
+10. [AutoLayout](https://drive.google.com/file/d/1hiq4U76waCO-Fs5nQ6yx2v_Y2uR2Hoi4/view?usp=sharing)
 11. Protocol
 12. TabbarController
 13. TableView - Simple TableView
