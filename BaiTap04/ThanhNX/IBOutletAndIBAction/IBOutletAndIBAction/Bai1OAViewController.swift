@@ -9,21 +9,20 @@
 import UIKit
 
 class Bai1OAViewController: UIViewController {
-    let x = UIScreen.main.bounds.width / 2 - Config.timeWidth / 2
-    let y = UIScreen.main.bounds.height / 2 - Config.timeHeight / 2
+    let xFrameLabel = UIScreen.main.bounds.width / 2 - Config.timeWidth / 2
+    let yFrameLabel = UIScreen.main.bounds.height / 2 - Config.timeHeight / 2
     
     struct Config {
         static let timeWidth: CGFloat = 200
         static let timeHeight: CGFloat = 20
     }
         
-    @IBOutlet private weak var time2Label: UILabel!
-    var timeLabel = UILabel()
+    @IBOutlet private weak var timeLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let frameLabel = CGRect(x: x, y: y, width: Config.timeWidth, height: Config.timeHeight)
+        let frameLabel = CGRect(x: xFrameLabel, y: yFrameLabel, width: Config.timeWidth, height: Config.timeHeight)
         configUI(frame: frameLabel)
     }
     
@@ -34,9 +33,6 @@ class Bai1OAViewController: UIViewController {
         timeLabel.textColor = .red
         timeLabel.textAlignment = .center
         view.addSubview(timeLabel)
-        
-        time2Label.textColor = .red
-        time2Label.textAlignment = .center
     }
     
     func timeUpdate() -> String {
@@ -53,9 +49,6 @@ class Bai1OAViewController: UIViewController {
             let position = touch.location(in: self.view)
             print("\(position.x),\(position.y)")
         }
-        time2Label.text = timeUpdate()
-        if !timeLabel.isHidden {
-            timeLabel.isHidden = true
-        }
+        timeLabel.text = timeUpdate()        
     }
 }
