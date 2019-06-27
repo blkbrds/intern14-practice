@@ -26,16 +26,16 @@ class Bai5OAViewController: UIViewController {
         colorView.layer.masksToBounds = true
         guard let red = redSlider, let blue = blueSlider, let green = greenSlider else { return }
         colorChangeView(red: red.value, green: green.value, blue: blue.value)
-        colorLabel.text = "Color (R: \(Int(redSlider.value)) G: \(Int(greenSlider.value)) B: \(Int(blueSlider.value)))"
+        colorLabel.text = "Color (R: \(Int(red.value)) G: \(Int(green.value)) B: \(Int(blue.value)))"
     }
     
     func colorChangeView(red: Float, green: Float, blue: Float) {
-        colorView.backgroundColor = UIColor(red: CGFloat(red / 255.0), green: CGFloat(green / 255.0), blue: CGFloat(blue / 255.0), alpha: 1.0)
+        colorView.backgroundColor = UIColor(red: CGFloat(red / 255), green: CGFloat(green / 255), blue: CGFloat(blue / 255), alpha: 1)
     }
     
-    @IBAction func redValueChanged(_ sender: UISlider) {
+    @IBAction private func redValueChanged(_ sender: UISlider) {
         guard let red = redSlider, let blue = blueSlider, let green = greenSlider else { return }
         colorChangeView(red: red.value, green: green.value, blue: blue.value)
-        colorLabel.text = "Color (R: \(Int(redSlider.value)) G: \(Int(greenSlider.value)) B: \(Int(blueSlider.value)))"
+        colorLabel.text = "Color (R: \(Int(red.value)) G: \(Int(green.value)) B: \(Int(blue.value)))"
     }
 }
