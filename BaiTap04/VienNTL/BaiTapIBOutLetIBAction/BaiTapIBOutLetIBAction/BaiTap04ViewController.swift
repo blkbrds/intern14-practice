@@ -107,7 +107,6 @@ extension BaiTap04ViewController : UITextFieldDelegate {
         } else if textField == self.passwordTextField {
             checkLogin()
         }
-
         return true
     }
 }
