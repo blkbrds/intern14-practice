@@ -54,15 +54,16 @@
 12. [TableView](https://drive.google.com/file/d/1EORG4pAMwFgM_ZXQ565jTqDJnXWIdrb6/view?usp=sharing)
 13. [TableView - Contact List](https://drive.google.com/file/d/1rJwYCGnfq9KG0-HeHpNohRd4tITLLZOy/view?usp=sharing)
 14. [TabbarController](https://drive.google.com/file/d/1q5R4UjXaFJMqwILe6XjuT3PnREGMKTsU/view?usp=sharing)
-15. CollectionView - Basic
-16. CollectionView - Advance
-17. Core Location
-18. MapView - Basic
-19. MapView - Overlay
-20. Connect API
-21. Realm - Basic
-22. Closure
-23. GCD
+15. [CollectionView](https://drive.google.com/file/d/1cJbBzsextWSlvakQEFJX-1TdhiiYjPsL/view?usp=sharing)
+16. [CollectionView - Home Screen](https://drive.google.com/file/d/1wPnpK7ZwCiTD1j3ZCSdXpLMjyjzRfU6w/view?usp=sharing)
+17. [MVVM](https://drive.google.com/file/d/1QzzTYMqopNkTgPgV_zXPPGvgc9yvHImj/view?usp=sharing)
+18. Core Location
+19. MapView - Basic
+20. MapView - Overlay
+21. Connect API
+22. Realm - Basic
+23. Closure
+24. GCD
 
 ---
 
