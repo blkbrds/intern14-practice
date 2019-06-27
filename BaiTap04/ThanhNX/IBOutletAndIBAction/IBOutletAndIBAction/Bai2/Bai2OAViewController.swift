@@ -9,9 +9,6 @@
 import UIKit
 
 class Bai2OAViewController: UIViewController {
-    let x = UIScreen.main.bounds.width / 2 - Config.allWidth / 2
-    let y = UIScreen.main.bounds.height / 2 - Config.allHeight / 2
-    
     @IBOutlet private weak var chuoiLabel: UILabel!
     @IBOutlet private weak var nhoLabel: UILabel!
     @IBOutlet private weak var taoLabel: UILabel!
@@ -24,6 +21,8 @@ class Bai2OAViewController: UIViewController {
     @IBOutlet private weak var taoView: UIView!
     
     struct Config {
+        static let xFrameAll = UIScreen.main.bounds.width / 2 - Config.allWidth / 2
+        static let yFrameAll = UIScreen.main.bounds.height / 2 - Config.allHeight / 2
         static let allWidth: CGFloat = 110
         static let allHeight: CGFloat = 40
     }
@@ -31,7 +30,7 @@ class Bai2OAViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let frameButtonAll = CGRect(x: x, y: y, width: Config.allWidth, height: Config.allHeight)
+        let frameButtonAll = CGRect(x: Config.xFrameAll, y: Config.yFrameAll, width: Config.allWidth, height: Config.allHeight)
         buttonAll(frame: frameButtonAll)
     }
     

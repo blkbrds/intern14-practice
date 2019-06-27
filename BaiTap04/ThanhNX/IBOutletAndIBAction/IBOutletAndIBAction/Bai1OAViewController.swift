@@ -9,10 +9,9 @@
 import UIKit
 
 class Bai1OAViewController: UIViewController {
-    let xFrameLabel = UIScreen.main.bounds.width / 2 - Config.timeWidth / 2
-    let yFrameLabel = UIScreen.main.bounds.height / 2 - Config.timeHeight / 2
-    
     struct Config {
+        static let xFrameLabel = UIScreen.main.bounds.width / 2 - Config.timeWidth / 2
+        static let yFrameLabel = UIScreen.main.bounds.height / 2 - Config.timeHeight / 2
         static let timeWidth: CGFloat = 200
         static let timeHeight: CGFloat = 20
     }
@@ -22,7 +21,7 @@ class Bai1OAViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let frameLabel = CGRect(x: xFrameLabel, y: yFrameLabel, width: Config.timeWidth, height: Config.timeHeight)
+        let frameLabel = CGRect(x: Config.xFrameLabel, y: Config.yFrameLabel, width: Config.timeWidth, height: Config.timeHeight)
         configUI(frame: frameLabel)
     }
     
@@ -44,11 +43,6 @@ class Bai1OAViewController: UIViewController {
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        print("touches Began")
-        if let touch = touches.first {
-            let position = touch.location(in: self.view)
-            print("\(position.x),\(position.y)")
-        }
         timeLabel.text = timeUpdate()        
     }
 }

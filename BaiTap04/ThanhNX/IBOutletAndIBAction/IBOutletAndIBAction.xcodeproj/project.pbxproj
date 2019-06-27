@@ -19,6 +19,8 @@
 		B0128DD322C217F2003335D9 /* Bai4OAViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0128DD122C217F2003335D9 /* Bai4OAViewController.xib */; };
 		B0128DDA22C36829003335D9 /* Bai5OAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0128DD822C36829003335D9 /* Bai5OAViewController.swift */; };
 		B0128DDB22C36829003335D9 /* Bai5OAViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0128DD922C36829003335D9 /* Bai5OAViewController.xib */; };
+		B0F33B4422C4A35F0073EBE8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F33B4322C4A35F0073EBE8 /* User.swift */; };
+		B0F33B4622C4A6770073EBE8 /* DummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F33B4522C4A6770073EBE8 /* DummyData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		B0128DD122C217F2003335D9 /* Bai4OAViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Bai4OAViewController.xib; sourceTree = "<group>"; };
 		B0128DD822C36829003335D9 /* Bai5OAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bai5OAViewController.swift; sourceTree = "<group>"; };
 		B0128DD922C36829003335D9 /* Bai5OAViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Bai5OAViewController.xib; sourceTree = "<group>"; };
+		B0F33B4322C4A35F0073EBE8 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B0F33B4522C4A6770073EBE8 /* DummyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,7 @@
 			children = (
 				B0128DCA22C1E011003335D9 /* Bai3OAViewController.swift */,
 				B0128DCB22C1E011003335D9 /* Bai3OAViewController.xib */,
+				B0F33B4322C4A35F0073EBE8 /* User.swift */,
 			);
 			path = Bai3;
 			sourceTree = "<group>";
@@ -112,6 +117,7 @@
 			children = (
 				B0128DD022C217F2003335D9 /* Bai4OAViewController.swift */,
 				B0128DD122C217F2003335D9 /* Bai4OAViewController.xib */,
+				B0F33B4522C4A6770073EBE8 /* DummyData.swift */,
 			);
 			path = Bai4;
 			sourceTree = "<group>";
@@ -199,12 +205,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0F33B4622C4A6770073EBE8 /* DummyData.swift in Sources */,
 				B0128DA822C08C72003335D9 /* AppDelegate.swift in Sources */,
 				B0128DD222C217F2003335D9 /* Bai4OAViewController.swift in Sources */,
 				B0128DC222C0CF39003335D9 /* Bai2OAViewController.swift in Sources */,
 				B0128DDA22C36829003335D9 /* Bai5OAViewController.swift in Sources */,
 				B0128DBB22C08CE5003335D9 /* Bai1OAViewController.swift in Sources */,
 				B0128DCC22C1E011003335D9 /* Bai3OAViewController.swift in Sources */,
+				B0F33B4422C4A35F0073EBE8 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

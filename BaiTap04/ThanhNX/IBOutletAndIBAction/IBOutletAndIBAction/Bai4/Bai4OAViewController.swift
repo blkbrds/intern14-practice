@@ -8,13 +8,7 @@
 
 import UIKit
 
-struct DummyData {
-    static let username = "admin"
-    static let password = "admin123"
-}
-
-class Bai4OAViewController: UIViewController {
-    
+class Bai4OAViewController: UIViewController {    
     //MARK: - Properties
     
     //MARK: - Outlets
@@ -39,7 +33,6 @@ class Bai4OAViewController: UIViewController {
         usernameTextField.text?.removeAll()
         passwordTextField.text?.removeAll()
         errorLabel.isHidden = true
-        print("Clear")
     }
     
     //MARK: - Touch events
@@ -56,7 +49,6 @@ class Bai4OAViewController: UIViewController {
                 if username == DummyData.username {
                     if password == DummyData.password {
                         errorLabel.isHidden = true
-                        print("Login")
                     } else {
                         errorLabel.text = "nhập sai password"
                         errorLabel.isHidden = false
@@ -81,9 +73,7 @@ extension Bai4OAViewController : UITextFieldDelegate {
             passwordTextField.becomeFirstResponder()
         } else if textField == passwordTextField {
             login()
-        } else {
-            print("Nothing")
-        }
+        } else {}
         return true
     }
     
