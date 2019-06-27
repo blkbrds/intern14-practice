@@ -45,27 +45,26 @@ class Bai2OAViewController: UIViewController {
         allButton.layer.cornerRadius = 10
         allButton.setTitle("+1 All", for: .normal)
         allButton.setTitleColor(.black, for: .normal)
-        
     }
     
     @IBAction private func chuoiButtonTouchUpInside(_ sender: Any) {
         if let str = chuoiLabel.text, let num = Int(str) {
             chuoiLabel.text = "\(num + 1)"
         }
-        print("Chuoi")
     }
+    
     @IBAction private func nhoButtonTouchUpInside(_ sender: Any) {
         if let str = nhoLabel.text, let num = Int(str) {
             nhoLabel.text = "\(num + 1)"
         }
-        print("Nho")
     }
+    
     @IBAction private func taoButtonTouchUpInside(_ sender: Any) {
         if let str = taoLabel.text, let num = Int(str) {
             taoLabel.text = "\(num + 1)"
         }
-        print("Tao")
     }
+    
     @IBAction private func allButtonTouchUpInside(_ sender: Any) {
         if let str = chuoiLabel.text, let num = Int(str) {
             chuoiLabel.text = "\(num + 1)"
@@ -76,6 +75,5 @@ class Bai2OAViewController: UIViewController {
         if let str = taoLabel.text, let num = Int(str) {
             taoLabel.text = "\(num + 1)"
         }
-        print("All")
     }
 }

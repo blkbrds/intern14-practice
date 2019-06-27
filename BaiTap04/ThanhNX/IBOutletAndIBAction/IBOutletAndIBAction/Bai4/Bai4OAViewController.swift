@@ -77,10 +77,10 @@ class Bai4OAViewController: UIViewController {
 
 extension Bai4OAViewController : UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        if textField == self.usernameTextField {
-            self.passwordTextField.becomeFirstResponder()
-        } else if textField == self.passwordTextField {
-            self.login()
+        if textField == usernameTextField {
+            passwordTextField.becomeFirstResponder()
+        } else if textField == passwordTextField {
+            login()
         } else {
             print("Nothing")
         }

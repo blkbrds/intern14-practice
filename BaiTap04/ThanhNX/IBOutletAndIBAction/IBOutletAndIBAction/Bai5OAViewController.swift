@@ -15,11 +15,14 @@ class Bai5OAViewController: UIViewController {
     @IBOutlet private weak var greenSlider: UISlider!
     @IBOutlet private weak var blueSlider: UISlider!
     @IBOutlet private weak var colorLabel: UILabel!
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        colorViewBackground()
+    }
+    
+    func colorViewBackground() {
         colorView.layer.cornerRadius = 40
         colorView.layer.borderWidth = 2
         colorView.layer.borderColor = UIColor.black.cgColor
