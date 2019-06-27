@@ -21,42 +21,41 @@ class BaiTap3: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
     
-    @IBAction func vuButtonTouchUpInside(_ sender: UIButton) {
+    @IBAction private func vuButtonTouchUpInside(_ sender: UIButton) {
         print("Vũ")
     }
     
-    @IBAction func tuButtonTouchUpInside(_ sender: UIButton) {
+    @IBAction private func tuButtonTouchUpInside(_ sender: UIButton) {
         print("Tú")
     }
     
-    @IBAction func anhButtonTouchUpInside(_ sender: UIButton) {
+    @IBAction private func anhButtonTouchUpInside(_ sender: UIButton) {
         print("T.Anh")
     }
     
-    @IBAction func thanhButtonTouchUpInside(_ sender: UIButton) {
+    @IBAction private func thanhButtonTouchUpInside(_ sender: UIButton) {
         print("Thành")
     }
     
-    @IBAction func vienButtonTouchUpInside(_ sender: UIButton) {
+    @IBAction private func vienButtonTouchUpInside(_ sender: UIButton) {
         print("Viên")
     }
     
-    @IBAction func messiButtonTouchUpInside(_ sender: UIButton) {
+    @IBAction private func messiButtonTouchUpInside(_ sender: UIButton) {
         print("Messi")
     }
     
-    @IBAction func cr7ButtonTouchUpInside(_ sender: UIButton) {
+    @IBAction private func cr7ButtonTouchUpInside(_ sender: UIButton) {
         print("Ronaldo")
     }
     
-    @IBAction func rooneyButtonTouchUpInside(_ sender: UIButton) {
+    @IBAction private func rooneyButtonTouchUpInside(_ sender: UIButton) {
         print("Rooney")
     }
     
-    @IBAction func pogbaButtonTouchUpInside(_ sender: UIButton) {
+    @IBAction private func pogbaButtonTouchUpInside(_ sender: UIButton) {
         print("Pogba")
     }
 }

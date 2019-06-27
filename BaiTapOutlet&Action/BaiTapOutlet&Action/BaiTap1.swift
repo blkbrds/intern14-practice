@@ -9,8 +9,6 @@
 import UIKit
 
 class BaiTap1: UIViewController {
-    @IBOutlet private weak var time2Label: UILabel!
-
     let x = UIScreen.main.bounds.width / 2 - Config.timeWidth / 2
     let y = UIScreen.main.bounds.height / 2 - Config.timeHeight / 2
     
@@ -35,9 +33,6 @@ class BaiTap1: UIViewController {
         timeLabel.textColor = .red
         timeLabel.textAlignment = .center
         view.addSubview(timeLabel)
-        
-        time2Label.textColor = .red
-        time2Label.textAlignment = .center
     }
     
     func updateTime() -> String {
@@ -54,9 +49,6 @@ class BaiTap1: UIViewController {
             let position = touch.location(in: self.view)
             print("\(position.x), \(position.y)")
         }
-        if !timeLabel.isHidden {
-            timeLabel.isHidden = true
-        }
-        time2Label.text = updateTime()
+        timeLabel.text = updateTime()
     }
 }

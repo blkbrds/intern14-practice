@@ -38,25 +38,25 @@ class BaiTap2: UIViewController {
         allButton.layer.cornerRadius = 10
     }
     
-    @IBAction func chuoiButtonTouchUpInside(_ sender: UIButton) {
+    @IBAction private func chuoiButtonTouchUpInside(_ sender: UIButton) {
         if let text = chuoiLabel.text, let chuoi = Int(text) {
             chuoiLabel.text = "\(chuoi + 1)"
         }
     }
     
-    @IBAction func nhoButtonTouchUpInside(_ sender: UIButton) {
+    @IBAction private func nhoButtonTouchUpInside(_ sender: UIButton) {
         if let text = nhoLabel.text, let nho = Int(text) {
             nhoLabel.text = "\(nho + 1)"
         }
     }
     
-    @IBAction func taoButtonTouchUpInside(_ sender: UIButton) {
+    @IBAction private func taoButtonTouchUpInside(_ sender: UIButton) {
         if let text = taoLabel.text, let tao = Int(text) {
             taoLabel.text = "\(tao + 1)"
         }
     }
     
-    @IBAction func allButtonTouchUpInside(_ sender: UIButton) {
+    @IBAction private func allButtonTouchUpInside(_ sender: UIButton) {
         chuoiButtonTouchUpInside(chuoiButton)
         nhoButtonTouchUpInside(nhoButton)
         taoButtonTouchUpInside(taoButton)

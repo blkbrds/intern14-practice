@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		31EBCA9922C4C26800580BAD /* BaiTap5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31EBCA9722C4C26800580BAD /* BaiTap5.swift */; };
+		31EBCA9A22C4C26800580BAD /* BaiTap5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31EBCA9822C4C26800580BAD /* BaiTap5.xib */; };
 		31EBCFD222C30CB2004E0024 /* BaiTap2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31EBCFD022C30CB2004E0024 /* BaiTap2.swift */; };
 		31EBCFD322C30CB2004E0024 /* BaiTap2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31EBCFD122C30CB2004E0024 /* BaiTap2.xib */; };
 		31EBCFD622C36AE2004E0024 /* BaiTap3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31EBCFD422C36AE2004E0024 /* BaiTap3.swift */; };
@@ -22,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		31EBCA9722C4C26800580BAD /* BaiTap5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaiTap5.swift; sourceTree = "<group>"; };
+		31EBCA9822C4C26800580BAD /* BaiTap5.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BaiTap5.xib; sourceTree = "<group>"; };
 		31EBCFD022C30CB2004E0024 /* BaiTap2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaiTap2.swift; sourceTree = "<group>"; };
 		31EBCFD122C30CB2004E0024 /* BaiTap2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BaiTap2.xib; sourceTree = "<group>"; };
 		31EBCFD422C36AE2004E0024 /* BaiTap3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaiTap3.swift; sourceTree = "<group>"; };
@@ -81,6 +85,8 @@
 				31EBCFD522C36AE2004E0024 /* BaiTap3.xib */,
 				31EE181922C37D0200476036 /* BaiTap4.swift */,
 				31EE181A22C37D0200476036 /* BaiTap4.xib */,
+				31EBCA9722C4C26800580BAD /* BaiTap5.swift */,
+				31EBCA9822C4C26800580BAD /* BaiTap5.xib */,
 			);
 			path = "BaiTapOutlet&Action";
 			sourceTree = "<group>";
@@ -146,6 +152,7 @@
 				31F39CAD22C21731009D1C9E /* LaunchScreen.storyboard in Resources */,
 				31F39CAA22C21731009D1C9E /* Assets.xcassets in Resources */,
 				31F39CB722C2176B009D1C9E /* BaiTap1.xib in Resources */,
+				31EBCA9A22C4C26800580BAD /* BaiTap5.xib in Resources */,
 				31EBCFD322C30CB2004E0024 /* BaiTap2.xib in Resources */,
 				31EBCFD722C36AE2004E0024 /* BaiTap3.xib in Resources */,
 				31EE181C22C37D0200476036 /* BaiTap4.xib in Resources */,
@@ -163,6 +170,7 @@
 				31F39CA322C21731009D1C9E /* AppDelegate.swift in Sources */,
 				31F39CB622C2176B009D1C9E /* BaiTap1.swift in Sources */,
 				31EBCFD222C30CB2004E0024 /* BaiTap2.swift in Sources */,
+				31EBCA9922C4C26800580BAD /* BaiTap5.swift in Sources */,
 				31EBCFD622C36AE2004E0024 /* BaiTap3.swift in Sources */,
 				31EE181B22C37D0200476036 /* BaiTap4.swift in Sources */,
 			);
