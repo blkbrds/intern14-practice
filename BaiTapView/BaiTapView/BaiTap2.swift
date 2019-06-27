@@ -19,22 +19,22 @@ class Person {
 }
 
 class BaiTap2: UIViewController {
-    private var person = [Person("Tu", #imageLiteral(resourceName: "tu")),
-                          Person("Tuan Anh", #imageLiteral(resourceName: "vu")),
-                          Person("Vu", #imageLiteral(resourceName: "tuananh")),
-                          Person("Vien", #imageLiteral(resourceName: "vien")),
-                          Person("Thanh", #imageLiteral(resourceName: "thanh")),
-                          Person("Ronaldo", #imageLiteral(resourceName: "ronaldo")),
-                          Person("Messi", #imageLiteral(resourceName: "messi")),
-                          Person("Rooney", #imageLiteral(resourceName: "rooney")),
-                          Person("Pogba", #imageLiteral(resourceName: "pogba"))]
+    private var persons: [Person] = [Person("Tu", #imageLiteral(resourceName: "tu")),
+                                     Person("Tuan Anh", #imageLiteral(resourceName: "vu")),
+                                     Person("Vu", #imageLiteral(resourceName: "tuananh")),
+                                     Person("Vien", #imageLiteral(resourceName: "vien")),
+                                     Person("Thanh", #imageLiteral(resourceName: "thanh")),
+                                     Person("Ronaldo", #imageLiteral(resourceName: "ronaldo")),
+                                     Person("Messi", #imageLiteral(resourceName: "messi")),
+                                     Person("Rooney", #imageLiteral(resourceName: "rooney")),
+                                     Person("Pogba", #imageLiteral(resourceName: "pogba"))]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        toaDo()
+        coordinates()
     }
     
-    func addView(frame: CGRect, name: String, avatarImage: UIImage ) -> UIView {
+    func makeView(frame: CGRect, name: String, avatarImage: UIImage ) -> UIView {
         let container = UIView(frame: frame)
         container.backgroundColor = .gray
         
@@ -55,16 +55,22 @@ class BaiTap2: UIViewController {
         return container
     }
     
-    func toaDo() {
+    func coordinates() {
         var x: CGFloat = 30
         var y: CGFloat = 100
-        for i in 0..<person.count {
-            let frame =  CGRect(x: x, y: y, width: 100 , height: 125)
-            let personView = addView(frame: frame, name: person[i].name, avatarImage: person[i].image)
+        let itemWidth: CGFloat = 100
+        let itemHeight: CGFloat = 125
+        
+        for i in 0..<persons.count {
+            let frame =  CGRect(x: x, y: y, width: itemWidth , height: itemHeight)
+            let personView =  makeView(frame: frame, name: persons[i].name, avatarImage: persons[i].image)
             view.addSubview(personView)
+            
+            let maxX: CGFloat = UIScreen.main.bounds.width
+            let minX: CGFloat = 30
             x += 130
-            if x >= UIScreen.main.bounds.width {
-                x = 30
+            if x >= maxX {
+                x = minX
                 y += 150
             }
         }

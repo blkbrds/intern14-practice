@@ -22,7 +22,7 @@ class BaiTap4: UIViewController {
         label.layer.borderColor = UIColor(red: 19 / 255.0, green: 15 / 255.0, blue: 64 / 255.0, alpha: 1).cgColor
         label.layer.borderWidth = 1
         view.addSubview(label)
-        toaDo()
+        coordinates()
     }
     
     func addViewNumber(frame: CGRect, sign: String ) {
@@ -65,12 +65,15 @@ class BaiTap4: UIViewController {
         container.addSubview(button)
     }
     
-    func toaDo() {
+    func coordinates() {
         view.addSubview(container)
         var x: CGFloat = 15
         var y: CGFloat = 100
+        let itemWidth: CGFloat = 50
+        let itemHeight: CGFloat = 50
+        
         for i in 0..<signs.count {
-            let frame =  CGRect(x: x, y: y, width: 50 , height: 50)
+            let frame =  CGRect(x: x, y: y, width: itemWidth , height: itemHeight)
             if i == 3 || i == 7 || i == 11 || i == 15 {
                 addViewOperation(frame: frame, sign: signs[i])
             } else if i == 12 {
@@ -81,9 +84,11 @@ class BaiTap4: UIViewController {
                 addViewNumber(frame: frame, sign: signs[i])
             }
             
+            let maxX: CGFloat = UIScreen.main.bounds.width
+            let minX: CGFloat = 15
             x += 100
-            if x >= UIScreen.main.bounds.width {
-                x = 15
+            if x >= maxX {
+                x = minX
                 y += 80
             }
         }
