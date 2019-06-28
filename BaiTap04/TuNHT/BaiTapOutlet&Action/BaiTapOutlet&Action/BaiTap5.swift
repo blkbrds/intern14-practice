@@ -17,20 +17,20 @@ class BaiTap5: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        titleLabel.text = ""
+        makeView(red: 0, green: 0, blue: 0)
+    }
+    
+    func makeView(red: CGFloat, green: CGFloat, blue: CGFloat) {
         titleLabel.textColor = .black
-        
-        backgroundView.layer.cornerRadius = 20
-        backgroundView.layer.borderWidth = 1
-        backgroundView.layer.borderColor = UIColor(red: 0, green: 0, blue: 0, alpha: 1).cgColor
+        backgroundView.layer.cornerRadius = 40
         backgroundView.backgroundColor = UIColor(red: red / 255, green: green / 255, blue: blue / 255, alpha: 1)
         titleLabel.text = "Color(R: \(Int(red)), G: \(Int(green)), B: \(Int(blue)))"
     }
     
-    @IBAction private func redButtonValueChanged(_ sender: UISlider) {
+    @IBAction private func buttonValueChanged(_ sender: UISlider) {
         guard let red = redSlider?.value, let green = greenSlider?.value, let blue = blueSlider?.value else {
             return
         }
-        designView(red: CGFloat(red), green: CGFloat(green), blue: CGFloat(blue))
+        makeView(red: CGFloat(red), green: CGFloat(green), blue: CGFloat(blue))
     }
 }
