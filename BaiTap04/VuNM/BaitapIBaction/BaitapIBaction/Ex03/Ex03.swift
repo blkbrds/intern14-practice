@@ -9,11 +9,6 @@
 import UIKit
 
 class Ex03: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-    }
     
     @IBOutlet weak var userView1: UIView!
     @IBOutlet weak var userAvatarView1: UIView!
@@ -42,7 +37,11 @@ class Ex03: UIViewController {
     @IBOutlet weak var userView9: UIView!
     @IBOutlet weak var userAvatar9View: UIView!
     @IBOutlet weak var userNameLabel9: UILabel!
-    @IBOutlet var userContainer: [UIView]!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+    }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         if let touch = touches.first {
             if touch.view == userView2 {
@@ -64,6 +63,6 @@ class Ex03: UIViewController {
             } else if touch.view == userView9 {
                 print("9")
             }
-    }
-}
+      }
+   }
 }

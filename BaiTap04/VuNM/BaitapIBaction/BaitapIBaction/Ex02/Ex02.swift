@@ -26,7 +26,8 @@ class Ex02: UIViewController {
         super.viewDidLoad()
         print()
     }
-    func print() {
+    
+    private func print() {
         bananaLabel.text = "banana"
         grapenLabel.text = "grape"
         appleLabel.text = "apple"
