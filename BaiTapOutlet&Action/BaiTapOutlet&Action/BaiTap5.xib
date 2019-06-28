@@ -12,7 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BaiTap5" customModule="BaiTapOutlet_Action" customModuleProvider="target">
             <connections>
-                <outlet property="backgroundLabel" destination="Z1O-te-bpK" id="iON-kW-qT0"/>
+                <outlet property="backgroundView" destination="X4b-OH-X2W" id="OoE-P3-Q1e"/>
                 <outlet property="blueSlider" destination="EYm-p4-96G" id="Hsx-XV-JXs"/>
                 <outlet property="greenSlider" destination="Wd2-XY-PHT" id="zUW-Xw-HvX"/>
                 <outlet property="redSlider" destination="tdE-8y-odG" id="amr-lQ-w3m"/>
@@ -32,29 +32,27 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z1O-te-bpK">
-                    <rect key="frame" x="49" y="131" width="316" height="379"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="tdE-8y-odG">
-                    <rect key="frame" x="120" y="576" width="240" height="30"/>
+                <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="tdE-8y-odG">
+                    <rect key="frame" x="132" y="573" width="240" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <connections>
                         <action selector="redButtonValueChanged:" destination="-1" eventType="valueChanged" id="O2b-SN-enu"/>
                     </connections>
                 </slider>
-                <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="EYm-p4-96G">
-                    <rect key="frame" x="120" y="680" width="240" height="30"/>
+                <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="EYm-p4-96G">
+                    <rect key="frame" x="132" y="691" width="240" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <connections>
                         <action selector="blueButtonValueChanged:" destination="-1" eventType="valueChanged" id="4k7-JN-py8"/>
                     </connections>
                 </slider>
-                <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Wd2-XY-PHT">
-                    <rect key="frame" x="120" y="628" width="240" height="30"/>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X4b-OH-X2W">
+                    <rect key="frame" x="44" y="137" width="326" height="391"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="Wd2-XY-PHT">
+                    <rect key="frame" x="132" y="634" width="240" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <connections>
                         <action selector="greenButtonValueChanged:" destination="-1" eventType="valueChanged" id="xIP-8X-PeL"/>
@@ -63,7 +61,7 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="-712" y="52"/>
+            <point key="canvasLocation" x="-1362" y="-199"/>
         </view>
     </objects>
 </document>
