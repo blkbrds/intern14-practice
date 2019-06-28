@@ -5,7 +5,7 @@ print("BÀI TẬP 2: OOP SWIFT")
 class PhanSo {
     private(set) var tuSo: Int
     private(set) var mauSo: Int
-
+    
     init?(_ tuSo: Int, _ mauSo: Int) {
         self.tuSo = tuSo
         if mauSo == 0 {
@@ -13,11 +13,11 @@ class PhanSo {
         }
         self.mauSo = mauSo
     }
-
+    
     func inPS() -> String {
-    return  "\(tuSo) / \(mauSo)"
+        return  "\(tuSo) / \(mauSo)"
     }
-
+    
     func congPS(_ ps: PhanSo?) -> PhanSo? {
         if let ps = ps {
             let result = PhanSo((tuSo * ps.mauSo + ps.tuSo * mauSo) / ucln(tuSo, mauSo), (mauSo * ps.mauSo) / ucln(tuSo, mauSo) )
@@ -25,7 +25,7 @@ class PhanSo {
         }
         return nil
     }
-
+    
     func truSP(_ ps: PhanSo?) -> PhanSo? {
         if let ps = ps {
             let result = PhanSo((tuSo * ps.mauSo - ps.tuSo * mauSo) / ucln(tuSo, mauSo), (mauSo * ps.mauSo) / ucln(tuSo, mauSo))
@@ -33,7 +33,7 @@ class PhanSo {
         }
         return nil
     }
-
+    
     func nhanPS(_ ps: PhanSo?) -> PhanSo? {
         if let ps = ps {
             let result = PhanSo(tuSo * ps.tuSo / ucln(tuSo, mauSo), mauSo * ps.mauSo / ucln(tuSo, mauSo))
@@ -41,7 +41,7 @@ class PhanSo {
         }
         return nil
     }
-
+    
     func chiaPS(_ ps: PhanSo?) -> PhanSo? {
         if let ps = ps {
             let result = PhanSo(tuSo * ps.mauSo / ucln(tuSo, mauSo), mauSo * ps.tuSo / ucln(tuSo, mauSo))
@@ -49,13 +49,13 @@ class PhanSo {
         }
         return nil
     }
-
+    
     func ucln(_ num1: Int, _ num2: Int) -> Int {
-        var a: Int = abs(num1)
-        var b: Int = abs(num2)
-
+        var a = abs(num1)
+        var b = abs(num2)
+        
         if a == 0 || b == 0 {
-            return a+b
+            return a + b
         } else {
             while a != b {
                 if a > b {
@@ -95,7 +95,7 @@ if let phanSo = pSo, let phanSo2 = pSo2 {
 class DaGiac {
     private(set) var arrayEdge = [Double]()
     private(set) var quantityEdge: Int = 0
-
+    
     init(_ quantityEdge: Int, _ arrEdge: [Double]) {
         if quantityEdge < 3 {
             print("\n This isn't polygon")
@@ -104,7 +104,7 @@ class DaGiac {
         }
         self.arrayEdge = arrEdge
     }
-
+    
     func chuVi(_ quanEdge: Int, _ arrEdge: [Double]) -> Double {
         var cv: Double = 0
         for index in arrEdge {
@@ -116,8 +116,8 @@ class DaGiac {
         }
         return cv
     }
-
-     func output() {
+    
+    func output() {
         print("\nThe values of the sides of the polygon is: ")
         for index in arrayEdge {
             print(" \(index)")
@@ -133,11 +133,7 @@ print("The polygon circumference is: \(dg.chuVi(3, arr))")
 class TamGiac: DaGiac {
     private(set) var arrayEdgeTriangle = [Double]()
     private(set) var quantityEdgeTriangle = 0
-
-    private(set) var EdgeA = 0.0
-    private(set) var EdgeB = 0.0
-    private(set) var EdgeC = 0.0
-
+    
     override func chuVi(_ quaEdge: Int, _ arrEdge: [Double]) -> Double {
         var cv: Double = 0
         for index in arrEdge {
@@ -145,8 +141,8 @@ class TamGiac: DaGiac {
         }
         return cv
     }
-
-    func DienTich() -> Double {
+    
+    func dienTich() -> Double {
         var dienTich: Double = 0
         let ChuVi: Double = chuVi(3, arrayEdgeTriangle)
         for index in 0...1  {
@@ -158,31 +154,43 @@ class TamGiac: DaGiac {
 }
 // Bài 4 In n Tam Gíac
 class NewTriangle {
-    private(set) var a = 0.0
-    private(set) var b = 0.0
-    private(set) var c = 0.0
-
-    init (_ a: Double, _ b: Double, _ c: Double) {
-        self.a = a
-        self.b = b
-        self.c = c
+    private(set) var a: Double?
+    private(set) var b: Double?
+    private(set) var c: Double?
+    
+    init(_ a: Double?, _ b: Double?, _ c: Double?) {
+        if let triangleEdgeA = a {
+            self.a = triangleEdgeA
+        }
+        if let triangleEdgeB = b {
+            self.b = triangleEdgeB
+        }
+        if let triangleEdgeC = c {
+            self.c = triangleEdgeC
+        }
     }
-
+    
+    func unWrapped(_ x: Double?) -> Double {
+        if let unWrappedX = x {
+            return unWrappedX
+        }
+    }
+    
     func checkPytago() -> (checkBool: Bool, arr: [Double]) {
-        if a  == sqrt(pow(b, 2) + pow(c, 2)) || b == sqrt(pow(a, 2) + pow(c, 2)) || c == sqrt(pow(a, 2) + pow(c, 2)) {
-            return (true, [a, b, c])
+        if a  == sqrt(pow(unWrapped(b), 2) + pow(unWrapped(c), 2)) || b == sqrt(pow(unWrapped(a), 2) + pow(unWrapped(c), 2)) || c == sqrt(pow(unWrapped(a), 2) + pow(unWrapped(c), 2)) {
+            return (true, [unWrapped(a), unWrapped(b), unWrapped(c)])
         }
         return (false, [])
     }
 }
 class PrintNTRiangle {
     var arrayTriangle = [NewTriangle]()
-
+    
     init(_ arrTriangle: [NewTriangle]) {
         arrayTriangle = arrTriangle
     }
-
-    func output (_ tG: [NewTriangle]) -> Void {
+    
+    func output(_ tG: [NewTriangle]) -> Void {
         arrayTriangle.forEach{ (tG) in
             let check = tG.checkPytago()
             if check.checkBool {
@@ -195,7 +203,7 @@ class PrintNTRiangle {
 class CStack {
     private(set) var stackArray = [Int]()
     private(set) var max = 5
-
+    
     func isEmpty() -> Bool{
         if stackArray.isEmpty {
             return true
@@ -203,11 +211,11 @@ class CStack {
             return false
         }
     }
-
+    
     func isFull() -> Bool {
         return stackArray.count == max
     }
-
+    
     func push(_ element: Int) {
         if !isFull() {
             stackArray.append(element)
@@ -215,7 +223,7 @@ class CStack {
             print("Stack Full")
         }
     }
-
+    
     func pop() -> Int? {
         return stackArray.popLast()
     }
@@ -224,8 +232,8 @@ class CStack {
 class HinhVe {
     private(set) var chieuDai: Double = 0.0
     private(set) var chieuRong: Double = 0.0
-    private(set) var pi: Double = Double.pi
-
+    private(set) let  pi: Double = Double.pi
+    
     init(_ dai: Double, _ rong: Double) {
         chieuDai = dai
         chieuRong = rong
@@ -264,7 +272,7 @@ class Vuong: HaiChieu {
 }
 class Tron: HaiChieu {
     private(set) var r: Double
-
+    
     init(_ dai: Double, _ rong: Double, _ banKinh: Double) {
         self.r = banKinh
         super.init(dai, rong)
@@ -278,13 +286,13 @@ class Tron: HaiChieu {
 }
 class TamGiac2: HaiChieu {
     private(set) var c: Double
-
+    
     init(_ a: Double, _ b: Double, _ c: Double ) {
         self.c = c
         super.init(a, b)
     }
     override func chuVi() -> Double {
-         return (chieuDai + chieuRong + c)
+        return (chieuDai + chieuRong + c)
     }
     override func dienTich() -> Double {
         return sqrt((chuVi() / 2) * ((chuVi() / 2) - chieuDai) * ((chuVi() / 2) - chieuRong) * ((chuVi() / 2) - c))
@@ -297,7 +305,7 @@ class BaChieu: HinhVe {
 }
 class Cau: BaChieu {
     private(set) var r: Double
-
+    
     init(_ dai: Double, _ rong: Double, _ banKinh: Double) {
         self.r = banKinh
         super.init(dai, rong)
@@ -325,8 +333,8 @@ class HocSinh {
     private(set) var hoTen = String()
     private(set) var namSinh = String()
     private(set) var tongDiem = 0.0
-
-    init(_ hoten: String, _ namSinh: String, tongDiem: Double){
+    
+    init(_ hoten: String, _ namSinh: String, tongDiem: Double) {
         self.hoTen = hoten
         self.namSinh = namSinh
         self.tongDiem = tongDiem
@@ -334,7 +342,7 @@ class HocSinh {
 }
 class QuanLiHocSinh {
     private(set) var hocSinh = [HocSinh]()
-
+    
     init(_ sinhVien: [HocSinh]) {
         self.hocSinh = sinhVien
     }
@@ -410,7 +418,7 @@ class Date {
             case 4, 6, 9, 11:
                 return 30
             case 2:
-                if year % 4 == 0 {
+                if (year % 4 == 0 && year % 100 != 0) || year % 400 == 0 {
                     return 29
                 } else {
                     return 28
@@ -420,10 +428,6 @@ class Date {
             }
         }
     }
-    
-    func prints() {
-        print("\(day) / \(month) / \(year)")
-    }
 }
 // Bài 9:
 class ArrayDimensional {
@@ -431,7 +435,7 @@ class ArrayDimensional {
     init(_ array: [Int]) {
         self.array = array
     }
-
+    
     func findMax(_ arr: [Int]) -> Int {
         var max = 0
         for i in 0..<arr.count {
@@ -450,7 +454,7 @@ class ArrayDimensional {
         }
         return min
     }
-
+    
 }
 // Bài 10
 class IntNumberSum {
@@ -460,11 +464,9 @@ class IntNumberSum {
     }
     func sum() -> Int {
         var sum = 0
-        for index in 1...self.quantity {
+        for index in 1...quantity {
             sum += index
         }
         return sum
     }
-
 }
-
