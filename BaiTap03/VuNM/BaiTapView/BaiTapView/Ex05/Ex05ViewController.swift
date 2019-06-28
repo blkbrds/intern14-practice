@@ -27,7 +27,7 @@ class Ex05: UIViewController {
         addMonthLable()
     }
     
-    func setupBoard() {
+    private func setupBoard() {
         board1.backgroundColor = .white
         board1.layer.borderWidth = 1
         board1.layer.borderColor = UIColor.black.cgColor
@@ -50,8 +50,8 @@ class Ex05: UIViewController {
             monthValue.textColor = .black
             x2 +=  ((board1.bounds.width - 80) / 5) + 5
             view.addSubview(monthValue)
-            
         }
+        
         var x3: CGFloat = 2.5
         var y3: CGFloat = 50
         for j in 0..<monthList.count{
@@ -65,10 +65,9 @@ class Ex05: UIViewController {
         }
     }
     
-    func addMonthLable() {
+    private func addMonthLable() {
         var x: CGFloat = 2.5
         var y: CGFloat = 0
-        
         for i in 0..<monthList.count {
             y = board1.bounds.height - (((board1.bounds.height - 50) / 20) * monthList[i].unitSold) - 30
             let monthlable = UILabel(frame: CGRect(x: x, y: y, width: 40, height: 40))

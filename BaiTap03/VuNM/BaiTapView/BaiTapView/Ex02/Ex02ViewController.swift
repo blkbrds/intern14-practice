@@ -15,7 +15,6 @@ class User {
         self.name = name
         self.avatar = avatar
     }
-    
 }
 
 class Ex02: UIViewController {
@@ -26,7 +25,7 @@ class Ex02: UIViewController {
         add()
     }
     
-    func addAvatar(_ frame: CGRect, _ name: String, _ userImage: UIImage) -> UIView {
+    private func addAvatar(_ frame: CGRect, _ name: String, _ userImage: UIImage) -> UIView {
         let board = UIView(frame: frame)
         let avatar = UIImageView(image: userImage)
         avatar.frame = CGRect(x: -10, y: 100, width: 100, height: 100)
@@ -41,7 +40,7 @@ class Ex02: UIViewController {
         return board
     }
     
-    func add() {
+    private func add() {
         var x: CGFloat = 20
         var y: CGFloat = 50
         for i in 0..<users.count {

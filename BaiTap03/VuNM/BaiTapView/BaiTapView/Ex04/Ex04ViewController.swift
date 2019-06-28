@@ -21,11 +21,9 @@ class Ex04: UIViewController {
         super.viewDidLoad()
         let a = CGRect(x: 0, y: 0, width: view.bounds.width, height: view.bounds.height)
         view.addSubview(addButtons(a))
-        
-        
     }
     
-    func addButtons(_ frame: CGRect) -> UIView {
+    private func addButtons(_ frame: CGRect) -> UIView {
         let board1 = UIView(frame: frame)
         var x: CGFloat = 10
         var y: CGFloat = 300
