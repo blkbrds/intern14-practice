@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.backgroundColor = .white
         window?.makeKeyAndVisible()
         
-        let baiTap = BaiTap5()
+        let baiTap = BaiTap2()
         window?.rootViewController = baiTap
         
         return true
