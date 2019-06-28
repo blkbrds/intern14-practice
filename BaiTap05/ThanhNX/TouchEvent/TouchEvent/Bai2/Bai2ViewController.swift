@@ -16,52 +16,64 @@ class Bai2ViewController: UIViewController {
         static let sliderHeight: CGFloat = 280
     }
     
-    let rectView = UIView(frame: CGRect(x: 14, y: 14, width: 32, height: 252))
-    let slideView = UIButton(frame: CGRect(x: 15, y: 15, width: 50, height: 50))
-    var num: CGFloat = 50
-    var xNumber: CGFloat = 0.0
+    let viewBig = UIView(frame: CGRect(x: Config.xFrame, y: Config.yFrame, width: Config.sliderWidth, height: Config.sliderHeight))
+    let blueView = UIView(frame: CGRect(x: 14, y: 14, width: 32, height: 252))
+    let orangeSliderView = UIView(frame: CGRect(x: 15, y: 15, width: 50, height: 50))
+    let slideLabel = UILabel(frame: CGRect(x: 5, y: 15, width: 40, height: 20))
+    let whiteView = UIView(frame: CGRect(x: 15, y: 15, width: 30, height: 0))
+    var percentage: CGFloat = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let frame = sliderView(frame: CGRect(x: Config.xFrame, y: Config.yFrame, width: Config.sliderWidth, height: Config.sliderHeight), number: num)
+        let frame = sliderView()
+        
         view.addSubview(frame)
     }
     
-    func sliderView(frame: CGRect, number: CGFloat) -> UIView {
-        let viewBig = UIView(frame: frame)
+    func sliderView() -> UIView {
         viewBig.backgroundColor = .clear
         
-        rectView.backgroundColor = UIColor(red: 116 / 255, green: 185 / 255, blue: 255 / 255, alpha: 1)
-        rectView.layer.borderColor = UIColor(red: 48 / 255, green: 51 / 255, blue: 107 / 255, alpha: 1).cgColor
-        rectView.layer.borderWidth = 1
-        viewBig.addSubview(rectView)
+        blueView.backgroundColor = #colorLiteral(red: 0, green: 0.4784313725, blue: 1, alpha: 1)
+        blueView.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        blueView.layer.borderWidth = 1
+        viewBig.addSubview(blueView)
         
-        //num = rectView.bounds.height
+        whiteView.backgroundColor = .white
+        whiteView.frame.size.height = blueView.frame.size.height / 2
+        viewBig.addSubview(whiteView)
         
-        xNumber = rectView.bounds.height - number / 100 * rectView.bounds.height
+        orangeSliderView.backgroundColor = #colorLiteral(red: 0.9372549057, green: 0.3490196168, blue: 0.1921568662, alpha: 1)
+        orangeSliderView.layer.cornerRadius = orangeSliderView.bounds.width / 2
+        orangeSliderView.center = CGPoint(x: viewBig.bounds.width / 2, y: blueView.frame.height / 2)
+        viewBig.addSubview(orangeSliderView)
         
-        let backgroundSlideView = UILabel(frame: CGRect(x: 15, y: 15, width: 30, height: xNumber))
-        backgroundSlideView.backgroundColor = .white
-        viewBig.addSubview(backgroundSlideView)
-        
-        slideView.backgroundColor = UIColor(red: 235 / 255, green: 135 / 255, blue: 60 / 255, alpha: 1)
-        slideView.layer.cornerRadius = slideView.bounds.width / 2
-        slideView.center = CGPoint(x: viewBig.bounds.width / 2, y: xNumber)
-        slideView.setTitle("\(Int(num))", for: .normal)
-        slideView.setTitleColor(.white, for: .normal)
-        slideView.titleLabel?.textAlignment = .center
-        viewBig.addSubview(slideView)
+        slideLabel.text = "\(50)"
+        slideLabel.textColor = .white
+        slideLabel.textAlignment = .center
+        orangeSliderView.addSubview(slideLabel)
         
         return viewBig
     }
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         if let touch = touches.first {
-            guard touch.view != slideView else { return }
-            slideView.center = touch.location(in: rectView)
-            num = slideView.center.y * rectView.bounds.height / 100
-            
-            print("\(slideView.center.x) \(slideView.center.y)")
+            if touch.view == orangeSliderView {
+                var touchLocation = touch.location(in: blueView)
+                touchLocation.x = orangeSliderView.frame.origin.x
+                touchLocation.y -= orangeSliderView.bounds.height / 2
+                percentage = 100 - (whiteView.frame.size.height / blueView.bounds.height * 100)
+                slideLabel.text = "\(Int(percentage))"
+                orangeSliderView.frame.origin = touchLocation
+                if orangeSliderView.center.y >= blueView.bounds.size.height {
+                    orangeSliderView.center.y = blueView.bounds.size.height
+                    slideLabel.text = "\(0)"
+                } else if orangeSliderView.center.y <= 14 {
+                    orangeSliderView.center.y = 14
+                    slideLabel.text = "\(100)"
+                } else {
+                    whiteView.frame.size.height = orangeSliderView.center.y
+                }
+            }
         }
     }
 }
