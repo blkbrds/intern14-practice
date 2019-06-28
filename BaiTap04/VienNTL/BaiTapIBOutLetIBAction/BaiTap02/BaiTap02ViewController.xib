@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -12,16 +8,16 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BaiTap02ViewController" customModule="BaiTapIBOutLetIBAction" customModuleProvider="target">
             <connections>
-                <outlet property="addAllQuantityButton" destination="h0I-In-fsy" id="Jez-Xw-QUf"/>
-                <outlet property="appleButton" destination="7oX-yN-ZRF" id="iYw-65-N0H"/>
+                <outlet property="addAllQuantityButtonTouchUpInside" destination="h0I-In-fsy" id="Jez-Xw-QUf"/>
+                <outlet property="appleButtonTouchUpInside" destination="7oX-yN-ZRF" id="iYw-65-N0H"/>
                 <outlet property="appleLabel" destination="xgV-pw-M3M" id="rcP-p0-3bM"/>
                 <outlet property="appleQuantityLabel" destination="ft2-WF-iGY" id="KV6-hm-xBy"/>
                 <outlet property="appleView" destination="YNq-81-wlm" id="Gzd-MM-Hha"/>
-                <outlet property="bananaButton" destination="k39-Ze-1P9" id="z9N-ZL-LZj"/>
+                <outlet property="bananaButtonTouchUpInside" destination="k39-Ze-1P9" id="z9N-ZL-LZj"/>
                 <outlet property="bananaLabel" destination="OnN-Rj-Q9k" id="jqT-Um-51g"/>
                 <outlet property="bananaQuantityLabel" destination="czT-Uy-dZj" id="zPL-Yv-3Nk"/>
                 <outlet property="bananaView" destination="6XJ-cV-Wjv" id="Ttz-eF-Pal"/>
-                <outlet property="grapesButton" destination="XxY-M6-RY9" id="E3E-Ik-C2o"/>
+                <outlet property="grapesButtonTouchUpInside" destination="XxY-M6-RY9" id="E3E-Ik-C2o"/>
                 <outlet property="grapesLabel" destination="cKJ-i1-oZV" id="71a-lq-DDM"/>
                 <outlet property="grapesQuantityLabel" destination="Myg-bB-bBk" id="VkR-OX-8hF"/>
                 <outlet property="grapesView" destination="mAe-Sf-dMd" id="B2C-gJ-TTh"/>

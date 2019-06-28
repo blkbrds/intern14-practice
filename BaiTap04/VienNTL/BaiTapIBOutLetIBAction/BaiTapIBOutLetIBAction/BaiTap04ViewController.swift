@@ -32,7 +32,7 @@ class BaiTap04ViewController: UIViewController {
     @IBOutlet private weak var passwordTextField: UITextField!
     @IBOutlet private weak var alertErrorLabel: UILabel!
     @IBOutlet private weak var loginButton: UIButton!
-    @IBOutlet private weak var clearFieldButton: UIButton!
+    @IBOutlet private weak var clearFieldButtonTouchUpInside: UIButton!
     
     
     override func viewDidLoad() {
@@ -43,7 +43,7 @@ class BaiTap04ViewController: UIViewController {
     }
     
     //MARK: design TextField
-    private func design(){
+    private func design() {
         usernameTextField.layer.cornerRadius = 8
         usernameTextField.layer.borderWidth  = 0.2
         usernameTextField.layer.borderColor = UIColor(red: 27 / 255.0, green: 156 / 255.0, blue: 252 / 255.0, alpha: 1).cgColor
@@ -55,7 +55,7 @@ class BaiTap04ViewController: UIViewController {
         
         loginButton.layer.cornerRadius = 8
         
-        clearFieldButton.layer.cornerRadius = 8
+        clearFieldButtonTouchUpInside.layer.cornerRadius = 8
     }
     
     func checkLogin() {
@@ -72,10 +72,10 @@ class BaiTap04ViewController: UIViewController {
         } else if let user = usernameTextField.text, user != item.getUsername() {
             alertErrorLabel.text = "Username is not correct"
             alertErrorLabel.isHidden = false
-        }else if let password = passwordTextField.text, password != item.getPassword() {
+        } else if let password = passwordTextField.text, password != item.getPassword() {
             alertErrorLabel.text = "Password is not correct"
             alertErrorLabel.isHidden = false
-        }else {
+        } else {
             alertErrorLabel.isHidden = false
         }
     }
@@ -89,25 +89,24 @@ class BaiTap04ViewController: UIViewController {
         view.addGestureRecognizer(tap)
     }
     
-    @IBAction func loginTouchUpInside(_ sender: Any) {
+    @IBAction private func loginTouchUpInside(_ sender: Any) {
         checkLogin()
     }
     
-    @IBAction func clearFieldButton(_ sender: Any) {
+    @IBAction private func clearFieldButton(_ sender: Any) {
         usernameTextField.text = nil
         passwordTextField.text = nil
     }
 }
 
-extension BaiTap04ViewController : UITextFieldDelegate {
+extension BaiTap04ViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
 
-        if textField == self.usernameTextField {
-            self.passwordTextField.becomeFirstResponder()
-        } else if textField == self.passwordTextField {
+        if textField == usernameTextField {
+            passwordTextField.becomeFirstResponder()
+        } else if textField == passwordTextField {
             checkLogin()
         }
         return true
     }
 }
-

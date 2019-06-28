@@ -7,6 +7,7 @@
 //
 
 import UIKit
+
 class User {
     var name: String = ""
     var avatar = UIImage()
@@ -39,7 +40,7 @@ class BaiTap03ViewController: UIViewController {
         outPut()
     }
 
-    func addProfileView(frame: CGRect, name: String, avatarImage: UIImage, tag: Int) -> UIView {
+    private func addProfileView(frame: CGRect, name: String, avatarImage: UIImage, tag: Int) -> UIView {
         let container = UIView(frame: frame)
         container.backgroundColor = .black
         
@@ -67,7 +68,7 @@ class BaiTap03ViewController: UIViewController {
         return container
     }
     
-    func outPut() {
+    private func outPut() {
         var x: CGFloat = 20
         var y: CGFloat = 50
         for index in 0..<items.count {
@@ -82,7 +83,7 @@ class BaiTap03ViewController: UIViewController {
         }
     }
     
-    @objc func printName(_ button: UIButton) {
+    @objc private func printName(_ button: UIButton) {
         print("Movie: \(items[button.tag].name)")
     }
 }

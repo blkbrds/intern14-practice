@@ -12,9 +12,9 @@ class BaiTap05ViewController: UIViewController {
 
     @IBOutlet private weak var detailColorLabel: UILabel!
     @IBOutlet private weak var showColorView: UIView!
-    @IBOutlet weak var redSlider: UISlider!
-    @IBOutlet weak var greenSlider: UISlider!
-    @IBOutlet weak var blueSlider: UISlider!
+    @IBOutlet private weak var redSliderValueChanged: UISlider!
+    @IBOutlet private weak var greenSliderValueChanged: UISlider!
+    @IBOutlet private weak var blueSliderValueChanged: UISlider!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,9 +29,8 @@ class BaiTap05ViewController: UIViewController {
         detailColorLabel.text = "Color (R:\(Int(red)), G:\(Int(green)), B:\(Int(blue)))"
     }
     
-    
-    @IBAction func valueChanged(_ sender: UISlider) {
-        guard let red = redSlider?.value, let green = greenSlider?.value, let blue = blueSlider?.value else {
+    @IBAction private func valueChanged(_ sender: UISlider) {
+        guard let red = redSliderValueChanged?.value, let green = greenSliderValueChanged?.value, let blue = blueSliderValueChanged?.value else {
             return
         }
         designView(red: CGFloat(red), green: CGFloat(green), blue: CGFloat(blue))

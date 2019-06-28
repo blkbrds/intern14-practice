@@ -12,10 +12,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BaiTap05ViewController" customModule="BaiTapIBOutLetIBAction" customModuleProvider="target">
             <connections>
-                <outlet property="blueSlider" destination="JHL-KX-TRW" id="4t1-Ak-hEx"/>
+                <outlet property="blueSliderValueChanged" destination="JHL-KX-TRW" id="4t1-Ak-hEx"/>
                 <outlet property="detailColorLabel" destination="y4S-a7-AeY" id="53U-uQ-ih7"/>
-                <outlet property="greenSlider" destination="NU7-YE-Djg" id="dXN-H4-FLd"/>
-                <outlet property="redSlider" destination="UwT-LS-Kxl" id="5EM-F3-MtY"/>
+                <outlet property="greenSliderValueChanged" destination="NU7-YE-Djg" id="dXN-H4-FLd"/>
+                <outlet property="redSliderValueChanged" destination="UwT-LS-Kxl" id="5EM-F3-MtY"/>
                 <outlet property="showColorView" destination="NA8-by-5f5" id="8rO-Kw-BxR"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
