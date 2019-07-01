@@ -10,9 +10,8 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BaiTap1" customModule="BaiTapTouchEvent" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BaiTap2" customModule="BaiTapTouchEvent" customModuleProvider="target">
             <connections>
-                <outlet property="ballImageView" destination="qzF-SL-y3V" id="as5-Af-EvC"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -20,18 +19,9 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <subviews>
-                <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="79_vktujd7nbo_fastball" translatesAutoresizingMaskIntoConstraints="NO" id="qzF-SL-y3V">
-                    <rect key="frame" x="163" y="403" width="88" height="91"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                </imageView>
-            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="-146" y="169"/>
+            <point key="canvasLocation" x="-109" y="-5"/>
         </view>
     </objects>
-    <resources>
-        <image name="79_vktujd7nbo_fastball" width="560" height="508"/>
-    </resources>
 </document>

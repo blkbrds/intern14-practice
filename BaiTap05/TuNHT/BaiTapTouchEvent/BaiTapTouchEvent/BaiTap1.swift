@@ -9,7 +9,7 @@
 import UIKit
 
 class BaiTap1: UIViewController {
-    @IBOutlet weak var ballImageView: UIImageView!
+    @IBOutlet private weak var ballImageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
