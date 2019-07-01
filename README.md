@@ -57,13 +57,10 @@
 15. [CollectionView](https://drive.google.com/file/d/1cJbBzsextWSlvakQEFJX-1TdhiiYjPsL/view?usp=sharing)
 16. [CollectionView - Home Screen](https://drive.google.com/file/d/1wPnpK7ZwCiTD1j3ZCSdXpLMjyjzRfU6w/view?usp=sharing)
 17. [MVVM](https://drive.google.com/file/d/1QzzTYMqopNkTgPgV_zXPPGvgc9yvHImj/view?usp=sharing)
-18. Core Location
-19. MapView - Basic
-20. MapView - Overlay
-21. Connect API
-22. Realm - Basic
-23. Closure
-24. GCD
+18. [MapView](https://drive.google.com/file/d/1tLcXbAoRQpTjT4NiQPM1kiiF5QE-A_A9/view?usp=sharing)
+19. [API](https://drive.google.com/file/d/1BL1mgfFJC2Z_r3EhieYBepiW7YiBASkd/view?usp=sharing)
+20. [Realm](https://drive.google.com/file/d/16mQqKGiYYjeH88-eT3aatl93Y2RBoIV3/view?usp=sharing)
+21. [Mapper](https://drive.google.com/file/d/1AH813OQDQQ5UXj3vekDll1FHGG5KArRr/view?usp=sharing)
 
 ---
 
