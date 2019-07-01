@@ -454,7 +454,6 @@ class ArrayDimensional {
         }
         return min
     }
-    
 }
 // Bài 10
 class IntNumberSum {
