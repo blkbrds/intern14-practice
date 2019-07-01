@@ -9,40 +9,57 @@
 import UIKit
 
 class BaiTap02ViewController: UIViewController {
-
+    private let containerView = UIView(frame: CGRect(x: UIScreen.main.bounds.width * 0.475, y: UIScreen.main.bounds.height * 0.25, width: 30, height: 300))
+    private let columnView = UIView()
+    var whiteView = UIView()
+    private let button = UIButton()
+    private var valueChange: CGFloat = 60
     override func viewDidLoad() {
         super.viewDidLoad()
-        let x =  CGRect(x: UIScreen.main.bounds.width * 0.475, y: UIScreen.main.bounds.height * 0.25, width: 30, height: 300)
-        view.addSubview(sliderView(x, 30))
+        view.addSubview(sliderView(valueChange))
+        
     }
     
-    func sliderView(_ frame: CGRect, _ number: CGFloat) -> UIView {
-        let containerView = UIView(frame: frame)
+    private func sliderView(_ number: CGFloat) -> UIView {
         containerView.backgroundColor = .black
         
-        let columnView = UIView(frame: CGRect(x: 0, y: 0, width: 30, height: frame.height))
+        let located = containerView.bounds.height * number / 100
+        
+        columnView.frame = CGRect(x: 0, y: 0, width: 30, height: containerView.bounds.height)
+        columnView.backgroundColor = UIColor(red: 235 / 255.0, green: 77 / 255.0, blue: 75 / 255.0, alpha: 1)
         columnView.layer.borderWidth = 1
         columnView.layer.borderColor = UIColor(red: 19 / 255.0, green: 15 / 255.0, blue: 64 / 255.0, alpha: 1).cgColor
-        columnView.backgroundColor = UIColor(red: 235 / 255.0, green: 77 / 255.0, blue: 75 / 255.0, alpha: 1)
         containerView.addSubview(columnView)
         
-        let located = frame.height * number / 100
+        whiteView.frame = CGRect(x: 0, y: 0, width: 30, height: columnView.bounds.height - located)
+        whiteView.layer.borderWidth = 1
+        whiteView.layer.borderColor = UIColor(red: 19 / 255.0, green: 15 / 255.0, blue: 64 / 255.0, alpha: 1).cgColor
+        whiteView.backgroundColor = .white
+        containerView.addSubview(whiteView)
         
-        let backgroundSlideView = UILabel(frame: CGRect(x: 0, y: 0, width: 30, height: columnView.bounds.height - located))
-        backgroundSlideView.layer.borderWidth = 1
-        backgroundSlideView.layer.borderColor = UIColor(red: 19 / 255.0, green: 15 / 255.0, blue: 64 / 255.0, alpha: 1).cgColor
-        backgroundSlideView.backgroundColor = .white
-        containerView.addSubview(backgroundSlideView)
-        
-        let button = UIButton(frame: CGRect(x: containerView.bounds.origin.x - 10, y: frame.height - located, width: 50, height: 50))
-        button.backgroundColor = .white
+        button.frame = CGRect(x: containerView.bounds.origin.x - 10, y: containerView.bounds.height - located - 10, width: 50, height: 50)
+        button.backgroundColor = .orange
         button.setTitle("\(Int(number))", for: .normal)
-        button.setTitleColor(.black, for: .normal)
+        button.setTitleColor(.white, for: .normal)
         button.layer.cornerRadius = button.bounds.width * 0.5
         button.layer.borderColor = UIColor(red: 19 / 255.0, green: 15 / 255.0, blue: 64 / 255.0, alpha: 1).cgColor
         button.layer.borderWidth = 1
+        button.isUserInteractionEnabled = false
         containerView.addSubview(button)
         return containerView
     }
-
+    
+    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesMoved(touches, with: event)
+        if let touch = touches.first {
+            let location = touch.location(in: containerView)
+            if button.frame.contains(location) {
+                if location.y >= columnView.bounds.minY  && location.y <= columnView.bounds.maxY {
+                    button.center.y = location.y
+                    valueChange = button.center.y
+                    print(valueChange)
+                }
+            }
+        }
+    }
 }
