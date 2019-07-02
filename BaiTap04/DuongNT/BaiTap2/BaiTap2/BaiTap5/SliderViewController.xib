@@ -12,11 +12,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SliderViewController" customModule="BaiTap2" customModuleProvider="target">
             <connections>
-                <outlet property="lblTitle" destination="bEu-oX-trn" id="7bo-Bq-igo"/>
+                <outlet property="blueSlider" destination="daV-mf-eRT" id="gcH-UV-gRo"/>
+                <outlet property="greenSlider" destination="8Xe-3B-kVw" id="fKr-P4-zZm"/>
                 <outlet property="mainView" destination="WHu-gg-rb1" id="CN7-59-1Mk"/>
-                <outlet property="sliderBlue" destination="daV-mf-eRT" id="M8n-OL-kXV"/>
-                <outlet property="sliderGreen" destination="8Xe-3B-kVw" id="95Y-iA-1tz"/>
-                <outlet property="sliderRed" destination="GIW-2D-XYe" id="HU4-NK-1PQ"/>
+                <outlet property="redSlider" destination="GIW-2D-XYe" id="O1V-lC-Wdw"/>
+                <outlet property="titleLabel" destination="bEu-oX-trn" id="jgA-h4-QWv"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
