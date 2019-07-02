@@ -14,16 +14,16 @@ class BaiTap02ViewController: UIViewController {
     var whiteView = UIView()
     private let button = UIButton()
     private var valueChange: CGFloat = 60
+    private var located: CGFloat = 0
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(sliderView(valueChange))
-        
     }
     
     private func sliderView(_ number: CGFloat) -> UIView {
         containerView.backgroundColor = .black
         
-        let located = containerView.bounds.height * number / 100
+        located = containerView.bounds.height * number / 100
         
         columnView.frame = CGRect(x: 0, y: 0, width: 30, height: containerView.bounds.height)
         columnView.backgroundColor = UIColor(red: 235 / 255.0, green: 77 / 255.0, blue: 75 / 255.0, alpha: 1)
@@ -57,7 +57,8 @@ class BaiTap02ViewController: UIViewController {
                 if location.y >= columnView.bounds.minY  && location.y <= columnView.bounds.maxY {
                     button.center.y = location.y
                     valueChange = button.center.y
-                    print(valueChange)
+                    button.setTitle("\(Int((100 - (valueChange / containerView.bounds.height * 100))))", for: .normal)
+                    whiteView.frame = CGRect(x: 0, y: 0, width: 30, height: valueChange)
                 }
             }
         }
