@@ -22,7 +22,16 @@ class ListUsersViewController: UIViewController {
         User("Name 9", UIImage(imageLiteralResourceName: "avatar")),
     ]
     
-    func setAvatar(frame: CGRect, name: String, avatarImage: UIImage, tag: Int) -> UIView {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        showListAvatar()
+    }
+    
+    @objc private func didClickButton(_ button: UIButton) {
+        print("\(users[button.tag].name)")
+    }
+    
+    private func setAvatar(frame: CGRect, name: String, avatarImage: UIImage, tag: Int) -> UIView {
         let views = UIView(frame: frame)
         views.backgroundColor = .black
         
@@ -40,14 +49,14 @@ class ListUsersViewController: UIViewController {
         
         let avatarImageButton = UIButton(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
         avatarImageButton.backgroundColor = .clear
-        avatarImageButton.addTarget(self, action: #selector(buttonDidClick), for: .touchUpInside)
+        avatarImageButton.addTarget(self, action: #selector(didClickButton), for: .touchUpInside)
         avatarImageButton.tag = tag
         views.addSubview(avatarImageButton)
         
         return views
     }
     
-    func showListAvatar() {
+    private func showListAvatar() {
         var x: CGFloat = 20
         var y: CGFloat = 50
         for index in 0..<users.count {
@@ -62,12 +71,4 @@ class ListUsersViewController: UIViewController {
         }
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        showListAvatar()
-    }
-    
-    @objc private func buttonDidClick(_ button: UIButton) {
-        print("\(users[button.tag].name)")
-    }
 }

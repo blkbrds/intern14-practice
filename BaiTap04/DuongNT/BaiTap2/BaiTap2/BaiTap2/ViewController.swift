@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     @IBOutlet private weak var taoView: UIView!
     @IBOutlet private weak var taoLabel: UILabel!
     @IBOutlet private weak var taoNumLabel: UILabel!
-    @IBOutlet private weak var btnAddAll: UIButton!
+    @IBOutlet private weak var addAllButton: UIButton!
     private var chuoiNum = 0
     private var taoNum = 0
     private var nhoNum = 0
@@ -54,9 +54,9 @@ class ViewController: UIViewController {
         taoNumLabel.textColor = .white
         taoLabel.textAlignment = .center
         taoNumLabel.textAlignment = .center
-        btnAddAll.backgroundColor = .orange
-        btnAddAll.layer.cornerRadius = 10
-        btnAddAll.frame = CGRect(x: UIScreen.main.bounds.width / 2 - 50, y: UIScreen.main.bounds.height / 2, width: 100, height: 50)
+        addAllButton.backgroundColor = .orange
+        addAllButton.layer.cornerRadius = 10
+        addAllButton.frame = CGRect(x: UIScreen.main.bounds.width / 2 - 50, y: UIScreen.main.bounds.height / 2, width: 100, height: 50)
     }
     
     @IBAction private func chuoiButtonTouchUpInside(_ sender: UIView) {
@@ -74,7 +74,7 @@ class ViewController: UIViewController {
         taoNumLabel.text = ("\(taoNum)")
     }
     
-    @IBAction private func btnAddAllTouchUpInside(_ sender: UIView) {
+    @IBAction private func addAllButtonTouchUpInside(_ sender: UIView) {
         chuoiButtonTouchUpInside(sender)
         nhoButtonTouchUpInside(sender)
         taoButtonTouchUpInside(sender)

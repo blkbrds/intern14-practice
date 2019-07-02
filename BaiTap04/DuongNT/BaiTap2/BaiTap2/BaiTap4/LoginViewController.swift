@@ -21,15 +21,9 @@ class LoginViewController: UIViewController {
         setButton()
         configTextFields()
     }
-
-    @IBAction private func loginButtonTouchUpInside(_ sender: UIButton) {
-        login()
-    }
     
-    @IBAction private func clearButtonTouchUpInside(_ sender: UIButton) {
-        userNameTextField.text?.removeAll()
-        passwordTextField.text?.removeAll()
-        errorLabel.isHidden = true
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
     }
     
     private func setButton() {
@@ -46,11 +40,7 @@ class LoginViewController: UIViewController {
         userNameTextField.delegate = self
         passwordTextField.delegate = self
     }
-    
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.view.endEditing(true)
-    }
-    
+   
     private func login() {
         if let username = userNameTextField.text, let password = passwordTextField.text {
             if username.isEmpty || password.isEmpty {
@@ -76,6 +66,17 @@ class LoginViewController: UIViewController {
             }
         }
     }
+    
+    @IBAction private func loginButtonTouchUpInside(_ sender: UIButton) {
+        login()
+    }
+    
+    @IBAction private func clearButtonTouchUpInside(_ sender: UIButton) {
+        userNameTextField.text?.removeAll()
+        passwordTextField.text?.removeAll()
+        errorLabel.isHidden = true
+    }
+    
 }
 
 extension LoginViewController : UITextFieldDelegate {
