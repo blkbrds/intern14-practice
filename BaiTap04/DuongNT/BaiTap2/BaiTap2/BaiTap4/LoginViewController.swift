@@ -10,35 +10,36 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
-    @IBOutlet weak var userNameTextField: UITextField!
-    @IBOutlet weak var passwordTextField: UITextField!
-    @IBOutlet weak var lblError: UILabel!
-    @IBOutlet weak var btnLogin: UIButton!
-    @IBOutlet weak var btnClear: UIButton!
+    @IBOutlet private weak var userNameTextField: UITextField!
+    @IBOutlet private weak var passwordTextField: UITextField!
+    @IBOutlet private weak var errorLabel: UILabel!
+    @IBOutlet private weak var loginButton: UIButton!
+    @IBOutlet private weak var clearButton: UIButton!
     
-    @IBAction func btnLogin(_ sender: UIButton) {
-        login()
-    }   
-    
-    @IBAction func btnClear(_ sender: UIButton) {
-        userNameTextField.text?.removeAll()
-        passwordTextField.text?.removeAll()
-        lblError.isHidden = true
-    }
     override func viewDidLoad() {
         super.viewDidLoad()
         setButton()
         configTextFields()
     }
 
-    func setButton() {
-        btnLogin.backgroundColor = .blue
-        btnLogin.layer.cornerRadius = 10
-        btnLogin.frame = CGRect(x: UIScreen.main.bounds.width / 2 - 104, y: UIScreen.main.bounds.height / 2 - 160, width: 70, height: 30)
-        btnClear.backgroundColor = .blue
-        btnClear.layer.cornerRadius = 10
-        btnClear.frame = CGRect(x: UIScreen.main.bounds.width / 2 + 34, y: UIScreen.main.bounds.height / 2 - 160, width: 70, height: 30)
-        lblError.textColor = .red
+    @IBAction private func loginButtonTouchUpInside(_ sender: UIButton) {
+        login()
+    }
+    
+    @IBAction private func clearButtonTouchUpInside(_ sender: UIButton) {
+        userNameTextField.text?.removeAll()
+        passwordTextField.text?.removeAll()
+        errorLabel.isHidden = true
+    }
+    
+    private func setButton() {
+        loginButton.backgroundColor = .blue
+        loginButton.layer.cornerRadius = 10
+        loginButton.frame = CGRect(x: UIScreen.main.bounds.width / 2 - 104, y: UIScreen.main.bounds.height / 2 - 160, width: 70, height: 30)
+        clearButton.backgroundColor = .blue
+        clearButton.layer.cornerRadius = 10
+        clearButton.frame = CGRect(x: UIScreen.main.bounds.width / 2 + 34, y: UIScreen.main.bounds.height / 2 - 160, width: 70, height: 30)
+        errorLabel.textColor = .red
     }
     
     private func configTextFields() {
@@ -50,26 +51,26 @@ class LoginViewController: UIViewController {
         self.view.endEditing(true)
     }
     
-    func login() {
+    private func login() {
         if let username = userNameTextField.text, let password = passwordTextField.text {
             if username.isEmpty || password.isEmpty {
-                lblError.text = "Pls nhập username và password"
-                lblError.isHidden = false
+                errorLabel.text = "Pls nhập username và password"
+                errorLabel.isHidden = false
             } else {
                 if username == UserData.username {
                     if password == UserData.password {
-                        lblError.isHidden = true
+                        errorLabel.isHidden = true
                     } else {
-                        lblError.text = "Nhập sai password"
-                        lblError.isHidden = false
+                        errorLabel.text = "Nhập sai password"
+                        errorLabel.isHidden = false
                     }
                 } else {
                     if password != UserData.password {
-                        lblError.text = "Nhập sai username & password"
-                        lblError.isHidden = false
+                        errorLabel.text = "Nhập sai username & password"
+                        errorLabel.isHidden = false
                     } else {
-                        lblError.text = "Nhập sai username"
-                        lblError.isHidden = false
+                        errorLabel.text = "Nhập sai username"
+                        errorLabel.isHidden = false
                     }
                 }
             }

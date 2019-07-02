@@ -33,7 +33,7 @@ class SliderViewController: UIViewController {
         mainView.backgroundColor = UIColor(red: CGFloat(red / 255), green: CGFloat(green / 255), blue: CGFloat(blue / 255), alpha: 1)
     }
     
-    @IBAction func changeSlider(_ sender: UISlider){
+    @IBAction func changeSlider(_ sender: UISlider) {
         guard let red = sliderRed, let blue = sliderBlue, let green = sliderGreen else { return }
         colorChangeView(red: red.value, green: green.value, blue: blue.value)
         lblTitle.text = "Color (R: \(Int(red.value)), G: \(Int(green.value)), B: \(Int(blue.value)))"

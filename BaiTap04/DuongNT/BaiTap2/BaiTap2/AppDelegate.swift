@@ -18,10 +18,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if let window = window {
             window.backgroundColor = .white
             window.makeKeyAndVisible()
-            //let viewController = ViewController()
-            //let viewController = ListUsersViewController()
-            //let viewController = LoginViewController()
-            
             let viewController = SliderViewController()
             window.rootViewController = viewController
         }

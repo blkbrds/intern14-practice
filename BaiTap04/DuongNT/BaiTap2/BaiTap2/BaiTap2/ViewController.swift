@@ -10,16 +10,16 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var chuoiView: UIView!
-    @IBOutlet weak var chuoiLabel: UILabel!
-    @IBOutlet weak var chuoiNumLabel: UILabel!
-    @IBOutlet weak var nhoView: UIView!
-    @IBOutlet weak var nhoNumLabel: UILabel!
-    @IBOutlet weak var nhoLabel: UILabel!
-    @IBOutlet weak var taoView: UIView!
-    @IBOutlet weak var taoLabel: UILabel!
-    @IBOutlet weak var taoNumLabel: UILabel!
-    @IBOutlet weak var btnAddAll: UIButton!
+    @IBOutlet private weak var chuoiView: UIView!
+    @IBOutlet private weak var chuoiLabel: UILabel!
+    @IBOutlet private weak var chuoiNumLabel: UILabel!
+    @IBOutlet private weak var nhoView: UIView!
+    @IBOutlet private weak var nhoNumLabel: UILabel!
+    @IBOutlet private weak var nhoLabel: UILabel!
+    @IBOutlet private weak var taoView: UIView!
+    @IBOutlet private weak var taoLabel: UILabel!
+    @IBOutlet private weak var taoNumLabel: UILabel!
+    @IBOutlet private weak var btnAddAll: UIButton!
     private var chuoiNum = 0
     private var taoNum = 0
     private var nhoNum = 0
@@ -59,22 +59,22 @@ class ViewController: UIViewController {
         btnAddAll.frame = CGRect(x: UIScreen.main.bounds.width / 2 - 50, y: UIScreen.main.bounds.height / 2, width: 100, height: 50)
     }
     
-    @IBAction func chuoiButtonTouchUpInside(_ sender: UIView) {
+    @IBAction private func chuoiButtonTouchUpInside(_ sender: UIView) {
         chuoiNum += 1
         chuoiNumLabel.text = ("\(chuoiNum)")
     }
     
-    @IBAction func nhoButtonTouchUpInside(_ sender: UIView) {
+    @IBAction private func nhoButtonTouchUpInside(_ sender: UIView) {
         nhoNum += 1
         nhoNumLabel.text = ("\(nhoNum)")
     }
     
-    @IBAction func taoButtonTouchUpInside(_ sender: UIView) {
+    @IBAction private func taoButtonTouchUpInside(_ sender: UIView) {
         taoNum += 1
         taoNumLabel.text = ("\(taoNum)")
     }
     
-    @IBAction func btnAddAllTouchUpInside(_ sender: UIView) {
+    @IBAction private func btnAddAllTouchUpInside(_ sender: UIView) {
         chuoiButtonTouchUpInside(sender)
         nhoButtonTouchUpInside(sender)
         taoButtonTouchUpInside(sender)
