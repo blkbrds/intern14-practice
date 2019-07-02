@@ -25,6 +25,7 @@ class BaiTap03ViewController: UIViewController {
     private var startPoint = CGPoint(x: 0, y: 0)
     private var endPoint = CGPoint(x: 0, y: 0)
     private var newImage = UIImage()
+    private var colorBrush = UIColor.black.cgColor
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -71,7 +72,7 @@ class BaiTap03ViewController: UIViewController {
             
             let shapeLayer = CAShapeLayer()
             shapeLayer.path = path.cgPath
-            shapeLayer.strokeColor = UIColor.black.cgColor
+            shapeLayer.strokeColor = colorBrush
             
             drawView.layer.addSublayer(shapeLayer)
             }
@@ -87,6 +88,34 @@ class BaiTap03ViewController: UIViewController {
         newImage = renderer.image { ctx in view.drawHierarchy(in: view.bounds, afterScreenUpdates: true)
         }
     }
-
+    
+    @IBAction func redColorBrushTouchUpInside(_ sender: Any) {
+        colorBrush = UIColor(red: 229 / 255.0, green: 32 / 255.0, blue: 23 / 255.0, alpha: 1).cgColor
+    }
+    
+    @IBAction func yellowColorBrushTouchUpInSide(_ sender: Any) {
+        colorBrush = UIColor(red: 253 / 255.0, green: 255 / 255.0, blue: 19 / 255.0, alpha: 1).cgColor
+    }
+    
+    @IBAction func greenColorBrushTouchUpInside(_ sender: Any) {
+        colorBrush = UIColor(red: 37 / 255.0, green: 255 / 255.0, blue: 16 / 255.0, alpha: 1).cgColor
+    }
+    @IBAction func blueColorBrushTouchUpInside(_ sender: Any) {
+        colorBrush = UIColor(red: 37 / 255.0, green: 59 / 255.0, blue: 255 / 255.0, alpha: 1).cgColor
+    }
+    @IBAction func pinkColorBrushTouchUpInside(_ sender: Any) {
+        colorBrush = UIColor(red: 255 / 255.0, green: 50 / 255.0, blue: 191 / 255.0, alpha: 1).cgColor
+    }
+    @IBAction func orangeColorBrushTouchUpInside(_ sender: Any) {
+        colorBrush = UIColor(red: 240 / 255.0, green: 151 / 255.0, blue: 23 / 255.0, alpha: 1).cgColor
+    }
+    @IBAction func whiteBlueColorBrushTouchUpInside(_ sender: Any) {
+        colorBrush = UIColor(red: 11 / 255.0, green: 228 / 255.0, blue: 255 / 255.0, alpha: 1).cgColor
+    }
+    @IBAction func purpleColorBrushTouchUpInside(_ sender: Any) {
+        colorBrush = UIColor(red: 136 / 255.0, green: 36 / 255.0, blue: 207 / 255.0, alpha: 1).cgColor
+    }
+    @IBAction func blackColorBrushTouchUpInside(_ sender: Any) {
+        colorBrush = UIColor.black.cgColor
+    }
 }
-
