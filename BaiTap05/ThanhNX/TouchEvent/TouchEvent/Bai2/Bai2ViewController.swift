@@ -17,11 +17,11 @@ class Bai2ViewController: UIViewController {
     }
     
     let viewBig = UIView(frame: CGRect(x: Config.xFrame, y: Config.yFrame, width: Config.sliderWidth, height: Config.sliderHeight))
-    let blueView = UIView(frame: CGRect(x: 14, y: 14, width: 32, height: 252))
-    let orangeSliderView = UIView(frame: CGRect(x: 15, y: 15, width: 50, height: 50))
-    let slideLabel = UILabel(frame: CGRect(x: 5, y: 15, width: 40, height: 20))
-    let whiteView = UIView(frame: CGRect(x: 15, y: 15, width: 30, height: 0))
-    var percentage: CGFloat = 0
+    private let blueView = UIView(frame: CGRect(x: 14, y: 14, width: 32, height: 252))
+    private let orangeSliderView = UIView(frame: CGRect(x: 15, y: 15, width: 50, height: 50))
+    private let slideLabel = UILabel(frame: CGRect(x: 5, y: 15, width: 40, height: 20))
+    private let whiteView = UIView(frame: CGRect(x: 15, y: 15, width: 30, height: 0))
+    private var percentage: CGFloat = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -61,8 +61,6 @@ class Bai2ViewController: UIViewController {
                 var touchLocation = touch.location(in: blueView)
                 touchLocation.x = orangeSliderView.frame.origin.x
                 touchLocation.y -= orangeSliderView.bounds.height / 2
-                percentage = 100 - (whiteView.frame.size.height / blueView.bounds.height * 100)
-                slideLabel.text = "\(Int(percentage))"
                 orangeSliderView.frame.origin = touchLocation
                 if orangeSliderView.center.y >= blueView.bounds.size.height {
                     orangeSliderView.center.y = blueView.bounds.size.height
@@ -72,6 +70,8 @@ class Bai2ViewController: UIViewController {
                     slideLabel.text = "\(100)"
                 } else {
                     whiteView.frame.size.height = orangeSliderView.center.y
+                    percentage = 100 - (whiteView.frame.size.height / blueView.bounds.height * 100)
+                    slideLabel.text = "\(Int(percentage))"
                 }
             }
         }
