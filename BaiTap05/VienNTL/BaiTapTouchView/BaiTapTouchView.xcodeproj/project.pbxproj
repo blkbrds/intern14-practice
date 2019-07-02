@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B000BFA22CB17A700D35161 /* BaiTap03ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B000BF822CB17A700D35161 /* BaiTap03ViewController.swift */; };
+		1B000BFB22CB17A700D35161 /* BaiTap03ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B000BF922CB17A700D35161 /* BaiTap03ViewController.xib */; };
 		1BF0FFC522C4CC3A002CBF10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF0FFC422C4CC3A002CBF10 /* AppDelegate.swift */; };
 		1BF0FFC722C4CC3A002CBF10 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF0FFC622C4CC3A002CBF10 /* ViewController.swift */; };
 		1BF0FFCC22C4CC3C002CBF10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BF0FFCB22C4CC3C002CBF10 /* Assets.xcassets */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B000BF822CB17A700D35161 /* BaiTap03ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaiTap03ViewController.swift; sourceTree = "<group>"; };
+		1B000BF922CB17A700D35161 /* BaiTap03ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BaiTap03ViewController.xib; sourceTree = "<group>"; };
 		1BF0FFC122C4CC3A002CBF10 /* BaiTapTouchView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaiTapTouchView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BF0FFC422C4CC3A002CBF10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1BF0FFC622C4CC3A002CBF10 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -39,6 +43,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B000BF722CB178900D35161 /* BaiTap03 */ = {
+			isa = PBXGroup;
+			children = (
+				1B000BF822CB17A700D35161 /* BaiTap03ViewController.swift */,
+				1B000BF922CB17A700D35161 /* BaiTap03ViewController.xib */,
+			);
+			name = BaiTap03;
+			sourceTree = "<group>";
+		};
 		1BF0FFB822C4CC3A002CBF10 = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +71,7 @@
 		1BF0FFC322C4CC3A002CBF10 /* BaiTapTouchView */ = {
 			isa = PBXGroup;
 			children = (
+				1B000BF722CB178900D35161 /* BaiTap03 */,
 				1BF0FFDB22C5A020002CBF10 /* BaiTap02 */,
 				1BF0FFD622C4CCD4002CBF10 /* BaiTap01 */,
 				1BF0FFC422C4CC3A002CBF10 /* AppDelegate.swift */,
@@ -146,6 +160,7 @@
 			files = (
 				1BF0FFDA22C4CCEF002CBF10 /* BaiTap01ViewController.xib in Resources */,
 				1BF0FFCC22C4CC3C002CBF10 /* Assets.xcassets in Resources */,
+				1B000BFB22CB17A700D35161 /* BaiTap03ViewController.xib in Resources */,
 				1BF0FFDF22C5A044002CBF10 /* BaiTap02ViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -160,6 +175,7 @@
 				1BF0FFC722C4CC3A002CBF10 /* ViewController.swift in Sources */,
 				1BF0FFDE22C5A044002CBF10 /* BaiTap02ViewController.swift in Sources */,
 				1BF0FFD922C4CCEF002CBF10 /* BaiTap01ViewController.swift in Sources */,
+				1B000BFA22CB17A700D35161 /* BaiTap03ViewController.swift in Sources */,
 				1BF0FFC522C4CC3A002CBF10 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
