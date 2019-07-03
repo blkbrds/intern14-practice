@@ -22,7 +22,7 @@ class Ex05: UIViewController {
         setLabelForSlider()
     }
     
-    @IBAction func adjustColorValueChanged(_ sender: Any) {
+    @IBAction func adjustColorValueChanged(_ sender: Any?) {
         colorBoard.backgroundColor = UIColor(red: CGFloat(redSlider.value) / 255, green: CGFloat(greenSlider.value) / 255, blue: CGFloat(blueSlider.value) / 255, alpha: 1)
         setLabelForSlider()
     }
