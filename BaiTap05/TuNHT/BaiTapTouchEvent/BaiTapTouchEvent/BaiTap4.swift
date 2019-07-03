@@ -32,7 +32,7 @@ class BaiTap4: UIViewController, UIGestureRecognizerDelegate {
     @objc func handleLongPress(_ sender: UILongPressGestureRecognizer) {
         if sender.state != UIGestureRecognizer.State.ended {
             //When lognpress is start or running
-            gorillaImageView.frame = CGRect(x: 91.0, y: 384.0, width: 232.0, height: 128.0)
+            self.gorillaImageView.transform = CGAffineTransform.identity
         }
     }
     
