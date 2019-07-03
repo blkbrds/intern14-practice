@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		31EB26DC22CB18DC00685E78 /* BaiTap4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31EB26DA22CB18DC00685E78 /* BaiTap4.swift */; };
+		31EB26DD22CB18DC00685E78 /* BaiTap4.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31EB26DB22CB18DC00685E78 /* BaiTap4.xib */; };
+		31EB26E022CB460800685E78 /* BaiTap5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31EB26DE22CB460800685E78 /* BaiTap5.swift */; };
+		31EB26E122CB460800685E78 /* BaiTap5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31EB26DF22CB460800685E78 /* BaiTap5.xib */; };
 		31EDA2F322C5D4B300DAF56C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31EDA2F222C5D4B300DAF56C /* AppDelegate.swift */; };
 		31EDA2F522C5D4B300DAF56C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31EDA2F422C5D4B300DAF56C /* ViewController.swift */; };
 		31EDA2FA22C5D4B300DAF56C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31EDA2F922C5D4B300DAF56C /* Assets.xcassets */; };
@@ -17,11 +21,13 @@
 		31EDA30B22C60B3600DAF56C /* BaiTap2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31EDA30922C60B3600DAF56C /* BaiTap2.xib */; };
 		31F052D822C9C314006962F4 /* BaiTap3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F052D622C9C314006962F4 /* BaiTap3.swift */; };
 		31F052D922C9C314006962F4 /* BaiTap3.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31F052D722C9C314006962F4 /* BaiTap3.xib */; };
-		31F052DC22C9EACF006962F4 /* BaiTap4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F052DA22C9EACF006962F4 /* BaiTap4.swift */; };
-		31F052DD22C9EACF006962F4 /* BaiTap4.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31F052DB22C9EACF006962F4 /* BaiTap4.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		31EB26DA22CB18DC00685E78 /* BaiTap4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaiTap4.swift; sourceTree = "<group>"; };
+		31EB26DB22CB18DC00685E78 /* BaiTap4.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BaiTap4.xib; sourceTree = "<group>"; };
+		31EB26DE22CB460800685E78 /* BaiTap5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaiTap5.swift; sourceTree = "<group>"; };
+		31EB26DF22CB460800685E78 /* BaiTap5.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BaiTap5.xib; sourceTree = "<group>"; };
 		31EDA2EF22C5D4B300DAF56C /* BaiTapTouchEvent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaiTapTouchEvent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31EDA2F222C5D4B300DAF56C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		31EDA2F422C5D4B300DAF56C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -34,8 +40,6 @@
 		31EDA30922C60B3600DAF56C /* BaiTap2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BaiTap2.xib; sourceTree = "<group>"; };
 		31F052D622C9C314006962F4 /* BaiTap3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaiTap3.swift; sourceTree = "<group>"; };
 		31F052D722C9C314006962F4 /* BaiTap3.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BaiTap3.xib; sourceTree = "<group>"; };
-		31F052DA22C9EACF006962F4 /* BaiTap4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaiTap4.swift; sourceTree = "<group>"; };
-		31F052DB22C9EACF006962F4 /* BaiTap4.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BaiTap4.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,8 +73,6 @@
 			isa = PBXGroup;
 			children = (
 				31EDA2F222C5D4B300DAF56C /* AppDelegate.swift */,
-				31F052DA22C9EACF006962F4 /* BaiTap4.swift */,
-				31F052DB22C9EACF006962F4 /* BaiTap4.xib */,
 				31EDA2F422C5D4B300DAF56C /* ViewController.swift */,
 				31EDA2F922C5D4B300DAF56C /* Assets.xcassets */,
 				31EDA2FB22C5D4B300DAF56C /* LaunchScreen.storyboard */,
@@ -81,6 +83,10 @@
 				31EDA30922C60B3600DAF56C /* BaiTap2.xib */,
 				31F052D622C9C314006962F4 /* BaiTap3.swift */,
 				31F052D722C9C314006962F4 /* BaiTap3.xib */,
+				31EB26DA22CB18DC00685E78 /* BaiTap4.swift */,
+				31EB26DB22CB18DC00685E78 /* BaiTap4.xib */,
+				31EB26DE22CB460800685E78 /* BaiTap5.swift */,
+				31EB26DF22CB460800685E78 /* BaiTap5.xib */,
 			);
 			path = BaiTapTouchEvent;
 			sourceTree = "<group>";
@@ -146,9 +152,10 @@
 				31EDA2FD22C5D4B300DAF56C /* LaunchScreen.storyboard in Resources */,
 				31EDA2FA22C5D4B300DAF56C /* Assets.xcassets in Resources */,
 				31EDA30722C5D55D00DAF56C /* BaiTap1.xib in Resources */,
+				31EB26E122CB460800685E78 /* BaiTap5.xib in Resources */,
 				31EDA30B22C60B3600DAF56C /* BaiTap2.xib in Resources */,
 				31F052D922C9C314006962F4 /* BaiTap3.xib in Resources */,
-				31F052DD22C9EACF006962F4 /* BaiTap4.xib in Resources */,
+				31EB26DD22CB18DC00685E78 /* BaiTap4.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,8 +170,9 @@
 				31EDA2F322C5D4B300DAF56C /* AppDelegate.swift in Sources */,
 				31EDA30622C5D55D00DAF56C /* BaiTap1.swift in Sources */,
 				31EDA30A22C60B3600DAF56C /* BaiTap2.swift in Sources */,
+				31EB26E022CB460800685E78 /* BaiTap5.swift in Sources */,
 				31F052D822C9C314006962F4 /* BaiTap3.swift in Sources */,
-				31F052DC22C9EACF006962F4 /* BaiTap4.swift in Sources */,
+				31EB26DC22CB18DC00685E78 /* BaiTap4.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
