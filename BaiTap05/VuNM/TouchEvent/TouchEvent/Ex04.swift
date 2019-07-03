@@ -30,11 +30,8 @@ class Ex04: UIViewController, UIGestureRecognizerDelegate {
     @objc func handlePinch(_ gesture: UIPinchGestureRecognizer) {
         guard gesture.view != nil else { return }
         if gesture.state == .began || gesture.state == .changed  {
-//            let scaledImage = UIGraphicsGetImageFromCurrentImageContext()
-//            if sampleImageView?.contentScaleFactor <= 2{
             gesture.view?.transform = (gesture.view?.transform.scaledBy(x: gesture.scale, y: gesture.scale))!
             gesture.scale = 1.0
-//            }
             
         }
     

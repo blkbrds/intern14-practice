@@ -68,7 +68,6 @@ class Ex05: UIViewController {
     func addMonthLable() {
         var x: CGFloat = 2.5
         var y: CGFloat = 0
-        
         for i in 0..<monthList.count {
             y = board1.bounds.height - (((board1.bounds.height - 50) / 20) * monthList[i].unitSold) - 30
             let monthlable = UILabel(frame: CGRect(x: x, y: y, width: 40, height: 40))

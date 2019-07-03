@@ -90,30 +90,30 @@ class Ex03: UIViewController {
         color = UIColor.yellow.cgColor
     }
     
-    @IBAction func purpleButton(_ sender: Any) {
+    @IBAction func purpleButton(_ sender: Any?) {
         color = UIColor.purple.cgColor
     }
     
-    @IBAction func orangeButton(_ sender: Any) {
+    @IBAction func orangeButton(_ sender: Any?) {
         color = UIColor.orange.cgColor
     }
     
-    @IBAction func whiteButton(_ sender: Any) {
+    @IBAction func whiteButton(_ sender: Any?) {
         color = UIColor.white.cgColor
     }
     
-    @IBAction func greenButton(_ sender: Any) {
+    @IBAction func greenButton(_ sender: Any?) {
         color = UIColor.green.cgColor
     }
     
-    @IBAction func blueButton(_ sender: Any) {
+    @IBAction func blueButton(_ sender: Any?) {
         color = UIColor.blue.cgColor
     }
     
-    @IBAction func redButton(_ sender: Any) {
+    @IBAction func redButton(_ sender: Any?) {
         color = UIColor.red.cgColor
     }
-    @IBAction func saveButton(_ sender: Any) {
+    @IBAction func saveButton(_ sender: Any?) {
         saveImage()
     }
     func saveImage() {
