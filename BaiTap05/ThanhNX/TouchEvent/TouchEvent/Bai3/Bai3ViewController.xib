@@ -56,9 +56,7 @@
                             <rect key="frame" x="213" y="14" width="171" height="50"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" red="0.8980392157" green="0.010208616340000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <state key="normal" title="Reset">
-                                <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                            </state>
+                            <state key="normal" title="Reset"/>
                             <connections>
                                 <action selector="resetTouchUpInside:" destination="-1" eventType="touchUpInside" id="iRS-1U-Uhj"/>
                             </connections>

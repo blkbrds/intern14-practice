@@ -53,6 +53,7 @@ class Bai3ViewController: UIViewController {
     }
     
     @IBAction private func saveTouchUpInside(_ sender: UIButton) {
+        saveImage()
     }
     
     //MARK: reseting
@@ -63,11 +64,7 @@ class Bai3ViewController: UIViewController {
     
     @IBAction private func redTouchUpInside(_ sender: UIButton) {
         drawColor = colorArr[sender.tag]
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
+    }    
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         swiped = false
@@ -104,5 +101,21 @@ class Bai3ViewController: UIViewController {
         context?.strokePath()
         imageView.image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
+    }
+    
+    func saveImage() {
+        guard let selectedImage = imageView.image else {
+            print("Image not found!")
+            return
+        }
+        UIImageWriteToSavedPhotosAlbum(selectedImage, self, #selector(image(_:didFinishSavingWithError:contextInfo:)), nil)
+    }
+    
+    @objc func image(_ image: UIImage, didFinishSavingWithError error: Error?, contextInfo: UnsafeRawPointer) {
+        if let error = error {
+            print(error.localizedDescription)
+        } else {
+            print("Saved")
+        }
     }
 }
