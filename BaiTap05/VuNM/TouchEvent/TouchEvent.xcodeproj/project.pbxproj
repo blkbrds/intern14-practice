@@ -13,6 +13,14 @@
 		F01E29BB22C5EC0A00E6C8FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F01E29B922C5EC0A00E6C8FF /* LaunchScreen.storyboard */; };
 		F01E29C522C5ECFE00E6C8FF /* Ex01.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01E29C322C5ECFE00E6C8FF /* Ex01.swift */; };
 		F01E29C622C5ECFE00E6C8FF /* Ex01.xib in Resources */ = {isa = PBXBuildFile; fileRef = F01E29C422C5ECFE00E6C8FF /* Ex01.xib */; };
+		F04060F922CCB82C00A4EEE5 /* Ex05.xib in Resources */ = {isa = PBXBuildFile; fileRef = F04060EF22CCB82C00A4EEE5 /* Ex05.xib */; };
+		F04060FA22CCB82C00A4EEE5 /* Ex05.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04060F022CCB82C00A4EEE5 /* Ex05.swift */; };
+		F04060FB22CCB82C00A4EEE5 /* Ex03.xib in Resources */ = {isa = PBXBuildFile; fileRef = F04060F222CCB82C00A4EEE5 /* Ex03.xib */; };
+		F04060FC22CCB82C00A4EEE5 /* Ex03.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04060F322CCB82C00A4EEE5 /* Ex03.swift */; };
+		F04060FD22CCB82C00A4EEE5 /* Ex04.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04060F422CCB82C00A4EEE5 /* Ex04.swift */; };
+		F04060FE22CCB82C00A4EEE5 /* Ex02.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04060F622CCB82C00A4EEE5 /* Ex02.swift */; };
+		F04060FF22CCB82C00A4EEE5 /* Ex02.xib in Resources */ = {isa = PBXBuildFile; fileRef = F04060F722CCB82C00A4EEE5 /* Ex02.xib */; };
+		F040610022CCB82C00A4EEE5 /* Ex04.xib in Resources */ = {isa = PBXBuildFile; fileRef = F04060F822CCB82C00A4EEE5 /* Ex04.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,14 @@
 		F01E29BC22C5EC0A00E6C8FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F01E29C322C5ECFE00E6C8FF /* Ex01.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex01.swift; sourceTree = "<group>"; };
 		F01E29C422C5ECFE00E6C8FF /* Ex01.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex01.xib; sourceTree = "<group>"; };
+		F04060EF22CCB82C00A4EEE5 /* Ex05.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Ex05.xib; sourceTree = "<group>"; };
+		F04060F022CCB82C00A4EEE5 /* Ex05.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ex05.swift; sourceTree = "<group>"; };
+		F04060F222CCB82C00A4EEE5 /* Ex03.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Ex03.xib; sourceTree = "<group>"; };
+		F04060F322CCB82C00A4EEE5 /* Ex03.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ex03.swift; sourceTree = "<group>"; };
+		F04060F422CCB82C00A4EEE5 /* Ex04.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ex04.swift; sourceTree = "<group>"; };
+		F04060F622CCB82C00A4EEE5 /* Ex02.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ex02.swift; sourceTree = "<group>"; };
+		F04060F722CCB82C00A4EEE5 /* Ex02.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Ex02.xib; sourceTree = "<group>"; };
+		F04060F822CCB82C00A4EEE5 /* Ex04.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Ex04.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +72,17 @@
 		F01E29AF22C5EC0800E6C8FF /* TouchEvent */ = {
 			isa = PBXGroup;
 			children = (
-				F01E29C222C5EC2500E6C8FF /* Ex01 */,
+				F01E29BC22C5EC0A00E6C8FF /* Info.plist */,
 				F01E29B022C5EC0800E6C8FF /* AppDelegate.swift */,
+				F04060F422CCB82C00A4EEE5 /* Ex04.swift */,
 				F01E29B222C5EC0800E6C8FF /* ViewController.swift */,
 				F01E29B722C5EC0A00E6C8FF /* Assets.xcassets */,
+				F04060F822CCB82C00A4EEE5 /* Ex04.xib */,
+				F01E29C222C5EC2500E6C8FF /* Ex01 */,
+				F04060F522CCB82C00A4EEE5 /* Ex02 */,
+				F04060F122CCB82C00A4EEE5 /* Ex03 */,
+				F04060EE22CCB82C00A4EEE5 /* Ex05 */,
 				F01E29B922C5EC0A00E6C8FF /* LaunchScreen.storyboard */,
-				F01E29BC22C5EC0A00E6C8FF /* Info.plist */,
 			);
 			path = TouchEvent;
 			sourceTree = "<group>";
@@ -73,6 +94,33 @@
 				F01E29C422C5ECFE00E6C8FF /* Ex01.xib */,
 			);
 			path = Ex01;
+			sourceTree = "<group>";
+		};
+		F04060EE22CCB82C00A4EEE5 /* Ex05 */ = {
+			isa = PBXGroup;
+			children = (
+				F04060EF22CCB82C00A4EEE5 /* Ex05.xib */,
+				F04060F022CCB82C00A4EEE5 /* Ex05.swift */,
+			);
+			path = Ex05;
+			sourceTree = "<group>";
+		};
+		F04060F122CCB82C00A4EEE5 /* Ex03 */ = {
+			isa = PBXGroup;
+			children = (
+				F04060F222CCB82C00A4EEE5 /* Ex03.xib */,
+				F04060F322CCB82C00A4EEE5 /* Ex03.swift */,
+			);
+			path = Ex03;
+			sourceTree = "<group>";
+		};
+		F04060F522CCB82C00A4EEE5 /* Ex02 */ = {
+			isa = PBXGroup;
+			children = (
+				F04060F622CCB82C00A4EEE5 /* Ex02.swift */,
+				F04060F722CCB82C00A4EEE5 /* Ex02.xib */,
+			);
+			path = Ex02;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,8 +182,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F01E29BB22C5EC0A00E6C8FF /* LaunchScreen.storyboard in Resources */,
+				F04060FB22CCB82C00A4EEE5 /* Ex03.xib in Resources */,
+				F040610022CCB82C00A4EEE5 /* Ex04.xib in Resources */,
 				F01E29C622C5ECFE00E6C8FF /* Ex01.xib in Resources */,
 				F01E29B822C5EC0A00E6C8FF /* Assets.xcassets in Resources */,
+				F04060FF22CCB82C00A4EEE5 /* Ex02.xib in Resources */,
+				F04060F922CCB82C00A4EEE5 /* Ex05.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,8 +199,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F01E29B322C5EC0800E6C8FF /* ViewController.swift in Sources */,
+				F04060FE22CCB82C00A4EEE5 /* Ex02.swift in Sources */,
 				F01E29B122C5EC0800E6C8FF /* AppDelegate.swift in Sources */,
+				F04060FD22CCB82C00A4EEE5 /* Ex04.swift in Sources */,
 				F01E29C522C5ECFE00E6C8FF /* Ex01.swift in Sources */,
+				F04060FA22CCB82C00A4EEE5 /* Ex05.swift in Sources */,
+				F04060FC22CCB82C00A4EEE5 /* Ex03.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

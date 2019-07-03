@@ -10,21 +10,27 @@ import UIKit
 
 class Ex01: UIViewController {
 
+    @IBOutlet weak var ballUIImageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        adjustFrame()
+    }
+    
+    var location = CGPoint(x: 0, y: 0)
+    
+    private func adjustFrame() {
+        ballUIImageView.layer.cornerRadius = ballUIImageView.frame.height / 2
+        ballUIImageView.layer.masksToBounds = false
+        ballUIImageView.clipsToBounds = true
     }
 
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+        if let touch = touches.first {
+            location = touch.location(in: view.self)
+            if ballUIImageView.frame.contains(location) {
+            ballUIImageView.center = location
+            }
+        }
     }
-    */
-
 }
