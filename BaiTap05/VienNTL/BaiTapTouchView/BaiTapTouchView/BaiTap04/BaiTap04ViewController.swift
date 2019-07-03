@@ -10,7 +10,6 @@ import UIKit
 
 class BaiTap04ViewController: UIViewController, UIGestureRecognizerDelegate {
     @IBOutlet weak var monkeyImageView: UIImageView?
-    private var img = #imageLiteral(resourceName: "monkey")
     
     override func viewDidLoad() {
         super.viewDidLoad()
