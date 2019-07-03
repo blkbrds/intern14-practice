@@ -20,16 +20,16 @@ class Ex05: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setLabelForSlider()
-
     }
     
     @IBAction func adjustColorValueChanged(_ sender: Any) {
         colorBoard.backgroundColor = UIColor(red: CGFloat(redSlider.value) / 255, green: CGFloat(greenSlider.value) / 255, blue: CGFloat(blueSlider.value) / 255, alpha: 1)
+        setLabelForSlider()
     }
     
     private func setLabelForSlider() {
-        redLabel.text = "Red  \(redSlider.value)"
-        greenLabel.text = "Green  \(greenSlider.value)"
-        blueLabel.text = "Blue  \(blueSlider.value)"
+        redLabel.text = "Red  \((redSlider.value) / 255 * 100)"
+        greenLabel.text = "Green  \((greenSlider.value) / 255 * 100)"
+        blueLabel.text = "Blue  \((blueSlider.value) / 255 * 100)"
     }
 }

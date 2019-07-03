@@ -12,8 +12,6 @@
 		F0058B8B22C35F8E00C5B4A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0058B8922C35F8E00C5B4A8 /* LaunchScreen.storyboard */; };
 		F0058B9722C368AB00C5B4A8 /* Ex01.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0058B9522C368AB00C5B4A8 /* Ex01.swift */; };
 		F0058B9822C368AB00C5B4A8 /* Ex01.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0058B9622C368AB00C5B4A8 /* Ex01.xib */; };
-		F0ECC15122C59FF700225F88 /* Ex003.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ECC14F22C59FF700225F88 /* Ex003.swift */; };
-		F0ECC15222C59FF700225F88 /* Ex003.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0ECC15022C59FF700225F88 /* Ex003.xib */; };
 		F0ECC15622C5C9AE00225F88 /* Ex05.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ECC15422C5C9AE00225F88 /* Ex05.swift */; };
 		F0ECC15722C5C9AE00225F88 /* Ex05.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0ECC15522C5C9AE00225F88 /* Ex05.xib */; };
 		F0EDAEDE22C45A2A00843776 /* Ex02.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0EDAEDC22C45A2A00843776 /* Ex02.swift */; };
@@ -22,8 +20,6 @@
 		F0EDAEE422C4845C00843776 /* Ex03.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0EDAEE222C4845C00843776 /* Ex03.xib */; };
 		F0EDAEE922C4BF9B00843776 /* Ex04.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0EDAEE722C4BF9B00843776 /* Ex04.swift */; };
 		F0EDAEEA22C4BF9B00843776 /* Ex04.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0EDAEE822C4BF9B00843776 /* Ex04.xib */; };
-		F0EDAEF122C4C97B00843776 /* Ex0003.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0EDAEEF22C4C97B00843776 /* Ex0003.swift */; };
-		F0EDAEF222C4C97B00843776 /* Ex0003.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0EDAEF022C4C97B00843776 /* Ex0003.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,8 +30,6 @@
 		F0058B8C22C35F8E00C5B4A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F0058B9522C368AB00C5B4A8 /* Ex01.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex01.swift; sourceTree = "<group>"; };
 		F0058B9622C368AB00C5B4A8 /* Ex01.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex01.xib; sourceTree = "<group>"; };
-		F0ECC14F22C59FF700225F88 /* Ex003.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex003.swift; sourceTree = "<group>"; };
-		F0ECC15022C59FF700225F88 /* Ex003.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex003.xib; sourceTree = "<group>"; };
 		F0ECC15422C5C9AE00225F88 /* Ex05.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex05.swift; sourceTree = "<group>"; };
 		F0ECC15522C5C9AE00225F88 /* Ex05.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex05.xib; sourceTree = "<group>"; };
 		F0EDAEDC22C45A2A00843776 /* Ex02.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex02.swift; sourceTree = "<group>"; };
@@ -44,8 +38,6 @@
 		F0EDAEE222C4845C00843776 /* Ex03.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex03.xib; sourceTree = "<group>"; };
 		F0EDAEE722C4BF9B00843776 /* Ex04.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex04.swift; sourceTree = "<group>"; };
 		F0EDAEE822C4BF9B00843776 /* Ex04.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex04.xib; sourceTree = "<group>"; };
-		F0EDAEEF22C4C97B00843776 /* Ex0003.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex0003.swift; sourceTree = "<group>"; };
-		F0EDAEF022C4C97B00843776 /* Ex0003.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex0003.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,8 +71,6 @@
 			isa = PBXGroup;
 			children = (
 				F0ECC15322C5C99800225F88 /* Ex05 */,
-				F0ECC14E22C59FDB00225F88 /* Ex003 */,
-				F0EDAEEE22C4C96200843776 /* Ex0003 */,
 				F0EDAEE622C4BF8300843776 /* Ex04 */,
 				F0EDAEE022C4754200843776 /* Ex03 */,
 				F0EDAED922C44EC600843776 /* Ex02 */,
@@ -100,15 +90,6 @@
 				F0058B9622C368AB00C5B4A8 /* Ex01.xib */,
 			);
 			path = Ex01;
-			sourceTree = "<group>";
-		};
-		F0ECC14E22C59FDB00225F88 /* Ex003 */ = {
-			isa = PBXGroup;
-			children = (
-				F0ECC14F22C59FF700225F88 /* Ex003.swift */,
-				F0ECC15022C59FF700225F88 /* Ex003.xib */,
-			);
-			path = Ex003;
 			sourceTree = "<group>";
 		};
 		F0ECC15322C5C99800225F88 /* Ex05 */ = {
@@ -145,15 +126,6 @@
 				F0EDAEE822C4BF9B00843776 /* Ex04.xib */,
 			);
 			path = Ex04;
-			sourceTree = "<group>";
-		};
-		F0EDAEEE22C4C96200843776 /* Ex0003 */ = {
-			isa = PBXGroup;
-			children = (
-				F0EDAEEF22C4C97B00843776 /* Ex0003.swift */,
-				F0EDAEF022C4C97B00843776 /* Ex0003.xib */,
-			);
-			path = Ex0003;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,10 +188,8 @@
 			files = (
 				F0EDAEDF22C45A2A00843776 /* Ex02.xib in Resources */,
 				F0EDAEE422C4845C00843776 /* Ex03.xib in Resources */,
-				F0ECC15222C59FF700225F88 /* Ex003.xib in Resources */,
 				F0058B8B22C35F8E00C5B4A8 /* LaunchScreen.storyboard in Resources */,
 				F0ECC15722C5C9AE00225F88 /* Ex05.xib in Resources */,
-				F0EDAEF222C4C97B00843776 /* Ex0003.xib in Resources */,
 				F0058B9822C368AB00C5B4A8 /* Ex01.xib in Resources */,
 				F0EDAEEA22C4BF9B00843776 /* Ex04.xib in Resources */,
 				F0058B8822C35F8E00C5B4A8 /* Assets.xcassets in Resources */,
@@ -234,8 +204,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0EDAEDE22C45A2A00843776 /* Ex02.swift in Sources */,
-				F0ECC15122C59FF700225F88 /* Ex003.swift in Sources */,
-				F0EDAEF122C4C97B00843776 /* Ex0003.swift in Sources */,
 				F0EDAEE322C4845C00843776 /* Ex03.swift in Sources */,
 				F0058B8122C35F8D00C5B4A8 /* AppDelegate.swift in Sources */,
 				F0058B9722C368AB00C5B4A8 /* Ex01.swift in Sources */,

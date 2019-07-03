@@ -7,43 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F01E29D422C5F0C300E6C8FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01E29D322C5F0C300E6C8FF /* AppDelegate.swift */; };
-		F01E29D622C5F0C300E6C8FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01E29D522C5F0C300E6C8FF /* ViewController.swift */; };
-		F01E29DB22C5F0C400E6C8FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F01E29DA22C5F0C400E6C8FF /* Assets.xcassets */; };
-		F01E29DE22C5F0C400E6C8FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F01E29DC22C5F0C400E6C8FF /* LaunchScreen.storyboard */; };
-		F01E29E822C5F0F100E6C8FF /* Ex01.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01E29E622C5F0F100E6C8FF /* Ex01.swift */; };
-		F01E29E922C5F0F100E6C8FF /* Ex01.xib in Resources */ = {isa = PBXBuildFile; fileRef = F01E29E722C5F0F100E6C8FF /* Ex01.xib */; };
-		F01E29EF22C6102800E6C8FF /* Ex02.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01E29ED22C6102800E6C8FF /* Ex02.swift */; };
-		F01E29F022C6102800E6C8FF /* Ex02.xib in Resources */ = {isa = PBXBuildFile; fileRef = F01E29EE22C6102800E6C8FF /* Ex02.xib */; };
-		F0ED1D3A22C9FC3900975BBC /* Ex03.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ED1D3822C9FC3900975BBC /* Ex03.swift */; };
-		F0ED1D3B22C9FC3900975BBC /* Ex03.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0ED1D3922C9FC3900975BBC /* Ex03.xib */; };
-		F0EEF6CE22CB494800C13C85 /* Ex04.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0EEF6CC22CB494800C13C85 /* Ex04.swift */; };
-		F0EEF6CF22CB494800C13C85 /* Ex04.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0EEF6CD22CB494800C13C85 /* Ex04.xib */; };
-		F0EF27DB22CC546700A8E7F3 /* Ex05.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0EF27D922CC546700A8E7F3 /* Ex05.swift */; };
-		F0EF27DC22CC546700A8E7F3 /* Ex05.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0EF27DA22CC546700A8E7F3 /* Ex05.xib */; };
+		F01E29B122C5EC0800E6C8FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01E29B022C5EC0800E6C8FF /* AppDelegate.swift */; };
+		F01E29B322C5EC0800E6C8FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01E29B222C5EC0800E6C8FF /* ViewController.swift */; };
+		F01E29B822C5EC0A00E6C8FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F01E29B722C5EC0A00E6C8FF /* Assets.xcassets */; };
+		F01E29BB22C5EC0A00E6C8FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F01E29B922C5EC0A00E6C8FF /* LaunchScreen.storyboard */; };
+		F01E29C522C5ECFE00E6C8FF /* Ex01.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01E29C322C5ECFE00E6C8FF /* Ex01.swift */; };
+		F01E29C622C5ECFE00E6C8FF /* Ex01.xib in Resources */ = {isa = PBXBuildFile; fileRef = F01E29C422C5ECFE00E6C8FF /* Ex01.xib */; };
+		F04060F922CCB82C00A4EEE5 /* Ex05.xib in Resources */ = {isa = PBXBuildFile; fileRef = F04060EF22CCB82C00A4EEE5 /* Ex05.xib */; };
+		F04060FA22CCB82C00A4EEE5 /* Ex05.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04060F022CCB82C00A4EEE5 /* Ex05.swift */; };
+		F04060FB22CCB82C00A4EEE5 /* Ex03.xib in Resources */ = {isa = PBXBuildFile; fileRef = F04060F222CCB82C00A4EEE5 /* Ex03.xib */; };
+		F04060FC22CCB82C00A4EEE5 /* Ex03.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04060F322CCB82C00A4EEE5 /* Ex03.swift */; };
+		F04060FD22CCB82C00A4EEE5 /* Ex04.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04060F422CCB82C00A4EEE5 /* Ex04.swift */; };
+		F04060FE22CCB82C00A4EEE5 /* Ex02.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04060F622CCB82C00A4EEE5 /* Ex02.swift */; };
+		F04060FF22CCB82C00A4EEE5 /* Ex02.xib in Resources */ = {isa = PBXBuildFile; fileRef = F04060F722CCB82C00A4EEE5 /* Ex02.xib */; };
+		F040610022CCB82C00A4EEE5 /* Ex04.xib in Resources */ = {isa = PBXBuildFile; fileRef = F04060F822CCB82C00A4EEE5 /* Ex04.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F01E29D022C5F0C300E6C8FF /* TouchEvent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TouchEvent.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F01E29D322C5F0C300E6C8FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F01E29D522C5F0C300E6C8FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F01E29DA22C5F0C400E6C8FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F01E29DD22C5F0C400E6C8FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		F01E29DF22C5F0C400E6C8FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F01E29E622C5F0F100E6C8FF /* Ex01.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex01.swift; sourceTree = "<group>"; };
-		F01E29E722C5F0F100E6C8FF /* Ex01.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex01.xib; sourceTree = "<group>"; };
-		F01E29ED22C6102800E6C8FF /* Ex02.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex02.swift; sourceTree = "<group>"; };
-		F01E29EE22C6102800E6C8FF /* Ex02.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex02.xib; sourceTree = "<group>"; };
-		F0ED1D3822C9FC3900975BBC /* Ex03.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex03.swift; sourceTree = "<group>"; };
-		F0ED1D3922C9FC3900975BBC /* Ex03.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex03.xib; sourceTree = "<group>"; };
-		F0EEF6CC22CB494800C13C85 /* Ex04.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex04.swift; sourceTree = "<group>"; };
-		F0EEF6CD22CB494800C13C85 /* Ex04.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex04.xib; sourceTree = "<group>"; };
-		F0EF27D922CC546700A8E7F3 /* Ex05.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex05.swift; sourceTree = "<group>"; };
-		F0EF27DA22CC546700A8E7F3 /* Ex05.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex05.xib; sourceTree = "<group>"; };
+		F01E29AD22C5EC0800E6C8FF /* TouchEvent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TouchEvent.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F01E29B022C5EC0800E6C8FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F01E29B222C5EC0800E6C8FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F01E29B722C5EC0A00E6C8FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F01E29BA22C5EC0A00E6C8FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F01E29BC22C5EC0A00E6C8FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F01E29C322C5ECFE00E6C8FF /* Ex01.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex01.swift; sourceTree = "<group>"; };
+		F01E29C422C5ECFE00E6C8FF /* Ex01.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex01.xib; sourceTree = "<group>"; };
+		F04060EF22CCB82C00A4EEE5 /* Ex05.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Ex05.xib; sourceTree = "<group>"; };
+		F04060F022CCB82C00A4EEE5 /* Ex05.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ex05.swift; sourceTree = "<group>"; };
+		F04060F222CCB82C00A4EEE5 /* Ex03.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Ex03.xib; sourceTree = "<group>"; };
+		F04060F322CCB82C00A4EEE5 /* Ex03.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ex03.swift; sourceTree = "<group>"; };
+		F04060F422CCB82C00A4EEE5 /* Ex04.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ex04.swift; sourceTree = "<group>"; };
+		F04060F622CCB82C00A4EEE5 /* Ex02.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ex02.swift; sourceTree = "<group>"; };
+		F04060F722CCB82C00A4EEE5 /* Ex02.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Ex02.xib; sourceTree = "<group>"; };
+		F04060F822CCB82C00A4EEE5 /* Ex04.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Ex04.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		F01E29CD22C5F0C300E6C8FF /* Frameworks */ = {
+		F01E29AA22C5EC0800E6C8FF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -53,94 +53,86 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F01E29C722C5F0C300E6C8FF = {
+		F01E29A422C5EC0800E6C8FF = {
 			isa = PBXGroup;
 			children = (
-				F01E29D222C5F0C300E6C8FF /* TouchEvent */,
-				F01E29D122C5F0C300E6C8FF /* Products */,
+				F01E29AF22C5EC0800E6C8FF /* TouchEvent */,
+				F01E29AE22C5EC0800E6C8FF /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		F01E29D122C5F0C300E6C8FF /* Products */ = {
+		F01E29AE22C5EC0800E6C8FF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F01E29D022C5F0C300E6C8FF /* TouchEvent.app */,
+				F01E29AD22C5EC0800E6C8FF /* TouchEvent.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F01E29D222C5F0C300E6C8FF /* TouchEvent */ = {
+		F01E29AF22C5EC0800E6C8FF /* TouchEvent */ = {
 			isa = PBXGroup;
 			children = (
-				F0EF27D822CC543A00A8E7F3 /* Ex05 */,
-				F0EEF6CB22CB493A00C13C85 /* Ex04 */,
-				F0ED1D3722C9FC1C00975BBC /* Ex03 */,
-				F01E29EA22C6100400E6C8FF /* Ex02 */,
-				F01E29E522C5F0DD00E6C8FF /* Ex01 */,
-				F01E29D322C5F0C300E6C8FF /* AppDelegate.swift */,
-				F01E29D522C5F0C300E6C8FF /* ViewController.swift */,
-				F01E29DA22C5F0C400E6C8FF /* Assets.xcassets */,
-				F01E29DC22C5F0C400E6C8FF /* LaunchScreen.storyboard */,
-				F01E29DF22C5F0C400E6C8FF /* Info.plist */,
+				F01E29BC22C5EC0A00E6C8FF /* Info.plist */,
+				F01E29B022C5EC0800E6C8FF /* AppDelegate.swift */,
+				F04060F422CCB82C00A4EEE5 /* Ex04.swift */,
+				F01E29B222C5EC0800E6C8FF /* ViewController.swift */,
+				F01E29B722C5EC0A00E6C8FF /* Assets.xcassets */,
+				F04060F822CCB82C00A4EEE5 /* Ex04.xib */,
+				F01E29C222C5EC2500E6C8FF /* Ex01 */,
+				F04060F522CCB82C00A4EEE5 /* Ex02 */,
+				F04060F122CCB82C00A4EEE5 /* Ex03 */,
+				F04060EE22CCB82C00A4EEE5 /* Ex05 */,
+				F01E29B922C5EC0A00E6C8FF /* LaunchScreen.storyboard */,
 			);
 			path = TouchEvent;
 			sourceTree = "<group>";
 		};
-		F01E29E522C5F0DD00E6C8FF /* Ex01 */ = {
+		F01E29C222C5EC2500E6C8FF /* Ex01 */ = {
 			isa = PBXGroup;
 			children = (
-				F01E29E622C5F0F100E6C8FF /* Ex01.swift */,
-				F01E29E722C5F0F100E6C8FF /* Ex01.xib */,
+				F01E29C322C5ECFE00E6C8FF /* Ex01.swift */,
+				F01E29C422C5ECFE00E6C8FF /* Ex01.xib */,
 			);
 			path = Ex01;
 			sourceTree = "<group>";
 		};
-		F01E29EA22C6100400E6C8FF /* Ex02 */ = {
+		F04060EE22CCB82C00A4EEE5 /* Ex05 */ = {
 			isa = PBXGroup;
 			children = (
-				F01E29ED22C6102800E6C8FF /* Ex02.swift */,
-				F01E29EE22C6102800E6C8FF /* Ex02.xib */,
+				F04060EF22CCB82C00A4EEE5 /* Ex05.xib */,
+				F04060F022CCB82C00A4EEE5 /* Ex05.swift */,
 			);
-			path = Ex02;
+			path = Ex05;
 			sourceTree = "<group>";
 		};
-		F0ED1D3722C9FC1C00975BBC /* Ex03 */ = {
+		F04060F122CCB82C00A4EEE5 /* Ex03 */ = {
 			isa = PBXGroup;
 			children = (
-				F0ED1D3822C9FC3900975BBC /* Ex03.swift */,
-				F0ED1D3922C9FC3900975BBC /* Ex03.xib */,
+				F04060F222CCB82C00A4EEE5 /* Ex03.xib */,
+				F04060F322CCB82C00A4EEE5 /* Ex03.swift */,
 			);
 			path = Ex03;
 			sourceTree = "<group>";
 		};
-		F0EEF6CB22CB493A00C13C85 /* Ex04 */ = {
+		F04060F522CCB82C00A4EEE5 /* Ex02 */ = {
 			isa = PBXGroup;
 			children = (
-				F0EEF6CC22CB494800C13C85 /* Ex04.swift */,
-				F0EEF6CD22CB494800C13C85 /* Ex04.xib */,
+				F04060F622CCB82C00A4EEE5 /* Ex02.swift */,
+				F04060F722CCB82C00A4EEE5 /* Ex02.xib */,
 			);
-			name = Ex04;
-			sourceTree = "<group>";
-		};
-		F0EF27D822CC543A00A8E7F3 /* Ex05 */ = {
-			isa = PBXGroup;
-			children = (
-				F0EF27D922CC546700A8E7F3 /* Ex05.swift */,
-				F0EF27DA22CC546700A8E7F3 /* Ex05.xib */,
-			);
-			path = Ex05;
+			path = Ex02;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F01E29CF22C5F0C300E6C8FF /* TouchEvent */ = {
+		F01E29AC22C5EC0800E6C8FF /* TouchEvent */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F01E29E222C5F0C400E6C8FF /* Build configuration list for PBXNativeTarget "TouchEvent" */;
+			buildConfigurationList = F01E29BF22C5EC0A00E6C8FF /* Build configuration list for PBXNativeTarget "TouchEvent" */;
 			buildPhases = (
-				F01E29CC22C5F0C300E6C8FF /* Sources */,
-				F01E29CD22C5F0C300E6C8FF /* Frameworks */,
-				F01E29CE22C5F0C300E6C8FF /* Resources */,
+				F01E29A922C5EC0800E6C8FF /* Sources */,
+				F01E29AA22C5EC0800E6C8FF /* Frameworks */,
+				F01E29AB22C5EC0800E6C8FF /* Resources */,
 			);
 			buildRules = (
 			);
@@ -148,25 +140,25 @@
 			);
 			name = TouchEvent;
 			productName = TouchEvent;
-			productReference = F01E29D022C5F0C300E6C8FF /* TouchEvent.app */;
+			productReference = F01E29AD22C5EC0800E6C8FF /* TouchEvent.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		F01E29C822C5F0C300E6C8FF /* Project object */ = {
+		F01E29A522C5EC0800E6C8FF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1020;
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = PCI0007;
 				TargetAttributes = {
-					F01E29CF22C5F0C300E6C8FF = {
+					F01E29AC22C5EC0800E6C8FF = {
 						CreatedOnToolsVersion = 10.2.1;
 					};
 				};
 			};
-			buildConfigurationList = F01E29CB22C5F0C300E6C8FF /* Build configuration list for PBXProject "TouchEvent" */;
+			buildConfigurationList = F01E29A822C5EC0800E6C8FF /* Build configuration list for PBXProject "TouchEvent" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -174,55 +166,55 @@
 				en,
 				Base,
 			);
-			mainGroup = F01E29C722C5F0C300E6C8FF;
-			productRefGroup = F01E29D122C5F0C300E6C8FF /* Products */;
+			mainGroup = F01E29A422C5EC0800E6C8FF;
+			productRefGroup = F01E29AE22C5EC0800E6C8FF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F01E29CF22C5F0C300E6C8FF /* TouchEvent */,
+				F01E29AC22C5EC0800E6C8FF /* TouchEvent */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		F01E29CE22C5F0C300E6C8FF /* Resources */ = {
+		F01E29AB22C5EC0800E6C8FF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F01E29F022C6102800E6C8FF /* Ex02.xib in Resources */,
-				F0ED1D3B22C9FC3900975BBC /* Ex03.xib in Resources */,
-				F01E29DE22C5F0C400E6C8FF /* LaunchScreen.storyboard in Resources */,
-				F01E29E922C5F0F100E6C8FF /* Ex01.xib in Resources */,
-				F0EEF6CF22CB494800C13C85 /* Ex04.xib in Resources */,
-				F01E29DB22C5F0C400E6C8FF /* Assets.xcassets in Resources */,
-				F0EF27DC22CC546700A8E7F3 /* Ex05.xib in Resources */,
+				F01E29BB22C5EC0A00E6C8FF /* LaunchScreen.storyboard in Resources */,
+				F04060FB22CCB82C00A4EEE5 /* Ex03.xib in Resources */,
+				F040610022CCB82C00A4EEE5 /* Ex04.xib in Resources */,
+				F01E29C622C5ECFE00E6C8FF /* Ex01.xib in Resources */,
+				F01E29B822C5EC0A00E6C8FF /* Assets.xcassets in Resources */,
+				F04060FF22CCB82C00A4EEE5 /* Ex02.xib in Resources */,
+				F04060F922CCB82C00A4EEE5 /* Ex05.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		F01E29CC22C5F0C300E6C8FF /* Sources */ = {
+		F01E29A922C5EC0800E6C8FF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F01E29EF22C6102800E6C8FF /* Ex02.swift in Sources */,
-				F01E29D622C5F0C300E6C8FF /* ViewController.swift in Sources */,
-				F0EEF6CE22CB494800C13C85 /* Ex04.swift in Sources */,
-				F01E29D422C5F0C300E6C8FF /* AppDelegate.swift in Sources */,
-				F01E29E822C5F0F100E6C8FF /* Ex01.swift in Sources */,
-				F0ED1D3A22C9FC3900975BBC /* Ex03.swift in Sources */,
-				F0EF27DB22CC546700A8E7F3 /* Ex05.swift in Sources */,
+				F01E29B322C5EC0800E6C8FF /* ViewController.swift in Sources */,
+				F04060FE22CCB82C00A4EEE5 /* Ex02.swift in Sources */,
+				F01E29B122C5EC0800E6C8FF /* AppDelegate.swift in Sources */,
+				F04060FD22CCB82C00A4EEE5 /* Ex04.swift in Sources */,
+				F01E29C522C5ECFE00E6C8FF /* Ex01.swift in Sources */,
+				F04060FA22CCB82C00A4EEE5 /* Ex05.swift in Sources */,
+				F04060FC22CCB82C00A4EEE5 /* Ex03.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F01E29DC22C5F0C400E6C8FF /* LaunchScreen.storyboard */ = {
+		F01E29B922C5EC0A00E6C8FF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F01E29DD22C5F0C400E6C8FF /* Base */,
+				F01E29BA22C5EC0A00E6C8FF /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -230,7 +222,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		F01E29E022C5F0C400E6C8FF /* Debug */ = {
+		F01E29BD22C5EC0A00E6C8FF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -291,7 +283,7 @@
 			};
 			name = Debug;
 		};
-		F01E29E122C5F0C400E6C8FF /* Release */ = {
+		F01E29BE22C5EC0A00E6C8FF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -346,7 +338,7 @@
 			};
 			name = Release;
 		};
-		F01E29E322C5F0C400E6C8FF /* Debug */ = {
+		F01E29C022C5EC0A00E6C8FF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -363,7 +355,7 @@
 			};
 			name = Debug;
 		};
-		F01E29E422C5F0C400E6C8FF /* Release */ = {
+		F01E29C122C5EC0A00E6C8FF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -383,25 +375,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F01E29CB22C5F0C300E6C8FF /* Build configuration list for PBXProject "TouchEvent" */ = {
+		F01E29A822C5EC0800E6C8FF /* Build configuration list for PBXProject "TouchEvent" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F01E29E022C5F0C400E6C8FF /* Debug */,
-				F01E29E122C5F0C400E6C8FF /* Release */,
+				F01E29BD22C5EC0A00E6C8FF /* Debug */,
+				F01E29BE22C5EC0A00E6C8FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F01E29E222C5F0C400E6C8FF /* Build configuration list for PBXNativeTarget "TouchEvent" */ = {
+		F01E29BF22C5EC0A00E6C8FF /* Build configuration list for PBXNativeTarget "TouchEvent" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F01E29E322C5F0C400E6C8FF /* Debug */,
-				F01E29E422C5F0C400E6C8FF /* Release */,
+				F01E29C022C5EC0A00E6C8FF /* Debug */,
+				F01E29C122C5EC0A00E6C8FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = F01E29C822C5F0C300E6C8FF /* Project object */;
+	rootObject = F01E29A522C5EC0800E6C8FF /* Project object */;
 }

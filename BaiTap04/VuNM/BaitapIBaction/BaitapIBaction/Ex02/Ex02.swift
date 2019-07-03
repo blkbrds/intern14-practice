@@ -26,7 +26,8 @@ class Ex02: UIViewController {
         super.viewDidLoad()
         print()
     }
-    func print() {
+    
+    private func print() {
         bananaLabel.text = "banana"
         grapenLabel.text = "grape"
         appleLabel.text = "apple"
@@ -44,28 +45,28 @@ class Ex02: UIViewController {
         plus1AllButton.layer.borderColor = UIColor.cyan.cgColor
     }
     
-    @IBAction func bananaTouchUpInside(_ sender: Any) {
+    @IBAction func bananaTouchUpInside(_ sender: Any?) {
         bananaButton.setTitle("\(bananaQuantity)", for: .normal)
         bananaQuantity += 1
         bananaLabel.text = "banana"
     }
     
-    @IBAction func grapeTouchUpInside(_ sender: Any) {
+    @IBAction func grapeTouchUpInside(_ sender: Any?) {
         grapeButton.setTitle("\(grapeQuantity)", for: .normal)
         grapeQuantity += 1
         grapenLabel.text = "grape"
     }
     
-    @IBAction func appleTouchUpInside(_ sender: Any) {
+    @IBAction func appleTouchUpInside(_ sender: Any?) {
         appleButton.setTitle("\(appleQuantiy)", for: .normal)
         appleQuantiy += 1
         appleLabel.text = "apple"
     }
     
     @IBAction func plus1AllTouchUpInside(_ sender: Any) {
-        grapeTouchUpInside(Any.self)
-        bananaTouchUpInside(Any.self)
-        appleTouchUpInside(Any.self)
+        grapeTouchUpInside(nil)
+        bananaTouchUpInside(nil)
+        appleTouchUpInside(nil)
     }
 }
 
