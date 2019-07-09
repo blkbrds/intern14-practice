@@ -60,14 +60,13 @@ class MVC2: UIViewController {
     }
     
     func alert() {
-        let alert = UIAlertController(title: "Error", message: "The operation is invalid", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Error", message: "Cannot divide by zero", preferredStyle: .alert)
         let cancel = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
         alert.addAction(cancel)
         present(alert, animated: true)
     }
     
     func calculate() {
-        listNumber.append(number1)
         if listOperation[0] == .plus {
             result = listNumber[0] + listNumber[1]
             resultLabel.text = "\(result)"
@@ -78,24 +77,15 @@ class MVC2: UIViewController {
             number1 = 0
         } else if listOperation[0] == .minus {
             if listNumber[0] == 0 {
-                print(listOperation)
-                print(listNumber)
                 result = listNumber[1]
-                print(result)
                 resultLabel.text = "\(result)"
                 listNumber.append(result)
-                print(listNumber)
                 listNumber.remove(at: 0)
-                print(listNumber)
                 listNumber.remove(at: 0)
-                print(listNumber)
                 number2 = listNumber[0] + number1
                 number1 = 0
             } else {
-                print(listOperation)
-                print(listNumber)
                 result = listNumber[0] - listNumber[1]
-                print(result)
                 resultLabel.text = "\(result)"
                 listNumber.append(result)
                 listNumber.remove(at: 0)
@@ -122,9 +112,7 @@ class MVC2: UIViewController {
             }
         } else if listOperation[0] == .div {
             if listNumber[0] == 0 && listNumber.count == 1 {
-                print(listNumber)
                 listNumber[0] = 1
-                print(listNumber)
                 if listNumber[0] == 0 && listNumber[1] == 0{
                     alert()
                 } else {
@@ -158,11 +146,10 @@ class MVC2: UIViewController {
             number1 = number1 * 10 + Double(sender.tag)
             resultLabel.text = String(number1)
         }
-
-        
     }
     
     @IBAction func operateButton(_ sender: UIButton) {
+        listNumber.append(number1)
         guard let mathOperation = MathOperation(rawValue: sender.tag) else { return }
         operation = mathOperation
         switch mathOperation {
@@ -185,12 +172,12 @@ class MVC2: UIViewController {
             adjustOperandArray()
             calculate()
         case .equal:
-            if listOperation.count < 2 {
-                alert()
-            } else {
+            if listOperation.count >= 2 && listNumber.count >= 2 {
                 listOperation.remove(at: 0)
                 calculate()
                 resetInfo()
+            } else if listOperation.count < 2 && listNumber.count >= 2 {
+                resultLabel.text = "\(number1)"
             }
         case .reset:
             resetInfo()
