@@ -13,8 +13,6 @@
 		F0ECAC9D22CD937000D3F3DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0ECAC9B22CD937000D3F3DF /* LaunchScreen.storyboard */; };
 		F0ECACB022CDA3D400D3F3DF /* MVC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ECACAE22CDA3D400D3F3DF /* MVC2.swift */; };
 		F0ECACB122CDA3D400D3F3DF /* MVC2.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0ECACAF22CDA3D400D3F3DF /* MVC2.xib */; };
-		F0F286A822D435DA00BFF2C4 /* calculate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F286A722D435DA00BFF2C4 /* calculate.swift */; };
-		F0F286AA22D4361500BFF2C4 /* variable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F286A922D4361500BFF2C4 /* variable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,8 +24,6 @@
 		F0ECAC9E22CD937000D3F3DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F0ECACAE22CDA3D400D3F3DF /* MVC2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVC2.swift; sourceTree = "<group>"; };
 		F0ECACAF22CDA3D400D3F3DF /* MVC2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MVC2.xib; sourceTree = "<group>"; };
-		F0F286A722D435DA00BFF2C4 /* calculate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calculate.swift; sourceTree = "<group>"; };
-		F0F286A922D4361500BFF2C4 /* variable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = variable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +56,6 @@
 		F0ECAC9122CD936E00D3F3DF /* MVC */ = {
 			isa = PBXGroup;
 			children = (
-				F0F286A422D4359A00BFF2C4 /* Model */,
 				F0ECACAD22CDA0E800D3F3DF /* ViewController */,
 				F0ECAC9222CD936E00D3F3DF /* AppDelegate.swift */,
 				F0ECAC9422CD936E00D3F3DF /* ViewController.swift */,
@@ -78,15 +73,6 @@
 				F0ECACAF22CDA3D400D3F3DF /* MVC2.xib */,
 			);
 			path = ViewController;
-			sourceTree = "<group>";
-		};
-		F0F286A422D4359A00BFF2C4 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				F0F286A722D435DA00BFF2C4 /* calculate.swift */,
-				F0F286A922D4361500BFF2C4 /* variable.swift */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,11 +146,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F0F286A822D435DA00BFF2C4 /* calculate.swift in Sources */,
 				F0ECAC9522CD936E00D3F3DF /* ViewController.swift in Sources */,
 				F0ECACB022CDA3D400D3F3DF /* MVC2.swift in Sources */,
 				F0ECAC9322CD936E00D3F3DF /* AppDelegate.swift in Sources */,
-				F0F286AA22D4361500BFF2C4 /* variable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
