@@ -19,8 +19,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             window.backgroundColor = .white
             window.makeKeyAndVisible()
             
-            let aViewController = AViewController()
-            let navigationController = UINavigationController(rootViewController: aViewController)
+            //let aViewController = AViewController()
+            
+            let loginViewController = LoginViewController()
+            let navigationController = UINavigationController(rootViewController: loginViewController)
             window.rootViewController = navigationController
         }
         return true
