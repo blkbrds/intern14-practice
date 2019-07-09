@@ -152,7 +152,7 @@ class TamGiac: DaGiac {
         return area
     }
 }
- Bài 4 In n Tam Gíac
+//Bài 4 In n Tam Gíac
 class NewTriangle {
     private(set) var a: Double
     private(set) var b: Double
