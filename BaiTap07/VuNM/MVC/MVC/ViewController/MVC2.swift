@@ -9,18 +9,19 @@
 import UIKit
 
 class MVC2: UIViewController {
-
+    
     @IBOutlet var numberButton: [UIButton]!
     @IBOutlet var totalButton: [UIButton]!
     @IBOutlet var operateButton: [UIButton]!
     @IBOutlet weak var acButton: UIButton!
     @IBOutlet weak var resultLabel: UILabel!
-    var operation: Int = 0
+    
+    var operation: MathOperation = .reset
     var number1: Double = 0
     var result: Double = 0
     var number2: Double = 0
-    var arr: [Double] = [0]
-    var arr2: [Int] = [1]
+    var listNumber: [Double] = [0]
+    var listOperation: [MathOperation] = [.plus]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,131 +44,166 @@ class MVC2: UIViewController {
     }
     
     func adjustOperandArray() {
-        arr2.append(operation)
-        if arr2.count > 2 {
-            arr2.remove(at: 0)
+        listOperation.append(operation)
+        if listOperation.count > 2 {
+            listOperation.remove(at: 0)
         }
-    }
-
-    @IBAction func numberButton(_ sender: UIButton) {
-        number1 = number1 * 10 + Double(sender.tag)
-        resultLabel.text = "\(number1)"
-        print(number1)
     }
     
     func resetInfo() {
-        operation = 0
+        operation = .reset
         number1 = 0
         result = 0
         number2 = 0
-        arr = [0]
-        arr2 = [1]
-        
+        listNumber = [0]
+        listOperation = [.plus]
     }
     
     func alert() {
-        let alert = UIAlertController(title: "Error", message: "Cannot divide by zero", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Error", message: "The operation is invalid", preferredStyle: .alert)
         let cancel = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
         alert.addAction(cancel)
         present(alert, animated: true)
     }
     
     func calculate() {
-        arr.append(number1)
-        if arr2[0] == 1 {
-            result = arr[0] + arr[1]
+        listNumber.append(number1)
+        if listOperation[0] == .plus {
+            result = listNumber[0] + listNumber[1]
             resultLabel.text = "\(result)"
-            arr.append(result)
-            arr.remove(at: 0)
-            arr.remove(at: 0)
-            number2 = arr[0] + number1
+            listNumber.append(result)
+            listNumber.remove(at: 0)
+            listNumber.remove(at: 0)
+            number2 = listNumber[0] + number1
             number1 = 0
-        } else if arr2[0] == 2 {
-                result = arr[0] - arr[1]
+        } else if listOperation[0] == .minus {
+            if listNumber[0] == 0 {
+                print(listOperation)
+                print(listNumber)
+                result = listNumber[1]
+                print(result)
                 resultLabel.text = "\(result)"
-                arr.append(result)
-                arr.remove(at: 0)
-                arr.remove(at: 0)
-                number2 = arr[0] + number1
-                number1 = 0
-        } else if arr2[0] == 3 {
-            if arr[0] == 0 {
-                arr[0] = 1
-                result = arr[0] * arr[1]
-                resultLabel.text = "\(result)"
-                arr.append(result)
-                arr.remove(at: 0)
-                arr.remove(at: 0)
+                listNumber.append(result)
+                print(listNumber)
+                listNumber.remove(at: 0)
+                print(listNumber)
+                listNumber.remove(at: 0)
+                print(listNumber)
+                number2 = listNumber[0] + number1
                 number1 = 0
             } else {
-                result = arr[0] * arr[1]
+                print(listOperation)
+                print(listNumber)
+                result = listNumber[0] - listNumber[1]
+                print(result)
                 resultLabel.text = "\(result)"
-                arr.append(result)
-                arr.remove(at: 0)
-                arr.remove(at: 0)
+                listNumber.append(result)
+                listNumber.remove(at: 0)
+                listNumber.remove(at: 0)
+                number2 = listNumber[0] + number1
                 number1 = 0
             }
-        } else if arr2[0] == 4 {
-            if arr[0] == 0 {
-                arr[0] = 1
-                if arr[0] == 0 {
+        } else if listOperation[0] == .mul {
+            if listNumber[0] == 0 {
+                listNumber[0] = 1
+                result = listNumber[0] * listNumber[1]
+                resultLabel.text = "\(result)"
+                listNumber.append(result)
+                listNumber.remove(at: 0)
+                listNumber.remove(at: 0)
+                number1 = 0
+            } else {
+                result = listNumber[0] * listNumber[1]
+                resultLabel.text = "\(result)"
+                listNumber.append(result)
+                listNumber.remove(at: 0)
+                listNumber.remove(at: 0)
+                number1 = 0
+            }
+        } else if listOperation[0] == .div {
+            if listNumber[0] == 0 && listNumber.count == 1 {
+                print(listNumber)
+                listNumber[0] = 1
+                print(listNumber)
+                if listNumber[0] == 0 && listNumber[1] == 0{
                     alert()
                 } else {
-                    result = arr[1] / arr[0]
+                    result = listNumber[0] / listNumber[1]
                     resultLabel.text = "\(result)"
-                    arr.append(result)
-                    arr.remove(at: 0)
-                    arr.remove(at: 0)
+                    listNumber.append(result)
+                    listNumber.remove(at: 0)
+                    listNumber.remove(at: 0)
                     number1 = 0
                 }
             } else {
-                if arr[1] == 0 {
+                if listNumber[1] == 0 {
                     alert()
                 } else {
-                    result = arr[0] / arr[1]
+                    result = listNumber[0] / listNumber[1]
                     resultLabel.text = "\(result)"
-                    arr.append(result)
-                    arr.remove(at: 0)
-                    arr.remove(at: 0)
+                    listNumber.append(result)
+                    listNumber.remove(at: 0)
+                    listNumber.remove(at: 0)
                     number1 = 0
                 }
             }
         }
     }
     
+    @IBAction func numberButton(_ sender: UIButton) {
+        if listOperation[0] == .minus && listOperation[1] == .minus && listNumber[0] == 0 {
+            number1 = -(number1 * 10 + Double(sender.tag))
+            resultLabel.text = String(number1)
+        } else {
+            number1 = number1 * 10 + Double(sender.tag)
+            resultLabel.text = String(number1)
+        }
+
+        
+    }
+    
     @IBAction func operateButton(_ sender: UIButton) {
-        if sender.tag == 10 {
-            operation = 1
+        guard let mathOperation = MathOperation(rawValue: sender.tag) else { return }
+        operation = mathOperation
+        switch mathOperation {
+        case .plus:
             adjustOperandArray()
             calculate()
-        } else if sender.tag == 11 {
-            operation = 2
-            if arr[0] == 0 {
+        case .minus:
+            if listNumber[0] == 0 {
                 adjustOperandArray()
-                arr2[0] = 2
+                listOperation[0] = .minus
                 calculate()
             } else {
                 adjustOperandArray()
                 calculate()
             }
-        } else if sender.tag == 12 {
-            operation = 3
+        case .mul:
             adjustOperandArray()
             calculate()
-
-        } else if sender.tag == 13 {
-            operation = 4
+        case .div:
             adjustOperandArray()
             calculate()
-        } else if sender.tag == 14 {
-            arr2.remove(at: 0)
-            calculate()
-            resetInfo()
-            
-        } else if sender.tag == 15 {
+        case .equal:
+            if listOperation.count < 2 {
+                alert()
+            } else {
+                listOperation.remove(at: 0)
+                calculate()
+                resetInfo()
+            }
+        case .reset:
             resetInfo()
             resultLabel.text = "0"
         }
     }
 }
 
+enum MathOperation: Int {
+    case plus = 10
+    case minus
+    case mul
+    case div
+    case equal
+    case reset
+}
