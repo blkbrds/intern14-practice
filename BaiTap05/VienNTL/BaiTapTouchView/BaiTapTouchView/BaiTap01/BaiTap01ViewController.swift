@@ -14,6 +14,7 @@ class BaiTap01ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         if let touch = touches.first {
             let location = touch.location(in: self.view)

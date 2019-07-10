@@ -10,6 +10,7 @@ import UIKit
 
 class BaiTap04ViewController: UIViewController, UIGestureRecognizerDelegate {
     @IBOutlet weak var monkeyImageView: UIImageView?
+    
     var mainWidth: CGFloat = 0
     var mainHeight: CGFloat = 0
     var mainTransform: CGAffineTransform?
@@ -32,6 +33,7 @@ class BaiTap04ViewController: UIViewController, UIGestureRecognizerDelegate {
         handlingLongPress.delegate = self
         monkeyImageView?.addGestureRecognizer(handlingLongPress)
     }
+    
     @objc func handlingPinchGesture(_ sender: UIPinchGestureRecognizer) {
         if sender.state == .began || sender.state == .changed {
             sender.view?.transform = (sender.view?.transform.scaledBy(x: sender.scale, y: sender.scale))!

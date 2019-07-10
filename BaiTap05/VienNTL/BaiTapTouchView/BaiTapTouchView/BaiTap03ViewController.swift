@@ -100,21 +100,27 @@ class BaiTap03ViewController: UIViewController {
     @IBAction func greenColorBrushTouchUpInside(_ sender: Any) {
         colorBrush = UIColor(red: 37 / 255.0, green: 255 / 255.0, blue: 16 / 255.0, alpha: 1).cgColor
     }
+    
     @IBAction func blueColorBrushTouchUpInside(_ sender: Any) {
         colorBrush = UIColor(red: 37 / 255.0, green: 59 / 255.0, blue: 255 / 255.0, alpha: 1).cgColor
     }
+    
     @IBAction func pinkColorBrushTouchUpInside(_ sender: Any) {
         colorBrush = UIColor(red: 255 / 255.0, green: 50 / 255.0, blue: 191 / 255.0, alpha: 1).cgColor
     }
+    
     @IBAction func orangeColorBrushTouchUpInside(_ sender: Any) {
         colorBrush = UIColor(red: 240 / 255.0, green: 151 / 255.0, blue: 23 / 255.0, alpha: 1).cgColor
     }
+    
     @IBAction func whiteBlueColorBrushTouchUpInside(_ sender: Any) {
         colorBrush = UIColor(red: 11 / 255.0, green: 228 / 255.0, blue: 255 / 255.0, alpha: 1).cgColor
     }
+    
     @IBAction func purpleColorBrushTouchUpInside(_ sender: Any) {
         colorBrush = UIColor(red: 136 / 255.0, green: 36 / 255.0, blue: 207 / 255.0, alpha: 1).cgColor
     }
+    
     @IBAction func blackColorBrushTouchUpInside(_ sender: Any) {
         colorBrush = UIColor.black.cgColor
     }
