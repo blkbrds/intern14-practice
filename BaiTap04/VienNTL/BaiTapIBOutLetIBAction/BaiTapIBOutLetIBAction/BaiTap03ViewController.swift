@@ -44,20 +44,20 @@ class BaiTap03ViewController: UIViewController {
         let container = UIView(frame: frame)
         container.backgroundColor = .black
         
-        // Avatar
+        //MARK: Avatar
         let userAvatar = UIImageView(image: avatarImage)
         userAvatar.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
         userAvatar.contentMode = .scaleToFill
         container.addSubview(userAvatar)
         
-        // Button
+        //MARK: Button
         let avatarButton = UIButton(frame: userAvatar.frame)
         avatarButton.backgroundColor = .clear
         avatarButton.tag = tag
         avatarButton.addTarget(self, action: #selector(printName(_:)), for: .touchUpInside)
         container.addSubview(avatarButton)
         
-        // Username
+        //MARK: Username
         let userName = UILabel(frame: CGRect(x: 0, y: 100, width: 100, height: 30))
         userName.text = name
         userName.textAlignment = .center

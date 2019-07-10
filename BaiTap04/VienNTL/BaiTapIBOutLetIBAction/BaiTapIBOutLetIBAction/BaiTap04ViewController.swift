@@ -58,7 +58,7 @@ class BaiTap04ViewController: UIViewController {
         clearFieldButtonTouchUpInside.layer.cornerRadius = 8
     }
     
-    func checkLogin() {
+    private func checkLogin() {
         if usernameTextField.text == item.getUsername() && passwordTextField.text == item.getPassword() {
             alertErrorLabel.isHidden = true
         } else if let user = usernameTextField.text, let password = passwordTextField.text, user.isEmpty || password.isEmpty {

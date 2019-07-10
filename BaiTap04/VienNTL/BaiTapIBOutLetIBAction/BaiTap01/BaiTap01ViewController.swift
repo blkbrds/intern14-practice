@@ -21,7 +21,7 @@ class BaiTap01ViewController: UIViewController {
         formatter.dateFormat = "hh:mm:ss dd/MM/yyyy"
         button.setTitle("\(formatter.string(from: currentDateTime))", for: .normal)
     }
-    //Touch Event
+
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         if let touch = touches.first {
             let position = touch.location(in: self.view)
