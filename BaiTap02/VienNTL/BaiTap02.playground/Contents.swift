@@ -20,7 +20,8 @@ class PhanSo {
 
     func congPS(_ ps: PhanSo?) -> PhanSo? {
         if let ps = ps {
-            let result = PhanSo((tuSo * ps.mauSo + ps.tuSo * mauSo) / ucln(tuSo * ps.mauSo + ps.tuSo * mauSo, mauSo * ps.mauSo), (mauSo * ps.mauSo) / ucln(tuSo * ps.mauSo + ps.tuSo * mauSo, mauSo * ps.mauSo))
+            let uc = ucln(tuSo * ps.mauSo + ps.tuSo * mauSo, mauSo * ps.mauSo)
+            let result = PhanSo((tuSo * ps.mauSo + ps.tuSo * mauSo) / uc, (mauSo * ps.mauSo) / uc)
             return result
         }
         return nil
@@ -28,7 +29,8 @@ class PhanSo {
 
     func truSP(_ ps: PhanSo?) -> PhanSo? {
         if let ps = ps {
-            let result = PhanSo((tuSo * ps.mauSo - ps.tuSo * mauSo) / ucln(tuSo * ps.mauSo - ps.tuSo * mauSo, mauSo * ps.mauSo), (mauSo * ps.mauSo) / ucln(tuSo * ps.mauSo - ps.tuSo * mauSo, mauSo * ps.mauSo))
+            let uc = ucln(tuSo * ps.mauSo - ps.tuSo * mauSo, mauSo * ps.mauSo)
+            let result = PhanSo((tuSo * ps.mauSo - ps.tuSo * mauSo) / uc, (mauSo * ps.mauSo) / uc)
             return result
         }
         return nil
@@ -36,7 +38,8 @@ class PhanSo {
 
     func nhanPS(_ ps: PhanSo?) -> PhanSo? {
         if let ps = ps {
-            let result = PhanSo(tuSo * ps.tuSo / ucln(tuSo * ps.tuSo, mauSo * ps.mauSo), mauSo * ps.mauSo / ucln(tuSo * ps.tuSo, mauSo * ps.mauSo))
+            let uc = ucln(tuSo * ps.tuSo, mauSo * ps.mauSo)
+            let result = PhanSo(tuSo * ps.tuSo / uc, mauSo * ps.mauSo / uc)
             return result
         }
         return nil
@@ -44,7 +47,8 @@ class PhanSo {
 
     func chiaPS(_ ps: PhanSo?) -> PhanSo? {
         if let ps = ps {
-            let result = PhanSo(tuSo * ps.mauSo / ucln(tuSo * ps.mauSo, mauSo * ps.tuSo), mauSo * ps.tuSo / ucln(tuSo * ps.mauSo, mauSo * ps.tuSo))
+            let uc = ucln(tuSo * ps.mauSo, mauSo * ps.tuSo)
+            let result = PhanSo(tuSo * ps.mauSo / uc, mauSo * ps.tuSo / uc)
             return result
         }
         return nil
@@ -91,6 +95,7 @@ if let phanSo = pSo, let phanSo2 = pSo2 {
         print("\n .Division: \(phanSo.inPS()) / \(phanSo2.inPS()) = \(chiaPS.inPS())")
     }
 }
+
 // Bài 2
 class DaGiac {
     private(set) var arrayEdge = [Double]()
@@ -129,6 +134,7 @@ var dg = DaGiac(3, arr)
 // In các giá trị của mảng
 dg.output()
 print("The polygon circumference is: \(dg.chuVi(3, arr))")
+
 // Bài 3:
 class TamGiac: DaGiac {
     private(set) var arrayEdgeTriangle = [Double]()
@@ -152,21 +158,20 @@ class TamGiac: DaGiac {
         return area
     }
 }
+
 //Bài 4 In n Tam Gíac
 class NewTriangle {
     private(set) var a: Double
     private(set) var b: Double
     private(set) var c: Double
 
-    init(_ a: Double?, _ b: Double?, _ c: Double?) {
-        if let triangleEdgeA = a {
+    init?(_ a: Double?, _ b: Double?, _ c: Double?) {
+        if let triangleEdgeA = a, let triangleEdgeB = b, let triangleEdgeC = c  {
             self.a = triangleEdgeA
-        }
-        if let triangleEdgeB = b {
             self.b = triangleEdgeB
-        }
-        if let triangleEdgeC = c {
             self.c = triangleEdgeC
+        } else {
+            return nil
         }
     }
 
@@ -174,9 +179,10 @@ class NewTriangle {
         if a  == sqrt(pow(b, 2) + pow(c, 2)) || b == sqrt(pow(a, 2) + pow(c, 2)) || c == sqrt(pow(a, 2) + pow(c, 2)) {
             return (true, [a, b, c])
         }
-        return (false, [])
+        return (false, [a, b, c])
     }
 }
+
 class PrintNTRiangle {
     var arrayTriangle = [NewTriangle]()
 
@@ -193,6 +199,7 @@ class PrintNTRiangle {
         }
     }
 }
+
 // Bài 5:
 class CStack {
     private(set) var stackArray = [Int]()
@@ -222,48 +229,59 @@ class CStack {
         return stackArray.popLast()
     }
 }
+
 // Bài 6:
 class HinhVe {
     private(set) var chieuDai: Double = 0.0
     private(set) var chieuRong: Double = 0.0
-    private(set) let  pi: Double = Double.pi
+    private(set) var  pi: Double = Double.pi
 
     init(_ dai: Double, _ rong: Double) {
         chieuDai = dai
         chieuRong = rong
     }
+
     func ouput() {
         print(" ")
     }
+
     func chuVi() -> Double {
         return chieuDai
     }
+
     func dienTich() -> Double {
         return chieuRong
     }
+
     func theTich() -> Double {
         return 0.0
     }
 }
+
 class HaiChieu: HinhVe {
     override func chuVi() -> Double {
         return chieuRong + chieuRong
     }
+
     override func dienTich() -> Double {
         return chieuRong * chieuDai
     }
+
     override func ouput() {
         print("Hinh Hai Chieu")
     }
 }
+
 class Vuong: HaiChieu {
     override func chuVi() -> Double {
         return chieuDai * 4
     }
+
     override func dienTich() -> Double {
         return chieuDai * chieuRong
     }
 }
+
 class Tron: HaiChieu {
     private(set) var r: Double
 
@@ -271,13 +289,16 @@ class Tron: HaiChieu {
         self.r = banKinh
         super.init(dai, rong)
     }
+
     override func chuVi() -> Double {
         return 2 * pi * r
     }
+
     override func dienTich() -> Double {
         return pi * pow(r, 2)
     }
 }
+
 class TamGiac2: HaiChieu {
     private(set) var c: Double
 
@@ -285,18 +306,22 @@ class TamGiac2: HaiChieu {
         self.c = c
         super.init(a, b)
     }
+
     override func chuVi() -> Double {
         return (chieuDai + chieuRong + c)
     }
+
     override func dienTich() -> Double {
         return sqrt((chuVi() / 2) * ((chuVi() / 2) - chieuDai) * ((chuVi() / 2) - chieuRong) * ((chuVi() / 2) - c))
     }
 }
+
 class BaChieu: HinhVe {
     override func ouput() {
         print("Hinh Ba Chieu")
     }
 }
+
 class Cau: BaChieu {
     private(set) var r: Double
 
@@ -304,24 +329,30 @@ class Cau: BaChieu {
         self.r = banKinh
         super.init(dai, rong)
     }
+
     override func dienTich() -> Double {
         return 4 * pi * pow(r, 2)
     }
+
     override func theTich() -> Double {
         return 4 / 3 * pi * pow(r, 3)
     }
 }
+
 class LapPhuong: BaChieu {
     override func theTich() -> Double {
         return chieuDai * chieuDai * chieuDai
     }
+
     override func dienTich() -> Double {
         return 6 * pow(chieuDai, 2)
     }
+
     func dienTichXungQuanh() -> Double {
         return 4 * pow(chieuDai, 2)
     }
 }
+
 // Bài 7:
 class HocSinh {
     private(set) var hoTen = String()
@@ -334,12 +365,14 @@ class HocSinh {
         self.tongDiem = tongDiem
     }
 }
+
 class QuanLiHocSinh {
     private(set) var hocSinh = [HocSinh]()
 
     init(_ sinhVien: [HocSinh]) {
         self.hocSinh = sinhVien
     }
+
     func sort() -> [HocSinh] {
         var tempArr = hocSinh
         for index in 0..<tempArr.count {
@@ -359,12 +392,14 @@ class QuanLiHocSinh {
         }
         return tempArr
     }
+
     func getChar(_ string: String, atIndex i: Int) -> String {
         if i < string.count {
             return String(string[string.index(string.startIndex, offsetBy: i)])
         }
         return ""
     }
+
     func inHoaHoTen() -> [HocSinh] {
         var tempArr = hocSinh
         for index in 0..<tempArr.count {
@@ -378,6 +413,7 @@ class QuanLiHocSinh {
         return tempArr
     }
 }
+
 // Bài 8:
 class Date {
     private(set) var day: Int
@@ -423,6 +459,7 @@ class Date {
         }
     }
 }
+
 // Bài 9:
 class ArrayDimensional {
     private(set) var array = [Int]()
@@ -439,6 +476,7 @@ class ArrayDimensional {
         }
         return max
     }
+    
     func findMin(_ arr: [Int]) -> Int {
         var min = 0
         for i in 0..<arr.count {
@@ -449,6 +487,7 @@ class ArrayDimensional {
         return min
     }
 }
+
 // Bài 10
 class IntNumberSum {
     var quantity: Int = 0
