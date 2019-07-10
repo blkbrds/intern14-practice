@@ -14,9 +14,11 @@ class CalculatorViewController: UIViewController {
     @IBOutlet weak var resultLabel: UILabel!
     @IBOutlet var operatorButton: [UIButton]!
     
-    private var storeData: [Double] = [0]
-    private var firstResult = 0.0
+    private var firstNumber = Double()
+    private var secondNumber = Double()
     private var result = 0.0
+    private var keyPressed = String()
+    private var finalResult = 0.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,41 +33,45 @@ class CalculatorViewController: UIViewController {
     }
     
     @IBAction private func numberButtonTouchUpInside(_ sender: UIButton) {
-        firstResult = firstResult * 10 + Double(sender.tag - 1)
-        resultLabel.text = "\(firstResult)"
+        keyPressed = sender.currentTitle!
+        firstNumber = firstNumber * 10 + Double(keyPressed)!
+        resultLabel.text = "\(firstNumber)"
     }
     
     @IBAction private func operatorButtonTouchUpInside(_ sender: UIButton) {
-        if sender.tag == 11 {
-            result = storeData[0] + firstResult
+         if sender.tag == 11 {
+            result = firstNumber + secondNumber
             resultLabel.text = "\(result)"
-            storeData.removeAll()
-            storeData.append(result)
-            firstResult = 0.0
+            secondNumber = result
+//            finalResult = result
+            firstNumber = 0
         } else if sender.tag == 12 {
-            if storeData.count <= 1 && storeData[0] == 0 {
-                result = 0
-                storeData.removeAll()
-                storeData.append(result)
-            } else {
-            result = storeData[0] - storeData[1]
-            if storeData[0] == 0 {
-                resultLabel.text = "\(abs(result))"
-                storeData.removeAll()
-                storeData.append(abs(result))
-            }
-            else {
-                resultLabel.text = "\(result)"
-                storeData.removeAll()
-                storeData.append(result)
-            }
-            print("Bấm [-]: \(storeData)")
-            firstResult = 0.0
-            }
-        } else if sender.tag == 16 {
-            storeData.removeAll()
+            result = secondNumber - firstNumber
+            print("\(secondNumber) - \(firstNumber) = \(result)")
             resultLabel.text = "\(result)"
-            firstResult = 0.0
+            secondNumber = firstNumber
+//            finalResult = result
+            if firstNumber == 0 {
+                result = result - firstNumber
+            } else {
+                firstNumber = 0
+            }
+         } else if sender.tag == 13 {
+            result = firstNumber * secondNumber
+            resultLabel.text = "\(result)"
+            secondNumber = result
+//            finalResult = result
+            firstNumber = 0
+        } else if sender.tag == 14 {
+            
         }
+    }
+    @IBAction func resetButtonTouchUpInside(_ sender: UIButton) {
+        firstNumber = 0
+        secondNumber = 0
+        finalResult = 0
+        resultLabel.text = "0"
+    }
+    @IBAction func equalButtonTouchUpInside(_ sender: Any) {
     }
 }
