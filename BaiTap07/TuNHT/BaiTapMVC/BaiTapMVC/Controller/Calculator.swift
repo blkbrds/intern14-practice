@@ -141,7 +141,7 @@ final class Calculator: UIViewController {
         stackOperator = [.add]
     }
     
-    @IBAction func numberButtonTouchUpInside(_ sender: UIButton) {
+    @IBAction private func numberButtonTouchUpInside(_ sender: UIButton) {
         if stackOperator[0] == .sub && stackOperator[1] == .sub && stackNumber[0] == 0 {
             num1 = -(num1 * 10 + Double(sender.tag - 1))
             screenLabel.text = String(num1)
@@ -151,12 +151,12 @@ final class Calculator: UIViewController {
         }
     }
     
-    @IBAction func operatorButtonTouchUpInside(_ sender: UIButton) {
+    @IBAction private func operatorButtonTouchUpInside(_ sender: UIButton) {
         stackNumber.append(num1)
         guard let mathOperation = MathOperator(rawValue: sender.tag) else { return }
         operation = mathOperation
         switch mathOperation {
-        case .add:
+        case .add, .mul, .div:
             handleOperator()
             calculate()
         case .sub:
@@ -167,9 +167,6 @@ final class Calculator: UIViewController {
                 calculate()
             }
             handleOperator()
-        case .mul, .div:
-            handleOperator()
-            calculate()
         case .equal:
             if stackOperator.count >= 2 && stackNumber.count >= 2 {
                 stackOperator.remove(at: 0)
