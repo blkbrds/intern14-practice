@@ -10,68 +10,122 @@ import UIKit
 
 class CalculatorViewController: UIViewController {
 
-    @IBOutlet private var numberButton: [UIButton]!
-    @IBOutlet weak var resultLabel: UILabel!
-    @IBOutlet var operatorButton: [UIButton]!
+    @IBOutlet private weak var resultLabel: UILabel!
+    @IBOutlet private var handleButtonPress: [UIButton]!
+    @IBOutlet private weak var resetValueButton: UIButton!
     
-    private var firstNumber = Double()
-    private var secondNumber = Double()
-    private var result = 0.0
-    private var keyPressed = String()
-    private var finalResult = 0.0
+    private var firstNumberText = String()
+    private var secondNumberText = String()
+    private var operatorButtonText = String()
+    private var isFirstNumber = true
+    private var hasOperator = false
+    private var canClear = true
+    private var isContinuousOperation = false
+    private var currentOperatorText = String()
+    private var areTwoConsecutiveMarks = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        designButton(numberButton)
-        designButton(operatorButton)
+        designButton(handleButtonPress)
+        
     }
     
     private func designButton(_ buttons: [UIButton]) {
+        resetValueButton.layer.cornerRadius = 35
         for button in buttons {
             button.layer.cornerRadius = 35
         }
     }
     
-    @IBAction private func numberButtonTouchUpInside(_ sender: UIButton) {
-        keyPressed = sender.currentTitle!
-        firstNumber = firstNumber * 10 + Double(keyPressed)!
-        resultLabel.text = "\(firstNumber)"
-    }
-    
-    @IBAction private func operatorButtonTouchUpInside(_ sender: UIButton) {
-         if sender.tag == 11 {
-            result = firstNumber + secondNumber
-            resultLabel.text = "\(result)"
-            secondNumber = result
-//            finalResult = result
-            firstNumber = 0
-        } else if sender.tag == 12 {
-            result = secondNumber - firstNumber
-            print("\(secondNumber) - \(firstNumber) = \(result)")
-            resultLabel.text = "\(result)"
-            secondNumber = firstNumber
-//            finalResult = result
-            if firstNumber == 0 {
-                result = result - firstNumber
-            } else {
-                firstNumber = 0
+    @IBAction func handleButtonTouchUpInside(_ sender: UIButton) {
+        if canClear {
+            resultLabel.text = ""
+            canClear = false
+        }
+        let currentText = resultLabel.text!
+        let textLabel = sender.titleLabel?.text
+        if let text = textLabel {
+            switch text {
+            case "＋", "×", "÷", "−":
+                if hasOperator {
+                    return
+                }
+                if !isContinuousOperation {
+                    operatorButtonText = text
+                    currentOperatorText = operatorButtonText
+                    print(operatorButtonText)
+                    isFirstNumber = false
+                    hasOperator = false
+                    resultLabel.text = ""
+                    canClear = true
+                    isContinuousOperation = true
+                    print("không có dấu")
+                    break
+                }
+                isFirstNumber = false
+                canClear = true
+                operatorButtonText = text
+                currentOperatorText = operatorButtonText
+                print(operatorButtonText)
+                let result: Double = calculate()
+                resultLabel.text = "\(result)"
+                firstNumberText = "\(result)"
+                hasOperator = false
+                isContinuousOperation = true
+                print("có dấu")
+                break
+            case "=":
+                isFirstNumber = false
+                hasOperator = true
+                canClear = true
+                isContinuousOperation = false
+                let result: Double = calculate()
+                resultLabel.text = "\(result)"
+                firstNumberText = "\(result)"
+                print(result)
+                break
+            default:
+                if isFirstNumber {
+                    firstNumberText = "\(firstNumberText)\(text)"
+                    print(firstNumberText)
+                } else {
+                    secondNumberText = "\(secondNumberText)\(text)"
+                    print(secondNumberText)
+                }
+                resultLabel.text = "\(currentText)\(text)"
+                break;
             }
-         } else if sender.tag == 13 {
-            result = firstNumber * secondNumber
-            resultLabel.text = "\(result)"
-            secondNumber = result
-//            finalResult = result
-            firstNumber = 0
-        } else if sender.tag == 14 {
-            
         }
     }
-    @IBAction func resetButtonTouchUpInside(_ sender: UIButton) {
-        firstNumber = 0
-        secondNumber = 0
-        finalResult = 0
+    
+    @IBAction func resetValueButtonTouchUpInside(_ sender: Any) {
+        firstNumberText = String()
+        secondNumberText = String()
+        operatorButtonText = String()
+        currentOperatorText = String()
+        isFirstNumber = true
+        hasOperator = false
         resultLabel.text = "0"
+        canClear = true
     }
-    @IBAction func equalButtonTouchUpInside(_ sender: Any) {
+    
+    private func calculate() -> Double {
+        let firstNumber = Double(firstNumberText)!
+        let secondNumber = Double(secondNumberText)!
+        print("\(firstNumber), s2 = \(secondNumber)")
+        firstNumberText = ""
+        secondNumberText = ""
+        switch operatorButtonText {
+        case "＋":
+            return firstNumber + secondNumber
+        case "−":
+            return firstNumber - secondNumber
+        case "×":
+            return firstNumber * secondNumber
+        case "÷":
+            return firstNumber / secondNumber
+        default:
+            return 0
+        }
     }
 }
