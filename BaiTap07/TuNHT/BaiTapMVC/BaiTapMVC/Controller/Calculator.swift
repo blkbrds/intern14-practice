@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Calculator: UIViewController {
+final class Calculator: UIViewController {
     @IBOutlet private weak var screenLabel: UILabel!
     @IBOutlet private var numberButton: [UIButton]!
     @IBOutlet private var operatorButton: [UIButton]!
@@ -51,7 +51,7 @@ class Calculator: UIViewController {
         }
     }
     
-    func calculate() {
+    private func calculate() {
         if stackOperator[0] == .add {
             result = stackNumber[0] + stackNumber[1]
             screenLabel.text = String(result)
@@ -125,14 +125,14 @@ class Calculator: UIViewController {
         }
     }
     
-    func handleOperator() {
+    private func handleOperator() {
         stackOperator.append(operation)
         if stackOperator.count > 2 {
             stackOperator.remove(at: 0)
         }
     }
     
-    func reset() {
+    private func reset() {
         operation = .ac
         num1 = 0
         result = 0
@@ -161,17 +161,13 @@ class Calculator: UIViewController {
             calculate()
         case .sub:
             if stackNumber[0] == 0 {
-                handleOperator()
                 stackOperator[0] = .sub
                 calculate()
             } else {
-                handleOperator()
                 calculate()
             }
-        case .mul:
             handleOperator()
-            calculate()
-        case .div:
+        case .mul, .div:
             handleOperator()
             calculate()
         case .equal:
