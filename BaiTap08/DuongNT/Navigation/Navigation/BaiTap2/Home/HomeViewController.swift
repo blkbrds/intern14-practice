@@ -10,12 +10,13 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
-    // Marks: Properties
+    // MARK: Properties
     
     @IBOutlet weak var userNameLabel: UILabel!
     var username = ""
+    private var isFirstDisplay: Bool = true
     
-    // Marks: Life cycle function
+    // MARK: Life cycle function
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,8 +24,21 @@ class HomeViewController: UIViewController {
         getUser()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        if isFirstDisplay {
+            isFirstDisplay = !isFirstDisplay
+        } else {
+            userNameLabel.text = UserDefaults.standard.string(forKey: "username")
+            username = UserDefaults.standard.string(forKey: "username")!
+        }
+    }
+    
+    // MARK: Private/public custom function
+    
     private func getUser() {
         userNameLabel.text = username
+        userNameLabel.adjustsFontSizeToFitWidth = true
+
     }
     
     private func setUpUIHome() {
@@ -51,6 +65,8 @@ class HomeViewController: UIViewController {
         let leftBarButtonItem = UIBarButtonItem(customView: leftCustomerView)
         navigationItem.leftBarButtonItem = leftBarButtonItem
     }
+    
+    // MARK: IBAction function
     
     @objc private func edit() {
         let editViewController = EditViewController()

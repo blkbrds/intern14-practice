@@ -18,11 +18,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if let window = window {
             window.backgroundColor = .white
             window.makeKeyAndVisible()
+
+            let menu = MenuViewController()
             
-            //let aViewController = AViewController()
-            
-            let loginViewController = LoginViewController()
-            let navigationController = UINavigationController(rootViewController: loginViewController)
+            let navigationController = UINavigationController(rootViewController: menu)
             window.rootViewController = navigationController
         }
         return true

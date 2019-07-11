@@ -10,7 +10,7 @@ import UIKit
 
 class EditViewController: UIViewController {
 
-    // Marks: Properties
+    // MARK: Properties
     
     @IBOutlet weak var userNameTextField: UITextField!
     @IBOutlet weak var confirmPasswordTextField: UITextField!
@@ -19,7 +19,7 @@ class EditViewController: UIViewController {
     @IBOutlet weak var errorLabel: UILabel!
     var username = ""
     
-    // Marks: Life cycle function
+    // MARK: Life cycle function
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,16 +27,17 @@ class EditViewController: UIViewController {
         configTextFields()
     }
     
-    // Marks: Basic override view function
+    // MARK: Basic override view function
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
         view.endEditing(true)
     }
     
-    // Marks: Private/public custom function
+    // MARK: Private/public custom function
     
     private func configTextFields() {
+        userNameTextField.delegate = self
         newPasswordTextField.delegate = self
         confirmPasswordTextField.delegate = self
     }
@@ -85,8 +86,9 @@ class EditViewController: UIViewController {
             } else {
                 if newPassword == confirmPassword {
                     errorLabel.isHidden = true
-                    let homeViewController = HomeViewController()
-                    homeViewController.username = username
+                    UserDefaults.standard.set(userNameTextField.text, forKey: "username")
+                    UserDefaults.standard.synchronize()
+                    FileManagers.writePlist(userNameTextField.text!, confirmPasswordTextField.text!)
                     print("Changed Pass")
                     navigationController?.popViewController(animated: true)
                     
@@ -100,7 +102,9 @@ class EditViewController: UIViewController {
 
 extension EditViewController : UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        if textField == newPasswordTextField {
+        if textField == userNameTextField {
+            newPasswordTextField.becomeFirstResponder()
+        } else if textField == newPasswordTextField {
             confirmPasswordTextField.becomeFirstResponder()
         } else if textField == confirmPasswordTextField {
             checkPassword()

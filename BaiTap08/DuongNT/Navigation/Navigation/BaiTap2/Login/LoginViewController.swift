@@ -16,13 +16,9 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var passWordTextField: UITextField!
     @IBOutlet weak var errorLabel: UILabel!
     
-    private var listUsers = [DataUsers("duongnt1", "duongnt123"),
-                            DataUsers("duongnt2", "duongnt1"),
-                            DataUsers("admin", "admin"),
-                            DataUsers("abc123", "abc123")]
-    var nsDictionary: NSDictionary?
+    private var users: [User] = []
     
-    // Marks: Life cycle function
+    // MARK: Life cycle function
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,24 +27,20 @@ class LoginViewController: UIViewController {
         setUpUILogin()
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        
-    }
-    
     override func viewDidDisappear(_ animated: Bool) {
         userNameTextField.text = nil
         passWordTextField.text = nil
         errorLabel.isHidden = true
     }
     
-    // Marks: Basic override view function
+    // MARK: Basic override view function
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
         view.endEditing(true)
     }
     
-    // Marks: Private/public custom function
+    // MARK: Private/public custom function
     
     private func configTextFields() {
         userNameTextField.delegate = self
@@ -75,14 +67,13 @@ class LoginViewController: UIViewController {
     }
     
     private func getUser() {
-        if let path = Bundle.main.path(forResource: "login", ofType: "plist") {
-            nsDictionary = NSDictionary(contentsOfFile: path)
+        //FileManagers.writePlist(namePlist: "users", key: "username", data: "duongnt123" as AnyObject)
+        users = User.parseData(array: FileManagers.readPlist(namePlist: "users"))
+        //FileManagers.writeFile(array: [["admin" : "admin"]])
+        users.forEach {
+            user in
+            FileManagers.writePlist(user.username,user.password)
         }
-        let username = nsDictionary?.object(forKey: "username") ?? nil!
-        let password = nsDictionary?.object(forKey: "password") ?? nil!
-        listUsers.append(DataUsers(username as! String, password as! String))
-        print(listUsers)
-        
     }
     
     private func checkLogin() {
@@ -91,7 +82,8 @@ class LoginViewController: UIViewController {
                 errorLabel.text = "Pls nhập username và password"
                 errorLabel.isHidden = false
             } else {
-                for user in listUsers {
+                users.forEach {
+                    user in
                     if username == user.username {
                         if password == user.password {
                             errorLabel.isHidden = true

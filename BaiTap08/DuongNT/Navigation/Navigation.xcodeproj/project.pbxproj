@@ -22,12 +22,19 @@
 		1C4777E922D356CD0015F43B /* EViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C4777E722D356CD0015F43B /* EViewController.xib */; };
 		1C88B04422D42CE700F677F8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C88B04222D42CE700F677F8 /* LoginViewController.swift */; };
 		1C88B04522D42CE700F677F8 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C88B04322D42CE700F677F8 /* LoginViewController.xib */; };
-		1C88B04A22D43A0200F677F8 /* login.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1C88B04922D43A0200F677F8 /* login.plist */; };
-		1C88B04F22D4476C00F677F8 /* DataUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C88B04E22D4476C00F677F8 /* DataUsers.swift */; };
 		1C88B05222D47DC900F677F8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C88B05022D47DC900F677F8 /* HomeViewController.swift */; };
 		1C88B05322D47DC900F677F8 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C88B05122D47DC900F677F8 /* HomeViewController.xib */; };
 		1C88B05622D4895500F677F8 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C88B05422D4895500F677F8 /* EditViewController.swift */; };
 		1C88B05722D4895500F677F8 /* EditViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C88B05522D4895500F677F8 /* EditViewController.xib */; };
+		1C88B05B22D4A26300F677F8 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C88B05A22D4A26300F677F8 /* Users.swift */; };
+		1C88B05E22D4A28D00F677F8 /* ListUsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C88B05C22D4A28D00F677F8 /* ListUsersViewController.swift */; };
+		1C88B05F22D4A28D00F677F8 /* ListUsersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C88B05D22D4A28D00F677F8 /* ListUsersViewController.xib */; };
+		1C88B06122D4A41900F677F8 /* avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C88B06022D4A41800F677F8 /* avatar.png */; };
+		1C88B06922D5D64600F677F8 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C88B06722D5D64600F677F8 /* MenuViewController.swift */; };
+		1C88B06A22D5D64600F677F8 /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C88B06822D5D64600F677F8 /* MenuViewController.xib */; };
+		1C88B07B22D5DF8D00F677F8 /* FileManagers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C88B07A22D5DF8D00F677F8 /* FileManagers.swift */; };
+		1C88B07D22D5E18D00F677F8 /* users.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1C88B07C22D5E18D00F677F8 /* users.plist */; };
+		1C88B07F22D5E3A200F677F8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C88B07E22D5E3A200F677F8 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,12 +55,19 @@
 		1C4777E722D356CD0015F43B /* EViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EViewController.xib; sourceTree = "<group>"; };
 		1C88B04222D42CE700F677F8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		1C88B04322D42CE700F677F8 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
-		1C88B04922D43A0200F677F8 /* login.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = login.plist; path = ../login.plist; sourceTree = "<group>"; };
-		1C88B04E22D4476C00F677F8 /* DataUsers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataUsers.swift; sourceTree = "<group>"; };
 		1C88B05022D47DC900F677F8 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		1C88B05122D47DC900F677F8 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		1C88B05422D4895500F677F8 /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 		1C88B05522D4895500F677F8 /* EditViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditViewController.xib; sourceTree = "<group>"; };
+		1C88B05A22D4A26300F677F8 /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
+		1C88B05C22D4A28D00F677F8 /* ListUsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListUsersViewController.swift; sourceTree = "<group>"; };
+		1C88B05D22D4A28D00F677F8 /* ListUsersViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListUsersViewController.xib; sourceTree = "<group>"; };
+		1C88B06022D4A41800F677F8 /* avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avatar.png; sourceTree = "<group>"; };
+		1C88B06722D5D64600F677F8 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		1C88B06822D5D64600F677F8 /* MenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
+		1C88B07A22D5DF8D00F677F8 /* FileManagers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagers.swift; sourceTree = "<group>"; };
+		1C88B07C22D5E18D00F677F8 /* users.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = users.plist; sourceTree = "<group>"; };
+		1C88B07E22D5E3A200F677F8 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,11 +100,13 @@
 		1C4777C222D348EC0015F43B /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
-				1C4777C322D348EC0015F43B /* AppDelegate.swift */,
+				1C88B06322D5D5C600F677F8 /* AppDelegte */,
+				1C88B07622D5DE6300F677F8 /* Models */,
+				1C88B06422D5D5D700F677F8 /* Resources */,
+				1C88B06222D5D54D00F677F8 /* Menu */,
 				1C4777D522D34A910015F43B /* BaiTap1 */,
 				1C88B04122D42CC600F677F8 /* BaiTap2 */,
-				1C4777CA22D348F30015F43B /* Assets.xcassets */,
-				1C4777CC22D348F30015F43B /* LaunchScreen.storyboard */,
+				1C88B05822D4A06200F677F8 /* BaiTap3 */,
 				1C4777CF22D348F30015F43B /* Info.plist */,
 			);
 			path = Navigation;
@@ -99,16 +115,11 @@
 		1C4777D522D34A910015F43B /* BaiTap1 */ = {
 			isa = PBXGroup;
 			children = (
-				1C4777D622D34AD70015F43B /* AViewController.swift */,
-				1C4777D722D34AD70015F43B /* AViewController.xib */,
-				1C4777DA22D3529E0015F43B /* BViewController.swift */,
-				1C4777DB22D3529E0015F43B /* BViewController.xib */,
-				1C4777DE22D3548D0015F43B /* CViewController.swift */,
-				1C4777DF22D3548D0015F43B /* CViewController.xib */,
-				1C4777E222D356BB0015F43B /* DViewController.swift */,
-				1C4777E322D356BB0015F43B /* DViewController.xib */,
-				1C4777E622D356CD0015F43B /* EViewController.swift */,
-				1C4777E722D356CD0015F43B /* EViewController.xib */,
+				1C88B06B22D5DD3100F677F8 /* A */,
+				1C88B06C22D5DD3B00F677F8 /* B */,
+				1C88B06D22D5DD3F00F677F8 /* C */,
+				1C88B06E22D5DD4600F677F8 /* D */,
+				1C88B06F22D5DD4A00F677F8 /* E */,
 			);
 			path = BaiTap1;
 			sourceTree = "<group>";
@@ -116,24 +127,178 @@
 		1C88B04122D42CC600F677F8 /* BaiTap2 */ = {
 			isa = PBXGroup;
 			children = (
-				1C88B04B22D43A0A00F677F8 /* New Group */,
-				1C88B04222D42CE700F677F8 /* LoginViewController.swift */,
-				1C88B04322D42CE700F677F8 /* LoginViewController.xib */,
-				1C88B05022D47DC900F677F8 /* HomeViewController.swift */,
-				1C88B05122D47DC900F677F8 /* HomeViewController.xib */,
-				1C88B05422D4895500F677F8 /* EditViewController.swift */,
-				1C88B05522D4895500F677F8 /* EditViewController.xib */,
+				1C88B07422D5DDD800F677F8 /* Models */,
+				1C88B04B22D43A0A00F677F8 /* Files */,
+				1C88B07222D5DDAB00F677F8 /* Edit */,
+				1C88B07122D5DD9C00F677F8 /* Home */,
+				1C88B07022D5DD8800F677F8 /* Login */,
 			);
 			path = BaiTap2;
 			sourceTree = "<group>";
 		};
-		1C88B04B22D43A0A00F677F8 /* New Group */ = {
+		1C88B04B22D43A0A00F677F8 /* Files */ = {
 			isa = PBXGroup;
 			children = (
-				1C88B04922D43A0200F677F8 /* login.plist */,
-				1C88B04E22D4476C00F677F8 /* DataUsers.swift */,
+				1C88B07C22D5E18D00F677F8 /* users.plist */,
 			);
-			path = "New Group";
+			path = Files;
+			sourceTree = "<group>";
+		};
+		1C88B05822D4A06200F677F8 /* BaiTap3 */ = {
+			isa = PBXGroup;
+			children = (
+				1C88B07522D5DE0800F677F8 /* ListUsers */,
+				1C88B07322D5DDC300F677F8 /* Models */,
+			);
+			path = BaiTap3;
+			sourceTree = "<group>";
+		};
+		1C88B06222D5D54D00F677F8 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				1C88B06722D5D64600F677F8 /* MenuViewController.swift */,
+				1C88B06822D5D64600F677F8 /* MenuViewController.xib */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		1C88B06322D5D5C600F677F8 /* AppDelegte */ = {
+			isa = PBXGroup;
+			children = (
+				1C4777C322D348EC0015F43B /* AppDelegate.swift */,
+			);
+			path = AppDelegte;
+			sourceTree = "<group>";
+		};
+		1C88B06422D5D5D700F677F8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1C88B06522D5D60800F677F8 /* Images */,
+				1C4777CA22D348F30015F43B /* Assets.xcassets */,
+				1C4777CC22D348F30015F43B /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1C88B06522D5D60800F677F8 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				1C88B06022D4A41800F677F8 /* avatar.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		1C88B06B22D5DD3100F677F8 /* A */ = {
+			isa = PBXGroup;
+			children = (
+				1C4777D622D34AD70015F43B /* AViewController.swift */,
+				1C4777D722D34AD70015F43B /* AViewController.xib */,
+			);
+			path = A;
+			sourceTree = "<group>";
+		};
+		1C88B06C22D5DD3B00F677F8 /* B */ = {
+			isa = PBXGroup;
+			children = (
+				1C4777DA22D3529E0015F43B /* BViewController.swift */,
+				1C4777DB22D3529E0015F43B /* BViewController.xib */,
+			);
+			path = B;
+			sourceTree = "<group>";
+		};
+		1C88B06D22D5DD3F00F677F8 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				1C4777DE22D3548D0015F43B /* CViewController.swift */,
+				1C4777DF22D3548D0015F43B /* CViewController.xib */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		1C88B06E22D5DD4600F677F8 /* D */ = {
+			isa = PBXGroup;
+			children = (
+				1C4777E222D356BB0015F43B /* DViewController.swift */,
+				1C4777E322D356BB0015F43B /* DViewController.xib */,
+			);
+			path = D;
+			sourceTree = "<group>";
+		};
+		1C88B06F22D5DD4A00F677F8 /* E */ = {
+			isa = PBXGroup;
+			children = (
+				1C4777E622D356CD0015F43B /* EViewController.swift */,
+				1C4777E722D356CD0015F43B /* EViewController.xib */,
+			);
+			path = E;
+			sourceTree = "<group>";
+		};
+		1C88B07022D5DD8800F677F8 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				1C88B04222D42CE700F677F8 /* LoginViewController.swift */,
+				1C88B04322D42CE700F677F8 /* LoginViewController.xib */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		1C88B07122D5DD9C00F677F8 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				1C88B05022D47DC900F677F8 /* HomeViewController.swift */,
+				1C88B05122D47DC900F677F8 /* HomeViewController.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		1C88B07222D5DDAB00F677F8 /* Edit */ = {
+			isa = PBXGroup;
+			children = (
+				1C88B05422D4895500F677F8 /* EditViewController.swift */,
+				1C88B05522D4895500F677F8 /* EditViewController.xib */,
+			);
+			path = Edit;
+			sourceTree = "<group>";
+		};
+		1C88B07322D5DDC300F677F8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1C88B05A22D4A26300F677F8 /* Users.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1C88B07422D5DDD800F677F8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1C88B07E22D5E3A200F677F8 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1C88B07522D5DE0800F677F8 /* ListUsers */ = {
+			isa = PBXGroup;
+			children = (
+				1C88B05C22D4A28D00F677F8 /* ListUsersViewController.swift */,
+				1C88B05D22D4A28D00F677F8 /* ListUsersViewController.xib */,
+			);
+			path = ListUsers;
+			sourceTree = "<group>";
+		};
+		1C88B07622D5DE6300F677F8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1C88B07722D5DE6C00F677F8 /* FileManagements */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1C88B07722D5DE6C00F677F8 /* FileManagements */ = {
+			isa = PBXGroup;
+			children = (
+				1C88B07A22D5DF8D00F677F8 /* FileManagers.swift */,
+			);
+			path = FileManagements;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,14 +360,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C88B04522D42CE700F677F8 /* LoginViewController.xib in Resources */,
-				1C88B04A22D43A0200F677F8 /* login.plist in Resources */,
+				1C88B07D22D5E18D00F677F8 /* users.plist in Resources */,
+				1C88B06122D4A41900F677F8 /* avatar.png in Resources */,
 				1C4777E122D3548D0015F43B /* CViewController.xib in Resources */,
 				1C4777D922D34AD70015F43B /* AViewController.xib in Resources */,
+				1C88B06A22D5D64600F677F8 /* MenuViewController.xib in Resources */,
 				1C4777DD22D3529E0015F43B /* BViewController.xib in Resources */,
 				1C4777E922D356CD0015F43B /* EViewController.xib in Resources */,
 				1C4777E522D356BB0015F43B /* DViewController.xib in Resources */,
 				1C88B05322D47DC900F677F8 /* HomeViewController.xib in Resources */,
 				1C4777CE22D348F30015F43B /* LaunchScreen.storyboard in Resources */,
+				1C88B05F22D4A28D00F677F8 /* ListUsersViewController.xib in Resources */,
 				1C4777CB22D348F30015F43B /* Assets.xcassets in Resources */,
 				1C88B05722D4895500F677F8 /* EditViewController.xib in Resources */,
 			);
@@ -215,6 +383,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C88B07B22D5DF8D00F677F8 /* FileManagers.swift in Sources */,
 				1C88B05622D4895500F677F8 /* EditViewController.swift in Sources */,
 				1C88B04422D42CE700F677F8 /* LoginViewController.swift in Sources */,
 				1C4777D822D34AD70015F43B /* AViewController.swift in Sources */,
@@ -222,9 +391,12 @@
 				1C4777DC22D3529E0015F43B /* BViewController.swift in Sources */,
 				1C4777E022D3548D0015F43B /* CViewController.swift in Sources */,
 				1C88B05222D47DC900F677F8 /* HomeViewController.swift in Sources */,
+				1C88B07F22D5E3A200F677F8 /* User.swift in Sources */,
+				1C88B06922D5D64600F677F8 /* MenuViewController.swift in Sources */,
 				1C4777E822D356CD0015F43B /* EViewController.swift in Sources */,
-				1C88B04F22D4476C00F677F8 /* DataUsers.swift in Sources */,
+				1C88B05E22D4A28D00F677F8 /* ListUsersViewController.swift in Sources */,
 				1C4777C422D348EC0015F43B /* AppDelegate.swift in Sources */,
+				1C88B05B22D4A26300F677F8 /* Users.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
