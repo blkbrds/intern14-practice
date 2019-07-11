@@ -11,8 +11,8 @@
 		F0ECAC9522CD936E00D3F3DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ECAC9422CD936E00D3F3DF /* ViewController.swift */; };
 		F0ECAC9A22CD937000D3F3DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0ECAC9922CD937000D3F3DF /* Assets.xcassets */; };
 		F0ECAC9D22CD937000D3F3DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0ECAC9B22CD937000D3F3DF /* LaunchScreen.storyboard */; };
-		F0ECACB022CDA3D400D3F3DF /* MVC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ECACAE22CDA3D400D3F3DF /* MVC2.swift */; };
-		F0ECACB122CDA3D400D3F3DF /* MVC2.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0ECACAF22CDA3D400D3F3DF /* MVC2.xib */; };
+		F0ECACB022CDA3D400D3F3DF /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ECACAE22CDA3D400D3F3DF /* CalculatorViewController.swift */; };
+		F0ECACB122CDA3D400D3F3DF /* CalculatorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0ECACAF22CDA3D400D3F3DF /* CalculatorViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,8 +22,8 @@
 		F0ECAC9922CD937000D3F3DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F0ECAC9C22CD937000D3F3DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F0ECAC9E22CD937000D3F3DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F0ECACAE22CDA3D400D3F3DF /* MVC2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVC2.swift; sourceTree = "<group>"; };
-		F0ECACAF22CDA3D400D3F3DF /* MVC2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MVC2.xib; sourceTree = "<group>"; };
+		F0ECACAE22CDA3D400D3F3DF /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
+		F0ECACAF22CDA3D400D3F3DF /* CalculatorViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalculatorViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,8 +69,8 @@
 		F0ECACAD22CDA0E800D3F3DF /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				F0ECACAE22CDA3D400D3F3DF /* MVC2.swift */,
-				F0ECACAF22CDA3D400D3F3DF /* MVC2.xib */,
+				F0ECACAE22CDA3D400D3F3DF /* CalculatorViewController.swift */,
+				F0ECACAF22CDA3D400D3F3DF /* CalculatorViewController.xib */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -133,7 +133,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F0ECACB122CDA3D400D3F3DF /* MVC2.xib in Resources */,
+				F0ECACB122CDA3D400D3F3DF /* CalculatorViewController.xib in Resources */,
 				F0ECAC9D22CD937000D3F3DF /* LaunchScreen.storyboard in Resources */,
 				F0ECAC9A22CD937000D3F3DF /* Assets.xcassets in Resources */,
 			);
@@ -147,7 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0ECAC9522CD936E00D3F3DF /* ViewController.swift in Sources */,
-				F0ECACB022CDA3D400D3F3DF /* MVC2.swift in Sources */,
+				F0ECACB022CDA3D400D3F3DF /* CalculatorViewController.swift in Sources */,
 				F0ECAC9322CD936E00D3F3DF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

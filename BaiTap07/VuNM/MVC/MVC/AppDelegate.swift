@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.backgroundColor = .white
         window?.makeKeyAndVisible()
-        let homeViewController = MVC2()
+        let homeViewController = CalculatorViewController()
         window?.rootViewController = homeViewController
         return true
     }
