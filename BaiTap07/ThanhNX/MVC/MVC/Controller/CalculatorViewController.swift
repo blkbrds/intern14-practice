@@ -13,12 +13,13 @@ final class CalculatorViewController: UIViewController {
     @IBOutlet private var numberButtons: [UIButton]!
     @IBOutlet private var calculateButtons: [UIButton]!
     
-    var operation: Opera = .revert
-    var number1: Double = 0
-    var number2: Double = 0
-    var result: Double = 0
-    var arrayNumber: [Double] = [0]
-    var arrayCalculate: [Opera] = [.plus]
+    private var operation: Opera = .revert
+    private var number1: Double = 0
+    private var number2: Double = 0
+    private var result: Double = 0
+    private var arrayNumber: [Double] = [0]
+    private var arrayCalculate: [Opera] = [.plus]
+    
     //MARK: Life Cicle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,6 +46,7 @@ final class CalculatorViewController: UIViewController {
         }
     }
     
+    //MARK: - resetCalculate
     private func resetCalculate() {
         arrayCalculate.append(operation)
         if arrayCalculate.count > 2 {
@@ -52,6 +54,7 @@ final class CalculatorViewController: UIViewController {
         }
     }
     
+    //MARK: - buttonEqual
     private func equalButton() {
         operation = .plus
         number1 = 0
@@ -62,6 +65,7 @@ final class CalculatorViewController: UIViewController {
         arrayCalculate = [.plus]
     }
     
+    //MARK: Calculator
     private func calculator() {
         if arrayCalculate[0] == .plus {
             result = arrayNumber[0] + arrayNumber[1]
@@ -132,7 +136,7 @@ final class CalculatorViewController: UIViewController {
         guard let calcula = Opera(rawValue: sender.tag) else { return }
         operation = calcula
         switch calcula {
-        case .plus:
+        case .plus, .mul, .div:
             resetCalculate()
             calculator()
         case .minus:
@@ -144,12 +148,6 @@ final class CalculatorViewController: UIViewController {
                 resetCalculate()
                 calculator()
             }
-        case .mul:
-            resetCalculate()
-            calculator()
-        case .div:
-            resetCalculate()
-            calculator()
         case .equal:
             if arrayCalculate.count >= 2 && arrayNumber.count >= 2 {
                 arrayCalculate.remove(at: 0)
