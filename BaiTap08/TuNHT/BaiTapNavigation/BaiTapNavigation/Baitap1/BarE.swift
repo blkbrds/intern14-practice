@@ -39,6 +39,11 @@ class BarE: UIViewController {
     }
     
     @IBAction func rootButtonTouchUpInside(_ sender: UIButton) {
-        navigationController?.popToRootViewController(animated: true)
+        for viewController in self.navigationController!.viewControllers as Array {
+            if viewController.isKind(of: BarA.self) {
+                self.navigationController!.popToViewController(viewController, animated: true)
+                break
+            }
+        }
     }
 }
