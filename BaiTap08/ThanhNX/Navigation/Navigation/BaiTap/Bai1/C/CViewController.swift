@@ -29,6 +29,7 @@ class CViewController: UIViewController {
         navigationController?.popViewController(animated: true)
     }
     @IBAction func rootButtonTouchUpInside(_ sender: UIButton) {
-        navigationController?.popToRootViewController(animated: true)
+        guard let viewController = navigationController?.viewControllers.first(where: { $0 is AViewController }) else { return }
+        navigationController?.popToViewController(viewController, animated: true)
     }
 }

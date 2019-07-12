@@ -19,6 +19,17 @@
 		B0F3FBD522D4A1B500417193 /* DViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F3FBD322D4A1B500417193 /* DViewController.xib */; };
 		B0F3FBD822D4A1BF00417193 /* EViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F3FBD622D4A1BF00417193 /* EViewController.swift */; };
 		B0F3FBD922D4A1BF00417193 /* EViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F3FBD722D4A1BF00417193 /* EViewController.xib */; };
+		B0F4527822D5793D004E23F0 /* user.plist in Resources */ = {isa = PBXBuildFile; fileRef = B0F4527722D5793D004E23F0 /* user.plist */; };
+		B0F4527C22D579F4004E23F0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F4527B22D579F4004E23F0 /* User.swift */; };
+		B0F4527E22D57A76004E23F0 /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F4527D22D57A76004E23F0 /* FileManager.swift */; };
+		B0F4528122D57C13004E23F0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F4527F22D57C13004E23F0 /* LoginViewController.swift */; };
+		B0F4528222D57C13004E23F0 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F4528022D57C13004E23F0 /* LoginViewController.xib */; };
+		B0F4528522D58356004E23F0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F4528322D58356004E23F0 /* HomeViewController.swift */; };
+		B0F4528622D58356004E23F0 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F4528422D58356004E23F0 /* HomeViewController.xib */; };
+		B0F4528922D58367004E23F0 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F4528722D58367004E23F0 /* EditViewController.swift */; };
+		B0F4528A22D58367004E23F0 /* EditViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F4528822D58367004E23F0 /* EditViewController.xib */; };
+		B0F4529A22D5DA9F004E23F0 /* BaiTapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F4529822D5DA9F004E23F0 /* BaiTapViewController.swift */; };
+		B0F4529B22D5DA9F004E23F0 /* BaiTapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F4529922D5DA9F004E23F0 /* BaiTapViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +47,17 @@
 		B0F3FBD322D4A1B500417193 /* DViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DViewController.xib; sourceTree = "<group>"; };
 		B0F3FBD622D4A1BF00417193 /* EViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EViewController.swift; sourceTree = "<group>"; };
 		B0F3FBD722D4A1BF00417193 /* EViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EViewController.xib; sourceTree = "<group>"; };
+		B0F4527722D5793D004E23F0 /* user.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = user.plist; sourceTree = "<group>"; };
+		B0F4527B22D579F4004E23F0 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B0F4527D22D57A76004E23F0 /* FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
+		B0F4527F22D57C13004E23F0 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		B0F4528022D57C13004E23F0 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		B0F4528322D58356004E23F0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		B0F4528422D58356004E23F0 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		B0F4528722D58367004E23F0 /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
+		B0F4528822D58367004E23F0 /* EditViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditViewController.xib; sourceTree = "<group>"; };
+		B0F4529822D5DA9F004E23F0 /* BaiTapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaiTapViewController.swift; sourceTree = "<group>"; };
+		B0F4529922D5DA9F004E23F0 /* BaiTapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BaiTapViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,9 +90,10 @@
 		B0F3FBB222D497D100417193 /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
-				B0F3FBC522D4985500417193 /* Bai1 */,
-				B0F3FBB322D497D100417193 /* AppDelegate.swift */,
-				B0F3FBBA22D497D200417193 /* Assets.xcassets */,
+				B0F4529C22D5DE3F004E23F0 /* AppDelegate */,
+				B0F4528E22D5D473004E23F0 /* BaiTap */,
+				B0F4527622D578FC004E23F0 /* Data */,
+				B0F4527A22D579E5004E23F0 /* Models */,
 				B0F3FBBF22D497D200417193 /* Info.plist */,
 			);
 			path = Navigation;
@@ -79,18 +102,148 @@
 		B0F3FBC522D4985500417193 /* Bai1 */ = {
 			isa = PBXGroup;
 			children = (
+				B0F4528F22D5D489004E23F0 /* A */,
+				B0F4529022D5D493004E23F0 /* B */,
+				B0F4529122D5D4A0004E23F0 /* C */,
+				B0F4529222D5D4AA004E23F0 /* D */,
+				B0F4529322D5D4B6004E23F0 /* E */,
+			);
+			path = Bai1;
+			sourceTree = "<group>";
+		};
+		B0F4527622D578FC004E23F0 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				B0F4527722D5793D004E23F0 /* user.plist */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		B0F4527922D579DE004E23F0 /* Bai2 */ = {
+			isa = PBXGroup;
+			children = (
+				B0F4528B22D5D3A8004E23F0 /* Login */,
+				B0F4528C22D5D3B7004E23F0 /* Home */,
+				B0F4528D22D5D3CB004E23F0 /* Edit */,
+			);
+			path = Bai2;
+			sourceTree = "<group>";
+		};
+		B0F4527A22D579E5004E23F0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B0F4527B22D579F4004E23F0 /* User.swift */,
+				B0F4527D22D57A76004E23F0 /* FileManager.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B0F4528B22D5D3A8004E23F0 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				B0F4527F22D57C13004E23F0 /* LoginViewController.swift */,
+				B0F4528022D57C13004E23F0 /* LoginViewController.xib */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		B0F4528C22D5D3B7004E23F0 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B0F4528322D58356004E23F0 /* HomeViewController.swift */,
+				B0F4528422D58356004E23F0 /* HomeViewController.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		B0F4528D22D5D3CB004E23F0 /* Edit */ = {
+			isa = PBXGroup;
+			children = (
+				B0F4528722D58367004E23F0 /* EditViewController.swift */,
+				B0F4528822D58367004E23F0 /* EditViewController.xib */,
+			);
+			path = Edit;
+			sourceTree = "<group>";
+		};
+		B0F4528E22D5D473004E23F0 /* BaiTap */ = {
+			isa = PBXGroup;
+			children = (
+				B0F4529E22D5DEA5004E23F0 /* Bai4 */,
+				B0F4529D22D5DE9F004E23F0 /* Bai3 */,
+				B0F4527922D579DE004E23F0 /* Bai2 */,
+				B0F3FBC522D4985500417193 /* Bai1 */,
+				B0F4529822D5DA9F004E23F0 /* BaiTapViewController.swift */,
+				B0F4529922D5DA9F004E23F0 /* BaiTapViewController.xib */,
+			);
+			path = BaiTap;
+			sourceTree = "<group>";
+		};
+		B0F4528F22D5D489004E23F0 /* A */ = {
+			isa = PBXGroup;
+			children = (
 				B0F3FBC622D498B500417193 /* AViewController.swift */,
 				B0F3FBC722D498B500417193 /* AViewController.xib */,
+			);
+			path = A;
+			sourceTree = "<group>";
+		};
+		B0F4529022D5D493004E23F0 /* B */ = {
+			isa = PBXGroup;
+			children = (
 				B0F3FBCA22D49AFF00417193 /* BViewController.swift */,
 				B0F3FBCB22D49AFF00417193 /* BViewController.xib */,
+			);
+			path = B;
+			sourceTree = "<group>";
+		};
+		B0F4529122D5D4A0004E23F0 /* C */ = {
+			isa = PBXGroup;
+			children = (
 				B0F3FBCE22D49D2400417193 /* CViewController.swift */,
 				B0F3FBCF22D49D2400417193 /* CViewController.xib */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		B0F4529222D5D4AA004E23F0 /* D */ = {
+			isa = PBXGroup;
+			children = (
 				B0F3FBD222D4A1B500417193 /* DViewController.swift */,
 				B0F3FBD322D4A1B500417193 /* DViewController.xib */,
+			);
+			path = D;
+			sourceTree = "<group>";
+		};
+		B0F4529322D5D4B6004E23F0 /* E */ = {
+			isa = PBXGroup;
+			children = (
 				B0F3FBD622D4A1BF00417193 /* EViewController.swift */,
 				B0F3FBD722D4A1BF00417193 /* EViewController.xib */,
 			);
-			path = Bai1;
+			path = E;
+			sourceTree = "<group>";
+		};
+		B0F4529C22D5DE3F004E23F0 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				B0F3FBB322D497D100417193 /* AppDelegate.swift */,
+				B0F3FBBA22D497D200417193 /* Assets.xcassets */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		B0F4529D22D5DE9F004E23F0 /* Bai3 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Bai3;
+			sourceTree = "<group>";
+		};
+		B0F4529E22D5DEA5004E23F0 /* Bai4 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Bai4;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,12 +304,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0F4528222D57C13004E23F0 /* LoginViewController.xib in Resources */,
 				B0F3FBD922D4A1BF00417193 /* EViewController.xib in Resources */,
+				B0F4528A22D58367004E23F0 /* EditViewController.xib in Resources */,
 				B0F3FBD522D4A1B500417193 /* DViewController.xib in Resources */,
 				B0F3FBCD22D49AFF00417193 /* BViewController.xib in Resources */,
+				B0F4529B22D5DA9F004E23F0 /* BaiTapViewController.xib in Resources */,
 				B0F3FBC922D498B500417193 /* AViewController.xib in Resources */,
+				B0F4527822D5793D004E23F0 /* user.plist in Resources */,
 				B0F3FBD122D49D2400417193 /* CViewController.xib in Resources */,
 				B0F3FBBB22D497D200417193 /* Assets.xcassets in Resources */,
+				B0F4528622D58356004E23F0 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,12 +325,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0F4528122D57C13004E23F0 /* LoginViewController.swift in Sources */,
+				B0F4529A22D5DA9F004E23F0 /* BaiTapViewController.swift in Sources */,
 				B0F3FBC822D498B500417193 /* AViewController.swift in Sources */,
 				B0F3FBD422D4A1B500417193 /* DViewController.swift in Sources */,
 				B0F3FBCC22D49AFF00417193 /* BViewController.swift in Sources */,
 				B0F3FBD022D49D2400417193 /* CViewController.swift in Sources */,
+				B0F4528522D58356004E23F0 /* HomeViewController.swift in Sources */,
 				B0F3FBD822D4A1BF00417193 /* EViewController.swift in Sources */,
 				B0F3FBB422D497D100417193 /* AppDelegate.swift in Sources */,
+				B0F4527C22D579F4004E23F0 /* User.swift in Sources */,
+				B0F4528922D58367004E23F0 /* EditViewController.swift in Sources */,
+				B0F4527E22D57A76004E23F0 /* FileManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -19,8 +19,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.backgroundColor = .white
         window?.makeKeyAndVisible()
         
-        let bai1ViewController = AViewController()
-        let navi = UINavigationController(rootViewController: bai1ViewController)
+        let bt = BaiTapViewController()
+        let navi = UINavigationController(rootViewController: bt)
         window?.rootViewController = navi
         return true
     }
