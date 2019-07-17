@@ -8,12 +8,12 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+final class HomeViewController: UIViewController {
     
     @IBOutlet private weak var userLabel: UILabel!
     
     var user: User = User()
-    var isFirstRun = true
+    private var isFirstRun = true
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,8 +33,8 @@ class HomeViewController: UIViewController {
             userLabel.text = "Welcome \(user.username)"
             isFirstRun = false
         } else {
-            userLabel.text = UserDefaults.standard.string(forKey: "username")
-            guard let userN = UserDefaults.standard.string(forKey: "username") else { return }
+            userLabel.text = UserDefaults.standard.string(forKey: "name")
+            guard let userN = UserDefaults.standard.string(forKey: "name") else { return }
             user.username = userN            
         }
     }

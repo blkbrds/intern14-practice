@@ -12,7 +12,7 @@ class BaiTapViewController: UIViewController {
 
     @IBOutlet private var baiTaps: [UIButton]!
     
-    let viewcontrollers: [UIViewController] = [AViewController(), LoginViewController()]
+    let viewcontrollers: [UIViewController] = [AViewController(), LoginViewController(), Bai3ViewController()]
     
     override func viewDidLoad() {
         super.viewDidLoad()

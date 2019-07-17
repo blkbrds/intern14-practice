@@ -7,14 +7,12 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+final class LoginViewController: UIViewController {
     var users: [User] = []
     
     @IBOutlet private weak var usernameTextField: UITextField!
     @IBOutlet private weak var passwordTextField: UITextField!
     @IBOutlet private weak var errorLabel: UILabel!
-    
-    var isError = true
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,22 +28,17 @@ class LoginViewController: UIViewController {
     
     //MARK: func Login
     private func login() {
+        guard let username = usernameTextField.text, let pw = passwordTextField.text else { return }
         users = User.parseData(array: FileManagers.readPlistFile(filename: "user"))
-        for user in users {
-            if user.username == usernameTextField.text && user.password == passwordTextField.text {
-                let homeVC = HomeViewController()
-                homeVC.user = user
-                navigationController?.pushViewController(homeVC, animated: true)
-                usernameTextField.text?.removeAll()
-                passwordTextField.text?.removeAll()
-                usernameTextField.becomeFirstResponder()
-                isError = false
-                if !isError {
-                    errorLabel.isHidden = true
-                }
-            }
-        }
-        if isError {
+        if let user = users.first(where: { $0.username.elementsEqual(username) && $0.password.elementsEqual(pw) }) {
+            let homeVC = HomeViewController()
+            homeVC.user = user
+            navigationController?.pushViewController(homeVC, animated: true)
+            usernameTextField.text?.removeAll()
+            passwordTextField.text?.removeAll()
+            usernameTextField.becomeFirstResponder()
+            errorLabel.isHidden = true
+        } else {
             errorLabel.isHidden = false
         }
     }

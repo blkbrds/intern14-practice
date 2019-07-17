@@ -7,12 +7,11 @@
 
 import Foundation
 
-class FileManagers {
-    
+final class FileManagers {
     //MARK: - Read file
     static func readPlistFile(filename: String) -> [[String: String]] {
         var path = ""
-        if let _ = UserDefaults.standard.string(forKey: "username") {
+        if let _ = UserDefaults.standard.string(forKey: "name") {
             let documentDirectory = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as String
             path = documentDirectory.appending("/" + filename + ".plist")
         } else {

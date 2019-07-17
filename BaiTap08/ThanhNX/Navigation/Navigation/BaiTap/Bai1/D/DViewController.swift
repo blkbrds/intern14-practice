@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DViewController: UIViewController {
+final class DViewController: UIViewController {
     @IBOutlet var buttons: [UIButton]!
     override func viewDidLoad() {
         super.viewDidLoad()

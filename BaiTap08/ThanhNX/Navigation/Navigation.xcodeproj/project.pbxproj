@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B0285E5C22DDD2290022B75E /* Avatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0285E5B22DDD2280022B75E /* Avatar.swift */; };
+		B0285E5E22DDD3EA0022B75E /* AvatarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0285E5D22DDD3EA0022B75E /* AvatarImageView.swift */; };
+		B0EFBF9822D8811E005716C7 /* Bai3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EFBF9622D8811E005716C7 /* Bai3ViewController.swift */; };
+		B0EFBF9922D8811E005716C7 /* Bai3ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0EFBF9722D8811E005716C7 /* Bai3ViewController.xib */; };
+		B0EFBF9B22D883BC005716C7 /* avatar.plist in Resources */ = {isa = PBXBuildFile; fileRef = B0EFBF9A22D883BC005716C7 /* avatar.plist */; };
+		B0EFBF9E22D88FEB005716C7 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EFBF9C22D88FEB005716C7 /* ProfileViewController.swift */; };
+		B0EFBF9F22D88FEB005716C7 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0EFBF9D22D88FEB005716C7 /* ProfileViewController.xib */; };
 		B0F3FBB422D497D100417193 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F3FBB322D497D100417193 /* AppDelegate.swift */; };
 		B0F3FBBB22D497D200417193 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0F3FBBA22D497D200417193 /* Assets.xcassets */; };
 		B0F3FBC822D498B500417193 /* AViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F3FBC622D498B500417193 /* AViewController.swift */; };
@@ -21,7 +28,7 @@
 		B0F3FBD922D4A1BF00417193 /* EViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F3FBD722D4A1BF00417193 /* EViewController.xib */; };
 		B0F4527822D5793D004E23F0 /* user.plist in Resources */ = {isa = PBXBuildFile; fileRef = B0F4527722D5793D004E23F0 /* user.plist */; };
 		B0F4527C22D579F4004E23F0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F4527B22D579F4004E23F0 /* User.swift */; };
-		B0F4527E22D57A76004E23F0 /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F4527D22D57A76004E23F0 /* FileManager.swift */; };
+		B0F4527E22D57A76004E23F0 /* FileManagers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F4527D22D57A76004E23F0 /* FileManagers.swift */; };
 		B0F4528122D57C13004E23F0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F4527F22D57C13004E23F0 /* LoginViewController.swift */; };
 		B0F4528222D57C13004E23F0 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F4528022D57C13004E23F0 /* LoginViewController.xib */; };
 		B0F4528522D58356004E23F0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F4528322D58356004E23F0 /* HomeViewController.swift */; };
@@ -33,6 +40,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B0285E5B22DDD2280022B75E /* Avatar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Avatar.swift; sourceTree = "<group>"; };
+		B0285E5D22DDD3EA0022B75E /* AvatarImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarImageView.swift; sourceTree = "<group>"; };
+		B0EFBF9622D8811E005716C7 /* Bai3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bai3ViewController.swift; sourceTree = "<group>"; };
+		B0EFBF9722D8811E005716C7 /* Bai3ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Bai3ViewController.xib; sourceTree = "<group>"; };
+		B0EFBF9A22D883BC005716C7 /* avatar.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = avatar.plist; sourceTree = "<group>"; };
+		B0EFBF9C22D88FEB005716C7 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		B0EFBF9D22D88FEB005716C7 /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
 		B0F3FBB022D497D100417193 /* Navigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Navigation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0F3FBB322D497D100417193 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0F3FBBA22D497D200417193 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,7 +63,7 @@
 		B0F3FBD722D4A1BF00417193 /* EViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EViewController.xib; sourceTree = "<group>"; };
 		B0F4527722D5793D004E23F0 /* user.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = user.plist; sourceTree = "<group>"; };
 		B0F4527B22D579F4004E23F0 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		B0F4527D22D57A76004E23F0 /* FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
+		B0F4527D22D57A76004E23F0 /* FileManagers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagers.swift; sourceTree = "<group>"; };
 		B0F4527F22D57C13004E23F0 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B0F4528022D57C13004E23F0 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		B0F4528322D58356004E23F0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -71,6 +85,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B0285E6022DDD4580022B75E /* AvatarImageView */ = {
+			isa = PBXGroup;
+			children = (
+				B0285E5D22DDD3EA0022B75E /* AvatarImageView.swift */,
+			);
+			name = AvatarImageView;
+			sourceTree = "<group>";
+		};
+		B0EFBFA022D8973F005716C7 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B0EFBF9622D8811E005716C7 /* Bai3ViewController.swift */,
+				B0EFBF9722D8811E005716C7 /* Bai3ViewController.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		B0EFBFA122D89751005716C7 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				B0EFBF9C22D88FEB005716C7 /* ProfileViewController.swift */,
+				B0EFBF9D22D88FEB005716C7 /* ProfileViewController.xib */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 		B0F3FBA722D497D100417193 = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				B0F4527722D5793D004E23F0 /* user.plist */,
+				B0EFBF9A22D883BC005716C7 /* avatar.plist */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -132,8 +173,9 @@
 		B0F4527A22D579E5004E23F0 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B0285E5B22DDD2280022B75E /* Avatar.swift */,
 				B0F4527B22D579F4004E23F0 /* User.swift */,
-				B0F4527D22D57A76004E23F0 /* FileManager.swift */,
+				B0F4527D22D57A76004E23F0 /* FileManagers.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -235,6 +277,9 @@
 		B0F4529D22D5DE9F004E23F0 /* Bai3 */ = {
 			isa = PBXGroup;
 			children = (
+				B0285E6022DDD4580022B75E /* AvatarImageView */,
+				B0EFBFA122D89751005716C7 /* Profile */,
+				B0EFBFA022D8973F005716C7 /* Home */,
 			);
 			path = Bai3;
 			sourceTree = "<group>";
@@ -304,11 +349,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0EFBF9F22D88FEB005716C7 /* ProfileViewController.xib in Resources */,
 				B0F4528222D57C13004E23F0 /* LoginViewController.xib in Resources */,
+				B0EFBF9B22D883BC005716C7 /* avatar.plist in Resources */,
 				B0F3FBD922D4A1BF00417193 /* EViewController.xib in Resources */,
 				B0F4528A22D58367004E23F0 /* EditViewController.xib in Resources */,
 				B0F3FBD522D4A1B500417193 /* DViewController.xib in Resources */,
 				B0F3FBCD22D49AFF00417193 /* BViewController.xib in Resources */,
+				B0EFBF9922D8811E005716C7 /* Bai3ViewController.xib in Resources */,
 				B0F4529B22D5DA9F004E23F0 /* BaiTapViewController.xib in Resources */,
 				B0F3FBC922D498B500417193 /* AViewController.xib in Resources */,
 				B0F4527822D5793D004E23F0 /* user.plist in Resources */,
@@ -328,6 +376,7 @@
 				B0F4528122D57C13004E23F0 /* LoginViewController.swift in Sources */,
 				B0F4529A22D5DA9F004E23F0 /* BaiTapViewController.swift in Sources */,
 				B0F3FBC822D498B500417193 /* AViewController.swift in Sources */,
+				B0285E5C22DDD2290022B75E /* Avatar.swift in Sources */,
 				B0F3FBD422D4A1B500417193 /* DViewController.swift in Sources */,
 				B0F3FBCC22D49AFF00417193 /* BViewController.swift in Sources */,
 				B0F3FBD022D49D2400417193 /* CViewController.swift in Sources */,
@@ -335,8 +384,11 @@
 				B0F3FBD822D4A1BF00417193 /* EViewController.swift in Sources */,
 				B0F3FBB422D497D100417193 /* AppDelegate.swift in Sources */,
 				B0F4527C22D579F4004E23F0 /* User.swift in Sources */,
+				B0EFBF9822D8811E005716C7 /* Bai3ViewController.swift in Sources */,
+				B0285E5E22DDD3EA0022B75E /* AvatarImageView.swift in Sources */,
+				B0EFBF9E22D88FEB005716C7 /* ProfileViewController.swift in Sources */,
 				B0F4528922D58367004E23F0 /* EditViewController.swift in Sources */,
-				B0F4527E22D57A76004E23F0 /* FileManager.swift in Sources */,
+				B0F4527E22D57A76004E23F0 /* FileManagers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

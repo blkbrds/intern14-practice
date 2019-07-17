@@ -8,7 +8,7 @@
 
 import Foundation
 
-class User {
+final class User {
     var username = ""
     var password = ""
     

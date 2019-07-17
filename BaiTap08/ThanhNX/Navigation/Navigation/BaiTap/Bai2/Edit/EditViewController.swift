@@ -8,7 +8,7 @@
 
 import UIKit
 
-class EditViewController: UIViewController {
+final class EditViewController: UIViewController {
     
     @IBOutlet private weak var usernameTextField: UITextField!
     @IBOutlet private weak var newPasswordTextField: UITextField!
@@ -33,17 +33,11 @@ class EditViewController: UIViewController {
     }
     
     @objc private func doneButtonDidClick() {
-        UserDefaults.standard.setValue(self.usernameTextField.text, forKey: "username")
+        UserDefaults.standard.setValue(self.usernameTextField.text, forKey: "name")
         UserDefaults.standard.synchronize()
         
         let users = User.parseData(array: FileManagers.readPlistFile(filename: "user"))
         for user in users {
-            //
-            //            if let newPass = newPasswordTextField.text, let confirmPass = confirmPasswordTextField.text {
-            //                if confirmPass == newPass {
-            //                    user.password = confirmPass
-            //            }
-            //            }
             if user.username == user1.username {
                 if confirmPasswordTextField.text == newPasswordTextField.text {
                     user.password = newPasswordTextField.text!
@@ -64,7 +58,6 @@ class EditViewController: UIViewController {
         }
         
         FileManagers.writePlistFile(filename: "user.plist", data: arrs as NSArray)
-        
         navigationController?.popViewController(animated: true)
     }
     
