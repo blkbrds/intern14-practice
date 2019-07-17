@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  BaiTapView
+//  BaiTapNavigation
 //
-//  Created by PCI0001 on 6/21/19.
+//  Created by PCI0001 on 7/9/19.
 //  Copyright © 2019 PCI0001. All rights reserved.
 //
 
@@ -19,8 +19,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.backgroundColor = .white
         window?.makeKeyAndVisible()
         
-        let baiTap = BaiTap1()
-        window?.rootViewController = baiTap
+        let viewController = HomeViewController()
+        let navigationController = UINavigationController(rootViewController: viewController)
+        window?.rootViewController = navigationController
         
         return true
     }

@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  BaiTapView
+//  BaiTapMVC
 //
-//  Created by PCI0001 on 6/21/19.
+//  Created by PCI0001 on 7/3/19.
 //  Copyright © 2019 PCI0001. All rights reserved.
 //
 
@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.backgroundColor = .white
         window?.makeKeyAndVisible()
         
-        let baiTap = BaiTap1()
+        let baiTap = Calculator()
         window?.rootViewController = baiTap
         
         return true
