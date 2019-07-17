@@ -37,5 +37,7 @@ class MenuViewController: UIViewController {
         navigationController?.pushViewController(listUsersViewController, animated: true)
     }
     @IBAction func baiTap4ButtonTouchUpInside(_ sender: Any) {
+        let bai4 = BackGroundViewController()
+        navigationController?.pushViewController(bai4, animated: true)
     }
 }

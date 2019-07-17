@@ -88,8 +88,12 @@ class EditViewController: UIViewController {
                     errorLabel.isHidden = true
                     UserDefaults.standard.set(userNameTextField.text, forKey: "username")
                     UserDefaults.standard.synchronize()
-                    FileManagers.writePlist(userNameTextField.text!, confirmPasswordTextField.text!)
                     print("Changed Pass")
+                    guard let newUserName = userNameTextField.text, let newPassword = confirmPasswordTextField.text else {
+                        return
+                    }
+                    let user = User(username: newUserName, password: newPassword)
+                    FileManagers.writePlist(user, username)
                     navigationController?.popViewController(animated: true)
                     
                 } else {

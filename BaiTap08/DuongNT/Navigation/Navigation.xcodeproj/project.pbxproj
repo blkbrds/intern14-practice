@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C39717822DDB1EA00243373 /* BackGroundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C39717622DDB1EA00243373 /* BackGroundViewController.swift */; };
+		1C39717922DDB1EA00243373 /* BackGroundViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C39717722DDB1EA00243373 /* BackGroundViewController.xib */; };
 		1C4777C422D348EC0015F43B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4777C322D348EC0015F43B /* AppDelegate.swift */; };
 		1C4777CB22D348F30015F43B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C4777CA22D348F30015F43B /* Assets.xcassets */; };
 		1C4777CE22D348F30015F43B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C4777CC22D348F30015F43B /* LaunchScreen.storyboard */; };
@@ -20,6 +22,9 @@
 		1C4777E522D356BB0015F43B /* DViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C4777E322D356BB0015F43B /* DViewController.xib */; };
 		1C4777E822D356CD0015F43B /* EViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4777E622D356CD0015F43B /* EViewController.swift */; };
 		1C4777E922D356CD0015F43B /* EViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C4777E722D356CD0015F43B /* EViewController.xib */; };
+		1C660F4922D8627A003047A3 /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C660F4722D8627A003047A3 /* UserDetailViewController.swift */; };
+		1C660F4A22D8627A003047A3 /* UserDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C660F4822D8627A003047A3 /* UserDetailViewController.xib */; };
+		1C660F4C22DC2F8A003047A3 /* ListUserInform.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1C660F4B22DC2F8A003047A3 /* ListUserInform.plist */; };
 		1C88B04422D42CE700F677F8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C88B04222D42CE700F677F8 /* LoginViewController.swift */; };
 		1C88B04522D42CE700F677F8 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C88B04322D42CE700F677F8 /* LoginViewController.xib */; };
 		1C88B05222D47DC900F677F8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C88B05022D47DC900F677F8 /* HomeViewController.swift */; };
@@ -29,7 +34,6 @@
 		1C88B05B22D4A26300F677F8 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C88B05A22D4A26300F677F8 /* Users.swift */; };
 		1C88B05E22D4A28D00F677F8 /* ListUsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C88B05C22D4A28D00F677F8 /* ListUsersViewController.swift */; };
 		1C88B05F22D4A28D00F677F8 /* ListUsersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C88B05D22D4A28D00F677F8 /* ListUsersViewController.xib */; };
-		1C88B06122D4A41900F677F8 /* avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C88B06022D4A41800F677F8 /* avatar.png */; };
 		1C88B06922D5D64600F677F8 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C88B06722D5D64600F677F8 /* MenuViewController.swift */; };
 		1C88B06A22D5D64600F677F8 /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C88B06822D5D64600F677F8 /* MenuViewController.xib */; };
 		1C88B07B22D5DF8D00F677F8 /* FileManagers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C88B07A22D5DF8D00F677F8 /* FileManagers.swift */; };
@@ -38,6 +42,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C39717622DDB1EA00243373 /* BackGroundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackGroundViewController.swift; sourceTree = "<group>"; };
+		1C39717722DDB1EA00243373 /* BackGroundViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BackGroundViewController.xib; sourceTree = "<group>"; };
 		1C4777C022D348EC0015F43B /* Navigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Navigation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C4777C322D348EC0015F43B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1C4777CA22D348F30015F43B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -53,6 +59,9 @@
 		1C4777E322D356BB0015F43B /* DViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DViewController.xib; sourceTree = "<group>"; };
 		1C4777E622D356CD0015F43B /* EViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EViewController.swift; sourceTree = "<group>"; };
 		1C4777E722D356CD0015F43B /* EViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EViewController.xib; sourceTree = "<group>"; };
+		1C660F4722D8627A003047A3 /* UserDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
+		1C660F4822D8627A003047A3 /* UserDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserDetailViewController.xib; sourceTree = "<group>"; };
+		1C660F4B22DC2F8A003047A3 /* ListUserInform.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = ListUserInform.plist; path = ../ListUserInform.plist; sourceTree = "<group>"; };
 		1C88B04222D42CE700F677F8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		1C88B04322D42CE700F677F8 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		1C88B05022D47DC900F677F8 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -62,7 +71,6 @@
 		1C88B05A22D4A26300F677F8 /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		1C88B05C22D4A28D00F677F8 /* ListUsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListUsersViewController.swift; sourceTree = "<group>"; };
 		1C88B05D22D4A28D00F677F8 /* ListUsersViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListUsersViewController.xib; sourceTree = "<group>"; };
-		1C88B06022D4A41800F677F8 /* avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avatar.png; sourceTree = "<group>"; };
 		1C88B06722D5D64600F677F8 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		1C88B06822D5D64600F677F8 /* MenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
 		1C88B07A22D5DF8D00F677F8 /* FileManagers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagers.swift; sourceTree = "<group>"; };
@@ -81,6 +89,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C39717422DDB0F000243373 /* BaiTap4 */ = {
+			isa = PBXGroup;
+			children = (
+				1C39717522DDB1C700243373 /* BackGround */,
+			);
+			path = BaiTap4;
+			sourceTree = "<group>";
+		};
+		1C39717522DDB1C700243373 /* BackGround */ = {
+			isa = PBXGroup;
+			children = (
+				1C39717622DDB1EA00243373 /* BackGroundViewController.swift */,
+				1C39717722DDB1EA00243373 /* BackGroundViewController.xib */,
+			);
+			path = BackGround;
+			sourceTree = "<group>";
+		};
 		1C4777B722D348EC0015F43B = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +133,7 @@
 				1C88B04122D42CC600F677F8 /* BaiTap2 */,
 				1C88B05822D4A06200F677F8 /* BaiTap3 */,
 				1C4777CF22D348F30015F43B /* Info.plist */,
+				1C39717422DDB0F000243373 /* BaiTap4 */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -122,6 +148,23 @@
 				1C88B06F22D5DD4A00F677F8 /* E */,
 			);
 			path = BaiTap1;
+			sourceTree = "<group>";
+		};
+		1C660F4422D86212003047A3 /* UserDetail */ = {
+			isa = PBXGroup;
+			children = (
+				1C660F4722D8627A003047A3 /* UserDetailViewController.swift */,
+				1C660F4822D8627A003047A3 /* UserDetailViewController.xib */,
+			);
+			path = UserDetail;
+			sourceTree = "<group>";
+		};
+		1C660F4D22DC2F94003047A3 /* File */ = {
+			isa = PBXGroup;
+			children = (
+				1C660F4B22DC2F8A003047A3 /* ListUserInform.plist */,
+			);
+			path = File;
 			sourceTree = "<group>";
 		};
 		1C88B04122D42CC600F677F8 /* BaiTap2 */ = {
@@ -147,6 +190,8 @@
 		1C88B05822D4A06200F677F8 /* BaiTap3 */ = {
 			isa = PBXGroup;
 			children = (
+				1C660F4D22DC2F94003047A3 /* File */,
+				1C660F4422D86212003047A3 /* UserDetail */,
 				1C88B07522D5DE0800F677F8 /* ListUsers */,
 				1C88B07322D5DDC300F677F8 /* Models */,
 			);
@@ -173,19 +218,10 @@
 		1C88B06422D5D5D700F677F8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				1C88B06522D5D60800F677F8 /* Images */,
 				1C4777CA22D348F30015F43B /* Assets.xcassets */,
 				1C4777CC22D348F30015F43B /* LaunchScreen.storyboard */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		1C88B06522D5D60800F677F8 /* Images */ = {
-			isa = PBXGroup;
-			children = (
-				1C88B06022D4A41800F677F8 /* avatar.png */,
-			);
-			path = Images;
 			sourceTree = "<group>";
 		};
 		1C88B06B22D5DD3100F677F8 /* A */ = {
@@ -361,8 +397,9 @@
 			files = (
 				1C88B04522D42CE700F677F8 /* LoginViewController.xib in Resources */,
 				1C88B07D22D5E18D00F677F8 /* users.plist in Resources */,
-				1C88B06122D4A41900F677F8 /* avatar.png in Resources */,
 				1C4777E122D3548D0015F43B /* CViewController.xib in Resources */,
+				1C660F4C22DC2F8A003047A3 /* ListUserInform.plist in Resources */,
+				1C39717922DDB1EA00243373 /* BackGroundViewController.xib in Resources */,
 				1C4777D922D34AD70015F43B /* AViewController.xib in Resources */,
 				1C88B06A22D5D64600F677F8 /* MenuViewController.xib in Resources */,
 				1C4777DD22D3529E0015F43B /* BViewController.xib in Resources */,
@@ -370,6 +407,7 @@
 				1C4777E522D356BB0015F43B /* DViewController.xib in Resources */,
 				1C88B05322D47DC900F677F8 /* HomeViewController.xib in Resources */,
 				1C4777CE22D348F30015F43B /* LaunchScreen.storyboard in Resources */,
+				1C660F4A22D8627A003047A3 /* UserDetailViewController.xib in Resources */,
 				1C88B05F22D4A28D00F677F8 /* ListUsersViewController.xib in Resources */,
 				1C4777CB22D348F30015F43B /* Assets.xcassets in Resources */,
 				1C88B05722D4895500F677F8 /* EditViewController.xib in Resources */,
@@ -391,9 +429,11 @@
 				1C4777DC22D3529E0015F43B /* BViewController.swift in Sources */,
 				1C4777E022D3548D0015F43B /* CViewController.swift in Sources */,
 				1C88B05222D47DC900F677F8 /* HomeViewController.swift in Sources */,
+				1C39717822DDB1EA00243373 /* BackGroundViewController.swift in Sources */,
 				1C88B07F22D5E3A200F677F8 /* User.swift in Sources */,
 				1C88B06922D5D64600F677F8 /* MenuViewController.swift in Sources */,
 				1C4777E822D356CD0015F43B /* EViewController.swift in Sources */,
+				1C660F4922D8627A003047A3 /* UserDetailViewController.swift in Sources */,
 				1C88B05E22D4A28D00F677F8 /* ListUsersViewController.swift in Sources */,
 				1C4777C422D348EC0015F43B /* AppDelegate.swift in Sources */,
 				1C88B05B22D4A26300F677F8 /* Users.swift in Sources */,

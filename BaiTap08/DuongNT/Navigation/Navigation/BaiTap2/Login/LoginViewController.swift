@@ -23,7 +23,7 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configTextFields()
-        getUser()
+        loadFilePlist()
         setUpUILogin()
     }
     
@@ -47,6 +47,18 @@ class LoginViewController: UIViewController {
         passWordTextField.delegate = self
     }
     
+    func loadFilePlist() {
+        let a = UserDefaults.standard.bool(forKey: "firstLoad")
+        print(a)
+        if !a {
+            FileManagers.copyFilesFromBundleToDocumentsFolderWith(fileExtension: "plist")
+            UserDefaults.standard.set(true, forKey: "firstLoad")
+            users = User.parseData(array: FileManagers.readPlist(namePlist: "users"))
+        } else {
+            users = User.parseData(array: FileManagers.readPlist(namePlist: "users"))
+        }
+    }
+    
     private func setUpUILogin() {
         title = "Login"
         let doneButton = UIButton(frame: CGRect(x: 0, y: 0, width: 50, height: 44))
@@ -66,15 +78,15 @@ class LoginViewController: UIViewController {
         checkLogin()
     }
     
-    private func getUser() {
-        //FileManagers.writePlist(namePlist: "users", key: "username", data: "duongnt123" as AnyObject)
-        users = User.parseData(array: FileManagers.readPlist(namePlist: "users"))
-        //FileManagers.writeFile(array: [["admin" : "admin"]])
-        users.forEach {
-            user in
-            FileManagers.writePlist(user.username,user.password)
-        }
-    }
+//    private func getUser() {
+//        //FileManagers.writePlist(namePlist: "users", key: "username", data: "duongnt123" as AnyObject)
+//        users = User.parseData(array: FileManagers.readPlist(namePlist: "users"))
+//        //FileManagers.writeFile(array: [["admin" : "admin"]])
+//        users.forEach {
+//            user in
+//            FileManagers.writePlist(user.username, user.password)
+//        }
+//    }
     
     private func checkLogin() {
         if let username = userNameTextField.text, let password = passWordTextField.text {

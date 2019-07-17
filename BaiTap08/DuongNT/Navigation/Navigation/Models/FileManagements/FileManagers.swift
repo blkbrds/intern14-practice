@@ -31,21 +31,79 @@ class FileManagers {
         }
     }
     
-    static func writePlist(_ username: String, _ password: String) {
-        let fileManager = FileManager.default
+    static func writePlist(_ user: User, _ username: String) {
         let documentDirectory = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as String
         let path = documentDirectory.appending("/users.plist")
-        if(!fileManager.fileExists(atPath: path)){
-            print(path)
-            let data : [String: String] = ["username" : username, "password" : password]
-            let someData = NSDictionary(dictionary: data)
-            let isWritten = someData.write(toFile: path, atomically: true)
-            print("is the file created: \(isWritten)")
+        let data: [String: String] = ["username" : user.username, "password" : user.password]
+        let someData = NSArray(object: data)
+        if var dataSoucres = NSArray(contentsOfFile: path) as? [[String: String]] {
+            var i = 0
+            dataSoucres.forEach {
+                userDetail in
+                var a = userDetail.filter {
+                    $0.value == username
+                }
+                if a.count != 0 {
+                    a.updateValue(user.username, forKey: "username")
+                    a.updateValue(user.password, forKey: "password")
+                    dataSoucres.insert(a, at: i)
+                    dataSoucres.remove(at: i)
+                }
+                i += 1
+                
+            }
+            (dataSoucres as NSArray).write(toFile: path, atomically: true)
+            
         } else {
-            let data : [String: String] = ["username" : username, "password" : password]
-            let someData = NSDictionary(dictionary: data)
             let isWritten = someData.write(toFile: path, atomically: true)
             print("is the file created: \(isWritten)")
+        }
+    }
+    
+    static func writePlistToList(_ user: Users, _ name: String) {
+        let documentDirectory = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as String
+        let path = documentDirectory.appending("/ListUserInform.plist")
+        let data: [String: String] = ["name" : user.name, "avatar" : user.avatar]
+        let someData = NSArray(object: data)
+        if var dataSoucres = NSArray(contentsOfFile: path) as? [[String: String]] {
+            var i = 0
+            dataSoucres.forEach {
+                userDetail in
+                var a = userDetail.filter {
+                    $0.value == name
+                }
+                if a.count != 0 {
+                    a.updateValue(user.name, forKey: "name")
+                    a.updateValue(user.avatar, forKey: "avatar")
+                    dataSoucres.insert(a, at: i)
+                    dataSoucres.remove(at: i + 1)
+                }
+                i += 1
+                
+            }
+            (dataSoucres as NSArray).write(toFile: path, atomically: true)
+            
+        } else {
+            let isWritten = someData.write(toFile: path, atomically: true)
+            print("is the file created: \(isWritten)")
+        }
+    }
+    
+    static func copyFilesFromBundleToDocumentsFolderWith(fileExtension: String) {
+        if let resPath = Bundle.main.resourcePath {
+            do {
+                let dirContents = try FileManager.default.contentsOfDirectory(atPath: resPath)
+                let documentsURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first
+                let filteredFiles = dirContents.filter{ $0.contains(fileExtension)}
+                for fileName in filteredFiles {
+                    if let documentsURL = documentsURL {
+                        let sourceURL = Bundle.main.bundleURL.appendingPathComponent(fileName)
+                        let destURL = documentsURL.appendingPathComponent(fileName)
+                        print(destURL)
+                        do { try FileManager.default.copyItem(at: sourceURL, to: destURL) } catch { }
+                    }
+                }
+            } catch { }
         }
     }
 }
