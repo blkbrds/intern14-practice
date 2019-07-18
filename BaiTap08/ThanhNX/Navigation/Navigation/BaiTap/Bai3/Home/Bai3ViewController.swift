@@ -36,7 +36,7 @@ final class Bai3ViewController: UIViewController {
         var xFrame: CGFloat = 35
         var yFrame: CGFloat = 30
         for index in 0..<avatars.count {
-            let avatar = CustomAvataView(frame: CGRect(x: xFrame, y: yFrame, width: Config.avatarWidth, height: Config.avatarHeight), userName: avatars[index].name, imageName: avatars[index].imageName, tags: index)
+            let avatar = CustomAvataView(frame: CGRect(x: xFrame, y: yFrame, width: Config.avatarWidth, height: Config.avatarHeight), userName: avatars[index].name, imageName: avatars[index].imageName)
             avatar.delegate = self
             avatarScrollView.addSubview(avatar)
             
@@ -54,7 +54,7 @@ final class Bai3ViewController: UIViewController {
 extension Bai3ViewController: CustomAvataViewDelegate {    
     func view(_ view: CustomAvataView, needPerformAction action: CustomAvataView.Action) {
         switch action {
-        case .getName(let avatar):
+        case .getAvatar(let avatar):
             let VC = ProfileViewController()
             VC.avatar1 = avatar
             navigationController?.pushViewController(VC, animated: true)

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		B0285E5C22DDD2290022B75E /* Avatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0285E5B22DDD2280022B75E /* Avatar.swift */; };
 		B0285E5E22DDD3EA0022B75E /* AvatarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0285E5D22DDD3EA0022B75E /* AvatarImageView.swift */; };
+		B0EE29F422DF25D600EC7BFA /* Bai4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EE29F222DF25D600EC7BFA /* Bai4ViewController.swift */; };
+		B0EE29F522DF25D600EC7BFA /* Bai4ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0EE29F322DF25D600EC7BFA /* Bai4ViewController.xib */; };
 		B0EFBF9822D8811E005716C7 /* Bai3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EFBF9622D8811E005716C7 /* Bai3ViewController.swift */; };
 		B0EFBF9922D8811E005716C7 /* Bai3ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0EFBF9722D8811E005716C7 /* Bai3ViewController.xib */; };
 		B0EFBF9B22D883BC005716C7 /* avatar.plist in Resources */ = {isa = PBXBuildFile; fileRef = B0EFBF9A22D883BC005716C7 /* avatar.plist */; };
@@ -42,6 +44,8 @@
 /* Begin PBXFileReference section */
 		B0285E5B22DDD2280022B75E /* Avatar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Avatar.swift; sourceTree = "<group>"; };
 		B0285E5D22DDD3EA0022B75E /* AvatarImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarImageView.swift; sourceTree = "<group>"; };
+		B0EE29F222DF25D600EC7BFA /* Bai4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bai4ViewController.swift; sourceTree = "<group>"; };
+		B0EE29F322DF25D600EC7BFA /* Bai4ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Bai4ViewController.xib; sourceTree = "<group>"; };
 		B0EFBF9622D8811E005716C7 /* Bai3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bai3ViewController.swift; sourceTree = "<group>"; };
 		B0EFBF9722D8811E005716C7 /* Bai3ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Bai3ViewController.xib; sourceTree = "<group>"; };
 		B0EFBF9A22D883BC005716C7 /* avatar.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = avatar.plist; sourceTree = "<group>"; };
@@ -287,6 +291,8 @@
 		B0F4529E22D5DEA5004E23F0 /* Bai4 */ = {
 			isa = PBXGroup;
 			children = (
+				B0EE29F222DF25D600EC7BFA /* Bai4ViewController.swift */,
+				B0EE29F322DF25D600EC7BFA /* Bai4ViewController.xib */,
 			);
 			path = Bai4;
 			sourceTree = "<group>";
@@ -357,6 +363,7 @@
 				B0F3FBD522D4A1B500417193 /* DViewController.xib in Resources */,
 				B0F3FBCD22D49AFF00417193 /* BViewController.xib in Resources */,
 				B0EFBF9922D8811E005716C7 /* Bai3ViewController.xib in Resources */,
+				B0EE29F522DF25D600EC7BFA /* Bai4ViewController.xib in Resources */,
 				B0F4529B22D5DA9F004E23F0 /* BaiTapViewController.xib in Resources */,
 				B0F3FBC922D498B500417193 /* AViewController.xib in Resources */,
 				B0F4527822D5793D004E23F0 /* user.plist in Resources */,
@@ -388,6 +395,7 @@
 				B0285E5E22DDD3EA0022B75E /* AvatarImageView.swift in Sources */,
 				B0EFBF9E22D88FEB005716C7 /* ProfileViewController.swift in Sources */,
 				B0F4528922D58367004E23F0 /* EditViewController.swift in Sources */,
+				B0EE29F422DF25D600EC7BFA /* Bai4ViewController.swift in Sources */,
 				B0F4527E22D57A76004E23F0 /* FileManagers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
