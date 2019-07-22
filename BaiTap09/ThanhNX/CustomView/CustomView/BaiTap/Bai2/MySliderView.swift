@@ -38,6 +38,9 @@ final class MySliderView: UIView {
     override func awakeFromNib() {
         orangeView.layer.cornerRadius = 8
         blueView.layer.cornerRadius = 8
+        orangeView.frame.size.width = CGFloat(temp) * blueView.frame.size.width / 100
+        imageView.center.x = orangeView.frame.size.width
+        percentView.center.x = imageView.center.x + 20
         percentLabel.text = "\(temp)%"
     }
     
