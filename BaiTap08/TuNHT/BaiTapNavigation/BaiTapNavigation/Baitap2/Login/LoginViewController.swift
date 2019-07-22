@@ -12,7 +12,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var errorLabel: UILabel!
-    var users: [UserData] = []
+    var users: [Bai2UserData] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,10 +20,19 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         errorLabel.isHidden = true
         usernameTextField.delegate = self
         passwordTextField.delegate = self
-        users = UserData.parseData(array: FileManager.readPlistFile(filename: "User"))
+//        users = UserData.parseData(array: Manager.readPlistFile(filename: "User"))
+//        users = UserData.parseData(array: DatabaseManager.readPlist(namePlist: "User"))
+//        DatabaseManager.copyFilesFromBundleToDocumentsFolderWith(fileExtension: ".plist")
+
         
         let doneBarButton = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(done))
         navigationItem.rightBarButtonItem = doneBarButton
+        setupData()
+    }
+    
+    private func setupData() {
+        let db = Bai2Manager()
+        users = Bai2UserData.parseData(array: db.getData())
     }
     
     @objc func done() {
@@ -31,12 +40,14 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             if user.username != usernameTextField.text || user.password != passwordTextField.text {
                 errorLabel.isHidden = false
             } else {
-                errorLabel.isHidden = true
                 let viewController = Bai2HomeViewController()
+                viewController.user = user
+                viewController.users = users
                 navigationController?.pushViewController(viewController, animated: true)
+                passwordTextField.text?.removeAll()
+                usernameTextField.text?.removeAll()
+                errorLabel.text = nil
             }
-            passwordTextField.text?.removeAll()
-            usernameTextField.text?.removeAll()
         }
     }
     
@@ -52,9 +63,13 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                 if usernameTextField.text != user.username || passwordTextField.text != user.password {
                     errorLabel.isHidden = false
                 } else {
-                    errorLabel.isHidden = true
                     let viewController = Bai2HomeViewController()
+                    viewController.user = user
+                    viewController.users = users
                     navigationController?.pushViewController(viewController, animated: true)
+                    passwordTextField.text?.removeAll()
+                    usernameTextField.text?.removeAll()
+                    errorLabel.text = nil
                 }
             }
         }
