@@ -66,8 +66,6 @@ extension Bai3ViewController: UITextFieldDelegate {
             humidityView?.reloadDesign()
             windPowerView?.reloadDesign()
         }
-      
-        
         return true
     }
 }
