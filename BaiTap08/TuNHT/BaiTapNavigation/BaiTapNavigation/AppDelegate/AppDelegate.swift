@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  TouchEvent
+//  BaiTapNavigation
 //
-//  Created by PCI0007 on 6/28/19.
-//  Copyright © 2019 PCI0007. All rights reserved.
+//  Created by PCI0001 on 7/9/19.
+//  Copyright © 2019 PCI0001. All rights reserved.
 //
 
 import UIKit
@@ -12,16 +12,18 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    
-    
+
+
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.backgroundColor = .white
         window?.makeKeyAndVisible()
         
-        let homeViewController = Ex05()
-        window?.rootViewController = homeViewController
+        let viewController = HomeViewController()
+        let navigationController = UINavigationController(rootViewController: viewController)
+        window?.rootViewController = navigationController
+        
         return true
     }
 }
+
