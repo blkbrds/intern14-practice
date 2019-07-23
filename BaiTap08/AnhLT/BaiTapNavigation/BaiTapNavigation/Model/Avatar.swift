@@ -28,7 +28,6 @@ extension Avatar {
             let user = Avatar(dic["username"]!, dic["avatar"]!)
             users.append(user)
         }
-        
         return users
     }
 }

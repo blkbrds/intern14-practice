@@ -27,7 +27,6 @@ extension User {
             let user = User(username: dic["username"]!, password: dic["password"]!)
             users.append(user)
         }
-        
         return users
     }
 }

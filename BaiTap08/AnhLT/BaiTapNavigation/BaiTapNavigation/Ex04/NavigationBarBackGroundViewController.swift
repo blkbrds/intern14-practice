@@ -11,11 +11,13 @@ import UIKit
 class NavigationBarBackGroundViewController: UIViewController {
 
     @IBOutlet var funcButton: [UIButton]!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Exercise 4"
         configButton()
     }
+    
     func configButton() {
         for i in funcButton {
             i.layer.borderWidth = 1
@@ -73,9 +75,8 @@ class NavigationBarBackGroundViewController: UIViewController {
         navigationItem.rightBarButtonItem = cameraButton
         navigationController?.navigationBar.tintColor = .black
         navigationItem.leftBarButtonItems = nil
-
-        
     }
+    
     @IBAction func addBarButtonItems(_ sender: Any) {
         title = "Add BarButtonItems"
         let share = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: nil)
