@@ -24,6 +24,7 @@ final class Bai1ViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        avatarScrollView.subviews.forEach { view in view.removeFromSuperview() }
         configAvatar()
     }
     
@@ -46,7 +47,6 @@ final class Bai1ViewController: UIViewController {
                 yFrame += 150
             }
         }
-        
         avatarScrollView.contentSize = CGSize(width: self.view.frame.width, height: self.view.frame.height + 800)
     }
 }

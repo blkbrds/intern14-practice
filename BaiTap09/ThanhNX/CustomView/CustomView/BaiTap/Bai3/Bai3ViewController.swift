@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Bai3ViewController: UIViewController {
+final class Bai3ViewController: UIViewController {
 
     enum SliderTag: Int {
         case temperature
