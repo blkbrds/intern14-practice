@@ -10,7 +10,8 @@ import UIKit
 
 class Bai2HomeViewController: UIViewController {
     @IBOutlet weak var welcomeLabel: UILabel!
-    var user: UserData = UserData()
+    var user: Bai2UserData = Bai2UserData()
+    var users: [Bai2UserData] = []
     var isFirstRun = true
     
     
@@ -34,7 +35,7 @@ class Bai2HomeViewController: UIViewController {
         if isFirstRun {
             isFirstRun = false
         } else {
-            user.username = UserDefaults.standard.string(forKey: "username")!
+            user.username = UserDefaults.standard.string(forKey: "username") ?? ""
             welcomeLabel.text = "Welcome\n\(user.username)"
         }
     }
@@ -42,6 +43,7 @@ class Bai2HomeViewController: UIViewController {
     @objc func edit() {
         let viewController = EditViewController()
         viewController.user = self.user
+        viewController.users = self.users
         navigationController?.pushViewController(viewController, animated: true)
     }
 }

@@ -8,7 +8,7 @@
 
 import Foundation
 
-class UserData {
+class Bai2UserData {
     var username = ""
     var password = ""
     
@@ -20,12 +20,12 @@ class UserData {
     }
 }
 
-extension UserData {
-    static func parseData(array: [[String: String]]) -> [UserData] {
-        var users: [UserData] = []
+extension Bai2UserData {
+    static func parseData(array: [Dictionary<String, String>]) -> [Bai2UserData] {
+        var users: [Bai2UserData] = []
         
         for dic in array {
-            let user = UserData(username: dic["username"]!, password: dic["password"]!)
+            let user = Bai2UserData(username: dic["username"]!, password: dic["password"]!)
             users.append(user)
         }
         
