@@ -24,6 +24,7 @@ final class Bai3ViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        avatarScrollView.subviews.forEach { view in view.removeFromSuperview() }
         configAvatar()
     }
     

@@ -9,7 +9,14 @@
 import UIKit
 
 final class Bai4ViewController: UIViewController {
-
+    enum CustomNavi: Int {
+        case imageBackground
+        case colorAndTinColor
+        case searchButton
+        case addMoreItem
+        case imageBarButtonItem
+    }
+    
     @IBOutlet private var button: [UIButton]!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,16 +29,20 @@ final class Bai4ViewController: UIViewController {
         }
     }
     
+    //MARK: Custom Navigation
     @IBAction private func customNaviTouchUpInside(_ sender: UIButton) {
-        if sender.tag == 0 {
+        guard let customNavi: CustomNavi = CustomNavi(rawValue: sender.tag) else { return }
+        switch customNavi {
+        case .imageBackground:
+            navigationController?.navigationBar.setBackgroundImage(nil, for: .default)
             let navBackgroundImage: UIImage! = UIImage(named: "background")
             self.navigationController?.navigationBar.setBackgroundImage(navBackgroundImage, for: .default)
-        } else if sender.tag == 1 {
+        case .colorAndTinColor:
             navigationController?.navigationBar.setBackgroundImage(nil, for: .default)
             navigationController?.navigationBar.barTintColor = UIColor(red: 53 / 255, green: 97 / 255, blue: 55 / 255, alpha: 1)
             navigationController?.navigationBar.tintColor = .white
             navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.white]
-        } else if sender.tag == 2 {
+        case .searchButton:
             navigationController?.navigationBar.setBackgroundImage(nil, for: .default)
             title = nil
             navigationController?.navigationBar.backgroundColor = .clear
@@ -41,13 +52,13 @@ final class Bai4ViewController: UIViewController {
             self.navigationItem.leftBarButtonItem = leftNavBarButton
             let cancelButton = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(cancelButtonDidClick))
             navigationItem.rightBarButtonItem = cancelButton
-        } else if sender.tag == 3 {
+        case .addMoreItem:
             navigationController?.navigationBar.setBackgroundImage(nil, for: .default)
             let mid1Button = UIBarButtonItem(title: "OPPA", style: .plain, target: self, action: #selector(cancelButtonDidClick))
             let mid2Button = UIBarButtonItem(title: "GANGNAM", style: .plain, target: self, action: #selector(cancelButtonDidClick))
             let mid3Button = UIBarButtonItem(title: "STYLE", style: .plain, target: self, action: #selector(cancelButtonDidClick))
             navigationItem.rightBarButtonItems = [mid3Button, mid2Button, mid1Button]
-        } else if sender.tag == 4 {
+        case .imageBarButtonItem:
             navigationController?.navigationBar.setBackgroundImage(nil, for: .default)
             let button = UIButton(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
             button.setImage(#imageLiteral(resourceName: "icons8-super-hero-male-48"), for: .normal)
