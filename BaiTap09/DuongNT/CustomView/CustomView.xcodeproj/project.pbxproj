@@ -43,6 +43,8 @@
 		1CE0F44622DF226D00AC42A1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE0F44522DF226D00AC42A1 /* User.swift */; };
 		1CE0F44922DF236A00AC42A1 /* FileManagers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE0F44822DF236A00AC42A1 /* FileManagers.swift */; };
 		1CE0F44B22DF244400AC42A1 /* ListUsers.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1CE0F44A22DF244400AC42A1 /* ListUsers.plist */; };
+		1CE0F45822E014CC00AC42A1 /* MySliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE0F45722E014CC00AC42A1 /* MySliderView.swift */; };
+		1CE0F45A22E01BC700AC42A1 /* MySliderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CE0F45922E01BC700AC42A1 /* MySliderView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,6 +86,8 @@
 		1CE0F44522DF226D00AC42A1 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		1CE0F44822DF236A00AC42A1 /* FileManagers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagers.swift; sourceTree = "<group>"; };
 		1CE0F44A22DF244400AC42A1 /* ListUsers.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ListUsers.plist; sourceTree = "<group>"; };
+		1CE0F45722E014CC00AC42A1 /* MySliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySliderView.swift; sourceTree = "<group>"; };
+		1CE0F45922E01BC700AC42A1 /* MySliderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MySliderView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +152,7 @@
 		07E33E2020DC8D60004B6E52 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				1CE0F44C22E0048900AC42A1 /* Ex2 */,
 				1CE0F43F22DF0BC900AC42A1 /* Ex1 */,
 				07E33E6520DC9805004B6E52 /* Cells */,
 			);
@@ -365,6 +370,15 @@
 			path = FileManagers;
 			sourceTree = "<group>";
 		};
+		1CE0F44C22E0048900AC42A1 /* Ex2 */ = {
+			isa = PBXGroup;
+			children = (
+				1CE0F45722E014CC00AC42A1 /* MySliderView.swift */,
+				1CE0F45922E01BC700AC42A1 /* MySliderView.xib */,
+			);
+			path = Ex2;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -433,6 +447,7 @@
 				07E33E3E20DC906B004B6E52 /* Ex2ViewController.xib in Resources */,
 				1CE0F44B22DF244400AC42A1 /* ListUsers.plist in Resources */,
 				07E33E5220DC90CF004B6E52 /* Ex7ViewController.xib in Resources */,
+				1CE0F45A22E01BC700AC42A1 /* MySliderView.xib in Resources */,
 				07E33E5E20DC9102004B6E52 /* Ex9ViewController.xib in Resources */,
 				07E33E2720DC8DD7004B6E52 /* HomeViewController.xib in Resources */,
 				07E33E4620DC9095004B6E52 /* Ex4ViewController.xib in Resources */,
@@ -456,6 +471,7 @@
 				1CE0F44922DF236A00AC42A1 /* FileManagers.swift in Sources */,
 				07E33E7320DCA04D004B6E52 /* Exercise.swift in Sources */,
 				07E33E3920DC9059004B6E52 /* Ex1ViewController.swift in Sources */,
+				1CE0F45822E014CC00AC42A1 /* MySliderView.swift in Sources */,
 				07E33E6920DC9826004B6E52 /* HomeCell.swift in Sources */,
 				07E33E4520DC9095004B6E52 /* Ex4ViewController.swift in Sources */,
 				1CE0F44122DF0C1800AC42A1 /* MyAvatar.swift in Sources */,
