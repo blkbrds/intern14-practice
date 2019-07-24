@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet private var buttonBaiTap: [UIButton]!
-    let viewController: [UIViewController] = [Bai1ViewController(), Bai2ViewController(), Bai3ViewController()]
+    let viewController: [UIViewController] = [Bai1ViewController(), Bai2ViewController(), Bai3ViewController(), Bai4ViewController()]
     override func viewDidLoad() {
         super.viewDidLoad()
     }
