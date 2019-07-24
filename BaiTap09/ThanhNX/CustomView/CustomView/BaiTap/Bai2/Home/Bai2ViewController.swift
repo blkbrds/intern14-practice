@@ -20,7 +20,7 @@ final class Bai2ViewController: UIViewController {
         
         title = "Bai 2"
         sliderView = Bundle.main.loadNibNamed("MySliderView", owner: self, options: nil)?[0] as? MySliderView
-        sliderView?.frame = CGRect(x: 30, y: 400, width: 320, height: 70)
+        sliderView?.frame = CGRect(x: 30, y: 400, width: 353, height: 76)
         sliderView?.delegate = self
         sliderView?.dataSource = self
         view.addSubview(sliderView!)

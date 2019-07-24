@@ -25,9 +25,6 @@
 		B0F1E13122E06AA500E6B6D9 /* Bai2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F1E12F22E06AA500E6B6D9 /* Bai2ViewController.swift */; };
 		B0F1E13222E06AA500E6B6D9 /* Bai2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F1E13022E06AA500E6B6D9 /* Bai2ViewController.xib */; };
 		B0F1E13622E07B8600E6B6D9 /* MySliderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F1E13522E07B8600E6B6D9 /* MySliderView.xib */; };
-		B0F31E1A22E6FDB90020DA8E /* MyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F31E1922E6FDB90020DA8E /* MyButton.swift */; };
-		B0F31E2122E705D70020DA8E /* Bai4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F31E1F22E705D70020DA8E /* Bai4ViewController.swift */; };
-		B0F31E2422E7118B0020DA8E /* BadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F31E2322E7118B0020DA8E /* BadgeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,9 +48,6 @@
 		B0F1E12F22E06AA500E6B6D9 /* Bai2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bai2ViewController.swift; sourceTree = "<group>"; };
 		B0F1E13022E06AA500E6B6D9 /* Bai2ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Bai2ViewController.xib; sourceTree = "<group>"; };
 		B0F1E13522E07B8600E6B6D9 /* MySliderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MySliderView.xib; sourceTree = "<group>"; };
-		B0F31E1922E6FDB90020DA8E /* MyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyButton.swift; sourceTree = "<group>"; };
-		B0F31E1F22E705D70020DA8E /* Bai4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bai4ViewController.swift; sourceTree = "<group>"; };
-		B0F31E2322E7118B0020DA8E /* BadgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,8 +140,6 @@
 		B0F1E11522E055F400E6B6D9 /* Bai4 */ = {
 			isa = PBXGroup;
 			children = (
-				B0F31E1422E6B2E50020DA8E /* Home */,
-				B0F31E1322E6B2C10020DA8E /* CustomButton */,
 			);
 			path = Bai4;
 			sourceTree = "<group>";
@@ -231,23 +223,6 @@
 			name = MySliderView;
 			sourceTree = "<group>";
 		};
-		B0F31E1322E6B2C10020DA8E /* CustomButton */ = {
-			isa = PBXGroup;
-			children = (
-				B0F31E1922E6FDB90020DA8E /* MyButton.swift */,
-				B0F31E2322E7118B0020DA8E /* BadgeView.swift */,
-			);
-			name = CustomButton;
-			sourceTree = "<group>";
-		};
-		B0F31E1422E6B2E50020DA8E /* Home */ = {
-			isa = PBXGroup;
-			children = (
-				B0F31E1F22E705D70020DA8E /* Bai4ViewController.swift */,
-			);
-			path = Home;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -324,10 +299,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0F31E2122E705D70020DA8E /* Bai4ViewController.swift in Sources */,
 				B0F1E13122E06AA500E6B6D9 /* Bai2ViewController.swift in Sources */,
 				B0F1E12922E0659900E6B6D9 /* ProfileViewController.swift in Sources */,
-				B0F31E1A22E6FDB90020DA8E /* MyButton.swift in Sources */,
 				B0F1E12E22E06A7B00E6B6D9 /* MySliderView.swift in Sources */,
 				B0F1E11022E055CC00E6B6D9 /* ViewController.swift in Sources */,
 				B0F1E12C22E0660400E6B6D9 /* MyAvatar.swift in Sources */,
@@ -335,7 +308,6 @@
 				B0F1E11D22E05B9000E6B6D9 /* Bai1ViewController.swift in Sources */,
 				B0F1E12422E0651E00E6B6D9 /* Avatar.swift in Sources */,
 				B0F1E12622E0654900E6B6D9 /* FileManagers.swift in Sources */,
-				B0F31E2422E7118B0020DA8E /* BadgeView.swift in Sources */,
 				B0F1E0FB22E0549500E6B6D9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
