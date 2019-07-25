@@ -38,6 +38,7 @@ final class Bai3ViewController: UIViewController {
         humidityView = Bundle.main.loadNibNamed("MySliderView", owner: self, options: nil)?[0] as? MySliderView
         humidityView?.frame = CGRect(x: 30, y: 520, width: 353, height: 76)
         humidityView?.index = 1
+        humidityView?.orangeView.backgroundColor = .purple
         view.addSubview(humidityView!)
         humidityView?.delegate = self
         humidityView?.dataSource = self
@@ -45,6 +46,7 @@ final class Bai3ViewController: UIViewController {
         windPowerView = Bundle.main.loadNibNamed("MySliderView", owner: self, options: nil)?[0] as? MySliderView
         windPowerView?.frame = CGRect(x: 30, y: 720, width: 353, height: 76)
         windPowerView?.index = 2
+        windPowerView?.orangeView.backgroundColor = #colorLiteral(red: 0.9098039269, green: 0.4784313738, blue: 0.6431372762, alpha: 1)
         view.addSubview(windPowerView!)
         windPowerView?.delegate = self
         windPowerView?.dataSource = self

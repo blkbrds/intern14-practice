@@ -41,6 +41,7 @@ final class MyButton: UIView {
         badgeView = BadgeView(value: badgeNumber)
         badgeView?.layer.cornerRadius = 10
         badgeView?.value = badgeNumber
+        
         switch badgePosition {
         case .none:
             badgeView?.frame = CGRect(origin: .zero, size: .zero)

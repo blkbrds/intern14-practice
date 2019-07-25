@@ -28,6 +28,12 @@
 		B0F1E13122E06AA500E6B6D9 /* Bai2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F1E12F22E06AA500E6B6D9 /* Bai2ViewController.swift */; };
 		B0F1E13222E06AA500E6B6D9 /* Bai2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F1E13022E06AA500E6B6D9 /* Bai2ViewController.xib */; };
 		B0F1E13622E07B8600E6B6D9 /* MySliderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F1E13522E07B8600E6B6D9 /* MySliderView.xib */; };
+		B0F340DF22E94B6E00D2269B /* Bai5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F340DD22E94B6E00D2269B /* Bai5ViewController.swift */; };
+		B0F340E022E94B6E00D2269B /* Bai5ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F340DE22E94B6E00D2269B /* Bai5ViewController.xib */; };
+		B0F340E522E94EDB00D2269B /* MyPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F340E422E94EDB00D2269B /* MyPickerView.swift */; };
+		B0F340E722E94EED00D2269B /* MyPickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F340E622E94EED00D2269B /* MyPickerView.xib */; };
+		B0F340E922E94F8200D2269B /* MyDatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F340E822E94F8200D2269B /* MyDatePickerView.swift */; };
+		B0F340EB22E94F9800D2269B /* MyDatePickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F340EA22E94F9800D2269B /* MyDatePickerView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +60,12 @@
 		B0F1E12F22E06AA500E6B6D9 /* Bai2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bai2ViewController.swift; sourceTree = "<group>"; };
 		B0F1E13022E06AA500E6B6D9 /* Bai2ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Bai2ViewController.xib; sourceTree = "<group>"; };
 		B0F1E13522E07B8600E6B6D9 /* MySliderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MySliderView.xib; sourceTree = "<group>"; };
+		B0F340DD22E94B6E00D2269B /* Bai5ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bai5ViewController.swift; sourceTree = "<group>"; };
+		B0F340DE22E94B6E00D2269B /* Bai5ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Bai5ViewController.xib; sourceTree = "<group>"; };
+		B0F340E422E94EDB00D2269B /* MyPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPickerView.swift; sourceTree = "<group>"; };
+		B0F340E622E94EED00D2269B /* MyPickerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyPickerView.xib; sourceTree = "<group>"; };
+		B0F340E822E94F8200D2269B /* MyDatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDatePickerView.swift; sourceTree = "<group>"; };
+		B0F340EA22E94F9800D2269B /* MyDatePickerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyDatePickerView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +175,9 @@
 		B0F1E11422E055EE00E6B6D9 /* Bai5 */ = {
 			isa = PBXGroup;
 			children = (
+				B0F340E322E94EAC00D2269B /* DatePickerView */,
+				B0F340E222E94E9300D2269B /* PickerView */,
+				B0F340E122E94E8500D2269B /* VC */,
 			);
 			path = Bai5;
 			sourceTree = "<group>";
@@ -256,6 +271,33 @@
 			name = MySliderView;
 			sourceTree = "<group>";
 		};
+		B0F340E122E94E8500D2269B /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				B0F340DD22E94B6E00D2269B /* Bai5ViewController.swift */,
+				B0F340DE22E94B6E00D2269B /* Bai5ViewController.xib */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		B0F340E222E94E9300D2269B /* PickerView */ = {
+			isa = PBXGroup;
+			children = (
+				B0F340E422E94EDB00D2269B /* MyPickerView.swift */,
+				B0F340E622E94EED00D2269B /* MyPickerView.xib */,
+			);
+			path = PickerView;
+			sourceTree = "<group>";
+		};
+		B0F340E322E94EAC00D2269B /* DatePickerView */ = {
+			isa = PBXGroup;
+			children = (
+				B0F340E822E94F8200D2269B /* MyDatePickerView.swift */,
+				B0F340EA22E94F9800D2269B /* MyDatePickerView.xib */,
+			);
+			path = DatePickerView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -319,9 +361,12 @@
 				B0F1E11E22E05B9000E6B6D9 /* Bai1ViewController.xib in Resources */,
 				B0F1E13622E07B8600E6B6D9 /* MySliderView.xib in Resources */,
 				B0F1E12A22E0659900E6B6D9 /* ProfileViewController.xib in Resources */,
+				B0F340EB22E94F9800D2269B /* MyDatePickerView.xib in Resources */,
 				B0EE9A6522E59F9D00A12E07 /* Bai3ViewController.xib in Resources */,
 				B0F1E13222E06AA500E6B6D9 /* Bai2ViewController.xib in Resources */,
 				B0F1E10222E0549700E6B6D9 /* Assets.xcassets in Resources */,
+				B0F340E722E94EED00D2269B /* MyPickerView.xib in Resources */,
+				B0F340E022E94B6E00D2269B /* Bai5ViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,15 +380,18 @@
 				B07436F422E86EE000C4C51D /* BadgeView.swift in Sources */,
 				B0F1E13122E06AA500E6B6D9 /* Bai2ViewController.swift in Sources */,
 				B0F1E12922E0659900E6B6D9 /* ProfileViewController.swift in Sources */,
+				B0F340DF22E94B6E00D2269B /* Bai5ViewController.swift in Sources */,
 				B0F1E12E22E06A7B00E6B6D9 /* MySliderView.swift in Sources */,
 				B0F1E11022E055CC00E6B6D9 /* ViewController.swift in Sources */,
 				B0F1E12C22E0660400E6B6D9 /* MyAvatar.swift in Sources */,
 				B0EE9A6422E59F9D00A12E07 /* Bai3ViewController.swift in Sources */,
 				B0F1E11D22E05B9000E6B6D9 /* Bai1ViewController.swift in Sources */,
 				B07436F722E86F1C00C4C51D /* Bai4ViewController.swift in Sources */,
+				B0F340E522E94EDB00D2269B /* MyPickerView.swift in Sources */,
 				B07436F222E86E7A00C4C51D /* MyButton.swift in Sources */,
 				B0F1E12422E0651E00E6B6D9 /* Avatar.swift in Sources */,
 				B0F1E12622E0654900E6B6D9 /* FileManagers.swift in Sources */,
+				B0F340E922E94F8200D2269B /* MyDatePickerView.swift in Sources */,
 				B0F1E0FB22E0549500E6B6D9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

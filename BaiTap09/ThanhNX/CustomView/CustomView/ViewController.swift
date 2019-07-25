@@ -11,9 +11,10 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet private var buttonBaiTap: [UIButton]!
-    let viewController: [UIViewController] = [Bai1ViewController(), Bai2ViewController(), Bai3ViewController(), Bai4ViewController()]
+    let viewController: [UIViewController] = [Bai1ViewController(), Bai2ViewController(), Bai3ViewController(), Bai4ViewController(), Bai5ViewController()]
     override func viewDidLoad() {
         super.viewDidLoad()
+        configNavi()
     }
     
     private func configNavi() {
@@ -26,9 +27,8 @@ class ViewController: UIViewController {
         }
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        configNavi()
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
     }
     
     @IBAction func buttonBaiTapTouchUpInside(_ sender: UIButton) {

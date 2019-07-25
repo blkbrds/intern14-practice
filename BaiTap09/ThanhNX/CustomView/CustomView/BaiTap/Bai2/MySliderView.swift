@@ -27,7 +27,7 @@ final class MySliderView: UIView {
     @IBOutlet private weak var percentLabel: UILabel!
     @IBOutlet private weak var bigView: UIView!
     @IBOutlet private weak var blueView: UIView!    
-    @IBOutlet private weak var orangeView: UIView!
+    @IBOutlet public weak var orangeView: UIView!
     @IBOutlet private weak var imageView: UIImageView!
     
     private var temp = 50
