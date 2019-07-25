@@ -10,7 +10,6 @@
 		B07436F222E86E7A00C4C51D /* MyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07436F122E86E7A00C4C51D /* MyButton.swift */; };
 		B07436F422E86EE000C4C51D /* BadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07436F322E86EE000C4C51D /* BadgeView.swift */; };
 		B07436F722E86F1C00C4C51D /* Bai4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07436F522E86F1C00C4C51D /* Bai4ViewController.swift */; };
-		B07436F822E86F1C00C4C51D /* Bai4ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B07436F622E86F1C00C4C51D /* Bai4ViewController.xib */; };
 		B0EE9A6422E59F9D00A12E07 /* Bai3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EE9A6222E59F9D00A12E07 /* Bai3ViewController.swift */; };
 		B0EE9A6522E59F9D00A12E07 /* Bai3ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0EE9A6322E59F9D00A12E07 /* Bai3ViewController.xib */; };
 		B0F1E0FB22E0549500E6B6D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F1E0FA22E0549500E6B6D9 /* AppDelegate.swift */; };
@@ -35,7 +34,6 @@
 		B07436F122E86E7A00C4C51D /* MyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyButton.swift; sourceTree = "<group>"; };
 		B07436F322E86EE000C4C51D /* BadgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BadgeView.swift; path = CustomView/BaiTap/Bai4/BadgeView/BadgeView.swift; sourceTree = SOURCE_ROOT; };
 		B07436F522E86F1C00C4C51D /* Bai4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bai4ViewController.swift; sourceTree = "<group>"; };
-		B07436F622E86F1C00C4C51D /* Bai4ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Bai4ViewController.xib; sourceTree = "<group>"; };
 		B0EE9A6222E59F9D00A12E07 /* Bai3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bai3ViewController.swift; sourceTree = "<group>"; };
 		B0EE9A6322E59F9D00A12E07 /* Bai3ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Bai3ViewController.xib; sourceTree = "<group>"; };
 		B0F1E0F722E0549500E6B6D9 /* CustomView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomView.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,7 +79,6 @@
 			isa = PBXGroup;
 			children = (
 				B07436F522E86F1C00C4C51D /* Bai4ViewController.swift */,
-				B07436F622E86F1C00C4C51D /* Bai4ViewController.xib */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -319,7 +316,6 @@
 			files = (
 				B0F1E11122E055CC00E6B6D9 /* ViewController.xib in Resources */,
 				B0F1E12122E0608300E6B6D9 /* avatar.plist in Resources */,
-				B07436F822E86F1C00C4C51D /* Bai4ViewController.xib in Resources */,
 				B0F1E11E22E05B9000E6B6D9 /* Bai1ViewController.xib in Resources */,
 				B0F1E13622E07B8600E6B6D9 /* MySliderView.xib in Resources */,
 				B0F1E12A22E0659900E6B6D9 /* ProfileViewController.xib in Resources */,

@@ -45,21 +45,93 @@ final class MyButton: UIView {
         case .none:
             badgeView?.frame = CGRect(origin: .zero, size: .zero)
         case .topRight:
-            badgeView?.frame = CGRect(x: 130, y: -5, width: 40, height: 20)
+            if badgeNumber < 10 {
+                badgeView?.frame = CGRect(x: 130, y: -5, width: 20, height: 20)
+                badgeView?.label.frame = CGRect(x: 0, y: 0, width: 20, height: 20)
+            } else if badgeNumber <= 99 {
+                badgeView?.frame = CGRect(x: 130, y: -5, width: 30, height: 20)
+                badgeView?.label.frame = CGRect(x: 0, y: 0, width: 30, height: 20)
+            } else if badgeNumber > 99 {
+                badgeView?.frame = CGRect(x: 130, y: -5, width: 40, height: 20)
+                badgeView?.label.frame = CGRect(x: 0, y: 0, width: 40, height: 20)
+            }
         case .topLeft:
-            badgeView?.frame = CGRect(x: -20, y: -5, width: 40, height: 20)
+            if badgeNumber < 10 {
+                badgeView?.frame = CGRect(x: -10, y: -5, width: 20, height: 20)
+                badgeView?.label.frame = CGRect(x: 0, y: 0, width: 20, height: 20)
+            } else if badgeNumber <= 99 {
+                badgeView?.frame = CGRect(x: -20, y: -5, width: 30, height: 20)
+                badgeView?.label.frame = CGRect(x: 0, y: 0, width: 30, height: 20)
+            } else if badgeNumber > 99 {
+                badgeView?.frame = CGRect(x: -20, y: -5, width: 40, height: 20)
+                badgeView?.label.frame = CGRect(x: 0, y: 0, width: 40, height: 20)
+            }
         case .topCenter:
-            badgeView?.frame = CGRect(x: 55, y: -5, width: 40, height: 20)
+            if badgeNumber < 10 {
+                badgeView?.frame = CGRect(x: 65, y: -5, width: 20, height: 20)
+                badgeView?.label.frame = CGRect(x: 0, y: 0, width: 20, height: 20)
+            } else if badgeNumber <= 99 {
+                badgeView?.frame = CGRect(x: 60, y: -5, width: 30, height: 20)
+                badgeView?.label.frame = CGRect(x: 0, y: 0, width: 30, height: 20)
+            } else if badgeNumber > 99 {
+                badgeView?.frame = CGRect(x: 55, y: -5, width: 40, height: 20)
+                badgeView?.label.frame = CGRect(x: 0, y: 0, width: 40, height: 20)
+            }
         case .centerLeft:
-            badgeView?.frame = CGRect(x: -20, y: 30, width: 40, height: 20)
+            if badgeNumber < 10 {
+                badgeView?.frame = CGRect(x: -10, y: 30, width: 20, height: 20)
+                badgeView?.label.frame = CGRect(x: 0, y: 0, width: 20, height: 20)
+            } else if badgeNumber <= 99 {
+                badgeView?.frame = CGRect(x: -20, y: 30, width: 30, height: 20)
+                badgeView?.label.frame = CGRect(x: 0, y: 0, width: 30, height: 20)
+            } else if badgeNumber > 99 {
+                badgeView?.frame = CGRect(x: -20, y: 30, width: 40, height: 20)
+                badgeView?.label.frame = CGRect(x: 0, y: 0, width: 40, height: 20)
+            }
         case .centerRight:
-            badgeView?.frame = CGRect(x: 130, y: 30, width: 40, height: 20)
+            if badgeNumber < 10 {
+                badgeView?.frame = CGRect(x: 130, y: 30, width: 20, height: 20)
+                badgeView?.label.frame = CGRect(x: 0, y: 0, width: 20, height: 20)
+            } else if badgeNumber <= 99 {
+                badgeView?.frame = CGRect(x: 130, y: 30, width: 30, height: 20)
+                badgeView?.label.frame = CGRect(x: 0, y: 0, width: 30, height: 20)
+            } else if badgeNumber > 99 {
+                badgeView?.frame = CGRect(x: 130, y: 30, width: 40, height: 20)
+                badgeView?.label.frame = CGRect(x: 0, y: 0, width: 40, height: 20)
+            }
         case .bottomLeft:
-            badgeView?.frame = CGRect(x: -20, y: 70, width: 40, height: 20)
+            if badgeNumber < 10 {
+                badgeView?.frame = CGRect(x: -10, y: 70, width: 20, height: 20)
+                badgeView?.label.frame = CGRect(x: 0, y: 0, width: 20, height: 20)
+            } else if badgeNumber <= 99 {
+                badgeView?.frame = CGRect(x: -20, y: 70, width: 30, height: 20)
+                badgeView?.label.frame = CGRect(x: 0, y: 0, width: 30, height: 20)
+            } else if badgeNumber > 99 {
+                badgeView?.frame = CGRect(x: -20, y: 70, width: 40, height: 20)
+                badgeView?.label.frame = CGRect(x: 0, y: 0, width: 40, height: 20)
+            }
         case .bottomCenter:
-            badgeView?.frame = CGRect(x: 55, y: 70, width: 40, height: 20)
+            if badgeNumber < 10 {
+                badgeView?.frame = CGRect(x: 65, y: 70, width: 20, height: 20)
+                badgeView?.label.frame = CGRect(x: 0, y: 0, width: 20, height: 20)
+            } else if badgeNumber <= 99 {
+                badgeView?.frame = CGRect(x: 60, y: 70, width: 30, height: 20)
+                badgeView?.label.frame = CGRect(x: 0, y: 0, width: 30, height: 20)
+            } else if badgeNumber > 99 {
+                badgeView?.frame = CGRect(x: 55, y: 70, width: 40, height: 20)
+                badgeView?.label.frame = CGRect(x: 0, y: 0, width: 40, height: 20)
+            }
         case .bottomRight:
-            badgeView?.frame = CGRect(x: 130, y: 70, width: 40, height: 20)
+            if badgeNumber < 10 {
+                badgeView?.frame = CGRect(x: 130, y: 70, width: 20, height: 20)
+                badgeView?.label.frame = CGRect(x: 0, y: 0, width: 20, height: 20)
+            } else if badgeNumber <= 99 {
+                badgeView?.frame = CGRect(x: 130, y: 70, width: 30, height: 20)
+                badgeView?.label.frame = CGRect(x: 0, y: 0, width: 30, height: 20)
+            } else if badgeNumber > 99 {
+                badgeView?.frame = CGRect(x: 130, y: 70, width: 40, height: 20)
+                badgeView?.label.frame = CGRect(x: 0, y: 0, width: 40, height: 20)
+            }
         }
         
         label.textAlignment = .center

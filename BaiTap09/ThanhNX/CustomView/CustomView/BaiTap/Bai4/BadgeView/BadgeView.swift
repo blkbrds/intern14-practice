@@ -9,13 +9,14 @@
 import UIKit
 
 final class BadgeView: UIView {
-    private let label: UILabel = UILabel(frame: CGRect(origin: .zero, size: .init(width: 40, height: 20)))
+    public var label: UILabel = UILabel(frame: CGRect(origin: .zero, size: .init(width: 40, height: 20)))
+    private let badgeFrame: CGRect = CGRect()
+    
     public var value: Int = 0 {
         didSet {
             updateValue()
         }
-    }
-    public var badgeFrame: CGRect = CGRect(x: 0, y: 0, width: 40, height: 20)
+    }    
     
     init(value: Int) {
         super.init(frame: badgeFrame)
@@ -32,6 +33,10 @@ final class BadgeView: UIView {
     }
     
     private func updateValue() {
-        label.text = String(value)
+        if value > 99 {
+            label.text = "99+"
+        } else {
+            label.text = String(value)
+        }        
     }
 }
