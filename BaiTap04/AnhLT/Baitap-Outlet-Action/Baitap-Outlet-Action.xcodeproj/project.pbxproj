@@ -12,7 +12,6 @@
 		B208B1C722C4D0410051ACBF /* Ex04ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B208B1C522C4D0410051ACBF /* Ex04ViewController.swift */; };
 		B208B1C822C4D0410051ACBF /* Ex04ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B208B1C622C4D0410051ACBF /* Ex04ViewController.xib */; };
 		B2830BEB22C36F6400F2268D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2830BEA22C36F6400F2268D /* AppDelegate.swift */; };
-		B2830BED22C36F6400F2268D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2830BEC22C36F6400F2268D /* ViewController.swift */; };
 		B2830BF222C36F6600F2268D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2830BF122C36F6600F2268D /* Assets.xcassets */; };
 		B2830BF522C36F6600F2268D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2830BF322C36F6600F2268D /* LaunchScreen.storyboard */; };
 		B2830BFF22C370A900F2268D /* Ex01ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2830BFD22C370A900F2268D /* Ex01ViewController.swift */; };
@@ -30,7 +29,6 @@
 		B208B1C622C4D0410051ACBF /* Ex04ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex04ViewController.xib; sourceTree = "<group>"; };
 		B2830BE722C36F6400F2268D /* Baitap-Outlet-Action.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Baitap-Outlet-Action.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2830BEA22C36F6400F2268D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B2830BEC22C36F6400F2268D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B2830BF122C36F6600F2268D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B2830BF422C36F6600F2268D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B2830BF622C36F6600F2268D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -96,7 +94,6 @@
 				B208B1BF22C49A710051ACBF /* Ex03 */,
 				B2830C0122C37F2E00F2268D /* Ex02 */,
 				B2830BFC22C3709500F2268D /* Ex01 */,
-				B2830BEC22C36F6400F2268D /* ViewController.swift */,
 				B2830BF122C36F6600F2268D /* Assets.xcassets */,
 				B2830BF322C36F6600F2268D /* LaunchScreen.storyboard */,
 				B2830BF622C36F6600F2268D /* Info.plist */,
@@ -208,7 +205,6 @@
 			files = (
 				B208B1C222C49A820051ACBF /* Ex03ViewController.swift in Sources */,
 				B208B1C722C4D0410051ACBF /* Ex04ViewController.swift in Sources */,
-				B2830BED22C36F6400F2268D /* ViewController.swift in Sources */,
 				B2B8402322C5E7D100BEE3AF /* Ex05ViewController.swift in Sources */,
 				B2830C0422C37F6E00F2268D /* Ex02ViewController.swift in Sources */,
 				B2830BEB22C36F6400F2268D /* AppDelegate.swift in Sources */,

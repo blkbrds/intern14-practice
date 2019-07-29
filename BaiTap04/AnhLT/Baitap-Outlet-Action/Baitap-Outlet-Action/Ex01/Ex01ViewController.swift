@@ -10,16 +10,10 @@ import UIKit
 
 class Ex01ViewController: UIViewController {
     
-    @IBOutlet weak var dateTime: UIButton!
+    @IBOutlet private weak var dateTimeButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-    }
-    
-    @IBAction func timeSetting(_ sender: UIButton) {
-        let currentDate = Date()
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "hh:mm:ss dd/MM/yyyy"
-        sender.setTitle("\(dateFormatter.string(from: currentDate))", for: .normal)
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -27,6 +21,13 @@ class Ex01ViewController: UIViewController {
             let position = touch.location(in: self.view)
             print("\(position.x), \(position.y)")
         }
-        timeSetting(dateTime)
+        timeSetting(dateTimeButton)
+    }
+    
+    @IBAction func timeSetting(_ sender: UIButton) {
+        let currentDate = Date()
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "hh:mm:ss dd/MM/yyyy"
+        sender.setTitle("\(dateFormatter.string(from: currentDate))", for: .normal)
     }
 }

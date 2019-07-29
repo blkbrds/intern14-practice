@@ -7,7 +7,8 @@
 //
 
 import UIKit
-class Interface {
+
+class UserInfo {
     fileprivate var name: String = " "
     fileprivate var avatar = UIImage()
     
@@ -18,22 +19,25 @@ class Interface {
 }
 
 class Ex03ViewController: UIViewController {
-    var users: [Interface] = [
-        Interface("tu", #imageLiteral(resourceName: "hinh-anh-em-be-de-thuong-31")),
-        Interface("vu", #imageLiteral(resourceName: "hinh-em-be-de-thuong-1")),
-        Interface("vien", #imageLiteral(resourceName: "Baby-Girl-Names-Inspired-By-Queens-1")),
-        Interface("thanh", #imageLiteral(resourceName: "be-yeu")),
-        Interface("tien", #imageLiteral(resourceName: "y-tuong-chup-anh-cho-be-trai-5")),
-        Interface("tuan anh", #imageLiteral(resourceName: "HN6522_HN2_3933")),
-        Interface("thinh", #imageLiteral(resourceName: "hinh-anh-em-be-de-thuong-31")),
-        Interface("tung", #imageLiteral(resourceName: "V1084")),
-        Interface("bien", #imageLiteral(resourceName: "HN6522_HN2_3933"))
+    
+    var users: [UserInfo] = [
+        UserInfo("tu", #imageLiteral(resourceName: "hinh-anh-em-be-de-thuong-31")),
+        UserInfo("vu", #imageLiteral(resourceName: "hinh-em-be-de-thuong-1")),
+        UserInfo("vien", #imageLiteral(resourceName: "Baby-Girl-Names-Inspired-By-Queens-1")),
+        UserInfo("thanh", #imageLiteral(resourceName: "be-yeu")),
+        UserInfo("tien", #imageLiteral(resourceName: "y-tuong-chup-anh-cho-be-trai-5")),
+        UserInfo("tuan anh", #imageLiteral(resourceName: "HN6522_HN2_3933")),
+        UserInfo("thinh", #imageLiteral(resourceName: "hinh-anh-em-be-de-thuong-31")),
+        UserInfo("tung", #imageLiteral(resourceName: "V1084")),
+        UserInfo("bien", #imageLiteral(resourceName: "HN6522_HN2_3933"))
     ]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        outPut()
+        configUI()
     }
-    func addProfileView(frame: CGRect, name: String, avatarImage: UIImage, tag: Int) -> UIView {
+    
+    private func addProfileView(frame: CGRect, name: String, avatarImage: UIImage, tag: Int) -> UIView {
         let container = UIView(frame: frame)
         container.backgroundColor = .black
         
@@ -58,7 +62,7 @@ class Ex03ViewController: UIViewController {
         return container
     }
     
-    func outPut() {
+    private func configUI() {
         var x: CGFloat = 6
         var y: CGFloat = 50
         for i in 0..<users.count {
@@ -75,6 +79,5 @@ class Ex03ViewController: UIViewController {
     
     @objc func printName(_ button: UIButton) {
         print("\(users[button.tag].name)")
-
     }
 }
