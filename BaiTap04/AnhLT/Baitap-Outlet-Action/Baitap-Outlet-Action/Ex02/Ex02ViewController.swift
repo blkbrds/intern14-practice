@@ -10,23 +10,23 @@ import UIKit
 
 class Ex02ViewController: UIViewController {
 
-    @IBOutlet weak var nhoLabel: UILabel!
-    @IBOutlet weak var taoLabel: UILabel!
-    @IBOutlet weak var chuoiLabel: UILabel!
-    @IBOutlet weak var plusAllButton: UIButton!
-    @IBOutlet weak var nhoButton: UIButton!
-    @IBOutlet weak var taoButton: UIButton!
-    @IBOutlet weak var chuoiButton: UIButton!
+    @IBOutlet private weak var nhoLabel: UILabel!
+    @IBOutlet private weak var taoLabel: UILabel!
+    @IBOutlet private weak var chuoiLabel: UILabel!
+    @IBOutlet private weak var plusAllButton: UIButton!
+    @IBOutlet private weak var nhoButton: UIButton!
+    @IBOutlet private weak var taoButton: UIButton!
+    @IBOutlet private weak var chuoiButton: UIButton!
     var soChuoi = 0
     var soTao = 0
     var soNho = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print()
-        
+        configUI()
     }
-    func print () {
+    
+    func configUI() {
         plusAllButton.backgroundColor = .yellow
         plusAllButton.setTitle("+ 1 All", for: .normal)
         plusAllButton.setTitleColor(.black, for: .normal)
@@ -60,16 +60,17 @@ class Ex02ViewController: UIViewController {
         nhoLabel.textAlignment = .center
         nhoLabel.textColor = .white
     }
-    @IBAction func touchPlusAll(_ sender: Any) {
+    
+    @IBAction private func plusAllButtonTouchUpInside(_ sender: Any) {
         plusAllButton.backgroundColor = .yellow
         plusAllButton.setTitle("+ 1 All", for: .normal)
         plusAllButton.setTitleColor(.black, for: .normal)
-        touchChuoi((Any).self)
-        touchTao((Any).self)
-        touchNho((Any).self)
+        chuoiButtonTouchUpInside(Any.self)
+        taoButtonTouchUpInside(Any.self)
+        nhoButtonTouchUpInside(Any.self)
     }
     
-    @IBAction func touchChuoi(_ sender: Any) {
+    @IBAction private func chuoiButtonTouchUpInside(_ sender: Any) {
         chuoiButton.backgroundColor = .blue
         chuoiButton.setTitle("Chuối", for: .normal)
         chuoiButton.setTitleColor(.white, for: .normal)
@@ -79,7 +80,7 @@ class Ex02ViewController: UIViewController {
         chuoiLabel.textColor = .white
     }
 
-    @IBAction func touchTao(_ sender: Any) {
+    @IBAction private func taoButtonTouchUpInside(_ sender: Any) {
         taoButton.backgroundColor = .blue
         taoButton.setTitle("Táo", for: .normal)
         taoButton.setTitleColor(.white, for: .normal)
@@ -89,7 +90,7 @@ class Ex02ViewController: UIViewController {
         taoLabel.textColor = .white
     }
     
-    @IBAction func touchNho(_ sender: Any) {
+    @IBAction private func nhoButtonTouchUpInside(_ sender: Any) {
         nhoButton.backgroundColor = .blue
         nhoButton.setTitle("Nho", for: .normal)
         nhoButton.setTitleColor(.white, for: .normal)
@@ -99,4 +100,3 @@ class Ex02ViewController: UIViewController {
         nhoLabel.textColor = .white
     }
 }
-

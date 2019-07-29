@@ -12,7 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Ex01ViewController" customModule="Baitap_Outlet_Action" customModuleProvider="target">
             <connections>
-                <outlet property="dateTime" destination="dRl-dB-Uwa" id="si3-3Y-PWJ"/>
+                <outlet property="dateTimeButton" destination="dRl-dB-Uwa" id="si3-3Y-PWJ"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
