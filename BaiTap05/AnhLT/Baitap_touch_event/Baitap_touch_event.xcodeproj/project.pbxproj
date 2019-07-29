@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		B2440E3322C9A35B00A8AD8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2440E3222C9A35B00A8AD8A /* AppDelegate.swift */; };
-		B2440E3522C9A35B00A8AD8A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2440E3422C9A35B00A8AD8A /* ViewController.swift */; };
 		B2440E3A22C9A35C00A8AD8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2440E3922C9A35C00A8AD8A /* Assets.xcassets */; };
 		B2440E3D22C9A35C00A8AD8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2440E3B22C9A35C00A8AD8A /* LaunchScreen.storyboard */; };
 		B2440E4722C9A40A00A8AD8A /* Ex01ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2440E4522C9A40A00A8AD8A /* Ex01ViewController.swift */; };
@@ -26,7 +25,6 @@
 /* Begin PBXFileReference section */
 		B2440E2F22C9A35B00A8AD8A /* Baitap_touch_event.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Baitap_touch_event.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2440E3222C9A35B00A8AD8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B2440E3422C9A35B00A8AD8A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B2440E3922C9A35C00A8AD8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B2440E3C22C9A35C00A8AD8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B2440E3E22C9A35C00A8AD8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -78,7 +76,6 @@
 				B2440E4F22CA0AD300A8AD8A /* Ex03 */,
 				B2440E4A22C9D7F600A8AD8A /* Ex02 */,
 				B2440E4422C9A3F400A8AD8A /* Ex01 */,
-				B2440E3422C9A35B00A8AD8A /* ViewController.swift */,
 				B2440E3922C9A35C00A8AD8A /* Assets.xcassets */,
 				B2440E3B22C9A35C00A8AD8A /* LaunchScreen.storyboard */,
 				B2440E3E22C9A35C00A8AD8A /* Info.plist */,
@@ -208,7 +205,6 @@
 			files = (
 				B2440E5222CA0AE600A8AD8A /* Ex03ViewController.swift in Sources */,
 				B2EB9E1122CB469D0052CD49 /* Ex04ViewController.swift in Sources */,
-				B2440E3522C9A35B00A8AD8A /* ViewController.swift in Sources */,
 				B2EB333F22CC4651002206E5 /* Ex05ViewController.swift in Sources */,
 				B2440E4D22C9D82200A8AD8A /* Ex02ViewController.swift in Sources */,
 				B2440E3322C9A35B00A8AD8A /* AppDelegate.swift in Sources */,

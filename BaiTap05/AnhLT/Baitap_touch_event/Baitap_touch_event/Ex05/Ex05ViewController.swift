@@ -10,10 +10,15 @@ import UIKit
 
 class Ex05ViewController: UIViewController, UIGestureRecognizerDelegate {
 
-    @IBOutlet weak var textLabel: UILabel!
-    @IBOutlet weak var monkeyImageView: UIImageView!
+    @IBOutlet private weak var textLabel: UILabel!
+    @IBOutlet private weak var monkeyImageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        configUI()
+    }
+    
+    private func configUI() {
         textLabel.isHidden = true
         
         let tap = UITapGestureRecognizer(target: self, action: #selector(handleTap))
@@ -28,7 +33,6 @@ class Ex05ViewController: UIViewController, UIGestureRecognizerDelegate {
     
     @objc func handleTap(_ sender: UITapGestureRecognizer) {
         guard sender.view != nil else { return }
-
         if sender.state == .ended {
             textLabel.isHidden = false
             textLabel.text = "Hãy trao cho anh"
@@ -40,7 +44,6 @@ class Ex05ViewController: UIViewController, UIGestureRecognizerDelegate {
     
     @objc func handleDoubleTap(_ sender: UITapGestureRecognizer) {
         guard sender.view != nil else { return }
-        
         if sender.state == .ended {
             textLabel.isHidden = false
             textLabel.text = "Tất cả"
