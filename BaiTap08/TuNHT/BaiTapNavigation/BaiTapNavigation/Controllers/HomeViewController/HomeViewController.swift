@@ -31,5 +31,7 @@ class HomeViewController: UIViewController {
     }
     
     @IBAction func baiTap4TouchUpInside(_ sender: UIButton) {
+        let viewController = Baitap4ViewController()
+        navigationController?.pushViewController(viewController, animated: true)
     }
 }
