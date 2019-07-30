@@ -39,6 +39,14 @@
 		07E33E6D20DC9F1B004B6E52 /* exercises.plist in Resources */ = {isa = PBXBuildFile; fileRef = 07E33E6C20DC9F1B004B6E52 /* exercises.plist */; };
 		07E33E7020DC9FF4004B6E52 /* DataManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E33E6F20DC9FF4004B6E52 /* DataManagement.swift */; };
 		07E33E7320DCA04D004B6E52 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E33E7220DCA04D004B6E52 /* Exercise.swift */; };
+		1C78451C22E7FE930018A51B /* EnumPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C78451B22E7FE930018A51B /* EnumPosition.swift */; };
+		1C78452422EAFE5A0018A51B /* (null) in Sources */ = {isa = PBXBuildFile; };
+		1C78452822EEAF0E0018A51B /* Charts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C78452722EEAF0E0018A51B /* Charts.swift */; };
+		1C78452C22EEB0D10018A51B /* (null) in Sources */ = {isa = PBXBuildFile; };
+		1C78453222EECE140018A51B /* MyDatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C78453122EECE140018A51B /* MyDatePickerView.swift */; };
+		1C78453522EECE290018A51B /* MyChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C78453422EECE290018A51B /* MyChartView.swift */; };
+		1C823B9522E6EA2500A4F9C0 /* MyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C823B9422E6EA2500A4F9C0 /* MyButton.swift */; };
+		1C823B9722E6EA3600A4F9C0 /* MyButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C823B9622E6EA3600A4F9C0 /* MyButton.xib */; };
 		1CE0F44122DF0C1800AC42A1 /* MyAvatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE0F44022DF0C1800AC42A1 /* MyAvatar.swift */; };
 		1CE0F44622DF226D00AC42A1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE0F44522DF226D00AC42A1 /* User.swift */; };
 		1CE0F44922DF236A00AC42A1 /* FileManagers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE0F44822DF236A00AC42A1 /* FileManagers.swift */; };
@@ -82,6 +90,12 @@
 		07E33E6C20DC9F1B004B6E52 /* exercises.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = exercises.plist; sourceTree = "<group>"; };
 		07E33E6F20DC9FF4004B6E52 /* DataManagement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManagement.swift; sourceTree = "<group>"; };
 		07E33E7220DCA04D004B6E52 /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
+		1C78451B22E7FE930018A51B /* EnumPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EnumPosition.swift; path = "../../../../../../../../../../System/Volumes/Data/Users/nguyenduong/intern14-practice/BaiTap09/DuongNT/CustomView/CustomView/Models/Enum/Ex4/EnumPosition.swift"; sourceTree = "<group>"; };
+		1C78452722EEAF0E0018A51B /* Charts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Charts.swift; path = "../../../../../../../../../../System/Volumes/Data/Users/nguyenduong/intern14-practice/BaiTap09/DuongNT/CustomView/CustomView/Models/Objects/Ex6/Charts.swift"; sourceTree = "<group>"; };
+		1C78453122EECE140018A51B /* MyDatePickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyDatePickerView.swift; sourceTree = "<group>"; };
+		1C78453422EECE290018A51B /* MyChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyChartView.swift; sourceTree = "<group>"; };
+		1C823B9422E6EA2500A4F9C0 /* MyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MyButton.swift; path = "../../../../../../../../../System/Volumes/Data/Users/nguyenduong/intern14-practice/BaiTap09/DuongNT/CustomView/CustomView/Views/Ex4/MyButton.swift"; sourceTree = "<group>"; };
+		1C823B9622E6EA3600A4F9C0 /* MyButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MyButton.xib; path = "../../../../../../../../../System/Volumes/Data/Users/nguyenduong/intern14-practice/BaiTap09/DuongNT/CustomView/CustomView/Views/Ex4/MyButton.xib"; sourceTree = "<group>"; };
 		1CE0F44022DF0C1800AC42A1 /* MyAvatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAvatar.swift; sourceTree = "<group>"; };
 		1CE0F44522DF226D00AC42A1 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		1CE0F44822DF236A00AC42A1 /* FileManagers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagers.swift; sourceTree = "<group>"; };
@@ -152,6 +166,9 @@
 		07E33E2020DC8D60004B6E52 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				1C78453322EECE290018A51B /* Ex6 */,
+				1C78451D22E837E50018A51B /* Ex5 */,
+				1C823B8D22E6B65600A4F9C0 /* Ex4 */,
 				1CE0F44C22E0048900AC42A1 /* Ex2 */,
 				1CE0F43F22DF0BC900AC42A1 /* Ex1 */,
 				07E33E6520DC9805004B6E52 /* Cells */,
@@ -162,6 +179,7 @@
 		07E33E2120DC8D66004B6E52 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				1C78451922E7FE730018A51B /* Enum */,
 				1CE0F44722DF234B00AC42A1 /* FileManagers */,
 				07E33E7120DCA024004B6E52 /* Objects */,
 				07E33E6E20DC9FB5004B6E52 /* DataManagement */,
@@ -323,10 +341,70 @@
 		07E33E7120DCA024004B6E52 /* Objects */ = {
 			isa = PBXGroup;
 			children = (
+				1C78452622EEAED80018A51B /* Ex6 */,
 				1CE0F44422DF223000AC42A1 /* Ex1 */,
 				07E33E7220DCA04D004B6E52 /* Exercise.swift */,
 			);
 			path = Objects;
+			sourceTree = "<group>";
+		};
+		1C78451922E7FE730018A51B /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				1C78451A22E7FE7B0018A51B /* Ex4 */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
+		1C78451A22E7FE7B0018A51B /* Ex4 */ = {
+			isa = PBXGroup;
+			children = (
+				1C78451B22E7FE930018A51B /* EnumPosition.swift */,
+			);
+			path = Ex4;
+			sourceTree = "<group>";
+		};
+		1C78451D22E837E50018A51B /* Ex5 */ = {
+			isa = PBXGroup;
+			children = (
+				1C78453022EECE140018A51B /* DatePickerView */,
+			);
+			path = Ex5;
+			sourceTree = "<group>";
+		};
+		1C78452622EEAED80018A51B /* Ex6 */ = {
+			isa = PBXGroup;
+			children = (
+				1C78452722EEAF0E0018A51B /* Charts.swift */,
+			);
+			path = Ex6;
+			sourceTree = "<group>";
+		};
+		1C78453022EECE140018A51B /* DatePickerView */ = {
+			isa = PBXGroup;
+			children = (
+				1C78453122EECE140018A51B /* MyDatePickerView.swift */,
+			);
+			name = DatePickerView;
+			path = "../../../../../../../../../System/Volumes/Data/Users/nguyenduong/intern14-practice/BaiTap09/DuongNT/CustomView/CustomView/Views/Ex5/DatePickerView";
+			sourceTree = "<group>";
+		};
+		1C78453322EECE290018A51B /* Ex6 */ = {
+			isa = PBXGroup;
+			children = (
+				1C78453422EECE290018A51B /* MyChartView.swift */,
+			);
+			name = Ex6;
+			path = "../../../../../../../../System/Volumes/Data/Users/nguyenduong/intern14-practice/BaiTap09/DuongNT/CustomView/CustomView/Views/Ex6";
+			sourceTree = "<group>";
+		};
+		1C823B8D22E6B65600A4F9C0 /* Ex4 */ = {
+			isa = PBXGroup;
+			children = (
+				1C823B9422E6EA2500A4F9C0 /* MyButton.swift */,
+				1C823B9622E6EA3600A4F9C0 /* MyButton.xib */,
+			);
+			path = Ex4;
 			sourceTree = "<group>";
 		};
 		1CE0F43F22DF0BC900AC42A1 /* Ex1 */ = {
@@ -445,6 +523,7 @@
 				07E33E1520DC8D36004B6E52 /* Assets.xcassets in Resources */,
 				07E33E4E20DC90C3004B6E52 /* Ex6ViewController.xib in Resources */,
 				07E33E3E20DC906B004B6E52 /* Ex2ViewController.xib in Resources */,
+				1C823B9722E6EA3600A4F9C0 /* MyButton.xib in Resources */,
 				1CE0F44B22DF244400AC42A1 /* ListUsers.plist in Resources */,
 				07E33E5220DC90CF004B6E52 /* Ex7ViewController.xib in Resources */,
 				1CE0F45A22E01BC700AC42A1 /* MySliderView.xib in Resources */,
@@ -472,8 +551,11 @@
 				07E33E7320DCA04D004B6E52 /* Exercise.swift in Sources */,
 				07E33E3920DC9059004B6E52 /* Ex1ViewController.swift in Sources */,
 				1CE0F45822E014CC00AC42A1 /* MySliderView.swift in Sources */,
+				1C823B9522E6EA2500A4F9C0 /* MyButton.swift in Sources */,
+				1C78452822EEAF0E0018A51B /* Charts.swift in Sources */,
 				07E33E6920DC9826004B6E52 /* HomeCell.swift in Sources */,
 				07E33E4520DC9095004B6E52 /* Ex4ViewController.swift in Sources */,
+				1C78453522EECE290018A51B /* MyChartView.swift in Sources */,
 				1CE0F44122DF0C1800AC42A1 /* MyAvatar.swift in Sources */,
 				07E33E7020DC9FF4004B6E52 /* DataManagement.swift in Sources */,
 				07E33E0E20DC8D34004B6E52 /* AppDelegate.swift in Sources */,
@@ -482,9 +564,13 @@
 				07E33E2620DC8DD7004B6E52 /* HomeViewController.swift in Sources */,
 				07E33E5120DC90CF004B6E52 /* Ex7ViewController.swift in Sources */,
 				07E33E3D20DC906B004B6E52 /* Ex2ViewController.swift in Sources */,
+				1C78453222EECE140018A51B /* MyDatePickerView.swift in Sources */,
 				07E33E5520DC90DD004B6E52 /* Ex8ViewController.swift in Sources */,
 				07E33E5D20DC9102004B6E52 /* Ex9ViewController.swift in Sources */,
+				1C78452C22EEB0D10018A51B /* (null) in Sources */,
 				07E33E2A20DC8E36004B6E52 /* BaseViewController.swift in Sources */,
+				1C78451C22E7FE930018A51B /* EnumPosition.swift in Sources */,
+				1C78452422EAFE5A0018A51B /* (null) in Sources */,
 				1CE0F44622DF226D00AC42A1 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

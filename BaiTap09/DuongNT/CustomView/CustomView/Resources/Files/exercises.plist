@@ -42,13 +42,13 @@
 		<key>name</key>
 		<string>exercise 07</string>
 		<key>description</key>
-		<string>Bài tập nâng cao</string>
+		<string>Date picker view</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>exercise 08</string>
 		<key>description</key>
-		<string>Simple tableview</string>
+		<string>Bài tập nâng cao</string>
 	</dict>
 	<dict>
 		<key>name</key>

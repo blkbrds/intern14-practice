@@ -13,17 +13,19 @@ protocol MyAvatarDelegate: class {
 }
 
 class MyAvatar: UIView {
+    
+    // MARK: - properties
+    
     var userAvatar: UIImageView?
     var userName: UILabel?
     var button: UIButton?
 
-    // Khai bao thuoc tinh cua class custom view vs du lieu la protocol
     weak var delegate: MyAvatarDelegate?
     
+    // MARK: - lifecycle
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        // Add user avatar
         let frame = CGRect(x: 0, y: 0, width: 100, height: 100)
         userAvatar = UIImageView(image: UIImage(named: "avatar"))
         userAvatar?.frame = frame
@@ -32,7 +34,6 @@ class MyAvatar: UIView {
             addSubview(userAvatar)
         }
    
-        // Add username
         userName = UILabel(frame: CGRect(x: 0, y: 100, width: 100, height: 50))
         userName?.text = "User name"
         userName?.textAlignment = .center
@@ -42,7 +43,6 @@ class MyAvatar: UIView {
             addSubview(userName)
         }
         
-        // Add button
         button = UIButton(frame: CGRect(x: 0, y: 0, width: 100, height: 150))
         button?.backgroundColor = .clear
         button?.addTarget(self, action: #selector(buttonClicked), for: .touchUpInside)
@@ -55,6 +55,7 @@ class MyAvatar: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
+    // MARK: - custom func
     @objc func buttonClicked(_ sender: UIButton) {
         print("Button is pressed")
         delegate?.userView(self, didSelect: sender.tag)

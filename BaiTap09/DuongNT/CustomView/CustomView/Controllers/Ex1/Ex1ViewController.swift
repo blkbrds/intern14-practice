@@ -9,44 +9,48 @@
 import UIKit
 
 class Ex1ViewController: BaseViewController {
-    
-    // MARK: - properties
-    
+
+    // MARK: - outlet
+
     @IBOutlet weak var uiScrollView: UIScrollView!
+
+    // MARK: - properties
+
     var exercise: Exercise?
     private var isFirstDisplay: Bool = true
     private var listUsers: [User] = []
-    
+
     // MARK: - life cycle
-    
+
     override func viewWillAppear(_ animated: Bool) {
         if isFirstDisplay {
             isFirstDisplay = !isFirstDisplay
         } else {
-            viewDidLoad()
+            setupUI()
+            setupData()
         }
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    
+
     // MARK: - config
-    
+
     override func setupUI() {
         super.setupUI()
         self.title = exercise?.name
-        loadFilePlist()
         setUpListAvatar()
     }
-    
+
     override func setupData() {
+        loadFilePlist()
     }
-    
+
     // MARK: - customer func
     
     func loadFilePlist() {
@@ -60,19 +64,17 @@ class Ex1ViewController: BaseViewController {
             listUsers = User.parseData(array: FileManagers.readPlist(namePlist: "ListUsers"))
         }
     }
-    
+
     private func setUpMyAvatar(_ user: User, _ index: Int) -> UIView {
         let userView = MyAvatar(frame: CGRect(x: 20, y: 100, width: 100, height: 150))
-        
-        // Gan gia tri cua delegate cua CV la dtuong cua VC
+
         userView.delegate = self
         userView.userAvatar?.image = UIImage(named: user.avatar)
         userView.userName?.text = user.name
         userView.button?.tag = index
-//        view.addSubview(userView)
         return userView
     }
-    
+
     private func setUpListAvatar() {
         var x: CGFloat = 20
         var y: CGFloat = 50
