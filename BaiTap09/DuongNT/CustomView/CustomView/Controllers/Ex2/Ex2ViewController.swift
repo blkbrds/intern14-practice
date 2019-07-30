@@ -10,26 +10,28 @@ import UIKit
 
 class Ex2ViewController: BaseViewController {
 
+    // MARK: - properties
+
     @IBOutlet weak var valueTextField: UITextField!
     @IBOutlet weak var sliderView: UIView!
-    
+
     // MARK: - properties
-    
+
     var exercise: Exercise?
     let mySlide = MySliderView()
-    
+
     // MARK: - life cycle
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    
+
     // MARK: - config
-    
+
     override func setupUI() {
         super.setupUI()
         self.title = exercise?.name
@@ -39,15 +41,14 @@ class Ex2ViewController: BaseViewController {
         sliderView.addSubview(mySlide)
         
     }
-    
-    
+
     @IBAction func valueEditChanged(_ sender: Any) {
         guard let value = valueTextField.text else {
             return
         }
         mySlide.valueChanged(value: Float(value) ?? 0.0)
     }
-    
+
     override func setupData() {
     }
 }
