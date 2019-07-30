@@ -14,6 +14,20 @@ class Ex6ViewController: BaseViewController {
 
     var exercise: Exercise?
     let myChart = MyChartView()
+    
+    var dataChart: [Charts] = [
+        Charts(month: "Jan", percent: 20.0),
+        Charts(month: "Feb", percent: 18.0),
+        Charts(month: "Mar", percent: 6.0),
+        Charts(month: "Apr", percent: 3.0),
+        Charts(month: "May", percent: 12.0),
+        Charts(month: "Jun", percent: 16.0),
+        Charts(month: "Jul", percent: 4.0),
+        Charts(month: "Aug", percent: 16.0),
+        Charts(month: "Sep", percent: 2.0),
+        Charts(month: "Oct", percent: 24.0),
+        Charts(month: "Nov", percent: 5.0),
+        Charts(month: "Dec", percent: 4.0)]
 
     // MARK: life cycle
 
@@ -41,16 +55,26 @@ class Ex6ViewController: BaseViewController {
 // MARK: extension
 
 extension Ex6ViewController: MyChartViewDataSource {
-    func numberOfColumn(myChart: MyChartView) -> Int {
-        return 10
+    
+    func numberOfColumn() -> Int {
+        return dataChart.count
     }
 
-    func nameOfColumn(myChart: MyChartView) -> String {
-        return ""
+    func nameOfColumn(titleForRow row: Int) -> String {
+        return String(dataChart[row].month)
     }
 
-    func valueOfColumn(myChart: MyChartView) -> Float {
-        return 0.0
+    func valueOfColumn(titleForRow row: Int) -> Float {
+        return Float(dataChart[row].percent)
     }
 
+    func maxValueOfHeight() -> Int {
+        var max = dataChart[0].percent
+        for index in 1..<dataChart.count {
+            if dataChart[index].percent > max {
+                max = dataChart[index].percent
+            }
+        }
+        return Int(max)
+    }
 }
