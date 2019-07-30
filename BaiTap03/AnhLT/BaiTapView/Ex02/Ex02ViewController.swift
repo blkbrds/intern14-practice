@@ -70,5 +70,8 @@ class Ex02ViewController: UIViewController {
         }
     }
 }
+<<<<<<< Updated upstream
 
 
+=======
+>>>>>>> Stashed changes

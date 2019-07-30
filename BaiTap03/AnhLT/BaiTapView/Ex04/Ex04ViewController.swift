@@ -24,7 +24,6 @@ class Ex04ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         let frame = CGRect(x: 10, y: 50, width: 400, height: 500)
         configContainerView(frame)
         addButton()
@@ -44,6 +43,7 @@ class Ex04ViewController: UIViewController {
         rectangle.textColor = .black
         rectangle.textAlignment = .right
         rectangle.font = UIFont.systemFont(ofSize: 60.0)
+        
         containerView.addSubview(rectangle)
         view.addSubview(containerView)
     }

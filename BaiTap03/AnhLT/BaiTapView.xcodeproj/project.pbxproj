@@ -15,7 +15,6 @@
 		B2EA204822C1B2D8005ABD8F /* Ex04ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2EA204622C1B2D8005ABD8F /* Ex04ViewController.xib */; };
 		B2EA204C22C217EF005ABD8F /* Ex05ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EA204A22C217EF005ABD8F /* Ex05ViewController.swift */; };
 		B2EA204D22C217EF005ABD8F /* Ex05ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2EA204B22C217EF005ABD8F /* Ex05ViewController.xib */; };
-		B2F50A0722BB67B4006FECB4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F50A0622BB67B4006FECB4 /* ViewController.swift */; };
 		B2F50A0C22BB67B6006FECB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2F50A0B22BB67B6006FECB4 /* Assets.xcassets */; };
 		B2F50A0F22BB67B6006FECB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2F50A0D22BB67B6006FECB4 /* LaunchScreen.storyboard */; };
 		B2F50A1D22BB944C006FECB4 /* Ex02ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F50A1C22BB944C006FECB4 /* Ex02ViewController.swift */; };
@@ -31,7 +30,6 @@
 		B2EA204A22C217EF005ABD8F /* Ex05ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex05ViewController.swift; sourceTree = "<group>"; };
 		B2EA204B22C217EF005ABD8F /* Ex05ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex05ViewController.xib; sourceTree = "<group>"; };
 		B2F50A0122BB67B4006FECB4 /* BaiTapView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaiTapView.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B2F50A0622BB67B4006FECB4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B2F50A0B22BB67B6006FECB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B2F50A0E22BB67B6006FECB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B2F50A1022BB67B6006FECB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -109,7 +107,6 @@
 				B2830BD522C3673800F2268D /* Ex03 */,
 				B2F50A1B22BB9439006FECB4 /* Ex02 */,
 				B2D46A1822C3637D00E711E4 /* Ex01 */,
-				B2F50A0622BB67B4006FECB4 /* ViewController.swift */,
 				B2F50A0B22BB67B6006FECB4 /* Assets.xcassets */,
 				B2F50A0D22BB67B6006FECB4 /* LaunchScreen.storyboard */,
 				B2F50A1022BB67B6006FECB4 /* Info.plist */,
@@ -200,7 +197,6 @@
 			files = (
 				B2D46A1A22C3637D00E711E4 /* Ex01ViewController.swift in Sources */,
 				B2EA204722C1B2D8005ABD8F /* Ex04ViewController.swift in Sources */,
-				B2F50A0722BB67B4006FECB4 /* ViewController.swift in Sources */,
 				B2D46A1C22C364A000E711E4 /* AppDelegate.swift in Sources */,
 				B2EA204C22C217EF005ABD8F /* Ex05ViewController.swift in Sources */,
 				B2F50A1D22BB944C006FECB4 /* Ex02ViewController.swift in Sources */,
