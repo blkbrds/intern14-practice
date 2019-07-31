@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3119FE4522F18321006988F3 /* Bai6ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3119FE4322F18321006988F3 /* Bai6ViewController.swift */; };
+		3119FE4622F18321006988F3 /* Bai6ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3119FE4422F18321006988F3 /* Bai6ViewController.xib */; };
+		31ED3D5722F12C6D001F089E /* MyDatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31ED3D5622F12C6D001F089E /* MyDatePickerView.swift */; };
+		31ED3D5A22F12D2F001F089E /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31ED3D5822F12D2F001F089E /* DatePickerViewController.swift */; };
+		31ED3D5B22F12D2F001F089E /* DatePickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31ED3D5922F12D2F001F089E /* DatePickerViewController.xib */; };
+		31ED3D5D22F1496E001F089E /* MyDatePickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31ED3D5C22F1496E001F089E /* MyDatePickerView.xib */; };
 		31EE735522E59972005953EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31EE735422E59972005953EA /* AppDelegate.swift */; };
 		31EE735C22E59974005953EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31EE735B22E59974005953EA /* Assets.xcassets */; };
 		31EE735F22E59974005953EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31EE735D22E59974005953EA /* LaunchScreen.storyboard */; };
@@ -19,6 +25,8 @@
 		31EE737D22E5A339005953EA /* Bai1Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31EE737C22E5A339005953EA /* Bai1Manager.swift */; };
 		31EE737F22E5A34E005953EA /* Bai1UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31EE737E22E5A34E005953EA /* Bai1UserData.swift */; };
 		31EFB24022E85602008F754F /* MySliderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31EFB23F22E85602008F754F /* MySliderView.xib */; };
+		31F0480E22EEE02500B97578 /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F0480C22EEE02500B97578 /* PickerViewController.swift */; };
+		31F0480F22EEE02500B97578 /* PickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31F0480D22EEE02500B97578 /* PickerViewController.xib */; };
 		31F1F05522E6B5950086CE0D /* MySliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F1F05422E6B5950086CE0D /* MySliderView.swift */; };
 		31F1F05822E6B5B10086CE0D /* Bai2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F1F05622E6B5B10086CE0D /* Bai2ViewController.swift */; };
 		31F1F05922E6B5B10086CE0D /* Bai2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31F1F05722E6B5B10086CE0D /* Bai2ViewController.xib */; };
@@ -29,6 +37,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3119FE4322F18321006988F3 /* Bai6ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bai6ViewController.swift; sourceTree = "<group>"; };
+		3119FE4422F18321006988F3 /* Bai6ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Bai6ViewController.xib; sourceTree = "<group>"; };
+		31ED3D5622F12C6D001F089E /* MyDatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDatePickerView.swift; sourceTree = "<group>"; };
+		31ED3D5822F12D2F001F089E /* DatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
+		31ED3D5922F12D2F001F089E /* DatePickerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DatePickerViewController.xib; sourceTree = "<group>"; };
+		31ED3D5C22F1496E001F089E /* MyDatePickerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyDatePickerView.xib; sourceTree = "<group>"; };
 		31EE735122E59972005953EA /* BaiTapCustomView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaiTapCustomView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31EE735422E59972005953EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		31EE735B22E59974005953EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -43,6 +57,8 @@
 		31EE737C22E5A339005953EA /* Bai1Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bai1Manager.swift; sourceTree = "<group>"; };
 		31EE737E22E5A34E005953EA /* Bai1UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bai1UserData.swift; sourceTree = "<group>"; };
 		31EFB23F22E85602008F754F /* MySliderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MySliderView.xib; sourceTree = "<group>"; };
+		31F0480C22EEE02500B97578 /* PickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift; sourceTree = "<group>"; };
+		31F0480D22EEE02500B97578 /* PickerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PickerViewController.xib; sourceTree = "<group>"; };
 		31F1F05422E6B5950086CE0D /* MySliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySliderView.swift; sourceTree = "<group>"; };
 		31F1F05622E6B5B10086CE0D /* Bai2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bai2ViewController.swift; sourceTree = "<group>"; };
 		31F1F05722E6B5B10086CE0D /* Bai2ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Bai2ViewController.xib; sourceTree = "<group>"; };
@@ -63,6 +79,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3119FE4222F18307006988F3 /* Baitap6 */ = {
+			isa = PBXGroup;
+			children = (
+				3119FE4322F18321006988F3 /* Bai6ViewController.swift */,
+				3119FE4422F18321006988F3 /* Bai6ViewController.xib */,
+			);
+			path = Baitap6;
+			sourceTree = "<group>";
+		};
+		31EBCC7522EFEB2E001A2613 /* PickerView */ = {
+			isa = PBXGroup;
+			children = (
+				31F0480C22EEE02500B97578 /* PickerViewController.swift */,
+				31F0480D22EEE02500B97578 /* PickerViewController.xib */,
+			);
+			path = PickerView;
+			sourceTree = "<group>";
+		};
+		31ED3D5322F12BB7001F089E /* DatePickerView */ = {
+			isa = PBXGroup;
+			children = (
+				31ED3D5622F12C6D001F089E /* MyDatePickerView.swift */,
+				31ED3D5C22F1496E001F089E /* MyDatePickerView.xib */,
+				31ED3D5822F12D2F001F089E /* DatePickerViewController.swift */,
+				31ED3D5922F12D2F001F089E /* DatePickerViewController.xib */,
+			);
+			path = DatePickerView;
+			sourceTree = "<group>";
+		};
 		31EE734822E59972005953EA = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +132,8 @@
 				31F1F05322E6B3270086CE0D /* Baitap2 */,
 				31F261D722E98C87004426B5 /* Baitap3 */,
 				31F261DC22E9AAB5004426B5 /* Baitap4 */,
+				31F0480B22EEDDDF00B97578 /* Baitap5 */,
+				3119FE4222F18307006988F3 /* Baitap6 */,
 				31EE737122E59C98005953EA /* Controllers */,
 				31EE737722E5A1F3005953EA /* Datas */,
 				31EE736022E59974005953EA /* Info.plist */,
@@ -163,6 +210,15 @@
 				31EE737E22E5A34E005953EA /* Bai1UserData.swift */,
 			);
 			path = Bai1;
+			sourceTree = "<group>";
+		};
+		31F0480B22EEDDDF00B97578 /* Baitap5 */ = {
+			isa = PBXGroup;
+			children = (
+				31EBCC7522EFEB2E001A2613 /* PickerView */,
+				31ED3D5322F12BB7001F089E /* DatePickerView */,
+			);
+			path = Baitap5;
 			sourceTree = "<group>";
 		};
 		31F1F05322E6B3270086CE0D /* Baitap2 */ = {
@@ -256,10 +312,14 @@
 				31EE737022E59C62005953EA /* Bai1ViewController.xib in Resources */,
 				31EE737A22E5A2AF005953EA /* ListUsers.plist in Resources */,
 				31EFB24022E85602008F754F /* MySliderView.xib in Resources */,
+				31ED3D5B22F12D2F001F089E /* DatePickerViewController.xib in Resources */,
+				31ED3D5D22F1496E001F089E /* MyDatePickerView.xib in Resources */,
 				31EE735C22E59974005953EA /* Assets.xcassets in Resources */,
 				31F261DB22E98CC3004426B5 /* Bai3ViewController.xib in Resources */,
+				3119FE4622F18321006988F3 /* Bai6ViewController.xib in Resources */,
 				31F1F05922E6B5B10086CE0D /* Bai2ViewController.xib in Resources */,
 				31EE737622E59CD0005953EA /* HomeViewController.xib in Resources */,
+				31F0480F22EEE02500B97578 /* PickerViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,14 +333,18 @@
 				31F261E622E9AD41004426B5 /* Bai4ViewController.swift in Sources */,
 				31F1F05822E6B5B10086CE0D /* Bai2ViewController.swift in Sources */,
 				31EE735522E59972005953EA /* AppDelegate.swift in Sources */,
+				31ED3D5722F12C6D001F089E /* MyDatePickerView.swift in Sources */,
+				31ED3D5A22F12D2F001F089E /* DatePickerViewController.swift in Sources */,
 				31EE736F22E59C62005953EA /* Bai1ViewController.swift in Sources */,
 				31EE737D22E5A339005953EA /* Bai1Manager.swift in Sources */,
 				31EE736C22E59BED005953EA /* MyAvatar.swift in Sources */,
 				31F261E422E9ACC0004426B5 /* ButtonView.swift in Sources */,
+				3119FE4522F18321006988F3 /* Bai6ViewController.swift in Sources */,
 				31EE737522E59CD0005953EA /* HomeViewController.swift in Sources */,
 				31EE737F22E5A34E005953EA /* Bai1UserData.swift in Sources */,
 				31F261DA22E98CC3004426B5 /* Bai3ViewController.swift in Sources */,
 				31F1F05522E6B5950086CE0D /* MySliderView.swift in Sources */,
+				31F0480E22EEE02500B97578 /* PickerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
