@@ -10,18 +10,16 @@ import UIKit
 
 class Ex2ViewController: BaseViewController {
 
-    // MARK: - properties
-
-    @IBOutlet weak var valueTextField: UITextField!
-    @IBOutlet weak var sliderView: UIView!
+    // MARK: - Outlet
+    @IBOutlet private weak var valueTextField: UITextField!
+    @IBOutlet private weak var sliderView: UIView!
 
     // MARK: - properties
 
     var exercise: Exercise?
-    let mySlide = MySliderView()
+    private let mySlide = MySliderView()
 
     // MARK: - life cycle
-
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -31,7 +29,6 @@ class Ex2ViewController: BaseViewController {
     }
 
     // MARK: - config
-
     override func setupUI() {
         super.setupUI()
         self.title = exercise?.name
@@ -39,7 +36,6 @@ class Ex2ViewController: BaseViewController {
         mySlide.delegate = self
         valueTextField.text = String(Int(mySlide.valueOfThumbnai))
         sliderView.addSubview(mySlide)
-        
     }
 
     @IBAction func valueEditChanged(_ sender: Any) {
@@ -50,14 +46,16 @@ class Ex2ViewController: BaseViewController {
     }
 
     override func setupData() {
+        super.setupData()
     }
 }
 
 // MARK: - extension
-
 extension Ex2ViewController: MySliderViewDelegate {
-    func mySlider(_ mySlider: MySliderView, percent: Int) {
-        valueTextField.text = String(percent)
-        print(percent)
+    func view(_ view: MySliderView, needPerformAction action: MySliderView.Action) {
+        switch action {
+        case .getPercent(let percent):
+            valueTextField.text = String(percent)
+        }
     }
 }

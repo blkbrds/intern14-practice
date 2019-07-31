@@ -44,29 +44,5 @@
 		<key>description</key>
 		<string>Date picker view</string>
 	</dict>
-	<dict>
-		<key>name</key>
-		<string>exercise 08</string>
-		<key>description</key>
-		<string>Bài tập nâng cao</string>
-	</dict>
-	<dict>
-		<key>name</key>
-		<string>exercise 09</string>
-		<key>description</key>
-		<string>Simple tableview</string>
-	</dict>
-	<dict>
-		<key>name</key>
-		<string>exercise 10</string>
-		<key>description</key>
-		<string>Simple tableview</string>
-	</dict>
-	<dict>
-		<key>name</key>
-		<string>exercise 11</string>
-		<key>description</key>
-		<string>Search tableview</string>
-	</dict>
 </array>
 </plist>

@@ -9,6 +9,7 @@
 import UIKit
 
 protocol MyChartViewDataSource: class {
+
     func numberOfColumn() -> Int
     func nameOfColumn(titleForRow row: Int) -> String
     func valueOfColumn(titleForRow row: Int) -> Float
@@ -16,7 +17,8 @@ protocol MyChartViewDataSource: class {
 }
 
 class MyChartView: UIView {
-    
+
+    // MARK - Properties
     weak var dataSource: MyChartViewDataSource? {
         didSet {
             setUpChart()
@@ -42,25 +44,20 @@ class MyChartView: UIView {
     }
 
     func columnChart(frame: CGRect) -> UIView {
-        
         let chartBig = UIView(frame: frame)
         guard let numberOfColumn = dataSource?.numberOfColumn(), let maxValueOfHeight = dataSource?.maxValueOfHeight() else {
             return chartBig
         }
         let max = maxValueOfHeight - maxValueOfHeight % 4
         chartBig.backgroundColor = UIColor(red: 188 / 255, green: 195 / 255, blue: 199 / 255, alpha: 1)
-        
         let chartSmall = UIView(frame: CGRect(x: 35, y: 10, width: chartBig.bounds.width - 70, height: chartBig.bounds.height - 80))
         chartSmall.backgroundColor = .white
         chartBig.addSubview(chartSmall)
-        
         let noteView = UIView(frame: CGRect(x: 38, y: chartSmall.bounds.height + 45, width: chartSmall.bounds.width / 4, height: 15))
         noteView.backgroundColor = .clear
-        
         let noteUIView = UIView(frame: CGRect(x: 0, y: 0, width: noteView.bounds.width / 7, height: noteView.bounds.height))
         noteUIView.backgroundColor = .orange
         noteView.addSubview(noteUIView)
-        
         let noteLabel = UILabel(frame: CGRect(x: noteView.bounds.width - (noteView.bounds.width / 7 * 6), y: 0, width: noteView.bounds.width - noteUIView.bounds.height, height: noteView.bounds.height))
         noteLabel.backgroundColor = .clear
         noteLabel.text = "Units Sold"
@@ -68,12 +65,9 @@ class MyChartView: UIView {
         noteLabel.font = UIFont.systemFont(ofSize: 10)
         noteView.addSubview(noteLabel)
         chartBig.addSubview(noteView)
-
         let maxColumnHeight = chartSmall.bounds.height - 45
-
         var xColumn: CGFloat = 1
         var xMonthName: CGFloat = 38
-
         for index in 0..<numberOfColumn {
             guard let nameOfColumn = dataSource?.nameOfColumn(titleForRow: index), let valueOfColumn = dataSource?.valueOfColumn(titleForRow: index) else {
                 return chartBig
@@ -85,12 +79,10 @@ class MyChartView: UIView {
             numbers.textAlignment = .center
             numbers.font = UIFont.systemFont(ofSize: 10)
             chartSmall.addSubview(numbers)
-
             let columns = UIView(frame: CGRect(x: xColumn, y: chartSmall.bounds.height - maxColumnHeight * CGFloat(valueOfColumn / Float(max)), width: chartSmall.bounds.width / 13, height: maxColumnHeight * CGFloat(valueOfColumn / Float(max))))
             columns.backgroundColor = .orange
             chartSmall.addSubview(columns)
             xColumn += chartSmall.bounds.width / CGFloat(numberOfColumn)
-
             if index % 2 == 0 {
                 let monthName = UILabel(frame: CGRect(x: xMonthName, y: 20 + chartSmall.bounds.height, width: (chartBig.bounds.width - 72) / 13, height: 20))
                 monthName.text = nameOfColumn
@@ -112,14 +104,12 @@ class MyChartView: UIView {
             numberOutside.font = UIFont.systemFont(ofSize: 8)
             numberOutside.textAlignment = .center
             chartBig.addSubview(numberOutside)
-
             let numberOutside2 = UILabel(frame: CGRect(x: chartBig.bounds.width - 22, y: yNumberOutside, width: 20, height: 10))
             numberOutside2.text = "\(jumbY)"
             numberOutside2.backgroundColor = .clear
             numberOutside2.font = UIFont.systemFont(ofSize: 8)
             numberOutside2.textAlignment = .center
             chartBig.addSubview(numberOutside2)
-
             yNumberOutside += maxColumnHeight * CGFloat(valueOfColumn / Float(max)) / 5
             jumbY -= max / 5
         }

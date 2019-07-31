@@ -8,24 +8,28 @@
 
 import UIKit
 
-protocol MyAvatarDelegate: class {
-    func userView(_ userView: MyAvatar, didSelect index: Int)
+protocol MyAvatarViewDelegate: class {
+
+    func view(_ view: MyAvatarView, needPerformAction action: MyAvatarView.Action)
 }
 
-class MyAvatar: UIView {
-    
+class MyAvatarView: UIView {
+
     // MARK: - properties
-    
+    enum Action {
+        case selectAvatar(atIndex: Int)
+    }
+
     var userAvatar: UIImageView?
     var userName: UILabel?
     var button: UIButton?
 
-    weak var delegate: MyAvatarDelegate?
-    
+    weak var delegate: MyAvatarViewDelegate?
+
     // MARK: - lifecycle
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
+
         let frame = CGRect(x: 0, y: 0, width: 100, height: 100)
         userAvatar = UIImageView(image: UIImage(named: "avatar"))
         userAvatar?.frame = frame
@@ -33,7 +37,7 @@ class MyAvatar: UIView {
         if let userAvatar = userAvatar {
             addSubview(userAvatar)
         }
-   
+
         userName = UILabel(frame: CGRect(x: 0, y: 100, width: 100, height: 50))
         userName?.text = "User name"
         userName?.textAlignment = .center
@@ -50,14 +54,13 @@ class MyAvatar: UIView {
             addSubview(button)
         }
     }
-    
+
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
+
     // MARK: - custom func
-    @objc func buttonClicked(_ sender: UIButton) {
-        print("Button is pressed")
-        delegate?.userView(self, didSelect: sender.tag)
+    @objc func buttonClicked(_ button: UIButton) {
+        delegate?.view(self, needPerformAction: .selectAvatar(atIndex: button.tag))
     }
 }

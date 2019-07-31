@@ -10,21 +10,18 @@ import UIKit
 
 class Ex4ViewController: BaseViewController {
 
-    // MARK: - outlet
+    // MARK: - Outlets
+    @IBOutlet private weak var emailButtonView: UIView!
+    @IBOutlet private weak var friendButtonView: UIView!
+    @IBOutlet private weak var photosButtonView: UIView!
 
-    @IBOutlet weak var emailButtonView: UIView!
-    @IBOutlet weak var friendButtonView: UIView!
-    @IBOutlet weak var photosButtonView: UIView!
-
-        // MARK: - properties
-
+        // MARK: - Properties
     var exercise: Exercise?
-    let myEmailButton = MyButton()
-    let friendButton = MyButton()
-    let photosButton = MyButton()
+    private let myEmailButton = MyButton()
+    private let friendButton = MyButton()
+    private let photosButton = MyButton()
 
-    // MARK: - lifeCycle
-
+    // MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -34,7 +31,6 @@ class Ex4ViewController: BaseViewController {
     }
 
     // MARK: - config
-
     override func setupUI() {
         super.setupUI()
         self.title = exercise?.name
@@ -42,20 +38,17 @@ class Ex4ViewController: BaseViewController {
     }
 
     override func setupData() {
+        super.setupData()
     }
 
-    // MARK: - customer func
-
+    // MARK: - Customer func
     private func setUpButton() {
-
         myEmailButton.loadNib()
         myEmailButton.setUpUIButton(color: nil, name: "Email", badge: 10, position: .bottomCenter)
         emailButtonView.addSubview(myEmailButton)
-
         friendButton.loadNib()
         friendButton.setUpUIButton(color: .yellow, name: "Friends", badge: 100, position: .topLeft)
         friendButtonView.addSubview(friendButton)
-
         photosButton.loadNib()
         photosButton.setUpUIButton(color: .purple, name: "Photos", badge: 8, position: .topCenter)
         photosButtonView.addSubview(photosButton)

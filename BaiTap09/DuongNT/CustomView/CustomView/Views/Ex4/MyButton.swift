@@ -10,26 +10,22 @@ import UIKit
 
 class MyButton: UIView {
 
-    // MARK: - outlet
+    // MARK: - Outlets
+    @IBOutlet private weak var demoButton: UIButton!
+    @IBOutlet private weak var myButtonView: MyButton!
+    @IBOutlet private weak var badgeNumberLabel: UILabel!
 
-    @IBOutlet weak var demoButton: UIButton!
-    @IBOutlet weak var myButtonView: MyButton!
-    @IBOutlet weak var badgeNumberLabel: UILabel!
-
-    // MARK: - lifecycle
-
+    // MARK: - Lifecycle
     override func awakeFromNib() {
     }
 
     // MARK: - custom func
-
     func loadNib() {
         Bundle.main.loadNibNamed("MyButton", owner: self, options: nil)
         addSubview(myButtonView)
     }
 
     func setUpUIButton(color: UIColor?, name: String?, badge: Int?, position: Position?) {
-   
         if let myColor: UIColor = color, let myName = name {
             myButtonView.demoButton.backgroundColor = myColor
             myButtonView.demoButton.layer.borderColor = myColor.cgColor
@@ -39,14 +35,12 @@ class MyButton: UIView {
             myButtonView.demoButton.backgroundColor = .lightGray
             myButtonView.demoButton.setTitle("Default", for: .normal)
         }
-
         if let myName = name {
             myButtonView.demoButton.setTitle(myName, for: .normal)
         } else {
             myButtonView.demoButton.setTitle("Default", for: .normal)
         }
         myButtonView.demoButton.setTitleColor(.white, for: .normal)
-
         if let myBadge = badge {
             if myBadge <= 0 {
                 badgeNumberLabel.isHidden = true
@@ -64,49 +58,38 @@ class MyButton: UIView {
         } else {
             badgeNumberLabel.isHidden = true
         }
-
         myButtonView.demoButton.layer.cornerRadius = 5
         badgeNumberLabel.layer.cornerRadius = 5
-
         if let postionDefaut = position {
             switch postionDefaut {
             case .topLeft:
                 badgeNumberLabel.center.x = myButtonView.demoButton.frame.origin.x
                 badgeNumberLabel.center.y = myButtonView.demoButton.frame.origin.y
-                break
             case .topCenter:
                 badgeNumberLabel.center.x = myButtonView.demoButton.frame.origin.x + myButtonView.demoButton.frame.size.width / 2
                 badgeNumberLabel.center.y = myButtonView.demoButton.frame.origin.y
-                break
             case .topRight:
                 badgeNumberLabel.center.x = myButtonView.demoButton.frame.origin.x + myButtonView.demoButton.frame.size.width
                 badgeNumberLabel.center.y = myButtonView.demoButton.frame.origin.y
-                break
             case .centerLeft:
                 badgeNumberLabel.center.x = myButtonView.demoButton.frame.origin.x
                 badgeNumberLabel.center.y = myButtonView.demoButton.frame.origin.y + myButtonView.demoButton.frame.size.height / 2
-                break
             case .centerRight:
                 badgeNumberLabel.center.x = myButtonView.demoButton.frame.origin.x + myButtonView.demoButton.frame.size.width
                 badgeNumberLabel.center.y = myButtonView.demoButton.frame.origin.y + myButtonView.demoButton.frame.size.height / 2
-                break
             case .bottomLeft:
                 badgeNumberLabel.center.x = myButtonView.demoButton.frame.origin.x
                 badgeNumberLabel.center.y = myButtonView.demoButton.frame.origin.y + myButtonView.demoButton.frame.size.height
-                break
             case .bottomCenter:
                 badgeNumberLabel.center.x = myButtonView.demoButton.frame.origin.x + myButtonView.demoButton.frame.size.width / 2
                 badgeNumberLabel.center.y = myButtonView.demoButton.frame.origin.y + myButtonView.demoButton.frame.size.height
-                break
             case .bottomRight:
                 badgeNumberLabel.center.x = myButtonView.demoButton.frame.origin.x + myButtonView.demoButton.frame.size.width
             badgeNumberLabel.center.y = myButtonView.demoButton.frame.origin.y + myButtonView.demoButton.frame.size.height
-                break
             }
         } else {
             badgeNumberLabel.center.x = myButtonView.demoButton.frame.origin.x
             badgeNumberLabel.center.y = myButtonView.demoButton.frame.origin.y
-            
         }
     }
 }

@@ -11,7 +11,6 @@ import UIKit
 class MyDatePickerView: UIDatePicker {
 
     // MARK: - Life cycle
-
     override init(frame: CGRect) {
         super.init(frame: frame)
         setUpUIDatePicker()
@@ -22,7 +21,6 @@ class MyDatePickerView: UIDatePicker {
     }
 
     // MARK: - Set up UI
-
     func setUpUIDatePicker() {
         self.datePickerMode = .date
     }

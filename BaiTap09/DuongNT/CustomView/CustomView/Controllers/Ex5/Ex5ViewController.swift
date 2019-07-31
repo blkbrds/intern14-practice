@@ -10,21 +10,18 @@ import UIKit
 
 class Ex5ViewController: BaseViewController {
 
-    // MARK: - properties
+    // MARK: - Outlets
+    @IBOutlet private weak var myPickerView: UIPickerView!
+    @IBOutlet private weak var leftValueTextField: UITextField!
+    @IBOutlet private weak var rightValueTextField: UITextField!
 
-    @IBOutlet weak var myPickerView: UIPickerView!
-    @IBOutlet weak var leftValueTextField: UITextField!
-    @IBOutlet weak var rightValueTextField: UITextField!
-
-    // MARK: - properties
-
+    // MARK: - Properties
     var exercise: Exercise?
     private var pickerData = ["Inch", "Centimeter", "Foot", "Meter"]
     private var leftTextFieldInput: Bool = false
     private var rightTextFieldInput: Bool = false
 
     // MARK: - Life cycle
-
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -34,7 +31,6 @@ class Ex5ViewController: BaseViewController {
     }
 
     // MARK: - config
-
     override func setupUI() {
         super.setupUI()
         self.title = exercise?.name
@@ -57,11 +53,11 @@ class Ex5ViewController: BaseViewController {
     }
 
     override func setupData() {
+        super.setupData()
     }
 
-    // MARK: - custom func
-
-    private func convertTo(_ fromValue: String, _ toValue: String,_ value: Double) -> String {
+    // MARK: - Custom func
+    private func convertTo(_ fromValue: String, _ toValue: String, _ value: Double) -> String {
         switch fromValue {
         case "Inch":
             switch toValue {
@@ -120,8 +116,7 @@ class Ex5ViewController: BaseViewController {
         }
     }
 
-    // MARK: - action
-
+    // MARK: - Action
     @IBAction func convetButtonTouchUpInSide(_ sender: UIButton) {
         if leftTextFieldInput {
             guard  let leftValue = leftValueTextField.text, let value = Double(leftValue) else {
@@ -141,9 +136,9 @@ class Ex5ViewController: BaseViewController {
     }
 }
 
-// MARK: - extension
-
+// MARK: - Extension
 extension Ex5ViewController: UIPickerViewDataSource, UIPickerViewDelegate, UITextFieldDelegate {
+
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         if textField == leftValueTextField {
             leftValueTextField.resignFirstResponder()

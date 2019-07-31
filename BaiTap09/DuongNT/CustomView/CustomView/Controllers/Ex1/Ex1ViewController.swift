@@ -10,19 +10,17 @@ import UIKit
 
 class Ex1ViewController: BaseViewController {
 
-    // MARK: - outlet
-
-    @IBOutlet weak var uiScrollView: UIScrollView!
-
-    // MARK: - properties
-
+    // MARK: - Outlets
+    @IBOutlet private weak var uiScrollView: UIScrollView!
+    
+    // MARK: - Properties
     var exercise: Exercise?
     private var isFirstDisplay: Bool = true
-    private var listUsers: [User] = []
+    private var listUser: [User] = []
 
-    // MARK: - life cycle
-
+    // MARK: - Life cycle
     override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         if isFirstDisplay {
             isFirstDisplay = !isFirstDisplay
         } else {
@@ -35,12 +33,7 @@ class Ex1ViewController: BaseViewController {
         super.viewDidLoad()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
-
-    // MARK: - config
-
+    // MARK: - Config
     override func setupUI() {
         super.setupUI()
         self.title = exercise?.name
@@ -48,26 +41,22 @@ class Ex1ViewController: BaseViewController {
     }
 
     override func setupData() {
+        super.setupData()
         loadFilePlist()
     }
 
-    // MARK: - customer func
-    
-    func loadFilePlist() {
-        let a = UserDefaults.standard.bool(forKey: "firstLoad")
-        print(a)
-        if !a {
+    // MARK: - Customer func
+    private func loadFilePlist() {
+        let isFirstLoad = UserDefaults.standard.bool(forKey: "firstLoad")
+        if !isFirstLoad {
             FileManagers.copyFilesFromBundleToDocumentsFolderWith(fileExtension: "plist")
             UserDefaults.standard.set(true, forKey: "firstLoad")
-            listUsers = User.parseData(array: FileManagers.readPlist(namePlist: "ListUsers"))
-        } else {
-            listUsers = User.parseData(array: FileManagers.readPlist(namePlist: "ListUsers"))
         }
+        listUser = User.parseData(array: FileManagers.readPlist(namePlist: "ListUsers"))
     }
 
     private func setUpMyAvatar(_ user: User, _ index: Int) -> UIView {
-        let userView = MyAvatar(frame: CGRect(x: 20, y: 100, width: 100, height: 150))
-
+        let userView = MyAvatarView(frame: CGRect(x: 20, y: 100, width: 100, height: 150))
         userView.delegate = self
         userView.userAvatar?.image = UIImage(named: user.avatar)
         userView.userName?.text = user.name
@@ -78,26 +67,29 @@ class Ex1ViewController: BaseViewController {
     private func setUpListAvatar() {
         var x: CGFloat = 20
         var y: CGFloat = 50
-        uiScrollView.contentSize.height = 2000
-        for index in 0..<listUsers.count {
+        for index in 0..<listUser.count {
             if (x + 120) >= UIScreen.main.bounds.width {
                 x = 20
                 y += 150 + 20
             }
             let frame =  CGRect(x: x, y: y, width: 100 , height: 150)
             x += 120
-            let viewAvatar = setUpMyAvatar(listUsers[index], index + 1)
+            let viewAvatar = setUpMyAvatar(listUser[index], index + 1)
             viewAvatar.frame = frame
             uiScrollView.addSubview(viewAvatar)
             view.addSubview(uiScrollView)
         }
+        uiScrollView.contentSize.height = y + 170
     }
 }
 
-// MARK: - extension
+// MARK: - Extension
+extension Ex1ViewController: MyAvatarViewDelegate {
 
-extension Ex1ViewController: MyAvatarDelegate {
-    func userView(_ userView: MyAvatar, didSelect index: Int) {
-        print("Selected user with index \(index)")
+    func view(_ view: MyAvatarView, needPerformAction action: MyAvatarView.Action) {
+        switch action {
+        case .selectAvatar(let index):
+            print(index)
+        }
     }
 }

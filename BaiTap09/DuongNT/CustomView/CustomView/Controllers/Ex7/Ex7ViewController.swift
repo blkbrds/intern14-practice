@@ -10,13 +10,11 @@ import UIKit
 
 class Ex7ViewController: BaseViewController {
 
-    // MARK: outlet
+    // MARK: - Outlets
+    @IBOutlet private weak var myDatePickerTextField: UITextField!
+    @IBOutlet private weak var blurView: UIView!
 
-    @IBOutlet weak var myDatePickerTextField: UITextField!
-    @IBOutlet weak var blurView: UIView!
-
-    // MARK: properties
-
+    // MARK: - Properties
     var exercise: Exercise?
     let myPickerView = MyDatePickerView()
 
@@ -28,8 +26,7 @@ class Ex7ViewController: BaseViewController {
         super.didReceiveMemoryWarning()
     }
 
-    // MARK: config
-
+    // MARK: - Config
     override func setupUI() {
         super.setupUI()
         self.title = exercise?.name
@@ -45,10 +42,10 @@ class Ex7ViewController: BaseViewController {
     }
 
     override func setupData() {
+        super.setupData()
     }
 
-    // MARK: customer func
-
+    // MARK: - Customer func
     @objc func inputViewDatePicker() {
         blurView.isHidden = false
     }

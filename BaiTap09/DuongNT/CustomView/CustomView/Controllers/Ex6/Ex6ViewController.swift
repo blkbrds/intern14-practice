@@ -10,12 +10,10 @@ import UIKit
 
 class Ex6ViewController: BaseViewController {
 
-    // MARK: properties
-
+    // MARK: - Properties
     var exercise: Exercise?
-    let myChart = MyChartView()
-    
-    var dataChart: [Charts] = [
+    private let myChart = MyChartView()
+    private var dataChart: [Charts] = [
         Charts(month: "Jan", percent: 20.0),
         Charts(month: "Feb", percent: 18.0),
         Charts(month: "Mar", percent: 6.0),
@@ -29,8 +27,7 @@ class Ex6ViewController: BaseViewController {
         Charts(month: "Nov", percent: 5.0),
         Charts(month: "Dec", percent: 4.0)]
 
-    // MARK: life cycle
-
+    // MARK: - Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         myChart.dataSource = self
@@ -40,8 +37,7 @@ class Ex6ViewController: BaseViewController {
         super.didReceiveMemoryWarning()
     }
 
-    // MARK: config
-
+    // MARK: - Config
     override func setupUI() {
         super.setupUI()
         self.title = exercise?.name
@@ -49,13 +45,13 @@ class Ex6ViewController: BaseViewController {
     }
 
     override func setupData() {
+        super.setupData()
     }
 }
 
-// MARK: extension
-
+// MARK: - Extension
 extension Ex6ViewController: MyChartViewDataSource {
-    
+
     func numberOfColumn() -> Int {
         return dataChart.count
     }

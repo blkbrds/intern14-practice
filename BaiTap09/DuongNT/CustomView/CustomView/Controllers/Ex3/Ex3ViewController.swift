@@ -10,22 +10,19 @@ import UIKit
 
 class Ex3ViewController: BaseViewController {
 
-    // MARK: - outlet
+    // MARK: - Outlets
+    @IBOutlet private var sliderTextFields: [UITextField]!
+    @IBOutlet private weak var nhietDoView: UIView!
+    @IBOutlet private weak var doAmView: UIView!
+    @IBOutlet private weak var sucGioView: UIView!
 
-    @IBOutlet var sliderTextFields: [UITextField]!
-    @IBOutlet weak var nhietDoView: UIView!
-    @IBOutlet weak var doAmView: UIView!
-    @IBOutlet weak var sucGioView: UIView!
-
-    // MARK: - properties
-
+    // MARK: - Properties
     var exercise: Exercise?
     fileprivate let nhieDoSlider = MySliderView()
     fileprivate let doAmSlider = MySliderView()
     fileprivate let sucGioSlider = MySliderView()
 
-     // MARK: - life cycle
-
+     // MARK: - Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -34,8 +31,7 @@ class Ex3ViewController: BaseViewController {
         super.didReceiveMemoryWarning()
     }
 
-    // MARK: config
-
+    // MARK: Config
     override func setupUI() {
         super.setupUI()
         self.title = exercise?.name
@@ -43,29 +39,24 @@ class Ex3ViewController: BaseViewController {
     }
 
     override func setupData() {
+        super.setupData()
     }
 
-    // MARK: - customer func
-
+    // MARK: - Customer func
     private func setUpSlider() {
-
         let sliderView = UIView(frame: CGRect(x: 0, y: 0, width: 222, height: 90))
-
         nhieDoSlider.frame = sliderView.bounds
         nhieDoSlider.delegate = self
         nhieDoSlider.rightSliderView.backgroundColor = .red
         nhietDoView.addSubview(nhieDoSlider)
-
         doAmSlider.frame = sliderView.bounds
         doAmSlider.delegate = self
         doAmSlider.rightSliderView.backgroundColor = .blue
         doAmView.addSubview(doAmSlider)
-
         sucGioSlider.frame = sliderView.bounds
         sucGioSlider.delegate = self
         sucGioSlider.rightSliderView.backgroundColor = .green
         sucGioView.addSubview(sucGioSlider)
-
         sliderTextFields.forEach { textField in
             switch textField.tag {
             case 1:
@@ -81,7 +72,6 @@ class Ex3ViewController: BaseViewController {
     }
 
     // MARK: - IBAction function
-
     @IBAction func valueEditChanged(_ sender: Any) {
         sliderTextFields.forEach { textField in
             guard let value = textField.text else {
@@ -100,10 +90,9 @@ class Ex3ViewController: BaseViewController {
     }
 }
 
-// MARK: - extension
-
+// MARK: - Extension
 extension Ex3ViewController: MySliderViewDelegate {
-    func mySlider(_ mySlider: MySliderView, percent: Int) {
+    func view(_ view: MySliderView, needPerformAction action: MySliderView.Action) {
         sliderTextFields.forEach { textField in
             switch textField.tag {
             case 1:

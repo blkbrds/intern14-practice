@@ -28,12 +28,6 @@
 		07E33E4E20DC90C3004B6E52 /* Ex6ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07E33E4C20DC90C3004B6E52 /* Ex6ViewController.xib */; };
 		07E33E5120DC90CF004B6E52 /* Ex7ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E33E4F20DC90CF004B6E52 /* Ex7ViewController.swift */; };
 		07E33E5220DC90CF004B6E52 /* Ex7ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07E33E5020DC90CF004B6E52 /* Ex7ViewController.xib */; };
-		07E33E5520DC90DD004B6E52 /* Ex8ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E33E5320DC90DD004B6E52 /* Ex8ViewController.swift */; };
-		07E33E5620DC90DD004B6E52 /* Ex8ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07E33E5420DC90DD004B6E52 /* Ex8ViewController.xib */; };
-		07E33E5D20DC9102004B6E52 /* Ex9ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E33E5B20DC9102004B6E52 /* Ex9ViewController.swift */; };
-		07E33E5E20DC9102004B6E52 /* Ex9ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07E33E5C20DC9102004B6E52 /* Ex9ViewController.xib */; };
-		07E33E6120DC910E004B6E52 /* Ex10ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E33E5F20DC910E004B6E52 /* Ex10ViewController.swift */; };
-		07E33E6220DC910E004B6E52 /* Ex10ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07E33E6020DC910E004B6E52 /* Ex10ViewController.xib */; };
 		07E33E6920DC9826004B6E52 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E33E6720DC9826004B6E52 /* HomeCell.swift */; };
 		07E33E6A20DC9826004B6E52 /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07E33E6820DC9826004B6E52 /* HomeCell.xib */; };
 		07E33E6D20DC9F1B004B6E52 /* exercises.plist in Resources */ = {isa = PBXBuildFile; fileRef = 07E33E6C20DC9F1B004B6E52 /* exercises.plist */; };
@@ -47,7 +41,7 @@
 		1C78453522EECE290018A51B /* MyChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C78453422EECE290018A51B /* MyChartView.swift */; };
 		1C823B9522E6EA2500A4F9C0 /* MyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C823B9422E6EA2500A4F9C0 /* MyButton.swift */; };
 		1C823B9722E6EA3600A4F9C0 /* MyButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C823B9622E6EA3600A4F9C0 /* MyButton.xib */; };
-		1CE0F44122DF0C1800AC42A1 /* MyAvatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE0F44022DF0C1800AC42A1 /* MyAvatar.swift */; };
+		1CE0F44122DF0C1800AC42A1 /* MyAvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE0F44022DF0C1800AC42A1 /* MyAvatarView.swift */; };
 		1CE0F44622DF226D00AC42A1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE0F44522DF226D00AC42A1 /* User.swift */; };
 		1CE0F44922DF236A00AC42A1 /* FileManagers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE0F44822DF236A00AC42A1 /* FileManagers.swift */; };
 		1CE0F44B22DF244400AC42A1 /* ListUsers.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1CE0F44A22DF244400AC42A1 /* ListUsers.plist */; };
@@ -79,12 +73,6 @@
 		07E33E4C20DC90C3004B6E52 /* Ex6ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex6ViewController.xib; sourceTree = "<group>"; };
 		07E33E4F20DC90CF004B6E52 /* Ex7ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex7ViewController.swift; sourceTree = "<group>"; };
 		07E33E5020DC90CF004B6E52 /* Ex7ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex7ViewController.xib; sourceTree = "<group>"; };
-		07E33E5320DC90DD004B6E52 /* Ex8ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex8ViewController.swift; sourceTree = "<group>"; };
-		07E33E5420DC90DD004B6E52 /* Ex8ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex8ViewController.xib; sourceTree = "<group>"; };
-		07E33E5B20DC9102004B6E52 /* Ex9ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex9ViewController.swift; sourceTree = "<group>"; };
-		07E33E5C20DC9102004B6E52 /* Ex9ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex9ViewController.xib; sourceTree = "<group>"; };
-		07E33E5F20DC910E004B6E52 /* Ex10ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex10ViewController.swift; sourceTree = "<group>"; };
-		07E33E6020DC910E004B6E52 /* Ex10ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex10ViewController.xib; sourceTree = "<group>"; };
 		07E33E6720DC9826004B6E52 /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
 		07E33E6820DC9826004B6E52 /* HomeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCell.xib; sourceTree = "<group>"; };
 		07E33E6C20DC9F1B004B6E52 /* exercises.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = exercises.plist; sourceTree = "<group>"; };
@@ -96,7 +84,7 @@
 		1C78453422EECE290018A51B /* MyChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyChartView.swift; sourceTree = "<group>"; };
 		1C823B9422E6EA2500A4F9C0 /* MyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MyButton.swift; path = "../../../../../../../../../System/Volumes/Data/Users/nguyenduong/intern14-practice/BaiTap09/DuongNT/CustomView/CustomView/Views/Ex4/MyButton.swift"; sourceTree = "<group>"; };
 		1C823B9622E6EA3600A4F9C0 /* MyButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MyButton.xib; path = "../../../../../../../../../System/Volumes/Data/Users/nguyenduong/intern14-practice/BaiTap09/DuongNT/CustomView/CustomView/Views/Ex4/MyButton.xib"; sourceTree = "<group>"; };
-		1CE0F44022DF0C1800AC42A1 /* MyAvatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAvatar.swift; sourceTree = "<group>"; };
+		1CE0F44022DF0C1800AC42A1 /* MyAvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAvatarView.swift; sourceTree = "<group>"; };
 		1CE0F44522DF226D00AC42A1 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		1CE0F44822DF236A00AC42A1 /* FileManagers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagers.swift; sourceTree = "<group>"; };
 		1CE0F44A22DF244400AC42A1 /* ListUsers.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ListUsers.plist; sourceTree = "<group>"; };
@@ -148,9 +136,6 @@
 		07E33E1F20DC8D55004B6E52 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				07E33E3620DC9043004B6E52 /* Ex10 */,
-				07E33E3520DC903C004B6E52 /* Ex9 */,
-				07E33E3420DC9035004B6E52 /* Ex8 */,
 				07E33E3320DC902F004B6E52 /* Ex7 */,
 				07E33E3220DC9029004B6E52 /* Ex6 */,
 				07E33E3120DC8FBA004B6E52 /* Ex5 */,
@@ -276,33 +261,6 @@
 			path = Ex7;
 			sourceTree = "<group>";
 		};
-		07E33E3420DC9035004B6E52 /* Ex8 */ = {
-			isa = PBXGroup;
-			children = (
-				07E33E5320DC90DD004B6E52 /* Ex8ViewController.swift */,
-				07E33E5420DC90DD004B6E52 /* Ex8ViewController.xib */,
-			);
-			path = Ex8;
-			sourceTree = "<group>";
-		};
-		07E33E3520DC903C004B6E52 /* Ex9 */ = {
-			isa = PBXGroup;
-			children = (
-				07E33E5B20DC9102004B6E52 /* Ex9ViewController.swift */,
-				07E33E5C20DC9102004B6E52 /* Ex9ViewController.xib */,
-			);
-			path = Ex9;
-			sourceTree = "<group>";
-		};
-		07E33E3620DC9043004B6E52 /* Ex10 */ = {
-			isa = PBXGroup;
-			children = (
-				07E33E5F20DC910E004B6E52 /* Ex10ViewController.swift */,
-				07E33E6020DC910E004B6E52 /* Ex10ViewController.xib */,
-			);
-			path = Ex10;
-			sourceTree = "<group>";
-		};
 		07E33E6520DC9805004B6E52 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
@@ -410,7 +368,7 @@
 		1CE0F43F22DF0BC900AC42A1 /* Ex1 */ = {
 			isa = PBXGroup;
 			children = (
-				1CE0F44022DF0C1800AC42A1 /* MyAvatar.swift */,
+				1CE0F44022DF0C1800AC42A1 /* MyAvatarView.swift */,
 			);
 			path = Ex1;
 			sourceTree = "<group>";
@@ -518,7 +476,6 @@
 			files = (
 				07E33E6A20DC9826004B6E52 /* HomeCell.xib in Resources */,
 				07E33E1820DC8D36004B6E52 /* LaunchScreen.storyboard in Resources */,
-				07E33E5620DC90DD004B6E52 /* Ex8ViewController.xib in Resources */,
 				07E33E4220DC907B004B6E52 /* Ex3ViewController.xib in Resources */,
 				07E33E1520DC8D36004B6E52 /* Assets.xcassets in Resources */,
 				07E33E4E20DC90C3004B6E52 /* Ex6ViewController.xib in Resources */,
@@ -527,12 +484,10 @@
 				1CE0F44B22DF244400AC42A1 /* ListUsers.plist in Resources */,
 				07E33E5220DC90CF004B6E52 /* Ex7ViewController.xib in Resources */,
 				1CE0F45A22E01BC700AC42A1 /* MySliderView.xib in Resources */,
-				07E33E5E20DC9102004B6E52 /* Ex9ViewController.xib in Resources */,
 				07E33E2720DC8DD7004B6E52 /* HomeViewController.xib in Resources */,
 				07E33E4620DC9095004B6E52 /* Ex4ViewController.xib in Resources */,
 				07E33E6D20DC9F1B004B6E52 /* exercises.plist in Resources */,
 				07E33E3A20DC9059004B6E52 /* Ex1ViewController.xib in Resources */,
-				07E33E6220DC910E004B6E52 /* Ex10ViewController.xib in Resources */,
 				07E33E4A20DC90B6004B6E52 /* Ex5ViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -544,7 +499,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07E33E6120DC910E004B6E52 /* Ex10ViewController.swift in Sources */,
 				07E33E2C20DC8E5B004B6E52 /* BaseNavigationController.swift in Sources */,
 				07E33E4920DC90B6004B6E52 /* Ex5ViewController.swift in Sources */,
 				1CE0F44922DF236A00AC42A1 /* FileManagers.swift in Sources */,
@@ -556,7 +510,7 @@
 				07E33E6920DC9826004B6E52 /* HomeCell.swift in Sources */,
 				07E33E4520DC9095004B6E52 /* Ex4ViewController.swift in Sources */,
 				1C78453522EECE290018A51B /* MyChartView.swift in Sources */,
-				1CE0F44122DF0C1800AC42A1 /* MyAvatar.swift in Sources */,
+				1CE0F44122DF0C1800AC42A1 /* MyAvatarView.swift in Sources */,
 				07E33E7020DC9FF4004B6E52 /* DataManagement.swift in Sources */,
 				07E33E0E20DC8D34004B6E52 /* AppDelegate.swift in Sources */,
 				07E33E4120DC907B004B6E52 /* Ex3ViewController.swift in Sources */,
@@ -565,8 +519,6 @@
 				07E33E5120DC90CF004B6E52 /* Ex7ViewController.swift in Sources */,
 				07E33E3D20DC906B004B6E52 /* Ex2ViewController.swift in Sources */,
 				1C78453222EECE140018A51B /* MyDatePickerView.swift in Sources */,
-				07E33E5520DC90DD004B6E52 /* Ex8ViewController.swift in Sources */,
-				07E33E5D20DC9102004B6E52 /* Ex9ViewController.swift in Sources */,
 				1C78452C22EEB0D10018A51B /* (null) in Sources */,
 				07E33E2A20DC8E36004B6E52 /* BaseViewController.swift in Sources */,
 				1C78451C22E7FE930018A51B /* EnumPosition.swift in Sources */,
