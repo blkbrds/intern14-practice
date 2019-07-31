@@ -13,7 +13,6 @@ final class HomeViewController: UIViewController {
     @IBOutlet private weak var userLabel: UILabel!
     
     var user: User = User()
-    private var isFirstRun = true
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,14 +28,7 @@ final class HomeViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        if isFirstRun {
-            userLabel.text = "Welcome \(user.username)"
-            isFirstRun = false
-        } else {
-            userLabel.text = UserDefaults.standard.string(forKey: "name")
-            guard let userN = UserDefaults.standard.string(forKey: "name") else { return }
-            user.username = userN            
-        }
+        userLabel.text = "Welcome \(UserDefaults.standard.string(forKey: "name") ?? "")"
     }
     
     @objc private func logoutButtonDidClick() {
@@ -45,7 +37,7 @@ final class HomeViewController: UIViewController {
     
     @objc private func editButtonDidClick() {
         let editVC = EditViewController()
-        editVC.user1 = user
+        editVC.userData = user
         navigationController?.pushViewController(editVC, animated: true)
     }
 }

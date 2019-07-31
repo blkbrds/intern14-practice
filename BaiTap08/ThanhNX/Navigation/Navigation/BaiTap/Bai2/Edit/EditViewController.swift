@@ -15,8 +15,7 @@ final class EditViewController: UIViewController {
     @IBOutlet private weak var confirmPasswordTextField: UITextField!
     @IBOutlet private weak var errorLabel: UILabel!
     
-    var user1: User = User()
-    private var isError = true
+    var userData: User = User()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,7 +23,7 @@ final class EditViewController: UIViewController {
         let doneButton = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(doneButtonDidClick))
         
         
-        usernameTextField.text = "\(user1.username)"
+        usernameTextField.text = "\(userData.username)"
         navigationItem.leftBarButtonItem = cancelButton
         navigationItem.rightBarButtonItem = doneButton
         
@@ -38,15 +37,11 @@ final class EditViewController: UIViewController {
         
         let users = User.parseData(array: FileManagers.readPlistFile(filename: "user"))
         for user in users {
-            if user.username == user1.username {
+            if user.username == userData.username {
                 if confirmPasswordTextField.text == newPasswordTextField.text {
                     user.password = newPasswordTextField.text!
-                    isError = true
-                    if isError {
-                        errorLabel.isHidden = true
-                    }
+                    errorLabel.isHidden = true
                 } else {
-                    isError = false
                     errorLabel.isHidden = false
                 }
             }
