@@ -38,6 +38,7 @@ final class MySliderView: UIView {
     
     //MARK: load Design
     override func awakeFromNib() {
+        super.awakeFromNib()
         orangeView.layer.cornerRadius = 8
         blueView.layer.cornerRadius = 8
         orangeView.frame.size.width = CGFloat(temp) * blueView.frame.size.width / 100

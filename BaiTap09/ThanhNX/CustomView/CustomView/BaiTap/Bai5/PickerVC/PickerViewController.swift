@@ -8,7 +8,9 @@
 
 import UIKit
 
-final class Bai5ViewController: UIViewController {
+final class PickerViewController: UIViewController {
+    
+    //MARK: Outlet
     @IBOutlet private weak var leftTextField: UITextField!
     @IBOutlet private weak var rightTextField: UITextField!
     @IBOutlet private weak var pickerView: UIPickerView!
@@ -24,7 +26,7 @@ final class Bai5ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        title = "Bai 5"
+        title = "Custom PickerView"
         convertButton.layer.cornerRadius = 20
     }
     
@@ -170,23 +172,39 @@ final class Bai5ViewController: UIViewController {
     }
     
     @IBAction private func convertButtonTouchUpInside(_ sender: UIButton) {
-        if leftTextField.text != nil {
+        if textFieldShouldReturn(leftTextField) {
             rightTextField.text = String(changeLengthLeftToRight(str1: str1, str2: str2))
-        } else {
-            if rightTextField.text != nil {
-                leftTextField.text = String(changeLengthRightToLeft(str1: str1, str2: str2))
-            }
+        } else if textFieldShouldReturn(rightTextField) {
+            leftTextField.text = String(changeLengthRightToLeft(str1: str1, str2: str2))
         }
+//        if leftTextField.text != nil {
+//            textFieldShouldReturn(<#T##textField: UITextField##UITextField#>)
+//        } else {
+//            if rightTextField.text != nil {
+//
+//            }
+//        }
+    }
+}
+
+//MARK: TextField Delegate
+extension PickerViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if textField == leftTextField {
+            rightTextField.text = String(changeLengthLeftToRight(str1: str1, str2: str2))
+        } else if textField == rightTextField {
+            leftTextField.text = String(changeLengthRightToLeft(str1: str1, str2: str2))
+        }
+        return true
     }
 }
 
 //MARK: PickerView Delegate
-extension Bai5ViewController: UIPickerViewDelegate {
+extension PickerViewController: UIPickerViewDelegate {
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         let leftValue = pickerData[pickerView.selectedRow(inComponent: 0)]
         let rightValue = pickerData[pickerView.selectedRow(inComponent: 1)]
         if component == 0 {
-            print("Left \(leftValue)")
             str1 = leftValue
         } else {
             str2 = rightValue
@@ -195,7 +213,7 @@ extension Bai5ViewController: UIPickerViewDelegate {
 }
 
 //MARK: PickerView DataSource
-extension Bai5ViewController: UIPickerViewDataSource {
+extension PickerViewController: UIPickerViewDataSource {
     //MARK: Number of Column of Data
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 2
