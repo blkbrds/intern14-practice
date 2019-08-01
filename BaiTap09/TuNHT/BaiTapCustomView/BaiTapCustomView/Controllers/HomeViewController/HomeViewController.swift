@@ -36,8 +36,12 @@ class HomeViewController: UIViewController {
     }
     
     @IBAction func baiTap5TouchUpInside(_ sender: UIButton) {
+        let viewController = PickerViewController()
+        navigationController?.pushViewController(viewController, animated: true)
     }
     
     @IBAction func baiTap6TouchUpInside(_ sender: UIButton) {
+        let viewController = Bai6ViewController()
+        navigationController?.pushViewController(viewController, animated: true)
     }
 }
