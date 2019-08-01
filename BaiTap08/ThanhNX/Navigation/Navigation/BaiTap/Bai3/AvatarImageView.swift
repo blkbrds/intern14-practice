@@ -35,7 +35,7 @@ final class CustomAvataView: UIView {
     }
     
     required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        fatalError("")
     }
     
     //MARK: Config View

@@ -35,12 +35,17 @@ final class EditViewController: UIViewController {
         UserDefaults.standard.setValue(self.usernameTextField.text, forKey: "name")
         UserDefaults.standard.synchronize()
         
+        saveDatabase()
+    }
+    
+    private func saveDatabase() {
         let users = User.parseData(array: FileManagers.readPlistFile(filename: "user"))
         for user in users {
             if user.username == userData.username {
                 if confirmPasswordTextField.text == newPasswordTextField.text {
                     user.password = newPasswordTextField.text!
                     errorLabel.isHidden = true
+                    navigationController?.popViewController(animated: true)
                 } else {
                     errorLabel.isHidden = false
                 }
@@ -53,7 +58,6 @@ final class EditViewController: UIViewController {
         }
         
         FileManagers.writePlistFile(filename: "user.plist", data: arrs as NSArray)
-        navigationController?.popViewController(animated: true)
     }
     
     @objc private func calcelButtonDidClick() {
