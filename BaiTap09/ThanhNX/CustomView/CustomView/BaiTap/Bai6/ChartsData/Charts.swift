@@ -8,9 +8,9 @@
 
 import UIKit
 
-class Charts {
-    var month: String
-    var percent: Float
+final class Charts {
+    public var month: String
+    public var percent: Float
     
     init(month: String, percent: Float) {
         self.month = month

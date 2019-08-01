@@ -17,8 +17,8 @@
 		B0ECF9BA22F17BF700DC71CB /* MyDatePickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0ECF9B822F17BF700DC71CB /* MyDatePickerView.xib */; };
 		B0ECF9BB22F17BF700DC71CB /* MyDatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0ECF9B922F17BF700DC71CB /* MyDatePickerView.swift */; };
 		B0ECF9BE22F1878100DC71CB /* Bai6ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0ECF9BC22F1878100DC71CB /* Bai6ViewController.swift */; };
-		B0ECF9BF22F1878100DC71CB /* Bai6ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0ECF9BD22F1878100DC71CB /* Bai6ViewController.xib */; };
 		B0ECF9C322F1884000DC71CB /* Charts.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0ECF9C222F1884000DC71CB /* Charts.swift */; };
+		B0ECF9C622F198A900DC71CB /* MyChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0ECF9C522F198A900DC71CB /* MyChart.swift */; };
 		B0EE9A6422E59F9D00A12E07 /* Bai3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EE9A6222E59F9D00A12E07 /* Bai3ViewController.swift */; };
 		B0EE9A6522E59F9D00A12E07 /* Bai3ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0EE9A6322E59F9D00A12E07 /* Bai3ViewController.xib */; };
 		B0F1E0FB22E0549500E6B6D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F1E0FA22E0549500E6B6D9 /* AppDelegate.swift */; };
@@ -52,8 +52,8 @@
 		B0ECF9B822F17BF700DC71CB /* MyDatePickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MyDatePickerView.xib; path = ../../../../../../../../Downloads/DatePickerView/MyDatePickerView.xib; sourceTree = "<group>"; };
 		B0ECF9B922F17BF700DC71CB /* MyDatePickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyDatePickerView.swift; path = ../../../../../../../../Downloads/DatePickerView/MyDatePickerView.swift; sourceTree = "<group>"; };
 		B0ECF9BC22F1878100DC71CB /* Bai6ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bai6ViewController.swift; sourceTree = "<group>"; };
-		B0ECF9BD22F1878100DC71CB /* Bai6ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Bai6ViewController.xib; sourceTree = "<group>"; };
 		B0ECF9C222F1884000DC71CB /* Charts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Charts.swift; sourceTree = "<group>"; };
+		B0ECF9C522F198A900DC71CB /* MyChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyChart.swift; sourceTree = "<group>"; };
 		B0EE9A6222E59F9D00A12E07 /* Bai3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bai3ViewController.swift; sourceTree = "<group>"; };
 		B0EE9A6322E59F9D00A12E07 /* Bai3ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Bai3ViewController.xib; sourceTree = "<group>"; };
 		B0F1E0F722E0549500E6B6D9 /* CustomView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomView.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -144,15 +144,22 @@
 			isa = PBXGroup;
 			children = (
 				B0ECF9BC22F1878100DC71CB /* Bai6ViewController.swift */,
-				B0ECF9BD22F1878100DC71CB /* Bai6ViewController.xib */,
 			);
 			path = Bai6VC;
 			sourceTree = "<group>";
 		};
-		B0ECF9C122F187A600DC71CB /* MyChart */ = {
+		B0ECF9C122F187A600DC71CB /* ChartsData */ = {
 			isa = PBXGroup;
 			children = (
 				B0ECF9C222F1884000DC71CB /* Charts.swift */,
+			);
+			path = ChartsData;
+			sourceTree = "<group>";
+		};
+		B0ECF9C422F1988D00DC71CB /* MyChart */ = {
+			isa = PBXGroup;
+			children = (
+				B0ECF9C522F198A900DC71CB /* MyChart.swift */,
 			);
 			path = MyChart;
 			sourceTree = "<group>";
@@ -222,7 +229,8 @@
 		B0F1E11322E055DE00E6B6D9 /* Bai6 */ = {
 			isa = PBXGroup;
 			children = (
-				B0ECF9C122F187A600DC71CB /* MyChart */,
+				B0ECF9C422F1988D00DC71CB /* MyChart */,
+				B0ECF9C122F187A600DC71CB /* ChartsData */,
 				B0ECF9C022F1878B00DC71CB /* Bai6VC */,
 			);
 			path = Bai6;
@@ -402,7 +410,6 @@
 				B0F1E13622E07B8600E6B6D9 /* MySliderView.xib in Resources */,
 				B0F1E12A22E0659900E6B6D9 /* ProfileViewController.xib in Resources */,
 				B0ECF9BA22F17BF700DC71CB /* MyDatePickerView.xib in Resources */,
-				B0ECF9BF22F1878100DC71CB /* Bai6ViewController.xib in Resources */,
 				B0EE9A6522E59F9D00A12E07 /* Bai3ViewController.xib in Resources */,
 				B0F1E13222E06AA500E6B6D9 /* Bai2ViewController.xib in Resources */,
 				B0EC3E1522EFF14800AF21B7 /* Bai5ViewController.xib in Resources */,
@@ -426,6 +433,7 @@
 				B0F340DF22E94B6E00D2269B /* PickerViewController.swift in Sources */,
 				B0ECF9BE22F1878100DC71CB /* Bai6ViewController.swift in Sources */,
 				B0F1E12E22E06A7B00E6B6D9 /* MySliderView.swift in Sources */,
+				B0ECF9C622F198A900DC71CB /* MyChart.swift in Sources */,
 				B0F1E11022E055CC00E6B6D9 /* ViewController.swift in Sources */,
 				B0F1E12C22E0660400E6B6D9 /* MyAvatar.swift in Sources */,
 				B0EE9A6422E59F9D00A12E07 /* Bai3ViewController.swift in Sources */,
