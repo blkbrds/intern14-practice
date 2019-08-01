@@ -15,18 +15,11 @@ class Ex1ViewController: BaseViewController {
     
     // MARK: - Properties
     var exercise: Exercise?
-    private var isFirstDisplay: Bool = true
     private var listUser: [User] = []
 
     // MARK: - Life cycle
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        if isFirstDisplay {
-            isFirstDisplay = !isFirstDisplay
-        } else {
-            setupUI()
-            setupData()
-        }
     }
 
     override func viewDidLoad() {
@@ -46,16 +39,31 @@ class Ex1ViewController: BaseViewController {
     }
 
     // MARK: - Customer func
+    private func checkExistFileDocument() -> Bool {
+        let path = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as String
+        let url = NSURL(fileURLWithPath: path)
+        if let pathComponent = url.appendingPathComponent("/ListUsers.plist") {
+            let filePath = pathComponent.path
+            let fileManager = FileManager.default
+            if fileManager.fileExists(atPath: filePath) {
+                return true
+            } else {
+                return false
+            }
+        } else {
+            return false
+        }
+    }
+
     private func loadFilePlist() {
-        let isFirstLoad = UserDefaults.standard.bool(forKey: "firstLoad")
-        if !isFirstLoad {
+        if !checkExistFileDocument() {
             FileManagers.copyFilesFromBundleToDocumentsFolderWith(fileExtension: "plist")
             UserDefaults.standard.set(true, forKey: "firstLoad")
         }
         listUser = User.parseData(array: FileManagers.readPlist(namePlist: "ListUsers"))
     }
 
-    private func setUpMyAvatar(_ user: User, _ index: Int) -> UIView {
+    private func getMyAvatar(_ user: User, _ index: Int) -> UIView {
         let userView = MyAvatarView(frame: CGRect(x: 20, y: 100, width: 100, height: 150))
         userView.delegate = self
         userView.userAvatar?.image = UIImage(named: user.avatar)
@@ -74,7 +82,7 @@ class Ex1ViewController: BaseViewController {
             }
             let frame =  CGRect(x: x, y: y, width: 100 , height: 150)
             x += 120
-            let viewAvatar = setUpMyAvatar(listUser[index], index + 1)
+            let viewAvatar = getMyAvatar(listUser[index], index + 1)
             viewAvatar.frame = frame
             uiScrollView.addSubview(viewAvatar)
             view.addSubview(uiScrollView)

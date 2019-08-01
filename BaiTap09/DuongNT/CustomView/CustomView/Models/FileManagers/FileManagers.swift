@@ -9,9 +9,8 @@
 import Foundation
 
 class FileManagers {
-    
+
     //MARK: - Read file
-    
     static func readPlist(namePlist: String) -> [[String: String]] {
         let paths = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true) as NSArray
         let documentsDirectory = paths.object(at: 0) as! NSString
@@ -24,9 +23,8 @@ class FileManagers {
             return NSArray(contentsOfFile: privPath) as! [[String : String]]
         }
     }
-    
+
     //MARK: - Write file
-    
     static func writePlistToList(_ user: User, _ name: String) {
         let documentDirectory = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as String
         let path = documentDirectory.appending("/ListUsers.plist")
@@ -66,7 +64,6 @@ class FileManagers {
                     if let documentsURL = documentsURL {
                         let sourceURL = Bundle.main.bundleURL.appendingPathComponent(fileName)
                         let destURL = documentsURL.appendingPathComponent(fileName)
-                        print(destURL)
                         do { try FileManager.default.copyItem(at: sourceURL, to: destURL) } catch { }
                     }
                 }

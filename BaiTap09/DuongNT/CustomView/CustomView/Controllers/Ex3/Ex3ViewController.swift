@@ -18,7 +18,7 @@ class Ex3ViewController: BaseViewController {
 
     // MARK: - Properties
     var exercise: Exercise?
-    fileprivate let nhieDoSlider = MySliderView()
+    fileprivate let nhietDoSlider = MySliderView()
     fileprivate let doAmSlider = MySliderView()
     fileprivate let sucGioSlider = MySliderView()
 
@@ -45,10 +45,10 @@ class Ex3ViewController: BaseViewController {
     // MARK: - Customer func
     private func setUpSlider() {
         let sliderView = UIView(frame: CGRect(x: 0, y: 0, width: 222, height: 90))
-        nhieDoSlider.frame = sliderView.bounds
-        nhieDoSlider.delegate = self
-        nhieDoSlider.rightSliderView.backgroundColor = .red
-        nhietDoView.addSubview(nhieDoSlider)
+        nhietDoSlider.frame = sliderView.bounds
+        nhietDoSlider.delegate = self
+        nhietDoSlider.rightSliderView.backgroundColor = .red
+        nhietDoView.addSubview(nhietDoSlider)
         doAmSlider.frame = sliderView.bounds
         doAmSlider.delegate = self
         doAmSlider.rightSliderView.backgroundColor = .blue
@@ -60,7 +60,7 @@ class Ex3ViewController: BaseViewController {
         sliderTextFields.forEach { textField in
             switch textField.tag {
             case 1:
-                textField.text = ("\(Int(nhieDoSlider.valueOfThumbnai))")
+                textField.text = ("\(Int(nhietDoSlider.valueOfThumbnai))")
             case 2:
                 textField.text = ("\(Int(doAmSlider.valueOfThumbnai))")
             case 3:
@@ -79,7 +79,7 @@ class Ex3ViewController: BaseViewController {
             }
             switch textField.tag {
             case 1:
-                nhieDoSlider.valueChanged(value: Float(value) ?? 0.0)
+                nhietDoSlider.valueChanged(value: Float(value) ?? 0.0)
             case 2:
                 doAmSlider.valueChanged(value: Float(value) ?? 0.0)
             case 3:
@@ -96,7 +96,7 @@ extension Ex3ViewController: MySliderViewDelegate {
         sliderTextFields.forEach { textField in
             switch textField.tag {
             case 1:
-                textField.text = ("\(Int(nhieDoSlider.valueOfThumbnai))")
+                textField.text = ("\(Int(nhietDoSlider.valueOfThumbnai))")
             case 2:
                 textField.text = ("\(Int(doAmSlider.valueOfThumbnai))")
             case 3:
