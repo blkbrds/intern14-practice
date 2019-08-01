@@ -177,13 +177,6 @@ final class PickerViewController: UIViewController {
         } else if textFieldShouldReturn(rightTextField) {
             leftTextField.text = String(changeLengthRightToLeft(str1: str1, str2: str2))
         }
-//        if leftTextField.text != nil {
-//            textFieldShouldReturn(<#T##textField: UITextField##UITextField#>)
-//        } else {
-//            if rightTextField.text != nil {
-//
-//            }
-//        }
     }
 }
 

@@ -56,7 +56,7 @@ extension Bai1ViewController: MyAvatarDelegate {
         switch action {
         case .getAvatar(let avatar):
             let VC = ProfileViewController()
-            VC.avatar1 = avatar
+            VC.avatarData = avatar
             navigationController?.pushViewController(VC, animated: true)
         }
     }

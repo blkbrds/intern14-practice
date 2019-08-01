@@ -15,12 +15,12 @@ final class Bai5ViewController: UIViewController {
 
         title = "Bai 5"
     }
-    @IBAction func pickerViewTouchUpInside() {
+    @IBAction private func pickerViewTouchUpInside() {
         let pc = PickerViewController()
         navigationController?.pushViewController(pc, animated: true)
     }
     
-    @IBAction func DatePickerViewTouchUpInside() {
+    @IBAction private func DatePickerViewTouchUpInside() {
         let dpc = DatePickerViewController()
         navigationController?.pushViewController(dpc, animated: true)
     }

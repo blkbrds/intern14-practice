@@ -9,10 +9,10 @@
 import UIKit
 
 final class BadgeView: UIView {
-    public var label: UILabel = UILabel(frame: CGRect(origin: .zero, size: .init(width: 40, height: 20)))
+    var label: UILabel = UILabel(frame: CGRect(origin: .zero, size: .init(width: 40, height: 20)))
     private let badgeFrame: CGRect = CGRect()
     
-    public var value: Int = 0 {
+    var value: Int = 0 {
         didSet {
             updateValue()
         }

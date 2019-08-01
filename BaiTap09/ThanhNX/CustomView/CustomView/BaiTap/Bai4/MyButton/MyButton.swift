@@ -24,14 +24,14 @@ final class MyButton: UIView {
     private var badgeView: BadgeView?
     private let label: UILabel = UILabel(frame: CGRect(x: 35, y: 35, width: 80, height: 15))
     
-    public var title: String? {
+    var title: String? {
         didSet {
             updateTitle()
         }
     }
     
-    public var badgeNumber: Int
-    public var badgePosition: BadgePosition
+    var badgeNumber: Int
+    var badgePosition: BadgePosition
     
     init(frame: CGRect, badgeNumber: Int, badgePosition: BadgePosition = .topLeft) {
         self.badgeNumber = badgeNumber

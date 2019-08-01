@@ -12,7 +12,7 @@ final class ProfileViewController: UIViewController {
 
     @IBOutlet private weak var avatarImageView: UIImageView!
     @IBOutlet private weak var nameTextField: UITextField!
-    var avatar1: Avatar = Avatar()
+    var avatarData: Avatar = Avatar()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,8 +21,8 @@ final class ProfileViewController: UIViewController {
         let doneButton = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(doneButtonDidClick))
         
         navigationItem.rightBarButtonItem = doneButton
-        nameTextField.text = "\(avatar1.name)"
-        avatarImageView.image = UIImage(named: avatar1.imageName)
+        nameTextField.text = "\(avatarData.name)"
+        avatarImageView.image = UIImage(named: avatarData.imageName)
     }
     
     @objc private func doneButtonDidClick() {
@@ -31,7 +31,7 @@ final class ProfileViewController: UIViewController {
         
         let avatars = Avatar.parseImage(array: FileManagers.readPlistFile(filename: "avatar"))
         for avatar in avatars {
-            if avatar.imageName == avatar1.imageName {
+            if avatar.imageName == avatarData.imageName {
                 avatar.name = nameTextField.text!
             }
         }

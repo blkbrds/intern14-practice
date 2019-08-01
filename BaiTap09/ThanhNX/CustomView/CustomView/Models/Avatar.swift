@@ -27,8 +27,7 @@ extension Avatar {
         for dic in array {
             let image = Avatar(imageName: dic["avatar"]!, name: dic["name"]!)
             images.append(image)
-        }
-        
+        }        
         return images
     }
 }
