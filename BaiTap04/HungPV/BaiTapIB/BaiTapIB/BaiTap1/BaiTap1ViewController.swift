@@ -28,10 +28,6 @@ class BaiTap1ViewController: UIViewController {
         view.addSubview(timeLabel)
     }
     
-    func timeUpdate() {
-        return timeNow()
-    }
-    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         return timeNow()
     }
