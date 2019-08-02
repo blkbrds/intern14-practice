@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Ex04ViewController" customModule="Custom_View" customModuleProvider="target">
+            <connections>
+                <outlet property="boardLabel" destination="JFF-i5-CP0" id="Cmh-ya-ymB"/>
+                <outlet property="valueTextField" destination="R3p-aS-YK8" id="KxU-ea-auk"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outletCollection property="adjustPositionButton" destination="cPg-cW-gKw" collectionClass="NSMutableArray" id="kwz-Qj-d7A"/>
+                <outletCollection property="adjustPositionButton" destination="gA9-Rv-7qu" collectionClass="NSMutableArray" id="dMd-Hi-ob7"/>
+                <outletCollection property="adjustPositionButton" destination="7j3-GB-3j2" collectionClass="NSMutableArray" id="63M-AA-bqK"/>
+                <outletCollection property="adjustPositionButton" destination="wiU-m9-DTS" collectionClass="NSMutableArray" id="yed-Ym-q3G"/>
+                <outletCollection property="adjustPositionButton" destination="jxq-cH-sTC" collectionClass="NSMutableArray" id="cCL-un-0iI"/>
+                <outletCollection property="adjustPositionButton" destination="KvJ-Km-rHH" collectionClass="NSMutableArray" id="cJz-9B-M4k"/>
+                <outletCollection property="adjustPositionButton" destination="UPp-w1-i0W" collectionClass="NSMutableArray" id="Ygg-Np-1nf"/>
+                <outletCollection property="adjustPositionButton" destination="TWm-A0-rht" collectionClass="NSMutableArray" id="ywu-T4-42d"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JFF-i5-CP0">
+                    <rect key="frame" x="111" y="436" width="192" height="103"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="30"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cPg-cW-gKw">
+                    <rect key="frame" x="32" y="305" width="50" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="T-L"/>
+                    <connections>
+                        <action selector="adjustPositionTouchUpInside:" destination="-1" eventType="touchUpInside" id="T0j-gG-Ro2"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gA9-Rv-7qu">
+                    <rect key="frame" x="132" y="305" width="50" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="T-CT"/>
+                    <connections>
+                        <action selector="adjustPositionTouchUpInside:" destination="-1" eventType="touchUpInside" id="9I8-OV-ViG"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7j3-GB-3j2">
+                    <rect key="frame" x="232" y="305" width="50" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="T-R"/>
+                    <connections>
+                        <action selector="adjustPositionTouchUpInside:" destination="-1" eventType="touchUpInside" id="Gx1-mZ-qbt"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wiU-m9-DTS">
+                    <rect key="frame" x="332" y="305" width="50" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="CT-L"/>
+                    <connections>
+                        <action selector="adjustPositionTouchUpInside:" destination="-1" eventType="touchUpInside" id="rKH-PY-eao"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R3p-aS-YK8">
+                    <rect key="frame" x="147" y="233" width="120" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jxq-cH-sTC">
+                    <rect key="frame" x="32" y="357" width="50" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="BT-L"/>
+                    <connections>
+                        <action selector="adjustPositionTouchUpInside:" destination="-1" eventType="touchUpInside" id="MOe-Ur-eM3"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KvJ-Km-rHH">
+                    <rect key="frame" x="132" y="357" width="50" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="BT-CT"/>
+                    <connections>
+                        <action selector="adjustPositionTouchUpInside:" destination="-1" eventType="touchUpInside" id="P8a-jv-MHZ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UPp-w1-i0W">
+                    <rect key="frame" x="232" y="357" width="50" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="BT-R"/>
+                    <connections>
+                        <action selector="adjustPositionTouchUpInside:" destination="-1" eventType="touchUpInside" id="nMi-HR-Cok"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TWm-A0-rht">
+                    <rect key="frame" x="332" y="357" width="50" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="CT-R"/>
+                    <connections>
+                        <action selector="adjustPositionTouchUpInside:" destination="-1" eventType="touchUpInside" id="ByS-sq-Mhw"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="131.8840579710145" y="144.64285714285714"/>
+        </view>
+    </objects>
+</document>
