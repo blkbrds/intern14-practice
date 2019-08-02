@@ -14,8 +14,10 @@ class BaiTap1ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        timeLabel.textColor = #colorLiteral(red: 0.7450980544, green: 0.1568627506, blue: 0.07450980693, alpha: 1)
+        timeLabel.backgroundColor = .clear
+        view.addSubview(timeLabel)
         timeNow()
-        
     }
     
     func timeNow() {
@@ -23,13 +25,10 @@ class BaiTap1ViewController: UIViewController {
         let formatDate = DateFormatter()
         formatDate.dateFormat = "HH:mm:ss   dd-MM-yyyy"
         timeLabel.text = formatDate.string(from: dateTime)
-        timeLabel.textColor = #colorLiteral(red: 0.7450980544, green: 0.1568627506, blue: 0.07450980693, alpha: 1)
-        timeLabel.backgroundColor = .clear
-        view.addSubview(timeLabel)
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        return timeNow()
+        timeNow()
     }
     
     

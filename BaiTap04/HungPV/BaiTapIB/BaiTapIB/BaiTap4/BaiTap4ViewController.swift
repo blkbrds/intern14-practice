@@ -43,16 +43,18 @@ class BaiTap4ViewController: UIViewController {
             if username.isEmpty || password.isEmpty {
                 errorLabel.text = " Hãy nhập Username và Mật Khẩu ! "
                 errorLabel.isHidden = false
-            } else {
-                if username == UserData.username && password == UserData.password {
-                    errorLabel.isHidden = true
-                } else if username != UserData.username && password != UserData.password {
-                        errorLabel.text = " Nhập sai username và password !! "
-                        errorLabel.isHidden = false
-                    }
-                }
+            } else if username == UserData.username && password == UserData.password {
+                errorLabel.isHidden = true
+            } else if username != UserData.username && password != UserData.password {
+                errorLabel.text = " Nhập sai username và password !! "
+                errorLabel.isHidden = false
+            } else if (username == UserData.username && password != UserData.password) || (username != UserData.username && password == UserData.password) {
+                errorLabel.text = " Nhập sai username và password !! "
+                errorLabel.isHidden = false
             }
         }
+        
+    }
     
     
     //Mark: - Action
@@ -64,7 +66,7 @@ class BaiTap4ViewController: UIViewController {
         pwTxt.text?.removeAll()
     }
 }
-    
+
 
 extension BaiTap4ViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
