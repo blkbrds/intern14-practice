@@ -47,6 +47,7 @@ final class EditViewController: UIViewController {
                     errorLabel.isHidden = true
                     navigationController?.popViewController(animated: true)
                 } else {
+                    errorLabel.text = "Mat khau khong trung khop"
                     errorLabel.isHidden = false
                 }
             }
