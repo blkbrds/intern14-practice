@@ -38,7 +38,7 @@ final class MyButton: UIView {
         self.badgePosition = badgePosition
         super.init(frame: frame)
         
-        badgeView = BadgeView(value: badgeNumber)
+        badgeView = BadgeView(frame: frame, value: badgeNumber)
         badgeView?.layer.cornerRadius = 10
         badgeView?.value = badgeNumber
         

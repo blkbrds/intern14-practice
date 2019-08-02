@@ -20,6 +20,7 @@ final class PickerViewController: UIViewController {
     private var number2 = 0.0
     private var str1: String = "inch"
     private var str2: String = "inch"
+    private var isFocusLeft: Bool = true
     
     private let pickerData: [String] = ["inch", "centimeter", "foot", "meter", "kilometer"]
     
@@ -167,14 +168,14 @@ final class PickerViewController: UIViewController {
                 number1 = number2
             }
         }
-        
         return number1
     }
     
+    //MARK: Button Convert
     @IBAction private func convertButtonTouchUpInside(_ sender: UIButton) {
-        if textFieldShouldReturn(leftTextField) {
+        if isFocusLeft {
             rightTextField.text = String(changeLengthLeftToRight(str1: str1, str2: str2))
-        } else if textFieldShouldReturn(rightTextField) {
+        } else {
             leftTextField.text = String(changeLengthRightToLeft(str1: str1, str2: str2))
         }
     }
@@ -182,6 +183,10 @@ final class PickerViewController: UIViewController {
 
 //MARK: TextField Delegate
 extension PickerViewController: UITextFieldDelegate {
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        isFocusLeft = textField == leftTextField
+    }
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         if textField == leftTextField {
             rightTextField.text = String(changeLengthLeftToRight(str1: str1, str2: str2))

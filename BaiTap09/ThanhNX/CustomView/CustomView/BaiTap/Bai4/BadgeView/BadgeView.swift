@@ -10,7 +10,6 @@ import UIKit
 
 final class BadgeView: UIView {
     var label: UILabel = UILabel(frame: CGRect(origin: .zero, size: .init(width: 40, height: 20)))
-    private let badgeFrame: CGRect = CGRect()
     
     var value: Int = 0 {
         didSet {
@@ -18,8 +17,8 @@ final class BadgeView: UIView {
         }
     }    
     
-    init(value: Int) {
-        super.init(frame: badgeFrame)
+    init(frame: CGRect,value: Int) {
+        super.init(frame: frame)
         self.value = value
         self.backgroundColor = .red
         
