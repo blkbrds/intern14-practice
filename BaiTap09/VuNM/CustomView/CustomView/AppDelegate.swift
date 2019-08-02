@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  Custom View
+//  CustomView
 //
-//  Created by PCI0007 on 7/23/19.
+//  Created by PCI0007 on 8/2/19.
 //  Copyright © 2019 PCI0007. All rights reserved.
 //
 
@@ -13,7 +13,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     let handle = HandlePlist()
-
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.backgroundColor = .white
@@ -25,7 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         return true
     }
-
+    
     func applicationDidBecomeActive(_ application: UIApplication) {
         HandlePlist.shared.prepareForUse(filename: "userPlist")
     }
@@ -33,7 +33,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationDidFinishLaunching(_ application: UIApplication) {
         HandlePlist.shared.prepareForUse(filename: "userPlist")
     }
-
 
 }
 

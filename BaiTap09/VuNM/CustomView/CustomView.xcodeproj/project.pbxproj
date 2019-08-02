@@ -1,0 +1,543 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F07121BE22F3FB0A0087D4EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07121BD22F3FB0A0087D4EB /* AppDelegate.swift */; };
+		F07121C522F3FB0C0087D4EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F07121C422F3FB0C0087D4EB /* Assets.xcassets */; };
+		F07121FA22F4110F0087D4EB /* MonthWithValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07121D122F4110F0087D4EB /* MonthWithValue.swift */; };
+		F07121FB22F4110F0087D4EB /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07121D222F4110F0087D4EB /* ChartView.swift */; };
+		F07121FC22F4110F0087D4EB /* ChartUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07121D322F4110F0087D4EB /* ChartUIView.swift */; };
+		F07121FD22F4110F0087D4EB /* Ex06ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07121D422F4110F0087D4EB /* Ex06ViewController.swift */; };
+		F07121FE22F4110F0087D4EB /* Ex06ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F07121D522F4110F0087D4EB /* Ex06ViewController.xib */; };
+		F07121FF22F4110F0087D4EB /* Ex04ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07121D722F4110F0087D4EB /* Ex04ViewController.swift */; };
+		F071220022F4110F0087D4EB /* Ex04ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F07121D822F4110F0087D4EB /* Ex04ViewController.xib */; };
+		F071220122F4110F0087D4EB /* Ex02ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07121DA22F4110F0087D4EB /* Ex02ViewController.swift */; };
+		F071220222F4110F0087D4EB /* MySliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07121DC22F4110F0087D4EB /* MySliderView.swift */; };
+		F071220322F4110F0087D4EB /* MySliderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F07121DD22F4110F0087D4EB /* MySliderView.xib */; };
+		F071220422F4110F0087D4EB /* Ex02ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F07121DE22F4110F0087D4EB /* Ex02ViewController.xib */; };
+		F071220522F4110F0087D4EB /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07121E122F4110F0087D4EB /* PickerView.swift */; };
+		F071220622F4110F0087D4EB /* PickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F07121E222F4110F0087D4EB /* PickerView.xib */; };
+		F071220722F4110F0087D4EB /* CustomPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07121E522F4110F0087D4EB /* CustomPickerView.swift */; };
+		F071220822F4110F0087D4EB /* CustomPicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = F07121E622F4110F0087D4EB /* CustomPicker.xib */; };
+		F071220922F4110F0087D4EB /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07121E722F4110F0087D4EB /* DatePickerViewController.swift */; };
+		F071220A22F4110F0087D4EB /* DatePickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F07121E822F4110F0087D4EB /* DatePickerViewController.xib */; };
+		F071220B22F4110F0087D4EB /* HomePageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F07121EA22F4110F0087D4EB /* HomePageViewController.xib */; };
+		F071220C22F4110F0087D4EB /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07121EB22F4110F0087D4EB /* HomePageViewController.swift */; };
+		F071220D22F4110F0087D4EB /* Ex03ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07121ED22F4110F0087D4EB /* Ex03ViewController.swift */; };
+		F071220E22F4110F0087D4EB /* Ex03ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F07121EE22F4110F0087D4EB /* Ex03ViewController.xib */; };
+		F071220F22F4110F0087D4EB /* Ex01ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07121F022F4110F0087D4EB /* Ex01ViewController.swift */; };
+		F071221022F4110F0087D4EB /* UserDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F07121F222F4110F0087D4EB /* UserDetailViewController.xib */; };
+		F071221122F4110F0087D4EB /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07121F322F4110F0087D4EB /* UserDetailViewController.swift */; };
+		F071221222F4110F0087D4EB /* Ex01ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F07121F422F4110F0087D4EB /* Ex01ViewController.xib */; };
+		F071221322F4110F0087D4EB /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07121F622F4110F0087D4EB /* Users.swift */; };
+		F071221422F4110F0087D4EB /* HandlePlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07121F722F4110F0087D4EB /* HandlePlist.swift */; };
+		F071221522F4110F0087D4EB /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07121F822F4110F0087D4EB /* UserData.swift */; };
+		F071221622F4110F0087D4EB /* userPlist.plist in Resources */ = {isa = PBXBuildFile; fileRef = F07121F922F4110F0087D4EB /* userPlist.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F07121BA22F3FB0A0087D4EB /* CustomView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F07121BD22F3FB0A0087D4EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F07121C422F3FB0C0087D4EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F07121C922F3FB0C0087D4EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F07121D122F4110F0087D4EB /* MonthWithValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonthWithValue.swift; sourceTree = "<group>"; };
+		F07121D222F4110F0087D4EB /* ChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		F07121D322F4110F0087D4EB /* ChartUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartUIView.swift; sourceTree = "<group>"; };
+		F07121D422F4110F0087D4EB /* Ex06ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ex06ViewController.swift; sourceTree = "<group>"; };
+		F07121D522F4110F0087D4EB /* Ex06ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Ex06ViewController.xib; sourceTree = "<group>"; };
+		F07121D722F4110F0087D4EB /* Ex04ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ex04ViewController.swift; sourceTree = "<group>"; };
+		F07121D822F4110F0087D4EB /* Ex04ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Ex04ViewController.xib; sourceTree = "<group>"; };
+		F07121DA22F4110F0087D4EB /* Ex02ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ex02ViewController.swift; sourceTree = "<group>"; };
+		F07121DC22F4110F0087D4EB /* MySliderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MySliderView.swift; sourceTree = "<group>"; };
+		F07121DD22F4110F0087D4EB /* MySliderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MySliderView.xib; sourceTree = "<group>"; };
+		F07121DE22F4110F0087D4EB /* Ex02ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Ex02ViewController.xib; sourceTree = "<group>"; };
+		F07121E122F4110F0087D4EB /* PickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
+		F07121E222F4110F0087D4EB /* PickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PickerView.xib; sourceTree = "<group>"; };
+		F07121E522F4110F0087D4EB /* CustomPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPickerView.swift; sourceTree = "<group>"; };
+		F07121E622F4110F0087D4EB /* CustomPicker.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomPicker.xib; sourceTree = "<group>"; };
+		F07121E722F4110F0087D4EB /* DatePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
+		F07121E822F4110F0087D4EB /* DatePickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DatePickerViewController.xib; sourceTree = "<group>"; };
+		F07121EA22F4110F0087D4EB /* HomePageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomePageViewController.xib; sourceTree = "<group>"; };
+		F07121EB22F4110F0087D4EB /* HomePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		F07121ED22F4110F0087D4EB /* Ex03ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ex03ViewController.swift; sourceTree = "<group>"; };
+		F07121EE22F4110F0087D4EB /* Ex03ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Ex03ViewController.xib; sourceTree = "<group>"; };
+		F07121F022F4110F0087D4EB /* Ex01ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ex01ViewController.swift; sourceTree = "<group>"; };
+		F07121F222F4110F0087D4EB /* UserDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserDetailViewController.xib; sourceTree = "<group>"; };
+		F07121F322F4110F0087D4EB /* UserDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
+		F07121F422F4110F0087D4EB /* Ex01ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Ex01ViewController.xib; sourceTree = "<group>"; };
+		F07121F622F4110F0087D4EB /* Users.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
+		F07121F722F4110F0087D4EB /* HandlePlist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HandlePlist.swift; sourceTree = "<group>"; };
+		F07121F822F4110F0087D4EB /* UserData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		F07121F922F4110F0087D4EB /* userPlist.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = userPlist.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F07121B722F3FB0A0087D4EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F07121B122F3FB0A0087D4EB = {
+			isa = PBXGroup;
+			children = (
+				F07121BC22F3FB0A0087D4EB /* CustomView */,
+				F07121BB22F3FB0A0087D4EB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F07121BB22F3FB0A0087D4EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F07121BA22F3FB0A0087D4EB /* CustomView.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F07121BC22F3FB0A0087D4EB /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				F07121EF22F4110F0087D4EB /* Ex01 */,
+				F07121D922F4110F0087D4EB /* Ex02 */,
+				F07121EC22F4110F0087D4EB /* Ex03 */,
+				F07121D622F4110F0087D4EB /* Ex04 */,
+				F07121DF22F4110F0087D4EB /* Ex05 */,
+				F07121CF22F4110F0087D4EB /* Ex06 */,
+				F07121E922F4110F0087D4EB /* HomePage */,
+				F07121BD22F3FB0A0087D4EB /* AppDelegate.swift */,
+				F07121C422F3FB0C0087D4EB /* Assets.xcassets */,
+				F07121C922F3FB0C0087D4EB /* Info.plist */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		F07121CF22F4110F0087D4EB /* Ex06 */ = {
+			isa = PBXGroup;
+			children = (
+				F07121D022F4110F0087D4EB /* Chart */,
+				F07121D422F4110F0087D4EB /* Ex06ViewController.swift */,
+				F07121D522F4110F0087D4EB /* Ex06ViewController.xib */,
+			);
+			name = Ex06;
+			path = "../../../../../Custom View/Custom View/Ex06";
+			sourceTree = "<group>";
+		};
+		F07121D022F4110F0087D4EB /* Chart */ = {
+			isa = PBXGroup;
+			children = (
+				F07121D122F4110F0087D4EB /* MonthWithValue.swift */,
+				F07121D222F4110F0087D4EB /* ChartView.swift */,
+				F07121D322F4110F0087D4EB /* ChartUIView.swift */,
+			);
+			path = Chart;
+			sourceTree = "<group>";
+		};
+		F07121D622F4110F0087D4EB /* Ex04 */ = {
+			isa = PBXGroup;
+			children = (
+				F07121D722F4110F0087D4EB /* Ex04ViewController.swift */,
+				F07121D822F4110F0087D4EB /* Ex04ViewController.xib */,
+			);
+			name = Ex04;
+			path = "../../../../../Custom View/Custom View/Ex04";
+			sourceTree = "<group>";
+		};
+		F07121D922F4110F0087D4EB /* Ex02 */ = {
+			isa = PBXGroup;
+			children = (
+				F07121DA22F4110F0087D4EB /* Ex02ViewController.swift */,
+				F07121DB22F4110F0087D4EB /* New Group */,
+				F07121DE22F4110F0087D4EB /* Ex02ViewController.xib */,
+			);
+			name = Ex02;
+			path = "../../../../../Custom View/Custom View/Ex02";
+			sourceTree = "<group>";
+		};
+		F07121DB22F4110F0087D4EB /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				F07121DC22F4110F0087D4EB /* MySliderView.swift */,
+				F07121DD22F4110F0087D4EB /* MySliderView.xib */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		F07121DF22F4110F0087D4EB /* Ex05 */ = {
+			isa = PBXGroup;
+			children = (
+				F07121E022F4110F0087D4EB /* PickerView */,
+				F07121E322F4110F0087D4EB /* DatePickerView */,
+			);
+			name = Ex05;
+			path = "../../../../../Custom View/Custom View/Ex05";
+			sourceTree = "<group>";
+		};
+		F07121E022F4110F0087D4EB /* PickerView */ = {
+			isa = PBXGroup;
+			children = (
+				F07121E122F4110F0087D4EB /* PickerView.swift */,
+				F07121E222F4110F0087D4EB /* PickerView.xib */,
+			);
+			path = PickerView;
+			sourceTree = "<group>";
+		};
+		F07121E322F4110F0087D4EB /* DatePickerView */ = {
+			isa = PBXGroup;
+			children = (
+				F07121E422F4110F0087D4EB /* CustomPicker */,
+				F07121E722F4110F0087D4EB /* DatePickerViewController.swift */,
+				F07121E822F4110F0087D4EB /* DatePickerViewController.xib */,
+			);
+			path = DatePickerView;
+			sourceTree = "<group>";
+		};
+		F07121E422F4110F0087D4EB /* CustomPicker */ = {
+			isa = PBXGroup;
+			children = (
+				F07121E522F4110F0087D4EB /* CustomPickerView.swift */,
+				F07121E622F4110F0087D4EB /* CustomPicker.xib */,
+			);
+			path = CustomPicker;
+			sourceTree = "<group>";
+		};
+		F07121E922F4110F0087D4EB /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				F07121EA22F4110F0087D4EB /* HomePageViewController.xib */,
+				F07121EB22F4110F0087D4EB /* HomePageViewController.swift */,
+			);
+			name = HomePage;
+			path = "../../../../../Custom View/Custom View/HomePage";
+			sourceTree = "<group>";
+		};
+		F07121EC22F4110F0087D4EB /* Ex03 */ = {
+			isa = PBXGroup;
+			children = (
+				F07121ED22F4110F0087D4EB /* Ex03ViewController.swift */,
+				F07121EE22F4110F0087D4EB /* Ex03ViewController.xib */,
+			);
+			name = Ex03;
+			path = "../../../../../Custom View/Custom View/Ex03";
+			sourceTree = "<group>";
+		};
+		F07121EF22F4110F0087D4EB /* Ex01 */ = {
+			isa = PBXGroup;
+			children = (
+				F07121F022F4110F0087D4EB /* Ex01ViewController.swift */,
+				F07121F122F4110F0087D4EB /* User */,
+				F07121F422F4110F0087D4EB /* Ex01ViewController.xib */,
+				F07121F522F4110F0087D4EB /* Data */,
+			);
+			name = Ex01;
+			path = "../../../../../Custom View/Custom View/Ex01";
+			sourceTree = "<group>";
+		};
+		F07121F122F4110F0087D4EB /* User */ = {
+			isa = PBXGroup;
+			children = (
+				F07121F222F4110F0087D4EB /* UserDetailViewController.xib */,
+				F07121F322F4110F0087D4EB /* UserDetailViewController.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		F07121F522F4110F0087D4EB /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				F07121F622F4110F0087D4EB /* Users.swift */,
+				F07121F722F4110F0087D4EB /* HandlePlist.swift */,
+				F07121F822F4110F0087D4EB /* UserData.swift */,
+				F07121F922F4110F0087D4EB /* userPlist.plist */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F07121B922F3FB0A0087D4EB /* CustomView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F07121CC22F3FB0C0087D4EB /* Build configuration list for PBXNativeTarget "CustomView" */;
+			buildPhases = (
+				F07121B622F3FB0A0087D4EB /* Sources */,
+				F07121B722F3FB0A0087D4EB /* Frameworks */,
+				F07121B822F3FB0A0087D4EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CustomView;
+			productName = CustomView;
+			productReference = F07121BA22F3FB0A0087D4EB /* CustomView.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F07121B222F3FB0A0087D4EB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = PCI0007;
+				TargetAttributes = {
+					F07121B922F3FB0A0087D4EB = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = F07121B522F3FB0A0087D4EB /* Build configuration list for PBXProject "CustomView" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F07121B122F3FB0A0087D4EB;
+			productRefGroup = F07121BB22F3FB0A0087D4EB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F07121B922F3FB0A0087D4EB /* CustomView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F07121B822F3FB0A0087D4EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F071221222F4110F0087D4EB /* Ex01ViewController.xib in Resources */,
+				F071220A22F4110F0087D4EB /* DatePickerViewController.xib in Resources */,
+				F071221022F4110F0087D4EB /* UserDetailViewController.xib in Resources */,
+				F071220022F4110F0087D4EB /* Ex04ViewController.xib in Resources */,
+				F071220822F4110F0087D4EB /* CustomPicker.xib in Resources */,
+				F071220422F4110F0087D4EB /* Ex02ViewController.xib in Resources */,
+				F071220E22F4110F0087D4EB /* Ex03ViewController.xib in Resources */,
+				F071221622F4110F0087D4EB /* userPlist.plist in Resources */,
+				F071220622F4110F0087D4EB /* PickerView.xib in Resources */,
+				F071220322F4110F0087D4EB /* MySliderView.xib in Resources */,
+				F07121C522F3FB0C0087D4EB /* Assets.xcassets in Resources */,
+				F071220B22F4110F0087D4EB /* HomePageViewController.xib in Resources */,
+				F07121FE22F4110F0087D4EB /* Ex06ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F07121B622F3FB0A0087D4EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F071220F22F4110F0087D4EB /* Ex01ViewController.swift in Sources */,
+				F07121FA22F4110F0087D4EB /* MonthWithValue.swift in Sources */,
+				F071221422F4110F0087D4EB /* HandlePlist.swift in Sources */,
+				F071220722F4110F0087D4EB /* CustomPickerView.swift in Sources */,
+				F071220222F4110F0087D4EB /* MySliderView.swift in Sources */,
+				F071220522F4110F0087D4EB /* PickerView.swift in Sources */,
+				F071220D22F4110F0087D4EB /* Ex03ViewController.swift in Sources */,
+				F071220922F4110F0087D4EB /* DatePickerViewController.swift in Sources */,
+				F07121FF22F4110F0087D4EB /* Ex04ViewController.swift in Sources */,
+				F071221322F4110F0087D4EB /* Users.swift in Sources */,
+				F07121BE22F3FB0A0087D4EB /* AppDelegate.swift in Sources */,
+				F071220122F4110F0087D4EB /* Ex02ViewController.swift in Sources */,
+				F071221522F4110F0087D4EB /* UserData.swift in Sources */,
+				F071220C22F4110F0087D4EB /* HomePageViewController.swift in Sources */,
+				F071221122F4110F0087D4EB /* UserDetailViewController.swift in Sources */,
+				F07121FB22F4110F0087D4EB /* ChartView.swift in Sources */,
+				F07121FD22F4110F0087D4EB /* Ex06ViewController.swift in Sources */,
+				F07121FC22F4110F0087D4EB /* ChartUIView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F07121CA22F3FB0C0087D4EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F07121CB22F3FB0C0087D4EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F07121CD22F3FB0C0087D4EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CustomView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = VuNM.CustomView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F07121CE22F3FB0C0087D4EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CustomView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = VuNM.CustomView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F07121B522F3FB0A0087D4EB /* Build configuration list for PBXProject "CustomView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F07121CA22F3FB0C0087D4EB /* Debug */,
+				F07121CB22F3FB0C0087D4EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F07121CC22F3FB0C0087D4EB /* Build configuration list for PBXNativeTarget "CustomView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F07121CD22F3FB0C0087D4EB /* Debug */,
+				F07121CE22F3FB0C0087D4EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F07121B222F3FB0A0087D4EB /* Project object */;
+}
