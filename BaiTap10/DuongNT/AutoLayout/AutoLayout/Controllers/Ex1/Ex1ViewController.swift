@@ -10,9 +10,14 @@ import UIKit
 
 class Ex1ViewController: BaseViewController {
     
+    // MARK: - Outlets
     @IBOutlet var buttons: [UIButton]!
+    
+    // MARK: - Properties
     var exercise: Exercise?
     
+    
+    // MARK: - Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -21,7 +26,7 @@ class Ex1ViewController: BaseViewController {
         super.didReceiveMemoryWarning()
     }
     
-    // MARK: config
+    // MARK: - Config
     override func setupUI() {
         super.setupUI()
         self.title = exercise?.name
@@ -33,6 +38,7 @@ class Ex1ViewController: BaseViewController {
     override func setupData() {
     }
     
+    // MARK: - Actions
     @IBAction func buttonsActionTouchUpInside(_ button: UIButton) {
         switch button.tag {
         case 1:
