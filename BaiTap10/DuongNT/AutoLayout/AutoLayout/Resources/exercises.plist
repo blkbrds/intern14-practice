@@ -6,43 +6,43 @@
 		<key>name</key>
 		<string>exercise 01</string>
 		<key>description</key>
-		<string>MyAvatar</string>
+		<string>Auto Layout 1</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>exercise 02</string>
 		<key>description</key>
-		<string>MySliderView</string>
+		<string>Auto Layout 2</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>exercise 03</string>
 		<key>description</key>
-		<string>MySliderView Upgrade</string>
+		<string>Auto Layout 3</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>exercise 04</string>
 		<key>description</key>
-		<string>Custom button có badge number</string>
+		<string>Auto Layout 4</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>exercise 05</string>
 		<key>description</key>
-		<string>Custom PickerView và DatePickerView</string>
+		<string>Auto Layout 5</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>exercise 06</string>
 		<key>description</key>
-		<string>ChartView</string>
+		<string>Auto Layout 6</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>exercise 07</string>
 		<key>description</key>
-		<string>Bài tập nâng cao</string>
+		<string>Auto Layout 7</string>
 	</dict>
 	<dict>
 		<key>name</key>

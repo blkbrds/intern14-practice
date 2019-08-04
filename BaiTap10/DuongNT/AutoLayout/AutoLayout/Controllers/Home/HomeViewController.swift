@@ -13,7 +13,7 @@ class HomeViewController: BaseViewController {
     // MARK: - Properties
     @IBOutlet weak var tableView: UITableView!
     var exercises: [Exercise] = []
-    
+
     // MARK: - life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,7 +22,7 @@ class HomeViewController: BaseViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    
+
     // MARK: - config
     override func setupUI() {
         super.setupUI()
@@ -33,7 +33,6 @@ class HomeViewController: BaseViewController {
     override func setupData() {
         exercises = DataManagement.share.getExercises(fileName: "exercises", type: "plist")
     }
-    
 }
 
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
@@ -49,17 +48,16 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 70
     }
-    
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as? HomeCell
-
         let ex = exercises[indexPath.row]
         cell?.titleLabel.text = ex.name
         cell?.subTitleLabel.text = ex.description
         
         return cell!
     }
-    
+
     // MARK: - Table view delegate
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)

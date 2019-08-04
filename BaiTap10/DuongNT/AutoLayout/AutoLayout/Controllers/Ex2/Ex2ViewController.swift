@@ -9,21 +9,21 @@
 import UIKit
 
 class Ex2ViewController: BaseViewController {
-    
+
     // MARK: - Outlets
     @IBOutlet var buttons: [UIButton]!
-    
+
     // MARK - Properties
     var exercise: Exercise?
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    
+
     // MARK: - Config
     override func setupUI() {
         super.setupUI()
@@ -32,10 +32,10 @@ class Ex2ViewController: BaseViewController {
             button.layer.cornerRadius = 5
         }
     }
-    
+
     override func setupData() {
     }
-    
+
     //MARK: Actions
     @IBAction func buttonActionTouchUpInside(_ button: UIButton) {
         switch button.tag {
