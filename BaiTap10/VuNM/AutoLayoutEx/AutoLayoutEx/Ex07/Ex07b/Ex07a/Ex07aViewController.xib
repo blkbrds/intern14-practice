@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Ex07aViewController" customModule="AutoLayoutEx" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jLV-S0-unh" userLabel="View1">
+                    <rect key="frame" x="117.5" y="463" width="179.5" height="179.5"/>
+                    <color key="backgroundColor" red="0.74140863369999999" green="0.68721016779999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="jLV-S0-unh" secondAttribute="height" multiplier="1:1" id="Lay-jl-7Ek"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3ye-7C-Hni" userLabel="View3">
+                    <rect key="frame" x="117.5" y="263.5" width="179.5" height="179.5"/>
+                    <color key="backgroundColor" red="0.74140863369999999" green="0.68721016779999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="3ye-7C-Hni" secondAttribute="height" multiplier="1:1" id="2IB-nj-EPL"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CbM-Ax-am9" userLabel="View4">
+                    <rect key="frame" x="117.5" y="64" width="179.5" height="179.5"/>
+                    <color key="backgroundColor" red="0.74140863369999999" green="0.68721016779999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="CbM-Ax-am9" secondAttribute="height" multiplier="1:1" id="3Mu-R7-0qG"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" horizontalHuggingPriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="t0y-3f-Ihn" userLabel="View2">
+                    <rect key="frame" x="117.5" y="662.5" width="179.5" height="179.5"/>
+                    <color key="backgroundColor" red="0.74140863369999999" green="0.68721016779999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="t0y-3f-Ihn" secondAttribute="height" multiplier="1:1" id="tJC-8W-1YQ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="jLV-S0-unh" firstAttribute="width" secondItem="3ye-7C-Hni" secondAttribute="width" id="3ur-mH-ihp"/>
+                <constraint firstItem="t0y-3f-Ihn" firstAttribute="width" secondItem="jLV-S0-unh" secondAttribute="width" id="8jf-g4-56S"/>
+                <constraint firstItem="3ye-7C-Hni" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="CRu-lM-foA"/>
+                <constraint firstItem="jLV-S0-unh" firstAttribute="top" secondItem="3ye-7C-Hni" secondAttribute="bottom" constant="20" id="Lgv-i6-wG0"/>
+                <constraint firstItem="t0y-3f-Ihn" firstAttribute="top" secondItem="jLV-S0-unh" secondAttribute="bottom" constant="20" id="RDb-Ex-zDQ"/>
+                <constraint firstItem="t0y-3f-Ihn" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Swb-ob-5Jp"/>
+                <constraint firstItem="3ye-7C-Hni" firstAttribute="width" secondItem="CbM-Ax-am9" secondAttribute="width" id="YYZ-7J-5R1"/>
+                <constraint firstItem="CbM-Ax-am9" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="bYQ-UG-EcU"/>
+                <constraint firstItem="3ye-7C-Hni" firstAttribute="top" secondItem="CbM-Ax-am9" secondAttribute="bottom" constant="20" id="sgD-2B-51P"/>
+                <constraint firstItem="CbM-Ax-am9" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="uQ0-Mc-Z4b"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="t0y-3f-Ihn" secondAttribute="bottom" constant="20" id="wOb-ch-fC8"/>
+                <constraint firstItem="jLV-S0-unh" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="xIv-i1-jtb"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="37.681159420289859" y="34.821428571428569"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Ex07bViewController" customModule="AutoLayoutEx" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7ft-gD-DAA" userLabel="View1">
+                    <rect key="frame" x="182" y="423" width="50" height="50"/>
+                    <color key="backgroundColor" red="0.74140863369999999" green="0.68721016779999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="GFq-yY-CH0"/>
+                        <constraint firstAttribute="width" constant="50" id="N2G-iO-beO"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VXQ-VF-1xC" userLabel="View3">
+                    <rect key="frame" x="182" y="94" width="50" height="50"/>
+                    <color key="backgroundColor" red="0.74140863369999999" green="0.68721016779999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="KS6-aW-scS"/>
+                        <constraint firstAttribute="height" constant="50" id="vre-AT-96J"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dgm-Ey-wCH" userLabel="View4">
+                    <rect key="frame" x="182" y="311" width="50" height="50"/>
+                    <color key="backgroundColor" red="0.74140863369999999" green="0.68721016779999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="DU7-ZX-Vro"/>
+                        <constraint firstAttribute="height" constant="50" id="rn1-Xu-eFc"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" horizontalHuggingPriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="Fyx-DM-3W2" userLabel="View2">
+                    <rect key="frame" x="182" y="762" width="50" height="50"/>
+                    <color key="backgroundColor" red="0.74140863369999999" green="0.68721016779999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="Xl5-3w-umL"/>
+                        <constraint firstAttribute="height" constant="50" id="lcf-pm-bHe"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g86-m2-0KH" userLabel="View5">
+                    <rect key="frame" x="182" y="535" width="50" height="50"/>
+                    <color key="backgroundColor" red="0.74140863369999999" green="0.68721016779999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="Sq2-0o-bsC"/>
+                        <constraint firstAttribute="height" constant="50" id="rZn-wB-ENY"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="7ft-gD-DAA" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="4dc-bd-EnI"/>
+                <constraint firstItem="dgm-Ey-wCH" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="5TG-Xf-GHG"/>
+                <constraint firstItem="dgm-Ey-wCH" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" multiplier="0.75" id="Fh8-qQ-4QH"/>
+                <constraint firstItem="7ft-gD-DAA" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="JXw-0i-t8r"/>
+                <constraint firstItem="Fyx-DM-3W2" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ONO-m1-jkh"/>
+                <constraint firstItem="VXQ-VF-1xC" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="eIE-B1-eQA"/>
+                <constraint firstItem="g86-m2-0KH" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" multiplier="1.25" id="eUw-da-eBK"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Fyx-DM-3W2" secondAttribute="bottom" constant="50" id="u9z-0h-SIH"/>
+                <constraint firstItem="VXQ-VF-1xC" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="ulB-LK-OvC"/>
+                <constraint firstItem="g86-m2-0KH" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="x7p-81-F5q"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>
