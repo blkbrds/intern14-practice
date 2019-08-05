@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Ex05aViewController" customModule="AutoLayoutEx" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" horizontalHuggingPriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="z3c-Bc-kyA" userLabel="View2">
+                    <rect key="frame" x="141" y="427.5" width="41" height="41"/>
+                    <color key="backgroundColor" red="0.74140863369999999" green="0.68721016779999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="z3c-Bc-kyA" secondAttribute="height" multiplier="1:1" id="Yu5-vY-hR9"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kme-HH-Je7" userLabel="View1">
+                    <rect key="frame" x="50" y="427.5" width="41" height="41"/>
+                    <color key="backgroundColor" red="0.74140863369999999" green="0.68721016779999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Kme-HH-Je7" secondAttribute="height" multiplier="1:1" id="CfJ-tn-N39"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wf6-L1-8GI" userLabel="View3">
+                    <rect key="frame" x="232" y="427.5" width="41" height="41"/>
+                    <color key="backgroundColor" red="0.74140863369999999" green="0.68721016779999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="wf6-L1-8GI" secondAttribute="height" multiplier="1:1" id="OUw-6f-Fy9"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" horizontalHuggingPriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="CwE-oR-AsZ" userLabel="View4">
+                    <rect key="frame" x="323" y="427.5" width="41" height="41"/>
+                    <color key="backgroundColor" red="0.74140863369999999" green="0.68721016779999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="CwE-oR-AsZ" secondAttribute="height" multiplier="1:1" id="Ehh-rW-GJs"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Kme-HH-Je7" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="50" id="4Os-Yj-mHK"/>
+                <constraint firstItem="z3c-Bc-kyA" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="8Xv-tn-2Hg"/>
+                <constraint firstItem="Kme-HH-Je7" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="8mF-mW-sA3"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="CwE-oR-AsZ" secondAttribute="trailing" constant="50" id="Ais-Aq-nua"/>
+                <constraint firstItem="z3c-Bc-kyA" firstAttribute="leading" secondItem="Kme-HH-Je7" secondAttribute="trailing" constant="50" id="IDl-gT-Gpk"/>
+                <constraint firstItem="wf6-L1-8GI" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Kf4-WU-Lk4"/>
+                <constraint firstItem="wf6-L1-8GI" firstAttribute="width" secondItem="CwE-oR-AsZ" secondAttribute="width" id="L3v-n3-lR2"/>
+                <constraint firstItem="Kme-HH-Je7" firstAttribute="width" secondItem="z3c-Bc-kyA" secondAttribute="width" id="WU7-5e-cYu"/>
+                <constraint firstItem="CwE-oR-AsZ" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="XNO-wh-ebs"/>
+                <constraint firstItem="wf6-L1-8GI" firstAttribute="leading" secondItem="z3c-Bc-kyA" secondAttribute="trailing" constant="50" id="dwJ-2w-BVh"/>
+                <constraint firstItem="CwE-oR-AsZ" firstAttribute="leading" secondItem="wf6-L1-8GI" secondAttribute="trailing" constant="50" id="l0Y-Ws-Phw"/>
+                <constraint firstItem="z3c-Bc-kyA" firstAttribute="width" secondItem="wf6-L1-8GI" secondAttribute="width" id="xW5-T0-DVw"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>
