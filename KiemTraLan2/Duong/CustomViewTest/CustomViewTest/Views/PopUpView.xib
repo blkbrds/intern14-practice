@@ -10,16 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner">
-            <connections>
-                <outlet property="doneButtonView" destination="Nj5-Hd-F1w" id="RZ4-mz-nTh"/>
-                <outlet property="editImageView" destination="1GF-FD-YvM" id="QDT-CK-k5T"/>
-                <outlet property="editView" destination="tgS-kz-RlO" id="WxW-oi-Ldh"/>
-                <outlet property="nameTextField" destination="iW8-VO-emS" id="oBV-hG-UpW"/>
-                <outlet property="showNameButtonView" destination="RH3-KX-K90" id="izl-H3-mDg"/>
-                <outlet property="titleLabel" destination="hdT-8X-NA6" id="7W0-hG-4eH"/>
-            </connections>
-        </placeholder>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PopUpView" customModule="CustomViewTest" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="387" height="349"/>
@@ -91,6 +82,16 @@
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="contentLabel" destination="Ilq-6h-Y3F" id="Oo5-M1-4n0"/>
+                <outlet property="doneButtonView" destination="Nj5-Hd-F1w" id="Z5R-Ec-H34"/>
+                <outlet property="editImageView" destination="1GF-FD-YvM" id="Hzd-aG-FjV"/>
+                <outlet property="editView" destination="tgS-kz-RlO" id="2hN-c1-P5U"/>
+                <outlet property="mainView" destination="UBL-Yu-ToA" id="hKO-NM-LvR"/>
+                <outlet property="nameTextField" destination="iW8-VO-emS" id="F9f-lb-s5D"/>
+                <outlet property="showNameButtonView" destination="RH3-KX-K90" id="OuK-Ie-0Gs"/>
+                <outlet property="titleLabel" destination="hdT-8X-NA6" id="H5A-Pv-QfF"/>
+            </connections>
             <point key="canvasLocation" x="-128" y="-152"/>
         </view>
     </objects>
