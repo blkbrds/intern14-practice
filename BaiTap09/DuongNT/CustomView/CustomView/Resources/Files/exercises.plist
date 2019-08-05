@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>exercise 01</string>
+		<key>description</key>
+		<string>MyAvatar</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>exercise 02</string>
+		<key>description</key>
+		<string>MySliderView</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>exercise 03</string>
+		<key>description</key>
+		<string>MySliderView Upgrade</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>exercise 04</string>
+		<key>description</key>
+		<string>Custom button có badge number</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>exercise 05</string>
+		<key>description</key>
+		<string>Custom PickerView và DatePickerView</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>exercise 06</string>
+		<key>description</key>
+		<string>ChartView</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>exercise 07</string>
+		<key>description</key>
+		<string>Date picker view</string>
+	</dict>
+</array>
+</plist>
