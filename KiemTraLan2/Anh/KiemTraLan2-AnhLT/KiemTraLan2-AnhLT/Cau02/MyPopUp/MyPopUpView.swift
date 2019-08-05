@@ -73,6 +73,7 @@ class MyPopUpView: UIView {
             UIView.animate(withDuration: 0.3, animations: {
                 self.containerView.frame = frame
                 self.markView.alpha = 0
+                self.removeFromSuperview()
             }) { (done) in
                 if let delegate = self.delegate {
                     delegate.myPopUp(popUpView: self, needPerform: .hide

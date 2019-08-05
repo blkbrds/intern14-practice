@@ -30,20 +30,19 @@ class De: Dongvat {
     }
 }
 
-class Chuong {
-    var soDe: Int
-    var soGa: Int
-    var tongSoChan: Int
-    var biBenh: Bool
-    init(_ soDe: Int, soGa: Int, tongSoChan: Int) {
-        self.soDe = soDe
-        self.soGa = soGa
-        self.tongSoChan = tongSoChan
-    }
-
-    func tieuHuy(soGiaCam: Int, soGiaSuc: Int, soDongVatBenh: Int ) {
-        if biBenh == true {
-            
-        }
-    }
-}
+//class Chuong {
+//    var soDe: Int
+//    var soGa: Int
+//    var tongSoChan: Int
+//    var biBenh: Bool
+//    init(_ soDe: Int, soGa: Int, tongSoChan: Int) {
+//        self.soDe = soDe
+//        self.soGa = soGa
+//        self.tongSoChan = tongSoChan
+//    }
+//    func tieuHuy(soGiaCam: Int, soGiaSuc: Int, soDongVatBenh: Int ) {
+//        if biBenh == true {
+//            
+//        }
+//    }
+//}

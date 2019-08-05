@@ -20,7 +20,6 @@ class PopUpViewController: UIViewController {
         myPopUp = Bundle.main.loadNibNamed("MyPopUpView", owner: self, options: nil)?.first as? MyPopUpView
         myPopUp?.config()
         myPopUp?.delegate = self
-        self.view.addSubview(myPopUp!)
     }
 
     func config() {
@@ -29,6 +28,7 @@ class PopUpViewController: UIViewController {
     }
     
     @IBAction func editButtonTouchUpInside(_ sender: Any) {
+        view.addSubview(myPopUp!)
         myPopUp?.show(animation: true)
     }
 }
@@ -41,7 +41,7 @@ extension PopUpViewController: MyPopUpViewDelegate {
         case .hide:
             print("hide")
         case .showName:
-            let userName = popUpView.usernameTextField.text
+            let userName = editedName
             nameLabel.text = userName
             
         case .done:
