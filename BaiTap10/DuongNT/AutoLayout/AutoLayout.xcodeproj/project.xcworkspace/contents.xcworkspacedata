@@ -4,6 +4,12 @@
    <Group
       location = "group:Ex3"
       name = "Ex3">
+      <FileRef
+         location = "group:../../../../../../../../System/Volumes/Data/Users/nguyenduong/intern14-practice/BaiTap10/DuongNT/AutoLayout/AutoLayout/Views/Ex4/Ex4/BaiTap4ViewController.swift">
+      </FileRef>
+      <FileRef
+         location = "group:../../../../../../../../System/Volumes/Data/Users/nguyenduong/intern14-practice/BaiTap10/DuongNT/AutoLayout/AutoLayout/Views/Ex4/Ex4/BaiTap4ViewController.xib">
+      </FileRef>
       <Group
          location = "group:Ex3&apos;&apos;"
          name = "Ex3&apos;&apos;">

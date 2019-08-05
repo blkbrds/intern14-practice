@@ -53,6 +53,16 @@
 		1C8E7EA822F79C4300EEE2D1 /* BaiTap3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8E7EA122F79C4300EEE2D1 /* BaiTap3ViewController.swift */; };
 		1C8E7EA922F79C4300EEE2D1 /* BaiTap32ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8E7EA322F79C4300EEE2D1 /* BaiTap32ViewController.swift */; };
 		1C8E7EAA22F79C4300EEE2D1 /* BaiTap32ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C8E7EA422F79C4300EEE2D1 /* BaiTap32ViewController.xib */; };
+		1C8E817022F7A90500EEE2D1 /* BaiTap44ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C8E816522F7A90500EEE2D1 /* BaiTap44ViewController.xib */; };
+		1C8E817122F7A90500EEE2D1 /* BaiTap44ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8E816622F7A90500EEE2D1 /* BaiTap44ViewController.swift */; };
+		1C8E817222F7A90500EEE2D1 /* BaiTap42ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C8E816822F7A90500EEE2D1 /* BaiTap42ViewController.xib */; };
+		1C8E817322F7A90500EEE2D1 /* BaiTap42ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8E816922F7A90500EEE2D1 /* BaiTap42ViewController.swift */; };
+		1C8E817422F7A90500EEE2D1 /* BaiTap4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8E816B22F7A90500EEE2D1 /* BaiTap4ViewController.swift */; };
+		1C8E817522F7A90500EEE2D1 /* BaiTap4ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C8E816C22F7A90500EEE2D1 /* BaiTap4ViewController.xib */; };
+		1C8E817622F7A90500EEE2D1 /* BaiTap43ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C8E816E22F7A90500EEE2D1 /* BaiTap43ViewController.xib */; };
+		1C8E817722F7A90500EEE2D1 /* BaiTap43ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8E816F22F7A90500EEE2D1 /* BaiTap43ViewController.swift */; };
+		1C8E818022F7D8E000EEE2D1 /* BaiTap45ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C8E817E22F7D8E000EEE2D1 /* BaiTap45ViewController.xib */; };
+		1C8E818122F7D8E000EEE2D1 /* BaiTap45ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8E817F22F7D8E000EEE2D1 /* BaiTap45ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -104,6 +114,16 @@
 		1C8E7EA122F79C4300EEE2D1 /* BaiTap3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaiTap3ViewController.swift; sourceTree = "<group>"; };
 		1C8E7EA322F79C4300EEE2D1 /* BaiTap32ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaiTap32ViewController.swift; sourceTree = "<group>"; };
 		1C8E7EA422F79C4300EEE2D1 /* BaiTap32ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaiTap32ViewController.xib; sourceTree = "<group>"; };
+		1C8E816522F7A90500EEE2D1 /* BaiTap44ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaiTap44ViewController.xib; sourceTree = "<group>"; };
+		1C8E816622F7A90500EEE2D1 /* BaiTap44ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaiTap44ViewController.swift; sourceTree = "<group>"; };
+		1C8E816822F7A90500EEE2D1 /* BaiTap42ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaiTap42ViewController.xib; sourceTree = "<group>"; };
+		1C8E816922F7A90500EEE2D1 /* BaiTap42ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaiTap42ViewController.swift; sourceTree = "<group>"; };
+		1C8E816B22F7A90500EEE2D1 /* BaiTap4ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaiTap4ViewController.swift; sourceTree = "<group>"; };
+		1C8E816C22F7A90500EEE2D1 /* BaiTap4ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaiTap4ViewController.xib; sourceTree = "<group>"; };
+		1C8E816E22F7A90500EEE2D1 /* BaiTap43ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaiTap43ViewController.xib; sourceTree = "<group>"; };
+		1C8E816F22F7A90500EEE2D1 /* BaiTap43ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaiTap43ViewController.swift; sourceTree = "<group>"; };
+		1C8E817E22F7D8E000EEE2D1 /* BaiTap45ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaiTap45ViewController.xib; sourceTree = "<group>"; };
+		1C8E817F22F7D8E000EEE2D1 /* BaiTap45ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaiTap45ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +188,7 @@
 		07E33E2020DC8D60004B6E52 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				1C8E816322F7A90500EEE2D1 /* Ex4 */,
 				1C8E7E9B22F79C4300EEE2D1 /* Ex3 */,
 				1C8E7E8022F6F7A900EEE2D1 /* Ex2 */,
 				1C8E7E6322F6EDC400EEE2D1 /* Ex1 */,
@@ -435,6 +456,63 @@
 			path = "Ex3'";
 			sourceTree = "<group>";
 		};
+		1C8E816322F7A90500EEE2D1 /* Ex4 */ = {
+			isa = PBXGroup;
+			children = (
+				1C8E816A22F7A90500EEE2D1 /* Ex4 */,
+				1C8E816722F7A90500EEE2D1 /* Ex4' */,
+				1C8E816D22F7A90500EEE2D1 /* Ex4'' */,
+				1C8E816422F7A90500EEE2D1 /* Ex4''' */,
+				1C8E817D22F7D8E000EEE2D1 /* Ex4'''' copy */,
+			);
+			path = Ex4;
+			sourceTree = "<group>";
+		};
+		1C8E816422F7A90500EEE2D1 /* Ex4''' */ = {
+			isa = PBXGroup;
+			children = (
+				1C8E816522F7A90500EEE2D1 /* BaiTap44ViewController.xib */,
+				1C8E816622F7A90500EEE2D1 /* BaiTap44ViewController.swift */,
+			);
+			path = "Ex4'''";
+			sourceTree = "<group>";
+		};
+		1C8E816722F7A90500EEE2D1 /* Ex4' */ = {
+			isa = PBXGroup;
+			children = (
+				1C8E816822F7A90500EEE2D1 /* BaiTap42ViewController.xib */,
+				1C8E816922F7A90500EEE2D1 /* BaiTap42ViewController.swift */,
+			);
+			path = "Ex4'";
+			sourceTree = "<group>";
+		};
+		1C8E816A22F7A90500EEE2D1 /* Ex4 */ = {
+			isa = PBXGroup;
+			children = (
+				1C8E816B22F7A90500EEE2D1 /* BaiTap4ViewController.swift */,
+				1C8E816C22F7A90500EEE2D1 /* BaiTap4ViewController.xib */,
+			);
+			path = Ex4;
+			sourceTree = "<group>";
+		};
+		1C8E816D22F7A90500EEE2D1 /* Ex4'' */ = {
+			isa = PBXGroup;
+			children = (
+				1C8E816E22F7A90500EEE2D1 /* BaiTap43ViewController.xib */,
+				1C8E816F22F7A90500EEE2D1 /* BaiTap43ViewController.swift */,
+			);
+			path = "Ex4''";
+			sourceTree = "<group>";
+		};
+		1C8E817D22F7D8E000EEE2D1 /* Ex4'''' copy */ = {
+			isa = PBXGroup;
+			children = (
+				1C8E817E22F7D8E000EEE2D1 /* BaiTap45ViewController.xib */,
+				1C8E817F22F7D8E000EEE2D1 /* BaiTap45ViewController.swift */,
+			);
+			path = "Ex4'''' copy";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -502,6 +580,7 @@
 				07E33E4E20DC90C3004B6E52 /* Ex6ViewController.xib in Resources */,
 				07E33E3E20DC906B004B6E52 /* Ex2ViewController.xib in Resources */,
 				1C8E7EA722F79C4300EEE2D1 /* BaiTap3ViewController.xib in Resources */,
+				1C8E817522F7A90500EEE2D1 /* BaiTap4ViewController.xib in Resources */,
 				1C8E7EAA22F79C4300EEE2D1 /* BaiTap32ViewController.xib in Resources */,
 				07E33E5220DC90CF004B6E52 /* Ex7ViewController.xib in Resources */,
 				07E33E5E20DC9102004B6E52 /* Ex9ViewController.xib in Resources */,
@@ -509,10 +588,14 @@
 				07E33E4620DC9095004B6E52 /* Ex4ViewController.xib in Resources */,
 				1C8E7E6722F6EDC400EEE2D1 /* BaiTap1ViewController.xib in Resources */,
 				07E33E6D20DC9F1B004B6E52 /* exercises.plist in Resources */,
+				1C8E817022F7A90500EEE2D1 /* BaiTap44ViewController.xib in Resources */,
 				07E33E3A20DC9059004B6E52 /* Ex1ViewController.xib in Resources */,
+				1C8E817622F7A90500EEE2D1 /* BaiTap43ViewController.xib in Resources */,
+				1C8E817222F7A90500EEE2D1 /* BaiTap42ViewController.xib in Resources */,
 				1C8E7E7022F6EE7600EEE2D1 /* BaiTap12ViewController.xib in Resources */,
 				07E33E6220DC910E004B6E52 /* Ex10ViewController.xib in Resources */,
 				07E33E4A20DC90B6004B6E52 /* Ex5ViewController.xib in Resources */,
+				1C8E818022F7D8E000EEE2D1 /* BaiTap45ViewController.xib in Resources */,
 				1C8E7EA622F79C4300EEE2D1 /* BaiTap33ViewController.xib in Resources */,
 				1C8E7E8922F6F7A900EEE2D1 /* BaiTap2ViewController.xib in Resources */,
 				1C8E7E8822F6F7A900EEE2D1 /* BaiTap22ViewController.xib in Resources */,
@@ -535,20 +618,25 @@
 				07E33E7320DCA04D004B6E52 /* Exercise.swift in Sources */,
 				07E33E3920DC9059004B6E52 /* Ex1ViewController.swift in Sources */,
 				07E33E6920DC9826004B6E52 /* HomeCell.swift in Sources */,
+				1C8E817322F7A90500EEE2D1 /* BaiTap42ViewController.swift in Sources */,
 				07E33E4520DC9095004B6E52 /* Ex4ViewController.swift in Sources */,
 				07E33E7020DC9FF4004B6E52 /* DataManagement.swift in Sources */,
 				07E33E0E20DC8D34004B6E52 /* AppDelegate.swift in Sources */,
+				1C8E818122F7D8E000EEE2D1 /* BaiTap45ViewController.swift in Sources */,
 				07E33E4120DC907B004B6E52 /* Ex3ViewController.swift in Sources */,
 				07E33E4D20DC90C3004B6E52 /* Ex6ViewController.swift in Sources */,
+				1C8E817422F7A90500EEE2D1 /* BaiTap4ViewController.swift in Sources */,
 				07E33E2620DC8DD7004B6E52 /* HomeViewController.swift in Sources */,
 				07E33E5120DC90CF004B6E52 /* Ex7ViewController.swift in Sources */,
 				1C8E7E8722F6F7A900EEE2D1 /* BaiTap22ViewController.swift in Sources */,
 				07E33E3D20DC906B004B6E52 /* Ex2ViewController.swift in Sources */,
+				1C8E817122F7A90500EEE2D1 /* BaiTap44ViewController.swift in Sources */,
 				07E33E5520DC90DD004B6E52 /* Ex8ViewController.swift in Sources */,
 				07E33E5D20DC9102004B6E52 /* Ex9ViewController.swift in Sources */,
 				1C8E7E8A22F6F7A900EEE2D1 /* BaiTap2ViewController.swift in Sources */,
 				07E33E2A20DC8E36004B6E52 /* BaseViewController.swift in Sources */,
 				1C8E7EA822F79C4300EEE2D1 /* BaiTap3ViewController.swift in Sources */,
+				1C8E817722F7A90500EEE2D1 /* BaiTap43ViewController.swift in Sources */,
 				1C8E7EA522F79C4300EEE2D1 /* BaiTap33ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
