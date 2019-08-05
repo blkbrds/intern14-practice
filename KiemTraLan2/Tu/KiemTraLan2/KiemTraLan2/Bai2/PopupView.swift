@@ -20,6 +20,7 @@ class PopupView: UIView {
         case hide
     }
     
+    @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var editNameTextField: UITextField!
     @IBOutlet weak var markView: UIView!
     @IBOutlet weak var containerView: UIView!
@@ -27,6 +28,10 @@ class PopupView: UIView {
     
     func config() {
         self.frame = UIScreen.main.bounds
+        imageView.layer.borderWidth = 2
+        imageView.layer.borderColor = UIColor.white.cgColor
+        imageView.layer.cornerRadius = imageView.bounds.width / 2
+        imageView.layer.masksToBounds = true
         hide(animation: false)
     }
     
@@ -40,7 +45,6 @@ class PopupView: UIView {
                 self.containerView.frame = frame
                 self.markView.alpha = 0.3
             }) { (done) in
-                //delegate
                 if let delegate = self.delegate {
                     delegate.popupView(view: self, needPerform: .show, edittedName: nil)
                 }
@@ -60,7 +64,6 @@ class PopupView: UIView {
                 self.containerView.frame = frame
                 self.markView.alpha = 0
             }) { (done) in
-                //delegate
                 self.isHidden = true
                 if let delegate = self.delegate {
                     delegate.popupView(view: self, needPerform: .hide, edittedName: nil)

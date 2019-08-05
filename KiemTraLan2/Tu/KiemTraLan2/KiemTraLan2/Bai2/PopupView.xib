@@ -90,6 +90,7 @@
             <connections>
                 <outlet property="containerView" destination="xZC-2G-0jJ" id="Htz-Zg-OIS"/>
                 <outlet property="editNameTextField" destination="Dna-6Z-kiI" id="plx-kv-JvR"/>
+                <outlet property="imageView" destination="0k1-8m-vue" id="G6t-Ya-bnA"/>
                 <outlet property="markView" destination="jDY-n9-9Om" id="lNI-HA-1hx"/>
             </connections>
             <point key="canvasLocation" x="-252" y="90"/>
