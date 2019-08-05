@@ -29,7 +29,7 @@ class BaiTap1: UIViewController {
         view.addSubview(userName)
         
         // Add button
-        let button = UIButton(frame: CGRect(x: 50, y: 100, width: 100, height: 250))
+        let button = UIButton(frame: CGRect(x: 50, y: 100, width: 100, height: 100))
         button.backgroundColor = .clear
         button.addTarget(self, action: #selector(buttonDidClick), for:. touchUpInside)
         view.addSubview(button)
