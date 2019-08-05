@@ -26,10 +26,10 @@ class InfoViewController: UIViewController {
             self.view.addSubview(popUp)
         }
         nameTextField.delegate = self
+        nameTextField.isHidden = false
+        
         customPopUp.delegate = self
         customPopUp.isHidden = false
-        nameTextField.isHidden = false
-
     }
 
 
@@ -42,10 +42,7 @@ class InfoViewController: UIViewController {
 }
 
 extension InfoViewController: UITextFieldDelegate {
-    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
 
-        return true
-    }
 }
 
 extension InfoViewController: PopUpDelegate {
@@ -55,7 +52,6 @@ extension InfoViewController: PopUpDelegate {
             print("tap")
         case .showName:
             nameTextField.text = name
-            
         }
     }
 }
