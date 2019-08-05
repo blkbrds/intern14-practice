@@ -57,22 +57,11 @@
                                 <action selector="baiTapTouchUpInside:" destination="-1" eventType="touchUpInside" id="rj1-WF-2dp"/>
                             </connections>
                         </button>
-                        <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tt3-C7-lPP">
-                            <rect key="frame" x="145" y="205" width="90" height="50"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <state key="normal" title="Button">
-                                <color key="titleColor" red="0.9711525889" green="0.9711525889" blue="0.9711525889" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </state>
-                            <connections>
-                                <action selector="baiTapTouchUpInside:" destination="-1" eventType="touchUpInside" id="qKI-iu-UjE"/>
-                            </connections>
-                        </button>
                         <button opaque="NO" tag="9" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oY8-1P-Imq">
                             <rect key="frame" x="23" y="296" width="90" height="50"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <state key="normal" title="Button">
+                            <state key="normal" title="Bai 4''">
                                 <color key="titleColor" red="0.9711525889" green="0.9711525889" blue="0.9711525889" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
                             <connections>
@@ -83,7 +72,7 @@
                             <rect key="frame" x="148" y="296" width="90" height="50"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <state key="normal" title="Button">
+                            <state key="normal" title="Bai 4'''">
                                 <color key="titleColor" red="0.9711525889" green="0.9711525889" blue="0.9711525889" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
                             <connections>
@@ -94,7 +83,7 @@
                             <rect key="frame" x="264" y="205" width="90" height="50"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <state key="normal" title="Button">
+                            <state key="normal" title="Bai 4'">
                                 <color key="titleColor" red="0.9711525889" green="0.9711525889" blue="0.9711525889" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
                             <connections>
@@ -127,7 +116,7 @@
                             <rect key="frame" x="20" y="205" width="90" height="50"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <state key="normal" title="Button">
+                            <state key="normal" title="Bai 3''">
                                 <color key="titleColor" red="0.9711525889" green="0.9711525889" blue="0.9711525889" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
                             <connections>
@@ -160,11 +149,22 @@
                             <rect key="frame" x="267" y="296" width="90" height="50"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <state key="normal" title="Button">
+                            <state key="normal" title="Bai4''''">
                                 <color key="titleColor" red="0.9711525889" green="0.9711525889" blue="0.9711525889" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
                             <connections>
                                 <action selector="baiTapTouchUpInside:" destination="-1" eventType="touchUpInside" id="Zy6-91-JQT"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tt3-C7-lPP">
+                            <rect key="frame" x="145" y="205" width="90" height="50"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="Bai 4">
+                                <color key="titleColor" red="0.9711525889" green="0.9711525889" blue="0.9711525889" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="baiTapTouchUpInside:" destination="-1" eventType="touchUpInside" id="qKI-iu-UjE"/>
                             </connections>
                         </button>
                     </subviews>
