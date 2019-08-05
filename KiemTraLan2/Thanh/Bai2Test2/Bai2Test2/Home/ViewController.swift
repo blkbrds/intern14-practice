@@ -25,6 +25,7 @@ class ViewController: UIViewController {
         myPopupView.delegate = self
         view.addSubview(myPopupView)
         myPopupView.designPopup()
+        myPopupView.hide(animation: true)
     }
     
     @IBAction func editNameButtonTouchUpInside() {
