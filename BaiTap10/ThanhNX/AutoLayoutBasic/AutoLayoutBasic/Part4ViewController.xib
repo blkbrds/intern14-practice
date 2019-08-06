@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Part4ViewController" customModule="AutoLayoutBasic" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kR0-IQ-SKf">
+                    <rect key="frame" x="151" y="392" width="112" height="112"/>
+                    <color key="backgroundColor" red="0.3575699329" green="0.60757124419999997" blue="0.83617013689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="kR0-IQ-SKf" secondAttribute="height" id="hct-4u-E3n"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qao-xY-0di">
+                    <rect key="frame" x="151" y="168" width="112" height="112"/>
+                    <color key="backgroundColor" red="0.3575699329" green="0.60757124419999997" blue="0.83617013689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Qao-xY-0di" secondAttribute="height" multiplier="1:1" id="MI2-YP-HXa"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ANv-rH-M29">
+                    <rect key="frame" x="151" y="616" width="112" height="112"/>
+                    <color key="backgroundColor" red="0.3575699329" green="0.60757124419999997" blue="0.83617013689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="ANv-rH-M29" secondAttribute="height" multiplier="1:1" id="Las-zE-ky3"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="kR0-IQ-SKf" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="HEd-KL-bN9"/>
+                <constraint firstItem="Qao-xY-0di" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="KRe-AQ-X3n"/>
+                <constraint firstItem="kR0-IQ-SKf" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Lvu-ax-d4t"/>
+                <constraint firstItem="ANv-rH-M29" firstAttribute="height" secondItem="kR0-IQ-SKf" secondAttribute="height" id="Rt1-19-Vfa"/>
+                <constraint firstItem="ANv-rH-M29" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" multiplier="1.5" id="SQP-kr-rcf"/>
+                <constraint firstItem="Qao-xY-0di" firstAttribute="height" secondItem="kR0-IQ-SKf" secondAttribute="height" id="fmI-Ll-4Hn"/>
+                <constraint firstItem="kR0-IQ-SKf" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="1/8" id="giw-d1-iJT"/>
+                <constraint firstItem="Qao-xY-0di" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" multiplier="0.5" id="iGD-sH-8cU"/>
+                <constraint firstItem="ANv-rH-M29" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="luh-pe-t4n"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>
