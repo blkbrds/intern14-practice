@@ -20,9 +20,9 @@ final class Bai3ViewController: UIViewController {
     @IBOutlet private weak var temperatureTextField: UITextField!
     @IBOutlet private weak var humidityTextField: UITextField!
     @IBOutlet private weak var windPowerTextField: UITextField!
-    fileprivate var temperatureView: MySliderView?
-    fileprivate var humidityView: MySliderView?
-    fileprivate var windPowerView: MySliderView?
+    private var temperatureView: MySliderView?
+    private var humidityView: MySliderView?
+    private var windPowerView: MySliderView?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,21 +30,23 @@ final class Bai3ViewController: UIViewController {
         
         temperatureView = Bundle.main.loadNibNamed("MySliderView", owner: self, options: nil)?[0] as? MySliderView
         temperatureView?.frame = CGRect(x: 30, y: 320, width: 353, height: 76)
-        temperatureView?.tag = SliderTag.temperature.rawValue
+        temperatureView?.index = 0
         view.addSubview(temperatureView!)
         temperatureView?.delegate = self
         temperatureView?.dataSource = self
         
         humidityView = Bundle.main.loadNibNamed("MySliderView", owner: self, options: nil)?[0] as? MySliderView
         humidityView?.frame = CGRect(x: 30, y: 520, width: 353, height: 76)
-        humidityView?.tag = SliderTag.humidity.rawValue
+        humidityView?.index = 1
+        humidityView?.orangeView.backgroundColor = .purple
         view.addSubview(humidityView!)
         humidityView?.delegate = self
         humidityView?.dataSource = self
         
         windPowerView = Bundle.main.loadNibNamed("MySliderView", owner: self, options: nil)?[0] as? MySliderView
         windPowerView?.frame = CGRect(x: 30, y: 720, width: 353, height: 76)
-        windPowerView?.tag = SliderTag.windPower.rawValue
+        windPowerView?.index = 2
+        windPowerView?.orangeView.backgroundColor = #colorLiteral(red: 0.9098039269, green: 0.4784313738, blue: 0.6431372762, alpha: 1)
         view.addSubview(windPowerView!)
         windPowerView?.delegate = self
         windPowerView?.dataSource = self
@@ -74,7 +76,7 @@ extension Bai3ViewController: MySliderViewDelegate {
     func view(_ view: MySliderView, needPerformAction action: MySliderView.Action) {
         switch action {
         case .getPercent(let result):
-            guard let sliderTag: SliderTag = SliderTag(rawValue: view.tag) else { return }
+            guard let sliderTag: SliderTag = SliderTag(rawValue: view.index) else { return }
             switch sliderTag {
             case .temperature:
                 temperatureTextField.text = String(result)
@@ -89,7 +91,7 @@ extension Bai3ViewController: MySliderViewDelegate {
 
 extension Bai3ViewController: MySliderViewDataSource {
     func getPercent(_ view: MySliderView) -> Int {
-        guard let sliderTag: SliderTag = SliderTag(rawValue: view.tag) else { return 0 }
+        guard let sliderTag: SliderTag = SliderTag(rawValue: view.index) else { return 0 }
         switch sliderTag {
         case .temperature:
             guard let text = temperatureTextField.text,
