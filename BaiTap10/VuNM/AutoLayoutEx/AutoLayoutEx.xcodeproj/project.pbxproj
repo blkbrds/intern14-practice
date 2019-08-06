@@ -36,6 +36,26 @@
 		F071243522F447DB0087D4EB /* Ex04dViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F071243322F447DB0087D4EB /* Ex04dViewController.xib */; };
 		F071243B22F449FB0087D4EB /* Ex05ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F071243922F449FB0087D4EB /* Ex05ViewController.swift */; };
 		F071243C22F449FB0087D4EB /* Ex05ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F071243A22F449FB0087D4EB /* Ex05ViewController.xib */; };
+		F0ED4C4722F9254A00A407AF /* Pic01ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ED4C4522F9254A00A407AF /* Pic01ViewController.swift */; };
+		F0ED4C4822F9254A00A407AF /* Pic01ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0ED4C4622F9254A00A407AF /* Pic01ViewController.xib */; };
+		F0ED4C4B22F9255C00A407AF /* Pic02ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ED4C4922F9255C00A407AF /* Pic02ViewController.swift */; };
+		F0ED4C4C22F9255C00A407AF /* Pic02ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0ED4C4A22F9255C00A407AF /* Pic02ViewController.xib */; };
+		F0ED4C4F22F925DB00A407AF /* Pic03ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ED4C4D22F925DB00A407AF /* Pic03ViewController.swift */; };
+		F0ED4C5022F925DB00A407AF /* Pic03ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0ED4C4E22F925DB00A407AF /* Pic03ViewController.xib */; };
+		F0ED4C5322F925ED00A407AF /* Pic04ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ED4C5122F925ED00A407AF /* Pic04ViewController.swift */; };
+		F0ED4C5422F925ED00A407AF /* Pic04ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0ED4C5222F925ED00A407AF /* Pic04ViewController.xib */; };
+		F0ED4C5722F9267600A407AF /* Pic05ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ED4C5522F9267600A407AF /* Pic05ViewController.swift */; };
+		F0ED4C5822F9267600A407AF /* Pic05ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0ED4C5622F9267600A407AF /* Pic05ViewController.xib */; };
+		F0ED4C5B22F9268200A407AF /* Pic06ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ED4C5922F9268200A407AF /* Pic06ViewController.swift */; };
+		F0ED4C5C22F9268200A407AF /* Pic06ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0ED4C5A22F9268200A407AF /* Pic06ViewController.xib */; };
+		F0ED4C5F22F9269200A407AF /* Pic07ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ED4C5D22F9269200A407AF /* Pic07ViewController.swift */; };
+		F0ED4C6022F9269200A407AF /* Pic07ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0ED4C5E22F9269200A407AF /* Pic07ViewController.xib */; };
+		F0ED4C6322F926A400A407AF /* Pic08ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ED4C6122F926A400A407AF /* Pic08ViewController.swift */; };
+		F0ED4C6422F926A400A407AF /* Pic08ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0ED4C6222F926A400A407AF /* Pic08ViewController.xib */; };
+		F0ED4C6722F9275B00A407AF /* Pic09ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ED4C6522F9275B00A407AF /* Pic09ViewController.swift */; };
+		F0ED4C6822F9275B00A407AF /* Pic09ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0ED4C6622F9275B00A407AF /* Pic09ViewController.xib */; };
+		F0ED4C6B22F9279400A407AF /* Pic10ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ED4C6922F9279400A407AF /* Pic10ViewController.swift */; };
+		F0ED4C6C22F9279400A407AF /* Pic10ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0ED4C6A22F9279400A407AF /* Pic10ViewController.xib */; };
 		F0ED7FC922F7C82E0064C204 /* Ex05aViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ED7FC722F7C82E0064C204 /* Ex05aViewController.swift */; };
 		F0ED7FCA22F7C82E0064C204 /* Ex05aViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0ED7FC822F7C82E0064C204 /* Ex05aViewController.xib */; };
 		F0ED7FCE22F7CA710064C204 /* Ex05bViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ED7FCC22F7CA710064C204 /* Ex05bViewController.swift */; };
@@ -54,38 +74,34 @@
 		F0ED7FEE22F7DF580064C204 /* Ex06cViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0ED7FEC22F7DF580064C204 /* Ex06cViewController.xib */; };
 		F0ED7FF222F7E1800064C204 /* Ex06dViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ED7FF022F7E1800064C204 /* Ex06dViewController.swift */; };
 		F0ED7FF322F7E1800064C204 /* Ex06dViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0ED7FF122F7E1800064C204 /* Ex06dViewController.xib */; };
-		F0ED7FF822F7E2D90064C204 /* Ex07ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ED7FF622F7E2D90064C204 /* Ex07ViewController.swift */; };
-		F0ED7FF922F7E2D90064C204 /* Ex07ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0ED7FF722F7E2D90064C204 /* Ex07ViewController.xib */; };
-		F0ED7FFD22F7E3E80064C204 /* Ex07aViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ED7FFB22F7E3E80064C204 /* Ex07aViewController.swift */; };
-		F0ED7FFE22F7E3E80064C204 /* Ex07aViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0ED7FFC22F7E3E80064C204 /* Ex07aViewController.xib */; };
-		F0ED800222F7E7F20064C204 /* Ex07bViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ED800022F7E7F20064C204 /* Ex07bViewController.swift */; };
-		F0ED800322F7E7F20064C204 /* Ex07bViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0ED800122F7E7F20064C204 /* Ex07bViewController.xib */; };
-		F0ED800722F7E8B20064C204 /* Ex07cViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ED800522F7E8B20064C204 /* Ex07cViewController.swift */; };
-		F0ED800822F7E8B20064C204 /* Ex07cViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0ED800622F7E8B20064C204 /* Ex07cViewController.xib */; };
-		F0ED800C22F7E9C10064C204 /* Ex07dViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ED800A22F7E9C10064C204 /* Ex07dViewController.swift */; };
-		F0ED800D22F7E9C10064C204 /* Ex07dViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0ED800B22F7E9C10064C204 /* Ex07dViewController.xib */; };
+		F0ED7FF822F7E2D90064C204 /* Ex07aViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ED7FF622F7E2D90064C204 /* Ex07aViewController.swift */; };
+		F0ED7FF922F7E2D90064C204 /* Ex07aViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0ED7FF722F7E2D90064C204 /* Ex07aViewController.xib */; };
+		F0ED7FFD22F7E3E80064C204 /* Ex07aaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ED7FFB22F7E3E80064C204 /* Ex07aaViewController.swift */; };
+		F0ED7FFE22F7E3E80064C204 /* Ex07aaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0ED7FFC22F7E3E80064C204 /* Ex07aaViewController.xib */; };
+		F0ED800222F7E7F20064C204 /* Ex07abViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ED800022F7E7F20064C204 /* Ex07abViewController.swift */; };
+		F0ED800322F7E7F20064C204 /* Ex07abViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0ED800122F7E7F20064C204 /* Ex07abViewController.xib */; };
+		F0ED800722F7E8B20064C204 /* Ex07acViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ED800522F7E8B20064C204 /* Ex07acViewController.swift */; };
+		F0ED800822F7E8B20064C204 /* Ex07acViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0ED800622F7E8B20064C204 /* Ex07acViewController.xib */; };
+		F0ED800C22F7E9C10064C204 /* Ex07adViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ED800A22F7E9C10064C204 /* Ex07adViewController.swift */; };
+		F0ED800D22F7E9C10064C204 /* Ex07adViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0ED800B22F7E9C10064C204 /* Ex07adViewController.xib */; };
 		F0ED801222F7EA990064C204 /* Ex08ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ED801022F7EA990064C204 /* Ex08ViewController.swift */; };
 		F0ED801322F7EA990064C204 /* Ex08ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0ED801122F7EA990064C204 /* Ex08ViewController.xib */; };
-		F0ED801922F7EB420064C204 /* Ex07ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ED801722F7EB420064C204 /* Ex07ViewController.swift */; };
-		F0ED801A22F7EB420064C204 /* Ex07ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0ED801822F7EB420064C204 /* Ex07ViewController.xib */; };
-		F0ED801E22F7ECC70064C204 /* Ex07aViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ED801C22F7ECC70064C204 /* Ex07aViewController.swift */; };
-		F0ED801F22F7ECC70064C204 /* Ex07aViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0ED801D22F7ECC70064C204 /* Ex07aViewController.xib */; };
-		F0ED802322F7ED630064C204 /* Ex07bViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ED802122F7ED630064C204 /* Ex07bViewController.swift */; };
-		F0ED802422F7ED630064C204 /* Ex07bViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0ED802222F7ED630064C204 /* Ex07bViewController.xib */; };
-		F0ED802822F7EEEE0064C204 /* Ex07cViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ED802622F7EEEE0064C204 /* Ex07cViewController.swift */; };
-		F0ED802922F7EEEE0064C204 /* Ex07cViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0ED802722F7EEEE0064C204 /* Ex07cViewController.xib */; };
-		F0ED802D22F805A50064C204 /* Ex07dViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ED802B22F805A50064C204 /* Ex07dViewController.swift */; };
-		F0ED802E22F805A50064C204 /* Ex07dViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0ED802C22F805A50064C204 /* Ex07dViewController.xib */; };
-		F0ED803322F806BD0064C204 /* Ex07ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ED803122F806BD0064C204 /* Ex07ViewController.swift */; };
-		F0ED803422F806BD0064C204 /* Ex07ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0ED803222F806BD0064C204 /* Ex07ViewController.xib */; };
-		F0ED803822F807C00064C204 /* Ex07aViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ED803622F807C00064C204 /* Ex07aViewController.swift */; };
-		F0ED803922F807C00064C204 /* Ex07aViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0ED803722F807C00064C204 /* Ex07aViewController.xib */; };
-		F0ED803D22F808AE0064C204 /* Ex07bViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ED803B22F808AE0064C204 /* Ex07bViewController.swift */; };
-		F0ED803E22F808AE0064C204 /* Ex07bViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0ED803C22F808AE0064C204 /* Ex07bViewController.xib */; };
-		F0ED804222F8099B0064C204 /* Ex07cViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ED804022F8099B0064C204 /* Ex07cViewController.swift */; };
-		F0ED804322F8099B0064C204 /* Ex07cViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0ED804122F8099B0064C204 /* Ex07cViewController.xib */; };
-		F0ED804722F80A210064C204 /* Ex07dViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ED804522F80A210064C204 /* Ex07dViewController.swift */; };
-		F0ED804822F80A210064C204 /* Ex07dViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0ED804622F80A210064C204 /* Ex07dViewController.xib */; };
+		F0ED801922F7EB420064C204 /* Ex07bViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ED801722F7EB420064C204 /* Ex07bViewController.swift */; };
+		F0ED801A22F7EB420064C204 /* Ex07bViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0ED801822F7EB420064C204 /* Ex07bViewController.xib */; };
+		F0ED802322F7ED630064C204 /* Ex07bbViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ED802122F7ED630064C204 /* Ex07bbViewController.swift */; };
+		F0ED802422F7ED630064C204 /* Ex07bbViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0ED802222F7ED630064C204 /* Ex07bbViewController.xib */; };
+		F0ED802822F7EEEE0064C204 /* Ex07bcViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ED802622F7EEEE0064C204 /* Ex07bcViewController.swift */; };
+		F0ED802922F7EEEE0064C204 /* Ex07bcViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0ED802722F7EEEE0064C204 /* Ex07bcViewController.xib */; };
+		F0ED802D22F805A50064C204 /* Ex07bdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ED802B22F805A50064C204 /* Ex07bdViewController.swift */; };
+		F0ED802E22F805A50064C204 /* Ex07bdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0ED802C22F805A50064C204 /* Ex07bdViewController.xib */; };
+		F0ED803822F807C00064C204 /* Ex07caViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ED803622F807C00064C204 /* Ex07caViewController.swift */; };
+		F0ED803922F807C00064C204 /* Ex07caViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0ED803722F807C00064C204 /* Ex07caViewController.xib */; };
+		F0ED803D22F808AE0064C204 /* Ex07cbViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ED803B22F808AE0064C204 /* Ex07cbViewController.swift */; };
+		F0ED803E22F808AE0064C204 /* Ex07cbViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0ED803C22F808AE0064C204 /* Ex07cbViewController.xib */; };
+		F0ED804222F8099B0064C204 /* Ex07ccViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ED804022F8099B0064C204 /* Ex07ccViewController.swift */; };
+		F0ED804322F8099B0064C204 /* Ex07ccViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0ED804122F8099B0064C204 /* Ex07ccViewController.xib */; };
+		F0ED804722F80A210064C204 /* Ex07cdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ED804522F80A210064C204 /* Ex07cdViewController.swift */; };
+		F0ED804822F80A210064C204 /* Ex07cdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0ED804622F80A210064C204 /* Ex07cdViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -120,6 +136,26 @@
 		F071243322F447DB0087D4EB /* Ex04dViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex04dViewController.xib; sourceTree = "<group>"; };
 		F071243922F449FB0087D4EB /* Ex05ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex05ViewController.swift; sourceTree = "<group>"; };
 		F071243A22F449FB0087D4EB /* Ex05ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex05ViewController.xib; sourceTree = "<group>"; };
+		F0ED4C4522F9254A00A407AF /* Pic01ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pic01ViewController.swift; sourceTree = "<group>"; };
+		F0ED4C4622F9254A00A407AF /* Pic01ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Pic01ViewController.xib; sourceTree = "<group>"; };
+		F0ED4C4922F9255C00A407AF /* Pic02ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pic02ViewController.swift; sourceTree = "<group>"; };
+		F0ED4C4A22F9255C00A407AF /* Pic02ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Pic02ViewController.xib; sourceTree = "<group>"; };
+		F0ED4C4D22F925DB00A407AF /* Pic03ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pic03ViewController.swift; sourceTree = "<group>"; };
+		F0ED4C4E22F925DB00A407AF /* Pic03ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Pic03ViewController.xib; sourceTree = "<group>"; };
+		F0ED4C5122F925ED00A407AF /* Pic04ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pic04ViewController.swift; sourceTree = "<group>"; };
+		F0ED4C5222F925ED00A407AF /* Pic04ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Pic04ViewController.xib; sourceTree = "<group>"; };
+		F0ED4C5522F9267600A407AF /* Pic05ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pic05ViewController.swift; sourceTree = "<group>"; };
+		F0ED4C5622F9267600A407AF /* Pic05ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Pic05ViewController.xib; sourceTree = "<group>"; };
+		F0ED4C5922F9268200A407AF /* Pic06ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pic06ViewController.swift; sourceTree = "<group>"; };
+		F0ED4C5A22F9268200A407AF /* Pic06ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Pic06ViewController.xib; sourceTree = "<group>"; };
+		F0ED4C5D22F9269200A407AF /* Pic07ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pic07ViewController.swift; sourceTree = "<group>"; };
+		F0ED4C5E22F9269200A407AF /* Pic07ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Pic07ViewController.xib; sourceTree = "<group>"; };
+		F0ED4C6122F926A400A407AF /* Pic08ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pic08ViewController.swift; sourceTree = "<group>"; };
+		F0ED4C6222F926A400A407AF /* Pic08ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Pic08ViewController.xib; sourceTree = "<group>"; };
+		F0ED4C6522F9275B00A407AF /* Pic09ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pic09ViewController.swift; sourceTree = "<group>"; };
+		F0ED4C6622F9275B00A407AF /* Pic09ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Pic09ViewController.xib; sourceTree = "<group>"; };
+		F0ED4C6922F9279400A407AF /* Pic10ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pic10ViewController.swift; sourceTree = "<group>"; };
+		F0ED4C6A22F9279400A407AF /* Pic10ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Pic10ViewController.xib; sourceTree = "<group>"; };
 		F0ED7FC722F7C82E0064C204 /* Ex05aViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex05aViewController.swift; sourceTree = "<group>"; };
 		F0ED7FC822F7C82E0064C204 /* Ex05aViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex05aViewController.xib; sourceTree = "<group>"; };
 		F0ED7FCC22F7CA710064C204 /* Ex05bViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex05bViewController.swift; sourceTree = "<group>"; };
@@ -138,38 +174,34 @@
 		F0ED7FEC22F7DF580064C204 /* Ex06cViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex06cViewController.xib; sourceTree = "<group>"; };
 		F0ED7FF022F7E1800064C204 /* Ex06dViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex06dViewController.swift; sourceTree = "<group>"; };
 		F0ED7FF122F7E1800064C204 /* Ex06dViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex06dViewController.xib; sourceTree = "<group>"; };
-		F0ED7FF622F7E2D90064C204 /* Ex07ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex07ViewController.swift; sourceTree = "<group>"; };
-		F0ED7FF722F7E2D90064C204 /* Ex07ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex07ViewController.xib; sourceTree = "<group>"; };
-		F0ED7FFB22F7E3E80064C204 /* Ex07aViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex07aViewController.swift; sourceTree = "<group>"; };
-		F0ED7FFC22F7E3E80064C204 /* Ex07aViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex07aViewController.xib; sourceTree = "<group>"; };
-		F0ED800022F7E7F20064C204 /* Ex07bViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex07bViewController.swift; sourceTree = "<group>"; };
-		F0ED800122F7E7F20064C204 /* Ex07bViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex07bViewController.xib; sourceTree = "<group>"; };
-		F0ED800522F7E8B20064C204 /* Ex07cViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex07cViewController.swift; sourceTree = "<group>"; };
-		F0ED800622F7E8B20064C204 /* Ex07cViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex07cViewController.xib; sourceTree = "<group>"; };
-		F0ED800A22F7E9C10064C204 /* Ex07dViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex07dViewController.swift; sourceTree = "<group>"; };
-		F0ED800B22F7E9C10064C204 /* Ex07dViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex07dViewController.xib; sourceTree = "<group>"; };
+		F0ED7FF622F7E2D90064C204 /* Ex07aViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex07aViewController.swift; sourceTree = "<group>"; };
+		F0ED7FF722F7E2D90064C204 /* Ex07aViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex07aViewController.xib; sourceTree = "<group>"; };
+		F0ED7FFB22F7E3E80064C204 /* Ex07aaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex07aaViewController.swift; sourceTree = "<group>"; };
+		F0ED7FFC22F7E3E80064C204 /* Ex07aaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex07aaViewController.xib; sourceTree = "<group>"; };
+		F0ED800022F7E7F20064C204 /* Ex07abViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex07abViewController.swift; sourceTree = "<group>"; };
+		F0ED800122F7E7F20064C204 /* Ex07abViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex07abViewController.xib; sourceTree = "<group>"; };
+		F0ED800522F7E8B20064C204 /* Ex07acViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex07acViewController.swift; sourceTree = "<group>"; };
+		F0ED800622F7E8B20064C204 /* Ex07acViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex07acViewController.xib; sourceTree = "<group>"; };
+		F0ED800A22F7E9C10064C204 /* Ex07adViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex07adViewController.swift; sourceTree = "<group>"; };
+		F0ED800B22F7E9C10064C204 /* Ex07adViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex07adViewController.xib; sourceTree = "<group>"; };
 		F0ED801022F7EA990064C204 /* Ex08ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex08ViewController.swift; sourceTree = "<group>"; };
 		F0ED801122F7EA990064C204 /* Ex08ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex08ViewController.xib; sourceTree = "<group>"; };
-		F0ED801722F7EB420064C204 /* Ex07ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Ex07ViewController.swift; path = AutoLayoutEx/Ex08/Ex08/Ex07ViewController.swift; sourceTree = SOURCE_ROOT; };
-		F0ED801822F7EB420064C204 /* Ex07ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Ex07ViewController.xib; path = AutoLayoutEx/Ex08/Ex08/Ex07ViewController.xib; sourceTree = SOURCE_ROOT; };
-		F0ED801C22F7ECC70064C204 /* Ex07aViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Ex07aViewController.swift; path = AutoLayoutEx/Ex07/Ex07b/Ex07a/Ex07aViewController.swift; sourceTree = SOURCE_ROOT; };
-		F0ED801D22F7ECC70064C204 /* Ex07aViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Ex07aViewController.xib; path = AutoLayoutEx/Ex07/Ex07b/Ex07a/Ex07aViewController.xib; sourceTree = SOURCE_ROOT; };
-		F0ED802122F7ED630064C204 /* Ex07bViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Ex07bViewController.swift; path = AutoLayoutEx/Ex08/Ex08/Ex07bViewController.swift; sourceTree = SOURCE_ROOT; };
-		F0ED802222F7ED630064C204 /* Ex07bViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Ex07bViewController.xib; path = AutoLayoutEx/Ex08/Ex08/Ex07bViewController.xib; sourceTree = SOURCE_ROOT; };
-		F0ED802622F7EEEE0064C204 /* Ex07cViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Ex07cViewController.swift; path = AutoLayoutEx/Ex08/Ex08/Ex07cViewController.swift; sourceTree = SOURCE_ROOT; };
-		F0ED802722F7EEEE0064C204 /* Ex07cViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Ex07cViewController.xib; path = AutoLayoutEx/Ex08/Ex08/Ex07cViewController.xib; sourceTree = SOURCE_ROOT; };
-		F0ED802B22F805A50064C204 /* Ex07dViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Ex07dViewController.swift; path = AutoLayoutEx/Ex08/Ex08/Ex07dViewController.swift; sourceTree = SOURCE_ROOT; };
-		F0ED802C22F805A50064C204 /* Ex07dViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Ex07dViewController.xib; path = AutoLayoutEx/Ex08/Ex08/Ex07dViewController.xib; sourceTree = SOURCE_ROOT; };
-		F0ED803122F806BD0064C204 /* Ex07ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Ex07ViewController.swift; path = AutoLayoutEx/Ex08/Ex08/Ex07ViewController.swift; sourceTree = SOURCE_ROOT; };
-		F0ED803222F806BD0064C204 /* Ex07ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Ex07ViewController.xib; path = AutoLayoutEx/Ex08/Ex08/Ex07ViewController.xib; sourceTree = SOURCE_ROOT; };
-		F0ED803622F807C00064C204 /* Ex07aViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex07aViewController.swift; sourceTree = "<group>"; };
-		F0ED803722F807C00064C204 /* Ex07aViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex07aViewController.xib; sourceTree = "<group>"; };
-		F0ED803B22F808AE0064C204 /* Ex07bViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex07bViewController.swift; sourceTree = "<group>"; };
-		F0ED803C22F808AE0064C204 /* Ex07bViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex07bViewController.xib; sourceTree = "<group>"; };
-		F0ED804022F8099B0064C204 /* Ex07cViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex07cViewController.swift; sourceTree = "<group>"; };
-		F0ED804122F8099B0064C204 /* Ex07cViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex07cViewController.xib; sourceTree = "<group>"; };
-		F0ED804522F80A210064C204 /* Ex07dViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex07dViewController.swift; sourceTree = "<group>"; };
-		F0ED804622F80A210064C204 /* Ex07dViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex07dViewController.xib; sourceTree = "<group>"; };
+		F0ED801722F7EB420064C204 /* Ex07bViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Ex07bViewController.swift; path = AutoLayoutEx/Ex08/Ex08/Ex07bViewController.swift; sourceTree = SOURCE_ROOT; };
+		F0ED801822F7EB420064C204 /* Ex07bViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Ex07bViewController.xib; path = AutoLayoutEx/Ex08/Ex08/Ex07bViewController.xib; sourceTree = SOURCE_ROOT; };
+		F0ED802122F7ED630064C204 /* Ex07bbViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Ex07bbViewController.swift; path = AutoLayoutEx/Ex08/Ex08/Ex07bbViewController.swift; sourceTree = SOURCE_ROOT; };
+		F0ED802222F7ED630064C204 /* Ex07bbViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Ex07bbViewController.xib; path = AutoLayoutEx/Ex08/Ex08/Ex07bbViewController.xib; sourceTree = SOURCE_ROOT; };
+		F0ED802622F7EEEE0064C204 /* Ex07bcViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Ex07bcViewController.swift; path = AutoLayoutEx/Ex08/Ex08/Ex07bcViewController.swift; sourceTree = SOURCE_ROOT; };
+		F0ED802722F7EEEE0064C204 /* Ex07bcViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Ex07bcViewController.xib; path = AutoLayoutEx/Ex08/Ex08/Ex07bcViewController.xib; sourceTree = SOURCE_ROOT; };
+		F0ED802B22F805A50064C204 /* Ex07bdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Ex07bdViewController.swift; path = AutoLayoutEx/Ex08/Ex08/Ex07bdViewController.swift; sourceTree = SOURCE_ROOT; };
+		F0ED802C22F805A50064C204 /* Ex07bdViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Ex07bdViewController.xib; path = AutoLayoutEx/Ex08/Ex08/Ex07bdViewController.xib; sourceTree = SOURCE_ROOT; };
+		F0ED803622F807C00064C204 /* Ex07caViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex07caViewController.swift; sourceTree = "<group>"; };
+		F0ED803722F807C00064C204 /* Ex07caViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex07caViewController.xib; sourceTree = "<group>"; };
+		F0ED803B22F808AE0064C204 /* Ex07cbViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex07cbViewController.swift; sourceTree = "<group>"; };
+		F0ED803C22F808AE0064C204 /* Ex07cbViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex07cbViewController.xib; sourceTree = "<group>"; };
+		F0ED804022F8099B0064C204 /* Ex07ccViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex07ccViewController.swift; sourceTree = "<group>"; };
+		F0ED804122F8099B0064C204 /* Ex07ccViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex07ccViewController.xib; sourceTree = "<group>"; };
+		F0ED804522F80A210064C204 /* Ex07cdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex07cdViewController.swift; sourceTree = "<group>"; };
+		F0ED804622F80A210064C204 /* Ex07cdViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex07cdViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,6 +234,7 @@
 		F07123DF22F41C080087D4EB /* AutoLayoutEx */ = {
 			isa = PBXGroup;
 			children = (
+				F0ED4C3A22F9238A00A407AF /* Ex09 */,
 				F0ED800E22F7EA7F0064C204 /* Ex08 */,
 				F0ED7FF422F7E2C00064C204 /* Ex07 */,
 				F0ED7FDA22F7D87F0064C204 /* Ex06 */,
@@ -395,6 +428,113 @@
 			name = Ex05;
 			sourceTree = "<group>";
 		};
+		F0ED4C3A22F9238A00A407AF /* Ex09 */ = {
+			isa = PBXGroup;
+			children = (
+				F0ED4C4422F924BE00A407AF /* Pic10 */,
+				F0ED4C4322F924B700A407AF /* Pic09 */,
+				F0ED4C4222F924A800A407AF /* Pic08 */,
+				F0ED4C4122F9247000A407AF /* Pic07 */,
+				F0ED4C4022F9246A00A407AF /* Pic06 */,
+				F0ED4C3F22F9246100A407AF /* Pic05 */,
+				F0ED4C3E22F9245900A407AF /* Pic04 */,
+				F0ED4C3D22F9245300A407AF /* Pic03 */,
+				F0ED4C3C22F9244A00A407AF /* Pic02 */,
+				F0ED4C3B22F9243B00A407AF /* Pic01 */,
+			);
+			path = Ex09;
+			sourceTree = "<group>";
+		};
+		F0ED4C3B22F9243B00A407AF /* Pic01 */ = {
+			isa = PBXGroup;
+			children = (
+				F0ED4C4522F9254A00A407AF /* Pic01ViewController.swift */,
+				F0ED4C4622F9254A00A407AF /* Pic01ViewController.xib */,
+			);
+			path = Pic01;
+			sourceTree = "<group>";
+		};
+		F0ED4C3C22F9244A00A407AF /* Pic02 */ = {
+			isa = PBXGroup;
+			children = (
+				F0ED4C4922F9255C00A407AF /* Pic02ViewController.swift */,
+				F0ED4C4A22F9255C00A407AF /* Pic02ViewController.xib */,
+			);
+			path = Pic02;
+			sourceTree = "<group>";
+		};
+		F0ED4C3D22F9245300A407AF /* Pic03 */ = {
+			isa = PBXGroup;
+			children = (
+				F0ED4C4D22F925DB00A407AF /* Pic03ViewController.swift */,
+				F0ED4C4E22F925DB00A407AF /* Pic03ViewController.xib */,
+			);
+			path = Pic03;
+			sourceTree = "<group>";
+		};
+		F0ED4C3E22F9245900A407AF /* Pic04 */ = {
+			isa = PBXGroup;
+			children = (
+				F0ED4C5122F925ED00A407AF /* Pic04ViewController.swift */,
+				F0ED4C5222F925ED00A407AF /* Pic04ViewController.xib */,
+			);
+			path = Pic04;
+			sourceTree = "<group>";
+		};
+		F0ED4C3F22F9246100A407AF /* Pic05 */ = {
+			isa = PBXGroup;
+			children = (
+				F0ED4C5522F9267600A407AF /* Pic05ViewController.swift */,
+				F0ED4C5622F9267600A407AF /* Pic05ViewController.xib */,
+			);
+			path = Pic05;
+			sourceTree = "<group>";
+		};
+		F0ED4C4022F9246A00A407AF /* Pic06 */ = {
+			isa = PBXGroup;
+			children = (
+				F0ED4C5922F9268200A407AF /* Pic06ViewController.swift */,
+				F0ED4C5A22F9268200A407AF /* Pic06ViewController.xib */,
+			);
+			path = Pic06;
+			sourceTree = "<group>";
+		};
+		F0ED4C4122F9247000A407AF /* Pic07 */ = {
+			isa = PBXGroup;
+			children = (
+				F0ED4C5D22F9269200A407AF /* Pic07ViewController.swift */,
+				F0ED4C5E22F9269200A407AF /* Pic07ViewController.xib */,
+			);
+			path = Pic07;
+			sourceTree = "<group>";
+		};
+		F0ED4C4222F924A800A407AF /* Pic08 */ = {
+			isa = PBXGroup;
+			children = (
+				F0ED4C6122F926A400A407AF /* Pic08ViewController.swift */,
+				F0ED4C6222F926A400A407AF /* Pic08ViewController.xib */,
+			);
+			path = Pic08;
+			sourceTree = "<group>";
+		};
+		F0ED4C4322F924B700A407AF /* Pic09 */ = {
+			isa = PBXGroup;
+			children = (
+				F0ED4C6522F9275B00A407AF /* Pic09ViewController.swift */,
+				F0ED4C6622F9275B00A407AF /* Pic09ViewController.xib */,
+			);
+			path = Pic09;
+			sourceTree = "<group>";
+		};
+		F0ED4C4422F924BE00A407AF /* Pic10 */ = {
+			isa = PBXGroup;
+			children = (
+				F0ED4C6922F9279400A407AF /* Pic10ViewController.swift */,
+				F0ED4C6A22F9279400A407AF /* Pic10ViewController.xib */,
+			);
+			path = Pic10;
+			sourceTree = "<group>";
+		};
 		F0ED7FC622F7C8170064C204 /* Ex05a */ = {
 			isa = PBXGroup;
 			children = (
@@ -498,49 +638,49 @@
 			path = Ex07;
 			sourceTree = "<group>";
 		};
-		F0ED7FF522F7E2C90064C204 /* Ex07 */ = {
+		F0ED7FF522F7E2C90064C204 /* Ex07a */ = {
 			isa = PBXGroup;
 			children = (
-				F0ED7FF622F7E2D90064C204 /* Ex07ViewController.swift */,
-				F0ED7FF722F7E2D90064C204 /* Ex07ViewController.xib */,
-			);
-			path = Ex07;
-			sourceTree = "<group>";
-		};
-		F0ED7FFA22F7E3D60064C204 /* Ex07a */ = {
-			isa = PBXGroup;
-			children = (
-				F0ED7FFB22F7E3E80064C204 /* Ex07aViewController.swift */,
-				F0ED7FFC22F7E3E80064C204 /* Ex07aViewController.xib */,
+				F0ED7FF622F7E2D90064C204 /* Ex07aViewController.swift */,
+				F0ED7FF722F7E2D90064C204 /* Ex07aViewController.xib */,
 			);
 			path = Ex07a;
 			sourceTree = "<group>";
 		};
-		F0ED7FFF22F7E7D50064C204 /* Ex07b */ = {
+		F0ED7FFA22F7E3D60064C204 /* Ex07aa */ = {
 			isa = PBXGroup;
 			children = (
-				F0ED800022F7E7F20064C204 /* Ex07bViewController.swift */,
-				F0ED800122F7E7F20064C204 /* Ex07bViewController.xib */,
+				F0ED7FFB22F7E3E80064C204 /* Ex07aaViewController.swift */,
+				F0ED7FFC22F7E3E80064C204 /* Ex07aaViewController.xib */,
 			);
-			path = Ex07b;
+			path = Ex07aa;
 			sourceTree = "<group>";
 		};
-		F0ED800422F7E89D0064C204 /* Ex07c */ = {
+		F0ED7FFF22F7E7D50064C204 /* Ex07ab */ = {
 			isa = PBXGroup;
 			children = (
-				F0ED800522F7E8B20064C204 /* Ex07cViewController.swift */,
-				F0ED800622F7E8B20064C204 /* Ex07cViewController.xib */,
+				F0ED800022F7E7F20064C204 /* Ex07abViewController.swift */,
+				F0ED800122F7E7F20064C204 /* Ex07abViewController.xib */,
 			);
-			path = Ex07c;
+			path = Ex07ab;
 			sourceTree = "<group>";
 		};
-		F0ED800922F7E9AF0064C204 /* Ex07d */ = {
+		F0ED800422F7E89D0064C204 /* Ex07ac */ = {
 			isa = PBXGroup;
 			children = (
-				F0ED800A22F7E9C10064C204 /* Ex07dViewController.swift */,
-				F0ED800B22F7E9C10064C204 /* Ex07dViewController.xib */,
+				F0ED800522F7E8B20064C204 /* Ex07acViewController.swift */,
+				F0ED800622F7E8B20064C204 /* Ex07acViewController.xib */,
 			);
-			path = Ex07d;
+			path = Ex07ac;
+			sourceTree = "<group>";
+		};
+		F0ED800922F7E9AF0064C204 /* Ex07ad */ = {
+			isa = PBXGroup;
+			children = (
+				F0ED800A22F7E9C10064C204 /* Ex07adViewController.swift */,
+				F0ED800B22F7E9C10064C204 /* Ex07adViewController.xib */,
+			);
+			path = Ex07ad;
 			sourceTree = "<group>";
 		};
 		F0ED800E22F7EA7F0064C204 /* Ex08 */ = {
@@ -563,11 +703,11 @@
 		F0ED801422F7EAD00064C204 /* Ex07a */ = {
 			isa = PBXGroup;
 			children = (
-				F0ED7FF522F7E2C90064C204 /* Ex07 */,
-				F0ED7FFA22F7E3D60064C204 /* Ex07a */,
-				F0ED7FFF22F7E7D50064C204 /* Ex07b */,
-				F0ED800422F7E89D0064C204 /* Ex07c */,
-				F0ED800922F7E9AF0064C204 /* Ex07d */,
+				F0ED7FF522F7E2C90064C204 /* Ex07a */,
+				F0ED7FFA22F7E3D60064C204 /* Ex07aa */,
+				F0ED7FFF22F7E7D50064C204 /* Ex07ab */,
+				F0ED800422F7E89D0064C204 /* Ex07ac */,
+				F0ED800922F7E9AF0064C204 /* Ex07ad */,
 			);
 			path = Ex07a;
 			sourceTree = "<group>";
@@ -575,115 +715,111 @@
 		F0ED801522F7EAFE0064C204 /* Ex07b */ = {
 			isa = PBXGroup;
 			children = (
-				F0ED802A22F805870064C204 /* Ex07d */,
-				F0ED802522F7EEDE0064C204 /* Ex07c */,
-				F0ED802022F7ED500064C204 /* Ex07b */,
-				F0ED801B22F7ECAA0064C204 /* Ex07a */,
-				F0ED801622F7EB100064C204 /* Ex07 */,
+				F0ED802A22F805870064C204 /* Ex07bd */,
+				F0ED802522F7EEDE0064C204 /* Ex07bc */,
+				F0ED802022F7ED500064C204 /* Ex07bb */,
+				F0ED801B22F7ECAA0064C204 /* Ex07ba */,
+				F0ED801622F7EB100064C204 /* Ex07b */,
 			);
 			path = Ex07b;
 			sourceTree = "<group>";
 		};
-		F0ED801622F7EB100064C204 /* Ex07 */ = {
+		F0ED801622F7EB100064C204 /* Ex07b */ = {
 			isa = PBXGroup;
 			children = (
-				F0ED801722F7EB420064C204 /* Ex07ViewController.swift */,
-				F0ED801822F7EB420064C204 /* Ex07ViewController.xib */,
-			);
-			path = Ex07;
-			sourceTree = "<group>";
-		};
-		F0ED801B22F7ECAA0064C204 /* Ex07a */ = {
-			isa = PBXGroup;
-			children = (
-				F0ED801C22F7ECC70064C204 /* Ex07aViewController.swift */,
-				F0ED801D22F7ECC70064C204 /* Ex07aViewController.xib */,
-			);
-			path = Ex07a;
-			sourceTree = "<group>";
-		};
-		F0ED802022F7ED500064C204 /* Ex07b */ = {
-			isa = PBXGroup;
-			children = (
-				F0ED802122F7ED630064C204 /* Ex07bViewController.swift */,
-				F0ED802222F7ED630064C204 /* Ex07bViewController.xib */,
+				F0ED801722F7EB420064C204 /* Ex07bViewController.swift */,
+				F0ED801822F7EB420064C204 /* Ex07bViewController.xib */,
 			);
 			path = Ex07b;
 			sourceTree = "<group>";
 		};
-		F0ED802522F7EEDE0064C204 /* Ex07c */ = {
+		F0ED801B22F7ECAA0064C204 /* Ex07ba */ = {
 			isa = PBXGroup;
 			children = (
-				F0ED802622F7EEEE0064C204 /* Ex07cViewController.swift */,
-				F0ED802722F7EEEE0064C204 /* Ex07cViewController.xib */,
 			);
-			path = Ex07c;
+			path = Ex07ba;
 			sourceTree = "<group>";
 		};
-		F0ED802A22F805870064C204 /* Ex07d */ = {
+		F0ED802022F7ED500064C204 /* Ex07bb */ = {
 			isa = PBXGroup;
 			children = (
-				F0ED802B22F805A50064C204 /* Ex07dViewController.swift */,
-				F0ED802C22F805A50064C204 /* Ex07dViewController.xib */,
+				F0ED802122F7ED630064C204 /* Ex07bbViewController.swift */,
+				F0ED802222F7ED630064C204 /* Ex07bbViewController.xib */,
 			);
-			path = Ex07d;
+			path = Ex07bb;
+			sourceTree = "<group>";
+		};
+		F0ED802522F7EEDE0064C204 /* Ex07bc */ = {
+			isa = PBXGroup;
+			children = (
+				F0ED802622F7EEEE0064C204 /* Ex07bcViewController.swift */,
+				F0ED802722F7EEEE0064C204 /* Ex07bcViewController.xib */,
+			);
+			path = Ex07bc;
+			sourceTree = "<group>";
+		};
+		F0ED802A22F805870064C204 /* Ex07bd */ = {
+			isa = PBXGroup;
+			children = (
+				F0ED802B22F805A50064C204 /* Ex07bdViewController.swift */,
+				F0ED802C22F805A50064C204 /* Ex07bdViewController.xib */,
+			);
+			path = Ex07bd;
 			sourceTree = "<group>";
 		};
 		F0ED802F22F8065C0064C204 /* Ex07c */ = {
 			isa = PBXGroup;
 			children = (
-				F0ED804422F80A130064C204 /* Ex07d */,
-				F0ED803F22F809890064C204 /* Ex07c */,
-				F0ED803A22F8089B0064C204 /* Ex07b */,
-				F0ED803522F807B20064C204 /* Ex07a */,
-				F0ED803022F806680064C204 /* Ex07 */,
+				F0ED804422F80A130064C204 /* Ex07cd */,
+				F0ED803F22F809890064C204 /* Ex07cc */,
+				F0ED803A22F8089B0064C204 /* Ex07cb */,
+				F0ED803522F807B20064C204 /* Ex07ca */,
+				F0ED803022F806680064C204 /* Ex07c */,
 			);
 			path = Ex07c;
 			sourceTree = "<group>";
 		};
-		F0ED803022F806680064C204 /* Ex07 */ = {
+		F0ED803022F806680064C204 /* Ex07c */ = {
 			isa = PBXGroup;
 			children = (
-				F0ED803122F806BD0064C204 /* Ex07ViewController.swift */,
-				F0ED803222F806BD0064C204 /* Ex07ViewController.xib */,
-			);
-			path = Ex07;
-			sourceTree = "<group>";
-		};
-		F0ED803522F807B20064C204 /* Ex07a */ = {
-			isa = PBXGroup;
-			children = (
-				F0ED803622F807C00064C204 /* Ex07aViewController.swift */,
-				F0ED803722F807C00064C204 /* Ex07aViewController.xib */,
-			);
-			path = Ex07a;
-			sourceTree = "<group>";
-		};
-		F0ED803A22F8089B0064C204 /* Ex07b */ = {
-			isa = PBXGroup;
-			children = (
-				F0ED803B22F808AE0064C204 /* Ex07bViewController.swift */,
-				F0ED803C22F808AE0064C204 /* Ex07bViewController.xib */,
-			);
-			path = Ex07b;
-			sourceTree = "<group>";
-		};
-		F0ED803F22F809890064C204 /* Ex07c */ = {
-			isa = PBXGroup;
-			children = (
-				F0ED804022F8099B0064C204 /* Ex07cViewController.swift */,
-				F0ED804122F8099B0064C204 /* Ex07cViewController.xib */,
 			);
 			path = Ex07c;
 			sourceTree = "<group>";
 		};
-		F0ED804422F80A130064C204 /* Ex07d */ = {
+		F0ED803522F807B20064C204 /* Ex07ca */ = {
 			isa = PBXGroup;
 			children = (
-				F0ED804522F80A210064C204 /* Ex07dViewController.swift */,
-				F0ED804622F80A210064C204 /* Ex07dViewController.xib */,
+				F0ED803622F807C00064C204 /* Ex07caViewController.swift */,
+				F0ED803722F807C00064C204 /* Ex07caViewController.xib */,
 			);
-			path = Ex07d;
+			path = Ex07ca;
+			sourceTree = "<group>";
+		};
+		F0ED803A22F8089B0064C204 /* Ex07cb */ = {
+			isa = PBXGroup;
+			children = (
+				F0ED803B22F808AE0064C204 /* Ex07cbViewController.swift */,
+				F0ED803C22F808AE0064C204 /* Ex07cbViewController.xib */,
+			);
+			path = Ex07cb;
+			sourceTree = "<group>";
+		};
+		F0ED803F22F809890064C204 /* Ex07cc */ = {
+			isa = PBXGroup;
+			children = (
+				F0ED804022F8099B0064C204 /* Ex07ccViewController.swift */,
+				F0ED804122F8099B0064C204 /* Ex07ccViewController.xib */,
+			);
+			path = Ex07cc;
+			sourceTree = "<group>";
+		};
+		F0ED804422F80A130064C204 /* Ex07cd */ = {
+			isa = PBXGroup;
+			children = (
+				F0ED804522F80A210064C204 /* Ex07cdViewController.swift */,
+				F0ED804622F80A210064C204 /* Ex07cdViewController.xib */,
+			);
+			path = Ex07cd;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -745,45 +881,53 @@
 			buildActionMask = 2147483647;
 			files = (
 				F071243C22F449FB0087D4EB /* Ex05ViewController.xib in Resources */,
-				F0ED804322F8099B0064C204 /* Ex07cViewController.xib in Resources */,
+				F0ED804322F8099B0064C204 /* Ex07ccViewController.xib in Resources */,
 				F071241322F42B2A0087D4EB /* Ex03aViewController.xib in Resources */,
-				F0ED7FFE22F7E3E80064C204 /* Ex07aViewController.xib in Resources */,
-				F0ED7FF922F7E2D90064C204 /* Ex07ViewController.xib in Resources */,
-				F0ED802422F7ED630064C204 /* Ex07bViewController.xib in Resources */,
+				F0ED7FFE22F7E3E80064C204 /* Ex07aaViewController.xib in Resources */,
+				F0ED4C6C22F9279400A407AF /* Pic10ViewController.xib in Resources */,
+				F0ED7FF922F7E2D90064C204 /* Ex07aViewController.xib in Resources */,
+				F0ED4C5422F925ED00A407AF /* Pic04ViewController.xib in Resources */,
+				F0ED4C4C22F9255C00A407AF /* Pic02ViewController.xib in Resources */,
+				F0ED4C5822F9267600A407AF /* Pic05ViewController.xib in Resources */,
+				F0ED802422F7ED630064C204 /* Ex07bbViewController.xib in Resources */,
 				F07123F822F41CA40087D4EB /* Ex01ViewController.xib in Resources */,
 				F0ED7FE422F7DBB50064C204 /* Ex06aViewController.xib in Resources */,
 				F071240622F421830087D4EB /* Ex02aViewController.xib in Resources */,
 				F071240222F420720087D4EB /* Ex02ViewController.xib in Resources */,
 				F071240C22F425200087D4EB /* Ex03ViewController.xib in Resources */,
-				F0ED802E22F805A50064C204 /* Ex07dViewController.xib in Resources */,
+				F0ED802E22F805A50064C204 /* Ex07bdViewController.xib in Resources */,
 				F071242422F442780087D4EB /* Ex04aViewController.xib in Resources */,
-				F0ED800822F7E8B20064C204 /* Ex07cViewController.xib in Resources */,
+				F0ED800822F7E8B20064C204 /* Ex07acViewController.xib in Resources */,
 				F071242A22F445800087D4EB /* Ex04bViewController.xib in Resources */,
-				F0ED804822F80A210064C204 /* Ex07dViewController.xib in Resources */,
-				F0ED801F22F7ECC70064C204 /* Ex07aViewController.xib in Resources */,
-				F0ED802922F7EEEE0064C204 /* Ex07cViewController.xib in Resources */,
+				F0ED804822F80A210064C204 /* Ex07cdViewController.xib in Resources */,
+				F0ED802922F7EEEE0064C204 /* Ex07bcViewController.xib in Resources */,
 				F0ED7FD922F7D57A0064C204 /* Ex05dViewController.xib in Resources */,
-				F0ED803E22F808AE0064C204 /* Ex07bViewController.xib in Resources */,
+				F0ED803E22F808AE0064C204 /* Ex07cbViewController.xib in Resources */,
 				F0ED7FDF22F7D89D0064C204 /* Ex06ViewController.xib in Resources */,
+				F0ED4C6422F926A400A407AF /* Pic08ViewController.xib in Resources */,
+				F0ED4C5022F925DB00A407AF /* Pic03ViewController.xib in Resources */,
 				F0ED7FCF22F7CA710064C204 /* Ex05bViewController.xib in Resources */,
+				F0ED4C4822F9254A00A407AF /* Pic01ViewController.xib in Resources */,
 				F071241822F42D9A0087D4EB /* Ex03bViewController.xib in Resources */,
 				F0ED7FD422F7CB930064C204 /* Ex05cViewController.xib in Resources */,
+				F0ED4C6022F9269200A407AF /* Pic07ViewController.xib in Resources */,
 				F0ED7FF322F7E1800064C204 /* Ex06dViewController.xib in Resources */,
 				F071243522F447DB0087D4EB /* Ex04dViewController.xib in Resources */,
 				F0ED7FEE22F7DF580064C204 /* Ex06cViewController.xib in Resources */,
 				F0ED7FCA22F7C82E0064C204 /* Ex05aViewController.xib in Resources */,
 				F0ED7FE922F7DE890064C204 /* Ex06bViewController.xib in Resources */,
 				F07123EB22F41C090087D4EB /* LaunchScreen.storyboard in Resources */,
-				F0ED800322F7E7F20064C204 /* Ex07bViewController.xib in Resources */,
+				F0ED800322F7E7F20064C204 /* Ex07abViewController.xib in Resources */,
 				F071242F22F4471C0087D4EB /* Ex04cViewController.xib in Resources */,
-				F0ED803922F807C00064C204 /* Ex07aViewController.xib in Resources */,
+				F0ED803922F807C00064C204 /* Ex07caViewController.xib in Resources */,
+				F0ED4C5C22F9268200A407AF /* Pic06ViewController.xib in Resources */,
 				F0ED801322F7EA990064C204 /* Ex08ViewController.xib in Resources */,
-				F0ED801A22F7EB420064C204 /* Ex07ViewController.xib in Resources */,
-				F0ED800D22F7E9C10064C204 /* Ex07dViewController.xib in Resources */,
+				F0ED801A22F7EB420064C204 /* Ex07bViewController.xib in Resources */,
+				F0ED800D22F7E9C10064C204 /* Ex07adViewController.xib in Resources */,
 				F071241F22F435C20087D4EB /* Ex04ViewController.xib in Resources */,
 				F07123FD22F41DCE0087D4EB /* Ex01aViewController.xib in Resources */,
-				F0ED803422F806BD0064C204 /* Ex07ViewController.xib in Resources */,
 				F07123E822F41C090087D4EB /* Assets.xcassets in Resources */,
+				F0ED4C6822F9275B00A407AF /* Pic09ViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -797,41 +941,49 @@
 				F071242922F445800087D4EB /* Ex04bViewController.swift in Sources */,
 				F0ED7FE822F7DE890064C204 /* Ex06bViewController.swift in Sources */,
 				F071240B22F425200087D4EB /* Ex03ViewController.swift in Sources */,
-				F0ED800222F7E7F20064C204 /* Ex07bViewController.swift in Sources */,
-				F0ED800722F7E8B20064C204 /* Ex07cViewController.swift in Sources */,
+				F0ED800222F7E7F20064C204 /* Ex07abViewController.swift in Sources */,
+				F0ED800722F7E8B20064C204 /* Ex07acViewController.swift in Sources */,
 				F07123FC22F41DCE0087D4EB /* Ex01aViewController.swift in Sources */,
-				F0ED801E22F7ECC70064C204 /* Ex07aViewController.swift in Sources */,
-				F0ED804722F80A210064C204 /* Ex07dViewController.swift in Sources */,
+				F0ED804722F80A210064C204 /* Ex07cdViewController.swift in Sources */,
 				F0ED801222F7EA990064C204 /* Ex08ViewController.swift in Sources */,
 				F071240122F420720087D4EB /* Ex02ViewController.swift in Sources */,
-				F0ED800C22F7E9C10064C204 /* Ex07dViewController.swift in Sources */,
+				F0ED800C22F7E9C10064C204 /* Ex07adViewController.swift in Sources */,
+				F0ED4C4F22F925DB00A407AF /* Pic03ViewController.swift in Sources */,
 				F07123F722F41CA40087D4EB /* Ex01ViewController.swift in Sources */,
-				F0ED7FFD22F7E3E80064C204 /* Ex07aViewController.swift in Sources */,
-				F0ED7FF822F7E2D90064C204 /* Ex07ViewController.swift in Sources */,
-				F0ED802822F7EEEE0064C204 /* Ex07cViewController.swift in Sources */,
+				F0ED7FFD22F7E3E80064C204 /* Ex07aaViewController.swift in Sources */,
+				F0ED4C6B22F9279400A407AF /* Pic10ViewController.swift in Sources */,
+				F0ED7FF822F7E2D90064C204 /* Ex07aViewController.swift in Sources */,
+				F0ED4C5322F925ED00A407AF /* Pic04ViewController.swift in Sources */,
+				F0ED802822F7EEEE0064C204 /* Ex07bcViewController.swift in Sources */,
+				F0ED4C4B22F9255C00A407AF /* Pic02ViewController.swift in Sources */,
 				F071241E22F435C20087D4EB /* Ex04ViewController.swift in Sources */,
+				F0ED4C5722F9267600A407AF /* Pic05ViewController.swift in Sources */,
 				F0ED7FED22F7DF580064C204 /* Ex06cViewController.swift in Sources */,
+				F0ED4C6722F9275B00A407AF /* Pic09ViewController.swift in Sources */,
 				F071240522F421830087D4EB /* Ex02aViewController.swift in Sources */,
 				F0ED7FCE22F7CA710064C204 /* Ex05bViewController.swift in Sources */,
+				F0ED4C5F22F9269200A407AF /* Pic07ViewController.swift in Sources */,
+				F0ED4C6322F926A400A407AF /* Pic08ViewController.swift in Sources */,
 				F071241722F42D9A0087D4EB /* Ex03bViewController.swift in Sources */,
 				F07123E122F41C080087D4EB /* AppDelegate.swift in Sources */,
-				F0ED801922F7EB420064C204 /* Ex07ViewController.swift in Sources */,
+				F0ED801922F7EB420064C204 /* Ex07bViewController.swift in Sources */,
 				F071241222F42B2A0087D4EB /* Ex03aViewController.swift in Sources */,
 				F0ED7FD822F7D57A0064C204 /* Ex05dViewController.swift in Sources */,
-				F0ED803D22F808AE0064C204 /* Ex07bViewController.swift in Sources */,
+				F0ED803D22F808AE0064C204 /* Ex07cbViewController.swift in Sources */,
 				F0ED7FC922F7C82E0064C204 /* Ex05aViewController.swift in Sources */,
-				F0ED803822F807C00064C204 /* Ex07aViewController.swift in Sources */,
+				F0ED803822F807C00064C204 /* Ex07caViewController.swift in Sources */,
+				F0ED4C4722F9254A00A407AF /* Pic01ViewController.swift in Sources */,
 				F0ED7FDE22F7D89D0064C204 /* Ex06ViewController.swift in Sources */,
-				F0ED802D22F805A50064C204 /* Ex07dViewController.swift in Sources */,
+				F0ED802D22F805A50064C204 /* Ex07bdViewController.swift in Sources */,
 				F0ED7FD322F7CB930064C204 /* Ex05cViewController.swift in Sources */,
-				F0ED802322F7ED630064C204 /* Ex07bViewController.swift in Sources */,
-				F0ED803322F806BD0064C204 /* Ex07ViewController.swift in Sources */,
+				F0ED802322F7ED630064C204 /* Ex07bbViewController.swift in Sources */,
 				F0ED7FE322F7DBB50064C204 /* Ex06aViewController.swift in Sources */,
 				F071243B22F449FB0087D4EB /* Ex05ViewController.swift in Sources */,
 				F071242322F442780087D4EB /* Ex04aViewController.swift in Sources */,
 				F071243422F447DB0087D4EB /* Ex04dViewController.swift in Sources */,
+				F0ED4C5B22F9268200A407AF /* Pic06ViewController.swift in Sources */,
 				F0ED7FF222F7E1800064C204 /* Ex06dViewController.swift in Sources */,
-				F0ED804222F8099B0064C204 /* Ex07cViewController.swift in Sources */,
+				F0ED804222F8099B0064C204 /* Ex07ccViewController.swift in Sources */,
 				F071242E22F4471C0087D4EB /* Ex04cViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

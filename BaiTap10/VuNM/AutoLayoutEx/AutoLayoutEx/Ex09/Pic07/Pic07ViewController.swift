@@ -1,14 +1,14 @@
 //
-//  Ex07ViewController.swift
+//  Pic07ViewController.swift
 //  AutoLayoutEx
 //
-//  Created by PCI0007 on 8/5/19.
+//  Created by PCI0007 on 8/6/19.
 //  Copyright © 2019 PCI0007. All rights reserved.
 //
 
 import UIKit
 
-class Ex07bViewController: UIViewController {
+class Pic07ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

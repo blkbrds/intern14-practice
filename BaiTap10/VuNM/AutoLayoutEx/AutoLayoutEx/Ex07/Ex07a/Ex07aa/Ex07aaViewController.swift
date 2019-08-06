@@ -1,5 +1,5 @@
 //
-//  Ex07ViewController.swift
+//  Ex07aViewController.swift
 //  AutoLayoutEx
 //
 //  Created by PCI0007 on 8/5/19.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Ex07bViewController: UIViewController {
+class Ex07aaViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
