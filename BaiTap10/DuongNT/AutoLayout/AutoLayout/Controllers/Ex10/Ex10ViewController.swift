@@ -10,21 +10,24 @@ import UIKit
 
 class Ex10ViewController: BaseViewController {
 
+    // MARK: - Properties
+    var exercise: Exercise?
+    
+    // MARK: - Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
-    // MARK: config
+    // MARK: - Config
     override func setupUI() {
         super.setupUI()
-        self.title = "Ex10"
+        self.title = exercise?.name
     }
     
     override func setupData() {
     }
-
 }

@@ -10,6 +10,10 @@ import UIKit
 
 class Ex9ViewController: BaseViewController {
 
+    // MARK: - Properties
+    var exercise: Exercise?
+    
+    // MARK: - Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -18,14 +22,12 @@ class Ex9ViewController: BaseViewController {
         super.didReceiveMemoryWarning()
     }
     
-    // MARK: config
+    // MARK: - Config
     override func setupUI() {
         super.setupUI()
-        self.title = "Ex9"
+        self.title = exercise?.name
     }
     
     override func setupData() {
     }
-
-
 }
