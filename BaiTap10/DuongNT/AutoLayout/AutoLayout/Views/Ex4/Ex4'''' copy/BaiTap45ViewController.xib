@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BaiTap45ViewController" customModule="AutoLayout" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k0h-Lc-sD8">
+                    <rect key="frame" x="59" y="418.5" width="59.5" height="59"/>
+                    <color key="backgroundColor" red="0.052328925800000002" green="1" blue="0.16589740510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="k0h-Lc-sD8" secondAttribute="height" id="YBa-1b-Wod"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jUj-WQ-acp">
+                    <rect key="frame" x="177.5" y="418.5" width="59" height="59"/>
+                    <color key="backgroundColor" red="0.058195013249999997" green="0.44280519210000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="jUj-WQ-acp" secondAttribute="height" id="nQA-NJ-bCQ"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cAP-d3-7B5">
+                    <rect key="frame" x="295.5" y="418.5" width="59.5" height="59"/>
+                    <color key="backgroundColor" red="1" green="0.25742316040000002" blue="0.14863990690000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="cAP-d3-7B5" secondAttribute="height" id="47k-1N-O7d"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="jUj-WQ-acp" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="9pm-DF-UZI"/>
+                <constraint firstItem="jUj-WQ-acp" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="1/7" id="CRo-i6-C5y"/>
+                <constraint firstItem="k0h-Lc-sD8" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="O6N-1C-ej8"/>
+                <constraint firstItem="cAP-d3-7B5" firstAttribute="width" secondItem="k0h-Lc-sD8" secondAttribute="width" id="R9s-H0-PEQ"/>
+                <constraint firstItem="jUj-WQ-acp" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="cBt-3Q-YdT"/>
+                <constraint firstItem="k0h-Lc-sD8" firstAttribute="width" secondItem="jUj-WQ-acp" secondAttribute="width" id="mJy-Bt-mTD"/>
+                <constraint firstItem="cAP-d3-7B5" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" multiplier="11/7" id="nnr-PL-bF1"/>
+                <constraint firstItem="cAP-d3-7B5" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="uOe-7O-xhp"/>
+                <constraint firstItem="k0h-Lc-sD8" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" multiplier="3/7" id="v8q-gS-RJv"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="34.782608695652179" y="34.821428571428569"/>
+        </view>
+    </objects>
+</document>

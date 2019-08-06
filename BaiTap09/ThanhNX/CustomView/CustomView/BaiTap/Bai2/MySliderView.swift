@@ -27,21 +27,26 @@ final class MySliderView: UIView {
     @IBOutlet private weak var percentLabel: UILabel!
     @IBOutlet private weak var bigView: UIView!
     @IBOutlet private weak var blueView: UIView!    
-    @IBOutlet private weak var orangeView: UIView!
+    @IBOutlet public weak var orangeView: UIView!
     @IBOutlet private weak var imageView: UIImageView!
     
     private var temp = 50
+    public var index: Int = 0
+    
     weak var delegate: MySliderViewDelegate?
     weak var dataSource: MySliderViewDataSource?
     
     //MARK: load Design
     override func awakeFromNib() {
+        super.awakeFromNib()
         orangeView.layer.cornerRadius = 8
         blueView.layer.cornerRadius = 8
         orangeView.frame.size.width = CGFloat(temp) * blueView.frame.size.width / 100
         imageView.center.x = orangeView.frame.size.width
-        percentView.center.x = imageView.center.x + 20
+        percentView.center.x = imageView.center.x
         percentLabel.text = "\(temp)%"
+        percentLabel.textAlignment = .center
+        percentLabel.layer.cornerRadius = 5
     }
     
     func reloadDesign() {
@@ -51,7 +56,7 @@ final class MySliderView: UIView {
         if temp < 0 { temp = 0 }
         orangeView.frame.size.width = CGFloat(temp) * blueView.frame.size.width / 100
         imageView.center.x = orangeView.frame.size.width
-        percentView.center.x = imageView.center.x + 20
+        percentView.center.x = imageView.center.x
         percentLabel.text = "\(temp)%"
     }
     
@@ -66,7 +71,7 @@ final class MySliderView: UIView {
                 temp = Int(orangeView.frame.size.width * 100 / blueView.frame.size.width)
                 percentLabel.text = "\(temp)%"
                 orangeView.frame.size.width = imageView.center.x
-                percentView.center.x = imageView.center.x + 20
+                percentView.center.x = imageView.center.x
                 delegate?.view(self, needPerformAction: .getPercent(result: temp))
             }
         }
