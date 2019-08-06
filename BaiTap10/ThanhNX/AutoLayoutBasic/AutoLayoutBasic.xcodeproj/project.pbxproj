@@ -81,6 +81,8 @@
 		B0EC340922F80832001C51D6 /* Bai53ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0EC340722F80832001C51D6 /* Bai53ViewController.xib */; };
 		B0EC340D22F808BF001C51D6 /* Bai54ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EC340B22F808BF001C51D6 /* Bai54ViewController.swift */; };
 		B0EC340E22F808BF001C51D6 /* Bai54ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0EC340C22F808BF001C51D6 /* Bai54ViewController.xib */; };
+		B0EC341222F80AE6001C51D6 /* Bai8ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EC341022F80AE6001C51D6 /* Bai8ViewController.swift */; };
+		B0EC341322F80AE6001C51D6 /* Bai8ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0EC341122F80AE6001C51D6 /* Bai8ViewController.xib */; };
 		B0F056D922F293D300D13627 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F056D822F293D300D13627 /* AppDelegate.swift */; };
 		B0F056E022F293D600D13627 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0F056DF22F293D600D13627 /* Assets.xcassets */; };
 		B0F056EE22F2968A00D13627 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F056EC22F2968A00D13627 /* ViewController.swift */; };
@@ -162,6 +164,8 @@
 		B0EC340722F80832001C51D6 /* Bai53ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Bai53ViewController.xib; sourceTree = "<group>"; };
 		B0EC340B22F808BF001C51D6 /* Bai54ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bai54ViewController.swift; sourceTree = "<group>"; };
 		B0EC340C22F808BF001C51D6 /* Bai54ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Bai54ViewController.xib; sourceTree = "<group>"; };
+		B0EC341022F80AE6001C51D6 /* Bai8ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bai8ViewController.swift; sourceTree = "<group>"; };
+		B0EC341122F80AE6001C51D6 /* Bai8ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Bai8ViewController.xib; sourceTree = "<group>"; };
 		B0F056D522F293D300D13627 /* AutoLayoutBasic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoLayoutBasic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0F056D822F293D300D13627 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0F056DF22F293D600D13627 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -184,6 +188,7 @@
 		B0CE3BEC22F432C2004D2405 /* BaiTap */ = {
 			isa = PBXGroup;
 			children = (
+				B0EC340F22F80AD7001C51D6 /* Bai8 */,
 				B0EC33BC22F7E2BC001C51D6 /* Bai7 */,
 				B0EC33B722F7E04B001C51D6 /* Bai6 Part 4 */,
 				B0EC33B222F7DF95001C51D6 /* Bai6 Part 3 */,
@@ -590,6 +595,15 @@
 			name = "Part 4";
 			sourceTree = "<group>";
 		};
+		B0EC340F22F80AD7001C51D6 /* Bai8 */ = {
+			isa = PBXGroup;
+			children = (
+				B0EC341022F80AE6001C51D6 /* Bai8ViewController.swift */,
+				B0EC341122F80AE6001C51D6 /* Bai8ViewController.xib */,
+			);
+			name = Bai8;
+			sourceTree = "<group>";
+		};
 		B0F056CC22F293D300D13627 = {
 			isa = PBXGroup;
 			children = (
@@ -703,6 +717,7 @@
 				B0EC340922F80832001C51D6 /* Bai53ViewController.xib in Resources */,
 				B0EC33A722F7D775001C51D6 /* Bai6ViewController.xib in Resources */,
 				B0EC33AC22F7D8DB001C51D6 /* Bai6Part1VC.xib in Resources */,
+				B0EC341322F80AE6001C51D6 /* Bai8ViewController.xib in Resources */,
 				B0CE3C3222F444FD004D2405 /* Bai5Part1VC.xib in Resources */,
 				B0F056EF22F2968A00D13627 /* ViewController.xib in Resources */,
 				B0EC33DC22F7E934001C51D6 /* 4Part0ViewController.xib in Resources */,
@@ -756,6 +771,7 @@
 				B0EC33F922F805DE001C51D6 /* Part50ViewController.swift in Sources */,
 				B0EC33A122F7CC03001C51D6 /* Bai5Part4VC.swift in Sources */,
 				B0EC33CB22F7E4AA001C51D6 /* Part2ViewController.swift in Sources */,
+				B0EC341222F80AE6001C51D6 /* Bai8ViewController.swift in Sources */,
 				B0EC33AB22F7D8DB001C51D6 /* Bai6Part1VC.swift in Sources */,
 				B0CE3C1D22F434B3004D2405 /* Bai4Part3VC.swift in Sources */,
 				B0CE3C2C22F440EE004D2405 /* Bai5ViewController.swift in Sources */,
