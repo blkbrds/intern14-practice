@@ -12,11 +12,62 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PickerView" customModule="BaiTapCustomView" customModuleProvider="target">
+        <view multipleTouchEnabled="YES" contentMode="scaleToFill" id="yqF-ch-kmW" customClass="PickerView" customModule="BaiTapCustomView" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view alpha="0.29999999999999999" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kqP-B7-M3q">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <viewLayoutGuide key="safeArea" id="rhF-yl-XcP"/>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ob5-1C-YPy">
+                    <rect key="frame" x="0.0" y="596" width="414" height="300"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="YyU-xf-qDE">
+                            <rect key="frame" x="0.0" y="47" width="414" height="256"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <date key="date" timeIntervalSinceReferenceDate="586664708.82163095">
+                                <!--2019-08-05 02:25:08 +0000-->
+                            </date>
+                        </datePicker>
+                        <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O2q-82-QOm">
+                            <rect key="frame" x="0.0" y="1" width="414" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                            <items>
+                                <barButtonItem title="Cancel" style="done" id="NoD-hE-tzn">
+                                    <connections>
+                                        <action selector="cancel:" destination="yqF-ch-kmW" id="9F8-wj-K1A"/>
+                                    </connections>
+                                </barButtonItem>
+                                <barButtonItem style="plain" systemItem="flexibleSpace" id="Zhh-Y6-cET"/>
+                                <barButtonItem title="Select Date" style="done" id="KMt-6E-eJs">
+                                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </barButtonItem>
+                                <barButtonItem style="plain" systemItem="flexibleSpace" id="zAd-Bh-5qp"/>
+                                <barButtonItem title="Done" style="done" id="Ugb-3c-xj3">
+                                    <connections>
+                                        <action selector="done:" destination="yqF-ch-kmW" id="xz4-b4-NKJ"/>
+                                    </connections>
+                                </barButtonItem>
+                            </items>
+                        </toolbar>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <viewLayoutGuide key="safeArea" id="nXi-qY-dt1"/>
+                </view>
+            </subviews>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="g59-Eo-PBZ"/>
+            <connections>
+                <outlet property="cancelButton" destination="NoD-hE-tzn" id="ToA-CY-6my"/>
+                <outlet property="containerView" destination="ob5-1C-YPy" id="vHb-Yg-qf3"/>
+                <outlet property="datePickerView" destination="YyU-xf-qDE" id="P9L-1i-DfD"/>
+                <outlet property="doneButton" destination="Ugb-3c-xj3" id="sfc-y1-7IY"/>
+                <outlet property="markView" destination="kqP-B7-M3q" id="dw8-1U-Zph"/>
+            </connections>
         </view>
     </objects>
 </document>

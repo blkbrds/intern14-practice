@@ -23,41 +23,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.backgroundColor = .white
+        configRootView(vc: DatePickerViewController())
         window?.makeKeyAndVisible()
-        
-        movetoEx05()
+    
         return true
-        
     }
-    
-    func movetoEx05() {
-        let vc = PickerViewController()
-        let navi = UINavigationController(rootViewController: vc)
-        window?.rootViewController = navi
-    }
-    
-    func movetoEx04() {
-        let vc = Ex04ViewController()
-        let navi = UINavigationController(rootViewController: vc)
-        window?.rootViewController = navi
-    }
-    
-    func movetoEx03() {
-        let vc = Ex03ViewController()
-        let navi = UINavigationController(rootViewController: vc)
-        window?.rootViewController = navi
-    }
+}
 
-    func movetoEx01() {
-        let vc = HomeViewController()
-        let navi = UINavigationController(rootViewController: vc)
-        window?.rootViewController = navi
-    }
-    
-    func movetoEx02() {
-        let vc = Ex02ViewController()
+// MARK: - Config root view
+extension AppDelegate {
+    private func configRootView(vc: UIViewController) {
         let navi = UINavigationController(rootViewController: vc)
         window?.rootViewController = navi
     }
 }
-

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B254060C22F7C9F2000B6F04 /* PickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B254060B22F7C9F2000B6F04 /* PickerView.xib */; };
 		B262294622E8075100BF364C /* MySliderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B262294522E8075100BF364C /* MySliderView.xib */; };
 		B290631622EAFCBC00A6DCE2 /* Ex04ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B290631422EAFCBC00A6DCE2 /* Ex04ViewController.swift */; };
 		B290631A22EAFCF700A6DCE2 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B290631922EAFCF700A6DCE2 /* NotificationView.swift */; };
@@ -24,15 +25,19 @@
 		B2EB5B6C22E7161E004005AF /* MySliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EB5B6B22E7161E004005AF /* MySliderView.swift */; };
 		B2EE4D7822F053220031FF46 /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EE4D7622F053220031FF46 /* DatePickerViewController.swift */; };
 		B2EE4D7922F053220031FF46 /* DatePickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2EE4D7722F053220031FF46 /* DatePickerViewController.xib */; };
+		B2EE4DDA22F911640022EDF0 /* BarChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EE4DD822F911640022EDF0 /* BarChartViewController.swift */; };
+		B2EE4DDB22F911640022EDF0 /* BarChartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2EE4DD922F911640022EDF0 /* BarChartViewController.xib */; };
+		B2EE4DDE22F9118C0022EDF0 /* MyBarChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EE4DDD22F9118C0022EDF0 /* MyBarChartView.swift */; };
+		B2EE4DE022F918E10022EDF0 /* MyChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EE4DDF22F918E10022EDF0 /* MyChart.swift */; };
 		B2EE724C22EEE355002BA3EE /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EE724A22EEE355002BA3EE /* PickerViewController.swift */; };
 		B2EE724D22EEE355002BA3EE /* PickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2EE724B22EEE355002BA3EE /* PickerViewController.xib */; };
 		B2EE725122EEE44C002BA3EE /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EE725022EEE44C002BA3EE /* PickerView.swift */; };
-		B2EE725322EEE47B002BA3EE /* PickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2EE725222EEE47B002BA3EE /* PickerView.xib */; };
 		B2EEB06B22E99EB30016E11A /* Ex03ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EEB06922E99EB30016E11A /* Ex03ViewController.swift */; };
 		B2EEB06C22E99EB30016E11A /* Ex03ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2EEB06A22E99EB30016E11A /* Ex03ViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B254060B22F7C9F2000B6F04 /* PickerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PickerView.xib; sourceTree = "<group>"; };
 		B262294522E8075100BF364C /* MySliderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MySliderView.xib; sourceTree = "<group>"; };
 		B290631422EAFCBC00A6DCE2 /* Ex04ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex04ViewController.swift; sourceTree = "<group>"; };
 		B290631922EAFCF700A6DCE2 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
@@ -52,10 +57,13 @@
 		B2EB5B6B22E7161E004005AF /* MySliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySliderView.swift; sourceTree = "<group>"; };
 		B2EE4D7622F053220031FF46 /* DatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
 		B2EE4D7722F053220031FF46 /* DatePickerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DatePickerViewController.xib; sourceTree = "<group>"; };
+		B2EE4DD822F911640022EDF0 /* BarChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartViewController.swift; sourceTree = "<group>"; };
+		B2EE4DD922F911640022EDF0 /* BarChartViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BarChartViewController.xib; sourceTree = "<group>"; };
+		B2EE4DDD22F9118C0022EDF0 /* MyBarChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBarChartView.swift; sourceTree = "<group>"; };
+		B2EE4DDF22F918E10022EDF0 /* MyChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyChart.swift; sourceTree = "<group>"; };
 		B2EE724A22EEE355002BA3EE /* PickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift; sourceTree = "<group>"; };
 		B2EE724B22EEE355002BA3EE /* PickerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PickerViewController.xib; sourceTree = "<group>"; };
 		B2EE725022EEE44C002BA3EE /* PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
-		B2EE725222EEE47B002BA3EE /* PickerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PickerView.xib; sourceTree = "<group>"; };
 		B2EEB06922E99EB30016E11A /* Ex03ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex03ViewController.swift; sourceTree = "<group>"; };
 		B2EEB06A22E99EB30016E11A /* Ex03ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex03ViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -124,6 +132,7 @@
 		B2EB5B4122E6E331004005AF /* BaiTapCustomView */ = {
 			isa = PBXGroup;
 			children = (
+				B2EE4DD622F910A40022EDF0 /* Ex06 */,
 				B2EE724922EEE19D002BA3EE /* Ex05 */,
 				B290631222EAFAA800A6DCE2 /* Ex04 */,
 				B2EEB06622E99E6E0016E11A /* Ex03 */,
@@ -193,6 +202,33 @@
 			path = DatePickerViewController;
 			sourceTree = "<group>";
 		};
+		B2EE4DD622F910A40022EDF0 /* Ex06 */ = {
+			isa = PBXGroup;
+			children = (
+				B2EE4DDC22F911680022EDF0 /* MyBarChart */,
+				B2EE4DD722F910BF0022EDF0 /* BarChartViewController */,
+			);
+			path = Ex06;
+			sourceTree = "<group>";
+		};
+		B2EE4DD722F910BF0022EDF0 /* BarChartViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B2EE4DD822F911640022EDF0 /* BarChartViewController.swift */,
+				B2EE4DD922F911640022EDF0 /* BarChartViewController.xib */,
+			);
+			path = BarChartViewController;
+			sourceTree = "<group>";
+		};
+		B2EE4DDC22F911680022EDF0 /* MyBarChart */ = {
+			isa = PBXGroup;
+			children = (
+				B2EE4DDD22F9118C0022EDF0 /* MyBarChartView.swift */,
+				B2EE4DDF22F918E10022EDF0 /* MyChart.swift */,
+			);
+			path = MyBarChart;
+			sourceTree = "<group>";
+		};
 		B2EE724922EEE19D002BA3EE /* Ex05 */ = {
 			isa = PBXGroup;
 			children = (
@@ -207,7 +243,7 @@
 			isa = PBXGroup;
 			children = (
 				B2EE725022EEE44C002BA3EE /* PickerView.swift */,
-				B2EE725222EEE47B002BA3EE /* PickerView.xib */,
+				B254060B22F7C9F2000B6F04 /* PickerView.xib */,
 			);
 			path = PickerView;
 			sourceTree = "<group>";
@@ -296,13 +332,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2EE4DDB22F911640022EDF0 /* BarChartViewController.xib in Resources */,
 				B2EE724D22EEE355002BA3EE /* PickerViewController.xib in Resources */,
 				B2EB5B4D22E6E333004005AF /* LaunchScreen.storyboard in Resources */,
 				B2EB5B6A22E715D9004005AF /* Ex02ViewController.xib in Resources */,
 				B2EB5B4A22E6E333004005AF /* Assets.xcassets in Resources */,
 				B2EEB06C22E99EB30016E11A /* Ex03ViewController.xib in Resources */,
-				B2EE725322EEE47B002BA3EE /* PickerView.xib in Resources */,
 				B2EE4D7922F053220031FF46 /* DatePickerViewController.xib in Resources */,
+				B254060C22F7C9F2000B6F04 /* PickerView.xib in Resources */,
 				B2EB5B6322E6F204004005AF /* Avatar.plist in Resources */,
 				B2EB5B5B22E6ECA4004005AF /* HomeViewController.xib in Resources */,
 				B262294622E8075100BF364C /* MySliderView.xib in Resources */,
@@ -316,9 +353,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2EE4DE022F918E10022EDF0 /* MyChart.swift in Sources */,
 				B2EB5B6022E6F132004005AF /* FileManager.swift in Sources */,
 				B2EE4D7822F053220031FF46 /* DatePickerViewController.swift in Sources */,
 				B2EB5B6922E715D9004005AF /* Ex02ViewController.swift in Sources */,
+				B2EE4DDA22F911640022EDF0 /* BarChartViewController.swift in Sources */,
 				B2EE724C22EEE355002BA3EE /* PickerViewController.swift in Sources */,
 				B2EEB06B22E99EB30016E11A /* Ex03ViewController.swift in Sources */,
 				B2EB5B5722E6EA20004005AF /* UserView.swift in Sources */,
@@ -328,6 +367,7 @@
 				B2EE725122EEE44C002BA3EE /* PickerView.swift in Sources */,
 				B2EB5B5A22E6ECA4004005AF /* HomeViewController.swift in Sources */,
 				B2EB5B6C22E7161E004005AF /* MySliderView.swift in Sources */,
+				B2EE4DDE22F9118C0022EDF0 /* MyBarChartView.swift in Sources */,
 				B290631A22EAFCF700A6DCE2 /* NotificationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
