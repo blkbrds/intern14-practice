@@ -10,15 +10,16 @@ import UIKit
 
 class Ex11ViewController: BaseViewController {
 
-    @IBOutlet weak var redButton: UIButton!
-    @IBOutlet weak var orangeButton: UIButton!
-    @IBOutlet weak var greenButton: UIButton!
-    @IBOutlet weak var blueButton: UIButton!
+    // MARK: - Outlets
+    @IBOutlet private weak var redButton: UIButton!
+    @IBOutlet private weak var orangeButton: UIButton!
+    @IBOutlet private weak var greenButton: UIButton!
+    @IBOutlet private weak var blueButton: UIButton!
+    @IBOutlet private var redConstraints: [NSLayoutConstraint]!
+    @IBOutlet private var orangeConstraints: [NSLayoutConstraint]!
+    @IBOutlet private var greenConstraints: [NSLayoutConstraint]!
+    @IBOutlet private var blueConstraints: [NSLayoutConstraint]!
 
-    @IBOutlet var redConstraints: [NSLayoutConstraint]!
-    @IBOutlet var orangeConstraints: [NSLayoutConstraint]!
-    @IBOutlet var greenConstraints: [NSLayoutConstraint]!
-    @IBOutlet var blueConstraints: [NSLayoutConstraint]!
     // MARK: - Properties
     var exercise: Exercise?
 
@@ -38,7 +39,10 @@ class Ex11ViewController: BaseViewController {
     }
 
     override func setupData() {
+        super.setupData()
     }
+
+    // MARK: - Actions
     @IBAction func buttonActionTouchUpInside(_ button: UIButton) {
         switch button {
         case redButton:
