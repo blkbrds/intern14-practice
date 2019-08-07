@@ -91,6 +91,8 @@
 		B0F127CE22F9588F0095DCCF /* Bai9ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F127CC22F9588F0095DCCF /* Bai9ViewController.xib */; };
 		B0F1340222FA65CE0075E552 /* Bai11ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F1340022FA65CE0075E552 /* Bai11ViewController.swift */; };
 		B0F1340322FA65CE0075E552 /* Bai11ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F1340122FA65CE0075E552 /* Bai11ViewController.xib */; };
+		B0F1340722FA6A150075E552 /* Bai12ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F1340522FA6A150075E552 /* Bai12ViewController.swift */; };
+		B0F1340822FA6A150075E552 /* Bai12ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F1340622FA6A150075E552 /* Bai12ViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -180,6 +182,8 @@
 		B0F127CC22F9588F0095DCCF /* Bai9ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Bai9ViewController.xib; sourceTree = "<group>"; };
 		B0F1340022FA65CE0075E552 /* Bai11ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bai11ViewController.swift; sourceTree = "<group>"; };
 		B0F1340122FA65CE0075E552 /* Bai11ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Bai11ViewController.xib; sourceTree = "<group>"; };
+		B0F1340522FA6A150075E552 /* Bai12ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bai12ViewController.swift; sourceTree = "<group>"; };
+		B0F1340622FA6A150075E552 /* Bai12ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Bai12ViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +200,7 @@
 		B0CE3BEC22F432C2004D2405 /* BaiTap */ = {
 			isa = PBXGroup;
 			children = (
+				B0F1340422FA69AE0075E552 /* Bai12 */,
 				B0F133FF22FA65930075E552 /* Bai11 */,
 				B0F127CA22F957F80095DCCF /* Bai9 */,
 				B0EC340F22F80AD7001C51D6 /* Bai8 */,
@@ -677,6 +682,15 @@
 			name = Bai11;
 			sourceTree = "<group>";
 		};
+		B0F1340422FA69AE0075E552 /* Bai12 */ = {
+			isa = PBXGroup;
+			children = (
+				B0F1340522FA6A150075E552 /* Bai12ViewController.swift */,
+				B0F1340622FA6A150075E552 /* Bai12ViewController.xib */,
+			);
+			name = Bai12;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -760,6 +774,7 @@
 				B0CE3C0A22F43353004D2405 /* Bai3Part2ViewController.xib in Resources */,
 				B0EC33E122F7EAE8001C51D6 /* 4Part1ViewController.xib in Resources */,
 				B0EC33D122F7E591001C51D6 /* Part3ViewController.xib in Resources */,
+				B0F1340822FA6A150075E552 /* Bai12ViewController.xib in Resources */,
 				B0CE3C0522F43339004D2405 /* Bai3ViewController.xib in Resources */,
 				B0CE3C2322F4358B004D2405 /* Bai4Part4VC.xib in Resources */,
 				B0F1340322FA65CE0075E552 /* Bai11ViewController.xib in Resources */,
@@ -794,6 +809,7 @@
 				B0EC33C122F7E318001C51D6 /* Part0ViewController.swift in Sources */,
 				B0EC33C622F7E3CC001C51D6 /* Part1ViewController.swift in Sources */,
 				B0CE3C1322F43388004D2405 /* Bai4ViewController.swift in Sources */,
+				B0F1340722FA6A150075E552 /* Bai12ViewController.swift in Sources */,
 				B0F127CD22F9588F0095DCCF /* Bai9ViewController.swift in Sources */,
 				B0CE3C2222F4358B004D2405 /* Bai4Part4VC.swift in Sources */,
 				B0EC33A622F7D775001C51D6 /* Bai6ViewController.swift in Sources */,
