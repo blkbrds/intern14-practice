@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Interface {
+class Person {
     var name: String = " "
     var avatar = UIImage()
     
@@ -20,16 +20,16 @@ class Interface {
 
 class Ex02ViewController: UIViewController {
 
-    var users: [Interface] = [
-        Interface("tu", #imageLiteral(resourceName: "top-20-ten-chu-thien-ba-me-danh-dat-cho-con-de-thuong-va-y-nghia-nhat-6659-1")),
-        Interface("vu", #imageLiteral(resourceName: "hinh-em-be-de-thuong-1")),
-        Interface("vien", #imageLiteral(resourceName: "Baby-Girl-Names-Inspired-By-Queens-1")),
-        Interface("thanh", #imageLiteral(resourceName: "be-yeu")),
-        Interface("tien", #imageLiteral(resourceName: "y-tuong-chup-anh-cho-be-trai-5")),
-        Interface("tuan anh", #imageLiteral(resourceName: "HN6522_HN2_3933")),
-        Interface("thinh", #imageLiteral(resourceName: "hinh-anh-em-be-de-thuong-31")),
-        Interface("tung", #imageLiteral(resourceName: "V1084")),
-        Interface("bien", #imageLiteral(resourceName: "HN6522_HN2_3933"))
+    var users: [Person] = [
+        Person("tu", #imageLiteral(resourceName: "top-20-ten-chu-thien-ba-me-danh-dat-cho-con-de-thuong-va-y-nghia-nhat-6659-1")),
+        Person("vu", #imageLiteral(resourceName: "hinh-em-be-de-thuong-1")),
+        Person("vien", #imageLiteral(resourceName: "Baby-Girl-Names-Inspired-By-Queens-1")),
+        Person("thanh", #imageLiteral(resourceName: "be-yeu")),
+        Person("tien", #imageLiteral(resourceName: "y-tuong-chup-anh-cho-be-trai-5")),
+        Person("tuan anh", #imageLiteral(resourceName: "HN6522_HN2_3933")),
+        Person("thinh", #imageLiteral(resourceName: "hinh-anh-em-be-de-thuong-31")),
+        Person("tung", #imageLiteral(resourceName: "V1084")),
+        Person("bien", #imageLiteral(resourceName: "HN6522_HN2_3933"))
     ]
     
     override func viewDidLoad() {
@@ -70,16 +70,4 @@ class Ex02ViewController: UIViewController {
         }
     }
 }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 
