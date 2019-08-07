@@ -55,6 +55,7 @@ class Ex9ViewController: BaseViewController {
     }
 
     override func setupData() {
+        super.setupData()
     }
 
     // MARK: Actions
