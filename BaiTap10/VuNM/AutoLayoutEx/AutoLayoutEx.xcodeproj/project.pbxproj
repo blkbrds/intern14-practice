@@ -38,24 +38,6 @@
 		F071243C22F449FB0087D4EB /* Ex05ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F071243A22F449FB0087D4EB /* Ex05ViewController.xib */; };
 		F0ED4C4722F9254A00A407AF /* Pic01ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ED4C4522F9254A00A407AF /* Pic01ViewController.swift */; };
 		F0ED4C4822F9254A00A407AF /* Pic01ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0ED4C4622F9254A00A407AF /* Pic01ViewController.xib */; };
-		F0ED4C4B22F9255C00A407AF /* Pic02ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ED4C4922F9255C00A407AF /* Pic02ViewController.swift */; };
-		F0ED4C4C22F9255C00A407AF /* Pic02ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0ED4C4A22F9255C00A407AF /* Pic02ViewController.xib */; };
-		F0ED4C4F22F925DB00A407AF /* Pic03ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ED4C4D22F925DB00A407AF /* Pic03ViewController.swift */; };
-		F0ED4C5022F925DB00A407AF /* Pic03ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0ED4C4E22F925DB00A407AF /* Pic03ViewController.xib */; };
-		F0ED4C5322F925ED00A407AF /* Pic04ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ED4C5122F925ED00A407AF /* Pic04ViewController.swift */; };
-		F0ED4C5422F925ED00A407AF /* Pic04ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0ED4C5222F925ED00A407AF /* Pic04ViewController.xib */; };
-		F0ED4C5722F9267600A407AF /* Pic05ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ED4C5522F9267600A407AF /* Pic05ViewController.swift */; };
-		F0ED4C5822F9267600A407AF /* Pic05ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0ED4C5622F9267600A407AF /* Pic05ViewController.xib */; };
-		F0ED4C5B22F9268200A407AF /* Pic06ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ED4C5922F9268200A407AF /* Pic06ViewController.swift */; };
-		F0ED4C5C22F9268200A407AF /* Pic06ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0ED4C5A22F9268200A407AF /* Pic06ViewController.xib */; };
-		F0ED4C5F22F9269200A407AF /* Pic07ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ED4C5D22F9269200A407AF /* Pic07ViewController.swift */; };
-		F0ED4C6022F9269200A407AF /* Pic07ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0ED4C5E22F9269200A407AF /* Pic07ViewController.xib */; };
-		F0ED4C6322F926A400A407AF /* Pic08ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ED4C6122F926A400A407AF /* Pic08ViewController.swift */; };
-		F0ED4C6422F926A400A407AF /* Pic08ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0ED4C6222F926A400A407AF /* Pic08ViewController.xib */; };
-		F0ED4C6722F9275B00A407AF /* Pic09ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ED4C6522F9275B00A407AF /* Pic09ViewController.swift */; };
-		F0ED4C6822F9275B00A407AF /* Pic09ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0ED4C6622F9275B00A407AF /* Pic09ViewController.xib */; };
-		F0ED4C6B22F9279400A407AF /* Pic10ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ED4C6922F9279400A407AF /* Pic10ViewController.swift */; };
-		F0ED4C6C22F9279400A407AF /* Pic10ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0ED4C6A22F9279400A407AF /* Pic10ViewController.xib */; };
 		F0ED7FC922F7C82E0064C204 /* Ex05aViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ED7FC722F7C82E0064C204 /* Ex05aViewController.swift */; };
 		F0ED7FCA22F7C82E0064C204 /* Ex05aViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0ED7FC822F7C82E0064C204 /* Ex05aViewController.xib */; };
 		F0ED7FCE22F7CA710064C204 /* Ex05bViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ED7FCC22F7CA710064C204 /* Ex05bViewController.swift */; };
@@ -102,6 +84,12 @@
 		F0ED804322F8099B0064C204 /* Ex07ccViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0ED804122F8099B0064C204 /* Ex07ccViewController.xib */; };
 		F0ED804722F80A210064C204 /* Ex07cdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ED804522F80A210064C204 /* Ex07cdViewController.swift */; };
 		F0ED804822F80A210064C204 /* Ex07cdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0ED804622F80A210064C204 /* Ex07cdViewController.xib */; };
+		F0EE096022FA65DF00CFF579 /* Ex11ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0EE095E22FA65DF00CFF579 /* Ex11ViewController.swift */; };
+		F0EE096122FA65DF00CFF579 /* Ex11ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0EE095F22FA65DF00CFF579 /* Ex11ViewController.xib */; };
+		F0EE096522FA690000CFF579 /* Ex12ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0EE096322FA690000CFF579 /* Ex12ViewController.swift */; };
+		F0EE096622FA690000CFF579 /* Ex12ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0EE096422FA690000CFF579 /* Ex12ViewController.xib */; };
+		F0EE096A22FAD44F00CFF579 /* Ex10ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0EE096822FAD44F00CFF579 /* Ex10ViewController.swift */; };
+		F0EE096B22FAD44F00CFF579 /* Ex10ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0EE096922FAD44F00CFF579 /* Ex10ViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -138,24 +126,6 @@
 		F071243A22F449FB0087D4EB /* Ex05ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex05ViewController.xib; sourceTree = "<group>"; };
 		F0ED4C4522F9254A00A407AF /* Pic01ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pic01ViewController.swift; sourceTree = "<group>"; };
 		F0ED4C4622F9254A00A407AF /* Pic01ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Pic01ViewController.xib; sourceTree = "<group>"; };
-		F0ED4C4922F9255C00A407AF /* Pic02ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pic02ViewController.swift; sourceTree = "<group>"; };
-		F0ED4C4A22F9255C00A407AF /* Pic02ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Pic02ViewController.xib; sourceTree = "<group>"; };
-		F0ED4C4D22F925DB00A407AF /* Pic03ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pic03ViewController.swift; sourceTree = "<group>"; };
-		F0ED4C4E22F925DB00A407AF /* Pic03ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Pic03ViewController.xib; sourceTree = "<group>"; };
-		F0ED4C5122F925ED00A407AF /* Pic04ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pic04ViewController.swift; sourceTree = "<group>"; };
-		F0ED4C5222F925ED00A407AF /* Pic04ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Pic04ViewController.xib; sourceTree = "<group>"; };
-		F0ED4C5522F9267600A407AF /* Pic05ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pic05ViewController.swift; sourceTree = "<group>"; };
-		F0ED4C5622F9267600A407AF /* Pic05ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Pic05ViewController.xib; sourceTree = "<group>"; };
-		F0ED4C5922F9268200A407AF /* Pic06ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pic06ViewController.swift; sourceTree = "<group>"; };
-		F0ED4C5A22F9268200A407AF /* Pic06ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Pic06ViewController.xib; sourceTree = "<group>"; };
-		F0ED4C5D22F9269200A407AF /* Pic07ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pic07ViewController.swift; sourceTree = "<group>"; };
-		F0ED4C5E22F9269200A407AF /* Pic07ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Pic07ViewController.xib; sourceTree = "<group>"; };
-		F0ED4C6122F926A400A407AF /* Pic08ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pic08ViewController.swift; sourceTree = "<group>"; };
-		F0ED4C6222F926A400A407AF /* Pic08ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Pic08ViewController.xib; sourceTree = "<group>"; };
-		F0ED4C6522F9275B00A407AF /* Pic09ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pic09ViewController.swift; sourceTree = "<group>"; };
-		F0ED4C6622F9275B00A407AF /* Pic09ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Pic09ViewController.xib; sourceTree = "<group>"; };
-		F0ED4C6922F9279400A407AF /* Pic10ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pic10ViewController.swift; sourceTree = "<group>"; };
-		F0ED4C6A22F9279400A407AF /* Pic10ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Pic10ViewController.xib; sourceTree = "<group>"; };
 		F0ED7FC722F7C82E0064C204 /* Ex05aViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex05aViewController.swift; sourceTree = "<group>"; };
 		F0ED7FC822F7C82E0064C204 /* Ex05aViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex05aViewController.xib; sourceTree = "<group>"; };
 		F0ED7FCC22F7CA710064C204 /* Ex05bViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex05bViewController.swift; sourceTree = "<group>"; };
@@ -202,6 +172,12 @@
 		F0ED804122F8099B0064C204 /* Ex07ccViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex07ccViewController.xib; sourceTree = "<group>"; };
 		F0ED804522F80A210064C204 /* Ex07cdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex07cdViewController.swift; sourceTree = "<group>"; };
 		F0ED804622F80A210064C204 /* Ex07cdViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex07cdViewController.xib; sourceTree = "<group>"; };
+		F0EE095E22FA65DF00CFF579 /* Ex11ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex11ViewController.swift; sourceTree = "<group>"; };
+		F0EE095F22FA65DF00CFF579 /* Ex11ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex11ViewController.xib; sourceTree = "<group>"; };
+		F0EE096322FA690000CFF579 /* Ex12ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex12ViewController.swift; sourceTree = "<group>"; };
+		F0EE096422FA690000CFF579 /* Ex12ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex12ViewController.xib; sourceTree = "<group>"; };
+		F0EE096822FAD44F00CFF579 /* Ex10ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex10ViewController.swift; sourceTree = "<group>"; };
+		F0EE096922FAD44F00CFF579 /* Ex10ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex10ViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -234,6 +210,9 @@
 		F07123DF22F41C080087D4EB /* AutoLayoutEx */ = {
 			isa = PBXGroup;
 			children = (
+				F0EE096222FA68EF00CFF579 /* Ex12 */,
+				F0EE095D22FA65CD00CFF579 /* Ex11 */,
+				F0EE096722FAD42400CFF579 /* Ex10 */,
 				F0ED4C3A22F9238A00A407AF /* Ex09 */,
 				F0ED800E22F7EA7F0064C204 /* Ex08 */,
 				F0ED7FF422F7E2C00064C204 /* Ex07 */,
@@ -431,15 +410,6 @@
 		F0ED4C3A22F9238A00A407AF /* Ex09 */ = {
 			isa = PBXGroup;
 			children = (
-				F0ED4C4422F924BE00A407AF /* Pic10 */,
-				F0ED4C4322F924B700A407AF /* Pic09 */,
-				F0ED4C4222F924A800A407AF /* Pic08 */,
-				F0ED4C4122F9247000A407AF /* Pic07 */,
-				F0ED4C4022F9246A00A407AF /* Pic06 */,
-				F0ED4C3F22F9246100A407AF /* Pic05 */,
-				F0ED4C3E22F9245900A407AF /* Pic04 */,
-				F0ED4C3D22F9245300A407AF /* Pic03 */,
-				F0ED4C3C22F9244A00A407AF /* Pic02 */,
 				F0ED4C3B22F9243B00A407AF /* Pic01 */,
 			);
 			path = Ex09;
@@ -452,87 +422,6 @@
 				F0ED4C4622F9254A00A407AF /* Pic01ViewController.xib */,
 			);
 			path = Pic01;
-			sourceTree = "<group>";
-		};
-		F0ED4C3C22F9244A00A407AF /* Pic02 */ = {
-			isa = PBXGroup;
-			children = (
-				F0ED4C4922F9255C00A407AF /* Pic02ViewController.swift */,
-				F0ED4C4A22F9255C00A407AF /* Pic02ViewController.xib */,
-			);
-			path = Pic02;
-			sourceTree = "<group>";
-		};
-		F0ED4C3D22F9245300A407AF /* Pic03 */ = {
-			isa = PBXGroup;
-			children = (
-				F0ED4C4D22F925DB00A407AF /* Pic03ViewController.swift */,
-				F0ED4C4E22F925DB00A407AF /* Pic03ViewController.xib */,
-			);
-			path = Pic03;
-			sourceTree = "<group>";
-		};
-		F0ED4C3E22F9245900A407AF /* Pic04 */ = {
-			isa = PBXGroup;
-			children = (
-				F0ED4C5122F925ED00A407AF /* Pic04ViewController.swift */,
-				F0ED4C5222F925ED00A407AF /* Pic04ViewController.xib */,
-			);
-			path = Pic04;
-			sourceTree = "<group>";
-		};
-		F0ED4C3F22F9246100A407AF /* Pic05 */ = {
-			isa = PBXGroup;
-			children = (
-				F0ED4C5522F9267600A407AF /* Pic05ViewController.swift */,
-				F0ED4C5622F9267600A407AF /* Pic05ViewController.xib */,
-			);
-			path = Pic05;
-			sourceTree = "<group>";
-		};
-		F0ED4C4022F9246A00A407AF /* Pic06 */ = {
-			isa = PBXGroup;
-			children = (
-				F0ED4C5922F9268200A407AF /* Pic06ViewController.swift */,
-				F0ED4C5A22F9268200A407AF /* Pic06ViewController.xib */,
-			);
-			path = Pic06;
-			sourceTree = "<group>";
-		};
-		F0ED4C4122F9247000A407AF /* Pic07 */ = {
-			isa = PBXGroup;
-			children = (
-				F0ED4C5D22F9269200A407AF /* Pic07ViewController.swift */,
-				F0ED4C5E22F9269200A407AF /* Pic07ViewController.xib */,
-			);
-			path = Pic07;
-			sourceTree = "<group>";
-		};
-		F0ED4C4222F924A800A407AF /* Pic08 */ = {
-			isa = PBXGroup;
-			children = (
-				F0ED4C6122F926A400A407AF /* Pic08ViewController.swift */,
-				F0ED4C6222F926A400A407AF /* Pic08ViewController.xib */,
-			);
-			path = Pic08;
-			sourceTree = "<group>";
-		};
-		F0ED4C4322F924B700A407AF /* Pic09 */ = {
-			isa = PBXGroup;
-			children = (
-				F0ED4C6522F9275B00A407AF /* Pic09ViewController.swift */,
-				F0ED4C6622F9275B00A407AF /* Pic09ViewController.xib */,
-			);
-			path = Pic09;
-			sourceTree = "<group>";
-		};
-		F0ED4C4422F924BE00A407AF /* Pic10 */ = {
-			isa = PBXGroup;
-			children = (
-				F0ED4C6922F9279400A407AF /* Pic10ViewController.swift */,
-				F0ED4C6A22F9279400A407AF /* Pic10ViewController.xib */,
-			);
-			path = Pic10;
 			sourceTree = "<group>";
 		};
 		F0ED7FC622F7C8170064C204 /* Ex05a */ = {
@@ -822,6 +711,33 @@
 			path = Ex07cd;
 			sourceTree = "<group>";
 		};
+		F0EE095D22FA65CD00CFF579 /* Ex11 */ = {
+			isa = PBXGroup;
+			children = (
+				F0EE095E22FA65DF00CFF579 /* Ex11ViewController.swift */,
+				F0EE095F22FA65DF00CFF579 /* Ex11ViewController.xib */,
+			);
+			path = Ex11;
+			sourceTree = "<group>";
+		};
+		F0EE096222FA68EF00CFF579 /* Ex12 */ = {
+			isa = PBXGroup;
+			children = (
+				F0EE096322FA690000CFF579 /* Ex12ViewController.swift */,
+				F0EE096422FA690000CFF579 /* Ex12ViewController.xib */,
+			);
+			path = Ex12;
+			sourceTree = "<group>";
+		};
+		F0EE096722FAD42400CFF579 /* Ex10 */ = {
+			isa = PBXGroup;
+			children = (
+				F0EE096822FAD44F00CFF579 /* Ex10ViewController.swift */,
+				F0EE096922FAD44F00CFF579 /* Ex10ViewController.xib */,
+			);
+			path = Ex10;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -884,11 +800,7 @@
 				F0ED804322F8099B0064C204 /* Ex07ccViewController.xib in Resources */,
 				F071241322F42B2A0087D4EB /* Ex03aViewController.xib in Resources */,
 				F0ED7FFE22F7E3E80064C204 /* Ex07aaViewController.xib in Resources */,
-				F0ED4C6C22F9279400A407AF /* Pic10ViewController.xib in Resources */,
 				F0ED7FF922F7E2D90064C204 /* Ex07aViewController.xib in Resources */,
-				F0ED4C5422F925ED00A407AF /* Pic04ViewController.xib in Resources */,
-				F0ED4C4C22F9255C00A407AF /* Pic02ViewController.xib in Resources */,
-				F0ED4C5822F9267600A407AF /* Pic05ViewController.xib in Resources */,
 				F0ED802422F7ED630064C204 /* Ex07bbViewController.xib in Resources */,
 				F07123F822F41CA40087D4EB /* Ex01ViewController.xib in Resources */,
 				F0ED7FE422F7DBB50064C204 /* Ex06aViewController.xib in Resources */,
@@ -904,30 +816,28 @@
 				F0ED7FD922F7D57A0064C204 /* Ex05dViewController.xib in Resources */,
 				F0ED803E22F808AE0064C204 /* Ex07cbViewController.xib in Resources */,
 				F0ED7FDF22F7D89D0064C204 /* Ex06ViewController.xib in Resources */,
-				F0ED4C6422F926A400A407AF /* Pic08ViewController.xib in Resources */,
-				F0ED4C5022F925DB00A407AF /* Pic03ViewController.xib in Resources */,
 				F0ED7FCF22F7CA710064C204 /* Ex05bViewController.xib in Resources */,
 				F0ED4C4822F9254A00A407AF /* Pic01ViewController.xib in Resources */,
 				F071241822F42D9A0087D4EB /* Ex03bViewController.xib in Resources */,
 				F0ED7FD422F7CB930064C204 /* Ex05cViewController.xib in Resources */,
-				F0ED4C6022F9269200A407AF /* Pic07ViewController.xib in Resources */,
 				F0ED7FF322F7E1800064C204 /* Ex06dViewController.xib in Resources */,
 				F071243522F447DB0087D4EB /* Ex04dViewController.xib in Resources */,
 				F0ED7FEE22F7DF580064C204 /* Ex06cViewController.xib in Resources */,
 				F0ED7FCA22F7C82E0064C204 /* Ex05aViewController.xib in Resources */,
+				F0EE096B22FAD44F00CFF579 /* Ex10ViewController.xib in Resources */,
 				F0ED7FE922F7DE890064C204 /* Ex06bViewController.xib in Resources */,
 				F07123EB22F41C090087D4EB /* LaunchScreen.storyboard in Resources */,
 				F0ED800322F7E7F20064C204 /* Ex07abViewController.xib in Resources */,
 				F071242F22F4471C0087D4EB /* Ex04cViewController.xib in Resources */,
 				F0ED803922F807C00064C204 /* Ex07caViewController.xib in Resources */,
-				F0ED4C5C22F9268200A407AF /* Pic06ViewController.xib in Resources */,
+				F0EE096622FA690000CFF579 /* Ex12ViewController.xib in Resources */,
 				F0ED801322F7EA990064C204 /* Ex08ViewController.xib in Resources */,
 				F0ED801A22F7EB420064C204 /* Ex07bViewController.xib in Resources */,
 				F0ED800D22F7E9C10064C204 /* Ex07adViewController.xib in Resources */,
 				F071241F22F435C20087D4EB /* Ex04ViewController.xib in Resources */,
+				F0EE096122FA65DF00CFF579 /* Ex11ViewController.xib in Resources */,
 				F07123FD22F41DCE0087D4EB /* Ex01aViewController.xib in Resources */,
 				F07123E822F41C090087D4EB /* Assets.xcassets in Resources */,
-				F0ED4C6822F9275B00A407AF /* Pic09ViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -940,6 +850,7 @@
 			files = (
 				F071242922F445800087D4EB /* Ex04bViewController.swift in Sources */,
 				F0ED7FE822F7DE890064C204 /* Ex06bViewController.swift in Sources */,
+				F0EE096522FA690000CFF579 /* Ex12ViewController.swift in Sources */,
 				F071240B22F425200087D4EB /* Ex03ViewController.swift in Sources */,
 				F0ED800222F7E7F20064C204 /* Ex07abViewController.swift in Sources */,
 				F0ED800722F7E8B20064C204 /* Ex07acViewController.swift in Sources */,
@@ -948,22 +859,15 @@
 				F0ED801222F7EA990064C204 /* Ex08ViewController.swift in Sources */,
 				F071240122F420720087D4EB /* Ex02ViewController.swift in Sources */,
 				F0ED800C22F7E9C10064C204 /* Ex07adViewController.swift in Sources */,
-				F0ED4C4F22F925DB00A407AF /* Pic03ViewController.swift in Sources */,
 				F07123F722F41CA40087D4EB /* Ex01ViewController.swift in Sources */,
 				F0ED7FFD22F7E3E80064C204 /* Ex07aaViewController.swift in Sources */,
-				F0ED4C6B22F9279400A407AF /* Pic10ViewController.swift in Sources */,
 				F0ED7FF822F7E2D90064C204 /* Ex07aViewController.swift in Sources */,
-				F0ED4C5322F925ED00A407AF /* Pic04ViewController.swift in Sources */,
 				F0ED802822F7EEEE0064C204 /* Ex07bcViewController.swift in Sources */,
-				F0ED4C4B22F9255C00A407AF /* Pic02ViewController.swift in Sources */,
 				F071241E22F435C20087D4EB /* Ex04ViewController.swift in Sources */,
-				F0ED4C5722F9267600A407AF /* Pic05ViewController.swift in Sources */,
 				F0ED7FED22F7DF580064C204 /* Ex06cViewController.swift in Sources */,
-				F0ED4C6722F9275B00A407AF /* Pic09ViewController.swift in Sources */,
+				F0EE096022FA65DF00CFF579 /* Ex11ViewController.swift in Sources */,
 				F071240522F421830087D4EB /* Ex02aViewController.swift in Sources */,
 				F0ED7FCE22F7CA710064C204 /* Ex05bViewController.swift in Sources */,
-				F0ED4C5F22F9269200A407AF /* Pic07ViewController.swift in Sources */,
-				F0ED4C6322F926A400A407AF /* Pic08ViewController.swift in Sources */,
 				F071241722F42D9A0087D4EB /* Ex03bViewController.swift in Sources */,
 				F07123E122F41C080087D4EB /* AppDelegate.swift in Sources */,
 				F0ED801922F7EB420064C204 /* Ex07bViewController.swift in Sources */,
@@ -973,6 +877,7 @@
 				F0ED7FC922F7C82E0064C204 /* Ex05aViewController.swift in Sources */,
 				F0ED803822F807C00064C204 /* Ex07caViewController.swift in Sources */,
 				F0ED4C4722F9254A00A407AF /* Pic01ViewController.swift in Sources */,
+				F0EE096A22FAD44F00CFF579 /* Ex10ViewController.swift in Sources */,
 				F0ED7FDE22F7D89D0064C204 /* Ex06ViewController.swift in Sources */,
 				F0ED802D22F805A50064C204 /* Ex07bdViewController.swift in Sources */,
 				F0ED7FD322F7CB930064C204 /* Ex05cViewController.swift in Sources */,
@@ -981,7 +886,6 @@
 				F071243B22F449FB0087D4EB /* Ex05ViewController.swift in Sources */,
 				F071242322F442780087D4EB /* Ex04aViewController.swift in Sources */,
 				F071243422F447DB0087D4EB /* Ex04dViewController.swift in Sources */,
-				F0ED4C5B22F9268200A407AF /* Pic06ViewController.swift in Sources */,
 				F0ED7FF222F7E1800064C204 /* Ex06dViewController.swift in Sources */,
 				F0ED804222F8099B0064C204 /* Ex07ccViewController.swift in Sources */,
 				F071242E22F4471C0087D4EB /* Ex04cViewController.swift in Sources */,

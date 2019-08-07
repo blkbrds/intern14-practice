@@ -1,14 +1,14 @@
 //
-//  Pic02ViewController.swift
+//  Ex12ViewController.swift
 //  AutoLayoutEx
 //
-//  Created by PCI0007 on 8/6/19.
+//  Created by PCI0007 on 8/7/19.
 //  Copyright © 2019 PCI0007. All rights reserved.
 //
 
 import UIKit
 
-class Pic02ViewController: UIViewController {
+class Ex12ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
