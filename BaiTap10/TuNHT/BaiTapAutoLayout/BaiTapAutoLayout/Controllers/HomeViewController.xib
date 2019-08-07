@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="BaiTapAutoLayout" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outletCollection property="baiTapButton" destination="hM8-l5-gJg" collectionClass="NSMutableArray" id="txp-Wm-IQS"/>
+                <outletCollection property="baiTapButton" destination="SLQ-cx-Vy5" collectionClass="NSMutableArray" id="4Xo-hF-Y0p"/>
+                <outletCollection property="baiTapButton" destination="0Y9-FZ-lfb" collectionClass="NSMutableArray" id="kIo-AH-Mvt"/>
+                <outletCollection property="baiTapButton" destination="c2S-Bu-FUU" collectionClass="NSMutableArray" id="KIK-Ff-ncG"/>
+                <outletCollection property="baiTapButton" destination="HCB-aD-3Md" collectionClass="NSMutableArray" id="IGq-Ss-s2e"/>
+                <outletCollection property="baiTapButton" destination="TqF-3q-1FI" collectionClass="NSMutableArray" id="BTi-BZ-hdF"/>
+                <outletCollection property="baiTapButton" destination="D99-aG-MiY" collectionClass="NSMutableArray" id="BvK-dX-ijs"/>
+                <outletCollection property="baiTapButton" destination="LeH-tO-HgJ" collectionClass="NSMutableArray" id="x3c-iI-lqG"/>
+                <outletCollection property="baiTapButton" destination="tGU-Id-doe" collectionClass="NSMutableArray" id="Dxd-cm-4a9"/>
+                <outletCollection property="baiTapButton" destination="gDD-ci-EjZ" collectionClass="NSMutableArray" id="20Y-Ow-0hV"/>
+                <outletCollection property="baiTapButton" destination="opR-Vb-keK" collectionClass="NSMutableArray" id="s3r-Vf-vFK"/>
+                <outletCollection property="baiTapButton" destination="8Z4-3J-EPE" collectionClass="NSMutableArray" id="1aj-B3-vv9"/>
+                <outletCollection property="baiTapButton" destination="ndp-Ia-rbL" collectionClass="NSMutableArray" id="Tfw-u0-Kt7"/>
+                <outletCollection property="baiTapButton" destination="zJR-ca-5Kf" collectionClass="NSMutableArray" id="pHQ-X4-66r"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LeH-tO-HgJ">
+                    <rect key="frame" x="262" y="199" width="55" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="Bài 8"/>
+                    <connections>
+                        <action selector="baiTapButtonTouchUpInside:" destination="-1" eventType="touchUpInside" id="89S-5r-Nn3"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tGU-Id-doe">
+                    <rect key="frame" x="262" y="269" width="55" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="Bài 9"/>
+                    <connections>
+                        <action selector="baiTapButtonTouchUpInside:" destination="-1" eventType="touchUpInside" id="xRo-Xd-Kb3"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gDD-ci-EjZ">
+                    <rect key="frame" x="262" y="343" width="55" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="Bài 10"/>
+                    <connections>
+                        <action selector="baiTapButtonTouchUpInside:" destination="-1" eventType="touchUpInside" id="bgK-jn-sXG"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="opR-Vb-keK">
+                    <rect key="frame" x="262" y="415" width="55" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="Bài 11"/>
+                    <connections>
+                        <action selector="baiTapButtonTouchUpInside:" destination="-1" eventType="touchUpInside" id="7NZ-TO-ZdN"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Z4-3J-EPE">
+                    <rect key="frame" x="262" y="489" width="55" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="Bài 12"/>
+                    <connections>
+                        <action selector="baiTapButtonTouchUpInside:" destination="-1" eventType="touchUpInside" id="hwn-LC-fsN"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ndp-Ia-rbL">
+                    <rect key="frame" x="262" y="570" width="55" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="Bài 13"/>
+                    <connections>
+                        <action selector="baiTapButtonTouchUpInside:" destination="-1" eventType="touchUpInside" id="iPo-mI-Qs4"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zJR-ca-5Kf">
+                    <rect key="frame" x="262" y="653" width="55" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="Bài 14"/>
+                    <connections>
+                        <action selector="baiTapButtonTouchUpInside:" destination="-1" eventType="touchUpInside" id="m8j-OU-jPR"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hM8-l5-gJg">
+                    <rect key="frame" x="97" y="199" width="55" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="Bài 1"/>
+                    <connections>
+                        <action selector="baiTapButtonTouchUpInside:" destination="-1" eventType="touchUpInside" id="99q-gs-15v"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Y9-FZ-lfb">
+                    <rect key="frame" x="97" y="343" width="55" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="Bài 3"/>
+                    <connections>
+                        <action selector="baiTapButtonTouchUpInside:" destination="-1" eventType="touchUpInside" id="egX-qz-ChO"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c2S-Bu-FUU">
+                    <rect key="frame" x="97" y="415" width="55" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="Bài 4"/>
+                    <connections>
+                        <action selector="baiTapButtonTouchUpInside:" destination="-1" eventType="touchUpInside" id="LOh-se-Yun"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SLQ-cx-Vy5">
+                    <rect key="frame" x="97" y="269" width="55" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="Bài 2"/>
+                    <connections>
+                        <action selector="baiTapButtonTouchUpInside:" destination="-1" eventType="touchUpInside" id="aa2-Ox-11k"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HCB-aD-3Md">
+                    <rect key="frame" x="97" y="489" width="55" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="Bài 5"/>
+                    <connections>
+                        <action selector="baiTapButtonTouchUpInside:" destination="-1" eventType="touchUpInside" id="6W2-NH-m9N"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TqF-3q-1FI">
+                    <rect key="frame" x="97" y="570" width="55" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="Bài 6"/>
+                    <connections>
+                        <action selector="baiTapButtonTouchUpInside:" destination="-1" eventType="touchUpInside" id="fCT-hZ-CGu"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D99-aG-MiY">
+                    <rect key="frame" x="97" y="653" width="55" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="Bài 7"/>
+                    <connections>
+                        <action selector="baiTapButtonTouchUpInside:" destination="-1" eventType="touchUpInside" id="J0T-ts-WEu"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="354" y="126"/>
+        </view>
+    </objects>
+</document>

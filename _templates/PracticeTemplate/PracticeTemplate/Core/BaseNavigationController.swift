@@ -17,6 +17,4 @@ class BaseNavigationController: UINavigationController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-
-
 }
