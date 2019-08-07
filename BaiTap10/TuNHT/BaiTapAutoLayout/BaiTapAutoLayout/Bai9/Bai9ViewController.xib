@@ -14,7 +14,7 @@
             <connections>
                 <outlet property="contentLabel" destination="HDO-cx-OGU" id="5B1-Pa-tQg"/>
                 <outlet property="imageScrollView" destination="eRx-Ot-hX6" id="rN3-I6-CZh"/>
-                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="Twg-kg-NeF"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -26,7 +26,7 @@
                     <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KB6-C5-xHS">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="295.33333333333331"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TjP-HR-Aal">
                                     <rect key="frame" x="37" y="70" width="50" height="50"/>
@@ -39,7 +39,7 @@
                                         <action selector="leftButtonTouchUpInside:" destination="-1" eventType="touchUpInside" id="X0N-72-kcG"/>
                                     </connections>
                                 </button>
-                                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eRx-Ot-hX6">
+                                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eRx-Ot-hX6">
                                     <rect key="frame" x="107" y="10" width="200" height="170"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ronaldo" translatesAutoresizingMaskIntoConstraints="NO" id="cGZ-cc-BN4">
@@ -179,6 +179,7 @@
                                 <constraint firstItem="HDO-cx-OGU" firstAttribute="top" secondItem="eRx-Ot-hX6" secondAttribute="bottom" constant="20" id="dw7-qH-TjJ"/>
                                 <constraint firstItem="HDO-cx-OGU" firstAttribute="leading" secondItem="KB6-C5-xHS" secondAttribute="leading" constant="20" id="ebw-LE-miC"/>
                                 <constraint firstItem="eKB-Rm-vHf" firstAttribute="leading" secondItem="eRx-Ot-hX6" secondAttribute="trailing" constant="20" id="f7W-PF-ygV"/>
+                                <constraint firstAttribute="bottom" secondItem="Rgy-ak-8Nc" secondAttribute="bottom" constant="20" id="kxl-CW-leW"/>
                                 <constraint firstItem="Rgy-ak-8Nc" firstAttribute="top" secondItem="HDO-cx-OGU" secondAttribute="bottom" constant="20" id="rL9-60-wqn"/>
                                 <constraint firstItem="TjP-HR-Aal" firstAttribute="centerY" secondItem="cGZ-cc-BN4" secondAttribute="centerY" id="seF-Qu-r1p"/>
                                 <constraint firstItem="eKB-Rm-vHf" firstAttribute="centerY" secondItem="cGZ-cc-BN4" secondAttribute="centerY" id="wja-nk-kYp"/>
@@ -186,12 +187,11 @@
                         </view>
                     </subviews>
                     <constraints>
-                        <constraint firstAttribute="trailing" secondItem="KB6-C5-xHS" secondAttribute="trailing" id="7QB-k8-I58"/>
-                        <constraint firstItem="KB6-C5-xHS" firstAttribute="height" secondItem="cD0-qd-39r" secondAttribute="height" id="Mid-Es-3i3"/>
-                        <constraint firstItem="KB6-C5-xHS" firstAttribute="width" secondItem="cD0-qd-39r" secondAttribute="width" id="Wvk-FR-qt0"/>
-                        <constraint firstItem="KB6-C5-xHS" firstAttribute="top" secondItem="cD0-qd-39r" secondAttribute="top" id="XzH-EH-s12"/>
-                        <constraint firstAttribute="bottom" secondItem="KB6-C5-xHS" secondAttribute="bottom" id="dPw-PY-7kz"/>
-                        <constraint firstItem="KB6-C5-xHS" firstAttribute="leading" secondItem="cD0-qd-39r" secondAttribute="leading" id="uxF-T7-idt"/>
+                        <constraint firstItem="KB6-C5-xHS" firstAttribute="centerX" secondItem="cD0-qd-39r" secondAttribute="centerX" id="0Gm-pi-20o"/>
+                        <constraint firstItem="KB6-C5-xHS" firstAttribute="leading" secondItem="cD0-qd-39r" secondAttribute="leading" id="54J-RL-Xbw"/>
+                        <constraint firstAttribute="trailing" secondItem="KB6-C5-xHS" secondAttribute="trailing" id="AFB-0W-Ruh"/>
+                        <constraint firstAttribute="bottom" secondItem="KB6-C5-xHS" secondAttribute="bottom" priority="750" id="TCj-cL-dgs"/>
+                        <constraint firstItem="KB6-C5-xHS" firstAttribute="top" secondItem="cD0-qd-39r" secondAttribute="top" id="VZb-oh-AdY"/>
                     </constraints>
                 </scrollView>
             </subviews>
@@ -204,7 +204,7 @@
             </constraints>
             <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="3074" y="-638"/>
+            <point key="canvasLocation" x="3134.7826086956525" y="-546.42857142857144"/>
         </view>
     </objects>
     <resources>
