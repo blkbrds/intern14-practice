@@ -48,25 +48,25 @@
 		<key>name</key>
 		<string>exercise 08</string>
 		<key>description</key>
-		<string>Simple tableview</string>
+		<string>Auto Layout 8</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>exercise 09</string>
 		<key>description</key>
-		<string>Simple tableview</string>
+		<string>Auto Layout 9</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>exercise 10</string>
 		<key>description</key>
-		<string>Simple tableview</string>
+		<string>Auto Layout 11</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>exercise 11</string>
 		<key>description</key>
-		<string>Search tableview</string>
+		<string>Auto Layout 10</string>
 	</dict>
 </array>
 </plist>
