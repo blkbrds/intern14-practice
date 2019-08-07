@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Bai10VC" customModule="AutoLayoutBasic" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mf5-hO-5tP">
+                    <rect key="frame" x="103.5" y="10" width="207" height="207"/>
+                    <color key="backgroundColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Mf5-hO-5tP" secondAttribute="height" id="tkG-mn-wZA"/>
+                    </constraints>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kHh-EF-xYb">
+                    <rect key="frame" x="155.5" y="227" width="103.5" height="103.5"/>
+                    <color key="backgroundColor" red="0.88696813409999997" green="0.38061481190000002" blue="0.37718805750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="kHh-EF-xYb" secondAttribute="height" multiplier="1:1" id="jfD-Sw-ZdM"/>
+                    </constraints>
+                    <state key="normal">
+                        <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1FM-Rp-PBQ">
+                    <rect key="frame" x="192" y="545" width="30" height="30"/>
+                    <color key="backgroundColor" red="0.57919406890000003" green="0.1280144453" blue="0.57268613580000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="1FM-Rp-PBQ" secondAttribute="height" multiplier="1:1" id="NgL-sg-Idi"/>
+                    </constraints>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="isp-1A-nLv">
+                    <rect key="frame" x="192" y="769" width="30" height="30"/>
+                    <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="isp-1A-nLv" secondAttribute="height" multiplier="1:1" id="dXF-7Y-s2o"/>
+                    </constraints>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="isp-1A-nLv" firstAttribute="top" secondItem="1FM-Rp-PBQ" secondAttribute="bottom" constant="10" id="2bT-Uf-z8e"/>
+                <constraint firstItem="kHh-EF-xYb" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="9V6-ug-R9D"/>
+                <constraint firstItem="kHh-EF-xYb" firstAttribute="width" secondItem="Mf5-hO-5tP" secondAttribute="width" multiplier="0.5" id="AZz-nd-SWl"/>
+                <constraint firstItem="Mf5-hO-5tP" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="Bo8-3F-KB1"/>
+                <constraint firstItem="1FM-Rp-PBQ" firstAttribute="top" secondItem="kHh-EF-xYb" secondAttribute="bottom" constant="10" id="Lec-Ri-Ax8"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="isp-1A-nLv" secondAttribute="bottom" constant="10" id="O0W-D1-m4h"/>
+                <constraint firstItem="1FM-Rp-PBQ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="hhw-RD-ACU"/>
+                <constraint firstItem="isp-1A-nLv" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="mcq-tg-rHl"/>
+                <constraint firstItem="kHh-EF-xYb" firstAttribute="top" secondItem="Mf5-hO-5tP" secondAttribute="bottom" constant="10" id="mjE-ip-LI6"/>
+                <constraint firstItem="Mf5-hO-5tP" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="qPN-vy-6k7"/>
+                <constraint firstItem="Mf5-hO-5tP" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.5" id="sw2-Kk-Uyl"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>
