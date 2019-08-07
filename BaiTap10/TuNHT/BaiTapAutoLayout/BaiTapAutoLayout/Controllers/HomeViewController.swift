@@ -38,6 +38,12 @@ class HomeViewController: UIViewController {
         } else if button == baiTapButton[6] {
             let viewController = Bai7ViewController()
             navigationController?.pushViewController(viewController, animated: true)
+        } else if button == baiTapButton[7] {
+            let viewController = Bai8ViewController()
+            navigationController?.pushViewController(viewController, animated: true)
+        } else if button == baiTapButton[8] {
+            let viewController = Bai9ViewController()
+            navigationController?.pushViewController(viewController, animated: true)
         }
     }
 }
