@@ -12,22 +12,23 @@ class Ex10ViewController: BaseViewController {
 
     // MARK: - Properties
     var exercise: Exercise?
-    
+
     // MARK: - Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    
+
     // MARK: - Config
     override func setupUI() {
         super.setupUI()
         self.title = exercise?.name
     }
-    
+
     override func setupData() {
+        super.setupData()
     }
 }

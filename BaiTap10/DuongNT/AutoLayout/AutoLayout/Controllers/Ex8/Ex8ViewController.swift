@@ -12,16 +12,16 @@ class Ex8ViewController: BaseViewController {
 
     // MARK: - Properties
     var exercise: Exercise?
-    
+
     // MARK: - Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    
+
     // MARK: - Config
     override func setupUI() {
         super.setupUI()
@@ -29,5 +29,6 @@ class Ex8ViewController: BaseViewController {
     }
 
     override func setupData() {
+        super.setupData()
     }
 }
