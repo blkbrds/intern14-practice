@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -12,72 +12,82 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Ex10ViewController" customModule="AutoLayoutEx" customModuleProvider="target">
             <connections>
-                <outlet property="b1w" destination="EM6-eb-Ha9" id="0LE-r9-YVg"/>
-                <outlet property="b2w" destination="Dqx-U5-iz8" id="t2Q-0r-yWD"/>
-                <outlet property="b2w2" destination="YCo-Du-Tvn" id="5q8-TR-hji"/>
+                <outlet property="b1E2b2" destination="OCn-lA-CmF" id="y5Z-HI-w5g"/>
+                <outlet property="b1Eb2" destination="3z8-Dt-vUc" id="t5z-hk-e1Z"/>
+                <outlet property="b2E2b3" destination="VQw-oV-w8v" id="GH8-rD-o2Y"/>
+                <outlet property="b2Eb3" destination="ZlM-ox-eDr" id="DXF-DT-emy"/>
+                <outlet property="b3E2b4" destination="AK9-Pn-dGW" id="NGi-1Y-ktF"/>
+                <outlet property="b3Eb4" destination="beL-5A-zD4" id="BJC-af-dxh"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6UQ-QE-PtY">
-                    <rect key="frame" x="157" y="620" width="100" height="100"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6UQ-QE-PtY" userLabel="Button1">
+                    <rect key="frame" x="123.66666666666667" y="559.66666666666663" width="166.66666666666663" height="166.33333333333337"/>
                     <color key="backgroundColor" red="1" green="0.47653622036447074" blue="0.52394782487438984" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
-                        <constraint firstAttribute="width" secondItem="6UQ-QE-PtY" secondAttribute="height" multiplier="1:1" id="Eyf-Bt-dhu"/>
-                        <constraint firstAttribute="width" constant="100" id="U4R-PO-pRG"/>
-                        <constraint firstAttribute="height" constant="100" id="c8u-rD-idA"/>
-                        <constraint firstAttribute="width" constant="200" id="r9q-Nt-sDv"/>
+                        <constraint firstAttribute="width" secondItem="6UQ-QE-PtY" secondAttribute="height" multiplier="1:1" id="2sv-wB-gNW"/>
                     </constraints>
                     <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="userTapTouchUpInside:" destination="-1" eventType="touchUpInside" id="ke0-kN-MEy"/>
+                    </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oop-pM-i0n">
-                    <rect key="frame" x="157" y="510" width="100" height="100"/>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oop-pM-i0n" userLabel="Button2">
+                    <rect key="frame" x="123.66666666666667" y="383" width="166.66666666666663" height="166.66666666666663"/>
                     <color key="backgroundColor" red="0.74140863369999999" green="0.68721016779999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="100" id="5nY-sJ-2Oq"/>
-                        <constraint firstAttribute="width" constant="200" id="Tw6-w7-pgI"/>
-                        <constraint firstAttribute="width" constant="100" id="iCF-kt-M3K"/>
-                        <constraint firstAttribute="width" secondItem="oop-pM-i0n" secondAttribute="height" multiplier="1:1" id="xa8-rA-tK8"/>
+                        <constraint firstAttribute="width" secondItem="oop-pM-i0n" secondAttribute="height" multiplier="1:1" id="oHm-Ww-qT4"/>
                     </constraints>
                     <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="userTapTouchUpInside:" destination="-1" eventType="touchUpInside" id="fzm-1r-Byc"/>
+                    </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZUP-JC-GE4">
-                    <rect key="frame" x="157" y="286" width="100" height="100"/>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZUP-JC-GE4" userLabel="Button3">
+                    <rect key="frame" x="123.66666666666667" y="206.66666666666663" width="166.66666666666663" height="166.33333333333337"/>
                     <color key="backgroundColor" red="0.54819506200000001" green="0.71371423329999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
-                        <constraint firstAttribute="width" secondItem="ZUP-JC-GE4" secondAttribute="height" multiplier="1:1" id="7K2-LY-KhO"/>
-                        <constraint firstAttribute="height" constant="100" id="Dqx-U5-iz8"/>
-                        <constraint firstAttribute="width" constant="200" id="YCo-Du-Tvn"/>
-                        <constraint firstAttribute="width" constant="100" id="iG9-Op-JFx"/>
+                        <constraint firstAttribute="width" secondItem="ZUP-JC-GE4" secondAttribute="height" multiplier="1:1" id="ldG-Xv-nbT"/>
                     </constraints>
                     <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="userTapTouchUpInside:" destination="-1" eventType="touchUpInside" id="I1E-Vk-WJj"/>
+                    </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VYy-1X-Ymn">
-                    <rect key="frame" x="157" y="176" width="100" height="100"/>
+                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VYy-1X-Ymn" userLabel="Button4">
+                    <rect key="frame" x="123.66666666666667" y="30" width="166.66666666666663" height="166.66666666666666"/>
                     <color key="backgroundColor" red="0.58135975210000002" green="1" blue="0.91134922309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="100" id="3OH-3o-SaH"/>
-                        <constraint firstAttribute="width" constant="200" id="EM6-eb-Ha9"/>
-                        <constraint firstAttribute="width" constant="100" id="NK7-CE-hof"/>
-                        <constraint firstAttribute="width" secondItem="VYy-1X-Ymn" secondAttribute="height" multiplier="1:1" id="guZ-Un-mMX"/>
+                        <constraint firstAttribute="width" secondItem="VYy-1X-Ymn" secondAttribute="height" multiplier="1:1" id="MG0-64-qoF"/>
                     </constraints>
                     <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="userTapTouchUpInside:" destination="-1" eventType="touchUpInside" id="Dgf-kZ-x1G"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="6UQ-QE-PtY" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Ata-yG-IXW"/>
-                <constraint firstItem="oop-pM-i0n" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" multiplier="1.25" id="Nbu-kO-MOx"/>
-                <constraint firstItem="ZUP-JC-GE4" firstAttribute="top" secondItem="VYy-1X-Ymn" secondAttribute="bottom" constant="10" id="Stn-0h-HuP"/>
-                <constraint firstItem="VYy-1X-Ymn" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="XuA-Wo-Tht"/>
-                <constraint firstItem="ZUP-JC-GE4" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" multiplier="0.75" id="a8d-j5-H8Q"/>
-                <constraint firstItem="oop-pM-i0n" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="lb7-c2-KaL"/>
-                <constraint firstItem="6UQ-QE-PtY" firstAttribute="top" secondItem="oop-pM-i0n" secondAttribute="bottom" constant="10" id="sXs-BW-8ie"/>
-                <constraint firstItem="ZUP-JC-GE4" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="tnD-hu-ge7"/>
+                <constraint firstItem="6UQ-QE-PtY" firstAttribute="width" secondItem="oop-pM-i0n" secondAttribute="width" id="3z8-Dt-vUc"/>
+                <constraint firstItem="VYy-1X-Ymn" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="6Oz-LT-Wv2"/>
+                <constraint firstItem="ZUP-JC-GE4" firstAttribute="height" secondItem="VYy-1X-Ymn" secondAttribute="height" multiplier="0.5" priority="750" id="AK9-Pn-dGW"/>
+                <constraint firstItem="ZUP-JC-GE4" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="BpU-oj-H9o"/>
+                <constraint firstItem="6UQ-QE-PtY" firstAttribute="top" secondItem="oop-pM-i0n" secondAttribute="bottom" constant="10" id="E9E-cP-UdT"/>
+                <constraint firstItem="oop-pM-i0n" firstAttribute="top" secondItem="ZUP-JC-GE4" secondAttribute="bottom" constant="10" id="Fg2-4s-rv1"/>
+                <constraint firstItem="ZUP-JC-GE4" firstAttribute="top" secondItem="VYy-1X-Ymn" secondAttribute="bottom" constant="10" id="MhM-iw-jbl"/>
+                <constraint firstItem="6UQ-QE-PtY" firstAttribute="height" secondItem="oop-pM-i0n" secondAttribute="height" multiplier="2" priority="750" id="OCn-lA-CmF"/>
+                <constraint firstItem="oop-pM-i0n" firstAttribute="height" secondItem="ZUP-JC-GE4" secondAttribute="height" multiplier="0.5" priority="750" id="VQw-oV-w8v"/>
+                <constraint firstItem="oop-pM-i0n" firstAttribute="width" secondItem="ZUP-JC-GE4" secondAttribute="width" id="ZlM-ox-eDr"/>
+                <constraint firstItem="ZUP-JC-GE4" firstAttribute="width" secondItem="VYy-1X-Ymn" secondAttribute="width" id="beL-5A-zD4"/>
+                <constraint firstItem="6UQ-QE-PtY" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="dJd-Qm-rcb"/>
+                <constraint firstItem="VYy-1X-Ymn" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="eWc-XL-cWc"/>
+                <constraint firstItem="oop-pM-i0n" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="fi3-32-MRs"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="6UQ-QE-PtY" secondAttribute="bottom" constant="10" id="uN3-Hp-G75"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="37.681159420289859" y="34.821428571428569"/>
