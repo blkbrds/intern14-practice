@@ -35,6 +35,7 @@ class Ex7ViewController: BaseViewController {
     }
 
     override func setupData() {
+        super.setupData()
     }
 
     // MARK: - Actions
