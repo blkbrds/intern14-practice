@@ -29,7 +29,6 @@ class Ex01ViewController: UIViewController {
         button.backgroundColor = .clear
         button.addTarget(self, action: #selector(buttonDidClick), for:. touchUpInside)
         view.addSubview(button)
-        // Do any additional setup after loading the view.
     }
     
     @objc func buttonDidClick() {

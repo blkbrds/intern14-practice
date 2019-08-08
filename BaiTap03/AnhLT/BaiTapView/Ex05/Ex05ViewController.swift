@@ -7,6 +7,7 @@
 //
 
 import UIKit
+
 class BarChart {
     var month : String
     var value : Float
@@ -32,6 +33,7 @@ class Ex05ViewController: UIViewController {
                              BarChart("Nov", 5.0),
                              BarChart("Dec", 4.0)]
      let frame = CGRect(x: 30, y: 80, width: 355, height: 700)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let frame = CGRect(x: 30, y: 80, width: 355, height: 700)
@@ -44,10 +46,6 @@ class Ex05ViewController: UIViewController {
         containerView.layer.borderWidth = 1
         containerView.layer.borderColor = UIColor.black.cgColor
         view.addSubview(containerView)
-    
-//    let rectView = UIView(frame: CGRect(x: 5, y: containerView.bounds.origin.y, width: 25, height: containerView.bounds.height - 140))
-//        rectView.backgroundColor = .orange
-//        containerView.addSubview(rectView)
     }
     
     func addBarChart() {
@@ -81,4 +79,3 @@ class Ex05ViewController: UIViewController {
         }
     }
 }
-
