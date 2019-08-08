@@ -10,51 +10,57 @@ import UIKit
 
 class Ex10ViewController: UIViewController {
     
-    @IBOutlet weak var b3E2b4: NSLayoutConstraint!
-    @IBOutlet weak var b3Eb4: NSLayoutConstraint!
-    @IBOutlet weak var b2E2b3: NSLayoutConstraint!
-    @IBOutlet weak var b2Eb3: NSLayoutConstraint!
-    @IBOutlet weak var b1Eb2: NSLayoutConstraint!
-    @IBOutlet weak var b1E2b2: NSLayoutConstraint!
+    @IBOutlet weak var heigtButton4n3: NSLayoutConstraint!
+    @IBOutlet weak var widthButton4n3: NSLayoutConstraint!
+    @IBOutlet weak var heightButton3n2: NSLayoutConstraint!
+    @IBOutlet weak var heightButton2n1: NSLayoutConstraint!
+    @IBOutlet weak var widthButton3n2: NSLayoutConstraint!
+    @IBOutlet weak var widthButton2n1: NSLayoutConstraint!
+    @IBOutlet weak var withdButton4n1: NSLayoutConstraint!
+    @IBOutlet weak var heightButton4n1: NSLayoutConstraint!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-  
+        standardValue()
+    }
+    
+    func standardValue() {
+        widthButton4n3.priority = UILayoutPriority(750)
+        widthButton3n2.priority = UILayoutPriority(750)
+        widthButton2n1.priority = UILayoutPriority(750)
+        withdButton4n1.priority = UILayoutPriority(750)
+        heigtButton4n3.priority = UILayoutPriority(250)
+        heightButton3n2.priority = UILayoutPriority(250)
+        heightButton2n1.priority = UILayoutPriority(250)
+        heightButton4n1.priority = UILayoutPriority(250)
     }
 
     @IBAction func userTapTouchUpInside(_ sender: UIButton) {
         if sender.tag == 0 {
-            b3E2b4.priority = UILayoutPriority(rawValue: 500)
-            b2E2b3.priority = UILayoutPriority(rawValue: 250)
-            b1E2b2.priority = UILayoutPriority(rawValue: 250)
-            b3Eb4.priority = UILayoutPriority(rawValue: 250)
-            b2Eb3.priority = UILayoutPriority(rawValue: 500)
-            b1Eb2.priority = UILayoutPriority(rawValue: 500)
+            standardValue()
+            heigtButton4n3.priority = UILayoutPriority(999)
+            widthButton3n2.priority = UILayoutPriority(999)
+            widthButton2n1.priority = UILayoutPriority(999)
         } else if sender.tag == 1 {
-            b3E2b4.priority = UILayoutPriority(rawValue: 500)
-            b2E2b3.priority = UILayoutPriority(rawValue: 250)
-            b1E2b2.priority = UILayoutPriority(rawValue: 250)
-            b3Eb4.priority = UILayoutPriority(rawValue: 250)
-            b2Eb3.priority = UILayoutPriority(rawValue: 500)
-            b1Eb2.priority = UILayoutPriority(rawValue: 500)
+            standardValue()
+            heightButton3n2.priority = UILayoutPriority(999)
+            widthButton2n1.priority = UILayoutPriority(999)
+            withdButton4n1.priority = UILayoutPriority(999)
         } else if sender.tag == 2 {
-            b3E2b4.priority = UILayoutPriority(rawValue: 500)
-            b2E2b3.priority = UILayoutPriority(rawValue: 250)
-            b1E2b2.priority = UILayoutPriority(rawValue: 250)
-            b3Eb4.priority = UILayoutPriority(rawValue: 250)
-            b2Eb3.priority = UILayoutPriority(rawValue: 500)
-            b1Eb2.priority = UILayoutPriority(rawValue: 500)
+            standardValue()
+            heightButton2n1.priority = UILayoutPriority(999)
+            withdButton4n1.priority = UILayoutPriority(999)
+            widthButton4n3.priority = UILayoutPriority(999)
         } else {
-            b3E2b4.priority = UILayoutPriority(rawValue: 500)
-            b2E2b3.priority = UILayoutPriority(rawValue: 250)
-            b1E2b2.priority = UILayoutPriority(rawValue: 250)
-            b3Eb4.priority = UILayoutPriority(rawValue: 250)
-            b2Eb3.priority = UILayoutPriority(rawValue: 500)
-            b1Eb2.priority = UILayoutPriority(rawValue: 500)
+            standardValue()
+            heightButton4n1.priority = UILayoutPriority(999)
+            widthButton3n2.priority = UILayoutPriority(999)
+            widthButton4n3.priority = UILayoutPriority(999)
+        }
+        
+        UIView.animate(withDuration: 0.5) {
+            self.view.layoutIfNeeded()
         }
     }
-    
-
-
 }
+
