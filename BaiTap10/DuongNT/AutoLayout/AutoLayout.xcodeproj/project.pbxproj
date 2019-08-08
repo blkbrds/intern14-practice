@@ -99,6 +99,8 @@
 		1CE36CE922FB1EFD00EF3E49 /* Ex12ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CE36CE722FB1EFD00EF3E49 /* Ex12ViewController.xib */; };
 		1CE36CEE22FB20FE00EF3E49 /* Ex12Part2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE36CEC22FB20FE00EF3E49 /* Ex12Part2ViewController.swift */; };
 		1CE36CEF22FB20FE00EF3E49 /* Ex12Part2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CE36CED22FB20FE00EF3E49 /* Ex12Part2ViewController.xib */; };
+		1CE36CF322FBB90600EF3E49 /* Ex13ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE36CF122FBB90600EF3E49 /* Ex13ViewController.swift */; };
+		1CE36CF422FBB90600EF3E49 /* Ex13ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CE36CF222FBB90600EF3E49 /* Ex13ViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -196,6 +198,8 @@
 		1CE36CE722FB1EFD00EF3E49 /* Ex12ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex12ViewController.xib; sourceTree = "<group>"; };
 		1CE36CEC22FB20FE00EF3E49 /* Ex12Part2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex12Part2ViewController.swift; sourceTree = "<group>"; };
 		1CE36CED22FB20FE00EF3E49 /* Ex12Part2ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex12Part2ViewController.xib; sourceTree = "<group>"; };
+		1CE36CF122FBB90600EF3E49 /* Ex13ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex13ViewController.swift; sourceTree = "<group>"; };
+		1CE36CF222FBB90600EF3E49 /* Ex13ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex13ViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -254,6 +258,7 @@
 				1C6301DE22F942650045A719 /* Ex10 */,
 				1CE36CE022FACFBA00EF3E49 /* Ex11 */,
 				1CE36CE522FB1EE400EF3E49 /* Ex12 */,
+				1CE36CF022FBB8F200EF3E49 /* Ex13 */,
 				07E33E2320DC8DC0004B6E52 /* Home */,
 			);
 			path = Controllers;
@@ -797,6 +802,15 @@
 			path = Part2;
 			sourceTree = "<group>";
 		};
+		1CE36CF022FBB8F200EF3E49 /* Ex13 */ = {
+			isa = PBXGroup;
+			children = (
+				1CE36CF122FBB90600EF3E49 /* Ex13ViewController.swift */,
+				1CE36CF222FBB90600EF3E49 /* Ex13ViewController.xib */,
+			);
+			path = Ex13;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -877,6 +891,7 @@
 				1C8E7EAA22F79C4300EEE2D1 /* BaiTap32ViewController.xib in Resources */,
 				07E33E2720DC8DD7004B6E52 /* HomeViewController.xib in Resources */,
 				07E33E4620DC9095004B6E52 /* Ex4ViewController.xib in Resources */,
+				1CE36CF422FBB90600EF3E49 /* Ex13ViewController.xib in Resources */,
 				1C8E7E6722F6EDC400EEE2D1 /* BaiTap1ViewController.xib in Resources */,
 				1C6301EB22F942650045A719 /* Ex9ViewController.xib in Resources */,
 				07E33E6D20DC9F1B004B6E52 /* exercises.plist in Resources */,
@@ -930,6 +945,7 @@
 				07E33E7020DC9FF4004B6E52 /* DataManagement.swift in Sources */,
 				07E33E0E20DC8D34004B6E52 /* AppDelegate.swift in Sources */,
 				1C8E818122F7D8E000EEE2D1 /* BaiTap45ViewController.swift in Sources */,
+				1CE36CF322FBB90600EF3E49 /* Ex13ViewController.swift in Sources */,
 				07E33E4120DC907B004B6E52 /* Ex3ViewController.swift in Sources */,
 				07E33E4D20DC90C3004B6E52 /* Ex6ViewController.swift in Sources */,
 				1C8E817422F7A90500EEE2D1 /* BaiTap4ViewController.swift in Sources */,
