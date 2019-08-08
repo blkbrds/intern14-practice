@@ -12,15 +12,15 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Ex10ViewController" customModule="AutoLayoutEx" customModuleProvider="target">
             <connections>
-                <outlet property="heightButton2n1" destination="9BK-Gd-8nS" id="bpr-wj-lT3"/>
-                <outlet property="heightButton3n2" destination="iXF-oF-8z9" id="Elv-L3-qpx"/>
-                <outlet property="heightButton4n1" destination="spz-PP-TLj" id="rPc-Yp-5Ux"/>
-                <outlet property="heigtButton4n3" destination="5HZ-i5-5Jy" id="agD-w1-MH2"/>
+                <outlet property="heightButton2n1Layout" destination="9BK-Gd-8nS" id="bpr-wj-lT3"/>
+                <outlet property="heightButton3n2Layout" destination="iXF-oF-8z9" id="Elv-L3-qpx"/>
+                <outlet property="heightButton4n1Layout" destination="spz-PP-TLj" id="rPc-Yp-5Ux"/>
+                <outlet property="heigtButton4n3Layout" destination="5HZ-i5-5Jy" id="agD-w1-MH2"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
-                <outlet property="widthButton2n1" destination="UmR-u5-viC" id="bOU-pg-mfX"/>
-                <outlet property="widthButton3n2" destination="gLi-qy-6kh" id="Fmm-0H-KEG"/>
-                <outlet property="widthButton4n3" destination="a87-YO-t0g" id="Fu4-Dz-5XX"/>
-                <outlet property="withdButton4n1" destination="pIB-jX-fE8" id="qXA-6N-Zzo"/>
+                <outlet property="widthButton2n1Layout" destination="UmR-u5-viC" id="bOU-pg-mfX"/>
+                <outlet property="widthButton3n2Layout" destination="gLi-qy-6kh" id="Fmm-0H-KEG"/>
+                <outlet property="widthButton4n3Layout" destination="a87-YO-t0g" id="Fu4-Dz-5XX"/>
+                <outlet property="withdButton4n1Layout" destination="pIB-jX-fE8" id="qXA-6N-Zzo"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -34,7 +34,6 @@
                     <constraints>
                         <constraint firstAttribute="width" secondItem="6UQ-QE-PtY" secondAttribute="height" multiplier="1:1" id="2sv-wB-gNW"/>
                     </constraints>
-                    <state key="normal" title="Button"/>
                     <connections>
                         <action selector="userTapTouchUpInside:" destination="-1" eventType="touchUpInside" id="ke0-kN-MEy"/>
                     </connections>
@@ -45,7 +44,6 @@
                     <constraints>
                         <constraint firstAttribute="width" secondItem="oop-pM-i0n" secondAttribute="height" multiplier="1:1" id="oHm-Ww-qT4"/>
                     </constraints>
-                    <state key="normal" title="Button"/>
                     <connections>
                         <action selector="userTapTouchUpInside:" destination="-1" eventType="touchUpInside" id="fzm-1r-Byc"/>
                     </connections>
@@ -56,7 +54,6 @@
                     <constraints>
                         <constraint firstAttribute="width" secondItem="ZUP-JC-GE4" secondAttribute="height" multiplier="1:1" id="ldG-Xv-nbT"/>
                     </constraints>
-                    <state key="normal" title="Button"/>
                     <connections>
                         <action selector="userTapTouchUpInside:" destination="-1" eventType="touchUpInside" id="I1E-Vk-WJj"/>
                     </connections>
@@ -67,7 +64,6 @@
                     <constraints>
                         <constraint firstAttribute="width" secondItem="VYy-1X-Ymn" secondAttribute="height" multiplier="1:1" id="MG0-64-qoF"/>
                     </constraints>
-                    <state key="normal" title="Button"/>
                     <connections>
                         <action selector="userTapTouchUpInside:" destination="-1" eventType="touchUpInside" id="Dgf-kZ-x1G"/>
                     </connections>
