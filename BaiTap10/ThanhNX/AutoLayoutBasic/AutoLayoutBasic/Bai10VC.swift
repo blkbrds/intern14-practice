@@ -46,24 +46,21 @@ final class Bai10VC: UIViewController {
     
     @IBAction func buttonsTouchUpInside(_ button: UIButton) {
         guard let chooseHinhVuong = chooseHinhVuong(rawValue: button.tag) else { return }
+        resetLayout()
         switch chooseHinhVuong {
         case .hinhDo:
-            resetLayout()
             heigthLayoutDoHong.priority = UILayoutPriority(999)
             widthLayoutHongTim.priority = UILayoutPriority(999)
             widthLayoutTimCam.priority = UILayoutPriority(999)
         case .hinhHong:
-            resetLayout()
             heigthLayoutHongTim.priority = UILayoutPriority(999)
             widthLayoutTimCam.priority = UILayoutPriority(999)
             widthLayoutCamDo.priority = UILayoutPriority(999)
         case .hinhTim:
-            resetLayout()
             heigthLayoutTimCam.priority = UILayoutPriority(999)
             widthLayoutCamDo.priority = UILayoutPriority(999)
             widthLayoutDoHong.priority = UILayoutPriority(999)
         case .hinhCam:
-            resetLayout()
             heightLayoutCamDo.priority = UILayoutPriority(999)
             widthLayoutDoHong.priority = UILayoutPriority(999)
             widthLayoutHongTim.priority = UILayoutPriority(999)

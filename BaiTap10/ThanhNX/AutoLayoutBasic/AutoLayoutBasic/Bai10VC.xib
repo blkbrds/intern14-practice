@@ -93,7 +93,7 @@
                 <constraint firstItem="isp-1A-nLv" firstAttribute="height" secondItem="Mf5-hO-5tP" secondAttribute="height" multiplier="2" priority="250" id="zuA-6A-OPX"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="37.681159420289859" y="34.821428571428569"/>
+            <point key="canvasLocation" x="-129" y="63"/>
         </view>
     </objects>
 </document>
