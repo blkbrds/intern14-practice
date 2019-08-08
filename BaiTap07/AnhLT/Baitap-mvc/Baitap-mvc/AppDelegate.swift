@@ -19,9 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let homeViewController = Ex01ViewController()
         window?.rootViewController = homeViewController
-        
+
         return true
     }
 }
-
-

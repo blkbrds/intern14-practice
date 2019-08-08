@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B2455FB922FACDA10003C36C /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2455FB722FACDA10003C36C /* Model.swift */; };
 		B27E175422CD9BDF0058E99C /* Ex01ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27E175222CD9BDF0058E99C /* Ex01ViewController.swift */; };
 		B27E175522CD9BDF0058E99C /* Ex01ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B27E175322CD9BDF0058E99C /* Ex01ViewController.xib */; };
 		B2EB334E22CCA8B9002206E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EB334D22CCA8B9002206E5 /* AppDelegate.swift */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B2455FB722FACDA10003C36C /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		B27E175222CD9BDF0058E99C /* Ex01ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex01ViewController.swift; sourceTree = "<group>"; };
 		B27E175322CD9BDF0058E99C /* Ex01ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex01ViewController.xib; sourceTree = "<group>"; };
 		B2EB334A22CCA8B9002206E5 /* Baitap-mvc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Baitap-mvc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -35,6 +37,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B2455FB622FACDA10003C36C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B2455FB722FACDA10003C36C /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		B2A4C25022CF44D500AE8D26 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -47,6 +57,7 @@
 		B2BD459422CCAE2700365D84 /* Ex01 */ = {
 			isa = PBXGroup;
 			children = (
+				B2455FB622FACDA10003C36C /* Model */,
 				B2A4C25022CF44D500AE8D26 /* View */,
 			);
 			path = Ex01;
@@ -151,6 +162,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2455FB922FACDA10003C36C /* Model.swift in Sources */,
 				B27E175422CD9BDF0058E99C /* Ex01ViewController.swift in Sources */,
 				B2EB334E22CCA8B9002206E5 /* AppDelegate.swift in Sources */,
 			);

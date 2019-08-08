@@ -9,31 +9,28 @@
 import UIKit
 
 class Ex01ViewController: UIViewController {
-    var numberInStack: [Double] = [0]
-    var operators: [MathOperation] = [.plus]
-    var operand: MathOperation = .reset
-    var firstNumber: Double = 0
-    var secondNumber: Double = 0
-    var result: Double = 0
-
     @IBOutlet var numberOutlet: [UIButton]!
     @IBOutlet weak var resultButton: UIButton!
-    
     @IBOutlet weak var acButton: UIButton!
     @IBOutlet var operatorsOultet: [UIButton]!
     @IBOutlet weak var screenNumber: UILabel!
     
+    var firstNumber: Double = 0
+    var secondNumber: Double = 0
     var performmingMath = true
+    var operators: [MathOperation] = [.plus]
+    var operand: MathOperation = .reset
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        design(numberOutlet)
-        design(operatorsOultet)
-    
+        configButtons(numberOutlet)
+        configButtons(operatorsOultet)
+
         view.backgroundColor = .black
-        
     }
     
-    func design(_ button: [UIButton]) {
+    func configButtons(_ button: [UIButton]) {
         for i in button {
             i.layer.borderWidth = 2
             i.layer.cornerRadius = i.bounds.height / 2
@@ -45,14 +42,15 @@ class Ex01ViewController: UIViewController {
         resultButton.layer.borderWidth = 2
     }
     
-    @IBAction func numberButtonTouchUpInside (_ sender: UIButton) {
-        if operators[0] == .minus && operators[1] == .minus && numberInStack[0] == 0 {
+    @IBAction private func numberButtonTouchUpInside(_ sender: UIButton) {
+        if operators[0] == .minus && operators[1] == .minus && Data.shared.numberInStack[0] == 0 {
             firstNumber = -(firstNumber * 10 + Double(sender.tag))
             screenNumber.text = String(Int(firstNumber))
         } else {
             firstNumber = firstNumber * 10 + Double(sender.tag)
             screenNumber.text = String(Int(firstNumber))
         }
+//        screenNumber.text = String(Int(firstNumber))
     }
     
     func configOperatorsArray() {
@@ -73,85 +71,73 @@ class Ex01ViewController: UIViewController {
         operand = .reset
         firstNumber = 0
         secondNumber = 0
-        result = 0
-        numberInStack = [0]
+        Data.shared.result = 0
+        Data.shared.numberInStack = [0]
         operators = [.plus]
     }
     
     func calculate() {
         if operators[0] == .plus {
-            result = numberInStack[0] + numberInStack[1]
-            screenNumber.text = String(Int(result))
-            numberInStack.append(result)
-            numberInStack.remove(at: 0)
-            numberInStack.remove(at: 0)
-            secondNumber = numberInStack[0] + firstNumber
+            Data.shared.calculateResult(operation: .plus)
+            screenNumber.text = String(Int(Data.shared.result))
+            Data.shared.numberInStack.append(Data.shared.result)
+            secondNumber = Data.shared.numberInStack[0] + firstNumber
             firstNumber = 0
         } else if operators[0] == .minus {
-            if numberInStack[0] == 0 {
-                result = numberInStack[1]
-                screenNumber.text = String(Int(result))
-                numberInStack.append(result)
-                numberInStack.remove(at: 0)
-                numberInStack.remove(at: 0)
-                secondNumber = numberInStack[0] + firstNumber
+            if Data.shared.numberInStack[0] == 0 {
+                Data.shared.result = Data.shared.numberInStack[1]
+                screenNumber.text = String(Int(Data.shared.result))
+                Data.shared.numberInStack.append(Data.shared.result)
+                Data.shared.numberInStack.remove(at: 0)
+                Data.shared.numberInStack.remove(at: 0)
+                secondNumber = Data.shared.numberInStack[0] + firstNumber
                 firstNumber = 0
             } else {
-                result = numberInStack[0] - numberInStack[1]
-                screenNumber.text = String(Int(result))
-                numberInStack.append(result)
-                numberInStack.remove(at: 0)
-                numberInStack.remove(at: 0)
-                secondNumber = numberInStack[0] + firstNumber
+                Data.shared.calculateResult(operation: .minus)
+                screenNumber.text = String(Int(Data.shared.result))
+                Data.shared.numberInStack.append(Data.shared.result)
+                secondNumber = Data.shared.numberInStack[0] + firstNumber
                 firstNumber = 0
             }
         } else if operators[0] == .mul {
-            if numberInStack[0] == 0 {
-                numberInStack[0] = 1
-                result = numberInStack[0] * numberInStack[1]
-                screenNumber.text = String(Int(result))
-                numberInStack.append(result)
-                numberInStack.remove(at: 0)
-                numberInStack.remove(at: 0)
+            if Data.shared.numberInStack[0] == 0 {
+                Data.shared.calculateResult(operation: .mul)
+                Data.shared.numberInStack[0] = 1
+                screenNumber.text = String(Int(Data.shared.result))
+                Data.shared.numberInStack.append(Data.shared.result)
                 firstNumber = 0
             } else {
-                result = numberInStack[0] * numberInStack[1]
-                screenNumber.text = String(Int(result))
-                numberInStack.append(result)
-                numberInStack.remove(at: 0)
-                numberInStack.remove(at: 0)
+                Data.shared.calculateResult(operation: .mul)
+                screenNumber.text = String(Int(Data.shared.result))
+                Data.shared.numberInStack.append(Data.shared.result)
                 firstNumber = 0
             }
         } else if operators[0] == .div {
-            if numberInStack[0] == 0 && numberInStack.count == 1 {
-                numberInStack[0] = 1
-                if numberInStack[0] == 0 && numberInStack[1] == 0{
+            if Data.shared.numberInStack[0] == 0 && Data.shared.numberInStack.count == 1 {
+                Data.shared.numberInStack[0] = 1
+                if Data.shared.numberInStack[0] == 0 && Data.shared.numberInStack[1] == 0 {
                     alert()
                 } else {
-                    result = numberInStack[0] / numberInStack[1]
-                    screenNumber.text = "\(result)"
-                    numberInStack.append(result)
-                    numberInStack.remove(at: 0)
-                    numberInStack.remove(at: 0)
+                    Data.shared.calculateResult(operation: .div)
+                    screenNumber.text = "\(Data.shared.result)"
+                    Data.shared.numberInStack.append(Data.shared.result)
                     firstNumber = 0
                 }
             } else {
-                if numberInStack[1] == 0 {
+                if Data.shared.numberInStack[1] == 0 {
                     alert()
                 } else {
-                    result = numberInStack[0] / numberInStack[1]
-                    screenNumber.text = "\(result)"
-                    numberInStack.append(result)
-                    numberInStack.remove(at: 0)
-                    numberInStack.remove(at: 0)
+                    Data.shared.calculateResult(operation: .div)
+                    screenNumber.text = "\(Data.shared.result)"
+                    Data.shared.numberInStack.append(Data.shared.result)
                     firstNumber = 0
                 }
             }
         }
     }
     
-    @IBAction func operandTouchUpInside(_ sender: UIButton) {
-        numberInStack.append(firstNumber)
+    @IBAction private func operandTouchUpInside(_ sender: UIButton) {
+        Data.shared.numberInStack.append(firstNumber)
         guard let mathOperation = MathOperation(rawValue: sender.tag) else { return }
         operand = mathOperation
         switch mathOperation {
@@ -159,7 +145,7 @@ class Ex01ViewController: UIViewController {
             configOperatorsArray()
             calculate()
         case .minus:
-            if numberInStack[0] == 0 {
+            if Data.shared.numberInStack[0] == 0 {
                 configOperatorsArray()
                 operators[0] = .minus
                 calculate()
@@ -174,24 +160,16 @@ class Ex01ViewController: UIViewController {
             configOperatorsArray()
             calculate()
         case .equal:
-            if operators.count >= 2 && numberInStack.count >= 2 {
+            if operators.count >= 2 && Data.shared.numberInStack.count >= 2 {
                 operators.remove(at: 0)
                 calculate()
                 reset()
-            } else if operators.count < 2 && numberInStack.count >= 2 {
+            } else if operators.count < 2 && Data.shared.numberInStack.count >= 2 {
                 screenNumber.text = "\(firstNumber)"
             }
         case .reset:
             reset()
             screenNumber.text = "0"
         }
-    }
-    enum MathOperation: Int {
-        case plus = 0
-        case minus
-        case mul
-        case div
-        case equal
-        case reset
     }
 }
