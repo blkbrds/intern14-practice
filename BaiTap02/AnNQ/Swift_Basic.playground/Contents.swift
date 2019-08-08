@@ -5,6 +5,7 @@ enum ResultCase {
     case twoValue(Double, Double)
     case noValue
     case oneValueDouble(Double)
+    case multipleValue
 }
 
 // Bai 1: compute superficies and volume
@@ -35,17 +36,6 @@ func quadratic (a: Double, b: Double, c: Double) -> ResultCase {
     }
 }
 
-switch quadratic(a: 0, b: 2, c: 2) {
-case .oneValue(let x):
-    print ("This equation has one value that is x = \(x)")
-case .noValue:
-    print ("This equation has no result")
-case .oneValueDouble(let x):
-    print ("This equation has one result that is x1 = x2 = \(x)")
-case .twoValue(let x1, let x2):
-    print ("This equation has two value that is x1 = \(x1) and x2 = \(x2)")
-}
-
 
 // Bai 3: set of equations
 func setOfEquations (_ a1: Double, _ b1: Double, _ c1: Double, _ a2: Double, _ b2: Double, _ c2: Double) -> ResultCase {
@@ -54,9 +44,7 @@ func setOfEquations (_ a1: Double, _ b1: Double, _ c1: Double, _ a2: Double, _ b
     let dy = a1*c2 - a2*c1
     if d == 0 {
         if c1 == c2 {
-            print("He co vo so nghiem")
-        } else {
-            print("He vo nghiem")
+            return .multipleValue
         }
         return .noValue
     }
