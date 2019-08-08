@@ -25,10 +25,43 @@ class Ex13ViewController: BaseViewController {
     // MARK: - Config
     override func setupUI() {
         super.setupUI()
-        self.title = exercise?.name
+        navigationItem.title = exercise?.name
+        let textAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        navigationController?.navigationBar.titleTextAttributes = textAttributes
+        let menuButtonBar = UIBarButtonItem(image: UIImage(named: "ic-menu"), style: .plain, target: self, action: #selector(menuButtonCliked))
+        let addButtonBar = UIBarButtonItem(image: UIImage(named: "ic-bar-add"), style: .plain, target: self, action: #selector(addButtonCliked))
+        navigationItem.leftBarButtonItem = menuButtonBar
+        navigationItem.rightBarButtonItem = addButtonBar
+        navigationController?.navigationBar.tintColor = .yellow
+        navigationController?.navigationBar.barTintColor = .red
     }
 
     override func setupData() {
         super.setupData()
+    }
+
+    @objc private func menuButtonCliked() {
+        let textAttributes = [NSAttributedString.Key.foregroundColor: UIColor.black]
+        navigationController?.navigationBar.titleTextAttributes = textAttributes
+        navigationController?.navigationBar.tintColor = .blue
+        navigationController?.navigationBar.barTintColor = .white
+        navigationController?.popViewController(animated: true)
+    }
+
+    @objc private func addButtonCliked() {
+        print("button add clicked!")
+    }
+}
+
+// MARK: - IBDesignable
+@IBDesignable extension UIImageView {
+    
+    @IBInspectable var cornerRadius: CGFloat {
+        set {
+            layer.cornerRadius = newValue
+        }
+        get {
+            return layer.cornerRadius
+        }
     }
 }
