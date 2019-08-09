@@ -11,7 +11,7 @@ import UIKit
 class HomeViewController: UIViewController {
 
     // MARK: - Outlets
-    @IBOutlet weak var userNameLabel: UILabel!
+    @IBOutlet private weak var userNameLabel: UILabel!
 
     // MARK: - Properties
     var username = ""
@@ -25,6 +25,7 @@ class HomeViewController: UIViewController {
     }
 
     override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         if isFirstDisplay {
             isFirstDisplay = !isFirstDisplay
         } else {

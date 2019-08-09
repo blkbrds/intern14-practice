@@ -11,10 +11,10 @@ import UIKit
 class EditViewController: UIViewController {
 
     // MARK: - Outlets
-    @IBOutlet weak var userNameTextField: UITextField!
-    @IBOutlet weak var confirmPasswordTextField: UITextField!
-    @IBOutlet weak var newPasswordTextField: UITextField!
-    @IBOutlet weak var errorLabel: UILabel!
+    @IBOutlet private weak var userNameTextField: UITextField!
+    @IBOutlet private weak var confirmPasswordTextField: UITextField!
+    @IBOutlet private weak var newPasswordTextField: UITextField!
+    @IBOutlet private weak var errorLabel: UILabel!
 
     // MARK: - Properties
     var username = ""
@@ -87,7 +87,6 @@ class EditViewController: UIViewController {
                     let user = User(username: newUserName, password: newPassword)
                     FileManagers.writePlist(user, username)
                     navigationController?.popViewController(animated: true)
-                    
                 } else {
                     errorLabel.text = "New password # confirm password"
                 }

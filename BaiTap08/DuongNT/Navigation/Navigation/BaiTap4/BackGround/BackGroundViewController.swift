@@ -15,14 +15,14 @@ class BackGroundViewController: UIViewController {
         title = "Bai Tap 4"
     }
 
-    @IBAction func changeImageBackGroundButtonTouchUpInside(_ sender: Any) {
+    @IBAction private func changeImageBackGroundButtonTouchUpInside(_ sender: Any) {
         title = "Change BackGround"
         navigationController?.navigationBar.setBackgroundImage(UIImage(imageLiteralResourceName: "avatar"), for: .default)
         navigationController?.navigationBar.backgroundColor = .white
         navigationController?.navigationBar.tintColor = .white
     }
 
-    @IBAction func changeColorButtonTouchUpInside(_ sender: Any) {
+    @IBAction private func changeColorButtonTouchUpInside(_ sender: Any) {
         title = "Change Color"
         navigationController?.navigationBar.setBackgroundImage(nil, for: .default)
         navigationController?.navigationBar.backgroundColor = .green
@@ -30,7 +30,7 @@ class BackGroundViewController: UIViewController {
         navigationController?.navigationBar.isTranslucent = true
     }
 
-    @IBAction func addSearchButtonTouchUpInside(_ sender: Any) {
+    @IBAction private func addSearchButtonTouchUpInside(_ sender: Any) {
         title = nil
         navigationController?.navigationBar.setBackgroundImage(nil, for: .default)
         navigationController?.navigationBar.backgroundColor = .clear
@@ -49,22 +49,22 @@ class BackGroundViewController: UIViewController {
         rightBarButton.customView = btnCancel
         navigationItem.rightBarButtonItem = rightBarButton
     }
-    
-    @IBAction func addBarButtonTouchUpInside(_ sender: Any) {
+
+    @IBAction private func addBarButtonTouchUpInside(_ sender: Any) {
         title = "BarButtonItem Img"
         let btnCancel = UIBarButtonItem(image: UIImage(named: "cancel"), style: .plain, target: self, action: #selector(cancel))
         //Set right Bar Button item
         navigationItem.rightBarButtonItem = btnCancel
     }
-    
-    @IBAction func addMoreBarButtonTouchUpInside(_ sender: Any) {
+
+    @IBAction private func addMoreBarButtonTouchUpInside(_ sender: Any) {
         title = "Add BarButtonItems"
         let share = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(cancel))
         let add = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(cancel))
         navigationItem.rightBarButtonItems = [add, share]
     }
 
-    @objc func cancel() {
+    @objc private func cancel() {
         navigationItem.leftBarButtonItems = .none
         navigationItem.rightBarButtonItems = .none
         navigationController?.navigationBar.setBackgroundImage(nil, for: .default)

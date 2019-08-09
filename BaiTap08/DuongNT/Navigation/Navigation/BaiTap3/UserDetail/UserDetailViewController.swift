@@ -10,8 +10,8 @@ import UIKit
 
 class UserDetailViewController: UIViewController {
 
-    @IBOutlet weak var userDetailImage: UIImageView!
-    @IBOutlet weak var userNameTextField: UITextField!
+    @IBOutlet private weak var userDetailImage: UIImageView!
+    @IBOutlet private weak var userNameTextField: UITextField!
 
     var name = ""
     var avatar = ""
@@ -25,10 +25,6 @@ class UserDetailViewController: UIViewController {
         let pictureTap = UITapGestureRecognizer(target: self, action: #selector(imageTapped))
         userDetailImage.addGestureRecognizer(pictureTap)
         userDetailImage.isUserInteractionEnabled = true
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
     }
 
     private func setUpUIDetail() {
@@ -52,7 +48,7 @@ class UserDetailViewController: UIViewController {
         navigationController?.popViewController(animated: true)
     }
 
-    @objc func imageTapped(sender: UITapGestureRecognizer) {
+    @objc private func imageTapped(sender: UITapGestureRecognizer) {
         let listImage = ["image1", "image2", "image3", "image4", "image5", "image6"]
         let number = Int.random(in: 0 ..< listImage.count)
         userDetailImage.image = UIImage(named: listImage[number])

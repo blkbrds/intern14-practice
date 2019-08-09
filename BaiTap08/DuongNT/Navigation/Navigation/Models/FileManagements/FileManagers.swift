@@ -8,16 +8,14 @@
 
 import Foundation
 class FileManagers {
-    
+
     //MARK: - Read file
-    
     static func readPlistFile(filename: String) -> [[String: String]] {
         guard let path = Bundle.main.path(forResource: filename, ofType: "plist") else { return [] }
         return NSArray(contentsOfFile: path) as! [[String : String]]
     }
-    
+
     //MARK: - Write file
-    
     static func readPlist(namePlist: String) -> [[String: String]] {
         let paths = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true) as NSArray
         let documentsDirectory = paths.object(at: 0) as! NSString
@@ -30,7 +28,7 @@ class FileManagers {
             return NSArray(contentsOfFile: privPath) as! [[String : String]]
         }
     }
-    
+
     static func writePlist(_ user: User, _ username: String) {
         let documentDirectory = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as String
         let path = documentDirectory.appending("/users.plist")
@@ -59,7 +57,7 @@ class FileManagers {
             print("is the file created: \(isWritten)")
         }
     }
-    
+
     static func writePlistToList(_ user: Users, _ name: String) {
         let documentDirectory = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as String
         let path = documentDirectory.appending("/ListUserInform.plist")
@@ -88,7 +86,7 @@ class FileManagers {
             print("is the file created: \(isWritten)")
         }
     }
-    
+
     static func copyFilesFromBundleToDocumentsFolderWith(fileExtension: String) {
         if let resPath = Bundle.main.resourcePath {
             do {

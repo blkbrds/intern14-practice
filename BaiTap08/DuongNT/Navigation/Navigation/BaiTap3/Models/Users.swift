@@ -18,15 +18,15 @@ class Users {
         self.avatar = avatar
     }
 }
+
 extension Users {
+    
     static func parseData(array: [[String: String]]) -> [Users] {
         var users: [Users] = []
-        
         for dic in array {
             let user = Users(dic["name"]!, dic["avatar"]!)
             users.append(user)
         }
-        
         return users
     }
 }

@@ -10,7 +10,7 @@ import UIKit
 
 class MenuViewController: UIViewController {
 
-    @IBOutlet var baiTapButtons: [UIButton]!
+    @IBOutlet private var baiTapButtons: [UIButton]!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,25 +18,27 @@ class MenuViewController: UIViewController {
     }
 
     private func setUpUI() {
-        baiTapButtons.forEach {
-            button in
+        baiTapButtons.forEach { button in
             button.layer.cornerRadius = 10
         }
     }
 
-    @IBAction func baiTap1ButtonTouchUpInside(_ sender: Any) {
+    @IBAction private func baiTap1ButtonTouchUpInside(_ button: UIButton) {
         let aViewController = AViewController()
         navigationController?.pushViewController(aViewController, animated: true)
     }
-    @IBAction func baiTap2ButtonTouchUpInside(_ sender: Any) {
+
+    @IBAction private func baiTap2ButtonTouchUpInside(_ button: UIButton) {
         let loginViewController = LoginViewController()
         navigationController?.pushViewController(loginViewController, animated: true)
     }
-    @IBAction func baiTap3ButtonTouchUpInside(_ sender: Any) {
+
+    @IBAction private func baiTap3ButtonTouchUpInside(_ button: UIButton) {
         let listUsersViewController = ListUsersViewController()
         navigationController?.pushViewController(listUsersViewController, animated: true)
     }
-    @IBAction func baiTap4ButtonTouchUpInside(_ sender: Any) {
+
+    @IBAction private func baiTap4ButtonTouchUpInside(_ button: UIButton) {
         let bai4 = BackGroundViewController()
         navigationController?.pushViewController(bai4, animated: true)
     }

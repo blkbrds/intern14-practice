@@ -11,9 +11,9 @@ import UIKit
 class LoginViewController: UIViewController {
 
     // MARK: - Outlets
-    @IBOutlet weak var userNameTextField: UITextField!
-    @IBOutlet weak var passWordTextField: UITextField!
-    @IBOutlet weak var errorLabel: UILabel!
+    @IBOutlet private weak var userNameTextField: UITextField!
+    @IBOutlet private weak var passWordTextField: UITextField!
+    @IBOutlet private weak var errorLabel: UILabel!
 
     // MARK: - Properties
     private var users: [User] = []
@@ -27,6 +27,7 @@ class LoginViewController: UIViewController {
     }
 
     override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
         userNameTextField.text = nil
         passWordTextField.text = nil
         errorLabel.isHidden = true
@@ -44,10 +45,9 @@ class LoginViewController: UIViewController {
         passWordTextField.delegate = self
     }
 
-    func loadFilePlist() {
-        let a = UserDefaults.standard.bool(forKey: "firstLoad")
-        print(a)
-        if !a {
+    private func loadFilePlist() {
+        let isFistLoad = UserDefaults.standard.bool(forKey: "firstLoad")
+        if !isFistLoad {
             FileManagers.copyFilesFromBundleToDocumentsFolderWith(fileExtension: "plist")
             UserDefaults.standard.set(true, forKey: "firstLoad")
             users = User.parseData(array: FileManagers.readPlist(namePlist: "users"))
@@ -103,10 +103,10 @@ class LoginViewController: UIViewController {
                 }
             }
         }
-    }    
+    }
 }
 
-extension LoginViewController : UITextFieldDelegate {
+extension LoginViewController: UITextFieldDelegate {
 
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         if textField == userNameTextField {

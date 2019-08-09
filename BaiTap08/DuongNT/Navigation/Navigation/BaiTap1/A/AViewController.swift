@@ -27,7 +27,7 @@ class AViewController: UIViewController {
     }
 
     // Marks: - IBAction function
-    @IBAction func nextButtonTouchUpInside(_ button: UIButton) {
+    @IBAction private func nextButtonTouchUpInside(_ button: UIButton) {
         let bViewController = BViewController()
         navigationController?.pushViewController(bViewController, animated: true)
     }

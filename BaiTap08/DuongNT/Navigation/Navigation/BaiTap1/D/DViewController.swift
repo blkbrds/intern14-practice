@@ -33,12 +33,12 @@ class DViewController: UIViewController {
     }
 
     // Marks: - IBAction function
-    @IBAction func nextButtonTouchUpInside(_ button: UIButton) {
+    @IBAction private func nextButtonTouchUpInside(_ button: UIButton) {
         let eViewController = EViewController()
         navigationController?.pushViewController(eViewController, animated: true)
     }
 
-    @IBAction func cButtonTouchUpInside(_ button: UIButton) {
+    @IBAction private func cButtonTouchUpInside(_ button: UIButton) {
         for controller in self.navigationController!.viewControllers as Array {
             if controller.isKind(of: CViewController.self) {
                 self.navigationController!.popToViewController(controller, animated: true)
@@ -47,7 +47,7 @@ class DViewController: UIViewController {
         }
     }
 
-    @IBAction func bButtonTouchUpInside(_ button: UIButton) {
+    @IBAction private func bButtonTouchUpInside(_ button: UIButton) {
         for controller in self.navigationController!.viewControllers as Array {
             if controller.isKind(of: BViewController.self) {
                 self.navigationController!.popToViewController(controller, animated: true)
@@ -56,7 +56,7 @@ class DViewController: UIViewController {
         }
     }
 
-    @IBAction func rootButtonTouchUpInside(_ button: UIButton) {
+    @IBAction private func rootButtonTouchUpInside(_ button: UIButton) {
         navigationController?.popToRootViewController(animated: true)
     }
 }

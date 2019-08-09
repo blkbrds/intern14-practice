@@ -10,22 +10,19 @@ import UIKit
 
 class EViewController: UIViewController {
 
-    // Marks: Properties
-    
+    // Marks: - Outlets
     @IBOutlet private weak var cButton: UIButton!
     @IBOutlet private weak var bButton: UIButton!
     @IBOutlet private weak var dButton: UIButton!
     @IBOutlet private weak var rootButton: UIButton!
-    
-    // Marks: Life cycle function
-    
+
+    // Marks: - Life cycle function
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpViews()
     }
-    
-    // Marks: Private/public custom function
-    
+
+    // Marks: - Private/public custom function
     private func setUpViews() {
         title = "View Controller E"
         cButton.layer.cornerRadius = 5
@@ -34,37 +31,36 @@ class EViewController: UIViewController {
         rootButton.layer.cornerRadius = 5
         navigationController?.navigationBar.backgroundColor = .cyan
     }
-    
-    // Marks: IBAction function
-    
-    @IBAction func cButtonTouchUpInside(_ sender: Any) {
-        for controller in self.navigationController!.viewControllers as Array {
+
+    // Marks: - IBAction function
+    @IBAction private func cButtonTouchUpInside(_ sender: Any) {
+        for controller in navigationController!.viewControllers as Array {
             if controller.isKind(of: CViewController.self) {
-                self.navigationController!.popToViewController(controller, animated: true)
+                navigationController!.popToViewController(controller, animated: true)
                 break
             }
         }
     }
-    
-    @IBAction func bButtonTouchUpInside(_ sender: Any) {
-        for controller in self.navigationController!.viewControllers as Array {
+
+    @IBAction private func bButtonTouchUpInside(_ sender: Any) {
+        for controller in navigationController!.viewControllers as Array {
             if controller.isKind(of: BViewController.self) {
-                self.navigationController!.popToViewController(controller, animated: true)
+                navigationController!.popToViewController(controller, animated: true)
                 break
             }
         }
     }
-    
-    @IBAction func dButtonTouchUpInside(_ sender: Any) {
-        for controller in self.navigationController!.viewControllers as Array {
+
+    @IBAction private func dButtonTouchUpInside(_ sender: Any) {
+        for controller in navigationController!.viewControllers as Array {
             if controller.isKind(of: DViewController.self) {
-                self.navigationController!.popToViewController(controller, animated: true)
+                navigationController!.popToViewController(controller, animated: true)
                 break
             }
         }
     }
-    
-    @IBAction func rootButtonTouchUpInside(_ sender: Any) {
+
+    @IBAction private func rootButtonTouchUpInside(_ sender: Any) {
         navigationController?.popToRootViewController(animated: true)
     }
 }

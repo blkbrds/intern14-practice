@@ -15,15 +15,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         window = UIWindow(frame: UIScreen.main.bounds)
-        if let window = window {
-            window.backgroundColor = .white
-            window.makeKeyAndVisible()
-
-            let menu = MenuViewController()
-            
-            let navigationController = UINavigationController(rootViewController: menu)
-            window.rootViewController = navigationController
-        }
+        window?.backgroundColor = .white
+        window?.makeKeyAndVisible()
+        let menu = MenuViewController()
+        let navigationController = UINavigationController(rootViewController: menu)
+        window?.rootViewController = navigationController
         return true
     }
 }

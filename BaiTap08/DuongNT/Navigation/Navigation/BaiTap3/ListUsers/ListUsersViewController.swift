@@ -10,10 +10,10 @@ import UIKit
 
 class ListUsersViewController: UIViewController {
 
-    @IBOutlet weak var uiScrollView: UIScrollView!
+    @IBOutlet private weak var uiScrollView: UIScrollView!
 
-    var tagCurrent = 0
-    var image = UIImage()
+    private var tagCurrent = 0
+    private var image = UIImage()
     private var isFirstDisplay: Bool = true
     private var listUsers: [Users] = []
 
@@ -25,16 +25,13 @@ class ListUsersViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         if isFirstDisplay {
             isFirstDisplay = !isFirstDisplay
         } else {
             loadFilePlist()
             showListAvatar()
         }
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
     }
 
     func loadFilePlist() {
@@ -46,7 +43,7 @@ class ListUsersViewController: UIViewController {
         listUsers = Users.parseData(array: FileManagers.readPlist(namePlist: "ListUserInform"))
     }
 
-    func setAvatar(frame: CGRect, name: String, avatarImage: UIImage, index: Int) -> UIView {
+    private func setAvatar(frame: CGRect, name: String, avatarImage: UIImage, index: Int) -> UIView {
         let views = UIView(frame: frame)
         views.backgroundColor = .black
         let userAvatar = UIImageView(image: avatarImage)
@@ -62,7 +59,7 @@ class ListUsersViewController: UIViewController {
         return views
     }
 
-    func showListAvatar() {
+    private func showListAvatar() {
         var x: CGFloat = 20
         var y: CGFloat = 50
         for index in 0..<listUsers.count {
