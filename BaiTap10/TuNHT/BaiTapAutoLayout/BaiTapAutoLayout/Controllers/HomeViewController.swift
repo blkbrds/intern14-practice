@@ -14,6 +14,8 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        title = "AutoLayout"
     }
     
     @IBAction func baiTapButtonTouchUpInside(_ button: UIButton) {
@@ -43,6 +45,15 @@ class HomeViewController: UIViewController {
             navigationController?.pushViewController(viewController, animated: true)
         } else if button == baiTapButton[8] {
             let viewController = Bai9ViewController()
+            navigationController?.pushViewController(viewController, animated: true)
+        } else if button == baiTapButton[9] {
+            let viewController = Bai10ViewController()
+            navigationController?.pushViewController(viewController, animated: true)
+        } else if button == baiTapButton[10] {
+            let viewController = Bai11ViewController()
+            navigationController?.pushViewController(viewController, animated: true)
+        } else if button == baiTapButton[11] {
+            let viewController = Bai12ViewController()
             navigationController?.pushViewController(viewController, animated: true)
         }
     }
