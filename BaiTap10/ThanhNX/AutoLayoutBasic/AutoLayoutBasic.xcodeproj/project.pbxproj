@@ -85,6 +85,8 @@
 		B0EC341322F80AE6001C51D6 /* Bai8ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0EC341122F80AE6001C51D6 /* Bai8ViewController.xib */; };
 		B0EC733422FD10E300400896 /* Bai13ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EC733222FD10E300400896 /* Bai13ViewController.swift */; };
 		B0EC733522FD10E300400896 /* Bai13ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0EC733322FD10E300400896 /* Bai13ViewController.xib */; };
+		B0EC733922FD551E00400896 /* Bai14ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EC733722FD551E00400896 /* Bai14ViewController.swift */; };
+		B0EC733A22FD551E00400896 /* Bai14ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0EC733822FD551E00400896 /* Bai14ViewController.xib */; };
 		B0F056D922F293D300D13627 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F056D822F293D300D13627 /* AppDelegate.swift */; };
 		B0F056E022F293D600D13627 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0F056DF22F293D600D13627 /* Assets.xcassets */; };
 		B0F056EE22F2968A00D13627 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F056EC22F2968A00D13627 /* ViewController.swift */; };
@@ -178,6 +180,8 @@
 		B0EC341122F80AE6001C51D6 /* Bai8ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Bai8ViewController.xib; sourceTree = "<group>"; };
 		B0EC733222FD10E300400896 /* Bai13ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bai13ViewController.swift; sourceTree = "<group>"; };
 		B0EC733322FD10E300400896 /* Bai13ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Bai13ViewController.xib; sourceTree = "<group>"; };
+		B0EC733722FD551E00400896 /* Bai14ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bai14ViewController.swift; sourceTree = "<group>"; };
+		B0EC733822FD551E00400896 /* Bai14ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Bai14ViewController.xib; sourceTree = "<group>"; };
 		B0F056D522F293D300D13627 /* AutoLayoutBasic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoLayoutBasic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0F056D822F293D300D13627 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0F056DF22F293D600D13627 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -208,6 +212,7 @@
 		B0CE3BEC22F432C2004D2405 /* BaiTap */ = {
 			isa = PBXGroup;
 			children = (
+				B0EC733622FD550B00400896 /* Bai14 */,
 				B0F210A122FC2C270078B8D8 /* Bai13 */,
 				B0F1340422FA69AE0075E552 /* Bai12 */,
 				B0F133FF22FA65930075E552 /* Bai11 */,
@@ -629,6 +634,15 @@
 			name = Bai8;
 			sourceTree = "<group>";
 		};
+		B0EC733622FD550B00400896 /* Bai14 */ = {
+			isa = PBXGroup;
+			children = (
+				B0EC733722FD551E00400896 /* Bai14ViewController.swift */,
+				B0EC733822FD551E00400896 /* Bai14ViewController.xib */,
+			);
+			name = Bai14;
+			sourceTree = "<group>";
+		};
 		B0F056CC22F293D300D13627 = {
 			isa = PBXGroup;
 			children = (
@@ -807,6 +821,7 @@
 				B0F1340822FA6A150075E552 /* Bai12ViewController.xib in Resources */,
 				B0CE3C0522F43339004D2405 /* Bai3ViewController.xib in Resources */,
 				B0CE3C2322F4358B004D2405 /* Bai4Part4VC.xib in Resources */,
+				B0EC733A22FD551E00400896 /* Bai14ViewController.xib in Resources */,
 				B0F1340322FA65CE0075E552 /* Bai11ViewController.xib in Resources */,
 				B0CE3C1E22F434B3004D2405 /* Bai4Part3VC.xib in Resources */,
 				B0CE3BF122F432DA004D2405 /* Bai1ViewController.xib in Resources */,
@@ -834,6 +849,7 @@
 			files = (
 				B0EC33B522F7DFAC001C51D6 /* Bai6Part3VC.swift in Sources */,
 				B0CE3C1822F433DC004D2405 /* Bai4Part2VC.swift in Sources */,
+				B0EC733922FD551E00400896 /* Bai14ViewController.swift in Sources */,
 				B0EC339C22F7C85A001C51D6 /* Bai5Part2VC.swift in Sources */,
 				B0EC33B022F7DEA2001C51D6 /* Bai6Part2VC.swift in Sources */,
 				B0EC33C122F7E318001C51D6 /* Part0ViewController.swift in Sources */,
