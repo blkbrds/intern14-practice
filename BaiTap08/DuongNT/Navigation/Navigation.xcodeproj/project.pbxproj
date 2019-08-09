@@ -24,7 +24,6 @@
 		1C4777E922D356CD0015F43B /* EViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C4777E722D356CD0015F43B /* EViewController.xib */; };
 		1C660F4922D8627A003047A3 /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C660F4722D8627A003047A3 /* UserDetailViewController.swift */; };
 		1C660F4A22D8627A003047A3 /* UserDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C660F4822D8627A003047A3 /* UserDetailViewController.xib */; };
-		1C660F4C22DC2F8A003047A3 /* ListUserInform.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1C660F4B22DC2F8A003047A3 /* ListUserInform.plist */; };
 		1C88B04422D42CE700F677F8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C88B04222D42CE700F677F8 /* LoginViewController.swift */; };
 		1C88B04522D42CE700F677F8 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C88B04322D42CE700F677F8 /* LoginViewController.xib */; };
 		1C88B05222D47DC900F677F8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C88B05022D47DC900F677F8 /* HomeViewController.swift */; };
@@ -39,6 +38,7 @@
 		1C88B07B22D5DF8D00F677F8 /* FileManagers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C88B07A22D5DF8D00F677F8 /* FileManagers.swift */; };
 		1C88B07D22D5E18D00F677F8 /* users.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1C88B07C22D5E18D00F677F8 /* users.plist */; };
 		1C88B07F22D5E3A200F677F8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C88B07E22D5E3A200F677F8 /* User.swift */; };
+		1CADBD7F22FD6B35005DAB80 /* ListUserInform.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1CADBD7E22FD6B35005DAB80 /* ListUserInform.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,7 +61,6 @@
 		1C4777E722D356CD0015F43B /* EViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EViewController.xib; sourceTree = "<group>"; };
 		1C660F4722D8627A003047A3 /* UserDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
 		1C660F4822D8627A003047A3 /* UserDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserDetailViewController.xib; sourceTree = "<group>"; };
-		1C660F4B22DC2F8A003047A3 /* ListUserInform.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = ListUserInform.plist; path = ../ListUserInform.plist; sourceTree = "<group>"; };
 		1C88B04222D42CE700F677F8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		1C88B04322D42CE700F677F8 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		1C88B05022D47DC900F677F8 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +75,7 @@
 		1C88B07A22D5DF8D00F677F8 /* FileManagers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagers.swift; sourceTree = "<group>"; };
 		1C88B07C22D5E18D00F677F8 /* users.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = users.plist; sourceTree = "<group>"; };
 		1C88B07E22D5E3A200F677F8 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		1CADBD7E22FD6B35005DAB80 /* ListUserInform.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = ListUserInform.plist; path = Navigation/BaiTap3/ListUserInform.plist; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,7 +162,7 @@
 		1C660F4D22DC2F94003047A3 /* File */ = {
 			isa = PBXGroup;
 			children = (
-				1C660F4B22DC2F8A003047A3 /* ListUserInform.plist */,
+				1CADBD7E22FD6B35005DAB80 /* ListUserInform.plist */,
 			);
 			path = File;
 			sourceTree = "<group>";
@@ -398,8 +398,8 @@
 				1C88B04522D42CE700F677F8 /* LoginViewController.xib in Resources */,
 				1C88B07D22D5E18D00F677F8 /* users.plist in Resources */,
 				1C4777E122D3548D0015F43B /* CViewController.xib in Resources */,
-				1C660F4C22DC2F8A003047A3 /* ListUserInform.plist in Resources */,
 				1C39717922DDB1EA00243373 /* BackGroundViewController.xib in Resources */,
+				1CADBD7F22FD6B35005DAB80 /* ListUserInform.plist in Resources */,
 				1C4777D922D34AD70015F43B /* AViewController.xib in Resources */,
 				1C88B06A22D5D64600F677F8 /* MenuViewController.xib in Resources */,
 				1C4777DD22D3529E0015F43B /* BViewController.xib in Resources */,

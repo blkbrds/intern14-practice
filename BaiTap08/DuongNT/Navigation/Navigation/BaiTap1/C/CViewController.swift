@@ -10,21 +10,18 @@ import UIKit
 
 class CViewController: UIViewController {
 
-    // Marks: Properties
-    
+    // Marks: Outlets
     @IBOutlet private weak var nextButton: UIButton!
     @IBOutlet private weak var previousButton: UIButton!
     @IBOutlet private weak var rootButton: UIButton!
-    
+
     // Marks: Life cycle function
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpViews()
     }
-    
+
     // Marks: Private/public custom function
-    
     private func setUpViews() {
         title = "View Controller C"
         nextButton.layer.cornerRadius = 5
@@ -32,19 +29,18 @@ class CViewController: UIViewController {
         rootButton.layer.cornerRadius = 5
         navigationController?.navigationBar.backgroundColor = .cyan
     }
-    
+
     // Marks: IBAction function
-    
-    @IBAction func nextButtonTouchUpInside(_ sender: Any) {
+    @IBAction func nextButtonTouchUpInside(_ button: UIButton) {
         let dViewController = DViewController()
         navigationController?.pushViewController(dViewController, animated: true)
     }
-    
-    @IBAction func previousButtonTouchUpInside(_ sender: Any) {
+
+    @IBAction func previousButtonTouchUpInside(_ button: UIButton) {
         navigationController?.popViewController(animated: true)
     }
-    
-    @IBAction func rootButtonTouchUpInside(_ sender: Any) {
+
+    @IBAction func rootButtonTouchUpInside(_ button: UIButton) {
         navigationController?.popToRootViewController(animated: true)
     }
 }

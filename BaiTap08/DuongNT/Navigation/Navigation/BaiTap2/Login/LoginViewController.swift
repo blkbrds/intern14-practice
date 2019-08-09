@@ -10,43 +10,40 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
-    // Marks: Properties
-    
+    // MARK: - Outlets
     @IBOutlet weak var userNameTextField: UITextField!
     @IBOutlet weak var passWordTextField: UITextField!
     @IBOutlet weak var errorLabel: UILabel!
-    
+
+    // MARK: - Properties
     private var users: [User] = []
-    
+
     // MARK: Life cycle function
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         configTextFields()
         loadFilePlist()
         setUpUILogin()
     }
-    
+
     override func viewDidDisappear(_ animated: Bool) {
         userNameTextField.text = nil
         passWordTextField.text = nil
         errorLabel.isHidden = true
     }
-    
-    // MARK: Basic override view function
-    
+
+    // MARK: - Basic override view function
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
         view.endEditing(true)
     }
-    
-    // MARK: Private/public custom function
-    
+
+    // MARK: - Private/public custom function
     private func configTextFields() {
         userNameTextField.delegate = self
         passWordTextField.delegate = self
     }
-    
+
     func loadFilePlist() {
         let a = UserDefaults.standard.bool(forKey: "firstLoad")
         print(a)
@@ -58,36 +55,23 @@ class LoginViewController: UIViewController {
             users = User.parseData(array: FileManagers.readPlist(namePlist: "users"))
         }
     }
-    
+
     private func setUpUILogin() {
         title = "Login"
         let doneButton = UIButton(frame: CGRect(x: 0, y: 0, width: 50, height: 44))
         doneButton.addTarget(self, action: #selector(login), for: .touchUpInside)
         doneButton.setTitle("Done", for: .normal)
         doneButton.setTitleColor(.blue, for: .normal)
-        
         let rightCustomerView = UIView(frame: CGRect(x: 0, y: 0, width: 50, height: 44))
         rightCustomerView.addSubview(doneButton)
-        
         let rightBarButtonItem = UIBarButtonItem(customView: rightCustomerView)
         navigationItem.rightBarButtonItem = rightBarButtonItem
     }
-    
-    
+
     @objc private func login() {
         checkLogin()
     }
-    
-//    private func getUser() {
-//        //FileManagers.writePlist(namePlist: "users", key: "username", data: "duongnt123" as AnyObject)
-//        users = User.parseData(array: FileManagers.readPlist(namePlist: "users"))
-//        //FileManagers.writeFile(array: [["admin" : "admin"]])
-//        users.forEach {
-//            user in
-//            FileManagers.writePlist(user.username, user.password)
-//        }
-//    }
-    
+
     private func checkLogin() {
         if let username = userNameTextField.text, let password = passWordTextField.text {
             if username.isEmpty || password.isEmpty {
@@ -123,6 +107,7 @@ class LoginViewController: UIViewController {
 }
 
 extension LoginViewController : UITextFieldDelegate {
+
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         if textField == userNameTextField {
             passWordTextField.becomeFirstResponder()

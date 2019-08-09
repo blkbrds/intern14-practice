@@ -11,19 +11,19 @@ import UIKit
 class MenuViewController: UIViewController {
 
     @IBOutlet var baiTapButtons: [UIButton]!
-  
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpUI()
     }
-    
+
     private func setUpUI() {
         baiTapButtons.forEach {
             button in
             button.layer.cornerRadius = 10
         }
     }
-    
+
     @IBAction func baiTap1ButtonTouchUpInside(_ sender: Any) {
         let aViewController = AViewController()
         navigationController?.pushViewController(aViewController, animated: true)

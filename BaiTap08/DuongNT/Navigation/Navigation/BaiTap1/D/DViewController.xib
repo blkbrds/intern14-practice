@@ -54,7 +54,7 @@
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
                     <connections>
-                        <action selector="dButtonTouchUpInside:" destination="-1" eventType="touchUpInside" id="PZz-TL-i1o"/>
+                        <action selector="bButtonTouchUpInside:" destination="-1" eventType="touchUpInside" id="PZz-TL-i1o"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EMM-N7-djz">

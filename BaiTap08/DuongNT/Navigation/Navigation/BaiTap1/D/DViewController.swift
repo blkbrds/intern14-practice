@@ -10,22 +10,19 @@ import UIKit
 
 class DViewController: UIViewController {
 
-    // Marks: Properties
-    
+    // Marks: - Outlets
     @IBOutlet private weak var nextButton: UIButton!
     @IBOutlet private weak var cButton: UIButton!
     @IBOutlet private weak var bButton: UIButton!
     @IBOutlet private weak var rootButton: UIButton!
-    
-    // Marks: Life cycle function
-    
+
+    // Marks: - Life cycle function
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpViews()
     }
-    
-    // Marks: Private/public custom function
-    
+
+    // Marks: - Private/public custom function
     private func setUpViews() {
         title = "View Controller D"
         nextButton.layer.cornerRadius = 5
@@ -34,15 +31,14 @@ class DViewController: UIViewController {
         rootButton.layer.cornerRadius = 5
         navigationController?.navigationBar.backgroundColor = .cyan
     }
-    
-    // Marks: IBAction function
-    
-    @IBAction func nextButtonTouchUpInside(_ sender: Any) {
+
+    // Marks: - IBAction function
+    @IBAction func nextButtonTouchUpInside(_ button: UIButton) {
         let eViewController = EViewController()
         navigationController?.pushViewController(eViewController, animated: true)
     }
-    
-    @IBAction func cButtonTouchUpInside(_ sender: Any) {
+
+    @IBAction func cButtonTouchUpInside(_ button: UIButton) {
         for controller in self.navigationController!.viewControllers as Array {
             if controller.isKind(of: CViewController.self) {
                 self.navigationController!.popToViewController(controller, animated: true)
@@ -50,17 +46,17 @@ class DViewController: UIViewController {
             }
         }
     }
-    
-    @IBAction func dButtonTouchUpInside(_ sender: Any) {
+
+    @IBAction func bButtonTouchUpInside(_ button: UIButton) {
         for controller in self.navigationController!.viewControllers as Array {
-            if controller.isKind(of: DViewController.self) {
+            if controller.isKind(of: BViewController.self) {
                 self.navigationController!.popToViewController(controller, animated: true)
                 break
             }
         }
     }
-    
-    @IBAction func rootButtonTouchUpInside(_ sender: Any) {
+
+    @IBAction func rootButtonTouchUpInside(_ button: UIButton) {
         navigationController?.popToRootViewController(animated: true)
     }
 }
