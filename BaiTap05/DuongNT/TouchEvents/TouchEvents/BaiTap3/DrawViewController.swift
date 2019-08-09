@@ -78,7 +78,7 @@ class DrawViewController: UIViewController {
         tempImageView.alpha = opacity
         UIGraphicsEndImageContext()
     }
-    
+
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
         guard let touch = touches.first else {
@@ -96,7 +96,6 @@ class DrawViewController: UIViewController {
         swiped = false
         let currentPoint = touch.location(in: view)
         drawLine(from: lastPoint, to: currentPoint)
-        
         lastPoint = currentPoint
     }
 
@@ -110,6 +109,7 @@ class DrawViewController: UIViewController {
     @IBAction func resetButtonTouchUpInside(_ sender: Any) {
          tempImageView.image = nil
     }
+
     @IBAction func saveButtonTouchUpInside(_ sender: Any) {
         guard let selectedImage = tempImageView.image else {
             return

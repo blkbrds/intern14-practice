@@ -10,15 +10,17 @@ import UIKit
 
 class BallImageViewController: UIViewController {
 
-    @IBOutlet weak var ballImageView: UIImageView!
+    @IBOutlet private weak var ballImageView: UIImageView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }
 
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
         if let touch = touches.first {
-            if ballImageView.frame.contains(touch.location(in: self.view)) {
-                ballImageView.center = touch.location(in: self.view)
+            if ballImageView.frame.contains(touch.location(in: view)) {
+                ballImageView.center = touch.location(in: view)
             }
         }
     }

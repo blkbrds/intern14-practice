@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if let window = window {
             window.backgroundColor = .white
             window.makeKeyAndVisible()
-            let viewController = MonkeyViewController()
+            let viewController = BallImageViewController()
             window.rootViewController = viewController
         }
         return true

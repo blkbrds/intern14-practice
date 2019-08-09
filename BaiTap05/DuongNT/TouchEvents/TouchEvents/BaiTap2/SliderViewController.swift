@@ -29,7 +29,6 @@ class SliderViewController: UIViewController {
             let value = (containerView.frame.size.height - location.y) * 100 / containerView.frame.size.height
             sliderCircleLabel.text = "\(Int(value))"
             backgroundSlideView.frame.size.height = location.y
-            
         }
     }
 
@@ -58,5 +57,4 @@ class SliderViewController: UIViewController {
         containerView.addSubview(sliderCircleLabel)
         return containerView
     }
-    
 }
