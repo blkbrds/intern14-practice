@@ -18,10 +18,6 @@ class Ex14ViewController: BaseViewController {
         super.viewDidLoad()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
-
     // MARK: - Config
     override func setupUI() {
         super.setupUI()
@@ -38,19 +34,19 @@ class Ex14ViewController: BaseViewController {
 
     @IBInspectable var borderWidth: Double {
         get {
-            return Double(self.layer.borderWidth)
+            return Double(layer.borderWidth)
         }
         set {
-            self.layer.borderWidth = CGFloat(newValue)
+            layer.borderWidth = CGFloat(newValue)
         }
     }
 
     @IBInspectable var borderColor: UIColor? {
         get {
-            return UIColor(cgColor: self.layer.borderColor!)
+            return UIColor(cgColor: layer.borderColor!)
         }
         set {
-            self.layer.borderColor = newValue?.cgColor
+            layer.borderColor = newValue?.cgColor
         }
     }
 }
