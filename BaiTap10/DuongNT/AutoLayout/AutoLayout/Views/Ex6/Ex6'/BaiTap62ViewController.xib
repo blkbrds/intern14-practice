@@ -20,33 +20,61 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9zh-jP-hZe">
-                    <rect key="frame" x="20" y="423" width="50" height="50"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9zh-jP-hZe">
+                    <rect key="frame" x="20" y="418.5" width="59" height="59"/>
                     <color key="backgroundColor" red="1" green="0.25742316040000002" blue="0.14863990690000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="9zh-jP-hZe" secondAttribute="height" multiplier="1:1" id="cw3-BP-uE4"/>
+                    </constraints>
                 </view>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cuj-28-V8i">
-                    <rect key="frame" x="200" y="423" width="50" height="50"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" red="0.052328925800000002" green="1" blue="0.16589740510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                </view>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OrC-kg-jE2">
-                    <rect key="frame" x="267" y="423" width="50" height="50"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OrC-kg-jE2">
+                    <rect key="frame" x="256.5" y="418.5" width="58.5" height="59"/>
                     <color key="backgroundColor" red="0.058195013249999997" green="0.44280519210000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="OrC-kg-jE2" secondAttribute="height" multiplier="1:1" id="Zua-YC-vaf"/>
+                    </constraints>
                 </view>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rES-10-Opb">
-                    <rect key="frame" x="344" y="423" width="50" height="50"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rES-10-Opb">
+                    <rect key="frame" x="335" y="418.5" width="59" height="59"/>
                     <color key="backgroundColor" red="1" green="0.98154875740000003" blue="0.1089074413" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="rES-10-Opb" secondAttribute="height" multiplier="1:1" id="bxT-Yu-2OW"/>
+                    </constraints>
                 </view>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m33-3F-v73">
-                    <rect key="frame" x="105" y="423" width="50" height="50"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m33-3F-v73">
+                    <rect key="frame" x="99" y="418.5" width="58.5" height="59"/>
                     <color key="backgroundColor" red="0.91802605690000005" green="0.088299948069999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="m33-3F-v73" secondAttribute="height" multiplier="1:1" id="OiO-Aj-AYH"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cuj-28-V8i">
+                    <rect key="frame" x="177.5" y="418.5" width="59" height="59"/>
+                    <color key="backgroundColor" red="0.052328925800000002" green="1" blue="0.16589740510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="cuj-28-V8i" secondAttribute="height" multiplier="1:1" id="z88-q4-dPQ"/>
+                    </constraints>
                 </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="9zh-jP-hZe" firstAttribute="width" secondItem="cuj-28-V8i" secondAttribute="width" id="1RK-z6-bqt"/>
+                <constraint firstItem="m33-3F-v73" firstAttribute="leading" secondItem="9zh-jP-hZe" secondAttribute="trailing" constant="20" id="7NY-kP-ff8"/>
+                <constraint firstItem="rES-10-Opb" firstAttribute="width" secondItem="cuj-28-V8i" secondAttribute="width" id="9zb-p4-1ds"/>
+                <constraint firstItem="OrC-kg-jE2" firstAttribute="leading" secondItem="cuj-28-V8i" secondAttribute="trailing" constant="20" id="C0F-1U-7xB"/>
+                <constraint firstItem="rES-10-Opb" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="GHo-dm-Pva"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="rES-10-Opb" secondAttribute="trailing" constant="20" id="HeH-du-GIl"/>
+                <constraint firstItem="m33-3F-v73" firstAttribute="width" secondItem="cuj-28-V8i" secondAttribute="width" id="JIi-64-7Nz"/>
+                <constraint firstItem="cuj-28-V8i" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="K7R-FS-lUO"/>
+                <constraint firstItem="9zh-jP-hZe" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="YL3-py-Epv"/>
+                <constraint firstItem="OrC-kg-jE2" firstAttribute="width" secondItem="cuj-28-V8i" secondAttribute="width" id="aTj-Fh-bmA"/>
+                <constraint firstItem="cuj-28-V8i" firstAttribute="leading" secondItem="m33-3F-v73" secondAttribute="trailing" constant="20" id="bSn-8A-Nfo"/>
+                <constraint firstItem="OrC-kg-jE2" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="ceC-Pb-fWx"/>
+                <constraint firstItem="cuj-28-V8i" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="ffD-uH-s0z"/>
+                <constraint firstItem="9zh-jP-hZe" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="mlB-00-Jan"/>
+                <constraint firstItem="rES-10-Opb" firstAttribute="leading" secondItem="OrC-kg-jE2" secondAttribute="trailing" constant="20" id="wIC-eW-cBr"/>
+                <constraint firstItem="m33-3F-v73" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="yGg-XR-qA6"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
         </view>
     </objects>

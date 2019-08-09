@@ -9,23 +9,26 @@
 import UIKit
 
 class Ex8ViewController: BaseViewController {
-    
+
+    // MARK: - Properties
+    var exercise: Exercise?
+
+    // MARK: - Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    
-    // MARK: config
+
+    // MARK: - Config
     override func setupUI() {
         super.setupUI()
-        self.title = "Ex8"
+        self.title = exercise?.name
     }
-    
+
     override func setupData() {
+        super.setupData()
     }
-    
-    
 }
