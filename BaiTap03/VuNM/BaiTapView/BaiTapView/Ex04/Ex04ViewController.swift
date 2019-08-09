@@ -14,6 +14,7 @@ class NameButton {
         self.name = name
     }
 }
+
 class Ex04: UIViewController {
     let buttons: [NameButton] = [NameButton("1"), NameButton("2"), NameButton("3"), NameButton("+"), NameButton("4"), NameButton("5"), NameButton("6"), NameButton("-"), NameButton("7"), NameButton("8"), NameButton("9"), NameButton("X"), NameButton("AC"), NameButton("0"), NameButton("="), NameButton("/")]
     

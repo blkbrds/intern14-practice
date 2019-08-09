@@ -51,7 +51,6 @@ class Ex05: UIViewController {
             x2 +=  ((board1.bounds.width - 80) / 5) + 5
             view.addSubview(monthValue)
         }
-        
         var x3: CGFloat = 2.5
         var y3: CGFloat = 50
         for j in 0..<monthList.count{

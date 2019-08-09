@@ -52,7 +52,6 @@ class Ex02: UIViewController {
                 x = 20
                 y += 120
             }
-            
         }
     }
 }
