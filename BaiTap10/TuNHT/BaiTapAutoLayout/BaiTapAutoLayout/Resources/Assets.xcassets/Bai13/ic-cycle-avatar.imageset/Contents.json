@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "ronaldinho.jpeg",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "ic-cycle-avatar@2x.pdf",
       "scale" : "2x"
     },
     {
