@@ -14,8 +14,6 @@ class CalculatorViewController: UIViewController {
     @IBOutlet private weak var screenResulLabel: UILabel!
     @IBOutlet private var numberButtons: [UIButton]!
 
-    private var operationModel = OperationModel()
-
     // Mark: - Life cycle function
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,27 +57,27 @@ class CalculatorViewController: UIViewController {
                 if OperationModel.shared.arrayNumber.count >= 2 && OperationModel.shared.arrayNumber[1] != 0 {
                     switch OperationModel.shared.operation {
                     case 12:
-                        screenResulLabel.text = String(operationModel.chia(OperationModel.shared.arrayNumber[0], OperationModel.shared.arrayNumber[1]))
+                        screenResulLabel.text = String(OperationModel.shared.chia(OperationModel.shared.arrayNumber[0], OperationModel.shared.arrayNumber[1]))
                         OperationModel.shared.arrayNumber.removeFirst()
                         OperationModel.shared.arrayNumber[0] = Double(screenResulLabel.text!)!
                         break
                     case 13:
-                        screenResulLabel.text = String(operationModel.nhan(OperationModel.shared.arrayNumber[0], OperationModel.shared.arrayNumber[1]))
+                        screenResulLabel.text = String(OperationModel.shared.nhan(OperationModel.shared.arrayNumber[0], OperationModel.shared.arrayNumber[1]))
                         OperationModel.shared.arrayNumber.removeFirst()
                         OperationModel.shared.arrayNumber[0] = Double(screenResulLabel.text!)!
                         break
                     case 14:
-                        screenResulLabel.text = String(operationModel.tru(OperationModel.shared.arrayNumber[0], OperationModel.shared.arrayNumber[1]))
+                        screenResulLabel.text = String(OperationModel.shared.tru(OperationModel.shared.arrayNumber[0], OperationModel.shared.arrayNumber[1]))
                         OperationModel.shared.arrayNumber.removeFirst()
                         OperationModel.shared.arrayNumber[0] = Double(screenResulLabel.text!)!
                         break
                     case 15:
-                        screenResulLabel.text = String(operationModel.cong(OperationModel.shared.arrayNumber[0], OperationModel.shared.arrayNumber[1]))
+                        screenResulLabel.text = String(OperationModel.shared.cong(OperationModel.shared.arrayNumber[0], OperationModel.shared.arrayNumber[1]))
                         OperationModel.shared.arrayNumber.removeFirst()
                         OperationModel.shared.arrayNumber[0] = Double(screenResulLabel.text!)!
                         break
                     default:
-                        screenResulLabel.text = String(operationModel.chia(OperationModel.shared.arrayNumber[0], OperationModel.shared.arrayNumber[1]))
+                        screenResulLabel.text = String(OperationModel.shared.chia(OperationModel.shared.arrayNumber[0], OperationModel.shared.arrayNumber[1]))
                         OperationModel.shared.arrayNumber.removeFirst()
                         OperationModel.shared.arrayNumber[0] = Double(screenResulLabel.text!)!
                     }
@@ -102,27 +100,27 @@ class CalculatorViewController: UIViewController {
                 if OperationModel.shared.arrayNumber.count >= 2 {
                     switch OperationModel.shared.operations[OperationModel.shared.tempOperation - 1] {
                     case 12:
-                        screenResulLabel.text = String(operationModel.chia(OperationModel.shared.arrayNumber[0], OperationModel.shared.arrayNumber[1]))
+                        screenResulLabel.text = String(OperationModel.shared.chia(OperationModel.shared.arrayNumber[0], OperationModel.shared.arrayNumber[1]))
                         OperationModel.shared.arrayNumber.removeFirst()
                         OperationModel.shared.arrayNumber[0] = Double(screenResulLabel.text!)!
                         break
                     case 13:
-                        screenResulLabel.text = String(operationModel.nhan(OperationModel.shared.arrayNumber[0], OperationModel.shared.arrayNumber[1]))
+                        screenResulLabel.text = String(OperationModel.shared.nhan(OperationModel.shared.arrayNumber[0], OperationModel.shared.arrayNumber[1]))
                         OperationModel.shared.arrayNumber.removeFirst()
                         OperationModel.shared.arrayNumber[0] = Double(screenResulLabel.text!)!
                         break
                     case 14:
-                        screenResulLabel.text = String(operationModel.tru(OperationModel.shared.arrayNumber[0], OperationModel.shared.arrayNumber[1]))
+                        screenResulLabel.text = String(OperationModel.shared.tru(OperationModel.shared.arrayNumber[0], OperationModel.shared.arrayNumber[1]))
                         OperationModel.shared.arrayNumber.removeFirst()
                         OperationModel.shared.arrayNumber[0] = Double(screenResulLabel.text!)!
                         break
                     case 15:
-                        screenResulLabel.text = String(operationModel.cong(OperationModel.shared.arrayNumber[0], OperationModel.shared.arrayNumber[1]))
+                        screenResulLabel.text = String(OperationModel.shared.cong(OperationModel.shared.arrayNumber[0], OperationModel.shared.arrayNumber[1]))
                         OperationModel.shared.arrayNumber.removeFirst()
                         OperationModel.shared.arrayNumber[0] = Double(screenResulLabel.text!)!
                         break
                     default:
-                        screenResulLabel.text = String(operationModel.nhan(OperationModel.shared.arrayNumber[0], OperationModel.shared.arrayNumber[1]))
+                        screenResulLabel.text = String(OperationModel.shared.nhan(OperationModel.shared.arrayNumber[0], OperationModel.shared.arrayNumber[1]))
                         OperationModel.shared.arrayNumber.removeFirst()
                         OperationModel.shared.arrayNumber[0] = Double(screenResulLabel.text!)!
                     }
@@ -133,27 +131,27 @@ class CalculatorViewController: UIViewController {
                 if OperationModel.shared.arrayNumber.count >= 2 {
                     switch OperationModel.shared.operations[OperationModel.shared.tempOperation - 1] {
                     case 12:
-                        screenResulLabel.text = String(operationModel.chia(OperationModel.shared.arrayNumber[0], OperationModel.shared.arrayNumber[1]))
+                        screenResulLabel.text = String(OperationModel.shared.chia(OperationModel.shared.arrayNumber[0], OperationModel.shared.arrayNumber[1]))
                         OperationModel.shared.arrayNumber.removeFirst()
                         OperationModel.shared.arrayNumber[0] = Double(screenResulLabel.text!)!
                         break
                     case 13:
-                        screenResulLabel.text = String(operationModel.nhan(OperationModel.shared.arrayNumber[0], OperationModel.shared.arrayNumber[1]))
+                        screenResulLabel.text = String(OperationModel.shared.nhan(OperationModel.shared.arrayNumber[0], OperationModel.shared.arrayNumber[1]))
                         OperationModel.shared.arrayNumber.removeFirst()
                         OperationModel.shared.arrayNumber[0] = Double(screenResulLabel.text!)!
                         break
                     case 14:
-                        screenResulLabel.text = String(operationModel.tru(OperationModel.shared.arrayNumber[0], OperationModel.shared.arrayNumber[1]))
+                        screenResulLabel.text = String(OperationModel.shared.tru(OperationModel.shared.arrayNumber[0], OperationModel.shared.arrayNumber[1]))
                         OperationModel.shared.arrayNumber.removeFirst()
                         OperationModel.shared.arrayNumber[0] = Double(screenResulLabel.text!)!
                         break
                     case 15:
-                        screenResulLabel.text = String(operationModel.cong(OperationModel.shared.arrayNumber[0], OperationModel.shared.arrayNumber[1]))
+                        screenResulLabel.text = String(OperationModel.shared.cong(OperationModel.shared.arrayNumber[0], OperationModel.shared.arrayNumber[1]))
                         OperationModel.shared.arrayNumber.removeFirst()
                         OperationModel.shared.arrayNumber[0] = Double(screenResulLabel.text!)!
                         break
                     default:
-                        screenResulLabel.text = String(operationModel.tru(OperationModel.shared.arrayNumber[0], OperationModel.shared.arrayNumber[1]))
+                        screenResulLabel.text = String(OperationModel.shared.tru(OperationModel.shared.arrayNumber[0], OperationModel.shared.arrayNumber[1]))
                         OperationModel.shared.arrayNumber.removeFirst()
                         OperationModel.shared.arrayNumber[0] = Double(screenResulLabel.text!)!
                     }
@@ -164,27 +162,27 @@ class CalculatorViewController: UIViewController {
                 if OperationModel.shared.arrayNumber.count >= 2 {
                     switch OperationModel.shared.operations[OperationModel.shared.tempOperation - 1] {
                     case 12:
-                        screenResulLabel.text = String(operationModel.chia(OperationModel.shared.arrayNumber[0], OperationModel.shared.arrayNumber[1]))
+                        screenResulLabel.text = String(OperationModel.shared.chia(OperationModel.shared.arrayNumber[0], OperationModel.shared.arrayNumber[1]))
                         OperationModel.shared.arrayNumber.removeFirst()
                         OperationModel.shared.arrayNumber[0] = Double(screenResulLabel.text!)!
                         break
                     case 13:
-                        screenResulLabel.text = String(operationModel.nhan(OperationModel.shared.arrayNumber[0], OperationModel.shared.arrayNumber[1]))
+                        screenResulLabel.text = String(OperationModel.shared.nhan(OperationModel.shared.arrayNumber[0], OperationModel.shared.arrayNumber[1]))
                         OperationModel.shared.arrayNumber.removeFirst()
                         OperationModel.shared.arrayNumber[0] = Double(screenResulLabel.text!)!
                         break
                     case 14:
-                        screenResulLabel.text = String(operationModel.tru(OperationModel.shared.arrayNumber[0], OperationModel.shared.arrayNumber[1]))
+                        screenResulLabel.text = String(OperationModel.shared.tru(OperationModel.shared.arrayNumber[0], OperationModel.shared.arrayNumber[1]))
                         OperationModel.shared.arrayNumber.removeFirst()
                         OperationModel.shared.arrayNumber[0] = Double(screenResulLabel.text!)!
                         break
                     case 15:
-                        screenResulLabel.text = String(operationModel.cong(OperationModel.shared.arrayNumber[0], OperationModel.shared.arrayNumber[1]))
+                        screenResulLabel.text = String(OperationModel.shared.cong(OperationModel.shared.arrayNumber[0], OperationModel.shared.arrayNumber[1]))
                         OperationModel.shared.arrayNumber.removeFirst()
                         OperationModel.shared.arrayNumber[0] = Double(screenResulLabel.text!)!
                         break
                     default:
-                        screenResulLabel.text = String(operationModel.cong(OperationModel.shared.arrayNumber[0], OperationModel.shared.arrayNumber[1]))
+                        screenResulLabel.text = String(OperationModel.shared.cong(OperationModel.shared.arrayNumber[0], OperationModel.shared.arrayNumber[1]))
                         OperationModel.shared.arrayNumber.removeFirst()
                         OperationModel.shared.arrayNumber[0] = Double(screenResulLabel.text!)!
                     }
@@ -198,7 +196,7 @@ class CalculatorViewController: UIViewController {
             if OperationModel.shared.operation == 12 {
                 // Divide
                 if OperationModel.shared.numberOnScreen != 0 {
-                screenResulLabel.text = String(operationModel.chia(OperationModel.shared.previousNumber, OperationModel.shared.numberOnScreen))
+                screenResulLabel.text = String(OperationModel.shared.chia(OperationModel.shared.previousNumber, OperationModel.shared.numberOnScreen))
                 } else {
                     let errorInform = UIAlertController(title: "Error Devide Zero", message: "Not devide zero", preferredStyle: .alert)
                     errorInform.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
@@ -214,13 +212,13 @@ class CalculatorViewController: UIViewController {
                 }
             } else if OperationModel.shared.operation == 13 {
                 // Multiply
-                screenResulLabel.text = String(operationModel.nhan(OperationModel.shared.previousNumber, OperationModel.shared.numberOnScreen))
+                screenResulLabel.text = String(OperationModel.shared.nhan(OperationModel.shared.previousNumber, OperationModel.shared.numberOnScreen))
             } else if OperationModel.shared.operation == 14 {
                 // Subtract
-                screenResulLabel.text = String(operationModel.tru(OperationModel.shared.previousNumber, OperationModel.shared.numberOnScreen))
+                screenResulLabel.text = String(OperationModel.shared.tru(OperationModel.shared.previousNumber, OperationModel.shared.numberOnScreen))
             } else if OperationModel.shared.operation == 15 {
                 // Add
-                screenResulLabel.text = String(operationModel.cong(OperationModel.shared.previousNumber, OperationModel.shared.numberOnScreen))
+                screenResulLabel.text = String(OperationModel.shared.cong(OperationModel.shared.previousNumber, OperationModel.shared.numberOnScreen))
             }
             OperationModel.shared.performingMath = true
         } else if sender.tag == 11 {
