@@ -13,14 +13,15 @@ class SliderViewController: UIViewController {
     private var containerView = UIView()
     private var sliderCircleLabel = UILabel()
     private var backgroundSlideView = UIView()
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         let x =  CGRect(x: 125, y: 150, width: 100, height: 500)
         view.addSubview(sliderView(x, 70))
     }
-    
+
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesMoved(touches, with: event)
         guard let touch = touches.first else { return }
         let location = touch.location(in: containerView)
         if location.y > 0.0 && location.y < containerView.frame.size.height {
@@ -31,24 +32,20 @@ class SliderViewController: UIViewController {
             
         }
     }
-    
+
     private func sliderView(_ frame: CGRect, _ number: CGFloat) -> UIView {
         containerView = UIView(frame: frame)
-        
         let columnView = UIView(frame: CGRect(x: 25, y: 25, width: 100, height: 500))
         columnView.layer.borderWidth = 1
         columnView.layer.borderColor = UIColor(red: 19 / 255.0, green: 15 / 255.0, blue: 64 / 255.0, alpha: 1).cgColor
         columnView.backgroundColor = .blue
         containerView.addSubview(columnView)
-        
         let located = number * columnView.bounds.height / 100
-        
         backgroundSlideView = UILabel(frame: CGRect(x: 25, y: 25, width: 100, height: columnView.bounds.height - located))
         backgroundSlideView.layer.borderWidth = 1
         backgroundSlideView.layer.borderColor = UIColor(red: 19 / 255.0, green: 15 / 255.0, blue: 64 / 255.0, alpha: 1).cgColor
         backgroundSlideView.backgroundColor = .white
         containerView.addSubview(backgroundSlideView)
-        
         sliderCircleLabel = UILabel(frame: CGRect(x: 0, y: columnView.bounds.height - located - 25, width: 150, height: 150))
         sliderCircleLabel.backgroundColor = .orange
         sliderCircleLabel.text = "\(Int(number))"

@@ -10,11 +10,13 @@ import UIKit
 
 class MonkeyViewController: UIViewController, UIGestureRecognizerDelegate {
 
-    var width:CGFloat = 0
-    var height:CGFloat = 0
     @IBOutlet weak var monkeyView: UIImageView!
     @IBOutlet weak var commentView: UIImageView!
     @IBOutlet weak var commentLabel: UILabel!
+
+    var width:CGFloat = 0
+    var height:CGFloat = 0
+
     override func viewDidLoad() {
         super.viewDidLoad()
         commentView.isHidden = true
@@ -27,8 +29,8 @@ class MonkeyViewController: UIViewController, UIGestureRecognizerDelegate {
         doubleTapGestureRecognizer()
         tapGestureRecognizer()
     }
-    
-    func pinchGestureRecognizer() {
+
+    private func pinchGestureRecognizer() {
         let pinchGesture = UIPinchGestureRecognizer(target: self, action: #selector(pinchAction(_:)))
         pinchGesture.delegate = self
         monkeyView.addGestureRecognizer(pinchGesture)
@@ -39,7 +41,6 @@ class MonkeyViewController: UIViewController, UIGestureRecognizerDelegate {
         guard gestureRecognizer.view != nil else {
             return
         }
-        
         if gestureRecognizer.state == .began || gestureRecognizer.state == .changed {
             if let view = gestureRecognizer.view {
                 view.transform = view.transform.scaledBy(x: gestureRecognizer.scale, y: gestureRecognizer.scale)
@@ -55,19 +56,18 @@ class MonkeyViewController: UIViewController, UIGestureRecognizerDelegate {
             monkeyView.center = CGPoint(x: view.frame.width / 2, y: view.frame.height / 2)
         }
     }
-    
-    func rotationGestureRecognizer() {
+
+    private func rotationGestureRecognizer() {
         let rotationGesture = UIRotationGestureRecognizer(target: self, action: #selector(rotationAction(_:)))
         rotationGesture.delegate = self
         monkeyView.addGestureRecognizer(rotationGesture)
         monkeyView.isUserInteractionEnabled = true
     }
-    
+
     @objc func rotationAction(_ gestureRecognizer : UIRotationGestureRecognizer) {
         guard gestureRecognizer.view != nil else {
             return
         }
-        
         if gestureRecognizer.state == .began || gestureRecognizer.state == .changed {
             if let view = gestureRecognizer.view {
                 view.transform = view.transform.rotated(by: gestureRecognizer.rotation)
@@ -75,19 +75,18 @@ class MonkeyViewController: UIViewController, UIGestureRecognizerDelegate {
             }
         }
     }
-    
-    func longPressGestureRecognizer() {
+
+    private func longPressGestureRecognizer() {
         let longPressGesture = UILongPressGestureRecognizer(target: self, action: #selector(longPressAction(_:)))
         longPressGesture.delegate = self
         monkeyView.addGestureRecognizer(longPressGesture)
         monkeyView.isUserInteractionEnabled = true
     }
-    
+
     @objc func longPressAction(_ gestureRecognizer : UILongPressGestureRecognizer) {
         guard gestureRecognizer.view != nil else {
             return
         }
-        
         if gestureRecognizer.state == .began || gestureRecognizer.state == .changed {
             if let view = gestureRecognizer.view {
                 view.transform = .identity
@@ -97,7 +96,7 @@ class MonkeyViewController: UIViewController, UIGestureRecognizerDelegate {
         monkeyView.frame.size.height = height
         monkeyView.center = CGPoint(x: view.frame.width / 2, y: view.frame.height / 2)
     }
-    
+
     func tapGestureRecognizer() {
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(tapAction(_:)))
         tapGesture.numberOfTapsRequired = 1
@@ -105,7 +104,7 @@ class MonkeyViewController: UIViewController, UIGestureRecognizerDelegate {
         monkeyView.addGestureRecognizer(tapGesture)
         monkeyView.isUserInteractionEnabled = true
     }
-    
+
     @objc func tapAction(_ gestureRecognizer : UITapGestureRecognizer) {
         guard gestureRecognizer.view != nil else {
             return
@@ -128,7 +127,7 @@ class MonkeyViewController: UIViewController, UIGestureRecognizerDelegate {
             }
         }
     }
-    
+
     func doubleTapGestureRecognizer() {
         let doubleTapGesture = UITapGestureRecognizer(target: self, action: #selector(doubletapAction(_:)))
         doubleTapGesture.numberOfTapsRequired = 2
@@ -136,7 +135,7 @@ class MonkeyViewController: UIViewController, UIGestureRecognizerDelegate {
         monkeyView.addGestureRecognizer(doubleTapGesture)
         monkeyView.isUserInteractionEnabled = true
     }
-    
+
     @objc func doubletapAction(_ gestureRecognizer : UITapGestureRecognizer) {
         guard gestureRecognizer.view != nil else {
             return
