@@ -83,6 +83,8 @@
 		B0EC340E22F808BF001C51D6 /* Bai54ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0EC340C22F808BF001C51D6 /* Bai54ViewController.xib */; };
 		B0EC341222F80AE6001C51D6 /* Bai8ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EC341022F80AE6001C51D6 /* Bai8ViewController.swift */; };
 		B0EC341322F80AE6001C51D6 /* Bai8ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0EC341122F80AE6001C51D6 /* Bai8ViewController.xib */; };
+		B0EC733422FD10E300400896 /* Bai13ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EC733222FD10E300400896 /* Bai13ViewController.swift */; };
+		B0EC733522FD10E300400896 /* Bai13ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0EC733322FD10E300400896 /* Bai13ViewController.xib */; };
 		B0F056D922F293D300D13627 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F056D822F293D300D13627 /* AppDelegate.swift */; };
 		B0F056E022F293D600D13627 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0F056DF22F293D600D13627 /* Assets.xcassets */; };
 		B0F056EE22F2968A00D13627 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F056EC22F2968A00D13627 /* ViewController.swift */; };
@@ -174,6 +176,8 @@
 		B0EC340C22F808BF001C51D6 /* Bai54ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Bai54ViewController.xib; sourceTree = "<group>"; };
 		B0EC341022F80AE6001C51D6 /* Bai8ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bai8ViewController.swift; sourceTree = "<group>"; };
 		B0EC341122F80AE6001C51D6 /* Bai8ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Bai8ViewController.xib; sourceTree = "<group>"; };
+		B0EC733222FD10E300400896 /* Bai13ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bai13ViewController.swift; sourceTree = "<group>"; };
+		B0EC733322FD10E300400896 /* Bai13ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Bai13ViewController.xib; sourceTree = "<group>"; };
 		B0F056D522F293D300D13627 /* AutoLayoutBasic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoLayoutBasic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0F056D822F293D300D13627 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0F056DF22F293D600D13627 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -709,6 +713,8 @@
 		B0F210A122FC2C270078B8D8 /* Bai13 */ = {
 			isa = PBXGroup;
 			children = (
+				B0EC733222FD10E300400896 /* Bai13ViewController.swift */,
+				B0EC733322FD10E300400896 /* Bai13ViewController.xib */,
 			);
 			name = Bai13;
 			sourceTree = "<group>";
@@ -807,6 +813,7 @@
 				B0EC33FA22F805DE001C51D6 /* Part50ViewController.xib in Resources */,
 				B0CE3C2D22F440EE004D2405 /* Bai5ViewController.xib in Resources */,
 				B0EC33D622F7E617001C51D6 /* Part4ViewController.xib in Resources */,
+				B0EC733522FD10E300400896 /* Bai13ViewController.xib in Resources */,
 				B0CE3C0022F4331F004D2405 /* Bai2Part2VC.xib in Resources */,
 				B0EC33F022F7EE74001C51D6 /* 4Part4ViewController.xib in Resources */,
 				B0CE3C1422F43388004D2405 /* Bai4ViewController.xib in Resources */,
@@ -866,6 +873,7 @@
 				B0EC33D522F7E617001C51D6 /* Part4ViewController.swift in Sources */,
 				B0EC33E022F7EAE8001C51D6 /* 4Part1ViewController.swift in Sources */,
 				B0CE3C3122F444FD004D2405 /* Bai5Part1VC.swift in Sources */,
+				B0EC733422FD10E300400896 /* Bai13ViewController.swift in Sources */,
 				B0CE3C2722F43919004D2405 /* Bai4Part1VC.swift in Sources */,
 				B0EC33EA22F7ECBA001C51D6 /* 4Part3ViewController.swift in Sources */,
 				B0EC33DB22F7E934001C51D6 /* 4Part0ViewController.swift in Sources */,
