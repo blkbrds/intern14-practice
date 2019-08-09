@@ -90,6 +90,10 @@
 		F0EE096622FA690000CFF579 /* Ex12ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0EE096422FA690000CFF579 /* Ex12ViewController.xib */; };
 		F0EE096A22FAD44F00CFF579 /* Ex10ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0EE096822FAD44F00CFF579 /* Ex10ViewController.swift */; };
 		F0EE096B22FAD44F00CFF579 /* Ex10ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0EE096922FAD44F00CFF579 /* Ex10ViewController.xib */; };
+		F0EE7FB222FD08F5003E0FAD /* Ex13ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0EE7FB022FD08F5003E0FAD /* Ex13ViewController.swift */; };
+		F0EE7FB322FD08F5003E0FAD /* Ex13ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0EE7FB122FD08F5003E0FAD /* Ex13ViewController.xib */; };
+		F0EE7FB722FD33FC003E0FAD /* Ex14ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0EE7FB522FD33FC003E0FAD /* Ex14ViewController.swift */; };
+		F0EE7FB822FD33FC003E0FAD /* Ex14ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0EE7FB622FD33FC003E0FAD /* Ex14ViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -178,6 +182,10 @@
 		F0EE096422FA690000CFF579 /* Ex12ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex12ViewController.xib; sourceTree = "<group>"; };
 		F0EE096822FAD44F00CFF579 /* Ex10ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex10ViewController.swift; sourceTree = "<group>"; };
 		F0EE096922FAD44F00CFF579 /* Ex10ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex10ViewController.xib; sourceTree = "<group>"; };
+		F0EE7FB022FD08F5003E0FAD /* Ex13ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex13ViewController.swift; sourceTree = "<group>"; };
+		F0EE7FB122FD08F5003E0FAD /* Ex13ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex13ViewController.xib; sourceTree = "<group>"; };
+		F0EE7FB522FD33FC003E0FAD /* Ex14ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex14ViewController.swift; sourceTree = "<group>"; };
+		F0EE7FB622FD33FC003E0FAD /* Ex14ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex14ViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,6 +218,8 @@
 		F07123DF22F41C080087D4EB /* AutoLayoutEx */ = {
 			isa = PBXGroup;
 			children = (
+				F0EE7FB422FD33EA003E0FAD /* Ex14 */,
+				F0EE7FAF22FD08DB003E0FAD /* Ex13 */,
 				F0EE096222FA68EF00CFF579 /* Ex12 */,
 				F0EE095D22FA65CD00CFF579 /* Ex11 */,
 				F0EE096722FAD42400CFF579 /* Ex10 */,
@@ -738,6 +748,24 @@
 			path = Ex10;
 			sourceTree = "<group>";
 		};
+		F0EE7FAF22FD08DB003E0FAD /* Ex13 */ = {
+			isa = PBXGroup;
+			children = (
+				F0EE7FB022FD08F5003E0FAD /* Ex13ViewController.swift */,
+				F0EE7FB122FD08F5003E0FAD /* Ex13ViewController.xib */,
+			);
+			path = Ex13;
+			sourceTree = "<group>";
+		};
+		F0EE7FB422FD33EA003E0FAD /* Ex14 */ = {
+			isa = PBXGroup;
+			children = (
+				F0EE7FB522FD33FC003E0FAD /* Ex14ViewController.swift */,
+				F0EE7FB622FD33FC003E0FAD /* Ex14ViewController.xib */,
+			);
+			path = Ex14;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -796,6 +824,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0EE7FB822FD33FC003E0FAD /* Ex14ViewController.xib in Resources */,
 				F071243C22F449FB0087D4EB /* Ex05ViewController.xib in Resources */,
 				F0ED804322F8099B0064C204 /* Ex07ccViewController.xib in Resources */,
 				F071241322F42B2A0087D4EB /* Ex03aViewController.xib in Resources */,
@@ -823,6 +852,7 @@
 				F0ED7FF322F7E1800064C204 /* Ex06dViewController.xib in Resources */,
 				F071243522F447DB0087D4EB /* Ex04dViewController.xib in Resources */,
 				F0ED7FEE22F7DF580064C204 /* Ex06cViewController.xib in Resources */,
+				F0EE7FB322FD08F5003E0FAD /* Ex13ViewController.xib in Resources */,
 				F0ED7FCA22F7C82E0064C204 /* Ex05aViewController.xib in Resources */,
 				F0EE096B22FAD44F00CFF579 /* Ex10ViewController.xib in Resources */,
 				F0ED7FE922F7DE890064C204 /* Ex06bViewController.xib in Resources */,
@@ -867,6 +897,7 @@
 				F0ED7FED22F7DF580064C204 /* Ex06cViewController.swift in Sources */,
 				F0EE096022FA65DF00CFF579 /* Ex11ViewController.swift in Sources */,
 				F071240522F421830087D4EB /* Ex02aViewController.swift in Sources */,
+				F0EE7FB222FD08F5003E0FAD /* Ex13ViewController.swift in Sources */,
 				F0ED7FCE22F7CA710064C204 /* Ex05bViewController.swift in Sources */,
 				F071241722F42D9A0087D4EB /* Ex03bViewController.swift in Sources */,
 				F07123E122F41C080087D4EB /* AppDelegate.swift in Sources */,
@@ -884,6 +915,7 @@
 				F0ED802322F7ED630064C204 /* Ex07bbViewController.swift in Sources */,
 				F0ED7FE322F7DBB50064C204 /* Ex06aViewController.swift in Sources */,
 				F071243B22F449FB0087D4EB /* Ex05ViewController.swift in Sources */,
+				F0EE7FB722FD33FC003E0FAD /* Ex14ViewController.swift in Sources */,
 				F071242322F442780087D4EB /* Ex04aViewController.swift in Sources */,
 				F071243422F447DB0087D4EB /* Ex04dViewController.swift in Sources */,
 				F0ED7FF222F7E1800064C204 /* Ex06dViewController.swift in Sources */,
