@@ -9,19 +9,20 @@
 import UIKit
 
 class CalculatorViewController: UIViewController {
-    
-    // Mark: properties
+
+    // Mark: - Properties
     @IBOutlet private weak var screenResulLabel: UILabel!
     @IBOutlet private var numberButtons: [UIButton]!
 
     private var operationModel = OperationModel()
-    // Mark: Life cycle function
+
+    // Mark: - Life cycle function
     override func viewDidLoad() {
         super.viewDidLoad()
         setBorderButton()
     }
 
-    // Mark: Private/public custom function
+    // Mark: - Private/public custom function
     private func setBorderButton() {
         view.backgroundColor = . black
         for item in numberButtons {
@@ -29,8 +30,8 @@ class CalculatorViewController: UIViewController {
             item.layer.cornerRadius = 45
         }
     }
-    
-    // Mark: IBAction function
+
+    // Mark: - IBAction function
     @IBAction func numbersAction(_ sender: UIButton) {
         if OperationModel.shared.performingMath == true {
             screenResulLabel.adjustsFontSizeToFitWidth = true
@@ -48,8 +49,7 @@ class CalculatorViewController: UIViewController {
             }
         }
     }
-    
-    
+
     @IBAction func operatorButtonsAction(_ sender: UIButton) {
         if screenResulLabel.text != "" && sender.tag != 11 && sender.tag != 16 {
             OperationModel.shared.arrayNumber.append(OperationModel.shared.numberOnScreen)

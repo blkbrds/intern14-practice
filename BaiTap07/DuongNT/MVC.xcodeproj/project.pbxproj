@@ -12,7 +12,7 @@
 		1C4777A522CDA0E10015F43B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C4777A322CDA0E10015F43B /* LaunchScreen.storyboard */; };
 		1C4777B122CDA1730015F43B /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4777AF22CDA1730015F43B /* CalculatorViewController.swift */; };
 		1C4777B222CDA1730015F43B /* CalculatorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C4777B022CDA1730015F43B /* CalculatorViewController.xib */; };
-		1C4777B422CDE1AE0015F43B /* Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4777B322CDE1AE0015F43B /* Operation.swift */; };
+		1CADBD8222FD7201005DAB80 /* Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CADBD8122FD7201005DAB80 /* Operation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +23,7 @@
 		1C4777A622CDA0E10015F43B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1C4777AF22CDA1730015F43B /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CalculatorViewController.swift; path = ../View/CalculatorViewController.swift; sourceTree = "<group>"; };
 		1C4777B022CDA1730015F43B /* CalculatorViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalculatorViewController.xib; sourceTree = "<group>"; };
-		1C4777B322CDE1AE0015F43B /* Operation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Operation.swift; path = ../Controller/Operation.swift; sourceTree = "<group>"; };
+		1CADBD8122FD7201005DAB80 /* Operation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +70,7 @@
 		1C4777AC22CDA0F70015F43B /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				1C4777B322CDE1AE0015F43B /* Operation.swift */,
+				1CADBD8122FD7201005DAB80 /* Operation.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -164,7 +164,7 @@
 			files = (
 				1C4777B122CDA1730015F43B /* CalculatorViewController.swift in Sources */,
 				1C47779B22CDA0DE0015F43B /* AppDelegate.swift in Sources */,
-				1C4777B422CDE1AE0015F43B /* Operation.swift in Sources */,
+				1CADBD8222FD7201005DAB80 /* Operation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
