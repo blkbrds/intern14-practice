@@ -12,7 +12,7 @@ import UIKit
 class User {
     var name: String = ""
     var avatar = UIImage()
-    
+
     init(_ name: String, _ avatar: UIImage) {
         self.name = name
         self.avatar = avatar

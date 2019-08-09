@@ -28,11 +28,11 @@ class SliderViewController: UIViewController {
         titleLabel.text = "Color (R: \(Int(red.value)), G: \(Int(green.value)), B: \(Int(blue.value)))"
         titleLabel.font = UIFont.boldSystemFont(ofSize: 16)
     }
-    
+
     private func colorChangeView(red: Float, green: Float, blue: Float) {
         mainView.backgroundColor = UIColor(red: CGFloat(red / 255), green: CGFloat(green / 255), blue: CGFloat(blue / 255), alpha: 1)
     }
-    
+
     @IBAction private func changeSlider(_ sender: UISlider) {
         guard let red = redSlider, let blue = blueSlider, let green = greenSlider else { return }
         colorChangeView(red: red.value, green: green.value, blue: blue.value)

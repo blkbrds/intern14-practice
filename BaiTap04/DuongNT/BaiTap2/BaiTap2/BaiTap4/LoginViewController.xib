@@ -12,9 +12,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="BaiTap2" customModuleProvider="target">
             <connections>
-                <outlet property="btnClear" destination="kCY-mM-bli" id="HdJ-w4-QPW"/>
-                <outlet property="btnLogin" destination="GMN-Hl-KhK" id="Aee-27-Cc0"/>
-                <outlet property="lblError" destination="QAU-9Q-pv6" id="DfL-zE-EiK"/>
+                <outlet property="clearButton" destination="kCY-mM-bli" id="heE-Gh-CCY"/>
+                <outlet property="errorLabel" destination="QAU-9Q-pv6" id="n22-cJ-Map"/>
+                <outlet property="loginButton" destination="GMN-Hl-KhK" id="osi-bd-Ibc"/>
                 <outlet property="passwordTextField" destination="Slv-VF-Lik" id="tI5-yl-w22"/>
                 <outlet property="userNameTextField" destination="Vf8-ll-Z2G" id="HzD-6t-KFW"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -42,7 +42,7 @@
                         <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
                     <connections>
-                        <action selector="btnLogin:" destination="-1" eventType="touchUpInside" id="N03-Yr-Mq4"/>
+                        <action selector="loginButtonTouchUpInside:" destination="-1" eventType="touchUpInside" id="OQx-Nq-gp1"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kCY-mM-bli">
@@ -54,7 +54,7 @@
                         <color key="titleShadowColor" red="0.23647135499999999" green="0.64348298309999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <connections>
-                        <action selector="btnClear:" destination="-1" eventType="touchUpInside" id="DTY-R9-6Cr"/>
+                        <action selector="clearButtonTouchUpInside:" destination="-1" eventType="touchUpInside" id="sNT-wS-Qo8"/>
                     </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QAU-9Q-pv6">

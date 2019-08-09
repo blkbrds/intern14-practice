@@ -9,7 +9,7 @@
 import UIKit
 
 class ListUsersViewController: UIViewController {
-    
+
     var users: [User] = [
         User("Name 1", UIImage(imageLiteralResourceName: "avatar")),
         User("Name 2", UIImage(imageLiteralResourceName: "avatar")),
@@ -21,20 +21,20 @@ class ListUsersViewController: UIViewController {
         User("Name 8", UIImage(imageLiteralResourceName: "avatar")),
         User("Name 9", UIImage(imageLiteralResourceName: "avatar")),
     ]
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         showListAvatar()
     }
-    
+
     @objc private func didClickButton(_ button: UIButton) {
         print("\(users[button.tag].name)")
     }
-    
+
     private func setAvatar(frame: CGRect, name: String, avatarImage: UIImage, tag: Int) -> UIView {
         let views = UIView(frame: frame)
         views.backgroundColor = .black
-        
+
         let userAvatar = UIImageView(image: avatarImage)
         userAvatar.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
         userAvatar.contentMode = .scaleToFill
@@ -46,7 +46,7 @@ class ListUsersViewController: UIViewController {
         userName.backgroundColor = .lightGray
         userName.textColor = .blue
         views.addSubview(userName)
-        
+
         let avatarImageButton = UIButton(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
         avatarImageButton.backgroundColor = .clear
         avatarImageButton.addTarget(self, action: #selector(didClickButton), for: .touchUpInside)
@@ -55,7 +55,7 @@ class ListUsersViewController: UIViewController {
         
         return views
     }
-    
+
     private func showListAvatar() {
         var x: CGFloat = 20
         var y: CGFloat = 50

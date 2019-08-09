@@ -23,12 +23,12 @@ class ViewController: UIViewController {
     private var chuoiNum = 0
     private var taoNum = 0
     private var nhoNum = 0
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setViewUI()
     }
-    
+
     func setViewUI() {
         chuoiView.layer.cornerRadius = 10
         chuoiView.backgroundColor = .blue
@@ -58,22 +58,22 @@ class ViewController: UIViewController {
         addAllButton.layer.cornerRadius = 10
         addAllButton.frame = CGRect(x: UIScreen.main.bounds.width / 2 - 50, y: UIScreen.main.bounds.height / 2, width: 100, height: 50)
     }
-    
+
     @IBAction private func chuoiButtonTouchUpInside(_ sender: UIView) {
         chuoiNum += 1
         chuoiNumLabel.text = ("\(chuoiNum)")
     }
-    
+
     @IBAction private func nhoButtonTouchUpInside(_ sender: UIView) {
         nhoNum += 1
         nhoNumLabel.text = ("\(nhoNum)")
     }
-    
+
     @IBAction private func taoButtonTouchUpInside(_ sender: UIView) {
         taoNum += 1
         taoNumLabel.text = ("\(taoNum)")
     }
-    
+
     @IBAction private func addAllButtonTouchUpInside(_ sender: UIView) {
         chuoiButtonTouchUpInside(sender)
         nhoButtonTouchUpInside(sender)

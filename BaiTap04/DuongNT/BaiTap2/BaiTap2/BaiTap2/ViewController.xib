@@ -12,7 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController" customModule="BaiTap2" customModuleProvider="target">
             <connections>
-                <outlet property="btnAddAll" destination="gZO-hm-5fS" id="zVT-e8-7ej"/>
+                <outlet property="addAllButton" destination="gZO-hm-5fS" id="x7h-za-vNn"/>
                 <outlet property="chuoiLabel" destination="dLn-5i-OBS" id="wMP-MG-8SI"/>
                 <outlet property="chuoiNumLabel" destination="X5A-et-P3Y" id="mUg-ba-pZ2"/>
                 <outlet property="chuoiView" destination="qBG-i8-XNU" id="693-kH-dFg"/>
@@ -37,7 +37,7 @@
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
                     <connections>
-                        <action selector="btnAddAllTouchUpInside:" destination="-1" eventType="touchUpInside" id="2si-VD-jgj"/>
+                        <action selector="addAllButtonTouchUpInside:" destination="-1" eventType="touchUpInside" id="uZj-fz-sDA"/>
                     </connections>
                 </button>
                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qBG-i8-XNU">

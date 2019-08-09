@@ -10,23 +10,24 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
+    // MARK: - Outlets
     @IBOutlet private weak var userNameTextField: UITextField!
     @IBOutlet private weak var passwordTextField: UITextField!
     @IBOutlet private weak var errorLabel: UILabel!
     @IBOutlet private weak var loginButton: UIButton!
     @IBOutlet private weak var clearButton: UIButton!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setButton()
         configTextFields()
     }
-    
+
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
         view.endEditing(true)
     }
-    
+
     private func setButton() {
         loginButton.backgroundColor = .blue
         loginButton.layer.cornerRadius = 10
@@ -36,12 +37,12 @@ class LoginViewController: UIViewController {
         clearButton.frame = CGRect(x: UIScreen.main.bounds.width / 2 + 34, y: UIScreen.main.bounds.height / 2 - 160, width: 70, height: 30)
         errorLabel.textColor = .red
     }
-    
+
     private func configTextFields() {
         userNameTextField.delegate = self
         passwordTextField.delegate = self
     }
-   
+
     private func login() {
         if let username = userNameTextField.text, let password = passwordTextField.text {
             if username.isEmpty || password.isEmpty {
@@ -67,11 +68,11 @@ class LoginViewController: UIViewController {
             }
         }
     }
-    
+
     @IBAction private func loginButtonTouchUpInside(_ sender: UIButton) {
         login()
     }
-    
+
     @IBAction private func clearButtonTouchUpInside(_ sender: UIButton) {
         userNameTextField.text?.removeAll()
         passwordTextField.text?.removeAll()
@@ -80,7 +81,8 @@ class LoginViewController: UIViewController {
     
 }
 
-extension LoginViewController : UITextFieldDelegate {
+extension LoginViewController: UITextFieldDelegate {
+
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         if textField == userNameTextField {
             passwordTextField.becomeFirstResponder()
