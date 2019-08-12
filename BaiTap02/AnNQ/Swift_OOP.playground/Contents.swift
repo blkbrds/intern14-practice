@@ -89,7 +89,7 @@ class Triangle: Shapes {
 
     func superficies() -> Int? {
         let p = circuit()!/2
-        var s = Int(sqrt(Double(p * ( p - arrayEdge[0] ) * ( p - arrayEdge[1] ) * ( p - arrayEdge[2]))))
+        let s = Int(sqrt(Double(p * ( p - arrayEdge[0] ) * ( p - arrayEdge[1] ) * ( p - arrayEdge[2]))))
         return s
     }
 }
@@ -233,7 +233,7 @@ class HinhTamGiac: HaiChieu {
     
     func superficies() -> Double? {
         let p = circuit()!/2
-        var s = sqrt(Double(p * ( p - edges[0] ) * ( p - edges[1] ) * ( p - edges[2])))
+        let s = sqrt(Double(p * ( p - edges[0] ) * ( p - edges[1] ) * ( p - edges[2])))
         return s
     }
 }
@@ -298,7 +298,7 @@ struct Student {
 }
 
 class StudentList {
-    var students : [Student]
+    private var students : [Student]
     
     init(_ students: [Student]) {
         self.students = students
@@ -330,6 +330,88 @@ class StudentList {
     }
 }
 
+//Bai 8
+class Date {
+    var day: Int
+    var month: Int
+    var year: Int
+    
+    init(_ day: Int,_ month: Int,_ year: Int) {
+        self.day = day
+        self.month = month
+        self.year = year
+    }
+    
+    func normalize() -> Bool {
+        return day > 1 && day < daysIn(month) && month > 1 && month < 12 && year >= 1
+    }
+    
+    func daysIn(_ month: Int) -> Int {
+        if month < 1 || month > 12 {
+            return 0
+        } else {
+            switch month {
+            case 1, 3, 5, 7, 8, 10, 12: return 31
+            case 2:
+                if year % 100 == 0 || year % 400 == 0 || year % 4 == 0 {
+                    return 29
+                } else {
+                    return 28
+                }
+            default:
+                return 30
+            }
+        }
+    }
+    
+    func output() -> String {
+        if (normalize()) {
+            return ("\(day)-\(month)-\(year)")
+        }
+        return "Date is not exactly!"
+    }
+}
+
+//Bai 9
+class Mang1C {
+    var array: [Int]
+    
+    init(_ array : [Int]) {
+        self.array = array
+    }
+    
+    func printArray () {
+        for val in array {
+            print(val)
+        }
+    }
+    
+    func minMax () -> (min: Int, max: Int) {
+        var min = array[0]
+        var max = array[0]
+        for i in 1..<(array.count) {
+            if min > array[i]{
+                min = array[i]
+            }
+            if max < array[i] {
+                max = array[i]
+            }
+        }
+        return (min, max)
+    }
+}
+
+//Bai 10
+struct A {
+    func sum(_ n: Int) -> Int {
+        var s = 0
+        for i in 1...n {
+            s += i
+        }
+        return s
+    }
+}
+
 func main () {
     //Bai 1
     let ps1 = Phanso(3, 4)
@@ -356,7 +438,7 @@ func main () {
     tgv.printEdges()
     
     //Bai 5
-    var stack = CStack()
+    let stack = CStack()
     stack.isEmpty()
     stack.isFull()
     stack.push(1)
@@ -390,6 +472,18 @@ func main () {
         print(val.output())
     }
     
+    //Bai 8
+    let date = Date(30, 2, 2019)
+    print(date.output())
+    
+    //Bai 9
+    let mang1C = Mang1C([2, 3, 5, 1, 4])
+    mang1C.printArray()
+    mang1C.minMax()
+    
+    //Bai 10
+    let a = A()
+    a.sum(10)
 }
 
 //call function main
