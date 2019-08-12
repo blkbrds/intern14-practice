@@ -6,10 +6,10 @@ class Phanso {
     private(set) var mau: Int
     
     init?(_ tu: Int, _ mau: Int) {
-        self.tu = tu
         guard mau != 0 else {
             return nil
         }
+        self.tu = tu
         self.mau = mau
     }
     
@@ -46,6 +46,9 @@ class Shapes {
     var arrayEdge: [Int]
     
     init?(_ countEdge: Int, _ arrayEdge: [Int]) {
+        guard countEdge == arrayEdge.count else {
+            return nil
+        }
         if countEdge < 3 || arrayEdge.count < 3 {
             return nil
         }
@@ -55,9 +58,7 @@ class Shapes {
     
     func circuit() -> Int? {
         var c = 0
-        let count = countEdge > arrayEdge.count ? arrayEdge.count : countEdge
-        for i in 0..<count {
-           let value = arrayEdge[i]
+        for value in arrayEdge {
             c += value
         }
         return c
@@ -65,9 +66,8 @@ class Shapes {
     
     func printArrayEdge() -> [Int]? {
         var newArray = [Int]()
-        let count = countEdge > arrayEdge.count ? arrayEdge.count : countEdge
-        for i in 0..<count {
-            newArray.append(arrayEdge[i])
+        for val in arrayEdge {
+            newArray.append(val)
         }
         return newArray
     }
@@ -76,6 +76,10 @@ class Shapes {
 
 //Bai 3
 class Triangle: Shapes {
+    override init?(_ countEdge: Int, _ arrayEdge: [Int]) {
+        super.init(countEdge, arrayEdge)
+    }
+    
     override func circuit() -> Int? {
         var c = 0
         guard let triangle = Triangle(3, arrayEdge) else {
@@ -305,9 +309,7 @@ class StudentList {
     }
     
     func getListSortOrder() -> [Student] {
-//        var newList = [Student]()
         var newStudent: Student
-        print("\(students[0].fullname)")
         for i in 0..<(students.count-1) {
             for j in 1..<students.count {
                 if students[i].score < students[j].score {
@@ -340,6 +342,10 @@ class Date {
         self.day = day
         self.month = month
         self.year = year
+        if day < 1 || day > 32 || month < 1 || month > 12 {
+            return
+        }
+        
     }
     
     func normalize() -> Bool {
