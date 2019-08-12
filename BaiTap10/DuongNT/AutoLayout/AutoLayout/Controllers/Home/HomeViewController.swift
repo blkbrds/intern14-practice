@@ -114,6 +114,10 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
             let vc = Ex13ViewController()
             vc.exercise = self.exercises[indexPath.row]
             self.navigationController?.pushViewController(vc, animated: true)
+        case 13:
+            let vc = Ex14ViewController()
+            vc.exercise = self.exercises[indexPath.row]
+            self.navigationController?.pushViewController(vc, animated: true)
         default:
             // create the alert
             let alert = UIAlertController(title: "Warning",
