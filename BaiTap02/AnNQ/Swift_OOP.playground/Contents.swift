@@ -338,12 +338,12 @@ class Date {
     var month: Int
     var year: Int
     
-    init(_ day: Int,_ month: Int,_ year: Int) {
+    init?(_ day: Int,_ month: Int,_ year: Int) {
         self.day = day
         self.month = month
         self.year = year
         if day < 1 || day > 32 || month < 1 || month > 12 {
-            return
+            return nil
         }
         
     }
@@ -480,7 +480,7 @@ func main () {
     
     //Bai 8
     let date = Date(30, 2, 2019)
-    print(date.output())
+    print(date?.output())
     
     //Bai 9
     let mang1C = Mang1C([2, 3, 5, 1, 4])
