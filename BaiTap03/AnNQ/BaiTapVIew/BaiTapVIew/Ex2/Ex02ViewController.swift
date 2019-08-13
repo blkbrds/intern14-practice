@@ -36,16 +36,17 @@ class Ex02ViewController: UIViewController {
         show()
     }
     
-    func addProfileView (_ frame: CGRect,_ name: String,_ avatar: String) -> UIView {
+    func addProfileView (frame: CGRect, user: Person) -> UIView {
         let container = UIView(frame: frame)
         
-        let userAvatar = UIImageView(image: UIImage(named: avatar))
-        userAvatar.frame = frame
+        let userAvatar = UIImageView(image: UIImage(named: user.avatar))
+        userAvatar.frame = CGRect(x: 0, y: 0, width: 120, height: 130)
         userAvatar.contentMode = .scaleToFill
-        view.addSubview(userAvatar)
+        container.backgroundColor = .red
+        container.addSubview(userAvatar)
         
         let userName = UILabel(frame: CGRect(x: 0, y: 130, width: 120, height: 30))
-        userName.text = name
+        userName.text = user.name
         userName.backgroundColor = UIColor(red: 0.0, green: 0.7, blue: 1.3, alpha: 1.0)
         userName.textColor = .white
         userName.textAlignment = .center
@@ -55,15 +56,15 @@ class Ex02ViewController: UIViewController {
     }
     
     func show () {
-        var x: CGFloat = 20
+        var x: CGFloat = 12
         var y: CGFloat = 40
         for i in 0..<users.count {
             let frame = CGRect(x: x, y: y, width: 120, height: 130)
-            let container = addProfileView(frame, users[i].name, users[i].avatar)
+            let container = addProfileView(frame: frame, user: users[i])
             view.addSubview(container)
-            x += 130
-            if (i + 1) % 3 == 0 {
-                x = 20
+            x += 135
+            if x >= UIScreen.main.bounds.width {
+                x = 10
                 y += 160 + 10
             }
         }
