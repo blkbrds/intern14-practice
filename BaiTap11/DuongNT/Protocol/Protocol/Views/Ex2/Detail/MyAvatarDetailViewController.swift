@@ -32,11 +32,10 @@ class MyAvatarDetailViewController: UIViewController {
     // MARK: - Custom func
     private func setUpUIDetail() {
         title = "Profile"
-        guard let user = user else {
-            return
+        if let user = user {
+            myAvatarImageView.image = UIImage(named: user.avatar)
+            nameTextField.text = user.name
         }
-        myAvatarImageView.image = UIImage(named: user.avatar)
-        nameTextField.text = user.name
         let pictureTap = UITapGestureRecognizer(target: self, action: #selector(imageTapped))
         myAvatarImageView.addGestureRecognizer(pictureTap)
         myAvatarImageView.isUserInteractionEnabled = true
