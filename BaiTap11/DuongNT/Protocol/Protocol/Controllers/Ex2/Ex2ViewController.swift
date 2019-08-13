@@ -68,7 +68,7 @@ class Ex2ViewController: BaseViewController {
         userView?.delegate = self
         userView?.avatarImageView.image = UIImage(named: user.avatar)
         userView?.nameLabel.text = user.name
-        userView?.selectedButtonIndex.tag = index
+        userView?.index = index
         userView?.tag = index
         return userView!
     }
@@ -86,7 +86,6 @@ class Ex2ViewController: BaseViewController {
             let viewAvatar = getMyAvatar(listUser[index], index)
             viewAvatar.frame = frame
             uiScrollView.addSubview(viewAvatar)
-            view.addSubview(uiScrollView)
         }
         uiScrollView.contentSize.height = y + 130
     }
@@ -94,13 +93,13 @@ class Ex2ViewController: BaseViewController {
 
 // MARK: - Extension
 extension Ex2ViewController: MyAvatarViewDelegate {
-    func imageView(view: MyAvatarView, needPerform action: MyAvatarView.Action) {
+    func imageView(view: MyAvatarView, needPerform action: MyAvatarView.Action, index: Int) {
         switch action {
-        case .selectedAvatar(let index):
+        case .selectedAvatar:
             let myAvatarDetailVC = MyAvatarDetailViewController()
             myAvatarDetailVC.delegate = self
             myAvatarDetailVC.index = index
-            myAvatarDetailVC.user = Users(listUser[index].name,listUser[index].avatar)
+            myAvatarDetailVC.user = listUser[index]
             navigationController?.pushViewController(myAvatarDetailVC, animated: true)
         }
     }

@@ -10,9 +10,9 @@ import Foundation
 import UIKit
 
 class Users {
-    var name: String = ""
-    var avatar: String = ""
-    
+    var name: String
+    var avatar: String
+
     init(_ name: String, _ avatar: String) {
         self.name = name
         self.avatar = avatar
@@ -20,7 +20,7 @@ class Users {
 }
 
 extension Users {
-    
+
     static func parseData(array: [[String: String]]) -> [Users] {
         var users: [Users] = []
         for dic in array {
