@@ -34,6 +34,646 @@
 				<key>name</key>
 				<string>Tỉnh 3</string>
 			</dict>
+			<dict>
+				<key>name</key>
+				<string>Tỉnh 4</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Tỉnh 5</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Tỉnh 6</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Tỉnh 7</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Tỉnh 8</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Tỉnh 9</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Tỉnh 10</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Miền 2</string>
+		<key>tinh</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>Tỉnh 1</string>
+				<key>huyen</key>
+				<array>
+					<dict>
+						<key>name</key>
+						<string>Huyện 1</string>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>Huyện 2</string>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>Huyện 3</string>
+					</dict>
+				</array>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Tỉnh 2</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Tỉnh 3</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Miền 2</string>
+		<key>tinh</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>Tỉnh 1</string>
+				<key>huyen</key>
+				<array>
+					<dict>
+						<key>name</key>
+						<string>Huyện 1</string>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>Huyện 2</string>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>Huyện 3</string>
+					</dict>
+				</array>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Tỉnh 2</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Tỉnh 3</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Miền 3</string>
+		<key>tinh</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>Tỉnh 1</string>
+				<key>huyen</key>
+				<array>
+					<dict>
+						<key>name</key>
+						<string>Huyện 1</string>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>Huyện 2</string>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>Huyện 3</string>
+					</dict>
+				</array>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Tỉnh 2</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Tỉnh 3</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Miền 4</string>
+		<key>tinh</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>Tỉnh 1</string>
+				<key>huyen</key>
+				<array>
+					<dict>
+						<key>name</key>
+						<string>Huyện 1</string>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>Huyện 2</string>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>Huyện 3</string>
+					</dict>
+				</array>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Tỉnh 2</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Tỉnh 3</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Miền 5</string>
+		<key>tinh</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>Tỉnh 1</string>
+				<key>huyen</key>
+				<array>
+					<dict>
+						<key>name</key>
+						<string>Huyện 1</string>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>Huyện 2</string>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>Huyện 3</string>
+					</dict>
+				</array>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Tỉnh 2</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Tỉnh 3</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Miền 6</string>
+		<key>tinh</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>Tỉnh 1</string>
+				<key>huyen</key>
+				<array>
+					<dict>
+						<key>name</key>
+						<string>Huyện 1</string>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>Huyện 2</string>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>Huyện 3</string>
+					</dict>
+				</array>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Tỉnh 2</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Tỉnh 3</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Miền 7</string>
+		<key>tinh</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>Tỉnh 1</string>
+				<key>huyen</key>
+				<array>
+					<dict>
+						<key>name</key>
+						<string>Huyện 1</string>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>Huyện 2</string>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>Huyện 3</string>
+					</dict>
+				</array>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Tỉnh 2</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Tỉnh 3</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Miền 8</string>
+		<key>tinh</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>Tỉnh 1</string>
+				<key>huyen</key>
+				<array>
+					<dict>
+						<key>name</key>
+						<string>Huyện 1</string>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>Huyện 2</string>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>Huyện 3</string>
+					</dict>
+				</array>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Tỉnh 2</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Tỉnh 3</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Miền 9</string>
+		<key>tinh</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>Tỉnh 1</string>
+				<key>huyen</key>
+				<array>
+					<dict>
+						<key>name</key>
+						<string>Huyện 1</string>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>Huyện 2</string>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>Huyện 3</string>
+					</dict>
+				</array>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Tỉnh 2</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Tỉnh 3</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Miền 10</string>
+		<key>tinh</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>Tỉnh 1</string>
+				<key>huyen</key>
+				<array>
+					<dict>
+						<key>name</key>
+						<string>Huyện 1</string>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>Huyện 2</string>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>Huyện 3</string>
+					</dict>
+				</array>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Tỉnh 2</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Tỉnh 3</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Miền 11</string>
+		<key>tinh</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>Tỉnh 1</string>
+				<key>huyen</key>
+				<array>
+					<dict>
+						<key>name</key>
+						<string>Huyện 1</string>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>Huyện 2</string>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>Huyện 3</string>
+					</dict>
+				</array>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Tỉnh 2</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Tỉnh 3</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Miền 12</string>
+		<key>tinh</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>Tỉnh 1</string>
+				<key>huyen</key>
+				<array>
+					<dict>
+						<key>name</key>
+						<string>Huyện 1</string>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>Huyện 2</string>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>Huyện 3</string>
+					</dict>
+				</array>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Tỉnh 2</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Tỉnh 3</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Miền 13</string>
+		<key>tinh</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>Tỉnh 1</string>
+				<key>huyen</key>
+				<array>
+					<dict>
+						<key>name</key>
+						<string>Huyện 1</string>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>Huyện 2</string>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>Huyện 3</string>
+					</dict>
+				</array>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Tỉnh 2</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Tỉnh 3</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Miền 14</string>
+		<key>tinh</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>Tỉnh 1</string>
+				<key>huyen</key>
+				<array>
+					<dict>
+						<key>name</key>
+						<string>Huyện 1</string>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>Huyện 2</string>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>Huyện 3</string>
+					</dict>
+				</array>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Tỉnh 2</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Tỉnh 3</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Miền 15</string>
+		<key>tinh</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>Tỉnh 1</string>
+				<key>huyen</key>
+				<array>
+					<dict>
+						<key>name</key>
+						<string>Huyện 1</string>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>Huyện 2</string>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>Huyện 3</string>
+					</dict>
+				</array>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Tỉnh 2</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Tỉnh 3</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Miền 16</string>
+		<key>tinh</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>Tỉnh 1</string>
+				<key>huyen</key>
+				<array>
+					<dict>
+						<key>name</key>
+						<string>Huyện 1</string>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>Huyện 2</string>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>Huyện 3</string>
+					</dict>
+				</array>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Tỉnh 2</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Tỉnh 3</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Miền 17</string>
+		<key>tinh</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>Tỉnh 1</string>
+				<key>huyen</key>
+				<array>
+					<dict>
+						<key>name</key>
+						<string>Huyện 1</string>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>Huyện 2</string>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>Huyện 3</string>
+					</dict>
+				</array>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Tỉnh 2</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Tỉnh 3</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Miền 18</string>
+		<key>tinh</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>Tỉnh 1</string>
+				<key>huyen</key>
+				<array>
+					<dict>
+						<key>name</key>
+						<string>Huyện 1</string>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>Huyện 2</string>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>Huyện 3</string>
+					</dict>
+				</array>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Tỉnh 2</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Tỉnh 3</string>
+			</dict>
 		</array>
 	</dict>
 </array>

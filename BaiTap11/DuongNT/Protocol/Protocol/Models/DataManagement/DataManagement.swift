@@ -79,6 +79,38 @@ class DataManagement {
         return mienList
     }
 
+    func getTinhs(fileName: String, type: String, mienName: String) -> [Tinh] {
+        guard let array = NSArray(contentsOfFile: getFileDocumentPath(fileName: fileName, type: type)) as? [[String: String]] else {
+            return []
+        }
+        var tinhList: [Tinh] = []
+        var huyenList: [Huyen] = []
+        var tinhDictionary: [[String: Any]] = [[:]]
+        var huyenDictionary: [[String: Any]] = [[:]]
+        array.forEach { mien in
+            let tinhFilter = mien.filter {
+                $0.value == mienName
+            }
+            for i in 0..<tinhFilter.count {
+                var nameTinh: String = ""
+                if let getNameTinh = tinhDictionary[i]["name"] {
+                    nameTinh = getNameTinh as! String
+                }
+                if let getHuyen = tinhDictionary[i]["huyen"] {
+                    huyenDictionary = getHuyen as! [[String : Any]]
+                }
+                for temp in 0..<huyenDictionary.count {
+                    if let huyen = huyenDictionary[temp]["name"] {
+                        huyenList.append(Huyen(name: huyen as! String))
+                    }
+                }
+                let tinh = Tinh(name: nameTinh, huyen: huyenList)
+                tinhList.append(tinh)
+            }
+        }
+        return tinhList
+    }
+
     // MARK: - Private function
     func getFileDocumentPath(fileName: String, type: String) -> String {
         return (Bundle.main.path(forResource: fileName, ofType: type)) ?? ""

@@ -12,31 +12,32 @@ class MienViewController: UIViewController {
 
     @IBOutlet private weak var tableView: UITableView!
 
-    private var miens: [Mien] = []
+    private var mienList: [Mien] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpUI()
         loadData()
     }
-    
+
     private func setUpUI() {
         tableView.register(UINib(nibName: "MienCell", bundle: nil), forCellReuseIdentifier: "cell")
     }
 
     private func loadData() {
-        miens = DataManagement.share.getMiens(fileName: "miens", type: "plist")
+        mienList = DataManagement.share.getMiens(fileName: "miens", type: "plist")
     }
 }
 
 extension MienViewController: UITableViewDelegate, UITableViewDataSource {
+
     // MARK: - Table view data source
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return miens.count
+        return mienList.count
     }
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -45,7 +46,7 @@ extension MienViewController: UITableViewDelegate, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as? MienCell
-        let mien = miens[indexPath.row]
+        let mien = mienList[indexPath.row]
         cell?.nameLabel.text = mien.name
         return cell!
     }
@@ -56,12 +57,12 @@ extension MienViewController: UITableViewDelegate, UITableViewDataSource {
         switch indexPath.row {
         case 0:
             let vc = Mien1ViewController()
-            vc.mien = self.miens[indexPath.row]
-            vc.tinhList = self.miens[indexPath.row].tinh
+            vc.mien = self.mienList[indexPath.row]
+//            vc.tinhList = self.mienList[indexPath.row].tinh
             self.navigationController?.pushViewController(vc, animated: true)
         case 1:
             let vc = Mien2ViewController()
-            vc.mien = self.miens[indexPath.row]
+            vc.mien = self.mienList[indexPath.row]
             self.navigationController?.pushViewController(vc, animated: true)
         default:
             // create the alert
