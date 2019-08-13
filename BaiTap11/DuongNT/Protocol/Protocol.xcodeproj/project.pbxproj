@@ -57,6 +57,8 @@
 		1C9C27772301A35200ED24A8 /* Tinh1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C9C27752301A35200ED24A8 /* Tinh1ViewController.xib */; };
 		1C9C27792301BF6B00ED24A8 /* Tinh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9C27782301BF6B00ED24A8 /* Tinh.swift */; };
 		1C9C27802301C85F00ED24A8 /* Huyen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9C277F2301C85F00ED24A8 /* Huyen.swift */; };
+		1C9C27822302A5F500ED24A8 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9C27812302A5F500ED24A8 /* City.swift */; };
+		1C9C27862302A68B00ED24A8 /* cities.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1C9C27852302A68B00ED24A8 /* cities.plist */; };
 		1CADBD8823011A82005DAB80 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CADBD8723011A82005DAB80 /* Users.swift */; };
 		1CADBD8B23011AE0005DAB80 /* FileManagers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CADBD8A23011AE0005DAB80 /* FileManagers.swift */; };
 		1CADBD8E23011C3B005DAB80 /* ListUserInform.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1CADBD8D23011C3B005DAB80 /* ListUserInform.plist */; };
@@ -115,6 +117,8 @@
 		1C9C27752301A35200ED24A8 /* Tinh1ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Tinh1ViewController.xib; sourceTree = "<group>"; };
 		1C9C27782301BF6B00ED24A8 /* Tinh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tinh.swift; sourceTree = "<group>"; };
 		1C9C277F2301C85F00ED24A8 /* Huyen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Huyen.swift; sourceTree = "<group>"; };
+		1C9C27812302A5F500ED24A8 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		1C9C27852302A68B00ED24A8 /* cities.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = cities.plist; sourceTree = "<group>"; };
 		1CADBD8723011A82005DAB80 /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		1CADBD8A23011AE0005DAB80 /* FileManagers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagers.swift; sourceTree = "<group>"; };
 		1CADBD8D23011C3B005DAB80 /* ListUserInform.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = ListUserInform.plist; path = ../../../../../../../BaiTap08/DuongNT/Navigation/Navigation/BaiTap3/ListUserInform.plist; sourceTree = "<group>"; };
@@ -338,6 +342,7 @@
 		07E33E6B20DC9EC4004B6E52 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				1C9C27842302A67100ED24A8 /* Ex4 */,
 				1C9C276423017C7000ED24A8 /* Ex3 */,
 				07E33E1420DC8D36004B6E52 /* Assets.xcassets */,
 				07E33E1620DC8D36004B6E52 /* LaunchScreen.storyboard */,
@@ -363,6 +368,7 @@
 				1C9C276723017DC200ED24A8 /* Mien.swift */,
 				1C9C27782301BF6B00ED24A8 /* Tinh.swift */,
 				1C9C277F2301C85F00ED24A8 /* Huyen.swift */,
+				1C9C27812302A5F500ED24A8 /* City.swift */,
 			);
 			path = Objects;
 			sourceTree = "<group>";
@@ -438,6 +444,14 @@
 				1C9C27752301A35200ED24A8 /* Tinh1ViewController.xib */,
 			);
 			path = Tinh1;
+			sourceTree = "<group>";
+		};
+		1C9C27842302A67100ED24A8 /* Ex4 */ = {
+			isa = PBXGroup;
+			children = (
+				1C9C27852302A68B00ED24A8 /* cities.plist */,
+			);
+			path = Ex4;
 			sourceTree = "<group>";
 		};
 		1CADBD8923011A8F005DAB80 /* FileManagerments */ = {
@@ -538,6 +552,7 @@
 				1C9C275723014A9900ED24A8 /* MyAvatarDetailViewController.xib in Resources */,
 				07E33E3A20DC9059004B6E52 /* Ex1ViewController.xib in Resources */,
 				07E33E6220DC910E004B6E52 /* Ex10ViewController.xib in Resources */,
+				1C9C27862302A68B00ED24A8 /* cities.plist in Resources */,
 				07E33E4A20DC90B6004B6E52 /* Ex5ViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -575,6 +590,7 @@
 				07E33E5520DC90DD004B6E52 /* Ex8ViewController.swift in Sources */,
 				1C9C27462301300400ED24A8 /* MyAvatarView.swift in Sources */,
 				07E33E5D20DC9102004B6E52 /* Ex9ViewController.swift in Sources */,
+				1C9C27822302A5F500ED24A8 /* City.swift in Sources */,
 				1C9C276823017DC200ED24A8 /* Mien.swift in Sources */,
 				1C9C277123017F8D00ED24A8 /* Mien2ViewController.swift in Sources */,
 				07E33E2A20DC8E36004B6E52 /* BaseViewController.swift in Sources */,
