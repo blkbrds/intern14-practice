@@ -51,8 +51,6 @@ class FileManagers {
                 i += 1
             }
             (dataSoucres as NSArray).write(toFile: path, atomically: true)
-            print("Luu ok")
-            
         } else {
             let isWritten = someData.write(toFile: path, atomically: true)
             print("is the file created: \(isWritten)")

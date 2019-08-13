@@ -59,7 +59,6 @@
             <connections>
                 <outlet property="avatarImageView" destination="nqh-5B-EVl" id="ppM-Yk-YY3"/>
                 <outlet property="nameLabel" destination="zX9-FX-l69" id="tON-0y-1nk"/>
-                <outlet property="selectedButtonIndex" destination="wMk-Bz-qzp" id="4Yi-y5-9lZ"/>
             </connections>
             <point key="canvasLocation" x="124.6376811594203" y="79.6875"/>
         </view>

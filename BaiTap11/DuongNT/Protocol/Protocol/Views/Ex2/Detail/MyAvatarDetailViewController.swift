@@ -15,13 +15,13 @@ protocol MyAvatarDetailViewControllerDelegate {
 class MyAvatarDetailViewController: UIViewController {
 
     // MARK: - Outlets
-    @IBOutlet weak var nameTextField: UITextField!
-    @IBOutlet weak var myAvatarImageView: UIImageView!
+    @IBOutlet private weak var nameTextField: UITextField!
+    @IBOutlet private weak var myAvatarImageView: UIImageView!
 
     //MARK: - Properties
     var delegate: MyAvatarDetailViewControllerDelegate?
     var index: Int = 0
-    var user: Users = Users("", "")
+    var user: Users?
 
     // MARK: - Life cycles
     override func viewDidLoad() {
@@ -32,8 +32,10 @@ class MyAvatarDetailViewController: UIViewController {
     // MARK: - Custom func
     private func setUpUIDetail() {
         title = "Profile"
-        myAvatarImageView.image = UIImage(named: user.avatar)
-        nameTextField.text = user.name
+        if let user = user {
+            myAvatarImageView.image = UIImage(named: user.avatar)
+            nameTextField.text = user.name
+        }
         let pictureTap = UITapGestureRecognizer(target: self, action: #selector(imageTapped))
         myAvatarImageView.addGestureRecognizer(pictureTap)
         myAvatarImageView.isUserInteractionEnabled = true
@@ -48,14 +50,12 @@ class MyAvatarDetailViewController: UIViewController {
     }
 
     @objc private func done() {
-        guard let newUserName = nameTextField.text else {
+        guard let newUserName = nameTextField.text, let user = user else {
             return
         }
-        let newUser = Users(newUserName, user.avatar)
-        let newIndex = index
-        //
+        user.name = newUserName
         if let delegate = delegate {
-            delegate.detailView(self, index: newIndex, user: newUser)
+            delegate.detailView(self, index: index, user: user)
         }
         navigationController?.popViewController(animated: true)
     }
@@ -64,6 +64,9 @@ class MyAvatarDetailViewController: UIViewController {
         let listImage = ["img1", "img2", "img3", "img4", "img5", "img6"]
         let number = Int.random(in: 0 ..< listImage.count)
         myAvatarImageView.image = UIImage(named: listImage[number])
+        guard let user = user else {
+            return
+        }
         user.avatar = listImage[number]
     }
 }

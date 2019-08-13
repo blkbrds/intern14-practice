@@ -9,20 +9,22 @@
 import UIKit
 
 protocol MyAvatarViewDelegate: class {
-    func imageView(view: MyAvatarView, needPerform action: MyAvatarView.Action)
+    func imageView(view: MyAvatarView, needPerform action: MyAvatarView.Action, index: Int)
 }
 
 class MyAvatarView: UIView {
 
     // MARK: - Enum
     enum Action {
-        case selectedAvatar(atIndex: Int)
+        case selectedAvatar
     }
 
     // MARK: - Outlets
     @IBOutlet weak var avatarImageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var selectedButtonIndex: UIButton!
+
+    // MARK: - Properties
+    var index = 0
 
     // MARK: - Properties
     weak var delegate: MyAvatarViewDelegate?
@@ -30,7 +32,7 @@ class MyAvatarView: UIView {
     // MARK: - Actions
     @IBAction func selectedAvatarTouchUpInside(_ button: UIButton) {
         if let delegate = delegate {
-            delegate.imageView(view: self, needPerform: .selectedAvatar(atIndex: button.tag))
+            delegate.imageView(view: self, needPerform: .selectedAvatar, index: index)
         }
     }
 }
