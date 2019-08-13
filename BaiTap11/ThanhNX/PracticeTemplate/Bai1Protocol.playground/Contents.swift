@@ -39,32 +39,43 @@ let haiCau: DongVat = DongVat(ten: "Hai Cau", isDi: true, isBay: false, isBoi: t
 let doi: DongVat = DongVat(ten: "Doi", isDi: false, isBay: true, isBoi: false)
 let caSau: DongVat = DongVat(ten: "Ca Sau", isDi: true, isBay: false, isBoi: true)
 
-let arrAnimal = [caChuon, bo, ga, vit, caMap, heo, haiCau, doi, caSau]
 
-var arrDi: [String] = []
-var arrBay: [String] = []
-var arrBoi: [String] = []
+func getResult(arr: [DongVat]) {
+    let animal_di = arr.filter { $0.isDi }
+    let animal_bay = arr.filter { $0.isBay }
+    let animal_boi = arr.filter { $0.isBoi }
+    let animal_di_bay = arr.filter { $0.isDi && $0.isBay }
+    let animal_di_boi = arr.filter { $0.isDi && $0.isBoi }
+    let animal_bay_boi = arr.filter { $0.isBay && $0.isBoi }
+    let animal_di_boi_bay = arr.filter { $0.isDi && $0.isBoi && $0.isBay }
 
-let animal_di = arrAnimal.filter { $0.isDi }
-let animal_bay = arrAnimal.filter { $0.isBay }
-let animal_boi = arrAnimal.filter { $0.isBoi }
-
-func getResult() {
     for item in animal_di {
-        arrDi.append(item.ten)
+        print("Dong Vat Di: \(item.ten)")
     }
     
     for item in animal_bay {
-        arrBay.append(item.ten)
+        print("Dong Vat Bay: \(item.ten)")
     }
     
     for item in animal_boi {
-        arrBoi.append(item.ten)
+        print("Dong Vat Boi: \(item.ten)")
+    }
+    
+    for item in animal_di_bay {
+        print("Dong Vat Di va Bay: \(item.ten)")
+    }
+    
+    for item in animal_di_boi {
+        print("Dong Vat Di va Boi: \(item.ten)")
+    }
+    
+    for item in animal_bay_boi {
+        print("Dong Vat Bay va Boi: \(item.ten)")
+    }
+    
+    for item in animal_di_boi_bay {
+        print("Dong Vat Di, Boi va Bay: \(item.ten)")
     }
 }
 
-getResult()
-
-print("Dong Vat Di: \(arrDi)")
-print("Dong Vat Bay: \(arrBay)")
-print("Dong Vat Boi: \(arrBoi)")
+getResult(arr: [caChuon, bo, ga, vit, caMap, heo, haiCau, doi, caSau])
