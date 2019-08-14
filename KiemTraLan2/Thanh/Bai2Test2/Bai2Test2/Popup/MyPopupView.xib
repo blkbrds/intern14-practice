@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<device id="retina6_1" orientation="portrait">
+<adaptation id="fullscreen"/>
+</device>
+<dependencies>
+<deployment identifier="iOS"/>
+<plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+<capability name="Safe area layout guides" minToolsVersion="9.0"/>
+<capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+</dependencies>
+<objects>
+<placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+<placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+<view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MyPopupView" customModule="Bai2Test2" customModuleProvider="target">
+<rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+<autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+<subviews>
+<view alpha="0.29999999999999999" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qUd-S2-wZO" userLabel="MarkView">
+<rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+<autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+<color key="backgroundColor" red="0.29800295829772949" green="0.29806005954742432" blue="0.29799938201904297" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+</view>
+<view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="seH-k7-x8w">
+<rect key="frame" x="32" y="176" width="350" height="439"/>
+<autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+<subviews>
+<view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cTc-GY-nzz" userLabel="ContainerView">
+<rect key="frame" x="0.0" y="64" width="350" height="335"/>
+<autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+<subviews>
+<button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HRj-ux-fLF">
+<rect key="frame" x="25" y="275" width="300" height="33"/>
+<autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+<color key="backgroundColor" red="0.64371418952941895" green="0.16185435652732849" blue="0.99939495325088501" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+<fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+<state key="normal" title="Done">
+<color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+</state>
+<connections>
+<action selector="doneButtonTouchUpInside" destination="iN0-l3-epB" eventType="touchUpInside" id="aPK-HS-3aB"/>
+</connections>
+</button>
+<textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your name" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="KCY-jx-6NS">
+<rect key="frame" x="20" y="172" width="310" height="30"/>
+<autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+<color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+<nil key="textColor"/>
+<fontDescription key="fontDescription" type="system" pointSize="14"/>
+<textInputTraits key="textInputTraits"/>
+<connections>
+<outlet property="delegate" destination="-1" id="fXD-dc-kTr"/>
+</connections>
+</textField>
+<label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Info" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iHb-Ob-Rhl">
+<rect key="frame" x="159" y="77" width="32" height="23"/>
+<autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+<fontDescription key="fontDescription" type="system" pointSize="19"/>
+<nil key="textColor"/>
+<nil key="highlightedColor"/>
+</label>
+<label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You're just displayed this awesome Pop Up View" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gxr-Lb-sGo">
+<rect key="frame" x="78" y="111" width="195" height="36"/>
+<autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+<fontDescription key="fontDescription" type="system" pointSize="15"/>
+<nil key="textColor"/>
+<nil key="highlightedColor"/>
+</label>
+<view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0zb-JI-aKl">
+<rect key="frame" x="125" y="-48" width="100" height="100"/>
+<autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+<subviews>
+<imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pen" translatesAutoresizingMaskIntoConstraints="NO" id="AQf-fK-Vcm">
+<rect key="frame" x="30" y="30" width="40" height="40"/>
+<autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+</imageView>
+</subviews>
+<color key="backgroundColor" red="0.60421895979999996" green="0.15533474089999999" blue="0.93969875570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+</view>
+<button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L2Q-fP-CeF">
+<rect key="frame" x="25" y="222" width="300" height="33"/>
+<autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+<color key="backgroundColor" red="0.60421895980834961" green="0.15533474087715149" blue="0.93969875574111938" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+<fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+<state key="normal" title="Show Name">
+<color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+</state>
+<connections>
+<action selector="showNameButtonTouchUpInside" destination="iN0-l3-epB" eventType="touchUpInside" id="6uB-nx-T2y"/>
+</connections>
+</button>
+</subviews>
+<color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+</view>
+</subviews>
+<color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+</view>
+</subviews>
+<color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+<freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+<viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+<connections>
+<outlet property="containerView" destination="seH-k7-x8w" id="vTx-4l-Gcb"/>
+<outlet property="doneButton" destination="HRj-ux-fLF" id="9iE-oS-qIq"/>
+<outlet property="markView" destination="qUd-S2-wZO" id="UxO-2m-jsI"/>
+<outlet property="nameTextField" destination="KCY-jx-6NS" id="I7W-RG-kPl"/>
+<outlet property="penView" destination="0zb-JI-aKl" id="amy-vT-GD1"/>
+<outlet property="showNameButton" destination="L2Q-fP-CeF" id="215-OS-Y8v"/>
+</connections>
+<point key="canvasLocation" x="56.521739130434788" y="66.294642857142861"/>
+</view>
+</objects>
+<resources>
+<image name="pen" width="80" height="80"/>
+</resources>
+</document>
