@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>Hoà Bình</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Sơn La</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Điện Biên</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Lai Châu</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Lào Cai</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Yên Bái</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Phú Thọ</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Hà Giang</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Cao Bằng</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Lạng Sơn</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Đà Nẵng</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Lâm Đồng</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Đà Lạt</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Quảng Nam</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Quảng Ngãi</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Huế</string>
+	</dict>
+</array>
+</plist>
