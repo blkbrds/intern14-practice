@@ -31,6 +31,17 @@ class DataManagement {
         return exercises
     }
 
+    func getCities(fileName: String, type: String) -> [City] {
+        let array = NSArray(contentsOfFile: getFileDocumentPath(fileName: fileName, type: type))
+        var cities: [City] = []
+        for item in array! {
+            let dict = item as! NSDictionary
+            let ct = City(name: dict.object(forKey: "name") as! String)
+            cities.append(ct)
+        }
+        return cities
+    }
+
     func getMiens(fileName: String, type: String) -> [Mien] {
         let array = NSArray(contentsOfFile: getFileDocumentPath(fileName: fileName, type: type))
         var mienList: [Mien] = []
