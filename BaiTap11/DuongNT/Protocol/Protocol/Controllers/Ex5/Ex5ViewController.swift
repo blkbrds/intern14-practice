@@ -11,7 +11,6 @@ import UIKit
 class Ex5ViewController: BaseViewController {
 
     // MARK: - Outlets
-    @IBOutlet weak var popUpView: UIView!
     @IBOutlet weak var operationButton: UIButton!
     @IBOutlet weak var xTextField: UITextField!
     @IBOutlet weak var yTextField: UITextField!
@@ -33,7 +32,11 @@ class Ex5ViewController: BaseViewController {
     override func setupUI() {
         super.setupUI()
         self.title = exercise?.name
-        popUpView.isHidden = true
+        selectView = Bundle.main.loadNibNamed("Ex5CustomView", owner: self, options: nil)?[0] as? Ex5CustomView
+        selectView?.config()
+        selectView?.delegate = self
+        selectView?.dataSource = self
+        view.addSubview(selectView!)
     }
 
     override func setupData() {
@@ -42,19 +45,12 @@ class Ex5ViewController: BaseViewController {
 
     // MARK: - Actions
     @IBAction func operationButtonTouchUpInside(_ button: UIButton) {
-        popUpView.isHidden = false
         resultLabel.text = "??????"
-        selectView = Bundle.main.loadNibNamed("Ex5CustomView", owner: self, options: nil)?[0] as? Ex5CustomView
-        selectView?.frame = popUpView.frame
-        selectView?.delegate = self
-        view.addSubview(selectView!)
-        UIView.animate(withDuration: 0.5, animations: {
-            self.view.layoutIfNeeded()
-            })
+        selectView?.show(animation: true)
     }
 }
 
-extension Ex5ViewController: Ex5CustomViewDelegate {
+extension Ex5ViewController: Ex5CustomViewDelegate, Ex5CustomViewDatasource {
 
     func popupView(view: Ex5CustomView, needPerform action: Ex5CustomView.Action, result: String?, operation: String?) {
         switch action {
@@ -71,27 +67,14 @@ extension Ex5ViewController: Ex5CustomViewDelegate {
                 alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
                 // show the alert
                 self.present(alert, animated: true, completion: nil)
-                self.popUpView.isHidden = true
-                self.selectView?.isHidden = true
-                UIView.animate(withDuration: 0.5, animations: {
-                    self.view.layoutIfNeeded()
-                })
             }
-            self.popUpView.isHidden = true
-            self.selectView?.isHidden = true
-            UIView.animate(withDuration: 0.5, animations: {
-                self.view.layoutIfNeeded()
-            })
-        case .cancel:
-            self.popUpView.isHidden = true
-            self.selectView?.isHidden = true
-            UIView.animate(withDuration: 0.5, animations: {
-                self.view.layoutIfNeeded()
-            })
+        case .cancel: break
+        case .show: break
+        case .hide: break
         }
         
     }
-    
+
     func getX() -> Int? {
         if let value = self.xTextField?.text, let x = Int(value) {
             return x
@@ -99,7 +82,7 @@ extension Ex5ViewController: Ex5CustomViewDelegate {
             return nil
         }
     }
-    
+
     func getY() -> Int? {
         if let value = self.yTextField?.text, let x = Int(value) {
             return x

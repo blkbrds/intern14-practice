@@ -13,7 +13,6 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Ex5ViewController" customModule="Protocol" customModuleProvider="target">
             <connections>
                 <outlet property="operationButton" destination="1WB-rF-NwE" id="sWo-dm-jr4"/>
-                <outlet property="popUpView" destination="xkC-dX-HwY" id="qs9-Ro-azZ"/>
                 <outlet property="resultLabel" destination="mBM-An-YM9" id="qXV-5o-f3I"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outlet property="xTextField" destination="cdT-LH-sId" id="obW-rC-iRc"/>
