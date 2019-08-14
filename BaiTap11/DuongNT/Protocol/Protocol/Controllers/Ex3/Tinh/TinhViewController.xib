@@ -10,9 +10,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Tinh1ViewController" customModule="Protocol" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TinhViewController" customModule="Protocol" customModuleProvider="target">
             <connections>
-                <outlet property="tableView" destination="QjX-VH-thC" id="S2j-0v-Vwq"/>
+                <outlet property="tableView" destination="dA1-5E-MtL" id="FRJ-Hq-G2n"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -21,21 +21,21 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="QjX-VH-thC">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dA1-5E-MtL">
                     <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <connections>
-                        <outlet property="dataSource" destination="-1" id="BTT-f3-gVE"/>
-                        <outlet property="delegate" destination="-1" id="y4Q-T0-9oo"/>
+                        <outlet property="dataSource" destination="-1" id="ld7-Xy-TG2"/>
+                        <outlet property="delegate" destination="-1" id="Zho-J4-EqR"/>
                     </connections>
                 </tableView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="QjX-VH-thC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Jy8-sU-FNp"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="QjX-VH-thC" secondAttribute="bottom" id="NhX-Hg-nlw"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="QjX-VH-thC" secondAttribute="trailing" id="P2n-oz-Wut"/>
-                <constraint firstItem="QjX-VH-thC" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="dxU-GD-mKS"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="dA1-5E-MtL" secondAttribute="trailing" id="7dI-wv-TSE"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="dA1-5E-MtL" secondAttribute="bottom" id="DeY-rZ-lrO"/>
+                <constraint firstItem="dA1-5E-MtL" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="WCf-Be-YGr"/>
+                <constraint firstItem="dA1-5E-MtL" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="XXv-wr-yjH"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
         </view>

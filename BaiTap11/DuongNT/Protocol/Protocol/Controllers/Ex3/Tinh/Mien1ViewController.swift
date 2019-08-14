@@ -1,5 +1,5 @@
 //
-//  MienViewController.swift
+//  Mien1ViewController.swift
 //  Protocol
 //
 //  Created by Nguyen Duong on 8/12/19.
@@ -8,28 +8,29 @@
 
 import UIKit
 
-class MienViewController: UIViewController {
+class TinhViewController: BaseViewController {
 
-    @IBOutlet private weak var tableView: UITableView!
+    @IBOutlet weak var tableView: UITableView!
+    // MARK: - Properties
+    var mien: Mien?
+    var tinhList: [Tinh] = []
 
-    private var mienList: [Mien] = []
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        setUpUI()
-        loadData()
-    }
-
-    private func setUpUI() {
+    // MARK: - Config
+    override func setupUI() {
+        super.setupUI()
+        self.title = mien?.name
         tableView.register(UINib(nibName: "MienCell", bundle: nil), forCellReuseIdentifier: "cell")
     }
 
-    private func loadData() {
-        mienList = DataManagement.share.getMiens(fileName: "miens", type: "plist")
+    override func setupData() {
+        super.setupData()
+        if let mien = mien {
+            tinhList = mien.tinh
+        }
     }
 }
 
-extension MienViewController: UITableViewDelegate, UITableViewDataSource {
+extension TinhViewController: UITableViewDelegate, UITableViewDataSource {
 
     // MARK: - Table view data source
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -37,7 +38,8 @@ extension MienViewController: UITableViewDelegate, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return mienList.count
+        return tinhList.count
+
     }
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -46,16 +48,17 @@ extension MienViewController: UITableViewDelegate, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as? MienCell
-        let mien = mienList[indexPath.row]
-        cell?.nameLabel.text = mien.name
+        let tinh = tinhList[indexPath.row]
+        cell?.nameLabel.text = tinh.name
         return cell!
     }
 
     // MARK: - Table view delegate
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        let vc = TinhViewController()
-        vc.mien = self.mienList[indexPath.row]
+        let vc = HuyenViewController()
+        vc.mien = mien
+        vc.tinh = self.tinhList[indexPath.row]
         self.navigationController?.pushViewController(vc, animated: true)
     }
 }
