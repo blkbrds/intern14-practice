@@ -49,12 +49,10 @@
 		1C9C276323017AB500ED24A8 /* MienCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C9C276123017AB500ED24A8 /* MienCell.xib */; };
 		1C9C276623017CBA00ED24A8 /* miens.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1C9C276523017CBA00ED24A8 /* miens.plist */; };
 		1C9C276823017DC200ED24A8 /* Mien.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9C276723017DC200ED24A8 /* Mien.swift */; };
-		1C9C276D23017F7C00ED24A8 /* Mien1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9C276B23017F7C00ED24A8 /* Mien1ViewController.swift */; };
-		1C9C276E23017F7C00ED24A8 /* Mien1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C9C276C23017F7C00ED24A8 /* Mien1ViewController.xib */; };
-		1C9C277123017F8D00ED24A8 /* Mien2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9C276F23017F8D00ED24A8 /* Mien2ViewController.swift */; };
-		1C9C277223017F8D00ED24A8 /* Mien2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C9C277023017F8D00ED24A8 /* Mien2ViewController.xib */; };
-		1C9C27762301A35200ED24A8 /* Tinh1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9C27742301A35200ED24A8 /* Tinh1ViewController.swift */; };
-		1C9C27772301A35200ED24A8 /* Tinh1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C9C27752301A35200ED24A8 /* Tinh1ViewController.xib */; };
+		1C9C276D23017F7C00ED24A8 /* TinhViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9C276B23017F7C00ED24A8 /* TinhViewController.swift */; };
+		1C9C276E23017F7C00ED24A8 /* TinhViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C9C276C23017F7C00ED24A8 /* TinhViewController.xib */; };
+		1C9C27762301A35200ED24A8 /* HuyenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9C27742301A35200ED24A8 /* HuyenViewController.swift */; };
+		1C9C27772301A35200ED24A8 /* HuyenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C9C27752301A35200ED24A8 /* HuyenViewController.xib */; };
 		1C9C27792301BF6B00ED24A8 /* Tinh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9C27782301BF6B00ED24A8 /* Tinh.swift */; };
 		1C9C27802301C85F00ED24A8 /* Huyen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9C277F2301C85F00ED24A8 /* Huyen.swift */; };
 		1C9C27822302A5F500ED24A8 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9C27812302A5F500ED24A8 /* City.swift */; };
@@ -109,12 +107,10 @@
 		1C9C276123017AB500ED24A8 /* MienCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MienCell.xib; sourceTree = "<group>"; };
 		1C9C276523017CBA00ED24A8 /* miens.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = miens.plist; sourceTree = "<group>"; };
 		1C9C276723017DC200ED24A8 /* Mien.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mien.swift; sourceTree = "<group>"; };
-		1C9C276B23017F7C00ED24A8 /* Mien1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mien1ViewController.swift; sourceTree = "<group>"; };
-		1C9C276C23017F7C00ED24A8 /* Mien1ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Mien1ViewController.xib; sourceTree = "<group>"; };
-		1C9C276F23017F8D00ED24A8 /* Mien2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mien2ViewController.swift; sourceTree = "<group>"; };
-		1C9C277023017F8D00ED24A8 /* Mien2ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Mien2ViewController.xib; sourceTree = "<group>"; };
-		1C9C27742301A35200ED24A8 /* Tinh1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tinh1ViewController.swift; sourceTree = "<group>"; };
-		1C9C27752301A35200ED24A8 /* Tinh1ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Tinh1ViewController.xib; sourceTree = "<group>"; };
+		1C9C276B23017F7C00ED24A8 /* TinhViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinhViewController.swift; sourceTree = "<group>"; };
+		1C9C276C23017F7C00ED24A8 /* TinhViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TinhViewController.xib; sourceTree = "<group>"; };
+		1C9C27742301A35200ED24A8 /* HuyenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HuyenViewController.swift; sourceTree = "<group>"; };
+		1C9C27752301A35200ED24A8 /* HuyenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HuyenViewController.xib; sourceTree = "<group>"; };
 		1C9C27782301BF6B00ED24A8 /* Tinh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tinh.swift; sourceTree = "<group>"; };
 		1C9C277F2301C85F00ED24A8 /* Huyen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Huyen.swift; sourceTree = "<group>"; };
 		1C9C27812302A5F500ED24A8 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
@@ -251,8 +247,8 @@
 			children = (
 				07E33E3F20DC907B004B6E52 /* Ex3ViewController.swift */,
 				07E33E4020DC907B004B6E52 /* Ex3ViewController.xib */,
-				1C9C276923017F4800ED24A8 /* Mien1 */,
-				1C9C276A23017F4E00ED24A8 /* Mien2 */,
+				1C9C27732301A33800ED24A8 /* Huyen */,
+				1C9C276923017F4800ED24A8 /* Tinh */,
 				1C9C275A23016D5500ED24A8 /* MienController */,
 			);
 			path = Ex3;
@@ -418,32 +414,22 @@
 			path = Ex3;
 			sourceTree = "<group>";
 		};
-		1C9C276923017F4800ED24A8 /* Mien1 */ = {
+		1C9C276923017F4800ED24A8 /* Tinh */ = {
 			isa = PBXGroup;
 			children = (
-				1C9C27732301A33800ED24A8 /* Tinh1 */,
-				1C9C276B23017F7C00ED24A8 /* Mien1ViewController.swift */,
-				1C9C276C23017F7C00ED24A8 /* Mien1ViewController.xib */,
+				1C9C276B23017F7C00ED24A8 /* TinhViewController.swift */,
+				1C9C276C23017F7C00ED24A8 /* TinhViewController.xib */,
 			);
-			path = Mien1;
+			path = Tinh;
 			sourceTree = "<group>";
 		};
-		1C9C276A23017F4E00ED24A8 /* Mien2 */ = {
+		1C9C27732301A33800ED24A8 /* Huyen */ = {
 			isa = PBXGroup;
 			children = (
-				1C9C276F23017F8D00ED24A8 /* Mien2ViewController.swift */,
-				1C9C277023017F8D00ED24A8 /* Mien2ViewController.xib */,
+				1C9C27742301A35200ED24A8 /* HuyenViewController.swift */,
+				1C9C27752301A35200ED24A8 /* HuyenViewController.xib */,
 			);
-			path = Mien2;
-			sourceTree = "<group>";
-		};
-		1C9C27732301A33800ED24A8 /* Tinh1 */ = {
-			isa = PBXGroup;
-			children = (
-				1C9C27742301A35200ED24A8 /* Tinh1ViewController.swift */,
-				1C9C27752301A35200ED24A8 /* Tinh1ViewController.xib */,
-			);
-			path = Tinh1;
+			path = Huyen;
 			sourceTree = "<group>";
 		};
 		1C9C27842302A67100ED24A8 /* Ex4 */ = {
@@ -535,7 +521,6 @@
 				07E33E4220DC907B004B6E52 /* Ex3ViewController.xib in Resources */,
 				1C9C275E23016D7200ED24A8 /* MienViewController.xib in Resources */,
 				1C9C273C23012EBA00ED24A8 /* Ex2ViewController.xib in Resources */,
-				1C9C277223017F8D00ED24A8 /* Mien2ViewController.xib in Resources */,
 				1CADBD8E23011C3B005DAB80 /* ListUserInform.plist in Resources */,
 				07E33E1520DC8D36004B6E52 /* Assets.xcassets in Resources */,
 				07E33E4E20DC90C3004B6E52 /* Ex6ViewController.xib in Resources */,
@@ -543,12 +528,12 @@
 				1C9C276323017AB500ED24A8 /* MienCell.xib in Resources */,
 				1C9C276623017CBA00ED24A8 /* miens.plist in Resources */,
 				07E33E5E20DC9102004B6E52 /* Ex9ViewController.xib in Resources */,
-				1C9C276E23017F7C00ED24A8 /* Mien1ViewController.xib in Resources */,
+				1C9C276E23017F7C00ED24A8 /* TinhViewController.xib in Resources */,
 				07E33E2720DC8DD7004B6E52 /* HomeViewController.xib in Resources */,
 				1C9C27482301301000ED24A8 /* MyAvatarView.xib in Resources */,
 				07E33E4620DC9095004B6E52 /* Ex4ViewController.xib in Resources */,
 				07E33E6D20DC9F1B004B6E52 /* exercises.plist in Resources */,
-				1C9C27772301A35200ED24A8 /* Tinh1ViewController.xib in Resources */,
+				1C9C27772301A35200ED24A8 /* HuyenViewController.xib in Resources */,
 				1C9C275723014A9900ED24A8 /* MyAvatarDetailViewController.xib in Resources */,
 				07E33E3A20DC9059004B6E52 /* Ex1ViewController.xib in Resources */,
 				07E33E6220DC910E004B6E52 /* Ex10ViewController.xib in Resources */,
@@ -575,12 +560,12 @@
 				07E33E4520DC9095004B6E52 /* Ex4ViewController.swift in Sources */,
 				07E33E7020DC9FF4004B6E52 /* DataManagement.swift in Sources */,
 				07E33E0E20DC8D34004B6E52 /* AppDelegate.swift in Sources */,
-				1C9C27762301A35200ED24A8 /* Tinh1ViewController.swift in Sources */,
+				1C9C27762301A35200ED24A8 /* HuyenViewController.swift in Sources */,
 				07E33E4120DC907B004B6E52 /* Ex3ViewController.swift in Sources */,
 				1C9C275D23016D7200ED24A8 /* MienViewController.swift in Sources */,
 				1CADBD8823011A82005DAB80 /* Users.swift in Sources */,
 				07E33E4D20DC90C3004B6E52 /* Ex6ViewController.swift in Sources */,
-				1C9C276D23017F7C00ED24A8 /* Mien1ViewController.swift in Sources */,
+				1C9C276D23017F7C00ED24A8 /* TinhViewController.swift in Sources */,
 				07E33E2620DC8DD7004B6E52 /* HomeViewController.swift in Sources */,
 				1C9C27802301C85F00ED24A8 /* Huyen.swift in Sources */,
 				1C9C275623014A9900ED24A8 /* MyAvatarDetailViewController.swift in Sources */,
@@ -592,7 +577,6 @@
 				07E33E5D20DC9102004B6E52 /* Ex9ViewController.swift in Sources */,
 				1C9C27822302A5F500ED24A8 /* City.swift in Sources */,
 				1C9C276823017DC200ED24A8 /* Mien.swift in Sources */,
-				1C9C277123017F8D00ED24A8 /* Mien2ViewController.swift in Sources */,
 				07E33E2A20DC8E36004B6E52 /* BaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

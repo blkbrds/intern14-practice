@@ -27,6 +27,10 @@ class Ex3ViewController: BaseViewController {
         super.didReceiveMemoryWarning()
     }
 
+    deinit {
+        NotificationCenter.default.removeObserver(self, name: NSNotification.Name("REGIONNOTIFICATION"), object: nil)
+    }
+
     // MARK: - Config
     override func setupUI() {
         super.setupUI()
