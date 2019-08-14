@@ -17,10 +17,6 @@ class BaseViewController: UIViewController {
         setupUI()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
-
     // MARK : - Setup Data & UI
     func setupData() {
     }

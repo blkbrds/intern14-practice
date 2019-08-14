@@ -10,9 +10,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Ex4ViewController" customModule="Protocol" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MienViewController" customModule="Protocol" customModuleProvider="target">
             <connections>
-                <outlet property="tableView" destination="66T-pr-k6P" id="dpc-9g-nX2"/>
+                <outlet property="tableView" destination="2fA-mu-MxA" id="nit-vE-g00"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -21,21 +21,21 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="66T-pr-k6P">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2fA-mu-MxA">
                     <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <connections>
-                        <outlet property="dataSource" destination="-1" id="Rm3-TC-zhf"/>
-                        <outlet property="delegate" destination="-1" id="hzg-MX-LDe"/>
+                        <outlet property="dataSource" destination="-1" id="F6c-yC-HUg"/>
+                        <outlet property="delegate" destination="-1" id="Ffk-9h-Ktd"/>
                     </connections>
                 </tableView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="66T-pr-k6P" secondAttribute="bottom" id="I6H-4a-ebk"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="66T-pr-k6P" secondAttribute="trailing" id="dQk-Zj-M48"/>
-                <constraint firstItem="66T-pr-k6P" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="tCJ-6U-WEK"/>
-                <constraint firstItem="66T-pr-k6P" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="tG9-SG-Lct"/>
+                <constraint firstItem="2fA-mu-MxA" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="8ju-2c-wau"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="2fA-mu-MxA" secondAttribute="bottom" id="DBT-2T-CjR"/>
+                <constraint firstItem="2fA-mu-MxA" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Jbe-zS-wBx"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="2fA-mu-MxA" secondAttribute="trailing" id="bHA-Me-pDn"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
         </view>
