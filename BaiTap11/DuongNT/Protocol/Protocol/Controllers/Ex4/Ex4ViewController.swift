@@ -14,7 +14,7 @@ class Ex4ViewController: BaseViewController {
 
     // MARK: - Properties
     var exercise: Exercise?
-    var cities: [City] = []
+    var cities = [City]()
     let searchController = UISearchController(searchResultsController: nil)
     var filteredCities = [City]()
     // MARK: - Life Cicle
