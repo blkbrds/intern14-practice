@@ -12,99 +12,31 @@ protocol Ca {
     var isBoi : Bool {get set}
 }
 
-protocol DongVat: Thu, Ca, Chim {
-    func ten() -> String
-}
-class CaChuon: DongVat {
-    var isDi: Bool = false
-    var isBay: Bool = true
-    var isBoi: Bool = true
-    func ten() -> String {
-        return "Ca Chuon"
+class DongVat: Thu, Ca, Chim {
+    var isDi: Bool
+    var isBoi: Bool
+    var isBay: Bool
+    var ten: String
+    init(isDi: Bool, isBoi: Bool, isBay: Bool, ten: String) {
+        self.isBay = isBay
+        self.isBoi = isBoi
+        self.isDi = isDi
+        self.ten = ten
+    }
+    func name() -> String {
+        return ten
     }
 }
 
-class Bo: DongVat {
-    var isBoi: Bool = false
-    var isBay: Bool = false
-    var isDi: Bool = true
-    func ten() -> String {
-        return "Bo"
-    }
-}
-
-class Ga: DongVat {
-    var isDi: Bool = false
-    var isBoi: Bool = false
-    var isBay: Bool = true
-    func ten() -> String {
-        return "Ga"
-    }
-}
-
-class Vit: DongVat {
-    var isDi: Bool = true
-    var isBay: Bool = true
-    var isBoi: Bool = true
-    func ten() -> String {
-        return "Vit"
-    }
-}
-
-class CaMap: DongVat {
-    var isDi: Bool = false
-    var isBay: Bool = false
-    var isBoi: Bool = true
-    func ten() -> String {
-        return "Ca Map"
-    }
-}
-
-class Heo: DongVat {
-    var isBoi: Bool = false
-    var isBay: Bool = false
-    var isDi: Bool = true
-    func ten() -> String {
-        return "Heo"
-    }
-}
-
-class HaiCau: DongVat {
-    var isBay: Bool = false
-    var isDi: Bool = true
-    var isBoi: Bool = true
-    func ten() -> String {
-        return "Hai Cau"
-    }
-}
-
-class Doi: DongVat {
-    var isBoi: Bool = false
-    var isBay: Bool = true
-    var isDi: Bool = true
-    func ten() -> String {
-        return "Doi"
-    }
-}
-
-class CaSau: DongVat {
-    var isBay: Bool = false
-    var isBoi: Bool = true
-    var isDi: Bool = true
-    func ten() -> String {
-        return "Ca Sau"
-    }
-}
-
-let caChuon: CaChuon = CaChuon()
-let bo: Bo = Bo()
-let ga: Ga = Ga()
-let vit: Vit = Vit()
-let caMap: CaMap = CaMap()
-let heo: Heo = Heo()
-let haiCau: HaiCau = HaiCau()
-let doi: Doi = Doi()
-let caSau: CaSau = CaSau()
+let caChuon: DongVat = DongVat(isDi: false, isBoi: true, isBay: true, ten: "Ca Chuon")
+let bo: DongVat = DongVat(isDi: true, isBoi: false, isBay: false, ten: "Bo")
+let ga: DongVat = DongVat(isDi: true, isBoi: false, isBay: true, ten: "Ga")
+let vit: DongVat = DongVat(isDi: true, isBoi: true, isBay: true, ten: "Vit")
+let caMap: DongVat = DongVat(isDi: false, isBoi: true, isBay: false, ten: "Ca Map")
+let heo: DongVat = DongVat(isDi: true, isBoi: false, isBay: false, ten: "Heo")
+let haiCau: DongVat = DongVat(isDi: true, isBoi: true, isBay: false, ten: "Hai Cau")
+let doi: DongVat = DongVat(isDi: false, isBoi: false, isBay: true, ten: "Doi")
+let caSau: DongVat = DongVat(isDi: true, isBoi: true, isBay: false, ten: "Ca Sau")
 
 var arrObjects: [DongVat] = [caChuon, bo, ga, vit, caMap, heo, haiCau, doi, caSau]
 
@@ -142,4 +74,28 @@ arrObjects.forEach { animal in
     if (!animal.isBay && !animal.isBoi) || (!animal.isDi && !animal.isBoi) || (!animal.isBay && !animal.isDi) {
         arrOnlyMove.append(animal)
     }
+}
+arrBay.forEach { anm in
+    print(anm.name())
+}
+arrBoi.forEach { anm in
+    print(anm.name())
+}
+arrDi.forEach { anm in
+    print(anm.name())
+}
+arrBayBoi.forEach { anm in
+    print(anm.name())
+}
+arrDiBay.forEach { anm in
+    print(anm.name())
+}
+arrBoiDi.forEach { anm in
+    print(anm.name())
+}
+arrAll.forEach { anm in
+    print(anm.name())
+}
+arrOnlyMove.forEach { anm in
+    print(anm.name())
 }
