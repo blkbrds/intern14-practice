@@ -72,7 +72,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
             let vc = Ex2ViewController()
             self.navigationController?.pushViewController(vc, animated: true)
         case 2:
-            let vc = Ex3ViewController()
+            let vc = Ex3P2ViewController()
             self.navigationController?.pushViewController(vc, animated: true)
         case 3:
             let vc = Ex4ViewController()
