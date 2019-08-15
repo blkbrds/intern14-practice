@@ -11,7 +11,7 @@ import UIKit
 class MienP2ViewController: BaseViewController {
     @IBOutlet private weak var tableView: UITableView!
     
-    var miens: [Mien] = Mien.Dummy.miens
+    var miens: [Mien] = Mien.dummyData()
     
     override func viewDidLoad() {
         super.viewDidLoad()
