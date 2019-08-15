@@ -36,6 +36,7 @@
 		07E33E6D20DC9F1B004B6E52 /* exercises.plist in Resources */ = {isa = PBXBuildFile; fileRef = 07E33E6C20DC9F1B004B6E52 /* exercises.plist */; };
 		07E33E7020DC9FF4004B6E52 /* DataManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E33E6F20DC9FF4004B6E52 /* DataManagement.swift */; };
 		07E33E7320DCA04D004B6E52 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E33E7220DCA04D004B6E52 /* Exercise.swift */; };
+		B0F0C2DE23055B2100CC1A26 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F0C2DD23055B2000CC1A26 /* City.swift */; };
 		B0F33B5E2303EB7500F8D627 /* Mien.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F33B5D2303EB7500F8D627 /* Mien.swift */; };
 		B0F33B602303EBA700F8D627 /* Tinh.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F33B5F2303EBA700F8D627 /* Tinh.swift */; };
 		B0F33B622303EBB100F8D627 /* Huyen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F33B612303EBB100F8D627 /* Huyen.swift */; };
@@ -83,6 +84,7 @@
 		07E33E6C20DC9F1B004B6E52 /* exercises.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = exercises.plist; sourceTree = "<group>"; };
 		07E33E6F20DC9FF4004B6E52 /* DataManagement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManagement.swift; sourceTree = "<group>"; };
 		07E33E7220DCA04D004B6E52 /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
+		B0F0C2DD23055B2000CC1A26 /* City.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		B0F33B5D2303EB7500F8D627 /* Mien.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mien.swift; sourceTree = "<group>"; };
 		B0F33B5F2303EBA700F8D627 /* Tinh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tinh.swift; sourceTree = "<group>"; };
 		B0F33B612303EBB100F8D627 /* Huyen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Huyen.swift; sourceTree = "<group>"; };
@@ -327,6 +329,7 @@
 		07E33E7120DCA024004B6E52 /* Objects */ = {
 			isa = PBXGroup;
 			children = (
+				B0F0C2DD23055B2000CC1A26 /* City.swift */,
 				07E33E7220DCA04D004B6E52 /* Exercise.swift */,
 				B0F33B5D2303EB7500F8D627 /* Mien.swift */,
 				B0F33B5F2303EBA700F8D627 /* Tinh.swift */,
@@ -484,6 +487,7 @@
 				07E33E4920DC90B6004B6E52 /* Ex5ViewController.swift in Sources */,
 				07E33E7320DCA04D004B6E52 /* Exercise.swift in Sources */,
 				07E33E3920DC9059004B6E52 /* Ex1ViewController.swift in Sources */,
+				B0F0C2DE23055B2100CC1A26 /* City.swift in Sources */,
 				07E33E6920DC9826004B6E52 /* HomeCell.swift in Sources */,
 				07E33E4520DC9095004B6E52 /* Ex4ViewController.swift in Sources */,
 				07E33E7020DC9FF4004B6E52 /* DataManagement.swift in Sources */,
