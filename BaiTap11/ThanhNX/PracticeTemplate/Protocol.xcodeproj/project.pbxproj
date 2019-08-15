@@ -294,7 +294,7 @@
 		07E33E6520DC9805004B6E52 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				B0F33B782304187700F8D627 /* MienCell */,
+				B0F33B782304187700F8D627 /* CustomCell */,
 				07E33E6620DC980C004B6E52 /* HomeCell */,
 			);
 			path = Cells;
@@ -385,13 +385,13 @@
 			path = Huyen;
 			sourceTree = "<group>";
 		};
-		B0F33B782304187700F8D627 /* MienCell */ = {
+		B0F33B782304187700F8D627 /* CustomCell */ = {
 			isa = PBXGroup;
 			children = (
 				B0F33B7B230421B300F8D627 /* CustomCell.xib */,
 				B0F33B792304188E00F8D627 /* CustomCell.swift */,
 			);
-			path = MienCell;
+			path = CustomCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
