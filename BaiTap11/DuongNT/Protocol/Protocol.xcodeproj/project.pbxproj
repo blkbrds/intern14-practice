@@ -16,8 +16,6 @@
 		07E33E2C20DC8E5B004B6E52 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E33E2B20DC8E5B004B6E52 /* BaseNavigationController.swift */; };
 		07E33E3920DC9059004B6E52 /* Ex1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E33E3720DC9059004B6E52 /* Ex1ViewController.swift */; };
 		07E33E3A20DC9059004B6E52 /* Ex1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07E33E3820DC9059004B6E52 /* Ex1ViewController.xib */; };
-		07E33E3D20DC906B004B6E52 /* Ex2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E33E3B20DC906B004B6E52 /* Ex2ViewController.swift */; };
-		07E33E3E20DC906B004B6E52 /* Ex2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07E33E3C20DC906B004B6E52 /* Ex2ViewController.xib */; };
 		07E33E4120DC907B004B6E52 /* Ex3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E33E3F20DC907B004B6E52 /* Ex3ViewController.swift */; };
 		07E33E4220DC907B004B6E52 /* Ex3ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07E33E4020DC907B004B6E52 /* Ex3ViewController.xib */; };
 		07E33E4520DC9095004B6E52 /* Ex4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E33E4320DC9095004B6E52 /* Ex4ViewController.swift */; };
@@ -39,6 +37,31 @@
 		07E33E6D20DC9F1B004B6E52 /* exercises.plist in Resources */ = {isa = PBXBuildFile; fileRef = 07E33E6C20DC9F1B004B6E52 /* exercises.plist */; };
 		07E33E7020DC9FF4004B6E52 /* DataManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E33E6F20DC9FF4004B6E52 /* DataManagement.swift */; };
 		07E33E7320DCA04D004B6E52 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E33E7220DCA04D004B6E52 /* Exercise.swift */; };
+		1C9C273B23012EBA00ED24A8 /* Ex2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9C273923012EBA00ED24A8 /* Ex2ViewController.swift */; };
+		1C9C273C23012EBA00ED24A8 /* Ex2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C9C273A23012EBA00ED24A8 /* Ex2ViewController.xib */; };
+		1C9C27462301300400ED24A8 /* MyAvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9C27452301300400ED24A8 /* MyAvatarView.swift */; };
+		1C9C27482301301000ED24A8 /* MyAvatarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C9C27472301301000ED24A8 /* MyAvatarView.xib */; };
+		1C9C275623014A9900ED24A8 /* MyAvatarDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9C275423014A9900ED24A8 /* MyAvatarDetailViewController.swift */; };
+		1C9C275723014A9900ED24A8 /* MyAvatarDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C9C275523014A9900ED24A8 /* MyAvatarDetailViewController.xib */; };
+		1C9C275D23016D7200ED24A8 /* MienViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9C275B23016D7200ED24A8 /* MienViewController.swift */; };
+		1C9C275E23016D7200ED24A8 /* MienViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C9C275C23016D7200ED24A8 /* MienViewController.xib */; };
+		1C9C276223017AB500ED24A8 /* MienCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9C276023017AB500ED24A8 /* MienCell.swift */; };
+		1C9C276323017AB500ED24A8 /* MienCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C9C276123017AB500ED24A8 /* MienCell.xib */; };
+		1C9C276623017CBA00ED24A8 /* miens.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1C9C276523017CBA00ED24A8 /* miens.plist */; };
+		1C9C276823017DC200ED24A8 /* Mien.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9C276723017DC200ED24A8 /* Mien.swift */; };
+		1C9C276D23017F7C00ED24A8 /* TinhViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9C276B23017F7C00ED24A8 /* TinhViewController.swift */; };
+		1C9C276E23017F7C00ED24A8 /* TinhViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C9C276C23017F7C00ED24A8 /* TinhViewController.xib */; };
+		1C9C27762301A35200ED24A8 /* HuyenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9C27742301A35200ED24A8 /* HuyenViewController.swift */; };
+		1C9C27772301A35200ED24A8 /* HuyenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C9C27752301A35200ED24A8 /* HuyenViewController.xib */; };
+		1C9C27792301BF6B00ED24A8 /* Tinh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9C27782301BF6B00ED24A8 /* Tinh.swift */; };
+		1C9C27802301C85F00ED24A8 /* Huyen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9C277F2301C85F00ED24A8 /* Huyen.swift */; };
+		1C9C27822302A5F500ED24A8 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9C27812302A5F500ED24A8 /* City.swift */; };
+		1C9C27862302A68B00ED24A8 /* cities.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1C9C27852302A68B00ED24A8 /* cities.plist */; };
+		1C9C27892302E93700ED24A8 /* Ex5CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9C27882302E93700ED24A8 /* Ex5CustomView.swift */; };
+		1C9C278D2302E97100ED24A8 /* Ex5CustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C9C278C2302E97100ED24A8 /* Ex5CustomView.xib */; };
+		1CADBD8823011A82005DAB80 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CADBD8723011A82005DAB80 /* Users.swift */; };
+		1CADBD8B23011AE0005DAB80 /* FileManagers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CADBD8A23011AE0005DAB80 /* FileManagers.swift */; };
+		1CADBD8E23011C3B005DAB80 /* ListUserInform.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1CADBD8D23011C3B005DAB80 /* ListUserInform.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,8 +76,6 @@
 		07E33E2B20DC8E5B004B6E52 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		07E33E3720DC9059004B6E52 /* Ex1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex1ViewController.swift; sourceTree = "<group>"; };
 		07E33E3820DC9059004B6E52 /* Ex1ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex1ViewController.xib; sourceTree = "<group>"; };
-		07E33E3B20DC906B004B6E52 /* Ex2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex2ViewController.swift; sourceTree = "<group>"; };
-		07E33E3C20DC906B004B6E52 /* Ex2ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex2ViewController.xib; sourceTree = "<group>"; };
 		07E33E3F20DC907B004B6E52 /* Ex3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex3ViewController.swift; sourceTree = "<group>"; };
 		07E33E4020DC907B004B6E52 /* Ex3ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex3ViewController.xib; sourceTree = "<group>"; };
 		07E33E4320DC9095004B6E52 /* Ex4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex4ViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +97,31 @@
 		07E33E6C20DC9F1B004B6E52 /* exercises.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = exercises.plist; sourceTree = "<group>"; };
 		07E33E6F20DC9FF4004B6E52 /* DataManagement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManagement.swift; sourceTree = "<group>"; };
 		07E33E7220DCA04D004B6E52 /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
+		1C9C273923012EBA00ED24A8 /* Ex2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex2ViewController.swift; sourceTree = "<group>"; };
+		1C9C273A23012EBA00ED24A8 /* Ex2ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex2ViewController.xib; sourceTree = "<group>"; };
+		1C9C27452301300400ED24A8 /* MyAvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAvatarView.swift; sourceTree = "<group>"; };
+		1C9C27472301301000ED24A8 /* MyAvatarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyAvatarView.xib; sourceTree = "<group>"; };
+		1C9C275423014A9900ED24A8 /* MyAvatarDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAvatarDetailViewController.swift; sourceTree = "<group>"; };
+		1C9C275523014A9900ED24A8 /* MyAvatarDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyAvatarDetailViewController.xib; sourceTree = "<group>"; };
+		1C9C275B23016D7200ED24A8 /* MienViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MienViewController.swift; sourceTree = "<group>"; };
+		1C9C275C23016D7200ED24A8 /* MienViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MienViewController.xib; sourceTree = "<group>"; };
+		1C9C276023017AB500ED24A8 /* MienCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MienCell.swift; sourceTree = "<group>"; };
+		1C9C276123017AB500ED24A8 /* MienCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MienCell.xib; sourceTree = "<group>"; };
+		1C9C276523017CBA00ED24A8 /* miens.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = miens.plist; sourceTree = "<group>"; };
+		1C9C276723017DC200ED24A8 /* Mien.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mien.swift; sourceTree = "<group>"; };
+		1C9C276B23017F7C00ED24A8 /* TinhViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinhViewController.swift; sourceTree = "<group>"; };
+		1C9C276C23017F7C00ED24A8 /* TinhViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TinhViewController.xib; sourceTree = "<group>"; };
+		1C9C27742301A35200ED24A8 /* HuyenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HuyenViewController.swift; sourceTree = "<group>"; };
+		1C9C27752301A35200ED24A8 /* HuyenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HuyenViewController.xib; sourceTree = "<group>"; };
+		1C9C27782301BF6B00ED24A8 /* Tinh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tinh.swift; sourceTree = "<group>"; };
+		1C9C277F2301C85F00ED24A8 /* Huyen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Huyen.swift; sourceTree = "<group>"; };
+		1C9C27812302A5F500ED24A8 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		1C9C27852302A68B00ED24A8 /* cities.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = cities.plist; sourceTree = "<group>"; };
+		1C9C27882302E93700ED24A8 /* Ex5CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex5CustomView.swift; sourceTree = "<group>"; };
+		1C9C278C2302E97100ED24A8 /* Ex5CustomView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex5CustomView.xib; sourceTree = "<group>"; };
+		1CADBD8723011A82005DAB80 /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
+		1CADBD8A23011AE0005DAB80 /* FileManagers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagers.swift; sourceTree = "<group>"; };
+		1CADBD8D23011C3B005DAB80 /* ListUserInform.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = ListUserInform.plist; path = ../../../../../../../BaiTap08/DuongNT/Navigation/Navigation/BaiTap3/ListUserInform.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +186,8 @@
 		07E33E2020DC8D60004B6E52 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				1C9C27872302E90E00ED24A8 /* Ex5 */,
+				1C9C274423012FE700ED24A8 /* Ex2 */,
 				07E33E6520DC9805004B6E52 /* Cells */,
 			);
 			path = Views;
@@ -148,6 +196,7 @@
 		07E33E2120DC8D66004B6E52 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				1CADBD8923011A8F005DAB80 /* FileManagerments */,
 				07E33E7120DCA024004B6E52 /* Objects */,
 				07E33E6E20DC9FB5004B6E52 /* DataManagement */,
 			);
@@ -192,8 +241,8 @@
 		07E33E2E20DC8FA7004B6E52 /* Ex2 */ = {
 			isa = PBXGroup;
 			children = (
-				07E33E3B20DC906B004B6E52 /* Ex2ViewController.swift */,
-				07E33E3C20DC906B004B6E52 /* Ex2ViewController.xib */,
+				1C9C273923012EBA00ED24A8 /* Ex2ViewController.swift */,
+				1C9C273A23012EBA00ED24A8 /* Ex2ViewController.xib */,
 			);
 			path = Ex2;
 			sourceTree = "<group>";
@@ -203,6 +252,9 @@
 			children = (
 				07E33E3F20DC907B004B6E52 /* Ex3ViewController.swift */,
 				07E33E4020DC907B004B6E52 /* Ex3ViewController.xib */,
+				1C9C27732301A33800ED24A8 /* Huyen */,
+				1C9C276923017F4800ED24A8 /* Tinh */,
+				1C9C275A23016D5500ED24A8 /* MienController */,
 			);
 			path = Ex3;
 			sourceTree = "<group>";
@@ -273,6 +325,7 @@
 		07E33E6520DC9805004B6E52 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				1C9C275F23017A8100ED24A8 /* MienCell */,
 				07E33E6620DC980C004B6E52 /* HomeCell */,
 			);
 			path = Cells;
@@ -290,6 +343,8 @@
 		07E33E6B20DC9EC4004B6E52 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				1C9C27842302A67100ED24A8 /* Ex4 */,
+				1C9C276423017C7000ED24A8 /* Ex3 */,
 				07E33E1420DC8D36004B6E52 /* Assets.xcassets */,
 				07E33E1620DC8D36004B6E52 /* LaunchScreen.storyboard */,
 				07E33E6C20DC9F1B004B6E52 /* exercises.plist */,
@@ -300,6 +355,7 @@
 		07E33E6E20DC9FB5004B6E52 /* DataManagement */ = {
 			isa = PBXGroup;
 			children = (
+				1CADBD8C23011BE2005DAB80 /* Ex2 */,
 				07E33E6F20DC9FF4004B6E52 /* DataManagement.swift */,
 			);
 			path = DataManagement;
@@ -309,8 +365,109 @@
 			isa = PBXGroup;
 			children = (
 				07E33E7220DCA04D004B6E52 /* Exercise.swift */,
+				1CADBD8723011A82005DAB80 /* Users.swift */,
+				1C9C276723017DC200ED24A8 /* Mien.swift */,
+				1C9C27782301BF6B00ED24A8 /* Tinh.swift */,
+				1C9C277F2301C85F00ED24A8 /* Huyen.swift */,
+				1C9C27812302A5F500ED24A8 /* City.swift */,
 			);
 			path = Objects;
+			sourceTree = "<group>";
+		};
+		1C9C274423012FE700ED24A8 /* Ex2 */ = {
+			isa = PBXGroup;
+			children = (
+				1C9C27492301480D00ED24A8 /* Detail */,
+				1C9C27452301300400ED24A8 /* MyAvatarView.swift */,
+				1C9C27472301301000ED24A8 /* MyAvatarView.xib */,
+			);
+			path = Ex2;
+			sourceTree = "<group>";
+		};
+		1C9C27492301480D00ED24A8 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				1C9C275423014A9900ED24A8 /* MyAvatarDetailViewController.swift */,
+				1C9C275523014A9900ED24A8 /* MyAvatarDetailViewController.xib */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		1C9C275A23016D5500ED24A8 /* MienController */ = {
+			isa = PBXGroup;
+			children = (
+				1C9C275B23016D7200ED24A8 /* MienViewController.swift */,
+				1C9C275C23016D7200ED24A8 /* MienViewController.xib */,
+			);
+			path = MienController;
+			sourceTree = "<group>";
+		};
+		1C9C275F23017A8100ED24A8 /* MienCell */ = {
+			isa = PBXGroup;
+			children = (
+				1C9C276023017AB500ED24A8 /* MienCell.swift */,
+				1C9C276123017AB500ED24A8 /* MienCell.xib */,
+			);
+			path = MienCell;
+			sourceTree = "<group>";
+		};
+		1C9C276423017C7000ED24A8 /* Ex3 */ = {
+			isa = PBXGroup;
+			children = (
+				1C9C276523017CBA00ED24A8 /* miens.plist */,
+			);
+			path = Ex3;
+			sourceTree = "<group>";
+		};
+		1C9C276923017F4800ED24A8 /* Tinh */ = {
+			isa = PBXGroup;
+			children = (
+				1C9C276B23017F7C00ED24A8 /* TinhViewController.swift */,
+				1C9C276C23017F7C00ED24A8 /* TinhViewController.xib */,
+			);
+			path = Tinh;
+			sourceTree = "<group>";
+		};
+		1C9C27732301A33800ED24A8 /* Huyen */ = {
+			isa = PBXGroup;
+			children = (
+				1C9C27742301A35200ED24A8 /* HuyenViewController.swift */,
+				1C9C27752301A35200ED24A8 /* HuyenViewController.xib */,
+			);
+			path = Huyen;
+			sourceTree = "<group>";
+		};
+		1C9C27842302A67100ED24A8 /* Ex4 */ = {
+			isa = PBXGroup;
+			children = (
+				1C9C27852302A68B00ED24A8 /* cities.plist */,
+			);
+			path = Ex4;
+			sourceTree = "<group>";
+		};
+		1C9C27872302E90E00ED24A8 /* Ex5 */ = {
+			isa = PBXGroup;
+			children = (
+				1C9C27882302E93700ED24A8 /* Ex5CustomView.swift */,
+				1C9C278C2302E97100ED24A8 /* Ex5CustomView.xib */,
+			);
+			path = Ex5;
+			sourceTree = "<group>";
+		};
+		1CADBD8923011A8F005DAB80 /* FileManagerments */ = {
+			isa = PBXGroup;
+			children = (
+				1CADBD8A23011AE0005DAB80 /* FileManagers.swift */,
+			);
+			path = FileManagerments;
+			sourceTree = "<group>";
+		};
+		1CADBD8C23011BE2005DAB80 /* Ex2 */ = {
+			isa = PBXGroup;
+			children = (
+				1CADBD8D23011C3B005DAB80 /* ListUserInform.plist */,
+			);
+			path = Ex2;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -376,16 +533,26 @@
 				07E33E1820DC8D36004B6E52 /* LaunchScreen.storyboard in Resources */,
 				07E33E5620DC90DD004B6E52 /* Ex8ViewController.xib in Resources */,
 				07E33E4220DC907B004B6E52 /* Ex3ViewController.xib in Resources */,
+				1C9C275E23016D7200ED24A8 /* MienViewController.xib in Resources */,
+				1C9C273C23012EBA00ED24A8 /* Ex2ViewController.xib in Resources */,
+				1CADBD8E23011C3B005DAB80 /* ListUserInform.plist in Resources */,
 				07E33E1520DC8D36004B6E52 /* Assets.xcassets in Resources */,
 				07E33E4E20DC90C3004B6E52 /* Ex6ViewController.xib in Resources */,
-				07E33E3E20DC906B004B6E52 /* Ex2ViewController.xib in Resources */,
+				1C9C278D2302E97100ED24A8 /* Ex5CustomView.xib in Resources */,
 				07E33E5220DC90CF004B6E52 /* Ex7ViewController.xib in Resources */,
+				1C9C276323017AB500ED24A8 /* MienCell.xib in Resources */,
+				1C9C276623017CBA00ED24A8 /* miens.plist in Resources */,
 				07E33E5E20DC9102004B6E52 /* Ex9ViewController.xib in Resources */,
+				1C9C276E23017F7C00ED24A8 /* TinhViewController.xib in Resources */,
 				07E33E2720DC8DD7004B6E52 /* HomeViewController.xib in Resources */,
+				1C9C27482301301000ED24A8 /* MyAvatarView.xib in Resources */,
 				07E33E4620DC9095004B6E52 /* Ex4ViewController.xib in Resources */,
 				07E33E6D20DC9F1B004B6E52 /* exercises.plist in Resources */,
+				1C9C27772301A35200ED24A8 /* HuyenViewController.xib in Resources */,
+				1C9C275723014A9900ED24A8 /* MyAvatarDetailViewController.xib in Resources */,
 				07E33E3A20DC9059004B6E52 /* Ex1ViewController.xib in Resources */,
 				07E33E6220DC910E004B6E52 /* Ex10ViewController.xib in Resources */,
+				1C9C27862302A68B00ED24A8 /* cities.plist in Resources */,
 				07E33E4A20DC90B6004B6E52 /* Ex5ViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -401,19 +568,32 @@
 				07E33E2C20DC8E5B004B6E52 /* BaseNavigationController.swift in Sources */,
 				07E33E4920DC90B6004B6E52 /* Ex5ViewController.swift in Sources */,
 				07E33E7320DCA04D004B6E52 /* Exercise.swift in Sources */,
+				1C9C276223017AB500ED24A8 /* MienCell.swift in Sources */,
 				07E33E3920DC9059004B6E52 /* Ex1ViewController.swift in Sources */,
+				1C9C273B23012EBA00ED24A8 /* Ex2ViewController.swift in Sources */,
 				07E33E6920DC9826004B6E52 /* HomeCell.swift in Sources */,
 				07E33E4520DC9095004B6E52 /* Ex4ViewController.swift in Sources */,
 				07E33E7020DC9FF4004B6E52 /* DataManagement.swift in Sources */,
 				07E33E0E20DC8D34004B6E52 /* AppDelegate.swift in Sources */,
+				1C9C27762301A35200ED24A8 /* HuyenViewController.swift in Sources */,
 				07E33E4120DC907B004B6E52 /* Ex3ViewController.swift in Sources */,
+				1C9C275D23016D7200ED24A8 /* MienViewController.swift in Sources */,
+				1CADBD8823011A82005DAB80 /* Users.swift in Sources */,
 				07E33E4D20DC90C3004B6E52 /* Ex6ViewController.swift in Sources */,
+				1C9C276D23017F7C00ED24A8 /* TinhViewController.swift in Sources */,
 				07E33E2620DC8DD7004B6E52 /* HomeViewController.swift in Sources */,
+				1C9C27802301C85F00ED24A8 /* Huyen.swift in Sources */,
+				1C9C275623014A9900ED24A8 /* MyAvatarDetailViewController.swift in Sources */,
 				07E33E5120DC90CF004B6E52 /* Ex7ViewController.swift in Sources */,
-				07E33E3D20DC906B004B6E52 /* Ex2ViewController.swift in Sources */,
+				1C9C27792301BF6B00ED24A8 /* Tinh.swift in Sources */,
+				1CADBD8B23011AE0005DAB80 /* FileManagers.swift in Sources */,
 				07E33E5520DC90DD004B6E52 /* Ex8ViewController.swift in Sources */,
+				1C9C27462301300400ED24A8 /* MyAvatarView.swift in Sources */,
 				07E33E5D20DC9102004B6E52 /* Ex9ViewController.swift in Sources */,
+				1C9C27822302A5F500ED24A8 /* City.swift in Sources */,
+				1C9C276823017DC200ED24A8 /* Mien.swift in Sources */,
 				07E33E2A20DC8E36004B6E52 /* BaseViewController.swift in Sources */,
+				1C9C27892302E93700ED24A8 /* Ex5CustomView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
