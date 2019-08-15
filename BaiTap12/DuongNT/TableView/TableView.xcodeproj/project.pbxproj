@@ -39,6 +39,10 @@
 		07E33E6D20DC9F1B004B6E52 /* exercises.plist in Resources */ = {isa = PBXBuildFile; fileRef = 07E33E6C20DC9F1B004B6E52 /* exercises.plist */; };
 		07E33E7020DC9FF4004B6E52 /* DataManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E33E6F20DC9FF4004B6E52 /* DataManagement.swift */; };
 		07E33E7320DCA04D004B6E52 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E33E7220DCA04D004B6E52 /* Exercise.swift */; };
+		1C459A7323051B4C006EAD72 /* nameList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1C459A7223051B4C006EAD72 /* nameList.plist */; };
+		1C459A7623051BE6006EAD72 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C459A7523051BE6006EAD72 /* User.swift */; };
+		1C459A7A23051E4B006EAD72 /* Ex3DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C459A7823051E4B006EAD72 /* Ex3DetailViewController.swift */; };
+		1C459A7B23051E4B006EAD72 /* Ex3DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C459A7923051E4B006EAD72 /* Ex3DetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +80,10 @@
 		07E33E6C20DC9F1B004B6E52 /* exercises.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = exercises.plist; sourceTree = "<group>"; };
 		07E33E6F20DC9FF4004B6E52 /* DataManagement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManagement.swift; sourceTree = "<group>"; };
 		07E33E7220DCA04D004B6E52 /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
+		1C459A7223051B4C006EAD72 /* nameList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = nameList.plist; sourceTree = "<group>"; };
+		1C459A7523051BE6006EAD72 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		1C459A7823051E4B006EAD72 /* Ex3DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex3DetailViewController.swift; sourceTree = "<group>"; };
+		1C459A7923051E4B006EAD72 /* Ex3DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex3DetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +148,7 @@
 		07E33E2020DC8D60004B6E52 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				1C459A7723051E1A006EAD72 /* Ex3 */,
 				07E33E6520DC9805004B6E52 /* Cells */,
 			);
 			path = Views;
@@ -290,6 +299,7 @@
 		07E33E6B20DC9EC4004B6E52 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				1C459A7123051B23006EAD72 /* Ex2 */,
 				07E33E1420DC8D36004B6E52 /* Assets.xcassets */,
 				07E33E1620DC8D36004B6E52 /* LaunchScreen.storyboard */,
 				07E33E6C20DC9F1B004B6E52 /* exercises.plist */,
@@ -308,9 +318,35 @@
 		07E33E7120DCA024004B6E52 /* Objects */ = {
 			isa = PBXGroup;
 			children = (
+				1C459A7423051BD7006EAD72 /* Ex2 */,
 				07E33E7220DCA04D004B6E52 /* Exercise.swift */,
 			);
 			path = Objects;
+			sourceTree = "<group>";
+		};
+		1C459A7123051B23006EAD72 /* Ex2 */ = {
+			isa = PBXGroup;
+			children = (
+				1C459A7223051B4C006EAD72 /* nameList.plist */,
+			);
+			path = Ex2;
+			sourceTree = "<group>";
+		};
+		1C459A7423051BD7006EAD72 /* Ex2 */ = {
+			isa = PBXGroup;
+			children = (
+				1C459A7523051BE6006EAD72 /* User.swift */,
+			);
+			path = Ex2;
+			sourceTree = "<group>";
+		};
+		1C459A7723051E1A006EAD72 /* Ex3 */ = {
+			isa = PBXGroup;
+			children = (
+				1C459A7823051E4B006EAD72 /* Ex3DetailViewController.swift */,
+				1C459A7923051E4B006EAD72 /* Ex3DetailViewController.xib */,
+			);
+			path = Ex3;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -377,7 +413,9 @@
 				07E33E5620DC90DD004B6E52 /* Ex8ViewController.xib in Resources */,
 				07E33E4220DC907B004B6E52 /* Ex3ViewController.xib in Resources */,
 				07E33E1520DC8D36004B6E52 /* Assets.xcassets in Resources */,
+				1C459A7323051B4C006EAD72 /* nameList.plist in Resources */,
 				07E33E4E20DC90C3004B6E52 /* Ex6ViewController.xib in Resources */,
+				1C459A7B23051E4B006EAD72 /* Ex3DetailViewController.xib in Resources */,
 				07E33E3E20DC906B004B6E52 /* Ex2ViewController.xib in Resources */,
 				07E33E5220DC90CF004B6E52 /* Ex7ViewController.xib in Resources */,
 				07E33E5E20DC9102004B6E52 /* Ex9ViewController.xib in Resources */,
@@ -411,6 +449,8 @@
 				07E33E2620DC8DD7004B6E52 /* HomeViewController.swift in Sources */,
 				07E33E5120DC90CF004B6E52 /* Ex7ViewController.swift in Sources */,
 				07E33E3D20DC906B004B6E52 /* Ex2ViewController.swift in Sources */,
+				1C459A7A23051E4B006EAD72 /* Ex3DetailViewController.swift in Sources */,
+				1C459A7623051BE6006EAD72 /* User.swift in Sources */,
 				07E33E5520DC90DD004B6E52 /* Ex8ViewController.swift in Sources */,
 				07E33E5D20DC9102004B6E52 /* Ex9ViewController.swift in Sources */,
 				07E33E2A20DC8E36004B6E52 /* BaseViewController.swift in Sources */,

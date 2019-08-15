@@ -9,6 +9,7 @@
 import Foundation
 
 class DataManagement {
+
     // MARK: - Signleton
     public static var share: DataManagement = {
         let dataManagement = DataManagement()
@@ -18,7 +19,7 @@ class DataManagement {
     init() {
         
     }
-    
+
     func getExercises(fileName: String, type: String) -> [Exercise] {
         let array = NSArray(contentsOfFile: getFileDocumentPath(fileName: fileName, type: type))
         var exercises: [Exercise] = []
@@ -30,7 +31,18 @@ class DataManagement {
         }
         return exercises
     }
-    
+
+    func getUser(fileName: String, type: String) -> [User] {
+        let array = NSArray(contentsOfFile: getFileDocumentPath(fileName: fileName, type: type))
+        var users: [User] = []
+        for item in array! {
+            let dict = item as! NSDictionary
+            let user = User(name: dict.object(forKey: "name") as! String)
+            users.append(user)
+        }
+        return users
+    }
+
     // MARK: - private function
     func getFileDocumentPath(fileName: String, type: String) -> String {
         return (Bundle.main.path(forResource: fileName, ofType: type)) ?? ""
