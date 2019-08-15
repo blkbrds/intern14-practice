@@ -30,7 +30,7 @@ class Ex4ViewController: BaseViewController {
     override func setupUI() {
         super.setupUI()
         self.title = "Ex4"
-        cityTableView.register(UINib(nibName: "MienCell", bundle: nil), forCellReuseIdentifier: "cell")
+        cityTableView.register(UINib(nibName: "CustomCell", bundle: nil), forCellReuseIdentifier: "cell")
     }
     
     override func setupData() {
@@ -46,7 +46,7 @@ extension Ex4ViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as? MienCell else { return UITableViewCell() }
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as? CustomCell else { return UITableViewCell() }
         let city = data[indexPath.row]
         cell.nameLabel.text = city.name
         return cell
