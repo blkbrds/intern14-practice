@@ -17,6 +17,7 @@ class Ex4ViewController: BaseViewController {
     var cities = [City]()
     let searchController = UISearchController(searchResultsController: nil)
     var filteredCities = [City]()
+    var searchActive : Bool = false
     // MARK: - Life Cicle
     override func viewDidLoad() {
         super.viewDidLoad()
