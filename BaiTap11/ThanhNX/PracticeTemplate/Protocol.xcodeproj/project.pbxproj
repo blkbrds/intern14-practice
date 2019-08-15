@@ -15,8 +15,6 @@
 		07E33E2C20DC8E5B004B6E52 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E33E2B20DC8E5B004B6E52 /* BaseNavigationController.swift */; };
 		07E33E3920DC9059004B6E52 /* Ex1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E33E3720DC9059004B6E52 /* Ex1ViewController.swift */; };
 		07E33E3A20DC9059004B6E52 /* Ex1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07E33E3820DC9059004B6E52 /* Ex1ViewController.xib */; };
-		07E33E3D20DC906B004B6E52 /* Ex2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E33E3B20DC906B004B6E52 /* Ex2ViewController.swift */; };
-		07E33E3E20DC906B004B6E52 /* Ex2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07E33E3C20DC906B004B6E52 /* Ex2ViewController.xib */; };
 		07E33E4120DC907B004B6E52 /* Ex3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E33E3F20DC907B004B6E52 /* Ex3ViewController.swift */; };
 		07E33E4220DC907B004B6E52 /* Ex3ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07E33E4020DC907B004B6E52 /* Ex3ViewController.xib */; };
 		07E33E4520DC9095004B6E52 /* Ex4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E33E4320DC9095004B6E52 /* Ex4ViewController.swift */; };
@@ -38,11 +36,16 @@
 		07E33E6D20DC9F1B004B6E52 /* exercises.plist in Resources */ = {isa = PBXBuildFile; fileRef = 07E33E6C20DC9F1B004B6E52 /* exercises.plist */; };
 		07E33E7020DC9FF4004B6E52 /* DataManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E33E6F20DC9FF4004B6E52 /* DataManagement.swift */; };
 		07E33E7320DCA04D004B6E52 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E33E7220DCA04D004B6E52 /* Exercise.swift */; };
-		B0EDD36C2301256A00F2969B /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EDD36A2301256A00F2969B /* UserView.swift */; };
-		B0EDD36D2301256A00F2969B /* UserView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0EDD36B2301256A00F2969B /* UserView.xib */; };
-		B0EDD3722301407200F2969B /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EDD3702301407200F2969B /* ProfileViewController.swift */; };
-		B0EDD3732301407200F2969B /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0EDD3712301407200F2969B /* ProfileViewController.xib */; };
-		B0EDD376230142D800F2969B /* Avatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EDD375230142D800F2969B /* Avatar.swift */; };
+		B0F0C2D3230509A500CC1A26 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F0C2D2230509A500CC1A26 /* City.swift */; };
+		B0F0C2D723050F0100CC1A26 /* MienCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F0C2D523050F0100CC1A26 /* MienCell.swift */; };
+		B0F0C2D823050F0100CC1A26 /* MienCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F0C2D623050F0100CC1A26 /* MienCell.xib */; };
+		B0F0C2ED23055E9B00CC1A26 /* Ex2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F0C2E523055E9B00CC1A26 /* Ex2ViewController.swift */; };
+		B0F0C2EE23055E9B00CC1A26 /* Ex2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F0C2E623055E9B00CC1A26 /* Ex2ViewController.xib */; };
+		B0F0C2EF23055E9B00CC1A26 /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F0C2E823055E9B00CC1A26 /* UserView.swift */; };
+		B0F0C2F023055E9B00CC1A26 /* UserView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F0C2E923055E9B00CC1A26 /* UserView.xib */; };
+		B0F0C2F123055E9B00CC1A26 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F0C2EB23055E9B00CC1A26 /* ProfileViewController.xib */; };
+		B0F0C2F223055E9B00CC1A26 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F0C2EC23055E9B00CC1A26 /* ProfileViewController.swift */; };
+		B0F0C2F523055EC600CC1A26 /* Avatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F0C2F423055EC500CC1A26 /* Avatar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,8 +59,6 @@
 		07E33E2B20DC8E5B004B6E52 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		07E33E3720DC9059004B6E52 /* Ex1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex1ViewController.swift; sourceTree = "<group>"; };
 		07E33E3820DC9059004B6E52 /* Ex1ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex1ViewController.xib; sourceTree = "<group>"; };
-		07E33E3B20DC906B004B6E52 /* Ex2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex2ViewController.swift; sourceTree = "<group>"; };
-		07E33E3C20DC906B004B6E52 /* Ex2ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex2ViewController.xib; sourceTree = "<group>"; };
 		07E33E3F20DC907B004B6E52 /* Ex3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex3ViewController.swift; sourceTree = "<group>"; };
 		07E33E4020DC907B004B6E52 /* Ex3ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex3ViewController.xib; sourceTree = "<group>"; };
 		07E33E4320DC9095004B6E52 /* Ex4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex4ViewController.swift; sourceTree = "<group>"; };
@@ -79,11 +80,16 @@
 		07E33E6C20DC9F1B004B6E52 /* exercises.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = exercises.plist; sourceTree = "<group>"; };
 		07E33E6F20DC9FF4004B6E52 /* DataManagement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManagement.swift; sourceTree = "<group>"; };
 		07E33E7220DCA04D004B6E52 /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
-		B0EDD36A2301256A00F2969B /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
-		B0EDD36B2301256A00F2969B /* UserView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserView.xib; sourceTree = "<group>"; };
-		B0EDD3702301407200F2969B /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		B0EDD3712301407200F2969B /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
-		B0EDD375230142D800F2969B /* Avatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Avatar.swift; sourceTree = "<group>"; };
+		B0F0C2D2230509A500CC1A26 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		B0F0C2D523050F0100CC1A26 /* MienCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MienCell.swift; path = ../../../../../../DuongNT/Protocol/Protocol/Views/Cells/MienCell/MienCell.swift; sourceTree = "<group>"; };
+		B0F0C2D623050F0100CC1A26 /* MienCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MienCell.xib; path = ../../../../../../DuongNT/Protocol/Protocol/Views/Cells/MienCell/MienCell.xib; sourceTree = "<group>"; };
+		B0F0C2E523055E9B00CC1A26 /* Ex2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ex2ViewController.swift; sourceTree = "<group>"; };
+		B0F0C2E623055E9B00CC1A26 /* Ex2ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Ex2ViewController.xib; sourceTree = "<group>"; };
+		B0F0C2E823055E9B00CC1A26 /* UserView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
+		B0F0C2E923055E9B00CC1A26 /* UserView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserView.xib; sourceTree = "<group>"; };
+		B0F0C2EB23055E9B00CC1A26 /* ProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
+		B0F0C2EC23055E9B00CC1A26 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		B0F0C2F423055EC500CC1A26 /* Avatar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Avatar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,16 +136,16 @@
 		07E33E1F20DC8D55004B6E52 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				07E33E3620DC9043004B6E52 /* Ex10 */,
-				07E33E3520DC903C004B6E52 /* Ex9 */,
-				07E33E3420DC9035004B6E52 /* Ex8 */,
-				07E33E3320DC902F004B6E52 /* Ex7 */,
-				07E33E3220DC9029004B6E52 /* Ex6 */,
-				07E33E3120DC8FBA004B6E52 /* Ex5 */,
-				07E33E3020DC8FB3004B6E52 /* Ex4 */,
-				07E33E2F20DC8FAD004B6E52 /* Ex3 */,
-				07E33E2E20DC8FA7004B6E52 /* Ex2 */,
 				07E33E2D20DC8FA0004B6E52 /* Ex1 */,
+				B0F0C2E323055E9B00CC1A26 /* Ex2 */,
+				07E33E2F20DC8FAD004B6E52 /* Ex3 */,
+				07E33E3020DC8FB3004B6E52 /* Ex4 */,
+				07E33E3120DC8FBA004B6E52 /* Ex5 */,
+				07E33E3220DC9029004B6E52 /* Ex6 */,
+				07E33E3320DC902F004B6E52 /* Ex7 */,
+				07E33E3420DC9035004B6E52 /* Ex8 */,
+				07E33E3520DC903C004B6E52 /* Ex9 */,
+				07E33E3620DC9043004B6E52 /* Ex10 */,
 				07E33E2320DC8DC0004B6E52 /* Home */,
 			);
 			path = Controllers;
@@ -156,7 +162,7 @@
 		07E33E2120DC8D66004B6E52 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				B0EDD374230142CB00F2969B /* Avatar */,
+				B0F0C2F323055EC500CC1A26 /* Avatar */,
 				07E33E7120DCA024004B6E52 /* Objects */,
 				07E33E6E20DC9FB5004B6E52 /* DataManagement */,
 			);
@@ -196,16 +202,6 @@
 				07E33E3820DC9059004B6E52 /* Ex1ViewController.xib */,
 			);
 			path = Ex1;
-			sourceTree = "<group>";
-		};
-		07E33E2E20DC8FA7004B6E52 /* Ex2 */ = {
-			isa = PBXGroup;
-			children = (
-				B0EDD36F2301401700F2969B /* Profile */,
-				B0EDD36E2301400A00F2969B /* Home */,
-				B0EDD3692301253C00F2969B /* Cell */,
-			);
-			path = Ex2;
 			sourceTree = "<group>";
 		};
 		07E33E2F20DC8FAD004B6E52 /* Ex3 */ = {
@@ -283,6 +279,7 @@
 		07E33E6520DC9805004B6E52 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				B0F0C2D423050EF100CC1A26 /* MienCell */,
 				07E33E6620DC980C004B6E52 /* HomeCell */,
 			);
 			path = Cells;
@@ -318,41 +315,62 @@
 			isa = PBXGroup;
 			children = (
 				07E33E7220DCA04D004B6E52 /* Exercise.swift */,
+				B0F0C2D2230509A500CC1A26 /* City.swift */,
 			);
 			path = Objects;
 			sourceTree = "<group>";
 		};
-		B0EDD3692301253C00F2969B /* Cell */ = {
+		B0F0C2D423050EF100CC1A26 /* MienCell */ = {
 			isa = PBXGroup;
 			children = (
-				B0EDD36A2301256A00F2969B /* UserView.swift */,
-				B0EDD36B2301256A00F2969B /* UserView.xib */,
+				B0F0C2D523050F0100CC1A26 /* MienCell.swift */,
+				B0F0C2D623050F0100CC1A26 /* MienCell.xib */,
 			);
-			path = Cell;
+			path = MienCell;
 			sourceTree = "<group>";
 		};
-		B0EDD36E2301400A00F2969B /* Home */ = {
+		B0F0C2E323055E9B00CC1A26 /* Ex2 */ = {
 			isa = PBXGroup;
 			children = (
-				07E33E3B20DC906B004B6E52 /* Ex2ViewController.swift */,
-				07E33E3C20DC906B004B6E52 /* Ex2ViewController.xib */,
+				B0F0C2E423055E9B00CC1A26 /* Home */,
+				B0F0C2E723055E9B00CC1A26 /* Cell */,
+				B0F0C2EA23055E9B00CC1A26 /* Profile */,
+			);
+			name = Ex2;
+			path = Protocol/Controllers/Ex2;
+			sourceTree = SOURCE_ROOT;
+		};
+		B0F0C2E423055E9B00CC1A26 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B0F0C2E523055E9B00CC1A26 /* Ex2ViewController.swift */,
+				B0F0C2E623055E9B00CC1A26 /* Ex2ViewController.xib */,
 			);
 			path = Home;
 			sourceTree = "<group>";
 		};
-		B0EDD36F2301401700F2969B /* Profile */ = {
+		B0F0C2E723055E9B00CC1A26 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				B0EDD3702301407200F2969B /* ProfileViewController.swift */,
-				B0EDD3712301407200F2969B /* ProfileViewController.xib */,
+				B0F0C2E823055E9B00CC1A26 /* UserView.swift */,
+				B0F0C2E923055E9B00CC1A26 /* UserView.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		B0F0C2EA23055E9B00CC1A26 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				B0F0C2EB23055E9B00CC1A26 /* ProfileViewController.xib */,
+				B0F0C2EC23055E9B00CC1A26 /* ProfileViewController.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
 		};
-		B0EDD374230142CB00F2969B /* Avatar */ = {
+		B0F0C2F323055EC500CC1A26 /* Avatar */ = {
 			isa = PBXGroup;
 			children = (
-				B0EDD375230142D800F2969B /* Avatar.swift */,
+				B0F0C2F423055EC500CC1A26 /* Avatar.swift */,
 			);
 			path = Avatar;
 			sourceTree = "<group>";
@@ -418,19 +436,20 @@
 			files = (
 				07E33E6A20DC9826004B6E52 /* HomeCell.xib in Resources */,
 				07E33E5620DC90DD004B6E52 /* Ex8ViewController.xib in Resources */,
+				B0F0C2EE23055E9B00CC1A26 /* Ex2ViewController.xib in Resources */,
 				07E33E4220DC907B004B6E52 /* Ex3ViewController.xib in Resources */,
 				07E33E1520DC8D36004B6E52 /* Assets.xcassets in Resources */,
 				07E33E4E20DC90C3004B6E52 /* Ex6ViewController.xib in Resources */,
-				07E33E3E20DC906B004B6E52 /* Ex2ViewController.xib in Resources */,
+				B0F0C2D823050F0100CC1A26 /* MienCell.xib in Resources */,
+				B0F0C2F023055E9B00CC1A26 /* UserView.xib in Resources */,
 				07E33E5220DC90CF004B6E52 /* Ex7ViewController.xib in Resources */,
 				07E33E5E20DC9102004B6E52 /* Ex9ViewController.xib in Resources */,
 				07E33E2720DC8DD7004B6E52 /* HomeViewController.xib in Resources */,
-				B0EDD36D2301256A00F2969B /* UserView.xib in Resources */,
-				B0EDD3732301407200F2969B /* ProfileViewController.xib in Resources */,
 				07E33E4620DC9095004B6E52 /* Ex4ViewController.xib in Resources */,
 				07E33E6D20DC9F1B004B6E52 /* exercises.plist in Resources */,
 				07E33E3A20DC9059004B6E52 /* Ex1ViewController.xib in Resources */,
 				07E33E6220DC910E004B6E52 /* Ex10ViewController.xib in Resources */,
+				B0F0C2F123055E9B00CC1A26 /* ProfileViewController.xib in Resources */,
 				07E33E4A20DC90B6004B6E52 /* Ex5ViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -444,23 +463,25 @@
 			files = (
 				07E33E6120DC910E004B6E52 /* Ex10ViewController.swift in Sources */,
 				07E33E2C20DC8E5B004B6E52 /* BaseNavigationController.swift in Sources */,
+				B0F0C2D3230509A500CC1A26 /* City.swift in Sources */,
 				07E33E4920DC90B6004B6E52 /* Ex5ViewController.swift in Sources */,
 				07E33E7320DCA04D004B6E52 /* Exercise.swift in Sources */,
+				B0F0C2ED23055E9B00CC1A26 /* Ex2ViewController.swift in Sources */,
 				07E33E3920DC9059004B6E52 /* Ex1ViewController.swift in Sources */,
+				B0F0C2EF23055E9B00CC1A26 /* UserView.swift in Sources */,
+				B0F0C2F523055EC600CC1A26 /* Avatar.swift in Sources */,
 				07E33E6920DC9826004B6E52 /* HomeCell.swift in Sources */,
 				07E33E4520DC9095004B6E52 /* Ex4ViewController.swift in Sources */,
-				B0EDD36C2301256A00F2969B /* UserView.swift in Sources */,
 				07E33E7020DC9FF4004B6E52 /* DataManagement.swift in Sources */,
-				B0EDD3722301407200F2969B /* ProfileViewController.swift in Sources */,
 				07E33E0E20DC8D34004B6E52 /* AppDelegate.swift in Sources */,
 				07E33E4120DC907B004B6E52 /* Ex3ViewController.swift in Sources */,
 				07E33E4D20DC90C3004B6E52 /* Ex6ViewController.swift in Sources */,
 				07E33E2620DC8DD7004B6E52 /* HomeViewController.swift in Sources */,
 				07E33E5120DC90CF004B6E52 /* Ex7ViewController.swift in Sources */,
-				07E33E3D20DC906B004B6E52 /* Ex2ViewController.swift in Sources */,
 				07E33E5520DC90DD004B6E52 /* Ex8ViewController.swift in Sources */,
 				07E33E5D20DC9102004B6E52 /* Ex9ViewController.swift in Sources */,
-				B0EDD376230142D800F2969B /* Avatar.swift in Sources */,
+				B0F0C2F223055E9B00CC1A26 /* ProfileViewController.swift in Sources */,
+				B0F0C2D723050F0100CC1A26 /* MienCell.swift in Sources */,
 				07E33E2A20DC8E36004B6E52 /* BaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
