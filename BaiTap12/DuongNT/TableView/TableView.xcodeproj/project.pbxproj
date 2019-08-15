@@ -45,6 +45,8 @@
 		1CAF8C1123059FAD000B96E6 /* Ex3DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CAF8C0F23059FAD000B96E6 /* Ex3DetailViewController.xib */; };
 		1CAF8C1523059FDD000B96E6 /* Ex5DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAF8C1323059FDD000B96E6 /* Ex5DetailViewController.swift */; };
 		1CAF8C1623059FDD000B96E6 /* Ex5DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CAF8C1423059FDD000B96E6 /* Ex5DetailViewController.xib */; };
+		1CAF8C1B2305ACE0000B96E6 /* Ex7TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAF8C192305ACE0000B96E6 /* Ex7TableViewCell.swift */; };
+		1CAF8C1C2305ACE0000B96E6 /* Ex7TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CAF8C1A2305ACE0000B96E6 /* Ex7TableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -88,6 +90,8 @@
 		1CAF8C0F23059FAD000B96E6 /* Ex3DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Ex3DetailViewController.xib; sourceTree = "<group>"; };
 		1CAF8C1323059FDD000B96E6 /* Ex5DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ex5DetailViewController.swift; sourceTree = "<group>"; };
 		1CAF8C1423059FDD000B96E6 /* Ex5DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Ex5DetailViewController.xib; sourceTree = "<group>"; };
+		1CAF8C192305ACE0000B96E6 /* Ex7TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex7TableViewCell.swift; sourceTree = "<group>"; };
+		1CAF8C1A2305ACE0000B96E6 /* Ex7TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex7TableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -287,6 +291,7 @@
 		07E33E6520DC9805004B6E52 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				1CAF8C182305AC79000B96E6 /* Ex7 */,
 				07E33E6620DC980C004B6E52 /* HomeCell */,
 			);
 			path = Cells;
@@ -363,6 +368,15 @@
 			path = Ex5;
 			sourceTree = "<group>";
 		};
+		1CAF8C182305AC79000B96E6 /* Ex7 */ = {
+			isa = PBXGroup;
+			children = (
+				1CAF8C192305ACE0000B96E6 /* Ex7TableViewCell.swift */,
+				1CAF8C1A2305ACE0000B96E6 /* Ex7TableViewCell.xib */,
+			);
+			path = Ex7;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -429,6 +443,7 @@
 				07E33E4220DC907B004B6E52 /* Ex3ViewController.xib in Resources */,
 				07E33E1520DC8D36004B6E52 /* Assets.xcassets in Resources */,
 				1CAF8C0C23059DD8000B96E6 /* nameList.plist in Resources */,
+				1CAF8C1C2305ACE0000B96E6 /* Ex7TableViewCell.xib in Resources */,
 				07E33E4E20DC90C3004B6E52 /* Ex6ViewController.xib in Resources */,
 				1CAF8C1123059FAD000B96E6 /* Ex3DetailViewController.xib in Resources */,
 				07E33E3E20DC906B004B6E52 /* Ex2ViewController.xib in Resources */,
@@ -469,6 +484,7 @@
 				1CAF8C1523059FDD000B96E6 /* Ex5DetailViewController.swift in Sources */,
 				07E33E5520DC90DD004B6E52 /* Ex8ViewController.swift in Sources */,
 				07E33E5D20DC9102004B6E52 /* Ex9ViewController.swift in Sources */,
+				1CAF8C1B2305ACE0000B96E6 /* Ex7TableViewCell.swift in Sources */,
 				07E33E2A20DC8E36004B6E52 /* BaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
