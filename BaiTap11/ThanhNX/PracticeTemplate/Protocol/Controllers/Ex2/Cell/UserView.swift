@@ -25,6 +25,8 @@ class UserView: UIView {
     @IBOutlet weak var avatarImageView: UIImageView!
     
     @IBAction private func chooseButtonTouchUpInside(_ sender: Any) {
-        delegate?.userView(self, needFor: .disSelected, index: index)
+        if let delegate = delegate {            
+            delegate.userView(self, needFor: .disSelected, index: index)
+        }
     }
 }

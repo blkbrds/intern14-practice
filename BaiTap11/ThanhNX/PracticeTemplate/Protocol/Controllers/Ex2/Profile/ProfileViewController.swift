@@ -38,9 +38,9 @@ final class ProfileViewController: UIViewController {
     @objc func doneButtonDidClick() {
         guard let user = user, let newName = profileTextField.text else { return }
         user.name = newName
-        
-        guard let delegate = delegate else { return }        
-        delegate.detailView(self, index: index, avatar: user)
+        if let delegate = delegate {
+            delegate.detailView(self, index: index, avatar: user)
+        }
         navigationController?.popViewController(animated: true)
     }
     
