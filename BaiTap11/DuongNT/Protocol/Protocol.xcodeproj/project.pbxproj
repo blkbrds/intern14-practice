@@ -37,6 +37,9 @@
 		07E33E6D20DC9F1B004B6E52 /* exercises.plist in Resources */ = {isa = PBXBuildFile; fileRef = 07E33E6C20DC9F1B004B6E52 /* exercises.plist */; };
 		07E33E7020DC9FF4004B6E52 /* DataManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E33E6F20DC9FF4004B6E52 /* DataManagement.swift */; };
 		07E33E7320DCA04D004B6E52 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E33E7220DCA04D004B6E52 /* Exercise.swift */; };
+		1C459A6D23046801006EAD72 /* Ex6CustomerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C459A6B23046801006EAD72 /* Ex6CustomerVC.swift */; };
+		1C459A6E23046801006EAD72 /* Ex6CustomerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C459A6C23046801006EAD72 /* Ex6CustomerVC.xib */; };
+		1C459A702304F286006EAD72 /* ColorInfor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C459A6F2304F286006EAD72 /* ColorInfor.swift */; };
 		1C9C273B23012EBA00ED24A8 /* Ex2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9C273923012EBA00ED24A8 /* Ex2ViewController.swift */; };
 		1C9C273C23012EBA00ED24A8 /* Ex2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C9C273A23012EBA00ED24A8 /* Ex2ViewController.xib */; };
 		1C9C27462301300400ED24A8 /* MyAvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9C27452301300400ED24A8 /* MyAvatarView.swift */; };
@@ -97,6 +100,9 @@
 		07E33E6C20DC9F1B004B6E52 /* exercises.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = exercises.plist; sourceTree = "<group>"; };
 		07E33E6F20DC9FF4004B6E52 /* DataManagement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManagement.swift; sourceTree = "<group>"; };
 		07E33E7220DCA04D004B6E52 /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
+		1C459A6B23046801006EAD72 /* Ex6CustomerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex6CustomerVC.swift; sourceTree = "<group>"; };
+		1C459A6C23046801006EAD72 /* Ex6CustomerVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex6CustomerVC.xib; sourceTree = "<group>"; };
+		1C459A6F2304F286006EAD72 /* ColorInfor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorInfor.swift; sourceTree = "<group>"; };
 		1C9C273923012EBA00ED24A8 /* Ex2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex2ViewController.swift; sourceTree = "<group>"; };
 		1C9C273A23012EBA00ED24A8 /* Ex2ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex2ViewController.xib; sourceTree = "<group>"; };
 		1C9C27452301300400ED24A8 /* MyAvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAvatarView.swift; sourceTree = "<group>"; };
@@ -186,6 +192,7 @@
 		07E33E2020DC8D60004B6E52 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				1C9C27B52304446F00ED24A8 /* Ex6 */,
 				1C9C27872302E90E00ED24A8 /* Ex5 */,
 				1C9C274423012FE700ED24A8 /* Ex2 */,
 				07E33E6520DC9805004B6E52 /* Cells */,
@@ -370,6 +377,7 @@
 				1C9C27782301BF6B00ED24A8 /* Tinh.swift */,
 				1C9C277F2301C85F00ED24A8 /* Huyen.swift */,
 				1C9C27812302A5F500ED24A8 /* City.swift */,
+				1C459A6F2304F286006EAD72 /* ColorInfor.swift */,
 			);
 			path = Objects;
 			sourceTree = "<group>";
@@ -454,6 +462,15 @@
 			path = Ex5;
 			sourceTree = "<group>";
 		};
+		1C9C27B52304446F00ED24A8 /* Ex6 */ = {
+			isa = PBXGroup;
+			children = (
+				1C459A6B23046801006EAD72 /* Ex6CustomerVC.swift */,
+				1C459A6C23046801006EAD72 /* Ex6CustomerVC.xib */,
+			);
+			path = Ex6;
+			sourceTree = "<group>";
+		};
 		1CADBD8923011A8F005DAB80 /* FileManagerments */ = {
 			isa = PBXGroup;
 			children = (
@@ -533,6 +550,7 @@
 				07E33E1820DC8D36004B6E52 /* LaunchScreen.storyboard in Resources */,
 				07E33E5620DC90DD004B6E52 /* Ex8ViewController.xib in Resources */,
 				07E33E4220DC907B004B6E52 /* Ex3ViewController.xib in Resources */,
+				1C459A6E23046801006EAD72 /* Ex6CustomerVC.xib in Resources */,
 				1C9C275E23016D7200ED24A8 /* MienViewController.xib in Resources */,
 				1C9C273C23012EBA00ED24A8 /* Ex2ViewController.xib in Resources */,
 				1CADBD8E23011C3B005DAB80 /* ListUserInform.plist in Resources */,
@@ -569,6 +587,7 @@
 				07E33E4920DC90B6004B6E52 /* Ex5ViewController.swift in Sources */,
 				07E33E7320DCA04D004B6E52 /* Exercise.swift in Sources */,
 				1C9C276223017AB500ED24A8 /* MienCell.swift in Sources */,
+				1C459A702304F286006EAD72 /* ColorInfor.swift in Sources */,
 				07E33E3920DC9059004B6E52 /* Ex1ViewController.swift in Sources */,
 				1C9C273B23012EBA00ED24A8 /* Ex2ViewController.swift in Sources */,
 				07E33E6920DC9826004B6E52 /* HomeCell.swift in Sources */,
@@ -583,6 +602,7 @@
 				1C9C276D23017F7C00ED24A8 /* TinhViewController.swift in Sources */,
 				07E33E2620DC8DD7004B6E52 /* HomeViewController.swift in Sources */,
 				1C9C27802301C85F00ED24A8 /* Huyen.swift in Sources */,
+				1C459A6D23046801006EAD72 /* Ex6CustomerVC.swift in Sources */,
 				1C9C275623014A9900ED24A8 /* MyAvatarDetailViewController.swift in Sources */,
 				07E33E5120DC90CF004B6E52 /* Ex7ViewController.swift in Sources */,
 				1C9C27792301BF6B00ED24A8 /* Tinh.swift in Sources */,
