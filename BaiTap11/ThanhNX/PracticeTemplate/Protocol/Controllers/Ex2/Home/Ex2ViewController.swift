@@ -9,7 +9,7 @@
 import UIKit
 
 final class Ex2ViewController: BaseViewController {
-    var users: [Avatar] = Avatar.Dummy.userData
+    var users: [Avatar] = Avatar.dummyData()
     
     @IBOutlet private weak var imageScrollView: UIScrollView!
     
