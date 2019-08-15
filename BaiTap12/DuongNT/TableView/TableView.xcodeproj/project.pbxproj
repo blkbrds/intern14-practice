@@ -43,6 +43,11 @@
 		1C459A7623051BE6006EAD72 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C459A7523051BE6006EAD72 /* User.swift */; };
 		1C459A7A23051E4B006EAD72 /* Ex3DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C459A7823051E4B006EAD72 /* Ex3DetailViewController.swift */; };
 		1C459A7B23051E4B006EAD72 /* Ex3DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C459A7923051E4B006EAD72 /* Ex3DetailViewController.xib */; };
+<<<<<<< HEAD
+=======
+		1C459A7F230558D2006EAD72 /* Ex5DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C459A7D230558D2006EAD72 /* Ex5DetailViewController.swift */; };
+		1C459A80230558D2006EAD72 /* Ex5DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C459A7E230558D2006EAD72 /* Ex5DetailViewController.xib */; };
+>>>>>>> feature/DuongNT/protocol_06
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,6 +89,11 @@
 		1C459A7523051BE6006EAD72 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		1C459A7823051E4B006EAD72 /* Ex3DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex3DetailViewController.swift; sourceTree = "<group>"; };
 		1C459A7923051E4B006EAD72 /* Ex3DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex3DetailViewController.xib; sourceTree = "<group>"; };
+<<<<<<< HEAD
+=======
+		1C459A7D230558D2006EAD72 /* Ex5DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex5DetailViewController.swift; sourceTree = "<group>"; };
+		1C459A7E230558D2006EAD72 /* Ex5DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex5DetailViewController.xib; sourceTree = "<group>"; };
+>>>>>>> feature/DuongNT/protocol_06
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +158,10 @@
 		07E33E2020DC8D60004B6E52 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
+=======
+				1C459A7C230558B0006EAD72 /* Ex5 */,
+>>>>>>> feature/DuongNT/protocol_06
 				1C459A7723051E1A006EAD72 /* Ex3 */,
 				07E33E6520DC9805004B6E52 /* Cells */,
 			);
@@ -349,6 +363,18 @@
 			path = Ex3;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
+=======
+		1C459A7C230558B0006EAD72 /* Ex5 */ = {
+			isa = PBXGroup;
+			children = (
+				1C459A7D230558D2006EAD72 /* Ex5DetailViewController.swift */,
+				1C459A7E230558D2006EAD72 /* Ex5DetailViewController.xib */,
+			);
+			path = Ex5;
+			sourceTree = "<group>";
+		};
+>>>>>>> feature/DuongNT/protocol_06
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -408,6 +434,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< HEAD
+=======
+				1C459A80230558D2006EAD72 /* Ex5DetailViewController.xib in Resources */,
+>>>>>>> feature/DuongNT/protocol_06
 				07E33E6A20DC9826004B6E52 /* HomeCell.xib in Resources */,
 				07E33E1820DC8D36004B6E52 /* LaunchScreen.storyboard in Resources */,
 				07E33E5620DC90DD004B6E52 /* Ex8ViewController.xib in Resources */,
@@ -451,6 +481,10 @@
 				07E33E3D20DC906B004B6E52 /* Ex2ViewController.swift in Sources */,
 				1C459A7A23051E4B006EAD72 /* Ex3DetailViewController.swift in Sources */,
 				1C459A7623051BE6006EAD72 /* User.swift in Sources */,
+<<<<<<< HEAD
+=======
+				1C459A7F230558D2006EAD72 /* Ex5DetailViewController.swift in Sources */,
+>>>>>>> feature/DuongNT/protocol_06
 				07E33E5520DC90DD004B6E52 /* Ex8ViewController.swift in Sources */,
 				07E33E5D20DC9102004B6E52 /* Ex9ViewController.swift in Sources */,
 				07E33E2A20DC8E36004B6E52 /* BaseViewController.swift in Sources */,
