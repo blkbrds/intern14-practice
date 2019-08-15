@@ -8,7 +8,6 @@
 
 import UIKit
 
-let myNotificationKey = "NOTIFICATIONKEY"
 
 class Ex3P2ViewController: BaseViewController {
     @IBOutlet private weak var mienLabel: UILabel!
@@ -17,11 +16,11 @@ class Ex3P2ViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        NotificationCenter.default.addObserver(self, selector: #selector(getNotification(_:)), name: NSNotification.Name(myNotificationKey), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(getNotification(_:)), name: .myNotificationName, object: nil)
     }
     
     deinit {
-        NotificationCenter.default.removeObserver(self, name: NSNotification.Name(myNotificationKey), object: nil)
+        NotificationCenter.default.removeObserver(self, name: .myNotificationName, object: nil)
     }
     
     override func didReceiveMemoryWarning() {
@@ -50,4 +49,8 @@ class Ex3P2ViewController: BaseViewController {
             huyenLabel.text = huyen
         }
     }
+}
+
+extension NSNotification.Name {
+    static let myNotificationName = Notification.Name(rawValue: "NOTIFICATIONKEY")
 }

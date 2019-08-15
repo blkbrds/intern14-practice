@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MienCell: UITableViewCell {
+class CustomCell: UITableViewCell {
     
     @IBOutlet weak var nameLabel: UILabel!
     

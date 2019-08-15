@@ -9,14 +9,12 @@
 import UIKit
 
 class MienP2ViewController: BaseViewController {
-    @IBOutlet private weak var mienTabelView: UITableView!
+    @IBOutlet private weak var tableView: UITableView!
     
-    var miens: [Mien] = []
+    var miens: [Mien] = Mien.Dummy.miens
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        loadDesign()
     }
     
     override func didReceiveMemoryWarning() {
@@ -31,15 +29,11 @@ class MienP2ViewController: BaseViewController {
         let tinhButton = UIBarButtonItem(title: "Miền", style: .done, target: self, action: #selector(mienButtonDidClick))
         navigationItem.rightBarButtonItem = tinhButton
         
-        mienTabelView.register(UINib(nibName: "MienCell", bundle: nil), forCellReuseIdentifier: "cell")
-    }
-    
-    private func loadDesign() {
-        miens = Mien.Dummy.miens
+        tableView.register(UINib(nibName: "CustomCell", bundle: nil), forCellReuseIdentifier: "cell")
     }
     
     override func setupData() {
-        mienTabelView.reloadData()
+        tableView.reloadData()
     }
     
     @objc private func mienButtonDidClick() {
@@ -48,8 +42,8 @@ class MienP2ViewController: BaseViewController {
     }
 }
 
-//MARK: TableView DataSource
-extension MienP2ViewController: UITableViewDataSource {
+extension MienP2ViewController: UITableViewDataSource, UITableViewDelegate {
+    //MARK: TableView DataSource
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return miens.count
     }
@@ -59,17 +53,15 @@ extension MienP2ViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as? MienCell else {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as? CustomCell else {
             return UITableViewCell()
         }
         let mien = miens[indexPath.row]
         cell.nameLabel.text = mien.name
         return cell
     }
-}
-
-//MARK: TableView Delegate
-extension MienP2ViewController: UITableViewDelegate {
+    
+    //MARK: TableView Delegate
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         let tinhVC = TinhP2ViewController()
