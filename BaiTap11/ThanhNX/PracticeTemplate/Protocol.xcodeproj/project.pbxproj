@@ -38,6 +38,9 @@
 		07E33E6D20DC9F1B004B6E52 /* exercises.plist in Resources */ = {isa = PBXBuildFile; fileRef = 07E33E6C20DC9F1B004B6E52 /* exercises.plist */; };
 		07E33E7020DC9FF4004B6E52 /* DataManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E33E6F20DC9FF4004B6E52 /* DataManagement.swift */; };
 		07E33E7320DCA04D004B6E52 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E33E7220DCA04D004B6E52 /* Exercise.swift */; };
+		B0F0C2D3230509A500CC1A26 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F0C2D2230509A500CC1A26 /* City.swift */; };
+		B0F0C2D723050F0100CC1A26 /* MienCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F0C2D523050F0100CC1A26 /* MienCell.swift */; };
+		B0F0C2D823050F0100CC1A26 /* MienCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F0C2D623050F0100CC1A26 /* MienCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +77,9 @@
 		07E33E6C20DC9F1B004B6E52 /* exercises.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = exercises.plist; sourceTree = "<group>"; };
 		07E33E6F20DC9FF4004B6E52 /* DataManagement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManagement.swift; sourceTree = "<group>"; };
 		07E33E7220DCA04D004B6E52 /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
+		B0F0C2D2230509A500CC1A26 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		B0F0C2D523050F0100CC1A26 /* MienCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MienCell.swift; path = ../../../../../../DuongNT/Protocol/Protocol/Views/Cells/MienCell/MienCell.swift; sourceTree = "<group>"; };
+		B0F0C2D623050F0100CC1A26 /* MienCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MienCell.xib; path = ../../../../../../DuongNT/Protocol/Protocol/Views/Cells/MienCell/MienCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -271,6 +277,7 @@
 		07E33E6520DC9805004B6E52 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				B0F0C2D423050EF100CC1A26 /* MienCell */,
 				07E33E6620DC980C004B6E52 /* HomeCell */,
 			);
 			path = Cells;
@@ -306,8 +313,18 @@
 			isa = PBXGroup;
 			children = (
 				07E33E7220DCA04D004B6E52 /* Exercise.swift */,
+				B0F0C2D2230509A500CC1A26 /* City.swift */,
 			);
 			path = Objects;
+			sourceTree = "<group>";
+		};
+		B0F0C2D423050EF100CC1A26 /* MienCell */ = {
+			isa = PBXGroup;
+			children = (
+				B0F0C2D523050F0100CC1A26 /* MienCell.swift */,
+				B0F0C2D623050F0100CC1A26 /* MienCell.xib */,
+			);
+			path = MienCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -374,6 +391,7 @@
 				07E33E4220DC907B004B6E52 /* Ex3ViewController.xib in Resources */,
 				07E33E1520DC8D36004B6E52 /* Assets.xcassets in Resources */,
 				07E33E4E20DC90C3004B6E52 /* Ex6ViewController.xib in Resources */,
+				B0F0C2D823050F0100CC1A26 /* MienCell.xib in Resources */,
 				07E33E3E20DC906B004B6E52 /* Ex2ViewController.xib in Resources */,
 				07E33E5220DC90CF004B6E52 /* Ex7ViewController.xib in Resources */,
 				07E33E5E20DC9102004B6E52 /* Ex9ViewController.xib in Resources */,
@@ -395,6 +413,7 @@
 			files = (
 				07E33E6120DC910E004B6E52 /* Ex10ViewController.swift in Sources */,
 				07E33E2C20DC8E5B004B6E52 /* BaseNavigationController.swift in Sources */,
+				B0F0C2D3230509A500CC1A26 /* City.swift in Sources */,
 				07E33E4920DC90B6004B6E52 /* Ex5ViewController.swift in Sources */,
 				07E33E7320DCA04D004B6E52 /* Exercise.swift in Sources */,
 				07E33E3920DC9059004B6E52 /* Ex1ViewController.swift in Sources */,
@@ -409,6 +428,7 @@
 				07E33E3D20DC906B004B6E52 /* Ex2ViewController.swift in Sources */,
 				07E33E5520DC90DD004B6E52 /* Ex8ViewController.swift in Sources */,
 				07E33E5D20DC9102004B6E52 /* Ex9ViewController.swift in Sources */,
+				B0F0C2D723050F0100CC1A26 /* MienCell.swift in Sources */,
 				07E33E2A20DC8E36004B6E52 /* BaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
