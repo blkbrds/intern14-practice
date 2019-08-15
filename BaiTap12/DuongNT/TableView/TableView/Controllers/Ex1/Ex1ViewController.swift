@@ -38,6 +38,7 @@ class Ex1ViewController: BaseViewController {
     }
 }
 extension Ex1ViewController: UITableViewDelegate, UITableViewDataSource {
+
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
