@@ -1,5 +1,5 @@
 //
-//  Ex6CustomerVC.swift
+//  Ex6SettingsVC.swift
 //  Protocol
 //
 //  Created by Nguyen Duong on 8/14/19.
@@ -8,12 +8,12 @@
 
 import UIKit
 
-protocol Ex6CustomerDelegate: class {
+protocol Ex6SettingsDelegate: class {
 
-    func controller(controller: Ex6CustomerVC, needPerformAction action: Ex6CustomerVC.Action, color: ColorInfor?, brushSize: Float?)
+    func resetValue(controller: Ex6SettingsVC, needPerformAction action: Ex6SettingsVC.Action, brushInfor: BrushInfor?)
 }
 
-class Ex6CustomerVC: BaseViewController {
+class Ex6SettingsVC: BaseViewController {
 
     // MARK: - Enum
     enum Action {
@@ -30,7 +30,7 @@ class Ex6CustomerVC: BaseViewController {
     @IBOutlet private weak var brushSizeSlider: UISlider!
 
     // MARK: - Properties
-    weak var delegate: Ex6CustomerDelegate?
+    weak var delegate: Ex6SettingsDelegate?
 
     // MARK: - Life Cicle
     override func viewDidLoad() {
@@ -41,7 +41,7 @@ class Ex6CustomerVC: BaseViewController {
     override func setupUI() {
         super.setupUI()
         self.title = "Settings"
-
+        colorScreenView.layer.cornerRadius = Config.cornerRadius
     }
 
     override func setupData() {
@@ -51,7 +51,6 @@ class Ex6CustomerVC: BaseViewController {
 
     // MARK: - Custom func
     private func handleColorView() {
-        colorScreenView.layer.cornerRadius = 10
         guard let red = redSlider, let blue = blueSlider, let green = greenSlider else {
             return
         }
@@ -66,7 +65,7 @@ class Ex6CustomerVC: BaseViewController {
             return
         }
         if let delegate = delegate {
-            delegate.controller(controller: self, needPerformAction: .updateSizeItem, color: ColorInfor(red: red.value, green: green.value, blue: blue.value), brushSize: brushSize.value)
+            delegate.resetValue(controller: self, needPerformAction: .updateSizeItem, brushInfor: BrushInfor(red: red.value, green: green.value, blue: blue.value, brushSize: brushSize.value))
         }
         navigationController?.popViewController(animated: true)
     }
@@ -83,15 +82,24 @@ class Ex6CustomerVC: BaseViewController {
     }
 
     @IBAction private func resetButtonTouchUpInside(_ button: UIButton) {
-        redSlider.value = 100
-        blueSlider.value = 100
-        greenSlider.value = 100
-        brushSizeSlider.value = 10
+        redSlider.value = Config.defaultColor
+        blueSlider.value = Config.defaultColor
+        greenSlider.value = Config.defaultColor
+        brushSizeSlider.value = Config.defaultBrushSize
         handleColorView()
     }
 
     @IBAction private func clearButtonTouchUpInside(_ button: UIButton) {
-        delegate?.controller(controller: self, needPerformAction: .reset, color: nil, brushSize: nil)
+        delegate?.resetValue(controller: self, needPerformAction: .reset, brushInfor: nil)
         navigationController?.popViewController(animated: true)
+    }
+}
+
+extension Ex6SettingsVC {
+
+    struct Config {
+        static let cornerRadius: CGFloat = 10
+        static let defaultColor: Float = 100
+        static let defaultBrushSize: Float = 10
     }
 }

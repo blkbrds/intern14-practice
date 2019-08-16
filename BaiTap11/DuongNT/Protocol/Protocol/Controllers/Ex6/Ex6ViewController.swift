@@ -18,7 +18,6 @@ class Ex6ViewController: BaseViewController {
     var lastPoint = CGPoint.zero
     var color = UIColor(red: CGFloat(100 / 255), green: CGFloat(100 / 255), blue: CGFloat(100 / 255), alpha: 1)
     var brushWidth: CGFloat = 10.0
-    var opacity: CGFloat = 1.0
     var swiped = false
 
     // MARK: - Life Cicle
@@ -47,7 +46,7 @@ class Ex6ViewController: BaseViewController {
         context.setStrokeColor(color.cgColor)
         context.strokePath()
         screenImageView.image = UIGraphicsGetImageFromCurrentImageContext()
-        screenImageView.alpha = opacity
+        screenImageView.alpha = Config.opacity
         UIGraphicsEndImageContext()
     }
 
@@ -88,24 +87,31 @@ class Ex6ViewController: BaseViewController {
     }
 
     @IBAction func settingsButtonTouchUpInside(_ button: UIButton) {
-        let vc = Ex6CustomerVC()
+        let vc = Ex6SettingsVC()
         vc.delegate = self
         navigationController?.pushViewController(vc, animated: true)
     }
 }
 
 // MARK: - Extension
-extension Ex6ViewController: Ex6CustomerDelegate {
+extension Ex6ViewController: Ex6SettingsDelegate {
 
-    func controller(controller: Ex6CustomerVC, needPerformAction action: Ex6CustomerVC.Action, color: ColorInfor?, brushSize: Float?) {
+    func resetValue(controller: Ex6SettingsVC, needPerformAction action: Ex6SettingsVC.Action, brushInfor: BrushInfor?) {
         switch action {
         case .updateSizeItem:
-            if let colorInfor = color, let brushSize = brushSize {
-                self.color = UIColor(red: CGFloat(colorInfor.red / 255), green: CGFloat(colorInfor.green / 255), blue: CGFloat(colorInfor.blue / 255), alpha: 1)
-                self.brushWidth = CGFloat(brushSize)
+            if let brushInfor = brushInfor {
+                self.color = UIColor(red: CGFloat(brushInfor.red / 255), green: CGFloat(brushInfor.green / 255), blue: CGFloat(brushInfor.blue / 255), alpha: 1)
+                self.brushWidth = CGFloat(brushInfor.brushSize)
             }
         case .reset:
             screenImageView.image = nil
         }
+    }
+}
+
+extension Ex6ViewController {
+
+    struct Config {
+        static let opacity: CGFloat = 1.0
     }
 }
