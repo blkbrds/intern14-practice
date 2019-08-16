@@ -55,6 +55,17 @@ class DataManagement {
         return users
     }
 
+    func getContacts(fileName: String, type: String) -> [String] {
+        let array = NSArray(contentsOfFile: getFileDocumentPath(fileName: fileName, type: type))
+        var contacts: [String] = []
+        for item in array! {
+            let dict = item as! NSDictionary
+            let contact = dict.object(forKey: "name") as! String
+            contacts.append(contact)
+        }
+        return contacts
+    }
+
     // MARK: - private function
     func getFileDocumentPath(fileName: String, type: String) -> String {
         return (Bundle.main.path(forResource: fileName, ofType: type)) ?? ""
