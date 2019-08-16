@@ -26,7 +26,7 @@ class Ex01ViewController: UIViewController {
     func getCurrentTime() {
         let date = Date()
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "H:m:s dd-MM-yyyy"
+        dateFormatter.dateFormat = "H:mm:ss dd-MM-yyyy"
         let result = dateFormatter.string(from: date)
         dateLabel.text = result
         
