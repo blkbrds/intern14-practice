@@ -43,6 +43,8 @@
 		1C76AFB923064CE900A06468 /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C76AFB823064CE900A06468 /* Animal.swift */; };
 		1C76AFBD23064DD400A06468 /* AnimalInforCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C76AFBB23064DD400A06468 /* AnimalInforCell.swift */; };
 		1C76AFBE23064DD400A06468 /* AnimalInforCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C76AFBC23064DD400A06468 /* AnimalInforCell.xib */; };
+		1C76AFC22306547400A06468 /* AnimalNewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C76AFC02306547400A06468 /* AnimalNewCell.swift */; };
+		1C76AFC32306547400A06468 /* AnimalNewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C76AFC12306547400A06468 /* AnimalNewCell.xib */; };
 		1CAF8C0623059CB4000B96E6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAF8C0523059CB4000B96E6 /* User.swift */; };
 		1CAF8C0C23059DD8000B96E6 /* nameList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1CAF8C0B23059DD8000B96E6 /* nameList.plist */; };
 		1CAF8C1023059FAD000B96E6 /* Ex3DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAF8C0E23059FAD000B96E6 /* Ex3DetailViewController.swift */; };
@@ -92,6 +94,8 @@
 		1C76AFB823064CE900A06468 /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
 		1C76AFBB23064DD400A06468 /* AnimalInforCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalInforCell.swift; sourceTree = "<group>"; };
 		1C76AFBC23064DD400A06468 /* AnimalInforCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnimalInforCell.xib; sourceTree = "<group>"; };
+		1C76AFC02306547400A06468 /* AnimalNewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalNewCell.swift; sourceTree = "<group>"; };
+		1C76AFC12306547400A06468 /* AnimalNewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnimalNewCell.xib; sourceTree = "<group>"; };
 		1CAF8C0523059CB4000B96E6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		1CAF8C0B23059DD8000B96E6 /* nameList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = nameList.plist; sourceTree = "<group>"; };
 		1CAF8C0E23059FAD000B96E6 /* Ex3DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ex3DetailViewController.swift; sourceTree = "<group>"; };
@@ -299,6 +303,7 @@
 		07E33E6520DC9805004B6E52 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				1C76AFBF2306544300A06468 /* Ex9 */,
 				1C76AFBA23064DB300A06468 /* Ex8 */,
 				1CAF8C182305AC79000B96E6 /* Ex7 */,
 				07E33E6620DC980C004B6E52 /* HomeCell */,
@@ -368,6 +373,15 @@
 				1C76AFBC23064DD400A06468 /* AnimalInforCell.xib */,
 			);
 			path = Ex8;
+			sourceTree = "<group>";
+		};
+		1C76AFBF2306544300A06468 /* Ex9 */ = {
+			isa = PBXGroup;
+			children = (
+				1C76AFC02306547400A06468 /* AnimalNewCell.swift */,
+				1C76AFC12306547400A06468 /* AnimalNewCell.xib */,
+			);
+			path = Ex9;
 			sourceTree = "<group>";
 		};
 		1CAF8C0423059CA5000B96E6 /* Ex2 */ = {
@@ -490,6 +504,7 @@
 				07E33E4620DC9095004B6E52 /* Ex4ViewController.xib in Resources */,
 				07E33E6D20DC9F1B004B6E52 /* exercises.plist in Resources */,
 				1C76AFBE23064DD400A06468 /* AnimalInforCell.xib in Resources */,
+				1C76AFC32306547400A06468 /* AnimalNewCell.xib in Resources */,
 				07E33E3A20DC9059004B6E52 /* Ex1ViewController.xib in Resources */,
 				07E33E6220DC910E004B6E52 /* Ex10ViewController.xib in Resources */,
 				07E33E4A20DC90B6004B6E52 /* Ex5ViewController.xib in Resources */,
@@ -513,6 +528,7 @@
 				07E33E7020DC9FF4004B6E52 /* DataManagement.swift in Sources */,
 				07E33E0E20DC8D34004B6E52 /* AppDelegate.swift in Sources */,
 				07E33E4120DC907B004B6E52 /* Ex3ViewController.swift in Sources */,
+				1C76AFC22306547400A06468 /* AnimalNewCell.swift in Sources */,
 				1C76AFBD23064DD400A06468 /* AnimalInforCell.swift in Sources */,
 				07E33E4D20DC90C3004B6E52 /* Ex6ViewController.swift in Sources */,
 				1C76AFB923064CE900A06468 /* Animal.swift in Sources */,
