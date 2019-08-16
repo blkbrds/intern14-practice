@@ -36,20 +36,22 @@
 		07E33E6D20DC9F1B004B6E52 /* exercises.plist in Resources */ = {isa = PBXBuildFile; fileRef = 07E33E6C20DC9F1B004B6E52 /* exercises.plist */; };
 		07E33E7020DC9FF4004B6E52 /* DataManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E33E6F20DC9FF4004B6E52 /* DataManagement.swift */; };
 		07E33E7320DCA04D004B6E52 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E33E7220DCA04D004B6E52 /* Exercise.swift */; };
-		B0F0C2DE23055B2100CC1A26 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F0C2DD23055B2000CC1A26 /* City.swift */; };
-		B0F33B5E2303EB7500F8D627 /* Mien.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F33B5D2303EB7500F8D627 /* Mien.swift */; };
-		B0F33B602303EBA700F8D627 /* Tinh.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F33B5F2303EBA700F8D627 /* Tinh.swift */; };
-		B0F33B622303EBB100F8D627 /* Huyen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F33B612303EBB100F8D627 /* Huyen.swift */; };
-		B0F33B6A230415C100F8D627 /* Ex3P2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F33B68230415C100F8D627 /* Ex3P2ViewController.swift */; };
-		B0F33B6B230415C100F8D627 /* Ex3P2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F33B69230415C100F8D627 /* Ex3P2ViewController.xib */; };
-		B0F33B6E2304162800F8D627 /* MienP2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F33B6C2304162800F8D627 /* MienP2ViewController.swift */; };
-		B0F33B6F2304162800F8D627 /* MienP2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F33B6D2304162800F8D627 /* MienP2ViewController.xib */; };
-		B0F33B722304164A00F8D627 /* TinhP2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F33B702304164A00F8D627 /* TinhP2ViewController.swift */; };
-		B0F33B732304164A00F8D627 /* TinhP2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F33B712304164A00F8D627 /* TinhP2ViewController.xib */; };
-		B0F33B762304166B00F8D627 /* HuyenP2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F33B742304166B00F8D627 /* HuyenP2ViewController.swift */; };
-		B0F33B772304166B00F8D627 /* HuyenP2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F33B752304166B00F8D627 /* HuyenP2ViewController.xib */; };
-		B0F33B7A2304188E00F8D627 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F33B792304188E00F8D627 /* CustomCell.swift */; };
-		B0F33B7C230421B300F8D627 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F33B7B230421B300F8D627 /* CustomCell.xib */; };
+		B0F0C2D3230509A500CC1A26 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F0C2D2230509A500CC1A26 /* City.swift */; };
+		B0F0C2F8230563BA00CC1A26 /* MyCaculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F0C2F7230563BA00CC1A26 /* MyCaculatorView.swift */; };
+		B0F0C2FA230563CC00CC1A26 /* MyCaculatorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F0C2F9230563CC00CC1A26 /* MyCaculatorView.xib */; };
+		B0F521E723063E0B0085ACE8 /* Ex3P2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F521DC23063E0B0085ACE8 /* Ex3P2ViewController.xib */; };
+		B0F521E823063E0B0085ACE8 /* Ex3P2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F521DD23063E0B0085ACE8 /* Ex3P2ViewController.swift */; };
+		B0F521E923063E0B0085ACE8 /* TinhP2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F521DF23063E0B0085ACE8 /* TinhP2ViewController.swift */; };
+		B0F521EA23063E0B0085ACE8 /* TinhP2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F521E023063E0B0085ACE8 /* TinhP2ViewController.xib */; };
+		B0F521EB23063E0B0085ACE8 /* HuyenP2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F521E223063E0B0085ACE8 /* HuyenP2ViewController.swift */; };
+		B0F521EC23063E0B0085ACE8 /* HuyenP2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F521E323063E0B0085ACE8 /* HuyenP2ViewController.xib */; };
+		B0F521ED23063E0B0085ACE8 /* MienP2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F521E523063E0B0085ACE8 /* MienP2ViewController.swift */; };
+		B0F521EE23063E0B0085ACE8 /* MienP2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F521E623063E0B0085ACE8 /* MienP2ViewController.xib */; };
+		B0F521F123063E4C0085ACE8 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F521F023063E4C0085ACE8 /* CustomCell.swift */; };
+		B0F521F523063E680085ACE8 /* Tinh.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F521F223063E680085ACE8 /* Tinh.swift */; };
+		B0F521F623063E680085ACE8 /* Mien.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F521F323063E680085ACE8 /* Mien.swift */; };
+		B0F521F723063E680085ACE8 /* Huyen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F521F423063E680085ACE8 /* Huyen.swift */; };
+		B0F521F9230649490085ACE8 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F521F8230649490085ACE8 /* CustomCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,20 +86,22 @@
 		07E33E6C20DC9F1B004B6E52 /* exercises.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = exercises.plist; sourceTree = "<group>"; };
 		07E33E6F20DC9FF4004B6E52 /* DataManagement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManagement.swift; sourceTree = "<group>"; };
 		07E33E7220DCA04D004B6E52 /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
-		B0F0C2DD23055B2000CC1A26 /* City.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
-		B0F33B5D2303EB7500F8D627 /* Mien.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mien.swift; sourceTree = "<group>"; };
-		B0F33B5F2303EBA700F8D627 /* Tinh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tinh.swift; sourceTree = "<group>"; };
-		B0F33B612303EBB100F8D627 /* Huyen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Huyen.swift; sourceTree = "<group>"; };
-		B0F33B68230415C100F8D627 /* Ex3P2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex3P2ViewController.swift; sourceTree = "<group>"; };
-		B0F33B69230415C100F8D627 /* Ex3P2ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex3P2ViewController.xib; sourceTree = "<group>"; };
-		B0F33B6C2304162800F8D627 /* MienP2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MienP2ViewController.swift; sourceTree = "<group>"; };
-		B0F33B6D2304162800F8D627 /* MienP2ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MienP2ViewController.xib; sourceTree = "<group>"; };
-		B0F33B702304164A00F8D627 /* TinhP2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinhP2ViewController.swift; sourceTree = "<group>"; };
-		B0F33B712304164A00F8D627 /* TinhP2ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TinhP2ViewController.xib; sourceTree = "<group>"; };
-		B0F33B742304166B00F8D627 /* HuyenP2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HuyenP2ViewController.swift; sourceTree = "<group>"; };
-		B0F33B752304166B00F8D627 /* HuyenP2ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HuyenP2ViewController.xib; sourceTree = "<group>"; };
-		B0F33B792304188E00F8D627 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
-		B0F33B7B230421B300F8D627 /* CustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CustomCell.xib; path = ../../../../../../DuongNT/Protocol/Protocol/Views/Cells/MienCell/CustomCell.xib; sourceTree = "<group>"; };
+		B0F0C2D2230509A500CC1A26 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		B0F0C2F7230563BA00CC1A26 /* MyCaculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCaculatorView.swift; sourceTree = "<group>"; };
+		B0F0C2F9230563CC00CC1A26 /* MyCaculatorView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCaculatorView.xib; sourceTree = "<group>"; };
+		B0F521DC23063E0B0085ACE8 /* Ex3P2ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Ex3P2ViewController.xib; sourceTree = "<group>"; };
+		B0F521DD23063E0B0085ACE8 /* Ex3P2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ex3P2ViewController.swift; sourceTree = "<group>"; };
+		B0F521DF23063E0B0085ACE8 /* TinhP2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TinhP2ViewController.swift; sourceTree = "<group>"; };
+		B0F521E023063E0B0085ACE8 /* TinhP2ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TinhP2ViewController.xib; sourceTree = "<group>"; };
+		B0F521E223063E0B0085ACE8 /* HuyenP2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HuyenP2ViewController.swift; sourceTree = "<group>"; };
+		B0F521E323063E0B0085ACE8 /* HuyenP2ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HuyenP2ViewController.xib; sourceTree = "<group>"; };
+		B0F521E523063E0B0085ACE8 /* MienP2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MienP2ViewController.swift; sourceTree = "<group>"; };
+		B0F521E623063E0B0085ACE8 /* MienP2ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MienP2ViewController.xib; sourceTree = "<group>"; };
+		B0F521F023063E4C0085ACE8 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		B0F521F223063E680085ACE8 /* Tinh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tinh.swift; sourceTree = "<group>"; };
+		B0F521F323063E680085ACE8 /* Mien.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mien.swift; sourceTree = "<group>"; };
+		B0F521F423063E680085ACE8 /* Huyen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Huyen.swift; sourceTree = "<group>"; };
+		B0F521F8230649490085ACE8 /* CustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CustomCell.xib; path = ../../../../../../DuongNT/Protocol/Protocol/Views/Cells/MienCell/CustomCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +166,7 @@
 		07E33E2020DC8D60004B6E52 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B0F0C2F62305639400CC1A26 /* CustomView Ex5 */,
 				07E33E6520DC9805004B6E52 /* Cells */,
 			);
 			path = Views;
@@ -223,7 +228,7 @@
 		07E33E2F20DC8FAD004B6E52 /* Ex3 */ = {
 			isa = PBXGroup;
 			children = (
-				B0F33B632304158600F8D627 /* Part 2 */,
+				B0F521DA23063E0B0085ACE8 /* Part 2 */,
 			);
 			path = Ex3;
 			sourceTree = "<group>";
@@ -294,7 +299,7 @@
 		07E33E6520DC9805004B6E52 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				B0F33B782304187700F8D627 /* CustomCell */,
+				B0F521EF23063E4C0085ACE8 /* CustomCell */,
 				07E33E6620DC980C004B6E52 /* HomeCell */,
 			);
 			path = Cells;
@@ -329,67 +334,76 @@
 		07E33E7120DCA024004B6E52 /* Objects */ = {
 			isa = PBXGroup;
 			children = (
-				B0F0C2DD23055B2000CC1A26 /* City.swift */,
+				B0F521F423063E680085ACE8 /* Huyen.swift */,
+				B0F521F323063E680085ACE8 /* Mien.swift */,
+				B0F521F223063E680085ACE8 /* Tinh.swift */,
 				07E33E7220DCA04D004B6E52 /* Exercise.swift */,
-				B0F33B5D2303EB7500F8D627 /* Mien.swift */,
-				B0F33B5F2303EBA700F8D627 /* Tinh.swift */,
-				B0F33B612303EBB100F8D627 /* Huyen.swift */,
+				B0F0C2D2230509A500CC1A26 /* City.swift */,
 			);
 			path = Objects;
 			sourceTree = "<group>";
 		};
-		B0F33B632304158600F8D627 /* Part 2 */ = {
+		B0F0C2F62305639400CC1A26 /* CustomView Ex5 */ = {
 			isa = PBXGroup;
 			children = (
-				B0F33B672304159F00F8D627 /* Huyen */,
-				B0F33B662304159A00F8D627 /* Tinh */,
-				B0F33B652304159500F8D627 /* Mien */,
-				B0F33B642304158C00F8D627 /* Home */,
+				B0F0C2F7230563BA00CC1A26 /* MyCaculatorView.swift */,
+				B0F0C2F9230563CC00CC1A26 /* MyCaculatorView.xib */,
+			);
+			path = "CustomView Ex5";
+			sourceTree = "<group>";
+		};
+		B0F521DA23063E0B0085ACE8 /* Part 2 */ = {
+			isa = PBXGroup;
+			children = (
+				B0F521DB23063E0B0085ACE8 /* Home */,
+				B0F521DE23063E0B0085ACE8 /* Tinh */,
+				B0F521E123063E0B0085ACE8 /* Huyen */,
+				B0F521E423063E0B0085ACE8 /* Mien */,
 			);
 			path = "Part 2";
 			sourceTree = "<group>";
 		};
-		B0F33B642304158C00F8D627 /* Home */ = {
+		B0F521DB23063E0B0085ACE8 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				B0F33B68230415C100F8D627 /* Ex3P2ViewController.swift */,
-				B0F33B69230415C100F8D627 /* Ex3P2ViewController.xib */,
+				B0F521DC23063E0B0085ACE8 /* Ex3P2ViewController.xib */,
+				B0F521DD23063E0B0085ACE8 /* Ex3P2ViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
 		};
-		B0F33B652304159500F8D627 /* Mien */ = {
+		B0F521DE23063E0B0085ACE8 /* Tinh */ = {
 			isa = PBXGroup;
 			children = (
-				B0F33B6C2304162800F8D627 /* MienP2ViewController.swift */,
-				B0F33B6D2304162800F8D627 /* MienP2ViewController.xib */,
-			);
-			path = Mien;
-			sourceTree = "<group>";
-		};
-		B0F33B662304159A00F8D627 /* Tinh */ = {
-			isa = PBXGroup;
-			children = (
-				B0F33B702304164A00F8D627 /* TinhP2ViewController.swift */,
-				B0F33B712304164A00F8D627 /* TinhP2ViewController.xib */,
+				B0F521DF23063E0B0085ACE8 /* TinhP2ViewController.swift */,
+				B0F521E023063E0B0085ACE8 /* TinhP2ViewController.xib */,
 			);
 			path = Tinh;
 			sourceTree = "<group>";
 		};
-		B0F33B672304159F00F8D627 /* Huyen */ = {
+		B0F521E123063E0B0085ACE8 /* Huyen */ = {
 			isa = PBXGroup;
 			children = (
-				B0F33B742304166B00F8D627 /* HuyenP2ViewController.swift */,
-				B0F33B752304166B00F8D627 /* HuyenP2ViewController.xib */,
+				B0F521E223063E0B0085ACE8 /* HuyenP2ViewController.swift */,
+				B0F521E323063E0B0085ACE8 /* HuyenP2ViewController.xib */,
 			);
 			path = Huyen;
 			sourceTree = "<group>";
 		};
-		B0F33B782304187700F8D627 /* CustomCell */ = {
+		B0F521E423063E0B0085ACE8 /* Mien */ = {
 			isa = PBXGroup;
 			children = (
-				B0F33B7B230421B300F8D627 /* CustomCell.xib */,
-				B0F33B792304188E00F8D627 /* CustomCell.swift */,
+				B0F521E523063E0B0085ACE8 /* MienP2ViewController.swift */,
+				B0F521E623063E0B0085ACE8 /* MienP2ViewController.xib */,
+			);
+			path = Mien;
+			sourceTree = "<group>";
+		};
+		B0F521EF23063E4C0085ACE8 /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				B0F521F8230649490085ACE8 /* CustomCell.xib */,
+				B0F521F023063E4C0085ACE8 /* CustomCell.swift */,
 			);
 			path = CustomCell;
 			sourceTree = "<group>";
@@ -455,22 +469,23 @@
 			files = (
 				07E33E6A20DC9826004B6E52 /* HomeCell.xib in Resources */,
 				07E33E5620DC90DD004B6E52 /* Ex8ViewController.xib in Resources */,
-				B0F33B7C230421B300F8D627 /* CustomCell.xib in Resources */,
+				B0F0C2FA230563CC00CC1A26 /* MyCaculatorView.xib in Resources */,
 				07E33E1520DC8D36004B6E52 /* Assets.xcassets in Resources */,
 				07E33E4E20DC90C3004B6E52 /* Ex6ViewController.xib in Resources */,
 				07E33E3E20DC906B004B6E52 /* Ex2ViewController.xib in Resources */,
 				07E33E5220DC90CF004B6E52 /* Ex7ViewController.xib in Resources */,
 				07E33E5E20DC9102004B6E52 /* Ex9ViewController.xib in Resources */,
+				B0F521F9230649490085ACE8 /* CustomCell.xib in Resources */,
+				B0F521E723063E0B0085ACE8 /* Ex3P2ViewController.xib in Resources */,
+				B0F521EC23063E0B0085ACE8 /* HuyenP2ViewController.xib in Resources */,
 				07E33E2720DC8DD7004B6E52 /* HomeViewController.xib in Resources */,
 				07E33E4620DC9095004B6E52 /* Ex4ViewController.xib in Resources */,
 				07E33E6D20DC9F1B004B6E52 /* exercises.plist in Resources */,
-				B0F33B732304164A00F8D627 /* TinhP2ViewController.xib in Resources */,
+				B0F521EA23063E0B0085ACE8 /* TinhP2ViewController.xib in Resources */,
 				07E33E3A20DC9059004B6E52 /* Ex1ViewController.xib in Resources */,
-				B0F33B772304166B00F8D627 /* HuyenP2ViewController.xib in Resources */,
-				B0F33B6B230415C100F8D627 /* Ex3P2ViewController.xib in Resources */,
 				07E33E6220DC910E004B6E52 /* Ex10ViewController.xib in Resources */,
 				07E33E4A20DC90B6004B6E52 /* Ex5ViewController.xib in Resources */,
-				B0F33B6F2304162800F8D627 /* MienP2ViewController.xib in Resources */,
+				B0F521EE23063E0B0085ACE8 /* MienP2ViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -481,31 +496,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0F521F523063E680085ACE8 /* Tinh.swift in Sources */,
+				B0F521F123063E4C0085ACE8 /* CustomCell.swift in Sources */,
 				07E33E6120DC910E004B6E52 /* Ex10ViewController.swift in Sources */,
-				B0F33B5E2303EB7500F8D627 /* Mien.swift in Sources */,
 				07E33E2C20DC8E5B004B6E52 /* BaseNavigationController.swift in Sources */,
+				B0F0C2D3230509A500CC1A26 /* City.swift in Sources */,
 				07E33E4920DC90B6004B6E52 /* Ex5ViewController.swift in Sources */,
 				07E33E7320DCA04D004B6E52 /* Exercise.swift in Sources */,
+				B0F521F723063E680085ACE8 /* Huyen.swift in Sources */,
 				07E33E3920DC9059004B6E52 /* Ex1ViewController.swift in Sources */,
-				B0F0C2DE23055B2100CC1A26 /* City.swift in Sources */,
 				07E33E6920DC9826004B6E52 /* HomeCell.swift in Sources */,
 				07E33E4520DC9095004B6E52 /* Ex4ViewController.swift in Sources */,
+				B0F521EB23063E0B0085ACE8 /* HuyenP2ViewController.swift in Sources */,
 				07E33E7020DC9FF4004B6E52 /* DataManagement.swift in Sources */,
-				B0F33B6E2304162800F8D627 /* MienP2ViewController.swift in Sources */,
-				B0F33B722304164A00F8D627 /* TinhP2ViewController.swift in Sources */,
 				07E33E0E20DC8D34004B6E52 /* AppDelegate.swift in Sources */,
-				B0F33B762304166B00F8D627 /* HuyenP2ViewController.swift in Sources */,
 				07E33E4D20DC90C3004B6E52 /* Ex6ViewController.swift in Sources */,
-				B0F33B6A230415C100F8D627 /* Ex3P2ViewController.swift in Sources */,
-				B0F33B622303EBB100F8D627 /* Huyen.swift in Sources */,
 				07E33E2620DC8DD7004B6E52 /* HomeViewController.swift in Sources */,
 				07E33E5120DC90CF004B6E52 /* Ex7ViewController.swift in Sources */,
 				07E33E3D20DC906B004B6E52 /* Ex2ViewController.swift in Sources */,
+				B0F0C2F8230563BA00CC1A26 /* MyCaculatorView.swift in Sources */,
 				07E33E5520DC90DD004B6E52 /* Ex8ViewController.swift in Sources */,
-				B0F33B7A2304188E00F8D627 /* CustomCell.swift in Sources */,
 				07E33E5D20DC9102004B6E52 /* Ex9ViewController.swift in Sources */,
+				B0F521E823063E0B0085ACE8 /* Ex3P2ViewController.swift in Sources */,
+				B0F521ED23063E0B0085ACE8 /* MienP2ViewController.swift in Sources */,
 				07E33E2A20DC8E36004B6E52 /* BaseViewController.swift in Sources */,
-				B0F33B602303EBA700F8D627 /* Tinh.swift in Sources */,
+				B0F521E923063E0B0085ACE8 /* TinhP2ViewController.swift in Sources */,
+				B0F521F623063E680085ACE8 /* Mien.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
