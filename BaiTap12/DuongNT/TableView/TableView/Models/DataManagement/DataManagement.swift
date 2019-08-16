@@ -32,6 +32,18 @@ class DataManagement {
         return exercises
     }
 
+    func getAnimals(fileName: String, type: String) -> [Animal] {
+        let array = NSArray(contentsOfFile: getFileDocumentPath(fileName: fileName, type: type))
+        var animals: [Animal] = []
+        for item in array! {
+            let dict = item as! NSDictionary
+            let animal = Animal(name: dict.object(forKey: "name") as! String,
+                              descript: dict.object(forKey: "description") as! String, avatar: dict.object(forKey: "avatar") as! String)
+            animals.append(animal)
+        }
+        return animals
+    }
+
     func getUser(fileName: String, type: String) -> [User] {
         let array = NSArray(contentsOfFile: getFileDocumentPath(fileName: fileName, type: type))
         var users: [User] = []
