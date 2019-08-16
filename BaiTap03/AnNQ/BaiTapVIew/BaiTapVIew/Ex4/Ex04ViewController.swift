@@ -10,42 +10,40 @@ import UIKit
 
 struct  ButtonBackGroundColor {
     var value: String,
-    backGround: UIColor,
+    backgroundColor: UIColor,
     borderColor: UIColor,
     characterColor: UIColor
 
-    init(_ value: String, _ backGround: UIColor, _ borderColor: UIColor,_ characterColor: UIColor) {
+    init(_ value: String, _ backgroundColor: UIColor, _ borderColor: UIColor,_ characterColor: UIColor) {
         self.value = value
-        self.backGround = backGround
+        self.backgroundColor = backgroundColor
         self.borderColor = borderColor
         self.characterColor = characterColor
     }
 }
 
-extension UIColor {
-    static var blueColor: UIColor  { return UIColor(red: 0.0, green: 0.7, blue: 1.3, alpha: 1.0) }
-    static var orangeColor: UIColor { return UIColor(red: 1.0, green: 145 / 255, blue: 0.0, alpha: 1.0) }
-    static var greenColor: UIColor { return UIColor(red: 1 / 255, green: 115 / 255, blue: 1 / 255, alpha: 1.0) }
-}
+    let blueColor = UIColor(red: 0.0, green: 0.7, blue: 1.3, alpha: 1.0)
+    let orangeColor = UIColor(red: 1.0, green: 145 / 255, blue: 0.0, alpha: 1.0)
+    let greenColor = UIColor(red: 1 / 255, green: 115 / 255, blue: 1 / 255, alpha: 1.0)
 
 class Ex04ViewController: UIViewController {
     
     let buttonArray: [ButtonBackGroundColor] = [
-        ButtonBackGroundColor("1", UIColor.blueColor, UIColor.blue, UIColor.white),
-        ButtonBackGroundColor("2", UIColor.blueColor, UIColor.blue, UIColor.white),
-        ButtonBackGroundColor("3", UIColor.blueColor, UIColor.blue, UIColor.white),
+        ButtonBackGroundColor("1", blueColor, UIColor.blue, UIColor.white),
+        ButtonBackGroundColor("2", blueColor, UIColor.blue, UIColor.white),
+        ButtonBackGroundColor("3", blueColor, UIColor.blue, UIColor.white),
         ButtonBackGroundColor("+", UIColor.white, UIColor.blue, UIColor.black),
-        ButtonBackGroundColor("4", UIColor.blueColor, UIColor.blue, UIColor.white),
-        ButtonBackGroundColor("5", UIColor.blueColor, UIColor.blue, UIColor.white),
-        ButtonBackGroundColor("6", UIColor.blueColor, UIColor.blue, UIColor.white),
+        ButtonBackGroundColor("4", blueColor, UIColor.blue, UIColor.white),
+        ButtonBackGroundColor("5", blueColor, UIColor.blue, UIColor.white),
+        ButtonBackGroundColor("6", blueColor, UIColor.blue, UIColor.white),
         ButtonBackGroundColor("-", UIColor.white, UIColor.blue, UIColor.black),
-        ButtonBackGroundColor("7", UIColor.blueColor, UIColor.blue, UIColor.white),
-        ButtonBackGroundColor("8", UIColor.blueColor, UIColor.blue, UIColor.white),
-        ButtonBackGroundColor("9", UIColor.blueColor, UIColor.blue, UIColor.white),
+        ButtonBackGroundColor("7", blueColor, UIColor.blue, UIColor.white),
+        ButtonBackGroundColor("8", blueColor, UIColor.blue, UIColor.white),
+        ButtonBackGroundColor("9", blueColor, UIColor.blue, UIColor.white),
         ButtonBackGroundColor("x", UIColor.white, UIColor.blue, UIColor.black),
-        ButtonBackGroundColor("AC", UIColor.orangeColor, UIColor.orange, UIColor.white),
-        ButtonBackGroundColor("0", UIColor.blueColor, UIColor.blue, UIColor.white),
-        ButtonBackGroundColor("=", UIColor.greenColor, UIColor.blue, UIColor.white),
+        ButtonBackGroundColor("AC", orangeColor, UIColor.orange, UIColor.white),
+        ButtonBackGroundColor("0", blueColor, UIColor.blue, UIColor.white),
+        ButtonBackGroundColor("=", greenColor, UIColor.blue, UIColor.white),
         ButtonBackGroundColor("/", UIColor.white, UIColor.blue, UIColor.black),
 
     ]
@@ -57,16 +55,16 @@ class Ex04ViewController: UIViewController {
         
         let frame = CGRect(x: 30, y: 250, width: UIScreen.main.bounds.width - 55, height: 400)
         
-        show(frame: frame)
+        showCalculatorView(frame: frame)
 
         // Do any additional setup after loading the view.
     }
     
 
-    func buttonCalculatorView (frame: CGRect, buttonColor: ButtonBackGroundColor) -> UIButton {
+    func addButton(frame: CGRect, buttonColor: ButtonBackGroundColor) -> UIButton {
         
         let calculatorButton = UIButton(frame: frame)
-        calculatorButton.backgroundColor = buttonColor.backGround
+        calculatorButton.backgroundColor = buttonColor.backgroundColor
         calculatorButton.layer.borderColor = buttonColor.borderColor.cgColor
         calculatorButton.layer.borderWidth = 1
         calculatorButton.setTitle(buttonColor.value, for: .normal)
@@ -91,7 +89,7 @@ class Ex04ViewController: UIViewController {
         return screenView
     }
     
-    func show(frame: CGRect) {
+    func showCalculatorView(frame: CGRect) {
         let screenView = screenComputeView(frame: frame)
         let buttonView = UIView(frame: frame)
         view.addSubview(screenView)
@@ -100,7 +98,7 @@ class Ex04ViewController: UIViewController {
         var y = 0
         for val in buttonArray {
             let buttonSubViewFrame = CGRect(x: x, y: y, width: edge, height: edge)
-            let calculatorButton = buttonCalculatorView(frame: buttonSubViewFrame, buttonColor: val)
+            let calculatorButton = addButton(frame: buttonSubViewFrame, buttonColor: val)
             buttonView.addSubview(calculatorButton)
             x += 100
             if x >= Int((buttonView.bounds.width)) {
