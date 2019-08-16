@@ -45,6 +45,12 @@
 		1C76AFBE23064DD400A06468 /* AnimalInforCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C76AFBC23064DD400A06468 /* AnimalInforCell.xib */; };
 		1C76AFC22306547400A06468 /* AnimalNewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C76AFC02306547400A06468 /* AnimalNewCell.swift */; };
 		1C76AFC32306547400A06468 /* AnimalNewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C76AFC12306547400A06468 /* AnimalNewCell.xib */; };
+		1C76AFC82306A6BB00A06468 /* Ex11ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C76AFC62306A6BB00A06468 /* Ex11ViewController.swift */; };
+		1C76AFC92306A6BB00A06468 /* Ex11ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C76AFC72306A6BB00A06468 /* Ex11ViewController.xib */; };
+		1C76AFCC2306A6CD00A06468 /* Ex12ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C76AFCA2306A6CD00A06468 /* Ex12ViewController.swift */; };
+		1C76AFCD2306A6CD00A06468 /* Ex12ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C76AFCB2306A6CD00A06468 /* Ex12ViewController.xib */; };
+		1C76AFD12306A78000A06468 /* Ex11Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C76AFCF2306A78000A06468 /* Ex11Cell.swift */; };
+		1C76AFD22306A78000A06468 /* Ex11Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C76AFD02306A78000A06468 /* Ex11Cell.xib */; };
 		1CAF8C0623059CB4000B96E6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAF8C0523059CB4000B96E6 /* User.swift */; };
 		1CAF8C0C23059DD8000B96E6 /* nameList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1CAF8C0B23059DD8000B96E6 /* nameList.plist */; };
 		1CAF8C1023059FAD000B96E6 /* Ex3DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAF8C0E23059FAD000B96E6 /* Ex3DetailViewController.swift */; };
@@ -96,6 +102,12 @@
 		1C76AFBC23064DD400A06468 /* AnimalInforCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnimalInforCell.xib; sourceTree = "<group>"; };
 		1C76AFC02306547400A06468 /* AnimalNewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalNewCell.swift; sourceTree = "<group>"; };
 		1C76AFC12306547400A06468 /* AnimalNewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnimalNewCell.xib; sourceTree = "<group>"; };
+		1C76AFC62306A6BB00A06468 /* Ex11ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex11ViewController.swift; sourceTree = "<group>"; };
+		1C76AFC72306A6BB00A06468 /* Ex11ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex11ViewController.xib; sourceTree = "<group>"; };
+		1C76AFCA2306A6CD00A06468 /* Ex12ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex12ViewController.swift; sourceTree = "<group>"; };
+		1C76AFCB2306A6CD00A06468 /* Ex12ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex12ViewController.xib; sourceTree = "<group>"; };
+		1C76AFCF2306A78000A06468 /* Ex11Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex11Cell.swift; sourceTree = "<group>"; };
+		1C76AFD02306A78000A06468 /* Ex11Cell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex11Cell.xib; sourceTree = "<group>"; };
 		1CAF8C0523059CB4000B96E6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		1CAF8C0B23059DD8000B96E6 /* nameList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = nameList.plist; sourceTree = "<group>"; };
 		1CAF8C0E23059FAD000B96E6 /* Ex3DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ex3DetailViewController.swift; sourceTree = "<group>"; };
@@ -160,6 +172,8 @@
 				07E33E3420DC9035004B6E52 /* Ex8 */,
 				07E33E3520DC903C004B6E52 /* Ex9 */,
 				07E33E3620DC9043004B6E52 /* Ex10 */,
+				1C76AFC42306A0DA00A06468 /* Ex11 */,
+				1C76AFC52306A69300A06468 /* Ex12 */,
 				07E33E2320DC8DC0004B6E52 /* Home */,
 			);
 			path = Controllers;
@@ -303,6 +317,7 @@
 		07E33E6520DC9805004B6E52 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				1C76AFCE2306A75500A06468 /* Ex11 */,
 				1C76AFBF2306544300A06468 /* Ex9 */,
 				1C76AFBA23064DB300A06468 /* Ex8 */,
 				1CAF8C182305AC79000B96E6 /* Ex7 */,
@@ -382,6 +397,33 @@
 				1C76AFC12306547400A06468 /* AnimalNewCell.xib */,
 			);
 			path = Ex9;
+			sourceTree = "<group>";
+		};
+		1C76AFC42306A0DA00A06468 /* Ex11 */ = {
+			isa = PBXGroup;
+			children = (
+				1C76AFC62306A6BB00A06468 /* Ex11ViewController.swift */,
+				1C76AFC72306A6BB00A06468 /* Ex11ViewController.xib */,
+			);
+			path = Ex11;
+			sourceTree = "<group>";
+		};
+		1C76AFC52306A69300A06468 /* Ex12 */ = {
+			isa = PBXGroup;
+			children = (
+				1C76AFCA2306A6CD00A06468 /* Ex12ViewController.swift */,
+				1C76AFCB2306A6CD00A06468 /* Ex12ViewController.xib */,
+			);
+			path = Ex12;
+			sourceTree = "<group>";
+		};
+		1C76AFCE2306A75500A06468 /* Ex11 */ = {
+			isa = PBXGroup;
+			children = (
+				1C76AFCF2306A78000A06468 /* Ex11Cell.swift */,
+				1C76AFD02306A78000A06468 /* Ex11Cell.xib */,
+			);
+			path = Ex11;
 			sourceTree = "<group>";
 		};
 		1CAF8C0423059CA5000B96E6 /* Ex2 */ = {
@@ -503,10 +545,13 @@
 				07E33E2720DC8DD7004B6E52 /* HomeViewController.xib in Resources */,
 				07E33E4620DC9095004B6E52 /* Ex4ViewController.xib in Resources */,
 				07E33E6D20DC9F1B004B6E52 /* exercises.plist in Resources */,
+				1C76AFC92306A6BB00A06468 /* Ex11ViewController.xib in Resources */,
 				1C76AFBE23064DD400A06468 /* AnimalInforCell.xib in Resources */,
 				1C76AFC32306547400A06468 /* AnimalNewCell.xib in Resources */,
 				07E33E3A20DC9059004B6E52 /* Ex1ViewController.xib in Resources */,
 				07E33E6220DC910E004B6E52 /* Ex10ViewController.xib in Resources */,
+				1C76AFCD2306A6CD00A06468 /* Ex12ViewController.xib in Resources */,
+				1C76AFD22306A78000A06468 /* Ex11Cell.xib in Resources */,
 				07E33E4A20DC90B6004B6E52 /* Ex5ViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -525,10 +570,12 @@
 				07E33E3920DC9059004B6E52 /* Ex1ViewController.swift in Sources */,
 				07E33E6920DC9826004B6E52 /* HomeCell.swift in Sources */,
 				07E33E4520DC9095004B6E52 /* Ex4ViewController.swift in Sources */,
+				1C76AFC82306A6BB00A06468 /* Ex11ViewController.swift in Sources */,
 				07E33E7020DC9FF4004B6E52 /* DataManagement.swift in Sources */,
 				07E33E0E20DC8D34004B6E52 /* AppDelegate.swift in Sources */,
 				07E33E4120DC907B004B6E52 /* Ex3ViewController.swift in Sources */,
 				1C76AFC22306547400A06468 /* AnimalNewCell.swift in Sources */,
+				1C76AFCC2306A6CD00A06468 /* Ex12ViewController.swift in Sources */,
 				1C76AFBD23064DD400A06468 /* AnimalInforCell.swift in Sources */,
 				07E33E4D20DC90C3004B6E52 /* Ex6ViewController.swift in Sources */,
 				1C76AFB923064CE900A06468 /* Animal.swift in Sources */,
@@ -538,6 +585,7 @@
 				1CAF8C1023059FAD000B96E6 /* Ex3DetailViewController.swift in Sources */,
 				1CAF8C0623059CB4000B96E6 /* User.swift in Sources */,
 				1CAF8C1523059FDD000B96E6 /* Ex5DetailViewController.swift in Sources */,
+				1C76AFD12306A78000A06468 /* Ex11Cell.swift in Sources */,
 				07E33E5520DC90DD004B6E52 /* Ex8ViewController.swift in Sources */,
 				07E33E5D20DC9102004B6E52 /* Ex9ViewController.swift in Sources */,
 				1CAF8C1B2305ACE0000B96E6 /* Ex7TableViewCell.swift in Sources */,
