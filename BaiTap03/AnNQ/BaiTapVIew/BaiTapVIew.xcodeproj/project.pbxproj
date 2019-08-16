@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D11E89F9230411A400D5628B /* Ex05ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11E89F8230411A400D5628B /* Ex05ViewController.swift */; };
 		D1FCB6E5230167B50056619B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FCB6E4230167B50056619B /* AppDelegate.swift */; };
 		D1FCB6EC230167B70056619B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1FCB6EB230167B70056619B /* Assets.xcassets */; };
 		D1FCB6EF230167B70056619B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1FCB6ED230167B70056619B /* LaunchScreen.storyboard */; };
@@ -14,9 +15,11 @@
 		D1FCB6FC230169530056619B /* avatar.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D1FCB6FB230169530056619B /* avatar.jpg */; };
 		D1FCB70023016A4C0056619B /* Ex02ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FCB6FE23016A4C0056619B /* Ex02ViewController.swift */; };
 		D1FCB704230252FB0056619B /* Ex03ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FCB703230252FB0056619B /* Ex03ViewController.swift */; };
+		D1FCB70F2302AED80056619B /* Ex04ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FCB70E2302AED80056619B /* Ex04ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D11E89F8230411A400D5628B /* Ex05ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Ex05ViewController.swift; path = Ex5/Ex05ViewController.swift; sourceTree = "<group>"; };
 		D1FCB6E1230167B50056619B /* BaiTapVIew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaiTapVIew.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1FCB6E4230167B50056619B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1FCB6EB230167B70056619B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -26,6 +29,7 @@
 		D1FCB6FB230169530056619B /* avatar.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = avatar.jpg; sourceTree = "<group>"; };
 		D1FCB6FE23016A4C0056619B /* Ex02ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex02ViewController.swift; sourceTree = "<group>"; };
 		D1FCB703230252FB0056619B /* Ex03ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex03ViewController.swift; sourceTree = "<group>"; };
+		D1FCB70E2302AED80056619B /* Ex04ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex04ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +71,7 @@
 				D1FCB702230252D20056619B /* Ex3 */,
 				D1FCB6FD23016A120056619B /* Ex2 */,
 				D1FCB6F6230167E30056619B /* Ex1 */,
+				D11E89F8230411A400D5628B /* Ex05ViewController.swift */,
 			);
 			path = BaiTapVIew;
 			sourceTree = "<group>";
@@ -98,6 +103,7 @@
 		D1FCB70D23027BF30056619B /* Ex4 */ = {
 			isa = PBXGroup;
 			children = (
+				D1FCB70E2302AED80056619B /* Ex04ViewController.swift */,
 			);
 			path = Ex4;
 			sourceTree = "<group>";
@@ -173,10 +179,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D11E89F9230411A400D5628B /* Ex05ViewController.swift in Sources */,
 				D1FCB704230252FB0056619B /* Ex03ViewController.swift in Sources */,
 				D1FCB70023016A4C0056619B /* Ex02ViewController.swift in Sources */,
 				D1FCB6E5230167B50056619B /* AppDelegate.swift in Sources */,
 				D1FCB6FA230168FB0056619B /* Ex01ViewController.swift in Sources */,
+				D1FCB70F2302AED80056619B /* Ex04ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

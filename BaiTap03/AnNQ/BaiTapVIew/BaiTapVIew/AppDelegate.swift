@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.backgroundColor = .white
         window?.makeKeyAndVisible()
         
-        let homeViewController = Ex03ViewController()
+        let homeViewController = Ex05ViewController()
         window?.rootViewController = homeViewController
         return true
     }
