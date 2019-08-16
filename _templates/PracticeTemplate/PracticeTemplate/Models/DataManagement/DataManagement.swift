@@ -21,7 +21,7 @@ class DataManagement {
     
     func getExercises(fileName: String, type: String) -> [Exercise] {
         let array = NSArray(contentsOfFile: getFileDocumentPath(fileName: fileName, type: type))
-        var exercises: [Exercise] = []
+        var exercises: [Exercise] = [] 
         for item in array! {
             let dict = item as! NSDictionary
             let ex = Exercise(name: dict.object(forKey: "name") as! String,
