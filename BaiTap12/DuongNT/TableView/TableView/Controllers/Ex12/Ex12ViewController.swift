@@ -10,8 +10,11 @@ import UIKit
 
 class Ex12ViewController: BaseViewController {
 
+    @IBOutlet weak var tableView: UITableView!
+
     // MARK: - Properties
     var exercise: Exercise?
+    private var users:[User] = []
 
     // MARK: - Life Cicle
     override func viewDidLoad() {
@@ -26,9 +29,79 @@ class Ex12ViewController: BaseViewController {
     override func setupUI() {
         super.setupUI()
         self.title = exercise?.name
+        turnOffEditingMode()
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "reuseIdentifier")
+        tableView.dataSource = self
+        tableView.delegate = self
     }
 
     override func setupData() {
         super.setupData()
+        users = DataManagement.share.getUser(fileName: "nameList", type: "plist")
+    }
+
+    @objc func turnOffEditingMode() {
+        tableView.isEditing = false
+        let editButton = UIBarButtonItem(title: "Edit", style: .plain, target: self, action: #selector(turnOnEditingMode))
+        let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addRow))
+        navigationItem.rightBarButtonItems = [editButton, addButton]
+    }
+
+    @objc func turnOnEditingMode() {
+        tableView.isEditing = true
+        let doneButton = UIBarButtonItem(title: "Done", style: .done, target: self, action: #selector(turnOffEditingMode))
+        navigationItem.rightBarButtonItem = doneButton
+    }
+
+    @objc func addRow() {
+        users.insert(User(name: "New Name"), at: 0)
+        tableView.reloadData()
+    }
+}
+// MARK: - Extensions
+extension Ex12ViewController: UITableViewDelegate, UITableViewDataSource {
+
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier")
+        let user = users[indexPath.row]
+        cell?.textLabel?.text = user.name
+        return cell!
+    }
+
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        switch editingStyle {
+        case .none:
+            return
+        case .delete:
+            users.remove(at: indexPath.row)
+            tableView.reloadData()
+        case .insert:
+            print("insert ne")
+        }
+    }
+
+    func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
+        let movedObject =  users[sourceIndexPath.row]
+        users.remove(at: sourceIndexPath.row)
+        users.insert(movedObject, at: destinationIndexPath.row)
+    }
+
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        cell.layer.transform = CATransform3DMakeScale(0.1,0.1,1)
+        UIView.animate(withDuration: 0.5, animations: {
+            cell.layer.transform = CATransform3DMakeScale(1.05,1.05,1)
+        },completion: { finished in
+            UIView.animate(withDuration: 0.5, animations: {
+                cell.layer.transform = CATransform3DMakeScale(1,1,1)
+            })
+        })
     }
 }
