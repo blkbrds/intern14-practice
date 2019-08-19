@@ -10,7 +10,7 @@ import UIKit
 
 class Ex2ViewController: BaseViewController {
     @IBOutlet private weak var tableView: UITableView!
-    var ex2: [Ex1Name] = []
+    var ex2s: [Ex1Name] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,7 +25,7 @@ class Ex2ViewController: BaseViewController {
     }
     
     override func setupData() {
-        ex2 = DataManagement.share.getName(fileName: "ex2", type: "plist")
+        ex2s = DataManagement.share.getName(fileName: "ex2", type: "plist")
     }
 }
 
@@ -36,12 +36,12 @@ extension Ex2ViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.ex2.count
+        return self.ex2s.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as? ExCell
-        let president = ex2[indexPath.row]
+        let president = ex2s[indexPath.row]
         cell?.nameLabel.text = president.name
         
         return cell!

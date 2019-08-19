@@ -42,6 +42,8 @@
 		B0F6D582230A9F60002BEF87 /* ExCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F6D580230A9F60002BEF87 /* ExCell.swift */; };
 		B0F6D583230A9F60002BEF87 /* ExCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F6D581230A9F60002BEF87 /* ExCell.xib */; };
 		B0F6D586230AA2AF002BEF87 /* ex2.plist in Resources */ = {isa = PBXBuildFile; fileRef = B0F6D585230AA2AF002BEF87 /* ex2.plist */; };
+		B0F6D58A230AAB6F002BEF87 /* PresidentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F6D588230AAB6F002BEF87 /* PresidentViewController.swift */; };
+		B0F6D58B230AAB6F002BEF87 /* PresidentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F6D589230AAB6F002BEF87 /* PresidentViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +84,8 @@
 		B0F6D580230A9F60002BEF87 /* ExCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExCell.swift; sourceTree = "<group>"; };
 		B0F6D581230A9F60002BEF87 /* ExCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExCell.xib; sourceTree = "<group>"; };
 		B0F6D585230AA2AF002BEF87 /* ex2.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ex2.plist; sourceTree = "<group>"; };
+		B0F6D588230AAB6F002BEF87 /* PresidentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresidentViewController.swift; sourceTree = "<group>"; };
+		B0F6D589230AAB6F002BEF87 /* PresidentViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PresidentViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +212,7 @@
 		07E33E2F20DC8FAD004B6E52 /* Ex3 */ = {
 			isa = PBXGroup;
 			children = (
+				B0F6D587230AAB4E002BEF87 /* President */,
 				07E33E3F20DC907B004B6E52 /* Ex3ViewController.swift */,
 				07E33E4020DC907B004B6E52 /* Ex3ViewController.xib */,
 			);
@@ -346,6 +351,15 @@
 			path = Ex2;
 			sourceTree = "<group>";
 		};
+		B0F6D587230AAB4E002BEF87 /* President */ = {
+			isa = PBXGroup;
+			children = (
+				B0F6D588230AAB6F002BEF87 /* PresidentViewController.swift */,
+				B0F6D589230AAB6F002BEF87 /* PresidentViewController.xib */,
+			);
+			path = President;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -416,6 +430,7 @@
 				07E33E5220DC90CF004B6E52 /* Ex7ViewController.xib in Resources */,
 				07E33E5E20DC9102004B6E52 /* Ex9ViewController.xib in Resources */,
 				07E33E2720DC8DD7004B6E52 /* HomeViewController.xib in Resources */,
+				B0F6D58B230AAB6F002BEF87 /* PresidentViewController.xib in Resources */,
 				07E33E4620DC9095004B6E52 /* Ex4ViewController.xib in Resources */,
 				07E33E6D20DC9F1B004B6E52 /* exercises.plist in Resources */,
 				07E33E3A20DC9059004B6E52 /* Ex1ViewController.xib in Resources */,
@@ -440,6 +455,7 @@
 				B0F6D582230A9F60002BEF87 /* ExCell.swift in Sources */,
 				07E33E4520DC9095004B6E52 /* Ex4ViewController.swift in Sources */,
 				07E33E7020DC9FF4004B6E52 /* DataManagement.swift in Sources */,
+				B0F6D58A230AAB6F002BEF87 /* PresidentViewController.swift in Sources */,
 				07E33E0E20DC8D34004B6E52 /* AppDelegate.swift in Sources */,
 				07E33E4120DC907B004B6E52 /* Ex3ViewController.swift in Sources */,
 				07E33E4D20DC90C3004B6E52 /* Ex6ViewController.swift in Sources */,
