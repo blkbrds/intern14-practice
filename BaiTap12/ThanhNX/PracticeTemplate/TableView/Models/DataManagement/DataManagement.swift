@@ -31,6 +31,17 @@ class DataManagement {
         return exercises
     }
     
+    func getName(fileName: String, type: String) -> [Ex1Name] {
+        let array = NSArray(contentsOfFile: getFileDocumentPath(fileName: fileName, type: type))
+        var names: [Ex1Name] = []
+        for item in array! {
+            let dict = item as! NSDictionary
+            let ex = Ex1Name(name: dict.object(forKey: "name") as! String)
+            names.append(ex)
+        }
+        return names
+    }
+    
     // MARK: - private function
     func getFileDocumentPath(fileName: String, type: String) -> String {
         return (Bundle.main.path(forResource: fileName, ofType: type)) ?? ""

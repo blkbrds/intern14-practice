@@ -41,6 +41,7 @@
 		B0F6D57E230A9E44002BEF87 /* Ex1Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F6D57D230A9E44002BEF87 /* Ex1Name.swift */; };
 		B0F6D582230A9F60002BEF87 /* ExCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F6D580230A9F60002BEF87 /* ExCell.swift */; };
 		B0F6D583230A9F60002BEF87 /* ExCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F6D581230A9F60002BEF87 /* ExCell.xib */; };
+		B0F6D586230AA2AF002BEF87 /* ex2.plist in Resources */ = {isa = PBXBuildFile; fileRef = B0F6D585230AA2AF002BEF87 /* ex2.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +81,7 @@
 		B0F6D57D230A9E44002BEF87 /* Ex1Name.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex1Name.swift; sourceTree = "<group>"; };
 		B0F6D580230A9F60002BEF87 /* ExCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExCell.swift; sourceTree = "<group>"; };
 		B0F6D581230A9F60002BEF87 /* ExCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExCell.xib; sourceTree = "<group>"; };
+		B0F6D585230AA2AF002BEF87 /* ex2.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ex2.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -296,6 +298,7 @@
 		07E33E6B20DC9EC4004B6E52 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B0F6D584230AA297002BEF87 /* Ex2 */,
 				07E33E1420DC8D36004B6E52 /* Assets.xcassets */,
 				07E33E6C20DC9F1B004B6E52 /* exercises.plist */,
 			);
@@ -333,6 +336,14 @@
 				B0F6D581230A9F60002BEF87 /* ExCell.xib */,
 			);
 			path = ExCell;
+			sourceTree = "<group>";
+		};
+		B0F6D584230AA297002BEF87 /* Ex2 */ = {
+			isa = PBXGroup;
+			children = (
+				B0F6D585230AA2AF002BEF87 /* ex2.plist */,
+			);
+			path = Ex2;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -396,6 +407,7 @@
 			files = (
 				07E33E6A20DC9826004B6E52 /* HomeCell.xib in Resources */,
 				07E33E5620DC90DD004B6E52 /* Ex8ViewController.xib in Resources */,
+				B0F6D586230AA2AF002BEF87 /* ex2.plist in Resources */,
 				07E33E4220DC907B004B6E52 /* Ex3ViewController.xib in Resources */,
 				B0F6D583230A9F60002BEF87 /* ExCell.xib in Resources */,
 				07E33E1520DC8D36004B6E52 /* Assets.xcassets in Resources */,

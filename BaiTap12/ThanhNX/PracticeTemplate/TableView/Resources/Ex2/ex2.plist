@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>George Washington</string>
+	</dict>
+    <dict>
+        <key>name</key>
+        <string>John Adams</string>
+    </dict>
+    <dict>
+        <key>name</key>
+        <string>Thomas Jefferson</string>
+    </dict>
+    <dict>
+        <key>name</key>
+        <string>James Madison</string>
+    </dict>
+    <dict>
+        <key>name</key>
+        <string>James Monroe</string>
+    </dict>
+    <dict>
+        <key>name</key>
+        <string>Abraham Lincoln</string>
+    </dict>
+    <dict>
+        <key>name</key>
+        <string>Andrew Johnson</string>
+    </dict>
+    <dict>
+        <key>name</key>
+        <string>Grover Cleveland</string>
+    </dict>
+    <dict>
+        <key>name</key>
+        <string>Franklin D. Roosevelt</string>
+    </dict>
+    <dict>
+        <key>name</key>
+        <string>John F. Kennedy</string>
+    </dict>
+    <dict>
+        <key>name</key>
+        <string>George H. Bush</string>
+    </dict>
+    <dict>
+        <key>name</key>
+        <string>George W. Bush</string>
+    </dict>
+    <dict>
+        <key>name</key>
+        <string>Barack Obama</string>
+    </dict>
+    <dict>
+        <key>name</key>
+        <string>Donald Trump</string>
+    </dict>
+</array>
+</plist>
