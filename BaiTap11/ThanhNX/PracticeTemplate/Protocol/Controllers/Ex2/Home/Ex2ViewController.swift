@@ -50,7 +50,7 @@ final class Ex2ViewController: BaseViewController {
 }
 
 extension Ex2ViewController: UserViewDelegate {
-    func userView(_ view: UserView, needFor action: UserView.Action, index: Int) {
+    func view(_ view: UserView, needperformAction action: UserView.Action, index: Int) {
         switch action {
         case .disSelected:
             let detailVC = ProfileViewController()
@@ -66,10 +66,11 @@ extension Ex2ViewController: ProfileViewControllerDelegate {
     func detailView(_ view: ProfileViewController, index: Int, avatar: Avatar) {
         for view in imageScrollView.subviews {
             if view.tag == index {
-                let userView = view as! UserView
-                userView.avatarImageView.image = UIImage(named: users[index].imageName)
-                userView.nameLabel.text = users[index].name
-                break
+                if let userView = view as? UserView {                    
+                    userView.avatarImageView.image = UIImage(named: users[index].imageName)
+                    userView.nameLabel.text = users[index].name
+                    break
+                }
             }
         }
     }

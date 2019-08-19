@@ -9,7 +9,7 @@
 import UIKit
 
 protocol UserViewDelegate: class {
-    func userView(_ view: UserView, needFor action: UserView.Action, index: Int)
+    func view(_ view: UserView, needperformAction action: UserView.Action, index: Int)
 }
 
 class UserView: UIView {
@@ -26,7 +26,7 @@ class UserView: UIView {
     
     @IBAction private func chooseButtonTouchUpInside(_ sender: Any) {
         if let delegate = delegate {            
-            delegate.userView(self, needFor: .disSelected, index: index)
+            delegate.view(self, needperformAction: .disSelected, index: index)
         }
     }
 }
