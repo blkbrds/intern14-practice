@@ -12,6 +12,8 @@
 		D17E8A9C2306A06000D67B94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D17E8A9A2306A06000D67B94 /* LaunchScreen.storyboard */; };
 		D17E8AA82306A18B00D67B94 /* Ex01ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17E8AA62306A18B00D67B94 /* Ex01ViewController.swift */; };
 		D17E8AA92306A18B00D67B94 /* Ex01ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D17E8AA72306A18B00D67B94 /* Ex01ViewController.xib */; };
+		D17E8AAF2306B7F900D67B94 /* Ex02ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17E8AAD2306B7F900D67B94 /* Ex02ViewController.swift */; };
+		D17E8AB02306B7F900D67B94 /* Ex02ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D17E8AAE2306B7F900D67B94 /* Ex02ViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		D17E8A9D2306A06000D67B94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D17E8AA62306A18B00D67B94 /* Ex01ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex01ViewController.swift; sourceTree = "<group>"; };
 		D17E8AA72306A18B00D67B94 /* Ex01ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex01ViewController.xib; sourceTree = "<group>"; };
+		D17E8AAD2306B7F900D67B94 /* Ex02ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex02ViewController.swift; sourceTree = "<group>"; };
+		D17E8AAE2306B7F900D67B94 /* Ex02ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex02ViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,7 @@
 				D17E8A9A2306A06000D67B94 /* LaunchScreen.storyboard */,
 				D17E8A9D2306A06000D67B94 /* Info.plist */,
 				D17E8AA32306A14700D67B94 /* Ex01 */,
+				D17E8AAC2306B7DB00D67B94 /* Ex02 */,
 			);
 			path = "Baitap-Outlet-Action";
 			sourceTree = "<group>";
@@ -70,6 +75,15 @@
 				D17E8AA72306A18B00D67B94 /* Ex01ViewController.xib */,
 			);
 			path = Ex01;
+			sourceTree = "<group>";
+		};
+		D17E8AAC2306B7DB00D67B94 /* Ex02 */ = {
+			isa = PBXGroup;
+			children = (
+				D17E8AAD2306B7F900D67B94 /* Ex02ViewController.swift */,
+				D17E8AAE2306B7F900D67B94 /* Ex02ViewController.xib */,
+			);
+			path = Ex02;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D17E8AA92306A18B00D67B94 /* Ex01ViewController.xib in Resources */,
+				D17E8AB02306B7F900D67B94 /* Ex02ViewController.xib in Resources */,
 				D17E8A9C2306A06000D67B94 /* LaunchScreen.storyboard in Resources */,
 				D17E8A992306A06000D67B94 /* Assets.xcassets in Resources */,
 			);
@@ -144,6 +159,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D17E8A922306A05C00D67B94 /* AppDelegate.swift in Sources */,
+				D17E8AAF2306B7F900D67B94 /* Ex02ViewController.swift in Sources */,
 				D17E8AA82306A18B00D67B94 /* Ex01ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
