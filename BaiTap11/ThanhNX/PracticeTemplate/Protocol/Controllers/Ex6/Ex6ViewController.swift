@@ -57,7 +57,7 @@ class Ex6ViewController: BaseViewController {
         }
     }
     
-    func drawLines(fromPoint: CGPoint, toPoint: CGPoint) {
+    private func drawLines(fromPoint: CGPoint, toPoint: CGPoint) {
         UIGraphicsBeginImageContext(imageDrawView.frame.size)
         imageDrawView.image?.draw(in: CGRect(x: 0, y: 0, width: imageDrawView.frame.width, height: imageDrawView.frame.height))
         let context = UIGraphicsGetCurrentContext()
@@ -72,15 +72,15 @@ class Ex6ViewController: BaseViewController {
         UIGraphicsEndImageContext()
     }
     
-    func saveImage() {
+    private func saveImage() {
         guard let selectedImage = imageDrawView.image else {
             print("Image not found!")
             return
         }
-        UIImageWriteToSavedPhotosAlbum(selectedImage, self, #selector(image(_:didFinishSavingWithError:contextInfo:)), nil)
+        UIImageWriteToSavedPhotosAlbum(selectedImage, self, #selector(checkSave(_:didFinishSavingWithError:contextInfo:)), nil)
     }
     
-    @objc func image(_ image: UIImage, didFinishSavingWithError error: Error?, contextInfo: UnsafeRawPointer) {
+    @objc private func checkSave(_ image: UIImage, didFinishSavingWithError error: Error?, contextInfo: UnsafeRawPointer) {
         if let error = error {
             print(error.localizedDescription)
         } else {
@@ -88,11 +88,11 @@ class Ex6ViewController: BaseViewController {
         }
     }
     
-    @objc func saveButtonDidClick() {
+    @objc private func saveButtonDidClick() {
         saveImage()
     }
     
-    @objc func settingsButtonDidClick() {
+    @objc private func settingsButtonDidClick() {
         let vc = SettingsViewController()
         vc.delegate = self
         navigationController?.pushViewController(vc, animated: true)
@@ -100,12 +100,7 @@ class Ex6ViewController: BaseViewController {
 }
 
 //MARK: Delegate
-extension Ex6ViewController: SettingsViewControllerDelegate {
-    func settingView(_ view: SettingsViewController, image: UIImageView?) {
-        guard let clearImage = image else { return }
-        imageDrawView.image = clearImage.image
-    }
-    
+extension Ex6ViewController: SettingsViewControllerDelegate {    
     func settingView(_ view: SettingsViewController, needPerformAction action: SettingsViewController.Action, color: UIColor?) {
         switch action {
         case .getColor:
