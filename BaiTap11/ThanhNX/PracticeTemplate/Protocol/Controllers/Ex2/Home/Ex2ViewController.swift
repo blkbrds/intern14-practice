@@ -50,7 +50,7 @@ final class Ex2ViewController: BaseViewController {
 }
 
 extension Ex2ViewController: UserViewDelegate {
-    func view(_ view: UserView, needperformAction action: UserView.Action, index: Int) {
+    func userView(_ view: UserView, needperformAction action: UserView.Action, index: Int) {
         switch action {
         case .disSelected:
             let detailVC = ProfileViewController()
