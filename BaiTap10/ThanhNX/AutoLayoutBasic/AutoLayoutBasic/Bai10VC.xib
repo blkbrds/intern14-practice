@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Bai10VC" customModule="AutoLayoutBasic" customModuleProvider="target">
+            <connections>
+                <outlet property="heightLayoutCamDo" destination="zuA-6A-OPX" id="cBL-4m-7Tn"/>
+                <outlet property="heigthLayoutDoHong" destination="C5q-TU-cL3" id="f7p-rx-Zcg"/>
+                <outlet property="heigthLayoutHongTim" destination="lTT-Ww-OxN" id="6Wi-rd-Fv9"/>
+                <outlet property="heigthLayoutTimCam" destination="Uia-o9-yWK" id="Gc8-1H-1z6"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="widthLayoutCamDo" destination="amY-Ot-IJG" id="hGM-gK-XEv"/>
+                <outlet property="widthLayoutDoHong" destination="BQa-Oq-6XM" id="UbS-Wh-2vD"/>
+                <outlet property="widthLayoutHongTim" destination="Eiw-Dx-SIB" id="21V-H7-ery"/>
+                <outlet property="widthLayoutTimCam" destination="xoU-Ct-Uzb" id="zbK-Bp-2g6"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mf5-hO-5tP" userLabel="do">
+                    <rect key="frame" x="148.66666666666666" y="70" width="116.66666666666666" height="116.66666666666669"/>
+                    <color key="backgroundColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Mf5-hO-5tP" secondAttribute="height" multiplier="1:1" id="LlF-gk-dhE"/>
+                    </constraints>
+                    <connections>
+                        <action selector="buttonsTouchUpInside:" destination="-1" eventType="touchUpInside" id="vvt-lf-ael"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kHh-EF-xYb" userLabel="hong">
+                    <rect key="frame" x="148.66666666666666" y="236.66666666666666" width="116.66666666666666" height="116.33333333333334"/>
+                    <color key="backgroundColor" red="0.88696813409999997" green="0.38061481190000002" blue="0.37718805750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="kHh-EF-xYb" secondAttribute="height" id="9p5-ox-7vN"/>
+                    </constraints>
+                    <state key="normal">
+                        <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonsTouchUpInside:" destination="-1" eventType="touchUpInside" id="E45-yA-rQb"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1FM-Rp-PBQ" userLabel="tim">
+                    <rect key="frame" x="148.66666666666666" y="403" width="116.66666666666666" height="116.66666666666663"/>
+                    <color key="backgroundColor" red="0.57919406890000003" green="0.1280144453" blue="0.57268613580000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="1FM-Rp-PBQ" secondAttribute="height" id="98L-Ig-Bnj"/>
+                    </constraints>
+                    <connections>
+                        <action selector="buttonsTouchUpInside:" destination="-1" eventType="touchUpInside" id="mly-wG-u60"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="isp-1A-nLv" userLabel="cam">
+                    <rect key="frame" x="148.66666666666666" y="569.66666666666663" width="116.66666666666666" height="116.33333333333337"/>
+                    <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="isp-1A-nLv" secondAttribute="height" id="E2L-u3-syv"/>
+                    </constraints>
+                    <connections>
+                        <action selector="buttonsTouchUpInside:" destination="-1" eventType="touchUpInside" id="oRZ-7t-4d0"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Mf5-hO-5tP" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="4vE-ND-7SJ"/>
+                <constraint firstItem="Mf5-hO-5tP" firstAttribute="width" secondItem="kHh-EF-xYb" secondAttribute="width" priority="750" id="BQa-Oq-6XM"/>
+                <constraint firstItem="Mf5-hO-5tP" firstAttribute="height" secondItem="kHh-EF-xYb" secondAttribute="height" multiplier="2" priority="250" id="C5q-TU-cL3"/>
+                <constraint firstItem="1FM-Rp-PBQ" firstAttribute="top" secondItem="kHh-EF-xYb" secondAttribute="bottom" constant="50" id="CQ9-ge-qNx"/>
+                <constraint firstItem="kHh-EF-xYb" firstAttribute="width" secondItem="1FM-Rp-PBQ" secondAttribute="width" priority="750" id="Eiw-Dx-SIB"/>
+                <constraint firstItem="kHh-EF-xYb" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="I9a-Bn-Fgp"/>
+                <constraint firstItem="isp-1A-nLv" firstAttribute="top" secondItem="1FM-Rp-PBQ" secondAttribute="bottom" constant="50" id="MMQ-8g-DsW"/>
+                <constraint firstItem="1FM-Rp-PBQ" firstAttribute="height" secondItem="isp-1A-nLv" secondAttribute="height" multiplier="2" priority="250" id="Uia-o9-yWK"/>
+                <constraint firstItem="isp-1A-nLv" firstAttribute="width" secondItem="Mf5-hO-5tP" secondAttribute="width" priority="750" id="amY-Ot-IJG"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="isp-1A-nLv" secondAttribute="bottom" constant="50" id="bsv-os-i3o"/>
+                <constraint firstItem="isp-1A-nLv" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="hhs-2R-7lN"/>
+                <constraint firstItem="kHh-EF-xYb" firstAttribute="height" secondItem="1FM-Rp-PBQ" secondAttribute="height" multiplier="2" priority="250" id="lTT-Ww-OxN"/>
+                <constraint firstItem="kHh-EF-xYb" firstAttribute="top" secondItem="Mf5-hO-5tP" secondAttribute="bottom" constant="50" id="sB6-Qc-jYU"/>
+                <constraint firstItem="1FM-Rp-PBQ" firstAttribute="width" secondItem="isp-1A-nLv" secondAttribute="width" priority="750" id="xoU-Ct-Uzb"/>
+                <constraint firstItem="1FM-Rp-PBQ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="yUL-yi-fsG"/>
+                <constraint firstItem="Mf5-hO-5tP" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ygU-nl-Jl8"/>
+                <constraint firstItem="isp-1A-nLv" firstAttribute="height" secondItem="Mf5-hO-5tP" secondAttribute="height" multiplier="2" priority="250" id="zuA-6A-OPX"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="-129" y="63"/>
+        </view>
+    </objects>
+</document>
