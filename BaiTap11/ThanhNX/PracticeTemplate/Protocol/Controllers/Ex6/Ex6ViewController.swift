@@ -12,11 +12,6 @@ class Ex6ViewController: BaseViewController {
     
     @IBOutlet private weak var imageDrawView: UIImageView!
     
-    private var drawColor: UIColor = #colorLiteral(red: 0, green: 0.4784313725, blue: 1, alpha: 1)
-    private var brushSize: CGFloat = 5
-    private var lastPoint = CGPoint.zero
-    private var swiped = false
-    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -35,25 +30,25 @@ class Ex6ViewController: BaseViewController {
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        swiped = false
+        drawPropeties.swiped = false
         if let touch = touches.first {
-            lastPoint = touch.location(in: imageDrawView)
+            drawPropeties.lastPoint = touch.location(in: imageDrawView)
         }
     }
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesMoved(touches, with: event)
-        swiped = true
+        drawPropeties.swiped = true
         if let touch = touches.first {
             let currentPoint = touch.location(in: imageDrawView)
-            drawLines(fromPoint: lastPoint, toPoint: currentPoint)
-            lastPoint = currentPoint
+            drawLines(fromPoint: drawPropeties.lastPoint, toPoint: currentPoint)
+            drawPropeties.lastPoint = currentPoint
         }
     }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-        if !swiped {
-            drawLines(fromPoint: lastPoint, toPoint: lastPoint)
+        if !drawPropeties.swiped {
+            drawLines(fromPoint: drawPropeties.lastPoint, toPoint: drawPropeties.lastPoint)
         }
     }
     
@@ -65,26 +60,40 @@ class Ex6ViewController: BaseViewController {
         context?.addLine(to: CGPoint(x: toPoint.x, y: toPoint.y))
         context?.setBlendMode(CGBlendMode.normal)
         context?.setLineCap(CGLineCap.round)
-        context?.setLineWidth(brushSize)
-        context?.setStrokeColor(drawColor.cgColor)
+        context?.setLineWidth(drawPropeties.brushSize)
+        context?.setStrokeColor(drawPropeties.drawColor.cgColor)
         context?.strokePath()
         imageDrawView.image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
     }
     
+    private func alertError() {
+        let alert = UIAlertController(title: "Save Error", message: "Image no found", preferredStyle: .alert)
+        let cancel = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        alert.addAction(cancel)
+        present(alert, animated: true)
+    }
+    
+    private func alertSuccess() {
+        let alert = UIAlertController(title: "Save Image", message: "Save Success", preferredStyle: .alert)
+        let cancel = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        alert.addAction(cancel)
+        present(alert, animated: true)
+    }
+    
     private func saveImage() {
         guard let selectedImage = imageDrawView.image else {
-            print("Image not found!")
+            alertError()
             return
         }
         UIImageWriteToSavedPhotosAlbum(selectedImage, self, #selector(checkSave(_:didFinishSavingWithError:contextInfo:)), nil)
     }
     
     @objc private func checkSave(_ image: UIImage, didFinishSavingWithError error: Error?, contextInfo: UnsafeRawPointer) {
-        if let error = error {
-            print(error.localizedDescription)
+        if error != nil {
+            alertError()
         } else {
-            print("Saved")
+            alertSuccess()
         }
     }
     
@@ -105,7 +114,7 @@ extension Ex6ViewController: SettingsViewControllerDelegate {
         switch action {
         case .getColor:
             guard let colorPaint = color else { return }
-            drawColor = colorPaint
+            drawPropeties.drawColor = colorPaint
         case .clearImage:
             imageDrawView.image = nil
         }
@@ -113,6 +122,16 @@ extension Ex6ViewController: SettingsViewControllerDelegate {
     
     func settingView(_ view: SettingsViewController, brushSize: CGFloat?) {
         guard let brush = brushSize else { return }
-        self.brushSize = brush
+        drawPropeties.brushSize = brush
+    }
+}
+
+//MARK: Propeties
+extension Ex6ViewController {
+    struct drawPropeties {
+        static var drawColor: UIColor = #colorLiteral(red: 0, green: 0.4784313725, blue: 1, alpha: 1)
+        static var brushSize: CGFloat = 5
+        static var lastPoint = CGPoint.zero
+        static var swiped = false
     }
 }
