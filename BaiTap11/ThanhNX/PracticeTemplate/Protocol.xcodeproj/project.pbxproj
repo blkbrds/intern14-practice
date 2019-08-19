@@ -55,6 +55,8 @@
 		B0F33B772304166B00F8D627 /* HuyenP2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F33B752304166B00F8D627 /* HuyenP2ViewController.xib */; };
 		B0F33B7A2304188E00F8D627 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F33B792304188E00F8D627 /* CustomCell.swift */; };
 		B0F33B7C230421B300F8D627 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F33B7B230421B300F8D627 /* CustomCell.xib */; };
+		B0F6D57A230A40B3002BEF87 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F6D578230A40B3002BEF87 /* SettingsViewController.swift */; };
+		B0F6D57B230A40B3002BEF87 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F6D579230A40B3002BEF87 /* SettingsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -108,6 +110,8 @@
 		B0F33B752304166B00F8D627 /* HuyenP2ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HuyenP2ViewController.xib; sourceTree = "<group>"; };
 		B0F33B792304188E00F8D627 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		B0F33B7B230421B300F8D627 /* CustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CustomCell.xib; path = ../../../../../../DuongNT/Protocol/Protocol/Views/Cells/MienCell/CustomCell.xib; sourceTree = "<group>"; };
+		B0F6D578230A40B3002BEF87 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		B0F6D579230A40B3002BEF87 /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -261,6 +265,7 @@
 		07E33E3220DC9029004B6E52 /* Ex6 */ = {
 			isa = PBXGroup;
 			children = (
+				B0F6D577230A4078002BEF87 /* Settings */,
 				07E33E4B20DC90C3004B6E52 /* Ex6ViewController.swift */,
 				07E33E4C20DC90C3004B6E52 /* Ex6ViewController.xib */,
 			);
@@ -441,6 +446,15 @@
 			path = CustomCell;
 			sourceTree = "<group>";
 		};
+		B0F6D577230A4078002BEF87 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				B0F6D578230A40B3002BEF87 /* SettingsViewController.swift */,
+				B0F6D579230A40B3002BEF87 /* SettingsViewController.xib */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -519,6 +533,7 @@
 				B0F0C3052305736200CC1A26 /* UserView.xib in Resources */,
 				07E33E4A20DC90B6004B6E52 /* Ex5ViewController.xib in Resources */,
 				B0F0C3082305736200CC1A26 /* ProfileViewController.xib in Resources */,
+				B0F6D57B230A40B3002BEF87 /* SettingsViewController.xib in Resources */,
 				B0F33B6F2304162800F8D627 /* MienP2ViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -553,6 +568,7 @@
 				B0F33B622303EBB100F8D627 /* Huyen.swift in Sources */,
 				07E33E2620DC8DD7004B6E52 /* HomeViewController.swift in Sources */,
 				07E33E5120DC90CF004B6E52 /* Ex7ViewController.swift in Sources */,
+				B0F6D57A230A40B3002BEF87 /* SettingsViewController.swift in Sources */,
 				07E33E5520DC90DD004B6E52 /* Ex8ViewController.swift in Sources */,
 				B0F33B7A2304188E00F8D627 /* CustomCell.swift in Sources */,
 				07E33E5D20DC9102004B6E52 /* Ex9ViewController.swift in Sources */,
