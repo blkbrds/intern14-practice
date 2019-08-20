@@ -68,5 +68,11 @@
         <key>description</key>
         <string>Search tableview</string>
     </dict>
+    <dict>
+        <key>name</key>
+        <string>exercise 12</string>
+        <key>description</key>
+        <string>Search tableview</string>
+    </dict>
 </array>
 </plist>

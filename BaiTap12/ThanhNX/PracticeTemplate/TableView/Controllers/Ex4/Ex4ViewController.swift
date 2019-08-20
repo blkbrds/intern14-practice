@@ -10,7 +10,7 @@ import UIKit
 
 class Ex4ViewController: BaseViewController {
     //MARK: Outlet
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet private weak var tableView: UITableView!
     var ex4Cells: [ExName] = []
     var ex4Sections: [[ExName]] = []
     

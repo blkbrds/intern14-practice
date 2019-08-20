@@ -44,6 +44,12 @@
 		B0F6D586230AA2AF002BEF87 /* ex2.plist in Resources */ = {isa = PBXBuildFile; fileRef = B0F6D585230AA2AF002BEF87 /* ex2.plist */; };
 		B0F6D58A230AAB6F002BEF87 /* PresidentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F6D588230AAB6F002BEF87 /* PresidentViewController.swift */; };
 		B0F6D58B230AAB6F002BEF87 /* PresidentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F6D589230AAB6F002BEF87 /* PresidentViewController.xib */; };
+		B0F76E88230BAC1B00C74352 /* Ex11ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F76E86230BAC1B00C74352 /* Ex11ViewController.swift */; };
+		B0F76E89230BAC1B00C74352 /* Ex11ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F76E87230BAC1B00C74352 /* Ex11ViewController.xib */; };
+		B0F76E8C230BAC4400C74352 /* Ex12ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F76E8A230BAC4400C74352 /* Ex12ViewController.swift */; };
+		B0F76E8D230BAC4400C74352 /* Ex12ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F76E8B230BAC4400C74352 /* Ex12ViewController.xib */; };
+		B0F76E90230BB05900C74352 /* ex6China.plist in Resources */ = {isa = PBXBuildFile; fileRef = B0F76E8F230BB05900C74352 /* ex6China.plist */; };
+		B0F76E94230BB34200C74352 /* ex6France.plist in Resources */ = {isa = PBXBuildFile; fileRef = B0F76E93230BB34200C74352 /* ex6France.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,6 +92,12 @@
 		B0F6D585230AA2AF002BEF87 /* ex2.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ex2.plist; sourceTree = "<group>"; };
 		B0F6D588230AAB6F002BEF87 /* PresidentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresidentViewController.swift; sourceTree = "<group>"; };
 		B0F6D589230AAB6F002BEF87 /* PresidentViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PresidentViewController.xib; sourceTree = "<group>"; };
+		B0F76E86230BAC1B00C74352 /* Ex11ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex11ViewController.swift; sourceTree = "<group>"; };
+		B0F76E87230BAC1B00C74352 /* Ex11ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex11ViewController.xib; sourceTree = "<group>"; };
+		B0F76E8A230BAC4400C74352 /* Ex12ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex12ViewController.swift; sourceTree = "<group>"; };
+		B0F76E8B230BAC4400C74352 /* Ex12ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex12ViewController.xib; sourceTree = "<group>"; };
+		B0F76E8F230BB05900C74352 /* ex6China.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ex6China.plist; sourceTree = "<group>"; };
+		B0F76E93230BB34200C74352 /* ex6France.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ex6France.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +144,8 @@
 		07E33E1F20DC8D55004B6E52 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				B0F76E85230BABEE00C74352 /* Ex12 */,
+				B0F76E84230BABE500C74352 /* Ex11 */,
 				07E33E3620DC9043004B6E52 /* Ex10 */,
 				07E33E3520DC903C004B6E52 /* Ex9 */,
 				07E33E3420DC9035004B6E52 /* Ex8 */,
@@ -303,6 +317,7 @@
 		07E33E6B20DC9EC4004B6E52 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B0F76E8E230BB03F00C74352 /* Ex6 */,
 				B0F6D584230AA297002BEF87 /* Ex2 */,
 				07E33E1420DC8D36004B6E52 /* Assets.xcassets */,
 				07E33E6C20DC9F1B004B6E52 /* exercises.plist */,
@@ -358,6 +373,33 @@
 				B0F6D589230AAB6F002BEF87 /* PresidentViewController.xib */,
 			);
 			path = President;
+			sourceTree = "<group>";
+		};
+		B0F76E84230BABE500C74352 /* Ex11 */ = {
+			isa = PBXGroup;
+			children = (
+				B0F76E86230BAC1B00C74352 /* Ex11ViewController.swift */,
+				B0F76E87230BAC1B00C74352 /* Ex11ViewController.xib */,
+			);
+			path = Ex11;
+			sourceTree = "<group>";
+		};
+		B0F76E85230BABEE00C74352 /* Ex12 */ = {
+			isa = PBXGroup;
+			children = (
+				B0F76E8A230BAC4400C74352 /* Ex12ViewController.swift */,
+				B0F76E8B230BAC4400C74352 /* Ex12ViewController.xib */,
+			);
+			path = Ex12;
+			sourceTree = "<group>";
+		};
+		B0F76E8E230BB03F00C74352 /* Ex6 */ = {
+			isa = PBXGroup;
+			children = (
+				B0F76E8F230BB05900C74352 /* ex6China.plist */,
+				B0F76E93230BB34200C74352 /* ex6France.plist */,
+			);
+			path = Ex6;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -420,15 +462,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				07E33E6A20DC9826004B6E52 /* HomeCell.xib in Resources */,
+				B0F76E89230BAC1B00C74352 /* Ex11ViewController.xib in Resources */,
 				07E33E5620DC90DD004B6E52 /* Ex8ViewController.xib in Resources */,
 				B0F6D586230AA2AF002BEF87 /* ex2.plist in Resources */,
 				07E33E4220DC907B004B6E52 /* Ex3ViewController.xib in Resources */,
 				B0F6D583230A9F60002BEF87 /* ExCell.xib in Resources */,
+				B0F76E90230BB05900C74352 /* ex6China.plist in Resources */,
 				07E33E1520DC8D36004B6E52 /* Assets.xcassets in Resources */,
+				B0F76E94230BB34200C74352 /* ex6France.plist in Resources */,
 				07E33E4E20DC90C3004B6E52 /* Ex6ViewController.xib in Resources */,
 				07E33E3E20DC906B004B6E52 /* Ex2ViewController.xib in Resources */,
 				07E33E5220DC90CF004B6E52 /* Ex7ViewController.xib in Resources */,
 				07E33E5E20DC9102004B6E52 /* Ex9ViewController.xib in Resources */,
+				B0F76E8D230BAC4400C74352 /* Ex12ViewController.xib in Resources */,
 				07E33E2720DC8DD7004B6E52 /* HomeViewController.xib in Resources */,
 				B0F6D58B230AAB6F002BEF87 /* PresidentViewController.xib in Resources */,
 				07E33E4620DC9095004B6E52 /* Ex4ViewController.xib in Resources */,
@@ -447,6 +493,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				07E33E6120DC910E004B6E52 /* Ex10ViewController.swift in Sources */,
+				B0F76E88230BAC1B00C74352 /* Ex11ViewController.swift in Sources */,
 				07E33E2C20DC8E5B004B6E52 /* BaseNavigationController.swift in Sources */,
 				07E33E4920DC90B6004B6E52 /* Ex5ViewController.swift in Sources */,
 				07E33E7320DCA04D004B6E52 /* Exercise.swift in Sources */,
@@ -465,6 +512,7 @@
 				07E33E5520DC90DD004B6E52 /* Ex8ViewController.swift in Sources */,
 				07E33E5D20DC9102004B6E52 /* Ex9ViewController.swift in Sources */,
 				07E33E2A20DC8E36004B6E52 /* BaseViewController.swift in Sources */,
+				B0F76E8C230BAC4400C74352 /* Ex12ViewController.swift in Sources */,
 				B0F6D57E230A9E44002BEF87 /* ExName.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
