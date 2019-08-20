@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>avatarImg</key>
+		<string>avatar</string>
+		<key>email</key>
+		<string>nguyentungduong2601@gmail.com</string>
+		<key>fullName</key>
+		<string>Nguyen Tung Duong</string>
+		<key>address</key>
+		<string>Hoa Tien, Hoa Vang, Da Nang</string>
+		<key>phone</key>
+		<string>+84935333982</string>
+		<key>dateOfBirth</key>
+		<date>2019-08-18T07:42:15Z</date>
+		<key>gender</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>avatarImg</key>
+		<string>avatar</string>
+		<key>email</key>
+		<string>nguyentungduong2601@gmail.com</string>
+		<key>fullName</key>
+		<string>Nguyen Tung Duong</string>
+		<key>address</key>
+		<string>Hoa Tien, Hoa Vang, Da Nang</string>
+		<key>phone</key>
+		<string>+84935333982</string>
+		<key>dateOfBirth</key>
+		<date>1996-08-18T07:42:15Z</date>
+		<key>gender</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>avatarImg</key>
+		<string>avatar</string>
+		<key>email</key>
+		<string>nguyentungduong2601@gmail.com</string>
+		<key>fullName</key>
+		<string>Nguyen Tung Duong</string>
+		<key>address</key>
+		<string>Hoa Tien, Hoa Vang, Da Nang</string>
+		<key>phone</key>
+		<string>+84935333982</string>
+		<key>dateOfBirth</key>
+		<date>2019-08-18T07:42:15Z</date>
+		<key>gender</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>avatarImg</key>
+		<string>avatar</string>
+		<key>email</key>
+		<string>nguyentungduong2601@gmail.com</string>
+		<key>fullName</key>
+		<string>Nguyen Tung Duong</string>
+		<key>address</key>
+		<string>Hoa Tien, Hoa Vang, Da Nang</string>
+		<key>phone</key>
+		<string>+84935333982</string>
+		<key>dateOfBirth</key>
+		<date>2019-08-18T07:42:15Z</date>
+		<key>gender</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>avatarImg</key>
+		<string>avatar</string>
+		<key>email</key>
+		<string>nguyentungduong2601@gmail.com</string>
+		<key>fullName</key>
+		<string>Nguyen Tung Duong</string>
+		<key>address</key>
+		<string>Hoa Tien, Hoa Vang, Da Nang</string>
+		<key>phone</key>
+		<string>+84935333982</string>
+		<key>dateOfBirth</key>
+		<date>2019-08-18T07:42:15Z</date>
+		<key>gender</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>avatarImg</key>
+		<string>avatar</string>
+		<key>email</key>
+		<string>nguyentungduong2601@gmail.com</string>
+		<key>fullName</key>
+		<string>Nguyen Tung Duong</string>
+		<key>address</key>
+		<string>Hoa Tien, Hoa Vang, Da Nang</string>
+		<key>phone</key>
+		<string>+84935333982</string>
+		<key>dateOfBirth</key>
+		<date>2019-08-18T07:42:15Z</date>
+		<key>gender</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>avatarImg</key>
+		<string>avatar</string>
+		<key>email</key>
+		<string>nguyentungduong2601@gmail.com</string>
+		<key>fullName</key>
+		<string>Nguyen Tung Duong</string>
+		<key>address</key>
+		<string>Hoa Tien, Hoa Vang, Da Nang</string>
+		<key>phone</key>
+		<string>+84935333982</string>
+		<key>dateOfBirth</key>
+		<date>2019-08-18T07:42:15Z</date>
+		<key>gender</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>avatarImg</key>
+		<string>avatar</string>
+		<key>email</key>
+		<string>nguyentungduong2601@gmail.com</string>
+		<key>fullName</key>
+		<string>Nguyen Tung Duong</string>
+		<key>address</key>
+		<string>Hoa Tien, Hoa Vang, Da Nang</string>
+		<key>phone</key>
+		<string>+84935333982</string>
+		<key>dateOfBirth</key>
+		<date>2019-08-18T07:42:15Z</date>
+		<key>gender</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>avatarImg</key>
+		<string>avatar</string>
+		<key>email</key>
+		<string>nguyentungduong2601@gmail.com</string>
+		<key>fullName</key>
+		<string>Nguyen Tung Duong</string>
+		<key>address</key>
+		<string>Hoa Tien, Hoa Vang, Da Nang</string>
+		<key>phone</key>
+		<string>+84935333982</string>
+		<key>dateOfBirth</key>
+		<date>2019-08-18T07:42:15Z</date>
+		<key>gender</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>avatarImg</key>
+		<string>avatar</string>
+		<key>email</key>
+		<string>nguyentungduong2601@gmail.com</string>
+		<key>fullName</key>
+		<string>Nguyen Tung Duong</string>
+		<key>address</key>
+		<string>Hoa Tien, Hoa Vang, Da Nang</string>
+		<key>phone</key>
+		<string>+84935333982</string>
+		<key>dateOfBirth</key>
+		<date>2019-08-18T07:42:15Z</date>
+		<key>gender</key>
+		<true/>
+	</dict>
+</array>
+</plist>
