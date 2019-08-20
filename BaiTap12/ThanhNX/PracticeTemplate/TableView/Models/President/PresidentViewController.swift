@@ -24,7 +24,4 @@ class PresidentViewController: BaseViewController {
         self.title = "DETAIL"
         presidentNameLabel.text = name?.name
     }
-    
-    override func setupData() {
-    }
 }

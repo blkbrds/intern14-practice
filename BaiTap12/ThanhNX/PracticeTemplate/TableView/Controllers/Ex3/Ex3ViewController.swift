@@ -11,6 +11,7 @@ import UIKit
 class Ex3ViewController: BaseViewController {
     //MARK: Outlet
     @IBOutlet private weak var tableView: UITableView!
+    
     var ex3s: [ExName] = []
     
     override func viewDidLoad() {

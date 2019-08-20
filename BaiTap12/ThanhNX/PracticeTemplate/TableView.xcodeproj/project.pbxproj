@@ -158,6 +158,7 @@
 		07E33E2120DC8D66004B6E52 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B0F6D587230AAB4E002BEF87 /* President */,
 				B0F6D57C230A9E21002BEF87 /* Ex1 */,
 				07E33E7120DCA024004B6E52 /* Objects */,
 				07E33E6E20DC9FB5004B6E52 /* DataManagement */,
@@ -212,7 +213,6 @@
 		07E33E2F20DC8FAD004B6E52 /* Ex3 */ = {
 			isa = PBXGroup;
 			children = (
-				B0F6D587230AAB4E002BEF87 /* President */,
 				07E33E3F20DC907B004B6E52 /* Ex3ViewController.swift */,
 				07E33E4020DC907B004B6E52 /* Ex3ViewController.xib */,
 			);
