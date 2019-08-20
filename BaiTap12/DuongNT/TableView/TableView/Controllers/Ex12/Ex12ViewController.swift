@@ -30,7 +30,7 @@ class Ex12ViewController: BaseViewController {
         super.setupUI()
         self.title = exercise?.name
         turnOffEditingMode()
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "reuseIdentifier")
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         tableView.dataSource = self
         tableView.delegate = self
     }
@@ -54,8 +54,11 @@ class Ex12ViewController: BaseViewController {
     }
 
     @objc func addRow() {
-        users.insert(User(name: "New Name"), at: 0)
-        tableView.reloadData()
+        let indexPath = IndexPath(row: 0, section:0)
+        users.insert(User(name: "New Name"), at: indexPath.row)
+        tableView.beginUpdates()
+        tableView.insertRows(at: [indexPath], with: .automatic)
+        tableView.endUpdates()
     }
 }
 // MARK: - Extensions
@@ -66,11 +69,11 @@ extension Ex12ViewController: UITableViewDelegate, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return users.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier")
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell")
         let user = users[indexPath.row]
         cell?.textLabel?.text = user.name
         return cell!
@@ -82,7 +85,9 @@ extension Ex12ViewController: UITableViewDelegate, UITableViewDataSource {
             return
         case .delete:
             users.remove(at: indexPath.row)
-            tableView.reloadData()
+            tableView.beginUpdates()
+            tableView.deleteRows(at: [IndexPath.init(row: indexPath.row, section: indexPath.section)], with: .automatic)
+            tableView.endUpdates()
         case .insert:
             print("insert ne")
         }

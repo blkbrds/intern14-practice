@@ -13,15 +13,19 @@ class AnimalInforCell: UITableViewCell {
     @IBOutlet weak var animalImageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var descriptLabel: UILabel!
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+
+    var animal: Animal? {
+        didSet {
+            loadData()
+        }
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    func loadData() {
+        guard let animal = animal else {
+            return
+        }
+        animalImageView.image = UIImage(named: animal.avatar)
+        nameLabel.text = animal.name
+        descriptLabel.text = animal.descript
     }
-    
 }

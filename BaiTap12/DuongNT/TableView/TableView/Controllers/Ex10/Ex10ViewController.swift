@@ -17,7 +17,7 @@ class Ex10ViewController: BaseViewController {
     // MARK: - Properties
     var exercise: Exercise?
     private var contacts: [String] = []
-    private var sections: [Section] = []
+    private var sections: [String: [String]] = [:]
     private var filtered: [String] = []
     private var searchActive : Bool = false
 
@@ -34,7 +34,7 @@ class Ex10ViewController: BaseViewController {
     override func setupUI() {
         super.setupUI()
         self.title = exercise?.name
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "reuseIdentifier")
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         tableView.dataSource = self
         tableView.delegate = self
         searchBar.delegate = self
@@ -53,19 +53,22 @@ class Ex10ViewController: BaseViewController {
         // get the keys and sort them
         let keys = groupedDictionary.keys.sorted()
         // map the sorted keys to a struct
-        sections = keys.map {
-            Section(character: $0, names: groupedDictionary[$0]!.sorted())
+        for index in 0..<keys.count {
+            sections[keys[index]] = groupedDictionary[keys[index]]!.sorted()
         }
+//        sections = keys.map {
+//            Section(character: $0, names: groupedDictionary[$0]!.sorted())
+//        }
         tableView.reloadData()
     }
 }
-
-extension Ex10ViewController {
-    struct Section {
-        let character : String
-        let names : [String]
-    }
-}
+//
+//extension Ex10ViewController {
+//    struct Section {
+//        let character : String
+//        let names : [String]
+//    }
+//}
 
 extension Ex10ViewController: UISearchBarDelegate {
 
@@ -114,22 +117,25 @@ extension Ex10ViewController: UITableViewDelegate, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return sections[section].names.count
+        var keys: [String] = Array(sections.keys)
+        return sections[keys[section]]!.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-        let contact = sections[indexPath.section].names[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let keys: [String] = Array(sections.keys)
+        let contact = sections[keys[indexPath.section]]?[indexPath.row]
         cell.textLabel?.text = contact
         return cell
     }
 
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return sections[section].character
+        var keys: [String] = Array(sections.keys)
+        return keys[section]
     }
 
     func sectionIndexTitles(for tableView: UITableView) -> [String]? {
-        return sections.map{$0.character}
+        return Array(sections.keys)
     }
 
     func tableView(_ tableView: UITableView, sectionForSectionIndexTitle title: String, at index: Int) -> Int {

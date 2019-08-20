@@ -33,7 +33,7 @@ class Ex11ViewController: BaseViewController {
     override func setupUI() {
         super.setupUI()
         self.title = exercise?.name
-        tableView.register(UINib(nibName: "Ex11Cell", bundle: nil), forCellReuseIdentifier: "Cell")
+        tableView.register(UINib(nibName: "Ex11Cell", bundle: nil), forCellReuseIdentifier: "cell")
         tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = 1
         tableView.dataSource = self
@@ -56,7 +56,7 @@ extension Ex11ViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell") as? Ex11Cell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as? Ex11Cell
         cell?.conversationLabel?.text = listConversations[indexPath.row]
         return cell!
     }

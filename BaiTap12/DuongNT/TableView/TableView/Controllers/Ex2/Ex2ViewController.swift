@@ -29,7 +29,7 @@ class Ex2ViewController: BaseViewController {
     override func setupUI() {
         super.setupUI()
         self.title = exercise?.name
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "reuseIdentifier")
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         tableView.dataSource = self
         tableView.delegate = self
     }
@@ -51,7 +51,7 @@ extension Ex2ViewController: UITableViewDelegate, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier")
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell")
         let user = users[indexPath.row]
         cell?.textLabel?.text = user.name
         return cell!

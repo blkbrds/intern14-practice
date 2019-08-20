@@ -33,7 +33,7 @@ class Ex5ViewController: BaseViewController {
     override func setupUI() {
         super.setupUI()
         self.title = exercise?.name
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "reuseIdentifier")
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         tableView.dataSource = self
         tableView.delegate = self
         searchBar.delegate = self
@@ -95,7 +95,7 @@ extension Ex5ViewController: UITableViewDelegate, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         let user: User
         if searchActive {
             user = filtered[indexPath.row]

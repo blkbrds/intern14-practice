@@ -59,10 +59,7 @@ extension Ex8ViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? AnimalInforCell
-        let animal = arrayAnimals[indexPath.section][indexPath.row]
-        cell?.nameLabel.text = animal.name
-        cell?.descriptLabel.text = animal.descript
-        cell?.animalImageView.image = UIImage(named: animal.avatar)
+        cell?.animal = arrayAnimals[indexPath.section][indexPath.row]
         return cell!
     }
     
