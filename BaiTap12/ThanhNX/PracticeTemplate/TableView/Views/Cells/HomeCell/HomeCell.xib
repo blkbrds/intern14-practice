@@ -45,6 +45,18 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jXS-1F-QKZ">
+                        <rect key="frame" x="313" y="22" width="40" height="40"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="0Bg-PP-B0B"/>
+                            <constraint firstAttribute="width" constant="40" id="y2W-8u-zcF"/>
+                        </constraints>
+                        <state key="normal" image="ic-rating"/>
+                        <connections>
+                            <action selector="ratingButtonTouchUpInside:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="qF7-X0-F8N"/>
+                        </connections>
+                    </button>
                 </subviews>
                 <constraints>
                     <constraint firstItem="rVT-QV-Ec9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="85c-yW-E5z"/>
@@ -55,11 +67,14 @@
                     <constraint firstItem="t9B-t0-GJV" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="JKl-4b-c4l"/>
                     <constraint firstItem="t9B-t0-GJV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="N3A-py-KLR"/>
                     <constraint firstItem="l4i-Rg-ePR" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="Oud-7W-MPM"/>
+                    <constraint firstItem="jXS-1F-QKZ" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="UUY-1U-Eph"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="jXS-1F-QKZ" secondAttribute="trailing" constant="8" id="ZqF-F1-IAu"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="imageCell" destination="rVT-QV-Ec9" id="8nR-kh-bKe"/>
+                <outlet property="ratingButton" destination="jXS-1F-QKZ" id="muj-oi-E62"/>
                 <outlet property="subTitleLabel" destination="l4i-Rg-ePR" id="hst-PY-OFr"/>
                 <outlet property="titleLabel" destination="t9B-t0-GJV" id="Iob-qI-wIi"/>
             </connections>
@@ -67,6 +82,7 @@
         </tableViewCell>
     </objects>
     <resources>
+        <image name="ic-rating" width="48" height="48"/>
         <image name="ic_img_file_icon" width="48" height="48"/>
     </resources>
 </document>
