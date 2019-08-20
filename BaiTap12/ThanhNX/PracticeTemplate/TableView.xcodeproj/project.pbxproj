@@ -50,6 +50,8 @@
 		B0F76E8D230BAC4400C74352 /* Ex12ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F76E8B230BAC4400C74352 /* Ex12ViewController.xib */; };
 		B0F76E90230BB05900C74352 /* ex6China.plist in Resources */ = {isa = PBXBuildFile; fileRef = B0F76E8F230BB05900C74352 /* ex6China.plist */; };
 		B0F76E94230BB34200C74352 /* ex6France.plist in Resources */ = {isa = PBXBuildFile; fileRef = B0F76E93230BB34200C74352 /* ex6France.plist */; };
+		B0F76E98230BE12800C74352 /* Ex7Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F76E96230BE12800C74352 /* Ex7Cell.swift */; };
+		B0F76E99230BE12800C74352 /* Ex7Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F76E97230BE12800C74352 /* Ex7Cell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -98,6 +100,8 @@
 		B0F76E8B230BAC4400C74352 /* Ex12ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex12ViewController.xib; sourceTree = "<group>"; };
 		B0F76E8F230BB05900C74352 /* ex6China.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ex6China.plist; sourceTree = "<group>"; };
 		B0F76E93230BB34200C74352 /* ex6France.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ex6France.plist; sourceTree = "<group>"; };
+		B0F76E96230BE12800C74352 /* Ex7Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex7Cell.swift; sourceTree = "<group>"; };
+		B0F76E97230BE12800C74352 /* Ex7Cell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex7Cell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -299,6 +303,7 @@
 		07E33E6520DC9805004B6E52 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				B0F76E95230BE0FD00C74352 /* Ex7Cell */,
 				B0F6D57F230A9F06002BEF87 /* ExCell */,
 				07E33E6620DC980C004B6E52 /* HomeCell */,
 			);
@@ -402,6 +407,15 @@
 			path = Ex6;
 			sourceTree = "<group>";
 		};
+		B0F76E95230BE0FD00C74352 /* Ex7Cell */ = {
+			isa = PBXGroup;
+			children = (
+				B0F76E96230BE12800C74352 /* Ex7Cell.swift */,
+				B0F76E97230BE12800C74352 /* Ex7Cell.xib */,
+			);
+			path = Ex7Cell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -469,6 +483,7 @@
 				B0F6D583230A9F60002BEF87 /* ExCell.xib in Resources */,
 				B0F76E90230BB05900C74352 /* ex6China.plist in Resources */,
 				07E33E1520DC8D36004B6E52 /* Assets.xcassets in Resources */,
+				B0F76E99230BE12800C74352 /* Ex7Cell.xib in Resources */,
 				B0F76E94230BB34200C74352 /* ex6France.plist in Resources */,
 				07E33E4E20DC90C3004B6E52 /* Ex6ViewController.xib in Resources */,
 				07E33E3E20DC906B004B6E52 /* Ex2ViewController.xib in Resources */,
@@ -510,6 +525,7 @@
 				07E33E5120DC90CF004B6E52 /* Ex7ViewController.swift in Sources */,
 				07E33E3D20DC906B004B6E52 /* Ex2ViewController.swift in Sources */,
 				07E33E5520DC90DD004B6E52 /* Ex8ViewController.swift in Sources */,
+				B0F76E98230BE12800C74352 /* Ex7Cell.swift in Sources */,
 				07E33E5D20DC9102004B6E52 /* Ex9ViewController.swift in Sources */,
 				07E33E2A20DC8E36004B6E52 /* BaseViewController.swift in Sources */,
 				B0F76E8C230BAC4400C74352 /* Ex12ViewController.swift in Sources */,
