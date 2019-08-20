@@ -11,7 +11,7 @@ import UIKit
 class Ex1ViewController: BaseViewController {
     
     @IBOutlet private weak var tableView: UITableView!
-    var ex1: [Ex1Name] = []
+    var ex1: [ExName] = []
     
     var exercise: Exercise?
     
@@ -31,7 +31,7 @@ class Ex1ViewController: BaseViewController {
     }
     
     override func setupData() {
-        ex1 = Ex1Name.dummyData()
+        ex1 = ExName.dummyData()
     }
 }
 
@@ -41,11 +41,10 @@ extension Ex1ViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as? ExCell
-        
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as? ExCell else { return UITableViewCell() }
         let name = ex1[indexPath.row]
-        cell?.nameLabel.text = name.name
+        cell.nameLabel.text = name.name
         
-        return cell!
+        return cell
     }
 }

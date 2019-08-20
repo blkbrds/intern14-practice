@@ -10,7 +10,7 @@ import UIKit
 
 class Ex2ViewController: BaseViewController {
     @IBOutlet private weak var tableView: UITableView!
-    var ex2s: [Ex1Name] = []
+    var ex2s: [ExName] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,10 +40,10 @@ extension Ex2ViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as? ExCell
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as? ExCell else { return UITableViewCell() }
         let president = ex2s[indexPath.row]
-        cell?.nameLabel.text = president.name
+        cell.nameLabel.text = president.name
         
-        return cell!
+        return cell
     }
 }

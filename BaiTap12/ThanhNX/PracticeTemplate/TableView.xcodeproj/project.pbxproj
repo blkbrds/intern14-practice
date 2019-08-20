@@ -38,7 +38,7 @@
 		07E33E6D20DC9F1B004B6E52 /* exercises.plist in Resources */ = {isa = PBXBuildFile; fileRef = 07E33E6C20DC9F1B004B6E52 /* exercises.plist */; };
 		07E33E7020DC9FF4004B6E52 /* DataManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E33E6F20DC9FF4004B6E52 /* DataManagement.swift */; };
 		07E33E7320DCA04D004B6E52 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E33E7220DCA04D004B6E52 /* Exercise.swift */; };
-		B0F6D57E230A9E44002BEF87 /* Ex1Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F6D57D230A9E44002BEF87 /* Ex1Name.swift */; };
+		B0F6D57E230A9E44002BEF87 /* ExName.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F6D57D230A9E44002BEF87 /* ExName.swift */; };
 		B0F6D582230A9F60002BEF87 /* ExCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F6D580230A9F60002BEF87 /* ExCell.swift */; };
 		B0F6D583230A9F60002BEF87 /* ExCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F6D581230A9F60002BEF87 /* ExCell.xib */; };
 		B0F6D586230AA2AF002BEF87 /* ex2.plist in Resources */ = {isa = PBXBuildFile; fileRef = B0F6D585230AA2AF002BEF87 /* ex2.plist */; };
@@ -80,7 +80,7 @@
 		07E33E6C20DC9F1B004B6E52 /* exercises.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = exercises.plist; sourceTree = "<group>"; };
 		07E33E6F20DC9FF4004B6E52 /* DataManagement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManagement.swift; sourceTree = "<group>"; };
 		07E33E7220DCA04D004B6E52 /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
-		B0F6D57D230A9E44002BEF87 /* Ex1Name.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex1Name.swift; sourceTree = "<group>"; };
+		B0F6D57D230A9E44002BEF87 /* ExName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExName.swift; sourceTree = "<group>"; };
 		B0F6D580230A9F60002BEF87 /* ExCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExCell.swift; sourceTree = "<group>"; };
 		B0F6D581230A9F60002BEF87 /* ExCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExCell.xib; sourceTree = "<group>"; };
 		B0F6D585230AA2AF002BEF87 /* ex2.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ex2.plist; sourceTree = "<group>"; };
@@ -329,7 +329,7 @@
 		B0F6D57C230A9E21002BEF87 /* Ex1 */ = {
 			isa = PBXGroup;
 			children = (
-				B0F6D57D230A9E44002BEF87 /* Ex1Name.swift */,
+				B0F6D57D230A9E44002BEF87 /* ExName.swift */,
 			);
 			path = Ex1;
 			sourceTree = "<group>";
@@ -465,7 +465,7 @@
 				07E33E5520DC90DD004B6E52 /* Ex8ViewController.swift in Sources */,
 				07E33E5D20DC9102004B6E52 /* Ex9ViewController.swift in Sources */,
 				07E33E2A20DC8E36004B6E52 /* BaseViewController.swift in Sources */,
-				B0F6D57E230A9E44002BEF87 /* Ex1Name.swift in Sources */,
+				B0F6D57E230A9E44002BEF87 /* ExName.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

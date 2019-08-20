@@ -11,7 +11,7 @@ import UIKit
 class Ex3ViewController: BaseViewController {
     //MARK: Outlet
     @IBOutlet private weak var tableView: UITableView!
-    var ex3s: [Ex1Name] = []
+    var ex3s: [ExName] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,15 +41,14 @@ extension Ex3ViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as? ExCell
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as? ExCell else { return UITableViewCell() }
         let president = ex3s[indexPath.row]
-        cell?.nameLabel.text = president.name
+        cell.nameLabel.text = president.name
         
-        return cell!
+        return cell
     }
     
     //MARK: TableView Delegate
-    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         let vc = PresidentViewController()

@@ -31,12 +31,12 @@ class DataManagement {
         return exercises
     }
     
-    func getName(fileName: String, type: String) -> [Ex1Name] {
+    func getName(fileName: String, type: String) -> [ExName] {
         let array = NSArray(contentsOfFile: getFileDocumentPath(fileName: fileName, type: type))
-        var names: [Ex1Name] = []
+        var names: [ExName] = []
         for item in array! {
             let dict = item as! NSDictionary
-            let ex = Ex1Name(name: dict.object(forKey: "name") as! String)
+            let ex = ExName(name: dict.object(forKey: "name") as! String)
             names.append(ex)
         }
         return names
