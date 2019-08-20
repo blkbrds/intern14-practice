@@ -56,19 +56,9 @@ class Ex10ViewController: BaseViewController {
         for index in 0..<keys.count {
             sections[keys[index]] = groupedDictionary[keys[index]]!.sorted()
         }
-//        sections = keys.map {
-//            Section(character: $0, names: groupedDictionary[$0]!.sorted())
-//        }
         tableView.reloadData()
     }
 }
-//
-//extension Ex10ViewController {
-//    struct Section {
-//        let character : String
-//        let names : [String]
-//    }
-//}
 
 extension Ex10ViewController: UISearchBarDelegate {
 
