@@ -15,8 +15,6 @@
 		07E33E2C20DC8E5B004B6E52 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E33E2B20DC8E5B004B6E52 /* BaseNavigationController.swift */; };
 		07E33E3920DC9059004B6E52 /* Ex1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E33E3720DC9059004B6E52 /* Ex1ViewController.swift */; };
 		07E33E3A20DC9059004B6E52 /* Ex1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07E33E3820DC9059004B6E52 /* Ex1ViewController.xib */; };
-		07E33E3D20DC906B004B6E52 /* Ex2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E33E3B20DC906B004B6E52 /* Ex2ViewController.swift */; };
-		07E33E3E20DC906B004B6E52 /* Ex2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07E33E3C20DC906B004B6E52 /* Ex2ViewController.xib */; };
 		07E33E4520DC9095004B6E52 /* Ex4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E33E4320DC9095004B6E52 /* Ex4ViewController.swift */; };
 		07E33E4620DC9095004B6E52 /* Ex4ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07E33E4420DC9095004B6E52 /* Ex4ViewController.xib */; };
 		07E33E4920DC90B6004B6E52 /* Ex5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E33E4720DC90B6004B6E52 /* Ex5ViewController.swift */; };
@@ -37,6 +35,13 @@
 		07E33E7020DC9FF4004B6E52 /* DataManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E33E6F20DC9FF4004B6E52 /* DataManagement.swift */; };
 		07E33E7320DCA04D004B6E52 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E33E7220DCA04D004B6E52 /* Exercise.swift */; };
 		B0F0C2DE23055B2100CC1A26 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F0C2DD23055B2000CC1A26 /* City.swift */; };
+		B0F0C3042305736200CC1A26 /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F0C2FC2305736200CC1A26 /* UserView.swift */; };
+		B0F0C3052305736200CC1A26 /* UserView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F0C2FD2305736200CC1A26 /* UserView.xib */; };
+		B0F0C3062305736200CC1A26 /* Ex2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F0C2FF2305736200CC1A26 /* Ex2ViewController.swift */; };
+		B0F0C3072305736200CC1A26 /* Ex2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F0C3002305736200CC1A26 /* Ex2ViewController.xib */; };
+		B0F0C3082305736200CC1A26 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F0C3022305736200CC1A26 /* ProfileViewController.xib */; };
+		B0F0C3092305736200CC1A26 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F0C3032305736200CC1A26 /* ProfileViewController.swift */; };
+		B0F0C30C2305738400CC1A26 /* Avatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F0C30B2305738400CC1A26 /* Avatar.swift */; };
 		B0F33B5E2303EB7500F8D627 /* Mien.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F33B5D2303EB7500F8D627 /* Mien.swift */; };
 		B0F33B602303EBA700F8D627 /* Tinh.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F33B5F2303EBA700F8D627 /* Tinh.swift */; };
 		B0F33B622303EBB100F8D627 /* Huyen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F33B612303EBB100F8D627 /* Huyen.swift */; };
@@ -63,8 +68,6 @@
 		07E33E2B20DC8E5B004B6E52 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		07E33E3720DC9059004B6E52 /* Ex1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex1ViewController.swift; sourceTree = "<group>"; };
 		07E33E3820DC9059004B6E52 /* Ex1ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex1ViewController.xib; sourceTree = "<group>"; };
-		07E33E3B20DC906B004B6E52 /* Ex2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex2ViewController.swift; sourceTree = "<group>"; };
-		07E33E3C20DC906B004B6E52 /* Ex2ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex2ViewController.xib; sourceTree = "<group>"; };
 		07E33E4320DC9095004B6E52 /* Ex4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex4ViewController.swift; sourceTree = "<group>"; };
 		07E33E4420DC9095004B6E52 /* Ex4ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex4ViewController.xib; sourceTree = "<group>"; };
 		07E33E4720DC90B6004B6E52 /* Ex5ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex5ViewController.swift; sourceTree = "<group>"; };
@@ -85,6 +88,13 @@
 		07E33E6F20DC9FF4004B6E52 /* DataManagement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManagement.swift; sourceTree = "<group>"; };
 		07E33E7220DCA04D004B6E52 /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
 		B0F0C2DD23055B2000CC1A26 /* City.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		B0F0C2FC2305736200CC1A26 /* UserView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
+		B0F0C2FD2305736200CC1A26 /* UserView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserView.xib; sourceTree = "<group>"; };
+		B0F0C2FF2305736200CC1A26 /* Ex2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ex2ViewController.swift; sourceTree = "<group>"; };
+		B0F0C3002305736200CC1A26 /* Ex2ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Ex2ViewController.xib; sourceTree = "<group>"; };
+		B0F0C3022305736200CC1A26 /* ProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
+		B0F0C3032305736200CC1A26 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		B0F0C30B2305738400CC1A26 /* Avatar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Avatar.swift; sourceTree = "<group>"; };
 		B0F33B5D2303EB7500F8D627 /* Mien.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mien.swift; sourceTree = "<group>"; };
 		B0F33B5F2303EBA700F8D627 /* Tinh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tinh.swift; sourceTree = "<group>"; };
 		B0F33B612303EBB100F8D627 /* Huyen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Huyen.swift; sourceTree = "<group>"; };
@@ -170,6 +180,7 @@
 		07E33E2120DC8D66004B6E52 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B0F0C30A2305738400CC1A26 /* Avatar */,
 				07E33E7120DCA024004B6E52 /* Objects */,
 				07E33E6E20DC9FB5004B6E52 /* DataManagement */,
 			);
@@ -214,8 +225,9 @@
 		07E33E2E20DC8FA7004B6E52 /* Ex2 */ = {
 			isa = PBXGroup;
 			children = (
-				07E33E3B20DC906B004B6E52 /* Ex2ViewController.swift */,
-				07E33E3C20DC906B004B6E52 /* Ex2ViewController.xib */,
+				B0F0C2FB2305736200CC1A26 /* Cell */,
+				B0F0C2FE2305736200CC1A26 /* Home */,
+				B0F0C3012305736200CC1A26 /* Profile */,
 			);
 			path = Ex2;
 			sourceTree = "<group>";
@@ -338,6 +350,41 @@
 			path = Objects;
 			sourceTree = "<group>";
 		};
+		B0F0C2FB2305736200CC1A26 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				B0F0C2FC2305736200CC1A26 /* UserView.swift */,
+				B0F0C2FD2305736200CC1A26 /* UserView.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		B0F0C2FE2305736200CC1A26 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B0F0C2FF2305736200CC1A26 /* Ex2ViewController.swift */,
+				B0F0C3002305736200CC1A26 /* Ex2ViewController.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		B0F0C3012305736200CC1A26 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				B0F0C3022305736200CC1A26 /* ProfileViewController.xib */,
+				B0F0C3032305736200CC1A26 /* ProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		B0F0C30A2305738400CC1A26 /* Avatar */ = {
+			isa = PBXGroup;
+			children = (
+				B0F0C30B2305738400CC1A26 /* Avatar.swift */,
+			);
+			path = Avatar;
+			sourceTree = "<group>";
+		};
 		B0F33B632304158600F8D627 /* Part 2 */ = {
 			isa = PBXGroup;
 			children = (
@@ -457,8 +504,8 @@
 				07E33E5620DC90DD004B6E52 /* Ex8ViewController.xib in Resources */,
 				B0F33B7C230421B300F8D627 /* CustomCell.xib in Resources */,
 				07E33E1520DC8D36004B6E52 /* Assets.xcassets in Resources */,
+				B0F0C3072305736200CC1A26 /* Ex2ViewController.xib in Resources */,
 				07E33E4E20DC90C3004B6E52 /* Ex6ViewController.xib in Resources */,
-				07E33E3E20DC906B004B6E52 /* Ex2ViewController.xib in Resources */,
 				07E33E5220DC90CF004B6E52 /* Ex7ViewController.xib in Resources */,
 				07E33E5E20DC9102004B6E52 /* Ex9ViewController.xib in Resources */,
 				07E33E2720DC8DD7004B6E52 /* HomeViewController.xib in Resources */,
@@ -469,7 +516,9 @@
 				B0F33B772304166B00F8D627 /* HuyenP2ViewController.xib in Resources */,
 				B0F33B6B230415C100F8D627 /* Ex3P2ViewController.xib in Resources */,
 				07E33E6220DC910E004B6E52 /* Ex10ViewController.xib in Resources */,
+				B0F0C3052305736200CC1A26 /* UserView.xib in Resources */,
 				07E33E4A20DC90B6004B6E52 /* Ex5ViewController.xib in Resources */,
+				B0F0C3082305736200CC1A26 /* ProfileViewController.xib in Resources */,
 				B0F33B6F2304162800F8D627 /* MienP2ViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -483,8 +532,11 @@
 			files = (
 				07E33E6120DC910E004B6E52 /* Ex10ViewController.swift in Sources */,
 				B0F33B5E2303EB7500F8D627 /* Mien.swift in Sources */,
+				B0F0C3062305736200CC1A26 /* Ex2ViewController.swift in Sources */,
+				B0F0C3042305736200CC1A26 /* UserView.swift in Sources */,
 				07E33E2C20DC8E5B004B6E52 /* BaseNavigationController.swift in Sources */,
 				07E33E4920DC90B6004B6E52 /* Ex5ViewController.swift in Sources */,
+				B0F0C3092305736200CC1A26 /* ProfileViewController.swift in Sources */,
 				07E33E7320DCA04D004B6E52 /* Exercise.swift in Sources */,
 				07E33E3920DC9059004B6E52 /* Ex1ViewController.swift in Sources */,
 				B0F0C2DE23055B2100CC1A26 /* City.swift in Sources */,
@@ -496,11 +548,11 @@
 				07E33E0E20DC8D34004B6E52 /* AppDelegate.swift in Sources */,
 				B0F33B762304166B00F8D627 /* HuyenP2ViewController.swift in Sources */,
 				07E33E4D20DC90C3004B6E52 /* Ex6ViewController.swift in Sources */,
+				B0F0C30C2305738400CC1A26 /* Avatar.swift in Sources */,
 				B0F33B6A230415C100F8D627 /* Ex3P2ViewController.swift in Sources */,
 				B0F33B622303EBB100F8D627 /* Huyen.swift in Sources */,
 				07E33E2620DC8DD7004B6E52 /* HomeViewController.swift in Sources */,
 				07E33E5120DC90CF004B6E52 /* Ex7ViewController.swift in Sources */,
-				07E33E3D20DC906B004B6E52 /* Ex2ViewController.swift in Sources */,
 				07E33E5520DC90DD004B6E52 /* Ex8ViewController.swift in Sources */,
 				B0F33B7A2304188E00F8D627 /* CustomCell.swift in Sources */,
 				07E33E5D20DC9102004B6E52 /* Ex9ViewController.swift in Sources */,
