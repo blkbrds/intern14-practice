@@ -10,10 +10,10 @@ import UIKit
 
 class Ex8ViewController: BaseViewController {
     @IBOutlet private weak var tableView: UITableView!
-    var americaCells: [ExName] = []
-    var chinaCells: [ExName] = []
-    var franceCells: [ExName] = []
-    var ex8Sections: [[ExName]] = []
+    var americaCells: [UserName] = []
+    var chinaCells: [UserName] = []
+    var franceCells: [UserName] = []
+    var sections: [[UserName]] = []
     var sectionIndex: [String] = []
     
     override func viewDidLoad() {
@@ -32,7 +32,7 @@ class Ex8ViewController: BaseViewController {
         americaCells = DataManagement.share.getName(fileName: "ex2", type: "plist")
         chinaCells = DataManagement.share.getName(fileName: "ex6China", type: "plist")
         franceCells = DataManagement.share.getName(fileName: "ex6France", type: "plist")
-        ex8Sections = [americaCells, chinaCells, franceCells]
+        sections = [americaCells, chinaCells, franceCells]
         sectionIndex = ["A", "C", "F"]
     }
 }
@@ -40,7 +40,7 @@ class Ex8ViewController: BaseViewController {
 extension Ex8ViewController: UITableViewDelegate, UITableViewDataSource {
     //MARK: TableView DataSource
     func numberOfSections(in tableView: UITableView) -> Int {
-        return ex8Sections.count
+        return sections.count
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
@@ -75,9 +75,9 @@ extension Ex8ViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as? HomeCell else { return UITableViewCell() }
-        let name = ex8Sections[indexPath.section][indexPath.row]
+        let president = sections[indexPath.section][indexPath.row]
         cell.imageCell.image = #imageLiteral(resourceName: "ic-president")
-        cell.titleLabel.text = name.name
+        cell.titleLabel.text = president.name
         cell.subTitleLabel.text = "President"
         return cell
     }

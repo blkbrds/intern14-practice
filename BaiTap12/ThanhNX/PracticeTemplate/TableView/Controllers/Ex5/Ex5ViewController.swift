@@ -14,8 +14,8 @@ class Ex5ViewController: BaseViewController {
     @IBOutlet private weak var searchBar: UISearchBar!
     
     //MARK: Propeties
-    var ex5s: [ExName] = []
-    var data: [ExName] = [ExName]()    
+    var names: [UserName] = []
+    var data: [UserName] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,16 +30,16 @@ class Ex5ViewController: BaseViewController {
         super.setupUI()
         self.title = "HOME"
         
-        tableView.register(UINib(nibName: "ExCell", bundle: nil), forCellReuseIdentifier: "cell")
+        tableView.register(UINib(nibName: "NameUserCell", bundle: nil), forCellReuseIdentifier: "cell")
     }
     
     override func setupData() {
-       ex5s = DataManagement.share.getName(fileName: "ex2", type: "plist")
+       names = DataManagement.share.getName(fileName: "ex2", type: "plist")
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        data = ex5s
+        data = names
         tableView.reloadData()
     }
 }
@@ -51,7 +51,7 @@ extension Ex5ViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as? ExCell else { return UITableViewCell() }
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as? NameUserCell else { return UITableViewCell() }
         let president = data[indexPath.row]
         cell.nameLabel.text = president.name
         return cell
@@ -70,7 +70,7 @@ extension Ex5ViewController: UITableViewDelegate, UITableViewDataSource {
 //MARK: SearchBar Delegate
 extension Ex5ViewController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        data = searchText.isEmpty ? ex5s : ex5s.filter({ (dataString : ExName) -> Bool in
+        data = searchText.isEmpty ? names : names.filter({ (dataString : UserName) -> Bool in
             return dataString.name.lowercased().contains(searchText.lowercased())
         })
         tableView.reloadData()

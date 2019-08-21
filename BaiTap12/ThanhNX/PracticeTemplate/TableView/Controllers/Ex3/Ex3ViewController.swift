@@ -12,7 +12,7 @@ class Ex3ViewController: BaseViewController {
     //MARK: Outlet
     @IBOutlet private weak var tableView: UITableView!
     
-    var ex3s: [ExName] = []
+    var names: [UserName] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,11 +23,11 @@ class Ex3ViewController: BaseViewController {
         super.setupUI()
         self.title = "HOME"
         
-        tableView.register(UINib(nibName: "ExCell", bundle: nil), forCellReuseIdentifier: "cell")
+        tableView.register(UINib(nibName: "NameUserCell", bundle: nil), forCellReuseIdentifier: "cell")
     }
     
     override func setupData() {
-        ex3s = DataManagement.share.getName(fileName: "ex2", type: "plist")
+        names = DataManagement.share.getName(fileName: "ex2", type: "plist")
     }
 }
 
@@ -38,12 +38,12 @@ extension Ex3ViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.ex3s.count
+        return self.names.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as? ExCell else { return UITableViewCell() }
-        let president = ex3s[indexPath.row]
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as? NameUserCell else { return UITableViewCell() }
+        let president = names[indexPath.row]
         cell.nameLabel.text = president.name
         
         return cell
@@ -53,7 +53,7 @@ extension Ex3ViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         let vc = PresidentViewController()
-        vc.name = self.ex3s[indexPath.row]
+        vc.name = self.names[indexPath.row]
         self.navigationController?.pushViewController(vc, animated: true)
     }
 }

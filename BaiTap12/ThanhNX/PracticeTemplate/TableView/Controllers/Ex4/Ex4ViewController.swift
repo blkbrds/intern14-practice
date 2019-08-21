@@ -11,8 +11,8 @@ import UIKit
 class Ex4ViewController: BaseViewController {
     //MARK: Outlet
     @IBOutlet private weak var tableView: UITableView!
-    var ex4Cells: [ExName] = []
-    var ex4Sections: [[ExName]] = []
+    var names: [UserName] = []
+    var sections: [[UserName]] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,13 +23,13 @@ class Ex4ViewController: BaseViewController {
         super.setupUI()
         self.title = "Ex4"
         
-        tableView.register(UINib(nibName: "ExCell", bundle: nil), forCellReuseIdentifier: "cell")
+        tableView.register(UINib(nibName: "NameUserCell", bundle: nil), forCellReuseIdentifier: "cell")
     }
     
     override func setupData() {
-        ex4Cells = DataManagement.share.getName(fileName: "ex2", type: "plist")
+        names = DataManagement.share.getName(fileName: "ex2", type: "plist")
         for _ in 0..<3 {
-            ex4Sections.append(ex4Cells)
+            sections.append(names)
         }
     }
 }
@@ -37,16 +37,16 @@ class Ex4ViewController: BaseViewController {
 extension Ex4ViewController: UITableViewDataSource, UITableViewDelegate {
     //MARK: TableView DataSource
     func numberOfSections(in tableView: UITableView) -> Int {
-        return ex4Sections.count
+        return sections.count
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.ex4Cells.count
+        return self.names.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as? ExCell else { return UITableViewCell() }
-        let president = ex4Sections[indexPath.section][indexPath.row]
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as? NameUserCell else { return UITableViewCell() }
+        let president = sections[indexPath.section][indexPath.row]
         cell.nameLabel.text = president.name
         return cell
     }

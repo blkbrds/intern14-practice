@@ -12,7 +12,7 @@ class PresidentViewController: BaseViewController {
     
     @IBOutlet private weak var presidentNameLabel: UILabel!
     
-    var name: ExName?
+    var name: UserName?
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -12,10 +12,10 @@ class Ex9ViewController: BaseViewController {
     
     @IBOutlet private weak var tableView: UITableView!
     //MARK: Propeties
-    var americaCells: [ExName] = []
-    var chinaCells: [ExName] = []
-    var franceCells: [ExName] = []
-    var ex9Sections: [[ExName]] = []
+    var americaCells: [UserName] = []
+    var chinaCells: [UserName] = []
+    var franceCells: [UserName] = []
+    var sections: [[UserName]] = []
     var sectionIndex: [String] = []
     
     override func viewDidLoad() {
@@ -34,7 +34,7 @@ class Ex9ViewController: BaseViewController {
         americaCells = DataManagement.share.getName(fileName: "ex2", type: "plist")
         chinaCells = DataManagement.share.getName(fileName: "ex6China", type: "plist")
         franceCells = DataManagement.share.getName(fileName: "ex6France", type: "plist")
-        ex9Sections = [americaCells, chinaCells, franceCells]
+        sections = [americaCells, chinaCells, franceCells]
         sectionIndex = ["A", "C", "F"]
     }
 }
@@ -42,7 +42,7 @@ class Ex9ViewController: BaseViewController {
 extension Ex9ViewController: UITableViewDelegate, UITableViewDataSource {
     //MARK: TableView DataSource
     func numberOfSections(in tableView: UITableView) -> Int {
-        return ex9Sections.count
+        return sections.count
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
@@ -77,9 +77,9 @@ extension Ex9ViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as? HomeCell else { return UITableViewCell() }
-        let name = ex9Sections[indexPath.section][indexPath.row]
+        let president = sections[indexPath.section][indexPath.row]
         cell.imageCell.image = #imageLiteral(resourceName: "ic-president")
-        cell.titleLabel.text = name.name
+        cell.titleLabel.text = president.name
         cell.subTitleLabel.text = "President"
         cell.delegate = self
         return cell

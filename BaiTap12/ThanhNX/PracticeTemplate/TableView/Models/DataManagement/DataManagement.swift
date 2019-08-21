@@ -31,12 +31,23 @@ class DataManagement {
         return exercises
     }
     
-    func getName(fileName: String, type: String) -> [ExName] {
+    func getPresident(fileName: String, type: String) -> [String] {
         let array = NSArray(contentsOfFile: getFileDocumentPath(fileName: fileName, type: type))
-        var names: [ExName] = []
+        var names: [String] = []
         for item in array! {
             let dict = item as! NSDictionary
-            let ex = ExName(name: dict.object(forKey: "name") as! String)
+            let ex = dict.object(forKey: "name") as! String
+            names.append(ex)
+        }
+        return names
+    }
+    
+    func getName(fileName: String, type: String) -> [UserName] {
+        let array = NSArray(contentsOfFile: getFileDocumentPath(fileName: fileName, type: type))
+        var names: [UserName] = []
+        for item in array! {
+            let dict = item as! NSDictionary
+            let ex = UserName(name: dict.object(forKey: "name") as! String)
             names.append(ex)
         }
         return names
