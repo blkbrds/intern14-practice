@@ -17,6 +17,8 @@
 		D1C30F0A230A8AC300DBB167 /* Ex03ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C30F08230A8AC300DBB167 /* Ex03ViewController.swift */; };
 		D1C30F0E230B8DA500DBB167 /* Ex04ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C30F0C230B8DA500DBB167 /* Ex04ViewController.swift */; };
 		D1C30F0F230B8DA500DBB167 /* Ex04ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1C30F0D230B8DA500DBB167 /* Ex04ViewController.xib */; };
+		D1C30F12230D350500DBB167 /* Ex05ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C30F10230D350500DBB167 /* Ex05ViewController.swift */; };
+		D1C30F13230D350500DBB167 /* Ex05ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1C30F11230D350500DBB167 /* Ex05ViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		D1C30F08230A8AC300DBB167 /* Ex03ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Ex03ViewController.swift; path = Ex03/Ex03ViewController.swift; sourceTree = "<group>"; };
 		D1C30F0C230B8DA500DBB167 /* Ex04ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Ex04ViewController.swift; path = Ex04/Ex04ViewController.swift; sourceTree = "<group>"; };
 		D1C30F0D230B8DA500DBB167 /* Ex04ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Ex04ViewController.xib; path = Ex04/Ex04ViewController.xib; sourceTree = "<group>"; };
+		D1C30F10230D350500DBB167 /* Ex05ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Ex05ViewController.swift; path = Ex05/Ex05ViewController.swift; sourceTree = "<group>"; };
+		D1C30F11230D350500DBB167 /* Ex05ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Ex05ViewController.xib; path = Ex05/Ex05ViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +77,8 @@
 				D1C30F08230A8AC300DBB167 /* Ex03ViewController.swift */,
 				D1C30F0C230B8DA500DBB167 /* Ex04ViewController.swift */,
 				D1C30F0D230B8DA500DBB167 /* Ex04ViewController.xib */,
+				D1C30F10230D350500DBB167 /* Ex05ViewController.swift */,
+				D1C30F11230D350500DBB167 /* Ex05ViewController.xib */,
 			);
 			path = "Baitap-Outlet-Action";
 			sourceTree = "<group>";
@@ -153,6 +159,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1C30F13230D350500DBB167 /* Ex05ViewController.xib in Resources */,
 				D17E8AA92306A18B00D67B94 /* Ex01ViewController.xib in Resources */,
 				D17E8AB02306B7F900D67B94 /* Ex02ViewController.xib in Resources */,
 				D1C30F0F230B8DA500DBB167 /* Ex04ViewController.xib in Resources */,
@@ -168,6 +175,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1C30F12230D350500DBB167 /* Ex05ViewController.swift in Sources */,
 				D17E8A922306A05C00D67B94 /* AppDelegate.swift in Sources */,
 				D17E8AAF2306B7F900D67B94 /* Ex02ViewController.swift in Sources */,
 				D1C30F0A230A8AC300DBB167 /* Ex03ViewController.swift in Sources */,
