@@ -36,7 +36,7 @@
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
                     <connections>
-                        <action selector="bananaButtonTouchUpInside:" destination="-1" eventType="touchUpInside" id="8vO-7B-tHq"/>
+                        <action selector="plushTouchUpInside:" destination="-1" eventType="touchUpInside" id="5e5-t7-EoR"/>
                     </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="30z-cM-KW8" userLabel="bananaLabel">
@@ -55,7 +55,7 @@
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
                     <connections>
-                        <action selector="grapeButtonTouchUpInside:" destination="-1" eventType="touchUpInside" id="CXK-lp-BCa"/>
+                        <action selector="plushTouchUpInside:" destination="-1" eventType="touchUpInside" id="bfS-sy-NSz"/>
                     </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B3s-cN-dRh" userLabel="grapeLabel">
@@ -74,7 +74,7 @@
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
                     <connections>
-                        <action selector="appleButtonTouchUpInside:" destination="-1" eventType="touchUpInside" id="FUB-T4-yvd"/>
+                        <action selector="plushTouchUpInside:" destination="-1" eventType="touchUpInside" id="8rm-qb-axG"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xp6-3f-gXy" userLabel="allButton">
@@ -86,7 +86,7 @@
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
                     <connections>
-                        <action selector="plushAllTouchUpInside:" destination="-1" eventType="touchUpInside" id="ENF-eE-swb"/>
+                        <action selector="plushTouchUpInside:" destination="-1" eventType="touchUpInside" id="j7R-uf-lP0"/>
                     </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xe6-Mc-cxM" userLabel="appleLabel">

@@ -11,28 +11,36 @@ import UIKit
 struct Person {
     var name: String
     var avatar: String
-    init(_ name: String, _ avatar: String) {
+    init(name: String, avatar: String) {
         self.name = name
         self.avatar = avatar
     }
 }
 
+extension Array {
+    func createListUsers() -> [Person] {
+        let users: [Person] = [
+            Person(name: "An", avatar: "avatar.jpg"),
+            Person(name: "Bo", avatar: "avatar.jpg"),
+            Person(name: "Cao", avatar: "avatar.jpg"),
+            Person(name: "Dao", avatar: "avatar.jpg"),
+            Person(name: "Giang", avatar: "avatar.jpg"),
+            Person(name: "Hien", avatar: "avatar.jpg"),
+            Person(name: "Khanh", avatar: "avatar.jpg"),
+            Person(name: "Lien", avatar: "avatar.jpg"),
+            Person(name: "Manh", avatar: "avatar.jpg")
+        ]
+        return users
+    }
+}
+
 class Ex03ViewController: UIViewController {
 
-    var users: [Person] = [
-        Person("An", "avatar.jpg"),
-        Person("Bo", "avatar.jpg"),
-        Person("Cao", "avatar.jpg"),
-        Person("Dao", "avatar.jpg"),
-        Person("Giang", "avatar.jpg"),
-        Person("Hien", "avatar.jpg"),
-        Person("Khanh", "avatar.jpg"),
-        Person("Lien", "avatar.jpg"),
-        Person("Manh", "avatar.jpg")
-    ]
+    var users: [Person] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.users = users.createListUsers()
         showDataListUsers()
     }
     

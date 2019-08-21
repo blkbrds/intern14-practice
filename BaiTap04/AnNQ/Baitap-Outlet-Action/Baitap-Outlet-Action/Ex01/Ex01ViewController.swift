@@ -29,8 +29,6 @@ class Ex01ViewController: UIViewController {
         dateFormatter.dateFormat = "H:mm:ss dd-MM-yyyy"
         let result = dateFormatter.string(from: date)
         dateLabel.text = result
-        
-        view.addSubview(dateLabel)
     }
 
 

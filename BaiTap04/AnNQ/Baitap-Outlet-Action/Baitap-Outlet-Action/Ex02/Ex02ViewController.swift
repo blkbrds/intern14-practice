@@ -49,40 +49,40 @@ class Ex02ViewController: UIViewController {
         bananaButton.layer.cornerRadius = 20
         bananaButton.setTitle("\(fruitArray[0].name)", for: .normal)
         bananaLabel.text = "\(fruitArray[0].count)"
+        bananaButton.tag = 0
         
         grapeButton.layer.cornerRadius = 20
         grapeButton.setTitle("\(fruitArray[1].name)", for: .normal)
         grapeLabel.text = "\(fruitArray[1].count)"
+        grapeButton.tag = 1
         
         appleButton.layer.cornerRadius = 20
         appleButton.setTitle("\(fruitArray[2].name)", for: .normal)
         appleLabel.text = "\(fruitArray[2].count)"
+        appleButton.tag = 2
         
         allButton.layer.cornerRadius = 20
         allButton.setTitle("\(fruitArray[3].name)", for: .normal)
+        allButton.tag = 3
         
     }
     
-    @IBAction func bananaButtonTouchUpInside(_ sender: Any) {
-        fruitArray[0].count += 1
-        bananaLabel.text = "\(fruitArray[0].count)"
-    }
-
-    
-    @IBAction func grapeButtonTouchUpInside(_ sender: Any) {
-        fruitArray[1].count += 1
-        grapeLabel.text = "\(fruitArray[1].count)"
-    }
-    
-    @IBAction func appleButtonTouchUpInside(_ sender: Any) {
-        fruitArray[2].count += 1
-        appleLabel.text = "\(fruitArray[2].count)"
-    }
-    
-    @IBAction func plushAllTouchUpInside(_ sender: Any) {
-        bananaButtonTouchUpInside(sender)
-        grapeButtonTouchUpInside(sender)
-        appleButtonTouchUpInside(sender)
-
+    @IBAction func plushTouchUpInside(_ sender: UIButton) {
+            fruitArray[sender.tag].count += 1
+            switch sender.tag {
+            case 0:
+                bananaLabel.text = "\(fruitArray[sender.tag].count)"
+            case 1:
+                grapeLabel.text = "\(fruitArray[sender.tag].count)"
+            case 3:
+                for i in 0..<(fruitArray.count-1) {
+                    fruitArray[i].count += 1
+                }
+                bananaLabel.text = "\(fruitArray[0].count)"
+                grapeLabel.text = "\(fruitArray[1].count)"
+                appleLabel.text = "\(fruitArray[2].count)"
+            default:
+                appleLabel.text = "\(fruitArray[sender.tag].count)"
+            }
     }
 }
