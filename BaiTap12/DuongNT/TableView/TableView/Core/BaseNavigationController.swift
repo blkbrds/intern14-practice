@@ -1,5 +1,5 @@
 //
-//  Ex2ViewController.swift
+//  BaseNavigationController.swift
 //  PracticeTemplate
 //
 //  Created by Tien Le P. on 6/22/18.
@@ -8,24 +8,15 @@
 
 import UIKit
 
-class Ex2ViewController: BaseViewController {
-    
+class BaseNavigationController: UINavigationController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    
-    // MARK: config
-    override func setupUI() {
-        super.setupUI()
-        self.title = "Ex2"
-    }
-    
-    override func setupData() {
-    }
-    
-    
+
+
 }

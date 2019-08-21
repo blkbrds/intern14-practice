@@ -26,6 +26,4 @@ class Ex5ViewController: BaseViewController {
     
     override func setupData() {
     }
-    
-    
 }
