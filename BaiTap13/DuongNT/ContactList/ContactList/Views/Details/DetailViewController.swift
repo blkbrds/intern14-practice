@@ -97,11 +97,7 @@ class DetailViewController: AlertsVC {
         navigationItem.rightBarButtonItem = doneButton
         let format = DateFormatter()
         format.dateFormat = "MMM d, YYYY"
-        if let avatarImg = avatarImg {
-            avatarImageView.image = UIImage(named: avatarImg)
-        } else {
-            avatarImageView.image = UIImage(contentsOfFile: super.getImage()[1])
-        }
+        avatarImageView.image = UIImage(named: avatarImg ?? "avatarDefault")
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapped(tapGestureRecognizer:)))
         avatarImageView.isUserInteractionEnabled = true
         avatarImageView.addGestureRecognizer(tapGestureRecognizer)
