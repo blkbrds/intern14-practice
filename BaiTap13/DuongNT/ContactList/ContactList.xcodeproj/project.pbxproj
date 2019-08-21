@@ -10,7 +10,6 @@
 		1C3886382309361C00120025 /* ContactInfor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3886372309361C00120025 /* ContactInfor.swift */; };
 		1C38863D2309383200120025 /* FileManagers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C38863C2309383200120025 /* FileManagers.swift */; };
 		1C38863F2309384B00120025 /* contactList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1C38863E2309384B00120025 /* contactList.plist */; };
-		1C388644230A587300120025 /* ButtonAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C388643230A587300120025 /* ButtonAlert.swift */; };
 		1C388646230A5B1A00120025 /* AlertsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C388645230A5B1A00120025 /* AlertsVC.swift */; };
 		1C388652230AA3AB00120025 /* MyDatePickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C38864C230AA3AA00120025 /* MyDatePickerView.xib */; };
 		1C388653230AA3AB00120025 /* MyDatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C38864D230AA3AA00120025 /* MyDatePickerView.swift */; };
@@ -31,7 +30,6 @@
 		1C3886372309361C00120025 /* ContactInfor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactInfor.swift; sourceTree = "<group>"; };
 		1C38863C2309383200120025 /* FileManagers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagers.swift; sourceTree = "<group>"; };
 		1C38863E2309384B00120025 /* contactList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = contactList.plist; sourceTree = "<group>"; };
-		1C388643230A587300120025 /* ButtonAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonAlert.swift; sourceTree = "<group>"; };
 		1C388645230A5B1A00120025 /* AlertsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertsVC.swift; sourceTree = "<group>"; };
 		1C38864C230AA3AA00120025 /* MyDatePickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyDatePickerView.xib; sourceTree = "<group>"; };
 		1C38864D230AA3AA00120025 /* MyDatePickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyDatePickerView.swift; sourceTree = "<group>"; };
@@ -89,7 +87,6 @@
 		1C388640230A57B300120025 /* AlertCustom */ = {
 			isa = PBXGroup;
 			children = (
-				1C388643230A587300120025 /* ButtonAlert.swift */,
 				1C388645230A5B1A00120025 /* AlertsVC.swift */,
 			);
 			path = AlertCustom;
@@ -283,7 +280,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C388644230A587300120025 /* ButtonAlert.swift in Sources */,
 				1C76AFFD230809A300A06468 /* ContactCell.swift in Sources */,
 				1C38863D2309383200120025 /* FileManagers.swift in Sources */,
 				1C388656230B8A0B00120025 /* GenderPickerView.swift in Sources */,

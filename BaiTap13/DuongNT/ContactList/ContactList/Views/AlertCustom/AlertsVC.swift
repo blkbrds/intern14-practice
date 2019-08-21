@@ -12,28 +12,40 @@ class AlertsVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
 
-    func alertSettings(title: String, message: String, alertButtons: [AlertButton]) {
-        let alert = UIAlertController(title: "Delete Warning",
-                                      message: "Do you want to delete this rows selected!",
+    func alertSettings(title: String, message: String, actions: [UIAlertAction]) {
+        let alert = UIAlertController(title: title,
+                                      message: message,
                                       preferredStyle: UIAlertController.Style.alert)
 
-        for button in alertButtons {
-            switch button.style {
-            case .cancel:
-                alert.addAction(UIAlertAction(title: button.name,
-                                              style: UIAlertAction.Style.cancel,
-                                              handler: {(alert: UIAlertAction!) in button.handle}))
-            case .defauls:
-                alert.addAction(UIAlertAction(title: button.name,
-                                              style: UIAlertAction.Style.default,
-                                              handler: {(alert: UIAlertAction!) in button.handle}))
-            }
-            
+        for action in actions {
+            alert.addAction(action)
         }
         self.present(alert, animated: true)
+    }
+
+    func saveImageDocumentDirectory(avatarImageView: UIImageView) {
+        let fileManager = FileManager.default
+        let paths = (NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as NSString).appendingPathComponent("apple.jpg")
+        print(paths)
+        let imageData = UIImage.pngData(avatarImageView.image!)
+        fileManager.createFile(atPath: paths, contents: imageData(), attributes: nil)
+    }
+
+    func getDirectoryPath() -> String {
+        let paths = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)
+        let documentsDirectory = paths[0]
+        return documentsDirectory
+    }
+
+    func getImage() -> [String] {
+        let fileManager = FileManager.default
+        let imagePAth = (self.getDirectoryPath() as NSString).appendingPathComponent("/apple.jpg")
+        if fileManager.fileExists(atPath: imagePAth) {
+            return ["apple.jpg",imagePAth]
+        } else {
+            return []
+        }
     }
 }

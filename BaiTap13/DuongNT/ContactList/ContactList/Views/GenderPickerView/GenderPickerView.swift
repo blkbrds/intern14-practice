@@ -104,6 +104,7 @@ class GenderPickerView: UIView {
     }
 }
 
+// MARK: - Extension
 extension GenderPickerView: UIPickerViewDataSource, UIPickerViewDelegate {
 
     func numberOfComponents(in pickerView: UIPickerView) -> Int {

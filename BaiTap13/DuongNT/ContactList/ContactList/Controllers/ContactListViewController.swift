@@ -46,21 +46,6 @@ class ContactListViewController: AlertsVC {
         navigationItem.rightBarButtonItem = addButton
     }
 
-    @objc private func deleteItems() {
-        tableView.isEditing = true
-        isSelected = !isSelected
-        let cancelButton = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(cancelSelected))
-        let doneButton = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(doneSelectedButton))
-        navigationItem.leftBarButtonItem = cancelButton
-        navigationItem.rightBarButtonItem = doneButton
-    }
-
-    @objc private func cancelSelected() {
-        tableView.isEditing = false
-        isSelected = !isSelected
-        setUpUI()
-    }
-
     private func deleteSelected() {
         isSelected = !isSelected
         if let selectedRows = tableView.indexPathsForSelectedRows {
@@ -82,19 +67,32 @@ class ContactListViewController: AlertsVC {
         }
     }
 
-    @objc private func doneSelectedButton() {
-//        super.alertSettings(title: "Delete Warning", message: "Do you want to delete this rows selected!", alertButtons: [AlertButton(name: "Cancel",style: .cancel , handle: nil), AlertButton(name: "Okey",style: .defauls , handle: self.deleteSelected())])
-        let alert = UIAlertController(title: "Delete Warning",
-                                      message: "Do you want to delete this rows selected!",
-                                      preferredStyle: UIAlertController.Style.alert)
+    @objc private func deleteItems() {
+        tableView.isEditing = true
+        isSelected = !isSelected
+        let cancelButton = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(cancelSelected))
+        let doneButton = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(doneSelectedButton))
+        navigationItem.leftBarButtonItem = cancelButton
+        navigationItem.rightBarButtonItem = doneButton
+    }
 
-        alert.addAction(UIAlertAction(title: "Okay",
-                                      style: UIAlertAction.Style.default,
-                                      handler: {(alert: UIAlertAction!) in self.deleteSelected()}))
-        alert.addAction(UIAlertAction(title: "Cancel",
-                                      style: UIAlertAction.Style.cancel,
-                                      handler: nil))
-        self.present(alert, animated: true)
+    @objc private func cancelSelected() {
+        tableView.isEditing = false
+        isSelected = !isSelected
+        setUpUI()
+    }
+
+    @objc private func doneSelectedButton() {
+        var actions: [UIAlertAction] = []
+        let okayAction = UIAlertAction(title: "Okay",
+                                       style: UIAlertAction.Style.default,
+                                       handler: {(alert: UIAlertAction!) in self.deleteSelected()})
+        let cancelAction = UIAlertAction(title: "Cancel",
+                                         style: UIAlertAction.Style.cancel,
+                                         handler: nil)
+        actions.append(okayAction)
+        actions.append(cancelAction)
+        super.alertSettings(title: "Delete Confirm", message: "Do you want delete this choosen!", actions: actions)
     }
 
     @objc private func addItems() {
@@ -121,7 +119,15 @@ extension ContactListViewController: UITableViewDelegate, UITableViewDataSource 
         let contact = contactList[indexPath.row]
         let calendar = Calendar.current
         let date = Date()
-        cell?.avatarImageView.image = UIImage(named: contact.avatarImg)
+        let fileManager = FileManager.default
+        let imagePath = (NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as NSString).appendingPathComponent(contact.avatarImg)
+        if fileManager.fileExists(atPath: imagePath) {
+            cell?.avatarImageView.image = UIImage(contentsOfFile: imagePath)
+            cell?.avatarImageView.contentMode = .scaleAspectFill
+        } else{
+            cell?.avatarImageView.image = UIImage(named: contact.avatarImg)
+        }
+//        cell?.avatarImageView.image = UIImage(named: contact.avatarImg)
         cell?.fullNameLabel.text = contact.fullName
         cell?.addressLabel.text = contact.address
         if contact.gender {
@@ -151,9 +157,6 @@ extension ContactListViewController: UITableViewDelegate, UITableViewDataSource 
         }
     }
 
-//    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
-//    }
-
     func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
         let movedObject =  contactList[sourceIndexPath.row]
         contactList.remove(at: sourceIndexPath.row)
@@ -166,11 +169,12 @@ extension ContactListViewController: UITableViewDelegate, UITableViewDataSource 
             return
         case .delete:
             contactList.remove(at: indexPath.row)
-            tableView.reloadData()
+            tableView.beginUpdates()
+            tableView.deleteRows(at: [IndexPath.init(row: indexPath.row, section: indexPath.section)], with: .automatic)
+            tableView.endUpdates()
         case .insert:
             return
         }
-        
     }
 }
 
@@ -180,15 +184,23 @@ extension ContactListViewController: DetailViewControllerDelegate {
         case .edit:
             if let contact = contact {
                 contactList[indexContact] = contact
+                tableView.beginUpdates()
+                tableView.reloadRows(at: [IndexPath.init(row: indexContact, section: 0)], with: .automatic)
+                tableView.endUpdates()
             }
         case .add:
             if let contact = contact {
                 contactList.insert(contact, at: 0)
+                tableView.beginUpdates()
+                tableView.insertRows(at: [IndexPath.init(row: 0, section: 0)], with: .automatic)
+                tableView.endUpdates()
             }
         case .delete:
             contactList.remove(at: indexContact)
+            tableView.beginUpdates()
+            tableView.deleteRows(at: [IndexPath.init(row: indexContact, section: 0)], with: .automatic)
+            tableView.endUpdates()
         }
-        tableView.reloadData()
     }
 }
 // MARK: - IBDesignable

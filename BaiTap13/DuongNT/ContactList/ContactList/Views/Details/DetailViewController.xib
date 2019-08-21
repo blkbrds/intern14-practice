@@ -89,7 +89,7 @@
                             <rect key="frame" x="50" y="435" width="314" height="30"/>
                             <nil key="textColor"/>
                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                            <textInputTraits key="textInputTraits" returnKeyType="next" textContentType="tel"/>
+                            <textInputTraits key="textInputTraits" returnKeyType="done" textContentType="tel"/>
                             <userDefinedRuntimeAttributes>
                                 <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                     <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -102,7 +102,7 @@
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
                         </textField>
-                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="date of birth" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y41-RY-AYU">
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="date of birth" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y41-RY-AYU">
                             <rect key="frame" x="50" y="485" width="314" height="30"/>
                             <nil key="textColor"/>
                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -119,7 +119,7 @@
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
                         </textField>
-                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="gender" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cxU-Cd-3Lm">
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="gender" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cxU-Cd-3Lm">
                             <rect key="frame" x="50" y="535" width="314" height="30"/>
                             <nil key="textColor"/>
                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -170,21 +170,39 @@
                                 <action selector="deleteButtonAction:" destination="-1" eventType="touchUpInside" id="lqz-5A-q2U"/>
                             </connections>
                         </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CiI-Nq-FjE">
+                            <rect key="frame" x="50" y="485" width="314" height="30"/>
+                            <connections>
+                                <action selector="dateOfBirthTouchUpInside:" destination="-1" eventType="touchUpInside" id="ZvA-f4-ABu"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BAY-Tb-v5r">
+                            <rect key="frame" x="50" y="535" width="314" height="30"/>
+                            <connections>
+                                <action selector="genderTouchUpInside:" destination="-1" eventType="touchUpInside" id="pbV-Vl-CiN"/>
+                            </connections>
+                        </button>
                     </subviews>
                     <constraints>
+                        <constraint firstItem="BAY-Tb-v5r" firstAttribute="height" secondItem="cxU-Cd-3Lm" secondAttribute="height" id="0J4-yV-hYg"/>
                         <constraint firstItem="w7w-Nk-w19" firstAttribute="height" secondItem="C4a-4P-67B" secondAttribute="height" id="3nf-vw-Pdg"/>
                         <constraint firstAttribute="trailing" secondItem="C4a-4P-67B" secondAttribute="trailing" constant="50" id="51T-aK-Euf"/>
                         <constraint firstItem="cxU-Cd-3Lm" firstAttribute="height" secondItem="y41-RY-AYU" secondAttribute="height" id="58V-5T-R1u"/>
                         <constraint firstItem="w7w-Nk-w19" firstAttribute="width" secondItem="C4a-4P-67B" secondAttribute="width" id="5DH-R1-tzC"/>
+                        <constraint firstItem="CiI-Nq-FjE" firstAttribute="width" secondItem="y41-RY-AYU" secondAttribute="width" id="6IQ-gO-m6T"/>
                         <constraint firstItem="y41-RY-AYU" firstAttribute="top" secondItem="0nI-jf-4Qo" secondAttribute="bottom" constant="20" id="BL3-cA-oHk"/>
                         <constraint firstItem="0nI-jf-4Qo" firstAttribute="width" secondItem="GA8-Am-YCK" secondAttribute="width" id="Gpt-qg-SdG"/>
                         <constraint firstItem="0nI-jf-4Qo" firstAttribute="centerX" secondItem="H9K-RE-r9n" secondAttribute="centerX" id="HAT-u9-5qS"/>
                         <constraint firstItem="cxU-Cd-3Lm" firstAttribute="top" secondItem="y41-RY-AYU" secondAttribute="bottom" constant="20" id="I9b-MW-tkD"/>
+                        <constraint firstItem="CiI-Nq-FjE" firstAttribute="centerY" secondItem="y41-RY-AYU" secondAttribute="centerY" id="IqL-J6-OTS"/>
                         <constraint firstItem="C4a-4P-67B" firstAttribute="top" secondItem="Rvo-b5-YMW" secondAttribute="bottom" constant="25" id="KD5-Z0-ZOE"/>
+                        <constraint firstItem="BAY-Tb-v5r" firstAttribute="centerY" secondItem="cxU-Cd-3Lm" secondAttribute="centerY" id="KUs-yK-4Vu"/>
                         <constraint firstItem="0nI-jf-4Qo" firstAttribute="height" secondItem="GA8-Am-YCK" secondAttribute="height" id="KoF-xy-rTL"/>
                         <constraint firstItem="C4a-4P-67B" firstAttribute="leading" secondItem="H9K-RE-r9n" secondAttribute="leading" constant="50" id="Lhc-4D-RRI"/>
                         <constraint firstItem="GA8-Am-YCK" firstAttribute="width" secondItem="w7w-Nk-w19" secondAttribute="width" id="Pnd-5k-EN1"/>
                         <constraint firstItem="Rvo-b5-YMW" firstAttribute="top" secondItem="H9K-RE-r9n" secondAttribute="top" constant="20" id="Px0-Zi-Jjl"/>
+                        <constraint firstItem="CiI-Nq-FjE" firstAttribute="height" secondItem="y41-RY-AYU" secondAttribute="height" id="Q4l-AH-g1r"/>
+                        <constraint firstItem="BAY-Tb-v5r" firstAttribute="centerX" secondItem="H9K-RE-r9n" secondAttribute="centerX" id="QgK-lw-xQK"/>
                         <constraint firstItem="GA8-Am-YCK" firstAttribute="height" secondItem="w7w-Nk-w19" secondAttribute="height" id="S7m-ZB-8R6"/>
                         <constraint firstItem="y41-RY-AYU" firstAttribute="height" secondItem="0nI-jf-4Qo" secondAttribute="height" id="SAa-jG-rtv"/>
                         <constraint firstItem="w7w-Nk-w19" firstAttribute="top" secondItem="C4a-4P-67B" secondAttribute="bottom" constant="20" id="SVA-Od-nPV"/>
@@ -192,6 +210,7 @@
                         <constraint firstItem="cxU-Cd-3Lm" firstAttribute="centerX" secondItem="H9K-RE-r9n" secondAttribute="centerX" id="WdA-0u-SJK"/>
                         <constraint firstItem="GMd-fB-XOU" firstAttribute="height" secondItem="cxU-Cd-3Lm" secondAttribute="height" id="YdU-Wb-Aj1"/>
                         <constraint firstItem="GA8-Am-YCK" firstAttribute="centerX" secondItem="H9K-RE-r9n" secondAttribute="centerX" id="al2-Ou-Xot"/>
+                        <constraint firstItem="CiI-Nq-FjE" firstAttribute="centerX" secondItem="H9K-RE-r9n" secondAttribute="centerX" id="bhW-1Z-Gqc"/>
                         <constraint firstItem="Rvo-b5-YMW" firstAttribute="centerX" secondItem="H9K-RE-r9n" secondAttribute="centerX" id="dwx-5s-BZA"/>
                         <constraint firstAttribute="bottom" secondItem="GMd-fB-XOU" secondAttribute="bottom" constant="50" id="eFc-DB-RPD"/>
                         <constraint firstItem="y41-RY-AYU" firstAttribute="centerX" secondItem="H9K-RE-r9n" secondAttribute="centerX" id="fD4-2V-zGZ"/>
@@ -200,6 +219,7 @@
                         <constraint firstItem="GA8-Am-YCK" firstAttribute="top" secondItem="w7w-Nk-w19" secondAttribute="bottom" constant="20" id="msE-c5-5aH"/>
                         <constraint firstItem="cxU-Cd-3Lm" firstAttribute="width" secondItem="y41-RY-AYU" secondAttribute="width" id="nW8-9q-Bv4"/>
                         <constraint firstItem="y41-RY-AYU" firstAttribute="width" secondItem="0nI-jf-4Qo" secondAttribute="width" id="oOe-Po-RXL"/>
+                        <constraint firstItem="BAY-Tb-v5r" firstAttribute="width" secondItem="cxU-Cd-3Lm" secondAttribute="width" id="reF-xK-R5x"/>
                         <constraint firstItem="GMd-fB-XOU" firstAttribute="centerX" secondItem="H9K-RE-r9n" secondAttribute="centerX" id="tLD-Zz-OX7"/>
                         <constraint firstItem="0nI-jf-4Qo" firstAttribute="top" secondItem="GA8-Am-YCK" secondAttribute="bottom" constant="20" id="v5h-rk-zkG"/>
                     </constraints>

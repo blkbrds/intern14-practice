@@ -12,8 +12,9 @@ protocol DetailViewControllerDelegate: class {
     func detailView(view: DetailViewController, needPerform action: DetailViewController.Action, contact: Contact?)
 }
 
-class DetailViewController: UIViewController {
+class DetailViewController: AlertsVC {
 
+    // MARK: - Enums
     enum Action {
         case edit
         case add
@@ -29,7 +30,8 @@ class DetailViewController: UIViewController {
     @IBOutlet private weak var dateOfBirthTextField: UITextField!
     @IBOutlet private weak var genderTextField: UITextField!
     @IBOutlet private weak var deleteButton: UIButton!
-    
+
+    // MARK: - Properties
     weak var delegate: DetailViewControllerDelegate?
     var avatarImg: String?
     var email: String?
@@ -40,10 +42,12 @@ class DetailViewController: UIViewController {
     var gender: Bool = true
     var isHidden: Bool = true
     let imagePicker = UIImagePickerController()
+    var viewController: UIViewController?
     var datePicker: MyDatePickerView?
     var genderPicker: GenderPickerView?
-//    let picker: UIpick
+    var indexImage: Int = 0
 
+    // MARK: - Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         configTextFields()
@@ -51,6 +55,13 @@ class DetailViewController: UIViewController {
         setUpUI()
     }
 
+    // MARK: - Basic override view function
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
+        view.endEditing(true)
+    }
+
+    // MARK: - Custom func
     private func configTextFields() {
         emailTextField.delegate = self
         fullNameTextField.delegate = self
@@ -58,12 +69,6 @@ class DetailViewController: UIViewController {
         phoneTextField.delegate = self
         dateOfBirthTextField.delegate = self
         genderTextField.delegate = self
-    }
-
-    // MARK: - Basic override view function
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        super.touchesBegan(touches, with: event)
-        self.view.endEditing(true)
     }
 
     func isValidEmail(email: String?) -> Bool {
@@ -92,7 +97,11 @@ class DetailViewController: UIViewController {
         navigationItem.rightBarButtonItem = doneButton
         let format = DateFormatter()
         format.dateFormat = "MMM d, YYYY"
-        avatarImageView.image = UIImage(named: avatarImg ?? "avatarDefault")
+        if let avatarImg = avatarImg {
+            avatarImageView.image = UIImage(named: avatarImg)
+        } else {
+            avatarImageView.image = UIImage(contentsOfFile: super.getImage()[1])
+        }
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapped(tapGestureRecognizer:)))
         avatarImageView.isUserInteractionEnabled = true
         avatarImageView.addGestureRecognizer(tapGestureRecognizer)
@@ -112,27 +121,112 @@ class DetailViewController: UIViewController {
 
     @objc func doneAddButton() {
         if deleteButton.isHidden {
-            delegate?.detailView(view: self, needPerform: .add, contact: Contact(avatarImg: avatarImageView.image?.accessibilityIdentifier ?? "avatar", email: emailTextField.text ?? "", fullName: fullNameTextField.text ?? "", address: addressTextField.text ?? "", phone: phoneTextField.text ?? "", dateOfBirth: self.dateOfBirth, gender: self.gender))
+            delegate?.detailView(view: self, needPerform: .add, contact: Contact(avatarImg: avatarImg ?? "avatarDefault", email: emailTextField.text ?? "", fullName: fullNameTextField.text ?? "", address: addressTextField.text ?? "", phone: phoneTextField.text ?? "", dateOfBirth: self.dateOfBirth, gender: self.gender))
         } else {
-            delegate?.detailView(view: self, needPerform: .edit, contact: Contact(avatarImg: avatarImageView.image?.accessibilityIdentifier ?? "avatar", email: emailTextField.text ?? "", fullName: fullNameTextField.text ?? "", address: addressTextField.text ?? "", phone: phoneTextField.text ?? "", dateOfBirth: self.dateOfBirth, gender: self.gender))
+            delegate?.detailView(view: self, needPerform: .edit, contact: Contact(avatarImg: avatarImg ?? "avatarDefault", email: emailTextField.text ?? "", fullName: fullNameTextField.text ?? "", address: addressTextField.text ?? "", phone: phoneTextField.text ?? "", dateOfBirth: self.dateOfBirth, gender: self.gender))
         }
         navigationController?.popViewController(animated: true)
     }
 
     @objc private func imageTapped(tapGestureRecognizer: UITapGestureRecognizer)
     {
-//        let tappedImage = tapGestureRecognizer.view as! UIImageView
         imagePicker.allowsEditing = false
         imagePicker.sourceType = .photoLibrary
         present(imagePicker, animated: true, completion: nil)
     }
-    @IBAction func deleteButtonAction(_ sender: Any) {
+
+    private func deleteContact() {
         delegate?.detailView(view: self, needPerform: .delete, contact: nil)
         navigationController?.popViewController(animated: true)
     }
+
+    // MARK: - Actions
+    @IBAction func deleteButtonAction(_ button: UIButton) {
+        var actions: [UIAlertAction] = []
+        let okayAction = UIAlertAction(title: "Okay",
+                                       style: UIAlertAction.Style.default,
+                                       handler: {(alert: UIAlertAction!) in self.deleteContact()})
+        let cancelAction = UIAlertAction(title: "Cancel",
+                                         style: UIAlertAction.Style.cancel,
+                                         handler: nil)
+        actions.append(okayAction)
+        actions.append(cancelAction)
+        super.alertSettings(title: "Delete Confirm", message: "Do you want delete this contact!", actions: actions)
+    }
+
+    @IBAction func dateOfBirthTouchUpInside(_ button: UIButton) {
+        datePicker = Bundle.main.loadNibNamed("MyDatePickerView", owner: self, options: nil)?.first as? MyDatePickerView
+        datePicker?.config()
+        datePicker?.delegate = self
+        self.view.addSubview(datePicker!)
+        datePicker?.show(animation: true)
+    }
+
+    @IBAction func genderTouchUpInside(_ button: UIButton) {
+        genderPicker = Bundle.main.loadNibNamed("GenderPickerView", owner: self, options: nil)?.first as? GenderPickerView
+        genderPicker?.config()
+        genderPicker?.delegate = self
+        self.view.addSubview(genderPicker!)
+        genderPicker?.show(animation: true)
+    }
 }
 
+// MARK: - Extension
 extension DetailViewController: UITextFieldDelegate {
+
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        if textField == emailTextField {
+            if !isValidEmail(email: emailTextField.text) {
+                var actions: [UIAlertAction] = []
+                let okayAction = UIAlertAction(title: "Okay",
+                                               style: UIAlertAction.Style.default,
+                                               handler: {(alert: UIAlertAction!) in self.emailTextField.becomeFirstResponder()})
+                actions.append(okayAction)
+                super.alertSettings(title: "Confirm Email", message: "Pls check format email!", actions: actions)
+            } else {
+                fullNameTextField.becomeFirstResponder()
+            }
+        } else if textField == fullNameTextField {
+            if let fullName = fullNameTextField.text {
+                if isValidString(string: fullName) {
+                    addressTextField.becomeFirstResponder()
+                } else {
+                    var actions: [UIAlertAction] = []
+                    let okayAction = UIAlertAction(title: "Okay",
+                                                   style: UIAlertAction.Style.default,
+                                                   handler: {(alert: UIAlertAction!) in self.fullNameTextField.becomeFirstResponder()})
+                    actions.append(okayAction)
+                    super.alertSettings(title: "Confirm Full Name", message: "Fullname không chứa ký tự rỗng, chứa từ 6 đến 32 ký tự", actions: actions)
+                }
+            }
+        } else if textField == addressTextField {
+            if let address = addressTextField.text {
+                if isValidString(string: address) {
+                    phoneTextField.becomeFirstResponder()
+                } else {
+                    var actions: [UIAlertAction] = []
+                    let okayAction = UIAlertAction(title: "Okay",
+                                                   style: UIAlertAction.Style.default,
+                                                   handler: {(alert: UIAlertAction!) in self.addressTextField.becomeFirstResponder()})
+                    actions.append(okayAction)
+                    super.alertSettings(title: "Confirm Address", message: "Address không chứa ký tự rỗng, chứa từ 6 đến 32 ký tự", actions: actions)
+                }
+            }
+        } else if textField == phoneTextField {
+            if let phone = phoneTextField.text {
+                if isValidPhoneNumber(value: phone) {
+                    phoneTextField.resignFirstResponder()
+                } else {
+                    var actions: [UIAlertAction] = []
+                    let okayAction = UIAlertAction(title: "Okay",
+                                                   style: UIAlertAction.Style.default,
+                                                   handler: {(alert: UIAlertAction!) in self.phoneTextField.becomeFirstResponder()})
+                    actions.append(okayAction)
+                    super.alertSettings(title: "Confirm Phone", message: "Pls check format phone!", actions: actions)
+                }
+            }
+        }
+    }
 
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         if textField == emailTextField {
@@ -154,23 +248,9 @@ extension DetailViewController: UITextFieldDelegate {
         } else if textField == phoneTextField {
             if let phone = phoneTextField.text {
                 if isValidPhoneNumber(value: phone) {
-                    datePicker = Bundle.main.loadNibNamed("MyDatePickerView", owner: self, options: nil)?.first as? MyDatePickerView
-                    datePicker?.config()
-                    datePicker?.delegate = self
-                    self.view.addSubview(datePicker!)
-                    datePicker?.show(animation: true)
-                    dateOfBirthTextField.becomeFirstResponder()
+                    phoneTextField.resignFirstResponder()
                 }
             }
-        } else if textField == dateOfBirthTextField {
-            genderPicker = Bundle.main.loadNibNamed("GenderPickerView", owner: self, options: nil)?.first as? GenderPickerView
-            genderPicker?.config()
-            genderPicker?.delegate = self
-            self.view.addSubview(genderPicker!)
-            genderPicker?.show(animation: true)
-            genderTextField.becomeFirstResponder()
-        } else {
-            genderTextField.resignFirstResponder()
         }
         return true
     }
@@ -216,12 +296,15 @@ extension DetailViewController: MyDatePickerViewDelegate {
 }
 
 extension DetailViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         if let pickedImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
             avatarImageView.contentMode = .scaleAspectFill
             avatarImageView.image = pickedImage
         }
-        
+        super.saveImageDocumentDirectory(avatarImageView: avatarImageView)
+        avatarImg = super.getImage()[0]
+        avatarImageView.image = UIImage(contentsOfFile: super.getImage()[1])
         dismiss(animated: true, completion: nil)
     }
     
