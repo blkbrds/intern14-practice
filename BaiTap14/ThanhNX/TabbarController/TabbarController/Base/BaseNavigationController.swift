@@ -1,5 +1,5 @@
 //
-//  HomeViewController.swift
+//  BaseNavigationController.swift
 //  TabbarController
 //
 //  Created by PCI0008 on 8/22/19.
@@ -8,11 +8,10 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class BaseNavigationController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        title = "HOME"
+
     }
 }

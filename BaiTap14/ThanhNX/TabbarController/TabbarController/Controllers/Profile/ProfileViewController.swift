@@ -8,11 +8,20 @@
 
 import UIKit
 
-class ProfileViewController: UIViewController {
+class ProfileViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         title = "PROFILE"
+        
+        let logoutButton = UIBarButtonItem(title: "Logout", style: .plain, target: self, action: #selector(logoutButtonDidClick))
+        navigationItem.leftBarButtonItem = logoutButton
+    }
+    
+    @objc private func logoutButtonDidClick() {
+        UIView.animate(withDuration: 0.3) {
+            AppDelegate.shared.changeRoot(controller: .login, vc: self)
+        }        
     }
 }

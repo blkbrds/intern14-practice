@@ -17,6 +17,18 @@
 		B0F47349230E4F520084B61D /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F47347230E4F520084B61D /* MapViewController.swift */; };
 		B0F4734E230E4F7B0084B61D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F4734C230E4F7B0084B61D /* HomeViewController.swift */; };
 		B0F4734F230E4F7B0084B61D /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F4734D230E4F7B0084B61D /* HomeViewController.xib */; };
+		B0F47353230E54600084B61D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F47352230E54600084B61D /* User.swift */; };
+		B0F47355230E54A10084B61D /* FileManagers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F47354230E54A10084B61D /* FileManagers.swift */; };
+		B0F4735B230E55260084B61D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F47359230E55260084B61D /* BaseViewController.swift */; };
+		B0F4735C230E55260084B61D /* BaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F4735A230E55260084B61D /* BaseViewController.xib */; };
+		B0F4736A230E572E0084B61D /* user.plist in Resources */ = {isa = PBXBuildFile; fileRef = B0F47369230E572E0084B61D /* user.plist */; };
+		B0F4736C230E78930084B61D /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F4736B230E78930084B61D /* BaseNavigationController.swift */; };
+		B0F4736F230E79B50084B61D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F4736D230E79B50084B61D /* LoginViewController.swift */; };
+		B0F47370230E79B50084B61D /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F4736E230E79B50084B61D /* LoginViewController.xib */; };
+		B0F47373230E9AB40084B61D /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F47371230E9AB40084B61D /* RegisterViewController.swift */; };
+		B0F47374230E9AB40084B61D /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F47372230E9AB40084B61D /* RegisterViewController.xib */; };
+		B0F47377230E9BE50084B61D /* ForgotPwViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F47375230E9BE50084B61D /* ForgotPwViewController.swift */; };
+		B0F47378230E9BE50084B61D /* ForgotPwViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F47376230E9BE50084B61D /* ForgotPwViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,8 +42,21 @@
 		B0F47343230E4F3A0084B61D /* ProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ProfileViewController.xib; path = TabbarController/Controllers/Profile/ProfileViewController.xib; sourceTree = SOURCE_ROOT; };
 		B0F47346230E4F520084B61D /* MapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MapViewController.xib; path = TabbarController/Controllers/Map/MapViewController.xib; sourceTree = SOURCE_ROOT; };
 		B0F47347230E4F520084B61D /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = TabbarController/Controllers/Map/MapViewController.swift; sourceTree = SOURCE_ROOT; };
-		B0F4734C230E4F7B0084B61D /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = Home/HomeViewController.swift; sourceTree = "<group>"; };
-		B0F4734D230E4F7B0084B61D /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HomeViewController.xib; path = Home/HomeViewController.xib; sourceTree = "<group>"; };
+		B0F4734C230E4F7B0084B61D /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		B0F4734D230E4F7B0084B61D /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		B0F47352230E54600084B61D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B0F47354230E54A10084B61D /* FileManagers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagers.swift; sourceTree = "<group>"; };
+		B0F47357230E54FE0084B61D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B0F47359230E55260084B61D /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		B0F4735A230E55260084B61D /* BaseViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BaseViewController.xib; sourceTree = "<group>"; };
+		B0F47369230E572E0084B61D /* user.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = user.plist; path = ../../../../../BaiTap08/ThanhNX/Navigation/Navigation/Data/user.plist; sourceTree = "<group>"; };
+		B0F4736B230E78930084B61D /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		B0F4736D230E79B50084B61D /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		B0F4736E230E79B50084B61D /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		B0F47371230E9AB40084B61D /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		B0F47372230E9AB40084B61D /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
+		B0F47375230E9BE50084B61D /* ForgotPwViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPwViewController.swift; sourceTree = "<group>"; };
+		B0F47376230E9BE50084B61D /* ForgotPwViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForgotPwViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,8 +89,11 @@
 		B0F472FF230E383D0084B61D /* TabbarController */ = {
 			isa = PBXGroup;
 			children = (
+				B0F47368230E57240084B61D /* Data */,
+				B0F4735F230E55AE0084B61D /* Model */,
+				B0F47356230E54F10084B61D /* AppDelegate */,
 				B0F4732B230E4A600084B61D /* Controllers */,
-				B0F47300230E383D0084B61D /* AppDelegate.swift */,
+				B0F47358230E550C0084B61D /* Base */,
 				B0F47329230E3EA90084B61D /* Assets.xcassets */,
 				B0F4730C230E383E0084B61D /* Info.plist */,
 			);
@@ -75,10 +103,8 @@
 		B0F4732B230E4A600084B61D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				B0F4734B230E4F6A0084B61D /* Home */,
-				B0F47331230E4A920084B61D /* Map */,
-				B0F47336230E4AA90084B61D /* Profile */,
-				B0F4732C230E4A7D0084B61D /* Favorites */,
+				B0F47360230E560F0084B61D /* NavigationController */,
+				B0F4735D230E553A0084B61D /* TabbarController */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -89,7 +115,8 @@
 				B0F4732E230E4A850084B61D /* FavoritesViewController.swift */,
 				B0F4732D230E4A850084B61D /* FavoritesViewController.xib */,
 			);
-			path = Favorites;
+			name = Favorites;
+			path = ../Favorites;
 			sourceTree = "<group>";
 		};
 		B0F47331230E4A920084B61D /* Map */ = {
@@ -99,7 +126,7 @@
 				B0F47346230E4F520084B61D /* MapViewController.xib */,
 			);
 			name = Map;
-			path = ../Map;
+			path = ../../Map;
 			sourceTree = "<group>";
 		};
 		B0F47336230E4AA90084B61D /* Profile */ = {
@@ -109,16 +136,100 @@
 				B0F47343230E4F3A0084B61D /* ProfileViewController.xib */,
 			);
 			name = Profile;
-			path = ../Profile;
+			path = ../../Profile;
 			sourceTree = "<group>";
 		};
-		B0F4734B230E4F6A0084B61D /* Home */ = {
+		B0F47356230E54F10084B61D /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				B0F47300230E383D0084B61D /* AppDelegate.swift */,
+				B0F47357230E54FE0084B61D /* Assets.xcassets */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		B0F47358230E550C0084B61D /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				B0F47359230E55260084B61D /* BaseViewController.swift */,
+				B0F4735A230E55260084B61D /* BaseViewController.xib */,
+				B0F4736B230E78930084B61D /* BaseNavigationController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		B0F4735D230E553A0084B61D /* TabbarController */ = {
+			isa = PBXGroup;
+			children = (
+				B0F4735E230E55470084B61D /* Home */,
+				B0F47331230E4A920084B61D /* Map */,
+				B0F4732C230E4A7D0084B61D /* Favorites */,
+				B0F47336230E4AA90084B61D /* Profile */,
+			);
+			path = TabbarController;
+			sourceTree = "<group>";
+		};
+		B0F4735E230E55470084B61D /* Home */ = {
 			isa = PBXGroup;
 			children = (
 				B0F4734C230E4F7B0084B61D /* HomeViewController.swift */,
 				B0F4734D230E4F7B0084B61D /* HomeViewController.xib */,
 			);
-			name = Home;
+			path = Home;
+			sourceTree = "<group>";
+		};
+		B0F4735F230E55AE0084B61D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B0F47352230E54600084B61D /* User.swift */,
+				B0F47354230E54A10084B61D /* FileManagers.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B0F47360230E560F0084B61D /* NavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				B0F47363230E564D0084B61D /* ForgotPassword */,
+				B0F47362230E56300084B61D /* Register */,
+				B0F47361230E561C0084B61D /* Login */,
+			);
+			path = NavigationController;
+			sourceTree = "<group>";
+		};
+		B0F47361230E561C0084B61D /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				B0F4736D230E79B50084B61D /* LoginViewController.swift */,
+				B0F4736E230E79B50084B61D /* LoginViewController.xib */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		B0F47362230E56300084B61D /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				B0F47371230E9AB40084B61D /* RegisterViewController.swift */,
+				B0F47372230E9AB40084B61D /* RegisterViewController.xib */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		B0F47363230E564D0084B61D /* ForgotPassword */ = {
+			isa = PBXGroup;
+			children = (
+				B0F47375230E9BE50084B61D /* ForgotPwViewController.swift */,
+				B0F47376230E9BE50084B61D /* ForgotPwViewController.xib */,
+			);
+			path = ForgotPassword;
+			sourceTree = "<group>";
+		};
+		B0F47368230E57240084B61D /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				B0F47369230E572E0084B61D /* user.plist */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,9 +290,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0F47370230E79B50084B61D /* LoginViewController.xib in Resources */,
 				B0F47345230E4F3A0084B61D /* ProfileViewController.xib in Resources */,
+				B0F47378230E9BE50084B61D /* ForgotPwViewController.xib in Resources */,
 				B0F4732F230E4A850084B61D /* FavoritesViewController.xib in Resources */,
 				B0F4734F230E4F7B0084B61D /* HomeViewController.xib in Resources */,
+				B0F4736A230E572E0084B61D /* user.plist in Resources */,
+				B0F47374230E9AB40084B61D /* RegisterViewController.xib in Resources */,
+				B0F4735C230E55260084B61D /* BaseViewController.xib in Resources */,
 				B0F47348230E4F520084B61D /* MapViewController.xib in Resources */,
 				B0F4732A230E3EA90084B61D /* Assets.xcassets in Resources */,
 			);
@@ -194,10 +310,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0F47353230E54600084B61D /* User.swift in Sources */,
+				B0F47373230E9AB40084B61D /* RegisterViewController.swift in Sources */,
 				B0F4734E230E4F7B0084B61D /* HomeViewController.swift in Sources */,
 				B0F47344230E4F3A0084B61D /* ProfileViewController.swift in Sources */,
+				B0F47355230E54A10084B61D /* FileManagers.swift in Sources */,
 				B0F47330230E4A850084B61D /* FavoritesViewController.swift in Sources */,
+				B0F47377230E9BE50084B61D /* ForgotPwViewController.swift in Sources */,
+				B0F4735B230E55260084B61D /* BaseViewController.swift in Sources */,
 				B0F47349230E4F520084B61D /* MapViewController.swift in Sources */,
+				B0F4736C230E78930084B61D /* BaseNavigationController.swift in Sources */,
+				B0F4736F230E79B50084B61D /* LoginViewController.swift in Sources */,
 				B0F47301230E383D0084B61D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
