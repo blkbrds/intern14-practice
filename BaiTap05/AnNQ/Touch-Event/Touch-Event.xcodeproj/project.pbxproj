@@ -12,6 +12,8 @@
 		D19CA078230E84CC002E139E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D19CA076230E84CC002E139E /* LaunchScreen.storyboard */; };
 		D19CA082230E854B002E139E /* Ex01ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19CA080230E854B002E139E /* Ex01ViewController.swift */; };
 		D19CA083230E854B002E139E /* Ex01ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D19CA081230E854B002E139E /* Ex01ViewController.xib */; };
+		D1B7484E230F8C9D00639570 /* Ex02ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B7484C230F8C9D00639570 /* Ex02ViewController.swift */; };
+		D1B7484F230F8C9D00639570 /* Ex02ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1B7484D230F8C9D00639570 /* Ex02ViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		D19CA079230E84CC002E139E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D19CA080230E854B002E139E /* Ex01ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex01ViewController.swift; sourceTree = "<group>"; };
 		D19CA081230E854B002E139E /* Ex01ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex01ViewController.xib; sourceTree = "<group>"; };
+		D1B7484C230F8C9D00639570 /* Ex02ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex02ViewController.swift; sourceTree = "<group>"; };
+		D1B7484D230F8C9D00639570 /* Ex02ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex02ViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 		D19CA06C230E84CA002E139E /* Touch-Event */ = {
 			isa = PBXGroup;
 			children = (
+				D1B7484B230F8C8700639570 /* Ex02 */,
 				D19CA07F230E8536002E139E /* Ex01 */,
 				D19CA06D230E84CA002E139E /* AppDelegate.swift */,
 				D19CA074230E84CC002E139E /* Assets.xcassets */,
@@ -70,6 +75,15 @@
 				D19CA081230E854B002E139E /* Ex01ViewController.xib */,
 			);
 			path = Ex01;
+			sourceTree = "<group>";
+		};
+		D1B7484B230F8C8700639570 /* Ex02 */ = {
+			isa = PBXGroup;
+			children = (
+				D1B7484C230F8C9D00639570 /* Ex02ViewController.swift */,
+				D1B7484D230F8C9D00639570 /* Ex02ViewController.xib */,
+			);
+			path = Ex02;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D19CA083230E854B002E139E /* Ex01ViewController.xib in Resources */,
+				D1B7484F230F8C9D00639570 /* Ex02ViewController.xib in Resources */,
 				D19CA078230E84CC002E139E /* LaunchScreen.storyboard in Resources */,
 				D19CA075230E84CC002E139E /* Assets.xcassets in Resources */,
 			);
@@ -144,6 +159,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D19CA082230E854B002E139E /* Ex01ViewController.swift in Sources */,
+				D1B7484E230F8C9D00639570 /* Ex02ViewController.swift in Sources */,
 				D19CA06E230E84CA002E139E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
