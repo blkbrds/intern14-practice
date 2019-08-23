@@ -9,21 +9,7 @@
 import Foundation
 
 final class FileManagers: BaseViewController {
-    //MARK: - Read file
-    
-//    static func readPlist(namePlist: String) -> [[String: String]] {
-//        let paths = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true) as NSArray
-//        let documentsDirectory = paths.object(at: 0) as! NSString
-//        let path = documentsDirectory.appendingPathComponent(namePlist + ".plist")
-//
-//        if let dict = NSArray(contentsOfFile: path) {
-//            return dict as! [[String : String]]
-//        } else {
-//            guard let privPath = Bundle.main.path(forResource: namePlist, ofType: "plist") else { return [] }
-//            return NSArray(contentsOfFile: privPath) as! [[String : String]]
-//        }
-//    }
-    
+    //MARK: - Read file    
     static func readPlistFile(filename: String) -> [[String: String]] {
         var path = ""
         let documentDirectory = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as String
