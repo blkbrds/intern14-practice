@@ -10,7 +10,7 @@ import UIKit
 
 class Ex02ViewController: UIViewController {
 
-    @IBOutlet weak var wrapperView: UILabel!
+    @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var blueLabel: UILabel!
     @IBOutlet weak var whiteLabel: UILabel!
     @IBOutlet weak var percenButton: UIButton!
@@ -29,23 +29,22 @@ class Ex02ViewController: UIViewController {
         
         blueLabel.layer.borderColor = UIColor.blue.cgColor
         blueLabel.layer.borderWidth = 1
-        wrapperView.backgroundColor = .clear
         
         percenButton.layer.cornerRadius = percenButton.bounds.width / 2
     }
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         if let touch = touches.first {
-            let position =  touch.location(in: self.wrapperView)
-          
-            whiteLabel.frame = CGRect(x: whiteLabel.frame.origin.x, y: whiteLabel.frame.origin.y, width: whiteLabel.bounds.width, height: position.y)
-            
-//            blueLabel.frame = CGRect(x: blueLabel.frame.origin.x, y: blueLabel.frame.origin.y, width: blueLabel.bounds.width, height: wrapperView.bounds.height - position.y)
-            
-            percenButton.frame = CGRect(x: percenButton.frame.origin.x, y: whiteLabel.bounds.height + 184, width: percenButton.bounds.width, height: percenButton.bounds.height)
-            print(whiteLabel.bounds.height, percenButton.frame.origin.y)
-            let percent =  100 - whiteLabel.bounds.height * 100 / blueLabel.bounds.height
-            percenButton.setTitle("\(Int(percent))", for: .normal)
+            let position =  touch.location(in: self.containerView
+            )
+            if position.y >= 0 && position.y <= containerView.frame.size.height - 21 {
+                whiteLabel.frame = CGRect(x: whiteLabel.frame.origin.x, y: whiteLabel.frame.origin.y, width: whiteLabel.bounds.width, height: position.y)
+                
+                percenButton.frame = CGRect(x: percenButton.frame.origin.x, y: whiteLabel.bounds.height - 25, width: percenButton.bounds.width, height: percenButton.bounds.height)
+                
+                let percent =  100 - whiteLabel.bounds.height * 100 / blueLabel.bounds.height
+                percenButton.setTitle("\(Int(percent))", for: .normal)
+            }
         }
     }
 
