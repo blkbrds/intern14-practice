@@ -19,16 +19,18 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kij-ue-xMg">
-                        <rect key="frame" x="139" y="11.5" width="42" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kij-ue-xMg">
+                        <rect key="frame" x="5" y="3" width="310" height="37.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="Kij-ue-xMg" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="KYJ-ny-4wX"/>
-                    <constraint firstItem="Kij-ue-xMg" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="t5V-3Q-5uC"/>
+                    <constraint firstItem="Kij-ue-xMg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="3" id="N8K-zP-giX"/>
+                    <constraint firstAttribute="bottom" secondItem="Kij-ue-xMg" secondAttribute="bottom" constant="3" id="QyN-IJ-ubv"/>
+                    <constraint firstAttribute="trailing" secondItem="Kij-ue-xMg" secondAttribute="trailing" constant="5" id="QzN-WG-Sln"/>
+                    <constraint firstItem="Kij-ue-xMg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="mbr-QS-pI9"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
