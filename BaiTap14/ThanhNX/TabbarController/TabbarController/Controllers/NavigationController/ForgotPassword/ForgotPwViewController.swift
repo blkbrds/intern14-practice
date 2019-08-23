@@ -26,17 +26,20 @@ class ForgotPwViewController: BaseViewController {
     }
     
     private func saveDatabase() {
+        guard let username = nameTextField.text else { return }
         users = User.parseData(array: FileManagers.readPlistFile(filename: "user"))
-        for user in users {
-            if confirmPassTextField.text == newPassTextField.text {
-                user.password = newPassTextField.text!
-                errorLabel.isHidden = true
-                navigationController?.popViewController(animated: true)
-            } else {
-                errorLabel.text = "Mat khau khong trung khop"
-                errorLabel.isHidden = false
+        if let user = users.first(where: { $0.username.elementsEqual(username)}) {
+            for _ in users {
+                if confirmPassTextField.text == newPassTextField.text {
+                    user.password = newPassTextField.text!
+                    errorLabel.isHidden = true
+                    navigationController?.popViewController(animated: true)
+                } else {
+                    errorLabel.text = "Mat khau khong trung khop"
+                    errorLabel.isHidden = false
+                }
             }
-        }
+        }        
         
         var arrs: [[String: String]] = []
         

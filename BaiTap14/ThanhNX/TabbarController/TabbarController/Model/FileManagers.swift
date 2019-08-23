@@ -10,10 +10,24 @@ import Foundation
 
 final class FileManagers: BaseViewController {
     //MARK: - Read file
+    
+//    static func readPlist(namePlist: String) -> [[String: String]] {
+//        let paths = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true) as NSArray
+//        let documentsDirectory = paths.object(at: 0) as! NSString
+//        let path = documentsDirectory.appendingPathComponent(namePlist + ".plist")
+//
+//        if let dict = NSArray(contentsOfFile: path) {
+//            return dict as! [[String : String]]
+//        } else {
+//            guard let privPath = Bundle.main.path(forResource: namePlist, ofType: "plist") else { return [] }
+//            return NSArray(contentsOfFile: privPath) as! [[String : String]]
+//        }
+//    }
+    
     static func readPlistFile(filename: String) -> [[String: String]] {
         var path = ""
-        if let _ = UserDefaults.standard.string(forKey: "name") {
-            let documentDirectory = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as String
+        let documentDirectory = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as String
+        if let _ = NSArray(contentsOfFile: documentDirectory.appending("/" + filename + ".plist")) {
             path = documentDirectory.appending("/" + filename + ".plist")
         } else {
             guard let paths = Bundle.main.path(forResource: filename, ofType: "plist") else { return [] }
@@ -34,6 +48,21 @@ final class FileManagers: BaseViewController {
             print("file has been created!")
         } else {
             print("unable to create the file")
+        }
+    }
+    
+    //MARK: Add new person
+    static func writePlist(filename: String, user: User) {
+        let documentDirectory = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as String
+        let path = documentDirectory.appending("/" + filename + ".plist")
+        let data: [String: String] = ["password" : user.password, "username" : user.username]
+        let someData = NSArray(object: data)
+        if var dataSoucres = NSArray(contentsOfFile: path) as? [[String: String]] {
+            dataSoucres.append(data)
+            writePlistFile(filename: filename + ".plist", data: dataSoucres as NSArray)
+        } else {
+            let isWritten = someData.write(toFile: path, atomically: true)
+            print("Created file: \(isWritten)")
         }
     }
 }

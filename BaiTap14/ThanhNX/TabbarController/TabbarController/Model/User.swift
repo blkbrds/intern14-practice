@@ -25,7 +25,8 @@ extension User {
         var users: [User] = []
         
         for dic in array {
-            let user = User(username: dic["username"]!, password: dic["password"]!)
+            guard let dicName = dic["username"], let dicPass = dic["password"] else { return [User]() }
+            let user = User(username: dicName, password: dicPass)
             users.append(user)
         }
         
