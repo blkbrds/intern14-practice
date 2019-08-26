@@ -13,7 +13,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     //Singleton
-    static let shared = AppDelegate()
+    static let shared: AppDelegate = {
+        guard let shared = UIApplication.shared.delegate as? AppDelegate else {
+            fatalError("Cannot cast `UIApplication.shared.delegate` to `AppDelegate`.")
+        }
+        return shared
+    }()
     
     let loginVC = LoginViewController()
     let tabBarController = UITabBarController()
