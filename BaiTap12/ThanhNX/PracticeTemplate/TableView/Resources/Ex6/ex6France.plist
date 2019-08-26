@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>Charles de Gaulle</string>
+	</dict>
+    <dict>
+        <key>name</key>
+        <string>Georges Pompidou</string>
+    </dict>
+    <dict>
+        <key>name</key>
+        <string>Valéry Giscard d'Estaing</string>
+    </dict>
+    <dict>
+        <key>name</key>
+        <string>François Mitterrand</string>
+    </dict>
+    <dict>
+        <key>name</key>
+        <string>Jacques Chirac</string>
+    </dict>
+    <dict>
+        <key>name</key>
+        <string>Nicolas Sarkozy</string>
+    </dict>
+    <dict>
+        <key>name</key>
+        <string>François Hollande</string>
+    </dict>
+    <dict>
+        <key>name</key>
+        <string>Emmanuel Macron</string>
+    </dict>
+</array>
+</plist>
