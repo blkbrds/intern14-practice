@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="GenderPickerView" customModule="ContactList" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pBr-DA-Fv5" userLabel="Mark View">
+                    <rect key="frame" x="0.0" y="44" width="414" height="718"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rR3-uj-77i" userLabel="ContainerView">
+                    <rect key="frame" x="0.0" y="762" width="414" height="100"/>
+                    <subviews>
+                        <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Ub-aO-Ifx">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="35"/>
+                            <items>
+                                <barButtonItem style="done" systemItem="done" id="Mlp-GZ-FMW">
+                                    <connections>
+                                        <action selector="done:" destination="iN0-l3-epB" id="dLX-9D-4yT"/>
+                                    </connections>
+                                </barButtonItem>
+                                <barButtonItem style="plain" systemItem="flexibleSpace" id="YXd-Zo-b4M">
+                                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </barButtonItem>
+                                <barButtonItem title="Gender" id="zkR-Pq-qzh">
+                                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </barButtonItem>
+                                <barButtonItem systemItem="flexibleSpace" id="ZCe-Vd-XyN">
+                                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </barButtonItem>
+                                <barButtonItem systemItem="cancel" id="NIv-WG-oyO">
+                                    <connections>
+                                        <action selector="cancel:" destination="iN0-l3-epB" id="sev-cr-B8K"/>
+                                    </connections>
+                                </barButtonItem>
+                            </items>
+                        </toolbar>
+                        <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4tA-pH-Z36">
+                            <rect key="frame" x="0.0" y="35" width="414" height="65"/>
+                        </pickerView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="4tA-pH-Z36" secondAttribute="bottom" id="A4F-he-Cgp"/>
+                        <constraint firstItem="4tA-pH-Z36" firstAttribute="top" secondItem="7Ub-aO-Ifx" secondAttribute="bottom" id="WN5-af-vHU"/>
+                        <constraint firstItem="7Ub-aO-Ifx" firstAttribute="leading" secondItem="rR3-uj-77i" secondAttribute="leading" id="daT-zN-kjM"/>
+                        <constraint firstAttribute="height" constant="100" id="fnY-8B-m3I"/>
+                        <constraint firstItem="4tA-pH-Z36" firstAttribute="leading" secondItem="rR3-uj-77i" secondAttribute="leading" id="heT-gm-ciO"/>
+                        <constraint firstItem="7Ub-aO-Ifx" firstAttribute="top" secondItem="rR3-uj-77i" secondAttribute="top" id="pHe-Fj-lJk"/>
+                        <constraint firstAttribute="trailing" secondItem="4tA-pH-Z36" secondAttribute="trailing" id="ro8-r8-7Dc"/>
+                        <constraint firstAttribute="trailing" secondItem="7Ub-aO-Ifx" secondAttribute="trailing" id="xd4-WM-cH0"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="rR3-uj-77i" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="0UZ-H1-bUf"/>
+                <constraint firstItem="pBr-DA-Fv5" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="3b1-b9-ZN3"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="rR3-uj-77i" secondAttribute="trailing" id="eIE-mm-2NQ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="pBr-DA-Fv5" secondAttribute="trailing" id="pfw-Sz-qP9"/>
+                <constraint firstItem="rR3-uj-77i" firstAttribute="top" secondItem="pBr-DA-Fv5" secondAttribute="bottom" id="pwK-Wo-NGb"/>
+                <constraint firstItem="pBr-DA-Fv5" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="xTZ-a2-iAn"/>
+                <constraint firstItem="rR3-uj-77i" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="xcS-Mk-1ix"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="containerView" destination="rR3-uj-77i" id="QZ6-JW-wuT"/>
+                <outlet property="genderPickerView" destination="4tA-pH-Z36" id="iSx-CA-yPA"/>
+                <outlet property="markView" destination="pBr-DA-Fv5" id="nRB-v2-0CO"/>
+            </connections>
+            <point key="canvasLocation" x="44.927536231884062" y="56.919642857142854"/>
+        </view>
+    </objects>
+</document>
