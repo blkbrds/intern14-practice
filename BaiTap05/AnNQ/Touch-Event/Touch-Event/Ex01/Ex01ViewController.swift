@@ -20,7 +20,7 @@ class Ex01ViewController: UIViewController {
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         if let touch = touches.first {
             let position = touch.location(in: self.view)
-            imageView.frame = CGRect(x: position.x, y: position.y, width: 94, height: 80)
+            imageView.center = position
         }
     }
 

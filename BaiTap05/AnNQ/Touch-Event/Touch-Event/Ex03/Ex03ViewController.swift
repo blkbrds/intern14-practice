@@ -21,12 +21,15 @@ class Ex03ViewController: UIViewController {
     @IBOutlet weak var drawView: UIImageView!
     var swiped = false
     var lastPoint = CGPoint.zero
-
+    var brushWidth: CGFloat = 0.0
     
     var lastColor = UIColor.blue.cgColor
     
+    var colorButtons: [ColorButton] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.colorButtons = colorButtons.getListColorButton()
         updateTemplateView()
     }
     
@@ -51,20 +54,8 @@ class Ex03ViewController: UIViewController {
     }
     
     @IBAction func chooseColorTouchUpInside(_ sender: UIButton) {
-        switch sender.tag {
-        case 1:
-            lastColor = UIColor.green.cgColor
-        case 2:
-            lastColor = UIColor.red.cgColor
-        case 3:
-            lastColor = UIColor.yellow.cgColor
-        case 4:
-            lastColor = UIColor.purple.cgColor
-        case 5:
-            lastColor = UIColor.orange.cgColor
-        default:
-            lastColor = UIColor.blue.cgColor
-        }
+        lastColor = self.colorButtons[sender.tag].color.cgColor
+        brushWidth = self.colorButtons[sender.tag].brushWidth
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -87,7 +78,7 @@ class Ex03ViewController: UIViewController {
         //3
         context?.setBlendMode(CGBlendMode.normal)
         context?.setLineCap(CGLineCap.round)
-        context?.setLineWidth(10.0)
+        context?.setLineWidth(brushWidth)
         context?.setStrokeColor(lastColor)
         
         //4

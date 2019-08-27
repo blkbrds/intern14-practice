@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D192BC5923139EE200A9DEA6 /* Ex04ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D192BC5723139EE200A9DEA6 /* Ex04ViewController.swift */; };
+		D192BC5A23139EE200A9DEA6 /* Ex04ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D192BC5823139EE200A9DEA6 /* Ex04ViewController.xib */; };
+		D196891423150A820047148F /* ColorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D196891323150A820047148F /* ColorButton.swift */; };
 		D19CA06E230E84CA002E139E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19CA06D230E84CA002E139E /* AppDelegate.swift */; };
 		D19CA075230E84CC002E139E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D19CA074230E84CC002E139E /* Assets.xcassets */; };
 		D19CA078230E84CC002E139E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D19CA076230E84CC002E139E /* LaunchScreen.storyboard */; };
@@ -19,6 +22,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D192BC5723139EE200A9DEA6 /* Ex04ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex04ViewController.swift; sourceTree = "<group>"; };
+		D192BC5823139EE200A9DEA6 /* Ex04ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex04ViewController.xib; sourceTree = "<group>"; };
+		D196891323150A820047148F /* ColorButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorButton.swift; sourceTree = "<group>"; };
 		D19CA06A230E84CA002E139E /* Touch-Event.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Touch-Event.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D19CA06D230E84CA002E139E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D19CA074230E84CC002E139E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -43,6 +49,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D192BC5623139EB800A9DEA6 /* Ex04 */ = {
+			isa = PBXGroup;
+			children = (
+				D192BC5723139EE200A9DEA6 /* Ex04ViewController.swift */,
+				D192BC5823139EE200A9DEA6 /* Ex04ViewController.xib */,
+			);
+			path = Ex04;
+			sourceTree = "<group>";
+		};
 		D19CA061230E84CA002E139E = {
 			isa = PBXGroup;
 			children = (
@@ -62,6 +77,7 @@
 		D19CA06C230E84CA002E139E /* Touch-Event */ = {
 			isa = PBXGroup;
 			children = (
+				D192BC5623139EB800A9DEA6 /* Ex04 */,
 				D1AE82C3230FE0AE007AE761 /* Ex03 */,
 				D1B7484B230F8C8700639570 /* Ex02 */,
 				D19CA07F230E8536002E139E /* Ex01 */,
@@ -87,6 +103,7 @@
 			children = (
 				D1AE82C4230FE10E007AE761 /* Ex03ViewController.swift */,
 				D1AE82C5230FE10E007AE761 /* Ex03ViewController.xib */,
+				D196891323150A820047148F /* ColorButton.swift */,
 			);
 			path = Ex03;
 			sourceTree = "<group>";
@@ -161,6 +178,7 @@
 				D19CA083230E854B002E139E /* Ex01ViewController.xib in Resources */,
 				D1B7484F230F8C9D00639570 /* Ex02ViewController.xib in Resources */,
 				D19CA078230E84CC002E139E /* LaunchScreen.storyboard in Resources */,
+				D192BC5A23139EE200A9DEA6 /* Ex04ViewController.xib in Resources */,
 				D19CA075230E84CC002E139E /* Assets.xcassets in Resources */,
 				D1AE82C7230FE10F007AE761 /* Ex03ViewController.xib in Resources */,
 			);
@@ -176,7 +194,9 @@
 				D19CA082230E854B002E139E /* Ex01ViewController.swift in Sources */,
 				D1B7484E230F8C9D00639570 /* Ex02ViewController.swift in Sources */,
 				D1AE82C6230FE10F007AE761 /* Ex03ViewController.swift in Sources */,
+				D196891423150A820047148F /* ColorButton.swift in Sources */,
 				D19CA06E230E84CA002E139E /* AppDelegate.swift in Sources */,
+				D192BC5923139EE200A9DEA6 /* Ex04ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
