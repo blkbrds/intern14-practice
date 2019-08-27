@@ -7,7 +7,9 @@
 //
 
 import Foundation
+import UIKit
 
 struct AudioBook {
-    let feed: [String: Any]?
+    var imageStr: String
+    var thumbnail: UIImage?
 }
