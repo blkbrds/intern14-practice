@@ -33,7 +33,7 @@
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F9b-hu-xKw">
                         <rect key="frame" x="133.5" y="83" width="519.5" height="41.5"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <fontDescription key="fontDescription" type="italicSystem" pointSize="20"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -54,9 +54,9 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="bookImageView" destination="thE-vq-EVy" id="fi5-s1-Q0A"/>
-                <outlet property="heigthLabel" destination="F9b-hu-xKw" id="uRe-sz-cga"/>
-                <outlet property="nameLabel" destination="3YW-mo-nbO" id="LHt-bI-vRa"/>
+                <outlet property="imageString" destination="3YW-mo-nbO" id="LHt-bI-vRa"/>
+                <outlet property="imageVieww" destination="thE-vq-EVy" id="fi5-s1-Q0A"/>
+                <outlet property="movieName" destination="F9b-hu-xKw" id="uRe-sz-cga"/>
             </connections>
             <point key="canvasLocation" x="366.66666666666669" y="169.75446428571428"/>
         </tableViewCell>

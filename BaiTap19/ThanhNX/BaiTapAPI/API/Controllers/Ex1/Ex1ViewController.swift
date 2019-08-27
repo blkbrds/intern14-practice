@@ -52,11 +52,11 @@ extension Ex1ViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as? BookCell else { return UITableViewCell() }
-        cell.nameLabel?.text = images[indexPath.row].label
-        cell.heigthLabel.text = images[indexPath.row].attributes!["height"] as? String
+        cell.imageString?.text = images[indexPath.row].label
+        cell.movieName.text = images[indexPath.row].attributes!["height"] as? String
         downloadImage(completion: { (image) in
             DispatchQueue.main.async {
-                cell.bookImageView.image = image
+                cell.imageVieww.image = image
             }
         })
         return cell
@@ -68,12 +68,7 @@ extension Ex1ViewController: UITableViewDataSource, UITableViewDelegate {
     }
 }
 
-extension Ex1ViewController {
-    struct Image {
-        let label: String?
-        let attributes: [String: Any]?
-    }
-    
+extension Ex1ViewController {    
     private func convertToJSON(from data: Data) -> [String: Any] {
         var json: [String: Any] = [:]
         do {
