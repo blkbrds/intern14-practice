@@ -27,5 +27,11 @@ class BaseViewController: UIViewController {
     func setupUI() {
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "Back", style: .plain, target: nil, action: nil)
     }
-
+    
+    func timeUpdate(date: Date) -> String {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd"
+        let result = formatter.string(from: date)
+        return result
+    }
 }

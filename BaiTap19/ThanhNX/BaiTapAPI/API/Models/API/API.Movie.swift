@@ -11,7 +11,7 @@ import Foundation
 extension APIManager.Movie {
     struct QueryString {
         func getTop(num: Int) -> String {
-            return APIManager.Path.baseURL + APIManager.Path.movie + "/\(num)/explicit.json"
+            return APIManager.Path.baseURLMovie + APIManager.Path.movie + "/\(num)/explicit.json"
         }
     }
     
