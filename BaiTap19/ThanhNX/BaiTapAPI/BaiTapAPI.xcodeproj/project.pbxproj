@@ -40,6 +40,7 @@
 		07E33E7320DCA04D004B6E52 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E33E7220DCA04D004B6E52 /* Exercise.swift */; };
 		B0EF9AB72313C66000CE068B /* Paths.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EF9AB62313C66000CE068B /* Paths.swift */; };
 		B0EF9AB92313C9C500CE068B /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EF9AB82313C9C500CE068B /* Image.swift */; };
+		B0F06C0623162CA20053A195 /* Dummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F06C0523162CA20053A195 /* Dummy.swift */; };
 		B0F0C917230FECD000C0722E /* BookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F0C915230FECD000C0722E /* BookCell.swift */; };
 		B0F0C918230FECD000C0722E /* BookCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F0C916230FECD000C0722E /* BookCell.xib */; };
 		B0F2D1E22314E30E00D37CD2 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F2D1E12314E30E00D37CD2 /* API.swift */; };
@@ -91,6 +92,7 @@
 		07E33E7220DCA04D004B6E52 /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
 		B0EF9AB62313C66000CE068B /* Paths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Paths.swift; sourceTree = "<group>"; };
 		B0EF9AB82313C9C500CE068B /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		B0F06C0523162CA20053A195 /* Dummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dummy.swift; sourceTree = "<group>"; };
 		B0F0C915230FECD000C0722E /* BookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCell.swift; sourceTree = "<group>"; };
 		B0F0C916230FECD000C0722E /* BookCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookCell.xib; sourceTree = "<group>"; };
 		B0F2D1E12314E30E00D37CD2 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 		07E33E2120DC8D66004B6E52 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B0F06C0423162C8E0053A195 /* Dummy */,
 				B0F2D1F423151BA600D37CD2 /* YouTube */,
 				B0F2D1E92314EA4200D37CD2 /* Movie */,
 				B0F2D1DF2314E2B200D37CD2 /* Networking */,
@@ -366,6 +369,14 @@
 			path = API;
 			sourceTree = "<group>";
 		};
+		B0F06C0423162C8E0053A195 /* Dummy */ = {
+			isa = PBXGroup;
+			children = (
+				B0F06C0523162CA20053A195 /* Dummy.swift */,
+			);
+			path = Dummy;
+			sourceTree = "<group>";
+		};
 		B0F0C914230FEC9500C0722E /* BookCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -522,6 +533,7 @@
 				B0EF9AB92313C9C500CE068B /* Image.swift in Sources */,
 				07E33E0E20DC8D34004B6E52 /* AppDelegate.swift in Sources */,
 				B0EF9AB72313C66000CE068B /* Paths.swift in Sources */,
+				B0F06C0623162CA20053A195 /* Dummy.swift in Sources */,
 				07E33E4120DC907B004B6E52 /* Ex3ViewController.swift in Sources */,
 				B0F2D1E22314E30E00D37CD2 /* API.swift in Sources */,
 				07E33E4D20DC90C3004B6E52 /* Ex6ViewController.swift in Sources */,

@@ -14,6 +14,8 @@ struct APIManager {
         static let movie = "/top-movies/all"
         static let baseURLVideo = "https://www.googleapis.com/youtube/v3/search?part=snippet&"
         static let key = "AIzaSyDIJ9UssMoN9IfR9KnTc4lb3B9NtHpRF"
+        static let baseURLYouTube = "https://www.googleapis.com/youtube/v3/search?"
+        static let abc = "https://www.googleapis.com/youtube/v3/search?pageToken=CDIQAA&part=snippet&maxResults=25&order=relevance&q=lactroi&key=AIzaSyDIJ9UssMoN9IfR9KnTc4lb3B9NtHpRF-c"
     }
     
     struct Movie {}
