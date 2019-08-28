@@ -95,7 +95,7 @@ extension Ex4ViewController: UITableViewDelegate, UITableViewDataSource {
 extension Ex4ViewController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         let trimmedString = String(searchText.filter { !" \n\t\r".contains($0)})
-        APIManager.YouTube.getBot(pageToken: "", maxResults: 11, keyword: trimmedString) { (result) in
+        APIManager.YouTube.getBot(pageToken: "", maxResults: 25, keyword: trimmedString) { (result) in
             switch result {
             case .failure(let error):
                 print(error.localizedDescription)
