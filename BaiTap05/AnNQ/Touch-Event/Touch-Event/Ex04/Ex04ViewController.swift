@@ -12,6 +12,8 @@ class Ex04ViewController: UIViewController {
 
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var monkeyImagevView: UIImageView!
+    @IBOutlet weak var commentView: UIImageView!
+    @IBOutlet weak var commentLabel: UILabel!
     var width: CGFloat = 0
     var height: CGFloat = 0
     
@@ -21,11 +23,17 @@ class Ex04ViewController: UIViewController {
         height = monkeyImagevView.frame.height
         scrollView.minimumZoomScale = 0.5
         scrollView.maximumZoomScale = 2.0
+        commentView.isHidden = true
+        commentLabel.isHidden = true
         
+        //Ex 04
         pinchGestureRecognizer()
         rotationGestureRecognizer()
         longPressGestureRecognizer()
-        // Do any additional setup after loading the view.
+
+        //Ex 05
+        tapGestureRecognizer()
+        doubleTapGestureRecognizer()
     }
     
     func pinchGestureRecognizer() {
@@ -95,5 +103,59 @@ class Ex04ViewController: UIViewController {
         }
     }
     
+    func tapGestureRecognizer() {
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(tapAction(_:)))
+        monkeyImagevView.addGestureRecognizer(tapGesture)
+        monkeyImagevView.isUserInteractionEnabled = true
+    }
+    
+    @objc func tapAction(_ gestureRecognizer : UITapGestureRecognizer ) {
+        guard gestureRecognizer.view != nil else { return }
+        
+        if gestureRecognizer.state == .ended {
+            commentView.isHidden = false
+            commentLabel.text = "Tôi là khỉ"
+            commentLabel.isHidden = false
+            commentView.alpha = 0
+            commentLabel.alpha = 0
+            UIView.animate(withDuration: 2.0, delay: 0, options: [.curveEaseOut], animations: {
+                self.commentView.alpha = 1
+                self.commentLabel.alpha = 1
+            })
+            hiddenInFiveSeconds()
+        }
+    }
+    
+    func doubleTapGestureRecognizer() {
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(doubleTapAction(_:)))
+        tapGesture.numberOfTapsRequired = 2
+        monkeyImagevView.addGestureRecognizer(tapGesture)
+        monkeyImagevView.isUserInteractionEnabled = true
+    }
+    
+    @objc func doubleTapAction(_ gestureRecognizer : UITapGestureRecognizer ) {
+        guard gestureRecognizer.view != nil else { return }
+        
+        if gestureRecognizer.state == .ended {
+            commentView.isHidden = false
+            commentLabel.text = "Khỉ là tôi"
+            commentLabel.isHidden = false
+            UIView.animate(withDuration: 2.0, delay: 0, options: [.curveEaseOut], animations: {
+                self.commentView.alpha = 1
+                self.commentLabel.alpha = 1
+            })
+            
+            hiddenInFiveSeconds()
+        }
+    }
+    
+    func hiddenInFiveSeconds () {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
+            UIView.animate(withDuration: 2.0, delay: 0, options: [.curveEaseOut], animations: {
+                self.commentView.alpha = 0
+                self.commentLabel.alpha = 0
+            })
+        }
+    }
 
 }

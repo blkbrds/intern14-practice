@@ -12,6 +12,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Ex04ViewController" customModule="Touch_Event" customModuleProvider="target">
             <connections>
+                <outlet property="commentLabel" destination="IZb-ed-RgL" id="Dsz-cx-6gj"/>
+                <outlet property="commentView" destination="trq-dM-sYZ" id="OOg-W3-Xfo"/>
                 <outlet property="monkeyImagevView" destination="U3W-8E-7pa" id="SKb-cA-JjO"/>
                 <outlet property="scrollView" destination="AMk-XE-R00" id="cJn-ob-TlU"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -28,6 +30,18 @@
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="U3W-8E-7pa">
                             <rect key="frame" x="122" y="363" width="170" height="153"/>
                         </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image-1" translatesAutoresizingMaskIntoConstraints="NO" id="trq-dM-sYZ">
+                            <rect key="frame" x="113" y="258" width="240" height="128"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tôi là khỉ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IZb-ed-RgL">
+                            <rect key="frame" x="189" y="290" width="91" height="57"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <color key="textColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
                     </subviews>
                     <constraints>
                         <constraint firstItem="U3W-8E-7pa" firstAttribute="leading" secondItem="DFq-mS-coW" secondAttribute="leading" constant="122" id="0Gc-Y5-OyW"/>
@@ -56,5 +70,6 @@
     </objects>
     <resources>
         <image name="Image" width="975" height="983"/>
+        <image name="Image-1" width="700" height="449"/>
     </resources>
 </document>
