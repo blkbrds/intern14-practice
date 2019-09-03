@@ -16,6 +16,8 @@ class Ex04ViewController: UIViewController {
     @IBOutlet weak var commentLabel: UILabel!
     var width: CGFloat = 0
     var height: CGFloat = 0
+    var countDown = 5
+    var timer: Timer?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -118,11 +120,8 @@ class Ex04ViewController: UIViewController {
             commentLabel.isHidden = false
             commentView.alpha = 0
             commentLabel.alpha = 0
-            UIView.animate(withDuration: 2.0, delay: 0, options: [.curveEaseOut], animations: {
-                self.commentView.alpha = 1
-                self.commentLabel.alpha = 1
-            })
-            hiddenInFiveSeconds()
+            
+            appearLabel()
         }
     }
     
@@ -140,22 +139,49 @@ class Ex04ViewController: UIViewController {
             commentView.isHidden = false
             commentLabel.text = "Khỉ là tôi"
             commentLabel.isHidden = false
-            UIView.animate(withDuration: 2.0, delay: 0, options: [.curveEaseOut], animations: {
-                self.commentView.alpha = 1
-                self.commentLabel.alpha = 1
-            })
-            
-            hiddenInFiveSeconds()
+            appearLabel()
         }
     }
     
     func hiddenInFiveSeconds () {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
-            UIView.animate(withDuration: 2.0, delay: 0, options: [.curveEaseOut], animations: {
-                self.commentView.alpha = 0
-                self.commentLabel.alpha = 0
-            })
-        }
+        countDown = 5
+        if let _ = timer { return }
+        timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateCounter), userInfo: nil, repeats: true)
+
     }
 
+    @objc func updateCounter() {
+        print(countDown)
+        if countDown > 0 {
+            countDown -= 1
+            
+        } else {
+            DispatchQueue.main.asyncAfter(deadline: .now()) {
+                UIView.animate(withDuration: 0.3, delay: 0, options: [.curveEaseOut], animations: {
+                    self.commentView.alpha = 0
+                    self.commentLabel.alpha = 0
+                    },
+                   completion: { _ in
+                        self.timer?.invalidate()
+                        self.timer = nil
+                    }
+                )
+            }
+        }
+    }
+    
+    func appearLabel() {
+        UIView.animate(
+            withDuration: 1.0,
+            delay: 0.0,
+            options: .curveEaseIn,
+            animations: {
+                self.commentView.alpha = 1
+                self.commentLabel.alpha = 1
+            },
+                completion: { _ in
+                    self.hiddenInFiveSeconds()
+            }
+        )
+    }
 }
