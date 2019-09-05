@@ -32,9 +32,7 @@ class MienP2ViewController: BaseViewController {
         tableView.register(UINib(nibName: "CustomCell", bundle: nil), forCellReuseIdentifier: "cell")
     }
     
-    override func setupData() {
-        tableView.reloadData()
-    }
+    
     
     @objc private func mienButtonDidClick() {
         let tinhVC = TinhP2ViewController()
