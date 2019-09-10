@@ -81,7 +81,7 @@
 		07E33E5420DC90DD004B6E52 /* Ex8ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex8ViewController.xib; sourceTree = "<group>"; };
 		07E33E5B20DC9102004B6E52 /* Ex9ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex9ViewController.swift; sourceTree = "<group>"; };
 		07E33E5C20DC9102004B6E52 /* Ex9ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex9ViewController.xib; sourceTree = "<group>"; };
-		07E33E5F20DC910E004B6E52 /* Ex10ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex10ViewController.swift; sourceTree = "<group>"; };
+		07E33E5F20DC910E004B6E52 /* Ex10ViewController.swift */ = {isa = PBXFileReference; indentWidth = 5; lastKnownFileType = sourcecode.swift; path = Ex10ViewController.swift; sourceTree = "<group>"; };
 		07E33E6020DC910E004B6E52 /* Ex10ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex10ViewController.xib; sourceTree = "<group>"; };
 		07E33E6720DC9826004B6E52 /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
 		07E33E6820DC9826004B6E52 /* HomeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCell.xib; sourceTree = "<group>"; };
