@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		735AD7B32318D7740023E7AC /* Ex10ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735AD7B12318D7740023E7AC /* Ex10ViewController.swift */; };
+		735AD7B42318D7740023E7AC /* Ex10ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 735AD7B22318D7740023E7AC /* Ex10ViewController.xib */; };
+		735AD7B823190BDA0023E7AC /* Ex11ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735AD7B623190BDA0023E7AC /* Ex11ViewController.swift */; };
+		735AD7B923190BDA0023E7AC /* Ex11ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 735AD7B723190BDA0023E7AC /* Ex11ViewController.xib */; };
+		735AD7C1231930420023E7AC /* Ex12ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735AD7BF231930420023E7AC /* Ex12ViewController.swift */; };
+		735AD7C2231930420023E7AC /* Ex12ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 735AD7C0231930420023E7AC /* Ex12ViewController.xib */; };
 		73DE367723152C2E00D3D8D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DE367623152C2E00D3D8D8 /* AppDelegate.swift */; };
 		73DE367E23152C2F00D3D8D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73DE367D23152C2F00D3D8D8 /* Assets.xcassets */; };
 		73DE368123152C2F00D3D8D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73DE367F23152C2F00D3D8D8 /* LaunchScreen.storyboard */; };
@@ -66,9 +72,23 @@
 		73F172B92316730F00185EDB /* Ex07_3ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73F172B72316730F00185EDB /* Ex07_3ViewController.xib */; };
 		73F172BC2316732300185EDB /* Ex07_4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F172BA2316732300185EDB /* Ex07_4ViewController.swift */; };
 		73F172BD2316732300185EDB /* Ex07_4ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73F172BB2316732300185EDB /* Ex07_4ViewController.xib */; };
+		73F172C123168E6100185EDB /* Ex08ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F172BF23168E6100185EDB /* Ex08ViewController.swift */; };
+		73F172C223168E6100185EDB /* Ex08ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73F172C023168E6100185EDB /* Ex08ViewController.xib */; };
+		73F206C42317784A00CF2248 /* Ex09ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F206C22317784A00CF2248 /* Ex09ViewController.swift */; };
+		73F206C52317784A00CF2248 /* Ex09ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73F206C32317784A00CF2248 /* Ex09ViewController.xib */; };
+		73F332C3231E071B004B24D4 /* Ex13ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F332C1231E071B004B24D4 /* Ex13ViewController.swift */; };
+		73F332C4231E071B004B24D4 /* Ex13ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73F332C2231E071B004B24D4 /* Ex13ViewController.xib */; };
+		73F332C8231E61CA004B24D4 /* Ex14ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F332C6231E61CA004B24D4 /* Ex14ViewController.swift */; };
+		73F332C9231E61CA004B24D4 /* Ex14ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73F332C7231E61CA004B24D4 /* Ex14ViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		735AD7B12318D7740023E7AC /* Ex10ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex10ViewController.swift; sourceTree = "<group>"; };
+		735AD7B22318D7740023E7AC /* Ex10ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex10ViewController.xib; sourceTree = "<group>"; };
+		735AD7B623190BDA0023E7AC /* Ex11ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex11ViewController.swift; sourceTree = "<group>"; };
+		735AD7B723190BDA0023E7AC /* Ex11ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex11ViewController.xib; sourceTree = "<group>"; };
+		735AD7BF231930420023E7AC /* Ex12ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex12ViewController.swift; sourceTree = "<group>"; };
+		735AD7C0231930420023E7AC /* Ex12ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex12ViewController.xib; sourceTree = "<group>"; };
 		73DE367323152C2E00D3D8D8 /* ExAutoLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExAutoLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73DE367623152C2E00D3D8D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73DE367D23152C2F00D3D8D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -130,6 +150,14 @@
 		73F172B72316730F00185EDB /* Ex07_3ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex07_3ViewController.xib; sourceTree = "<group>"; };
 		73F172BA2316732300185EDB /* Ex07_4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex07_4ViewController.swift; sourceTree = "<group>"; };
 		73F172BB2316732300185EDB /* Ex07_4ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex07_4ViewController.xib; sourceTree = "<group>"; };
+		73F172BF23168E6100185EDB /* Ex08ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex08ViewController.swift; sourceTree = "<group>"; };
+		73F172C023168E6100185EDB /* Ex08ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex08ViewController.xib; sourceTree = "<group>"; };
+		73F206C22317784A00CF2248 /* Ex09ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex09ViewController.swift; sourceTree = "<group>"; };
+		73F206C32317784A00CF2248 /* Ex09ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex09ViewController.xib; sourceTree = "<group>"; };
+		73F332C1231E071B004B24D4 /* Ex13ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex13ViewController.swift; sourceTree = "<group>"; };
+		73F332C2231E071B004B24D4 /* Ex13ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex13ViewController.xib; sourceTree = "<group>"; };
+		73F332C6231E61CA004B24D4 /* Ex14ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex14ViewController.swift; sourceTree = "<group>"; };
+		73F332C7231E61CA004B24D4 /* Ex14ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex14ViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +171,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		735AD7B02318D7560023E7AC /* BaiTap10 */ = {
+			isa = PBXGroup;
+			children = (
+				735AD7B12318D7740023E7AC /* Ex10ViewController.swift */,
+				735AD7B22318D7740023E7AC /* Ex10ViewController.xib */,
+			);
+			path = BaiTap10;
+			sourceTree = "<group>";
+		};
+		735AD7B523190BC60023E7AC /* BaiTap11 */ = {
+			isa = PBXGroup;
+			children = (
+				735AD7B623190BDA0023E7AC /* Ex11ViewController.swift */,
+				735AD7B723190BDA0023E7AC /* Ex11ViewController.xib */,
+			);
+			path = BaiTap11;
+			sourceTree = "<group>";
+		};
+		735AD7BA23191FF90023E7AC /* BaiTap12 */ = {
+			isa = PBXGroup;
+			children = (
+				735AD7BF231930420023E7AC /* Ex12ViewController.swift */,
+				735AD7C0231930420023E7AC /* Ex12ViewController.xib */,
+			);
+			path = BaiTap12;
+			sourceTree = "<group>";
+		};
 		73DE366A23152C2E00D3D8D8 = {
 			isa = PBXGroup;
 			children = (
@@ -162,6 +217,13 @@
 		73DE367523152C2E00D3D8D8 /* ExAutoLayout */ = {
 			isa = PBXGroup;
 			children = (
+				73F332C5231E6196004B24D4 /* BaiTap14 */,
+				73F332C0231E05FD004B24D4 /* BaiTap13 */,
+				735AD7BA23191FF90023E7AC /* BaiTap12 */,
+				735AD7B523190BC60023E7AC /* BaiTap11 */,
+				735AD7B02318D7560023E7AC /* BaiTap10 */,
+				73F206C12317781A00CF2248 /* BaiTap09 */,
+				73F172BE23168E4A00185EDB /* BaiTap08 */,
 				73F172A9231672C800185EDB /* BaiTap07 */,
 				73F172942316668400185EDB /* BaiTap06 */,
 				73F1727B2316384100185EDB /* BaiTap05 */,
@@ -306,6 +368,42 @@
 			path = BaiTap07;
 			sourceTree = "<group>";
 		};
+		73F172BE23168E4A00185EDB /* BaiTap08 */ = {
+			isa = PBXGroup;
+			children = (
+				73F172BF23168E6100185EDB /* Ex08ViewController.swift */,
+				73F172C023168E6100185EDB /* Ex08ViewController.xib */,
+			);
+			path = BaiTap08;
+			sourceTree = "<group>";
+		};
+		73F206C12317781A00CF2248 /* BaiTap09 */ = {
+			isa = PBXGroup;
+			children = (
+				73F206C22317784A00CF2248 /* Ex09ViewController.swift */,
+				73F206C32317784A00CF2248 /* Ex09ViewController.xib */,
+			);
+			path = BaiTap09;
+			sourceTree = "<group>";
+		};
+		73F332C0231E05FD004B24D4 /* BaiTap13 */ = {
+			isa = PBXGroup;
+			children = (
+				73F332C1231E071B004B24D4 /* Ex13ViewController.swift */,
+				73F332C2231E071B004B24D4 /* Ex13ViewController.xib */,
+			);
+			path = BaiTap13;
+			sourceTree = "<group>";
+		};
+		73F332C5231E6196004B24D4 /* BaiTap14 */ = {
+			isa = PBXGroup;
+			children = (
+				73F332C6231E61CA004B24D4 /* Ex14ViewController.swift */,
+				73F332C7231E61CA004B24D4 /* Ex14ViewController.xib */,
+			);
+			path = BaiTap14;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -367,6 +465,7 @@
 				73F172AD231672E500185EDB /* Ex07ViewController.xib in Resources */,
 				73F172B92316730F00185EDB /* Ex07_3ViewController.xib in Resources */,
 				73DE3693231531AE00D3D8D8 /* Ex01ViewController.xib in Resources */,
+				73F332C9231E61CA004B24D4 /* Ex14ViewController.xib in Resources */,
 				73F1727A2316346600185EDB /* Ex04_4ViewController.xib in Resources */,
 				73F1728F2316389D00185EDB /* Ex05_3ViewController.xib in Resources */,
 				73DE36972315341200D3D8D8 /* Ex01_1ViewController.xib in Resources */,
@@ -376,6 +475,7 @@
 				73F17293231638AA00185EDB /* Ex05_4ViewController.xib in Resources */,
 				73DE368123152C2F00D3D8D8 /* LaunchScreen.storyboard in Resources */,
 				73DE369D231537A400D3D8D8 /* Ex02ViewController.xib in Resources */,
+				73F206C52317784A00CF2248 /* Ex09ViewController.xib in Resources */,
 				73F172A82316682000185EDB /* Ex06_4ViewController.xib in Resources */,
 				73DE367E23152C2F00D3D8D8 /* Assets.xcassets in Resources */,
 				73F172B5231672FD00185EDB /* Ex07_2ViewController.xib in Resources */,
@@ -383,13 +483,18 @@
 				73F1725D23160B9F00185EDB /* Ex03ViewController.xib in Resources */,
 				73F172832316387500185EDB /* Ex05ViewController.xib in Resources */,
 				73F172A42316681500185EDB /* Ex06_3ViewController.xib in Resources */,
+				73F172C223168E6100185EDB /* Ex08ViewController.xib in Resources */,
 				73F172722316333800185EDB /* Ex04_2ViewController.xib in Resources */,
 				73F17265231620F200185EDB /* Ex03_2ViewController.xib in Resources */,
 				73F172872316388300185EDB /* Ex05_1ViewController.xib in Resources */,
 				73DE368E23152C8500D3D8D8 /* HomeViewController.xib in Resources */,
+				735AD7C2231930420023E7AC /* Ex12ViewController.xib in Resources */,
+				735AD7B923190BDA0023E7AC /* Ex11ViewController.xib in Resources */,
 				73F1726E2316319100185EDB /* Ex04_1ViewController.xib in Resources */,
 				73F1726A23162E4800185EDB /* Ex04ViewController.xib in Resources */,
 				73F1726123161A7500185EDB /* Ex03_1ViewController.xib in Resources */,
+				735AD7B42318D7740023E7AC /* Ex10ViewController.xib in Resources */,
+				73F332C4231E071B004B24D4 /* Ex13ViewController.xib in Resources */,
 				73F172B1231672F000185EDB /* Ex07_1ViewController.xib in Resources */,
 				73F1729C231667E500185EDB /* Ex06_1ViewController.xib in Resources */,
 				73F17276231633EE00185EDB /* Ex04_3ViewController.xib in Resources */,
@@ -404,7 +509,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73F332C8231E61CA004B24D4 /* Ex14ViewController.swift in Sources */,
 				73F1728E2316389D00185EDB /* Ex05_3ViewController.swift in Sources */,
+				735AD7B823190BDA0023E7AC /* Ex11ViewController.swift in Sources */,
 				73DE36A0231539ED00D3D8D8 /* Ex02_2ViewController.swift in Sources */,
 				73F172A72316682000185EDB /* Ex06_4ViewController.swift in Sources */,
 				73DE369C231537A400D3D8D8 /* Ex02ViewController.swift in Sources */,
@@ -414,11 +521,13 @@
 				73F17264231620F200185EDB /* Ex03_2ViewController.swift in Sources */,
 				73F172A32316681500185EDB /* Ex06_3ViewController.swift in Sources */,
 				73F172B0231672F000185EDB /* Ex07_1ViewController.swift in Sources */,
+				73F206C42317784A00CF2248 /* Ex09ViewController.swift in Sources */,
 				73F172BC2316732300185EDB /* Ex07_4ViewController.swift in Sources */,
 				73DE368D23152C8500D3D8D8 /* HomeViewController.swift in Sources */,
 				73F172862316388300185EDB /* Ex05_1ViewController.swift in Sources */,
 				73F172792316346600185EDB /* Ex04_4ViewController.swift in Sources */,
 				73F1726023161A7500185EDB /* Ex03_1ViewController.swift in Sources */,
+				735AD7B32318D7740023E7AC /* Ex10ViewController.swift in Sources */,
 				73F1729F2316680000185EDB /* Ex06_2ViewController.swift in Sources */,
 				73DE36962315341200D3D8D8 /* Ex01_1ViewController.swift in Sources */,
 				73F172822316387500185EDB /* Ex05ViewController.swift in Sources */,
@@ -427,11 +536,14 @@
 				73F1728A2316388F00185EDB /* Ex05_2ViewController.swift in Sources */,
 				73F172AC231672E500185EDB /* Ex07ViewController.swift in Sources */,
 				73F172B4231672FD00185EDB /* Ex07_2ViewController.swift in Sources */,
+				73F332C3231E071B004B24D4 /* Ex13ViewController.swift in Sources */,
+				73F172C123168E6100185EDB /* Ex08ViewController.swift in Sources */,
 				73F1725C23160B9F00185EDB /* Ex03ViewController.swift in Sources */,
 				73F17275231633EE00185EDB /* Ex04_3ViewController.swift in Sources */,
 				73F172712316333800185EDB /* Ex04_2ViewController.swift in Sources */,
 				73F1729B231667E500185EDB /* Ex06_1ViewController.swift in Sources */,
 				73F1726923162E4800185EDB /* Ex04ViewController.swift in Sources */,
+				735AD7C1231930420023E7AC /* Ex12ViewController.swift in Sources */,
 				73F17292231638AA00185EDB /* Ex05_4ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

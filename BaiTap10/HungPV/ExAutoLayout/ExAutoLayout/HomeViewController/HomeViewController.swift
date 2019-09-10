@@ -17,7 +17,7 @@ class HomeViewController: UIViewController {
         navigationController?.navigationBar.backgroundColor = .cyan
         
     }
-    let viewController: [UIViewController] = [Ex01ViewController(),Ex02ViewController(),Ex03ViewController(),Ex04ViewController(),Ex05ViewController(),Ex06ViewController(),Ex07ViewController()]
+    let viewController: [UIViewController] = [Ex01ViewController(),Ex02ViewController(),Ex03ViewController(),Ex04ViewController(),Ex05ViewController(),Ex06ViewController(),Ex07ViewController(),Ex08ViewController(), Ex09ViewController(),Ex10ViewController(),Ex11ViewController(),Ex12ViewController(),Ex13ViewController(),Ex14ViewController()]
     
     @IBAction private func exTouchEvent(_ sender: UIButton) {
         navigationController?.pushViewController(viewController[sender.tag], animated: true)
