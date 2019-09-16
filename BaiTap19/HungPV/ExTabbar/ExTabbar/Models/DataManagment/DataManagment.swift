@@ -17,19 +17,19 @@ class DataManagement {
     
     private init() {}
     
-    func getListUserInfo(fileName: String, type: String) -> [User] {
-        let path = getFileDocumentPath(fileName: fileName, type: type)
-        print("Path: " + path)
-        let array = NSArray(contentsOfFile: path)
-        var userInfos: [User] = []
-        for item in array! {
-            let dict = item as! NSDictionary
-            let ex = User(username: dict.object(forKey: "username") as! String,
-                              password: dict.object(forKey: "password") as! String)
-            userInfos.append(ex)
-        }
-        return userInfos
-    }
+//    func getListUserInfo(fileName: String, type: String) -> [User] {
+//        let path = getFileDocumentPath(fileName: fileName, type: type)
+//        print("Path: " + path)
+//        let array = NSArray(contentsOfFile: path)
+//        var userInfos: [User] = []
+//        for item in array! {
+//            let dict = item as! NSDictionary
+//            let ex = User(username: dict.object(forKey: "username") as! String,
+//                              password: dict.object(forKey: "password") as! String)
+//            userInfos.append(ex)
+//        }
+//        return userInfos
+//    }
     
     // MARK: - private function
     func getFileDocumentPath(fileName: String, type: String) -> String {

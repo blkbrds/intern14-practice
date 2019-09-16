@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="ExTabbar" customModuleProvider="target">
             <connections>
+                <outlet property="tableView" destination="Z9N-r9-5JG" id="02B-sI-7Bb"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -20,21 +21,19 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-background" translatesAutoresizingMaskIntoConstraints="NO" id="Nnv-mJ-TM4">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Z9N-r9-5JG">
                     <rect key="frame" x="0.0" y="44" width="414" height="818"/>
-                </imageView>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="Nnv-mJ-TM4" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="CuK-xk-n5X"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Nnv-mJ-TM4" secondAttribute="bottom" id="bjg-jA-Q0Z"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Nnv-mJ-TM4" secondAttribute="trailing" id="dG4-GY-F1G"/>
-                <constraint firstItem="Nnv-mJ-TM4" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="kv2-lh-RuX"/>
+                <constraint firstItem="Z9N-r9-5JG" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="C7C-t1-5nR"/>
+                <constraint firstItem="Z9N-r9-5JG" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="bsQ-ld-QRI"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Z9N-r9-5JG" secondAttribute="trailing" id="rQU-wa-x9M"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Z9N-r9-5JG" secondAttribute="bottom" id="uAa-KJ-x0W"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
         </view>
     </objects>
-    <resources>
-        <image name="ic-background" width="1280" height="720"/>
-    </resources>
 </document>
