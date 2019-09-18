@@ -98,8 +98,6 @@ class CalculatorViewController: UIViewController {
             DataResult.shared.number = 0
         }
         numberString = ""
-        
-        print(DataResult.shared.number, DataResult.shared.result, operations)
     }
     
     @IBAction func numberTouchUpInside(_ sender: UIButton) {
@@ -118,7 +116,6 @@ class CalculatorViewController: UIViewController {
             resultLabel.text = numberString
         }
         checkOperation = true
-        print(DataResult.shared.number, DataResult.shared.result, operations)
     }
     
     @IBAction func operationTouchUpInside(_ sender: UIButton) {
