@@ -18,11 +18,17 @@
 		73EBC5162326586800C446F4 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73EBC5142326586800C446F4 /* RegisterViewController.xib */; };
 		73EBC5192326587300C446F4 /* ForgotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73EBC5172326587300C446F4 /* ForgotViewController.swift */; };
 		73EBC51A2326587300C446F4 /* ForgotViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73EBC5182326587300C446F4 /* ForgotViewController.xib */; };
+		73F3DB9C2331C2C900D0F027 /* Api.Downloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F3DB9B2331C2C900D0F027 /* Api.Downloader.swift */; };
 		73F5EF75232F6D9000C550CD /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F5EF74232F6D9000C550CD /* Music.swift */; };
 		73F5EF78232F6DB100C550CD /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F5EF77232F6DB100C550CD /* HomeViewModel.swift */; };
 		73F5EF7C232F6F0D00C550CD /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F5EF7A232F6F0D00C550CD /* HomeCell.swift */; };
 		73F5EF7D232F6F0D00C550CD /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73F5EF7B232F6F0D00C550CD /* HomeCell.xib */; };
 		73F5EF80232F73E600C550CD /* HomeCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F5EF7F232F73E600C550CD /* HomeCellViewModel.swift */; };
+		73F5EF84232F88A800C550CD /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F5EF83232F88A800C550CD /* API.swift */; };
+		73F5EF86232F8D0500C550CD /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F5EF85232F8D0500C550CD /* APIRequest.swift */; };
+		73F5EF88232F900900C550CD /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F5EF87232F900900C550CD /* ApiManager.swift */; };
+		73F5EF8A232F902E00C550CD /* API+Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F5EF89232F902E00C550CD /* API+Data.swift */; };
+		73F5EF8C232F906800C550CD /* Api.Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F5EF8B232F906800C550CD /* Api.Music.swift */; };
 		73F6E19E232739460029CAC0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F6E19C232739460029CAC0 /* HomeViewController.swift */; };
 		73F6E19F232739460029CAC0 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73F6E19D232739460029CAC0 /* HomeViewController.xib */; };
 		73F6E1A2232739520029CAC0 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F6E1A0232739520029CAC0 /* MapViewController.swift */; };
@@ -47,11 +53,17 @@
 		73EBC5142326586800C446F4 /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
 		73EBC5172326587300C446F4 /* ForgotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotViewController.swift; sourceTree = "<group>"; };
 		73EBC5182326587300C446F4 /* ForgotViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForgotViewController.xib; sourceTree = "<group>"; };
+		73F3DB9B2331C2C900D0F027 /* Api.Downloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.Downloader.swift; sourceTree = "<group>"; };
 		73F5EF74232F6D9000C550CD /* Music.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
 		73F5EF77232F6DB100C550CD /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		73F5EF7A232F6F0D00C550CD /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
 		73F5EF7B232F6F0D00C550CD /* HomeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCell.xib; sourceTree = "<group>"; };
 		73F5EF7F232F73E600C550CD /* HomeCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCellViewModel.swift; sourceTree = "<group>"; };
+		73F5EF83232F88A800C550CD /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		73F5EF85232F8D0500C550CD /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		73F5EF87232F900900C550CD /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		73F5EF89232F902E00C550CD /* API+Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API+Data.swift"; sourceTree = "<group>"; };
+		73F5EF8B232F906800C550CD /* Api.Music.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.Music.swift; sourceTree = "<group>"; };
 		73F6E19C232739460029CAC0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		73F6E19D232739460029CAC0 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		73F6E1A0232739520029CAC0 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -130,6 +142,7 @@
 		73EBC5012326531200C446F4 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				73F5EF81232F886A00C550CD /* CoreApi */,
 				73EBC5022326532A00C446F4 /* Objects */,
 				73EBC4FA23264CA900C446F4 /* DataManagment */,
 			);
@@ -249,6 +262,27 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		73F5EF81232F886A00C550CD /* CoreApi */ = {
+			isa = PBXGroup;
+			children = (
+				73F5EF82232F888300C550CD /* Core */,
+				73F5EF8B232F906800C550CD /* Api.Music.swift */,
+				73F3DB9B2331C2C900D0F027 /* Api.Downloader.swift */,
+			);
+			path = CoreApi;
+			sourceTree = "<group>";
+		};
+		73F5EF82232F888300C550CD /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				73F5EF83232F88A800C550CD /* API.swift */,
+				73F5EF85232F8D0500C550CD /* APIRequest.swift */,
+				73F5EF87232F900900C550CD /* ApiManager.swift */,
+				73F5EF89232F902E00C550CD /* API+Data.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -328,18 +362,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73F5EF88232F900900C550CD /* ApiManager.swift in Sources */,
+				73F5EF8A232F902E00C550CD /* API+Data.swift in Sources */,
 				73EBC5112326585A00C446F4 /* LoginViewController.swift in Sources */,
 				73EBC5152326586800C446F4 /* RegisterViewController.swift in Sources */,
 				73F5EF7C232F6F0D00C550CD /* HomeCell.swift in Sources */,
 				73F6E1AA232739740029CAC0 /* ProfileViewController.swift in Sources */,
 				73EBC50023264ED400C446F4 /* DataManagment.swift in Sources */,
 				73F6E1A6232739640029CAC0 /* FavoriteViewController.swift in Sources */,
+				73F5EF84232F88A800C550CD /* API.swift in Sources */,
+				73F3DB9C2331C2C900D0F027 /* Api.Downloader.swift in Sources */,
 				73EBC4E72326482900C446F4 /* AppDelegate.swift in Sources */,
 				73F5EF80232F73E600C550CD /* HomeCellViewModel.swift in Sources */,
 				73F5EF78232F6DB100C550CD /* HomeViewModel.swift in Sources */,
 				73F5EF75232F6D9000C550CD /* Music.swift in Sources */,
 				73F6E19E232739460029CAC0 /* HomeViewController.swift in Sources */,
 				73EBC5192326587300C446F4 /* ForgotViewController.swift in Sources */,
+				73F5EF8C232F906800C550CD /* Api.Music.swift in Sources */,
+				73F5EF86232F8D0500C550CD /* APIRequest.swift in Sources */,
 				73F6E1A2232739520029CAC0 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

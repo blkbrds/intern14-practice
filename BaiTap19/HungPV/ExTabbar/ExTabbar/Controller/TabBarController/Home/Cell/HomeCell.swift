@@ -9,7 +9,7 @@
 import UIKit
 
 class HomeCell: UITableViewCell {
-    
+  
     var viewmodel: HomeCellViewModel? {
         didSet {
             updateUI()
@@ -20,8 +20,7 @@ class HomeCell: UITableViewCell {
         self.nameLabel.text = viewmodel?.name
         self.artistNameLabel.text = viewmodel?.artistName
         self.dateLabel.text = viewmodel?.releaseDate
-        self.artworkImage.image = viewmodel?.artworkUrl100
-        
+        self.artworkImage.image = viewmodel?.artworkImage
     }
 
     @IBOutlet private weak var nameLabel: UILabel!
@@ -31,13 +30,14 @@ class HomeCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    }
+    
+    func setArtworkImage(image: UIImage) {
+        self.artworkImage.image = image
     }
     
 }

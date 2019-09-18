@@ -36,11 +36,16 @@ class HomeViewController: UIViewController {
     func loadData() {
         viewmodel.loadData { (done) in
             if done {
-                tableView.reloadData()
+                self.updateUI()
+                self.downCellImages()
             } else {
-                print("Fail To Load Data!")
+                print("Can't Load Data")
             }
         }
+    }
+    
+    func updateUI() {
+        self.tableView.reloadData()
     }
     
 }
@@ -56,9 +61,36 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         
         let music = viewmodel.getMusic(with: indexPath)
         let cellViewModel = HomeCellViewModel(music: music!)
-        
         cell.viewmodel = cellViewModel
-    return cell }
+       
+        return cell
+    }
     
+    func downloadCellImage(indexPath: IndexPath) {
+        viewmodel.downloadCellImage(indexPath: indexPath) { (image, indexPath) in
+            if let _ = image {
+                self.tableView.reloadRows(at: [indexPath], with: .left)
+            }
+        }
+    }
+}
+
+extension HomeViewController: UIScrollViewDelegate {
     
+    func downCellImages() {
+        for cell in tableView.visibleCells {
+            let indexPath = tableView.indexPath(for: cell)
+            downloadCellImage(indexPath: indexPath!)
+        }
+    }
+    
+    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+        if !decelerate {
+            downCellImages()
+        }
+    }
+    
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        downCellImages()
+    }
 }
