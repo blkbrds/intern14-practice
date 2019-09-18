@@ -17,20 +17,16 @@ class DataResult {
         switch operation {
         case .plus:
             result += number
-            number = 0
         case .sub:
             result -= number
-            number = 0
         case .mul:
             result *= number
-            number = 1
         case .div:
             result /= number
-            number = 1
         case .result: result = number
         case .reset: result = 0
         }
-        
+        number = 0
     }
     
 }

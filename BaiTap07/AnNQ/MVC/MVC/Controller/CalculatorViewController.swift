@@ -17,7 +17,8 @@ class CalculatorViewController: UIViewController {
     
     var numberString = ""
     var operations: [MathOperation] = []
-
+    var checkOperation = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configUI()
@@ -62,21 +63,35 @@ class CalculatorViewController: UIViewController {
             resultLabel.text = "\(Int(DataResult.shared.result))"
             operations.append(mathOperation)
          case .div:
-            if DataResult.shared.number == 0 {
-                showError()
-            } else {
+            if !checkOperation {
+                DataResult.shared.number = DataResult.shared.number != 0 ? DataResult.shared.number : 1
+                
                 if (DataResult.shared.result == 0) {
                     DataResult.shared.result = DataResult.shared.number
                     operations.append(mathOperation)
                 } else {
                     DataResult.shared.calculateResult(operation: mathOperation)
-                    resultLabel.text = "\(DataResult.shared.result)"
+                    resultLabel.text = "\(Int(DataResult.shared.result))"
                     operations.append(mathOperation)
                 }
+            } else {
+                if DataResult.shared.number == 0 {
+                    showError()
+                } else {
+                    if (DataResult.shared.result == 0) {
+                        DataResult.shared.result = DataResult.shared.number
+                        operations.append(mathOperation)
+                    } else {
+                        DataResult.shared.calculateResult(operation: mathOperation)
+                        resultLabel.text = "\(Int(DataResult.shared.result))"
+                        operations.append(mathOperation)
+                    }
+                }
             }
+            
         case .result:
             DataResult.shared.number = 0
-            resultLabel.text = "\(DataResult.shared.result)"
+            resultLabel.text = "\(Int(DataResult.shared.result))"
         case .reset:
             resultLabel.text = "0"
             DataResult.shared.result = 0
@@ -91,18 +106,24 @@ class CalculatorViewController: UIViewController {
         
         if DataResult.shared.number == 0.0 && sender.tag == 0 {
             numberString = ""
+            if operations.count > 0 {
+                if operations[0] == .div && DataResult.shared.number == 0 {
+                    showError()
+                    return
+                }
+            }
         } else {
             numberString += "\(sender.tag)"
             DataResult.shared.number = Double(numberString)!
             resultLabel.text = numberString
-            
-
         }
+        checkOperation = true
         print(DataResult.shared.number, DataResult.shared.result, operations)
     }
     
     @IBAction func operationTouchUpInside(_ sender: UIButton) {
         guard let mathOperation = MathOperation(rawValue: sender.tag) else { return }
+        checkOperation = false
         calculate(mathOperation: mathOperation)
     }
     
