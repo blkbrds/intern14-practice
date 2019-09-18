@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Ex14ViewController" customModule="ExAutoLayout" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="1657"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uu0-r1-COg">
+                    <rect key="frame" x="0.0" y="44" width="414" height="1613"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wtp-h1-SYl">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="1554"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1GQ-eH-KlR" userLabel="detailView">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="965"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-lion" translatesAutoresizingMaskIntoConstraints="NO" id="prn-rK-SLa">
+                                            <rect key="frame" x="8" y="8" width="207" height="325"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lion" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="23O-Hs-f53">
+                                            <rect key="frame" x="223" y="8" width="183" height="30"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="01/01/2001" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bcJ-sF-gCd">
+                                            <rect key="frame" x="223" y="134" width="183" height="30"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-invoker" translatesAutoresizingMaskIntoConstraints="NO" id="IVc-Ij-FRi">
+                                            <rect key="frame" x="0.0" y="674" width="414" height="285"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wHg-gH-bjo">
+                                            <rect key="frame" x="0.0" y="341" width="414" height="325"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <mutableString key="text">Lion, the Demon Witch, is a ranged intelligence hero, most commonly played as a support, who serves as a powerful offensive spellcaster. While exceptionally frail and vulnerable at all stages of the game due to his low health pool, armor, and movement speed, he has a tremendous amount of disabling and nuking power, allowing him to provide the necessary lockdown and burst damage to his team to bring down elusive and shifty enemies. Earth Spike is an area-of-effect line-based stun that also deals a moderate amount of damage. If Lion uses it at max level combined with his Hex, which briefly transfigures an enemy into a harmless critter, he can disable a single opponent for almost 7 seconds, more than enough time to bring down a lone enemy, especially if an ally is present.</mutableString>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="IVc-Ij-FRi" firstAttribute="leading" secondItem="1GQ-eH-KlR" secondAttribute="leading" id="187-Tw-dpf"/>
+                                        <constraint firstItem="23O-Hs-f53" firstAttribute="top" secondItem="1GQ-eH-KlR" secondAttribute="top" constant="8" id="555-vw-FRo"/>
+                                        <constraint firstItem="23O-Hs-f53" firstAttribute="leading" secondItem="prn-rK-SLa" secondAttribute="trailing" constant="8" id="8Zi-89-SAT"/>
+                                        <constraint firstAttribute="trailing" secondItem="IVc-Ij-FRi" secondAttribute="trailing" id="91p-vg-KF0"/>
+                                        <constraint firstItem="bcJ-sF-gCd" firstAttribute="leading" secondItem="prn-rK-SLa" secondAttribute="trailing" constant="8" id="FVo-nl-f1I"/>
+                                        <constraint firstItem="wHg-gH-bjo" firstAttribute="height" secondItem="1GQ-eH-KlR" secondAttribute="height" multiplier="0.5" constant="-157.5" id="Hmj-nG-Pn3"/>
+                                        <constraint firstItem="prn-rK-SLa" firstAttribute="height" secondItem="1GQ-eH-KlR" secondAttribute="height" multiplier="0.5" constant="-157.5" id="IPw-S0-SCT"/>
+                                        <constraint firstItem="bcJ-sF-gCd" firstAttribute="top" secondItem="23O-Hs-f53" secondAttribute="bottom" constant="96" id="IYa-7P-TGH"/>
+                                        <constraint firstAttribute="trailing" secondItem="23O-Hs-f53" secondAttribute="trailing" constant="8" id="IbR-wG-j7J"/>
+                                        <constraint firstItem="prn-rK-SLa" firstAttribute="top" secondItem="1GQ-eH-KlR" secondAttribute="top" constant="8" id="Kfs-Hx-Kpd"/>
+                                        <constraint firstAttribute="trailing" secondItem="wHg-gH-bjo" secondAttribute="trailing" id="Oia-Vn-QFk"/>
+                                        <constraint firstItem="wHg-gH-bjo" firstAttribute="leading" secondItem="1GQ-eH-KlR" secondAttribute="leading" id="PaI-Id-bWP"/>
+                                        <constraint firstItem="wHg-gH-bjo" firstAttribute="top" secondItem="prn-rK-SLa" secondAttribute="bottom" constant="8" id="aM2-jh-w8Q"/>
+                                        <constraint firstItem="prn-rK-SLa" firstAttribute="leading" secondItem="1GQ-eH-KlR" secondAttribute="leading" constant="8" id="bJ5-08-tIw"/>
+                                        <constraint firstItem="IVc-Ij-FRi" firstAttribute="top" secondItem="wHg-gH-bjo" secondAttribute="bottom" constant="8" id="dvL-Qo-qus"/>
+                                        <constraint firstItem="23O-Hs-f53" firstAttribute="top" secondItem="prn-rK-SLa" secondAttribute="top" id="vWW-BB-b39"/>
+                                        <constraint firstAttribute="trailing" secondItem="bcJ-sF-gCd" secondAttribute="trailing" constant="8" id="wqC-0e-1LR"/>
+                                        <constraint firstItem="prn-rK-SLa" firstAttribute="width" secondItem="1GQ-eH-KlR" secondAttribute="width" multiplier="0.5" id="xGL-rb-NV1"/>
+                                    </constraints>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Photos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lN5-X0-toe">
+                                    <rect key="frame" x="8" y="1055" width="126" height="32.5"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="27"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="UGk-Bf-i2M">
+                                    <rect key="frame" x="8" y="1131" width="398" height="423"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="znF-VH-6S7">
+                                            <rect key="frame" x="0.0" y="0.0" width="398" height="141"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="73U-V0-CkG">
+                                                    <rect key="frame" x="0.0" y="0.0" width="120" height="141"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="141" id="PhX-HS-pIA"/>
+                                                        <constraint firstAttribute="width" constant="120" id="lZ6-YA-Eyv"/>
+                                                    </constraints>
+                                                    <state key="normal" title="Button" image="ic-hunter"/>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xaK-cu-8Ae">
+                                                    <rect key="frame" x="140" y="0.0" width="118" height="141"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="141" id="XUf-zy-9ES"/>
+                                                        <constraint firstAttribute="width" constant="118" id="uFH-TN-Hxs"/>
+                                                    </constraints>
+                                                    <state key="normal" title="Button" image="ic-hunter"/>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6qt-N7-hR7">
+                                                    <rect key="frame" x="278" y="0.0" width="120" height="141"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="141" id="RhH-gH-Ds0"/>
+                                                        <constraint firstAttribute="width" constant="120" id="cvZ-PF-3EB"/>
+                                                    </constraints>
+                                                    <state key="normal" title="Button" image="ic-hunter"/>
+                                                </button>
+                                            </subviews>
+                                        </stackView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Xot-tN-Ixy">
+                                            <rect key="frame" x="0.0" y="141" width="398" height="141"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TkX-xw-425">
+                                                    <rect key="frame" x="0.0" y="0.0" width="120" height="141"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="141" id="Bi7-dR-FOT"/>
+                                                        <constraint firstAttribute="width" constant="120" id="gLS-IQ-zkl"/>
+                                                    </constraints>
+                                                    <state key="normal" title="Button" image="ic-hunter"/>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EZO-89-TND">
+                                                    <rect key="frame" x="140" y="0.0" width="118" height="141"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="141" id="OQX-kc-5aY"/>
+                                                        <constraint firstAttribute="width" constant="118" id="nFy-Ut-ob1"/>
+                                                    </constraints>
+                                                    <state key="normal" title="Button" image="ic-hunter"/>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tmx-E8-NvP">
+                                                    <rect key="frame" x="278" y="0.0" width="120" height="141"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="120" id="4I3-I1-akN"/>
+                                                        <constraint firstAttribute="height" constant="141" id="IOS-mV-v8P"/>
+                                                    </constraints>
+                                                    <state key="normal" title="Button" image="ic-hunter"/>
+                                                </button>
+                                            </subviews>
+                                        </stackView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="idm-dC-9ov">
+                                            <rect key="frame" x="0.0" y="282" width="398" height="141"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u7g-UQ-F9x">
+                                                    <rect key="frame" x="0.0" y="0.0" width="120" height="141"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="141" id="00m-Ng-pSg"/>
+                                                        <constraint firstAttribute="width" constant="120" id="iPn-Vh-T6B"/>
+                                                    </constraints>
+                                                    <state key="normal" title="Button" image="ic-hunter"/>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LCT-ks-gOd">
+                                                    <rect key="frame" x="140" y="0.0" width="118" height="141"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="141" id="miL-ip-S9A"/>
+                                                        <constraint firstAttribute="width" constant="118" id="nDm-8P-F2b"/>
+                                                    </constraints>
+                                                    <state key="normal" title="Button" image="ic-hunter"/>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eiz-pn-hH8">
+                                                    <rect key="frame" x="278" y="0.0" width="120" height="141"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="120" id="j8Y-ox-pda"/>
+                                                        <constraint firstAttribute="height" constant="141" id="oFA-HH-08M"/>
+                                                    </constraints>
+                                                    <state key="normal" title="Button" image="ic-hunter"/>
+                                                </button>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" spacing="216" translatesAutoresizingMaskIntoConstraints="NO" id="NOM-gy-32K">
+                                    <rect key="frame" x="0.0" y="973" width="414" height="54"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SRk-AZ-pqV">
+                                            <rect key="frame" x="0.0" y="0.0" width="97" height="54"/>
+                                            <color key="backgroundColor" red="0.0" green="1" blue="0.051177963712694563" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                            <state key="normal" title="Follow">
+                                                <color key="titleColor" red="0.95042866469999998" green="1" blue="0.75794154000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </state>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lN3-SG-rL6">
+                                            <rect key="frame" x="313" y="0.0" width="101" height="54"/>
+                                            <color key="backgroundColor" red="1" green="0.88178604500000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                            <state key="normal" title="Report">
+                                                <color key="titleColor" red="0.95042866469999998" green="1" blue="0.75794154000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </state>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="NOM-gy-32K" firstAttribute="leading" secondItem="Wtp-h1-SYl" secondAttribute="leading" id="4Yn-bv-poF"/>
+                                <constraint firstItem="UGk-Bf-i2M" firstAttribute="top" secondItem="lN5-X0-toe" secondAttribute="bottom" constant="43.5" id="MaG-SF-AHy"/>
+                                <constraint firstItem="1GQ-eH-KlR" firstAttribute="leading" secondItem="Wtp-h1-SYl" secondAttribute="leading" id="NxS-ZO-24G"/>
+                                <constraint firstAttribute="trailing" secondItem="NOM-gy-32K" secondAttribute="trailing" id="Rym-ri-qES"/>
+                                <constraint firstItem="lN5-X0-toe" firstAttribute="leading" secondItem="Wtp-h1-SYl" secondAttribute="leading" constant="8" id="Stf-Di-Cju"/>
+                                <constraint firstAttribute="trailing" secondItem="lN5-X0-toe" secondAttribute="trailing" constant="280" id="Xjc-j3-2oW"/>
+                                <constraint firstItem="1GQ-eH-KlR" firstAttribute="top" secondItem="Wtp-h1-SYl" secondAttribute="top" id="d30-fa-Lkf"/>
+                                <constraint firstItem="lN5-X0-toe" firstAttribute="top" secondItem="NOM-gy-32K" secondAttribute="bottom" constant="28" id="dvl-cn-15X"/>
+                                <constraint firstAttribute="trailing" secondItem="1GQ-eH-KlR" secondAttribute="trailing" id="ek0-6K-ltZ"/>
+                                <constraint firstItem="NOM-gy-32K" firstAttribute="top" secondItem="1GQ-eH-KlR" secondAttribute="bottom" constant="8" id="fSn-u0-7JU"/>
+                                <constraint firstAttribute="bottom" secondItem="UGk-Bf-i2M" secondAttribute="bottom" id="kjY-z3-ioy"/>
+                                <constraint firstAttribute="trailing" secondItem="UGk-Bf-i2M" secondAttribute="trailing" constant="8" id="pVG-EQ-7od"/>
+                                <constraint firstItem="UGk-Bf-i2M" firstAttribute="leading" secondItem="Wtp-h1-SYl" secondAttribute="leading" constant="8" id="xu1-zF-UMZ"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Wtp-h1-SYl" secondAttribute="trailing" id="KCM-Cp-Y3j"/>
+                        <constraint firstItem="Wtp-h1-SYl" firstAttribute="top" secondItem="Uu0-r1-COg" secondAttribute="top" id="Mcd-Rz-jOj"/>
+                        <constraint firstItem="Wtp-h1-SYl" firstAttribute="width" secondItem="Uu0-r1-COg" secondAttribute="width" id="ZGW-hS-5h0"/>
+                        <constraint firstAttribute="bottom" secondItem="Wtp-h1-SYl" secondAttribute="bottom" id="aAG-R1-LNB"/>
+                        <constraint firstItem="Wtp-h1-SYl" firstAttribute="leading" secondItem="Uu0-r1-COg" secondAttribute="leading" id="eqt-Yo-SQv"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Uu0-r1-COg" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="2Wn-Gu-Ja1"/>
+                <constraint firstAttribute="bottom" secondItem="Uu0-r1-COg" secondAttribute="bottom" id="5ZZ-Dh-6PL"/>
+                <constraint firstItem="Uu0-r1-COg" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="IfM-qG-A0S"/>
+                <constraint firstItem="Uu0-r1-COg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="jV5-k3-hJ5"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="121.73913043478262" y="380.69196428571428"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic-hunter" width="485" height="285"/>
+        <image name="ic-invoker" width="485" height="285"/>
+        <image name="ic-lion" width="485" height="285"/>
+    </resources>
+</document>

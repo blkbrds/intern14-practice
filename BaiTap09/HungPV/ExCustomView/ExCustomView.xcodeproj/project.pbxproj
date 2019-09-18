@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		73AA172B230A864700E6DE74 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AA1729230A864700E6DE74 /* HomeViewController.swift */; };
+		73AA172C230A864700E6DE74 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73AA172A230A864700E6DE74 /* HomeViewController.xib */; };
+		73AA172F230A865C00E6DE74 /* Ex01ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AA172D230A865C00E6DE74 /* Ex01ViewController.swift */; };
+		73AA1730230A865C00E6DE74 /* Ex01ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73AA172E230A865C00E6DE74 /* Ex01ViewController.xib */; };
+		73AA1733230A866900E6DE74 /* Ex02ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AA1731230A866900E6DE74 /* Ex02ViewController.swift */; };
+		73AA1734230A866900E6DE74 /* Ex02ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73AA1732230A866900E6DE74 /* Ex02ViewController.xib */; };
+		73AA1737230A867E00E6DE74 /* Ex03ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AA1735230A867E00E6DE74 /* Ex03ViewController.swift */; };
+		73AA1738230A867E00E6DE74 /* Ex03ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73AA1736230A867E00E6DE74 /* Ex03ViewController.xib */; };
+		73AA1743230A86B600E6DE74 /* Ex06ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AA1741230A86B600E6DE74 /* Ex06ViewController.swift */; };
+		73AA1746230A8E0700E6DE74 /* MyAvatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AA1745230A8E0700E6DE74 /* MyAvatar.swift */; };
+		73AA1748230A8F8C00E6DE74 /* UserAvatar.plist in Resources */ = {isa = PBXBuildFile; fileRef = 73AA1747230A8F8C00E6DE74 /* UserAvatar.plist */; };
+		73AA174D230A934900E6DE74 /* DataManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AA174C230A934900E6DE74 /* DataManagement.swift */; };
+		73AA1750230A967900E6DE74 /* MyAvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AA174F230A967900E6DE74 /* MyAvatarView.swift */; };
+		73EB29332314EAC50053D756 /* ChartDatas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73EB29322314EAC40053D756 /* ChartDatas.swift */; };
+		73EDE707230A854F00C6D507 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73EDE706230A854F00C6D507 /* AppDelegate.swift */; };
+		73EDE70E230A855000C6D507 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73EDE70D230A855000C6D507 /* Assets.xcassets */; };
+		73EDE711230A855000C6D507 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73EDE70F230A855000C6D507 /* LaunchScreen.storyboard */; };
+		73EFFAE2230E449E007706F2 /* MyBadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73EFFAE1230E449E007706F2 /* MyBadgeView.swift */; };
+		73EFFAE5230E45BE007706F2 /* Ex04ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73EFFAE3230E45BE007706F2 /* Ex04ViewController.swift */; };
+		73F32166230B98A400C2B22F /* MySliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F32165230B98A400C2B22F /* MySliderView.swift */; };
+		73F32168230B98B800C2B22F /* MySliderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73F32167230B98B800C2B22F /* MySliderView.xib */; };
+		73F47818230F8DDA0086D678 /* Ex05ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F47816230F8DDA0086D678 /* Ex05ViewController.swift */; };
+		73F47819230F8DDA0086D678 /* Ex05ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73F47817230F8DDA0086D678 /* Ex05ViewController.xib */; };
+		73F4781C230F919E0086D678 /* MyPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F4781A230F919E0086D678 /* MyPickerViewController.swift */; };
+		73F4781D230F919E0086D678 /* MyPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73F4781B230F919E0086D678 /* MyPickerViewController.xib */; };
+		73F47821230FE9410086D678 /* DayPickerViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F4781F230FE9410086D678 /* DayPickerViewViewController.swift */; };
+		73F47822230FE9410086D678 /* DayPickerViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73F47820230FE9410086D678 /* DayPickerViewViewController.xib */; };
+		73F47824230FEC460086D678 /* MyDayPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F47823230FEC460086D678 /* MyDayPicker.swift */; };
+		73F47826230FEC680086D678 /* MyDayPicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73F47825230FEC680086D678 /* MyDayPicker.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		73AA1729230A864700E6DE74 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		73AA172A230A864700E6DE74 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		73AA172D230A865C00E6DE74 /* Ex01ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex01ViewController.swift; sourceTree = "<group>"; };
+		73AA172E230A865C00E6DE74 /* Ex01ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex01ViewController.xib; sourceTree = "<group>"; };
+		73AA1731230A866900E6DE74 /* Ex02ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex02ViewController.swift; sourceTree = "<group>"; };
+		73AA1732230A866900E6DE74 /* Ex02ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex02ViewController.xib; sourceTree = "<group>"; };
+		73AA1735230A867E00E6DE74 /* Ex03ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex03ViewController.swift; sourceTree = "<group>"; };
+		73AA1736230A867E00E6DE74 /* Ex03ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex03ViewController.xib; sourceTree = "<group>"; };
+		73AA1741230A86B600E6DE74 /* Ex06ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex06ViewController.swift; sourceTree = "<group>"; };
+		73AA1745230A8E0700E6DE74 /* MyAvatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAvatar.swift; sourceTree = "<group>"; };
+		73AA1747230A8F8C00E6DE74 /* UserAvatar.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = UserAvatar.plist; sourceTree = "<group>"; };
+		73AA174C230A934900E6DE74 /* DataManagement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManagement.swift; sourceTree = "<group>"; };
+		73AA174F230A967900E6DE74 /* MyAvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAvatarView.swift; sourceTree = "<group>"; };
+		73EB29322314EAC40053D756 /* ChartDatas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartDatas.swift; sourceTree = "<group>"; };
+		73EDE703230A854F00C6D507 /* ExCustomView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExCustomView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		73EDE706230A854F00C6D507 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		73EDE70D230A855000C6D507 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		73EDE710230A855000C6D507 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		73EDE712230A855000C6D507 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73EFFAE1230E449E007706F2 /* MyBadgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBadgeView.swift; sourceTree = "<group>"; };
+		73EFFAE3230E45BE007706F2 /* Ex04ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex04ViewController.swift; sourceTree = "<group>"; };
+		73F32165230B98A400C2B22F /* MySliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySliderView.swift; sourceTree = "<group>"; };
+		73F32167230B98B800C2B22F /* MySliderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MySliderView.xib; sourceTree = "<group>"; };
+		73F47816230F8DDA0086D678 /* Ex05ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex05ViewController.swift; sourceTree = "<group>"; };
+		73F47817230F8DDA0086D678 /* Ex05ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex05ViewController.xib; sourceTree = "<group>"; };
+		73F4781A230F919E0086D678 /* MyPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPickerViewController.swift; sourceTree = "<group>"; };
+		73F4781B230F919E0086D678 /* MyPickerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyPickerViewController.xib; sourceTree = "<group>"; };
+		73F4781F230FE9410086D678 /* DayPickerViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayPickerViewViewController.swift; sourceTree = "<group>"; };
+		73F47820230FE9410086D678 /* DayPickerViewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DayPickerViewViewController.xib; sourceTree = "<group>"; };
+		73F47823230FEC460086D678 /* MyDayPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDayPicker.swift; sourceTree = "<group>"; };
+		73F47825230FEC680086D678 /* MyDayPicker.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyDayPicker.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		73EDE700230A854F00C6D507 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		73AA171F230A85C100E6DE74 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				73EDE706230A854F00C6D507 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		73AA1721230A85D500E6DE74 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				73AA1747230A8F8C00E6DE74 /* UserAvatar.plist */,
+				73EDE70F230A855000C6D507 /* LaunchScreen.storyboard */,
+				73EDE70D230A855000C6D507 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		73AA1722230A85F100E6DE74 /* BaiTap06 */ = {
+			isa = PBXGroup;
+			children = (
+				73AA1741230A86B600E6DE74 /* Ex06ViewController.swift */,
+				73EB29322314EAC40053D756 /* ChartDatas.swift */,
+			);
+			path = BaiTap06;
+			sourceTree = "<group>";
+		};
+		73AA1723230A85F400E6DE74 /* BaiTap05 */ = {
+			isa = PBXGroup;
+			children = (
+				73F4781E230FE9140086D678 /* MyDayPickerView */,
+				73F47815230F8D9A0086D678 /* ViewController */,
+				73F47814230F8D980086D678 /* MyPickerView */,
+			);
+			path = BaiTap05;
+			sourceTree = "<group>";
+		};
+		73AA1724230A85F700E6DE74 /* BaiTap04 */ = {
+			isa = PBXGroup;
+			children = (
+				73EFFADB230E43C9007706F2 /* BadgeView */,
+				73EFFADA230E43C2007706F2 /* ViewController */,
+			);
+			path = BaiTap04;
+			sourceTree = "<group>";
+		};
+		73AA1725230A85F900E6DE74 /* BaiTap03 */ = {
+			isa = PBXGroup;
+			children = (
+				73AA1735230A867E00E6DE74 /* Ex03ViewController.swift */,
+				73AA1736230A867E00E6DE74 /* Ex03ViewController.xib */,
+			);
+			path = BaiTap03;
+			sourceTree = "<group>";
+		};
+		73AA1726230A85FC00E6DE74 /* BaiTap02 */ = {
+			isa = PBXGroup;
+			children = (
+				73F32164230B988400C2B22F /* MySlider */,
+				73F3215D230B973700C2B22F /* ViewController */,
+			);
+			path = BaiTap02;
+			sourceTree = "<group>";
+		};
+		73AA1727230A860100E6DE74 /* BaiTap01 */ = {
+			isa = PBXGroup;
+			children = (
+				73AA1753230AA4F800E6DE74 /* ViewController */,
+				73AA174E230A965A00E6DE74 /* Avatar */,
+			);
+			path = BaiTap01;
+			sourceTree = "<group>";
+		};
+		73AA1728230A862900E6DE74 /* HomeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				73AA1729230A864700E6DE74 /* HomeViewController.swift */,
+				73AA172A230A864700E6DE74 /* HomeViewController.xib */,
+			);
+			path = HomeViewController;
+			sourceTree = "<group>";
+		};
+		73AA1749230A92EB00E6DE74 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				73AA174B230A930700E6DE74 /* Objects */,
+				73AA174A230A92F200E6DE74 /* DataManagement */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		73AA174A230A92F200E6DE74 /* DataManagement */ = {
+			isa = PBXGroup;
+			children = (
+				73AA174C230A934900E6DE74 /* DataManagement.swift */,
+			);
+			path = DataManagement;
+			sourceTree = "<group>";
+		};
+		73AA174B230A930700E6DE74 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				73AA1745230A8E0700E6DE74 /* MyAvatar.swift */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
+		73AA174E230A965A00E6DE74 /* Avatar */ = {
+			isa = PBXGroup;
+			children = (
+				73AA174F230A967900E6DE74 /* MyAvatarView.swift */,
+			);
+			path = Avatar;
+			sourceTree = "<group>";
+		};
+		73AA1753230AA4F800E6DE74 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				73AA172D230A865C00E6DE74 /* Ex01ViewController.swift */,
+				73AA172E230A865C00E6DE74 /* Ex01ViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		73EDE6FA230A854E00C6D507 = {
+			isa = PBXGroup;
+			children = (
+				73EDE705230A854F00C6D507 /* ExCustomView */,
+				73EDE704230A854F00C6D507 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		73EDE704230A854F00C6D507 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				73EDE703230A854F00C6D507 /* ExCustomView.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		73EDE705230A854F00C6D507 /* ExCustomView */ = {
+			isa = PBXGroup;
+			children = (
+				73AA1749230A92EB00E6DE74 /* Model */,
+				73AA1728230A862900E6DE74 /* HomeViewController */,
+				73AA1727230A860100E6DE74 /* BaiTap01 */,
+				73AA1726230A85FC00E6DE74 /* BaiTap02 */,
+				73AA1725230A85F900E6DE74 /* BaiTap03 */,
+				73AA1724230A85F700E6DE74 /* BaiTap04 */,
+				73AA1723230A85F400E6DE74 /* BaiTap05 */,
+				73AA1722230A85F100E6DE74 /* BaiTap06 */,
+				73AA1721230A85D500E6DE74 /* Resources */,
+				73AA171F230A85C100E6DE74 /* AppDelegate */,
+				73EDE712230A855000C6D507 /* Info.plist */,
+			);
+			path = ExCustomView;
+			sourceTree = "<group>";
+		};
+		73EFFADA230E43C2007706F2 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				73EFFAE3230E45BE007706F2 /* Ex04ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		73EFFADB230E43C9007706F2 /* BadgeView */ = {
+			isa = PBXGroup;
+			children = (
+				73EFFAE1230E449E007706F2 /* MyBadgeView.swift */,
+			);
+			path = BadgeView;
+			sourceTree = "<group>";
+		};
+		73F3215D230B973700C2B22F /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				73AA1731230A866900E6DE74 /* Ex02ViewController.swift */,
+				73AA1732230A866900E6DE74 /* Ex02ViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		73F32164230B988400C2B22F /* MySlider */ = {
+			isa = PBXGroup;
+			children = (
+				73F32165230B98A400C2B22F /* MySliderView.swift */,
+				73F32167230B98B800C2B22F /* MySliderView.xib */,
+			);
+			path = MySlider;
+			sourceTree = "<group>";
+		};
+		73F47814230F8D980086D678 /* MyPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				73F4781A230F919E0086D678 /* MyPickerViewController.swift */,
+				73F4781B230F919E0086D678 /* MyPickerViewController.xib */,
+			);
+			path = MyPickerView;
+			sourceTree = "<group>";
+		};
+		73F47815230F8D9A0086D678 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				73F47816230F8DDA0086D678 /* Ex05ViewController.swift */,
+				73F47817230F8DDA0086D678 /* Ex05ViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		73F4781E230FE9140086D678 /* MyDayPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				73F4781F230FE9410086D678 /* DayPickerViewViewController.swift */,
+				73F47820230FE9410086D678 /* DayPickerViewViewController.xib */,
+				73F47823230FEC460086D678 /* MyDayPicker.swift */,
+				73F47825230FEC680086D678 /* MyDayPicker.xib */,
+			);
+			path = MyDayPickerView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		73EDE702230A854F00C6D507 /* ExCustomView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 73EDE715230A855000C6D507 /* Build configuration list for PBXNativeTarget "ExCustomView" */;
+			buildPhases = (
+				73EDE6FF230A854F00C6D507 /* Sources */,
+				73EDE700230A854F00C6D507 /* Frameworks */,
+				73EDE701230A854F00C6D507 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ExCustomView;
+			productName = ExCustomView;
+			productReference = 73EDE703230A854F00C6D507 /* ExCustomView.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		73EDE6FB230A854E00C6D507 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = PCI0010;
+				TargetAttributes = {
+					73EDE702230A854F00C6D507 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 73EDE6FE230A854E00C6D507 /* Build configuration list for PBXProject "ExCustomView" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 73EDE6FA230A854E00C6D507;
+			productRefGroup = 73EDE704230A854F00C6D507 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				73EDE702230A854F00C6D507 /* ExCustomView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		73EDE701230A854F00C6D507 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73F47819230F8DDA0086D678 /* Ex05ViewController.xib in Resources */,
+				73F47826230FEC680086D678 /* MyDayPicker.xib in Resources */,
+				73AA1738230A867E00E6DE74 /* Ex03ViewController.xib in Resources */,
+				73AA1730230A865C00E6DE74 /* Ex01ViewController.xib in Resources */,
+				73AA1748230A8F8C00E6DE74 /* UserAvatar.plist in Resources */,
+				73AA1734230A866900E6DE74 /* Ex02ViewController.xib in Resources */,
+				73F47822230FE9410086D678 /* DayPickerViewViewController.xib in Resources */,
+				73F4781D230F919E0086D678 /* MyPickerViewController.xib in Resources */,
+				73EDE711230A855000C6D507 /* LaunchScreen.storyboard in Resources */,
+				73EDE70E230A855000C6D507 /* Assets.xcassets in Resources */,
+				73F32168230B98B800C2B22F /* MySliderView.xib in Resources */,
+				73AA172C230A864700E6DE74 /* HomeViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		73EDE6FF230A854F00C6D507 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73F47821230FE9410086D678 /* DayPickerViewViewController.swift in Sources */,
+				73AA174D230A934900E6DE74 /* DataManagement.swift in Sources */,
+				73AA1737230A867E00E6DE74 /* Ex03ViewController.swift in Sources */,
+				73AA1750230A967900E6DE74 /* MyAvatarView.swift in Sources */,
+				73EB29332314EAC50053D756 /* ChartDatas.swift in Sources */,
+				73EDE707230A854F00C6D507 /* AppDelegate.swift in Sources */,
+				73AA1733230A866900E6DE74 /* Ex02ViewController.swift in Sources */,
+				73AA1746230A8E0700E6DE74 /* MyAvatar.swift in Sources */,
+				73F47818230F8DDA0086D678 /* Ex05ViewController.swift in Sources */,
+				73AA1743230A86B600E6DE74 /* Ex06ViewController.swift in Sources */,
+				73F32166230B98A400C2B22F /* MySliderView.swift in Sources */,
+				73EFFAE2230E449E007706F2 /* MyBadgeView.swift in Sources */,
+				73F4781C230F919E0086D678 /* MyPickerViewController.swift in Sources */,
+				73EFFAE5230E45BE007706F2 /* Ex04ViewController.swift in Sources */,
+				73AA172B230A864700E6DE74 /* HomeViewController.swift in Sources */,
+				73F47824230FEC460086D678 /* MyDayPicker.swift in Sources */,
+				73AA172F230A865C00E6DE74 /* Ex01ViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		73EDE70F230A855000C6D507 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				73EDE710230A855000C6D507 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		73EDE713230A855000C6D507 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		73EDE714230A855000C6D507 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		73EDE716230A855000C6D507 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ExCustomView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ATI.ExCustomView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		73EDE717230A855000C6D507 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ExCustomView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ATI.ExCustomView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		73EDE6FE230A854E00C6D507 /* Build configuration list for PBXProject "ExCustomView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73EDE713230A855000C6D507 /* Debug */,
+				73EDE714230A855000C6D507 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		73EDE715230A855000C6D507 /* Build configuration list for PBXNativeTarget "ExCustomView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73EDE716230A855000C6D507 /* Debug */,
+				73EDE717230A855000C6D507 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 73EDE6FB230A854E00C6D507 /* Project object */;
+}

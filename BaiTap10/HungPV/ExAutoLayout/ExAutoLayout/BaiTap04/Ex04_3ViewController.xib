@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Ex04_3ViewController" customModule="ExAutoLayout" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XsV-6k-3YU" userLabel="1">
+                    <rect key="frame" x="57" y="408" width="80" height="80"/>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="DKv-vO-YE6"/>
+                        <constraint firstAttribute="width" constant="80" id="DQ4-xc-HKt"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wPP-eJ-YED" userLabel="2">
+                    <rect key="frame" x="167" y="408" width="80" height="80"/>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="edF-FE-8x8"/>
+                        <constraint firstAttribute="width" constant="80" id="kwd-zf-a7k"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="42M-SQ-Htw" userLabel="3">
+                    <rect key="frame" x="277" y="408" width="80" height="80"/>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="ep6-75-FAl"/>
+                        <constraint firstAttribute="height" constant="80" id="xTo-PO-lKk"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="wPP-eJ-YED" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="0Pr-la-uY1"/>
+                <constraint firstItem="42M-SQ-Htw" firstAttribute="leading" secondItem="wPP-eJ-YED" secondAttribute="trailing" constant="30" id="KQU-Tx-u9Y"/>
+                <constraint firstItem="42M-SQ-Htw" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="L6t-Xf-oHv"/>
+                <constraint firstItem="XsV-6k-3YU" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="N4B-8k-3g6"/>
+                <constraint firstItem="wPP-eJ-YED" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="OLK-nO-cNl"/>
+                <constraint firstItem="wPP-eJ-YED" firstAttribute="leading" secondItem="XsV-6k-3YU" secondAttribute="trailing" constant="30" id="PXE-c4-2gI"/>
+                <constraint firstItem="wPP-eJ-YED" firstAttribute="leading" secondItem="XsV-6k-3YU" secondAttribute="trailing" constant="30" id="jMk-9n-eif"/>
+                <constraint firstItem="42M-SQ-Htw" firstAttribute="leading" secondItem="wPP-eJ-YED" secondAttribute="trailing" constant="30" id="rDr-dh-3Wg"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>

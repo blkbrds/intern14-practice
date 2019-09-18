@@ -49,7 +49,6 @@
 		1C9C275E23016D7200ED24A8 /* MienViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C9C275C23016D7200ED24A8 /* MienViewController.xib */; };
 		1C9C276223017AB500ED24A8 /* MienCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9C276023017AB500ED24A8 /* MienCell.swift */; };
 		1C9C276323017AB500ED24A8 /* MienCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C9C276123017AB500ED24A8 /* MienCell.xib */; };
-		1C9C276623017CBA00ED24A8 /* miens.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1C9C276523017CBA00ED24A8 /* miens.plist */; };
 		1C9C276823017DC200ED24A8 /* Mien.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9C276723017DC200ED24A8 /* Mien.swift */; };
 		1C9C276D23017F7C00ED24A8 /* TinhViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9C276B23017F7C00ED24A8 /* TinhViewController.swift */; };
 		1C9C276E23017F7C00ED24A8 /* TinhViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C9C276C23017F7C00ED24A8 /* TinhViewController.xib */; };
@@ -112,7 +111,6 @@
 		1C9C275C23016D7200ED24A8 /* MienViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MienViewController.xib; sourceTree = "<group>"; };
 		1C9C276023017AB500ED24A8 /* MienCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MienCell.swift; sourceTree = "<group>"; };
 		1C9C276123017AB500ED24A8 /* MienCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MienCell.xib; sourceTree = "<group>"; };
-		1C9C276523017CBA00ED24A8 /* miens.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = miens.plist; sourceTree = "<group>"; };
 		1C9C276723017DC200ED24A8 /* Mien.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mien.swift; sourceTree = "<group>"; };
 		1C9C276B23017F7C00ED24A8 /* TinhViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinhViewController.swift; sourceTree = "<group>"; };
 		1C9C276C23017F7C00ED24A8 /* TinhViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TinhViewController.xib; sourceTree = "<group>"; };
@@ -351,7 +349,6 @@
 			isa = PBXGroup;
 			children = (
 				1C9C27842302A67100ED24A8 /* Ex4 */,
-				1C9C276423017C7000ED24A8 /* Ex3 */,
 				07E33E1420DC8D36004B6E52 /* Assets.xcassets */,
 				07E33E1620DC8D36004B6E52 /* LaunchScreen.storyboard */,
 				07E33E6C20DC9F1B004B6E52 /* exercises.plist */,
@@ -417,14 +414,6 @@
 				1C9C276123017AB500ED24A8 /* MienCell.xib */,
 			);
 			path = MienCell;
-			sourceTree = "<group>";
-		};
-		1C9C276423017C7000ED24A8 /* Ex3 */ = {
-			isa = PBXGroup;
-			children = (
-				1C9C276523017CBA00ED24A8 /* miens.plist */,
-			);
-			path = Ex3;
 			sourceTree = "<group>";
 		};
 		1C9C276923017F4800ED24A8 /* Tinh */ = {
@@ -559,7 +548,6 @@
 				1C9C278D2302E97100ED24A8 /* Ex5CustomView.xib in Resources */,
 				07E33E5220DC90CF004B6E52 /* Ex7ViewController.xib in Resources */,
 				1C9C276323017AB500ED24A8 /* MienCell.xib in Resources */,
-				1C9C276623017CBA00ED24A8 /* miens.plist in Resources */,
 				07E33E5E20DC9102004B6E52 /* Ex9ViewController.xib in Resources */,
 				1C9C276E23017F7C00ED24A8 /* TinhViewController.xib in Resources */,
 				07E33E2720DC8DD7004B6E52 /* HomeViewController.xib in Resources */,
