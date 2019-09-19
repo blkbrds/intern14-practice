@@ -20,6 +20,12 @@
 		D10050382333298500CDAF37 /* ViewController_D.xib in Resources */ = {isa = PBXBuildFile; fileRef = D10050362333298500CDAF37 /* ViewController_D.xib */; };
 		D100503B233329A900CDAF37 /* ViewController_E.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1005039233329A900CDAF37 /* ViewController_E.swift */; };
 		D100503C233329A900CDAF37 /* ViewController_E.xib in Resources */ = {isa = PBXBuildFile; fileRef = D100503A233329A900CDAF37 /* ViewController_E.xib */; };
+		D194BAAB233363940001736E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D194BAA9233363940001736E /* LoginViewController.swift */; };
+		D194BAAC233363940001736E /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D194BAAA233363940001736E /* LoginViewController.xib */; };
+		D194BAAF233363A90001736E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D194BAAD233363A90001736E /* HomeViewController.swift */; };
+		D194BAB0233363A90001736E /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D194BAAE233363A90001736E /* HomeViewController.xib */; };
+		D194BAB3233363BA0001736E /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D194BAB1233363BA0001736E /* EditViewController.swift */; };
+		D194BAB4233363BA0001736E /* EditViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D194BAB2233363BA0001736E /* EditViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +44,12 @@
 		D10050362333298500CDAF37 /* ViewController_D.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController_D.xib; sourceTree = "<group>"; };
 		D1005039233329A900CDAF37 /* ViewController_E.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController_E.swift; sourceTree = "<group>"; };
 		D100503A233329A900CDAF37 /* ViewController_E.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController_E.xib; sourceTree = "<group>"; };
+		D194BAA9233363940001736E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D194BAAA233363940001736E /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		D194BAAD233363A90001736E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		D194BAAE233363A90001736E /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		D194BAB1233363BA0001736E /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
+		D194BAB2233363BA0001736E /* EditViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +82,7 @@
 		D10050152333286600CDAF37 /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
+				D194BAA8233363740001736E /* Ex02 */,
 				D1005028233328E300CDAF37 /* Ex01 */,
 				D10050162333286600CDAF37 /* AppDelegate.swift */,
 				D100501D2333286F00CDAF37 /* Assets.xcassets */,
@@ -94,6 +107,19 @@
 				D100503A233329A900CDAF37 /* ViewController_E.xib */,
 			);
 			path = Ex01;
+			sourceTree = "<group>";
+		};
+		D194BAA8233363740001736E /* Ex02 */ = {
+			isa = PBXGroup;
+			children = (
+				D194BAA9233363940001736E /* LoginViewController.swift */,
+				D194BAAA233363940001736E /* LoginViewController.xib */,
+				D194BAAD233363A90001736E /* HomeViewController.swift */,
+				D194BAAE233363A90001736E /* HomeViewController.xib */,
+				D194BAB1233363BA0001736E /* EditViewController.swift */,
+				D194BAB2233363BA0001736E /* EditViewController.xib */,
+			);
+			path = Ex02;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,13 +180,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D194BAAC233363940001736E /* LoginViewController.xib in Resources */,
 				D10050212333286F00CDAF37 /* LaunchScreen.storyboard in Resources */,
+				D194BAB4233363BA0001736E /* EditViewController.xib in Resources */,
 				D100503C233329A900CDAF37 /* ViewController_E.xib in Resources */,
 				D10050302333292000CDAF37 /* ViewController_B.xib in Resources */,
 				D100501E2333286F00CDAF37 /* Assets.xcassets in Resources */,
 				D10050342333293B00CDAF37 /* ViewController_C.xib in Resources */,
 				D100502C2333290200CDAF37 /* ViewController_A.xib in Resources */,
 				D10050382333298500CDAF37 /* ViewController_D.xib in Resources */,
+				D194BAB0233363A90001736E /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,12 +200,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D194BAAB233363940001736E /* LoginViewController.swift in Sources */,
 				D100503B233329A900CDAF37 /* ViewController_E.swift in Sources */,
 				D100502F2333292000CDAF37 /* ViewController_B.swift in Sources */,
+				D194BAAF233363A90001736E /* HomeViewController.swift in Sources */,
 				D10050372333298500CDAF37 /* ViewController_D.swift in Sources */,
 				D100502B2333290200CDAF37 /* ViewController_A.swift in Sources */,
 				D10050332333293B00CDAF37 /* ViewController_C.swift in Sources */,
 				D10050172333286600CDAF37 /* AppDelegate.swift in Sources */,
+				D194BAB3233363BA0001736E /* EditViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
