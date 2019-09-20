@@ -1,39 +1,42 @@
 //
-//  HomeTableViewCell.swift
+//  MapCell.swift
 //  ExTabbar
 //
-//  Created by PCI0010 on 9/16/19.
+//  Created by PCI0010 on 9/19/19.
 //  Copyright © 2019 PCI0010. All rights reserved.
 //
 
 import UIKit
 
-class HomeCell: UITableViewCell {
-  
-    var viewmodel: HomeCellViewModel? {
+class MapCell: UITableViewCell {
+    var viewmodel: MapCellViewModel? {
         didSet {
-            updateUI()
+           updateUI()
         }
     }
     
     func updateUI() {
-        self.nameLabel.text = viewmodel?.name
         self.artistNameLabel.text = viewmodel?.artistName
-        self.dateLabel.text = viewmodel?.releaseDate
+        self.nameLabel.text = viewmodel?.name
+        self.dateReleaseLabel.text = viewmodel?.releaseDate
         self.artworkImage.image = viewmodel?.artworkImage
+
     }
 
-    @IBOutlet private weak var nameLabel: UILabel!
-    @IBOutlet private weak var artistNameLabel: UILabel!
-    @IBOutlet private weak var dateLabel: UILabel!
-    @IBOutlet private weak var artworkImage: UIImageView!
+    @IBOutlet weak var dateReleaseLabel: UILabel!
+    @IBOutlet weak var artistNameLabel: UILabel!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var artworkImage: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        // Initialization code
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
+
+        // Configure the view for the selected state
     }
     
     func setArtworkImage(image: UIImage) {

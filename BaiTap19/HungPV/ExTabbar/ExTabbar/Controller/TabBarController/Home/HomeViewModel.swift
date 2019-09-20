@@ -12,7 +12,6 @@ import UIKit
 final class HomeViewModel {
     
     var musics: [Music] = []
-    var token: String = "dsafadsfads"
     
     // tu define
     func loadData(completion: @escaping (Bool) -> ()) {
@@ -25,7 +24,6 @@ final class HomeViewModel {
             case  .success(let musicResult):
                 //luu data vo ViewModel --> result se bi giai phong
                 self.musics.append(contentsOf: musicResult.music)
-                self.token = musicResult.token
                 
                 //call back
                 completion(true)

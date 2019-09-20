@@ -69,7 +69,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     func downloadCellImage(indexPath: IndexPath) {
         viewmodel.downloadCellImage(indexPath: indexPath) { (image, indexPath) in
             if let _ = image {
-                self.tableView.reloadRows(at: [indexPath], with: .left)
+                self.tableView.reloadRows(at: [indexPath], with: .none)
             }
         }
     }

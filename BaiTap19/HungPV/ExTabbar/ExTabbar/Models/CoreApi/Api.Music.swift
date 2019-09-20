@@ -27,7 +27,7 @@ extension ApiManager.Music {
     // tuong duong voi JSON cua API
     struct MusicResult {
         var music: [Music]
-        var token: String
+        var myMusic: [MyMusic]
     }
     
     static func getNewMusic(limit: Int = 10, completion: @escaping APICompletion<MusicResult>) {
@@ -47,17 +47,18 @@ extension ApiManager.Music {
                     
                     // array
                     var musics: [Music] = []
+                    var myMusics: [MyMusic] = []
                     for dic in results {
                         
                         let music = Music(dic: dic)
                         musics.append(music)
+                        
+                        let myMusic = MyMusic(dic: dic)
+                        myMusics.append(myMusic)
                     }
                     
-                    // thong tin phu
-                    let token = "adsfdsfadsf"
-                    
                     // data tra ve cho ViewModel
-                    let musicResult = MusicResult(music: musics, token: token)
+                    let musicResult = MusicResult(music: musics,myMusic: myMusics)
                     
                     completion(.success(musicResult))
                     
