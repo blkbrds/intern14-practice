@@ -26,7 +26,6 @@ extension ApiManager.Music {
     
     // tuong duong voi JSON cua API
     struct MusicResult {
-        var music: [Music]
         var myMusic: [MyMusic]
     }
     
@@ -46,19 +45,14 @@ extension ApiManager.Music {
                     let results = feed["results"] as! [JSON]
                     
                     // array
-                    var musics: [Music] = []
                     var myMusics: [MyMusic] = []
                     for dic in results {
-                        
-                        let music = Music(dic: dic)
-                        musics.append(music)
-                        
                         let myMusic = MyMusic(dic: dic)
                         myMusics.append(myMusic)
                     }
                     
                     // data tra ve cho ViewModel
-                    let musicResult = MusicResult(music: musics,myMusic: myMusics)
+                    let musicResult = MusicResult(myMusic: myMusics)
                     
                     completion(.success(musicResult))
                     

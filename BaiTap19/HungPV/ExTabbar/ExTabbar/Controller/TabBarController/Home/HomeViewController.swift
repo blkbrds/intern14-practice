@@ -36,12 +36,17 @@ class HomeViewController: UIViewController {
     func loadData() {
         viewmodel.loadData { (done) in
             if done {
-                self.updateUI()
-                self.downCellImages()
+                self.fetchData()
             } else {
-                print("Can't Load Data")
+                print("Can't Load data!")
             }
         }
+    }
+    
+    func fetchData() {
+        viewmodel.delegate = self
+        viewmodel.fetchData()
+        viewmodel.observe()
     }
     
     func updateUI() {
@@ -58,11 +63,10 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? HomeCell else { return UITableViewCell() }
-        
-        let music = viewmodel.getMusic(with: indexPath)
-        let cellViewModel = HomeCellViewModel(music: music!)
+        let myMusic = viewmodel.getMusic(with: indexPath)
+        let cellViewModel = HomeCellViewModel(myMusic: myMusic!)
         cell.viewmodel = cellViewModel
-       
+        
         return cell
     }
     
@@ -92,5 +96,11 @@ extension HomeViewController: UIScrollViewDelegate {
     
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         downCellImages()
+    }
+}
+
+extension HomeViewController: HomeViewModelDelegate {
+    func viewmodel(_ viewModel: HomeViewModel, needperformAction: HomeViewModel.Action) {
+        tableView.reloadData()
     }
 }

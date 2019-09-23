@@ -51,17 +51,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             let mapNavigationController = UINavigationController(rootViewController: mapViewController)
             mapNavigationController.tabBarItem = UITabBarItem(title: "Map", image: #imageLiteral(resourceName: "ic-map-white"), tag: 1)
             
-            //Config : - Tab Favorite
-            let favoriteViewController = FavoriteViewController()
-            let favoriteNavigationController = UINavigationController(rootViewController: favoriteViewController)
-            favoriteNavigationController.tabBarItem = UITabBarItem(title: "Favorite", image: #imageLiteral(resourceName: "ic-favorite-white"), tag: 2)
-            
             //Config : - Tab Profile
             let profileViewController = ProfileViewController()
             let profileNavigationController = UINavigationController(rootViewController: profileViewController)
-            profileNavigationController.tabBarItem = UITabBarItem(title: "Profile", image: #imageLiteral(resourceName: "ic-profile-white"), tag: 3)
+            profileNavigationController.tabBarItem = UITabBarItem(title: "Profile", image: #imageLiteral(resourceName: "ic-profile-white"), tag: 2)
             
-            let viewControllers = [homeNavigationController, mapNavigationController, favoriteNavigationController, profileNavigationController]
+            //Config : - Tab Favorite
+            let favoriteViewController = FavoriteViewController()
+            let favoriteNavigationController = UINavigationController(rootViewController: favoriteViewController)
+            favoriteNavigationController.tabBarItem = UITabBarItem(title: "Favorite", image: #imageLiteral(resourceName: "ic-favorite-white"), tag: 3)
+            
+            let viewControllers = [homeNavigationController, mapNavigationController, profileNavigationController, favoriteNavigationController]
             let tabBarController = UITabBarController()
             tabBarController.viewControllers = viewControllers
             window?.rootViewController = tabBarController

@@ -10,18 +10,17 @@ import Foundation
 import UIKit
 
 final class HomeCellViewModel {
-    
     var name: String
     var artistName: String
     var releaseDate: String
     var artworkUrl100: String
     var artworkImage: UIImage?
     
-    init(music: Music) {
-        self.name = music.name
-        self.artistName = music.artistName
-        self.releaseDate = music.releaseDate
-        self.artworkUrl100 = music.artworkUrl100
-        self.artworkImage = music.artworkImage
+    init(myMusic: MyMusic) {
+        self.name = myMusic.name
+        self.artistName = myMusic.artistName
+        self.releaseDate = myMusic.releaseDate
+        self.artworkUrl100 = myMusic.artworkUrl100
+        self.artworkImage = myMusic.artworkImage
     }
 }

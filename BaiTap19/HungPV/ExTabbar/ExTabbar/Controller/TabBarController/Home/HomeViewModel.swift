@@ -8,32 +8,59 @@
 
 import Foundation
 import UIKit
+import RealmSwift
+
+protocol HomeViewModelDelegate: class {
+    func viewmodel(_ viewModel: HomeViewModel, needperformAction: HomeViewModel.Action )
+}
 
 final class HomeViewModel {
     
-    var musics: [Music] = []
+    var myData: [MyMusic] = []
+    var notificationToken: NotificationToken?
+    weak var delegate: HomeViewModelDelegate?
     
-    // tu define
+    // Mark : - Load Data From API
     func loadData(completion: @escaping (Bool) -> ()) {
         ApiManager.Music.getNewMusic(limit: 10) { (result) in
             switch result {
+            case .success(let musicResult):
+                self.myData.append(contentsOf: musicResult.myMusic)
+                self.deleteAllObject()
+                self.saveRealm(myMusic: self.myData)
+                completion(true)
             case .failure(let error):
                 print(error.localizedDescription)
-                //call back
                 completion(false)
-            case  .success(let musicResult):
-                //luu data vo ViewModel --> result se bi giai phong
-                self.musics.append(contentsOf: musicResult.music)
-                
-                //call back
-                completion(true)
             }
         }
     }
     
-    //download image
+    // Mark: - Realm
+    func saveRealm(myMusic: [MyMusic]) {
+        RealmManager.shared.add(objects: myMusic)
+    }
+    
+    func fetchData() {
+        guard let datas = RealmManager.shared.fetchObjects(MyMusic.self) else { return }
+        self.myData = [MyMusic](datas)
+        delegate?.viewmodel(self, needperformAction: .reloadData)
+    }
+    
+    func deleteAllObject() {
+        guard let datas = RealmManager.shared.fetchObjects(MyMusic.self) else { return }
+        RealmManager.shared.deleteAll(objects: [MyMusic](datas))
+    }
+    
+    func observe() {
+        notificationToken = RealmManager.shared.observe(type: MyMusic.self, completion: { [ weak self ] _ in
+            guard let this = self else { return }
+            this.fetchData()
+        })
+    }
+    
     func downloadCellImage(indexPath: IndexPath, completion: @escaping (UIImage?, IndexPath) -> ()) {
-        let item = musics[indexPath.row]
+        let item = myData[indexPath.row]
         ApiManager.Downloader.downloadImage(imageURL: item.artworkUrl100, index: indexPath.row) { (image, index) in
             if let image = image {
                 item.artworkImage = image
@@ -43,15 +70,23 @@ final class HomeViewModel {
             }
         }
     }
+    
 }
 
 extension HomeViewModel {
-    
     func numberOfItems(in section: Int) -> Int {
-        return musics.count
+        return myData.count
     }
     
-    func getMusic(with indexPath: IndexPath) -> Music? {
-        return musics[indexPath.row]
+    func getMusic(with indexPath: IndexPath) -> MyMusic? {
+        return myData[indexPath.row]
+    }
+}
+
+// Mark: - Define
+extension HomeViewModel {
+    
+    enum Action {
+        case reloadData
     }
 }

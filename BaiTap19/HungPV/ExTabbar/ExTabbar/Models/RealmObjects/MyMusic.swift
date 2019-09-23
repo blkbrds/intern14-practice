@@ -34,4 +34,8 @@ final class MyMusic: Object {
         }
         self.init(value: schema)
     }
+    
+    override static func primaryKey() -> String? {
+        return "name"
+    }
 }

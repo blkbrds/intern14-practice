@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileViewController" customModule="ExTabbar" customModuleProvider="target">
             <connections>
+                <outlet property="buttonDidClick" destination="czC-l0-HTz" id="Kv2-aC-7vU"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -20,32 +21,21 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-background" translatesAutoresizingMaskIntoConstraints="NO" id="kNY-dn-3di">
-                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
-                </imageView>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TDm-li-acK">
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="czC-l0-HTz">
                     <rect key="frame" x="147" y="408" width="120" height="80"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
-                    <state key="normal" title="Log Out">
+                    <color key="backgroundColor" red="0.22885911370000001" green="0.50466153250000001" blue="0.94334925520000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <state key="normal" title="Click">
                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                     </state>
                     <connections>
-                        <action selector="logOutButton:" destination="-1" eventType="touchUpInside" id="noO-7s-6Gj"/>
+                        <action selector="buttonDidClick:" destination="-1" eventType="touchUpInside" id="w5f-qy-obA"/>
                     </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-            <constraints>
-                <constraint firstItem="kNY-dn-3di" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Jho-nY-MbT"/>
-                <constraint firstItem="kNY-dn-3di" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Jon-Jj-VWi"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="kNY-dn-3di" secondAttribute="trailing" id="axP-Pb-67t"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="kNY-dn-3di" secondAttribute="bottom" id="piw-3S-x6V"/>
-            </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
         </view>
     </objects>
-    <resources>
-        <image name="ic-background" width="1280" height="720"/>
-    </resources>
 </document>

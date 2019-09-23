@@ -19,22 +19,8 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-background" translatesAutoresizingMaskIntoConstraints="NO" id="jRQ-AX-rHn">
-                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
-                </imageView>
-            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-            <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="jRQ-AX-rHn" secondAttribute="trailing" id="99h-4B-FPc"/>
-                <constraint firstItem="jRQ-AX-rHn" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="gak-ZT-s0I"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="jRQ-AX-rHn" secondAttribute="bottom" id="io0-Tt-gFk"/>
-                <constraint firstItem="jRQ-AX-rHn" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="wC7-dc-0FN"/>
-            </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
         </view>
     </objects>
-    <resources>
-        <image name="ic-background" width="1280" height="720"/>
-    </resources>
 </document>
