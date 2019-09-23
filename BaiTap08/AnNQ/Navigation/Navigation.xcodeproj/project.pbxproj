@@ -26,6 +26,13 @@
 		D194BAB0233363A90001736E /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D194BAAE233363A90001736E /* HomeViewController.xib */; };
 		D194BAB3233363BA0001736E /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D194BAB1233363BA0001736E /* EditViewController.swift */; };
 		D194BAB4233363BA0001736E /* EditViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D194BAB2233363BA0001736E /* EditViewController.xib */; };
+		D194BABD233384700001736E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D194BABB233384700001736E /* ProfileViewController.swift */; };
+		D194BABE233384700001736E /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D194BABC233384700001736E /* ProfileViewController.xib */; };
+		D194BAC0233384860001736E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D194BABF233384860001736E /* User.swift */; };
+		D194BAC3233385EF0001736E /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D194BAC1233385EF0001736E /* HomeController.swift */; };
+		D194BAC4233385EF0001736E /* HomeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D194BAC2233385EF0001736E /* HomeController.xib */; };
+		D194BACC233467CB0001736E /* UsersList.plist in Resources */ = {isa = PBXBuildFile; fileRef = D194BACB233467CB0001736E /* UsersList.plist */; };
+		D1C0AE932338A4980003365A /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C0AE922338A4980003365A /* UserView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +57,13 @@
 		D194BAAE233363A90001736E /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		D194BAB1233363BA0001736E /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 		D194BAB2233363BA0001736E /* EditViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditViewController.xib; sourceTree = "<group>"; };
+		D194BABB233384700001736E /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		D194BABC233384700001736E /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
+		D194BABF233384860001736E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		D194BAC1233385EF0001736E /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		D194BAC2233385EF0001736E /* HomeController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeController.xib; sourceTree = "<group>"; };
+		D194BACB233467CB0001736E /* UsersList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = UsersList.plist; sourceTree = "<group>"; };
+		D1C0AE922338A4980003365A /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +96,7 @@
 		D10050152333286600CDAF37 /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
+				D194BAB5233382470001736E /* Ex03 */,
 				D194BAA8233363740001736E /* Ex02 */,
 				D1005028233328E300CDAF37 /* Ex01 */,
 				D10050162333286600CDAF37 /* AppDelegate.swift */,
@@ -120,6 +135,36 @@
 				D194BAB2233363BA0001736E /* EditViewController.xib */,
 			);
 			path = Ex02;
+			sourceTree = "<group>";
+		};
+		D194BAB5233382470001736E /* Ex03 */ = {
+			isa = PBXGroup;
+			children = (
+				D1C0AE912338A47E0003365A /* Views */,
+				D194BAB6233383BD0001736E /* Model */,
+				D194BABB233384700001736E /* ProfileViewController.swift */,
+				D194BABC233384700001736E /* ProfileViewController.xib */,
+				D194BAC1233385EF0001736E /* HomeController.swift */,
+				D194BAC2233385EF0001736E /* HomeController.xib */,
+			);
+			path = Ex03;
+			sourceTree = "<group>";
+		};
+		D194BAB6233383BD0001736E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D194BABF233384860001736E /* User.swift */,
+				D194BACB233467CB0001736E /* UsersList.plist */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D1C0AE912338A47E0003365A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D1C0AE922338A4980003365A /* UserView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,8 +229,11 @@
 				D10050212333286F00CDAF37 /* LaunchScreen.storyboard in Resources */,
 				D194BAB4233363BA0001736E /* EditViewController.xib in Resources */,
 				D100503C233329A900CDAF37 /* ViewController_E.xib in Resources */,
+				D194BAC4233385EF0001736E /* HomeController.xib in Resources */,
 				D10050302333292000CDAF37 /* ViewController_B.xib in Resources */,
+				D194BACC233467CB0001736E /* UsersList.plist in Resources */,
 				D100501E2333286F00CDAF37 /* Assets.xcassets in Resources */,
+				D194BABE233384700001736E /* ProfileViewController.xib in Resources */,
 				D10050342333293B00CDAF37 /* ViewController_C.xib in Resources */,
 				D100502C2333290200CDAF37 /* ViewController_A.xib in Resources */,
 				D10050382333298500CDAF37 /* ViewController_D.xib in Resources */,
@@ -205,8 +253,12 @@
 				D100502F2333292000CDAF37 /* ViewController_B.swift in Sources */,
 				D194BAAF233363A90001736E /* HomeViewController.swift in Sources */,
 				D10050372333298500CDAF37 /* ViewController_D.swift in Sources */,
+				D194BABD233384700001736E /* ProfileViewController.swift in Sources */,
 				D100502B2333290200CDAF37 /* ViewController_A.swift in Sources */,
+				D194BAC0233384860001736E /* User.swift in Sources */,
+				D194BAC3233385EF0001736E /* HomeController.swift in Sources */,
 				D10050332333293B00CDAF37 /* ViewController_C.swift in Sources */,
+				D1C0AE932338A4980003365A /* UserView.swift in Sources */,
 				D10050172333286600CDAF37 /* AppDelegate.swift in Sources */,
 				D194BAB3233363BA0001736E /* EditViewController.swift in Sources */,
 			);
