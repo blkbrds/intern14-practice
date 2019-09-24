@@ -53,17 +53,6 @@ class LoginViewController: UIViewController {
         }
     }
     
-    func doLogin() {
-        if usernameTextField.text == "" || passwordTextField.text == "" {
-                   errorLabel.text = "Vui lòng nhập đầy đủ thông tin"
-                   errorLabel.isHidden = false
-               } else {
-                   let homeController = HomeViewController(nibName: "HomeViewController", bundle: nil)
-                   homeController.username = usernameTextField.text!
-                   navigationController?.pushViewController(homeController, animated: true)
-               }
-    }
-    
     @IBAction func hiddenError(_ sender: UITextField) {
         errorLabel.isHidden = true
     }

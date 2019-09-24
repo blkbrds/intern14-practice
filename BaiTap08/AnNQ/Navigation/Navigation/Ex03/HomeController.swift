@@ -8,8 +8,8 @@
 
 import UIKit
 
-class HomeController: UIViewController, ProfileViewControllerDelegate {
-    var listUsers: [User] = User.parsingData()
+class HomeController: UIViewController {
+    var users: [User] = User.parsingData()
     @IBOutlet weak var uiScrollView: UIScrollView!
     var profileVC = ProfileViewController()
     
@@ -31,9 +31,9 @@ class HomeController: UIViewController, ProfileViewControllerDelegate {
     func showListUser () {
         var x: CGFloat = 12
         var y: CGFloat = 10
-        for i in 0..<listUsers.count {
+        for i in 0..<users.count {
             let frame = CGRect(x: x, y: y, width: 120, height: 130)
-            let userView = UserView(frame: frame, user: listUsers[i])
+            let userView = UserView(frame: frame, user: users[i])
             userView.tag = i
             tapGestureRecognizer(userView)
             uiScrollView.addSubview(userView)
@@ -59,16 +59,17 @@ class HomeController: UIViewController, ProfileViewControllerDelegate {
             guard let index = sender.view?.tag else {
                 return
             }
-            profileVC.user = listUsers[index]
+            profileVC.user = users[index]
             profileVC.index = index
             navigationController?.pushViewController(profileVC, animated: true)
         }
     }
-    
+}
+
+extension HomeController : ProfileViewControllerDelegate {
     func changeDataInUIVIew(value: User, index: Int) {
         let userView = uiScrollView.viewWithTag(index) as! UserView
         userView.nameLabel!.text = value.name
         userView.avatarImageView!.image = UIImage(named: value.avatar)
-        
     }    
 }
