@@ -20,7 +20,6 @@ class Users {
 }
 
 extension Users {
-    
     static func parseData(array: [[String: String]]) -> [Users] {
         var users: [Users] = []
         for dic in array {
