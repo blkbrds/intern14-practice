@@ -33,6 +33,7 @@
 		D194BAC4233385EF0001736E /* HomeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D194BAC2233385EF0001736E /* HomeController.xib */; };
 		D194BACC233467CB0001736E /* UsersList.plist in Resources */ = {isa = PBXBuildFile; fileRef = D194BACB233467CB0001736E /* UsersList.plist */; };
 		D1C0AE932338A4980003365A /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C0AE922338A4980003365A /* UserView.swift */; };
+		D1C0AE972338D11C0003365A /* Ex04ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C0AE952338D11B0003365A /* Ex04ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,7 @@
 		D194BAC2233385EF0001736E /* HomeController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeController.xib; sourceTree = "<group>"; };
 		D194BACB233467CB0001736E /* UsersList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = UsersList.plist; sourceTree = "<group>"; };
 		D1C0AE922338A4980003365A /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
+		D1C0AE952338D11B0003365A /* Ex04ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex04ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 		D10050152333286600CDAF37 /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
+				D1C0AE942338D0980003365A /* Ex04 */,
 				D194BAB5233382470001736E /* Ex03 */,
 				D194BAA8233363740001736E /* Ex02 */,
 				D1005028233328E300CDAF37 /* Ex01 */,
@@ -165,6 +168,14 @@
 				D1C0AE922338A4980003365A /* UserView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		D1C0AE942338D0980003365A /* Ex04 */ = {
+			isa = PBXGroup;
+			children = (
+				D1C0AE952338D11B0003365A /* Ex04ViewController.swift */,
+			);
+			path = Ex04;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,6 +266,7 @@
 				D10050372333298500CDAF37 /* ViewController_D.swift in Sources */,
 				D194BABD233384700001736E /* ProfileViewController.swift in Sources */,
 				D100502B2333290200CDAF37 /* ViewController_A.swift in Sources */,
+				D1C0AE972338D11C0003365A /* Ex04ViewController.swift in Sources */,
 				D194BAC0233384860001736E /* User.swift in Sources */,
 				D194BAC3233385EF0001736E /* HomeController.swift in Sources */,
 				D10050332333293B00CDAF37 /* ViewController_C.swift in Sources */,
