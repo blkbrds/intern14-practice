@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SlideImagesCollectionViewCell" customModule="ExCollectionViewHomeScreen" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="QEk-5U-N6U">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="2SJ-lR-cRZ">
+                            <size key="itemSize" width="0.0" height="0.0"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="TTV-tr-rlO">
+                        <rect key="frame" x="20" y="138" width="374" height="37"/>
+                    </pageControl>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="QEk-5U-N6U" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="2ZF-0y-j1F"/>
+                <constraint firstAttribute="bottom" secondItem="TTV-tr-rlO" secondAttribute="bottom" constant="25" id="Jdb-yC-WKi"/>
+                <constraint firstAttribute="trailing" secondItem="TTV-tr-rlO" secondAttribute="trailing" constant="20" id="KOq-th-W1B"/>
+                <constraint firstItem="TTV-tr-rlO" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="WYu-Tb-FdT"/>
+                <constraint firstAttribute="bottom" secondItem="QEk-5U-N6U" secondAttribute="bottom" id="k0L-Ai-8PX"/>
+                <constraint firstAttribute="trailing" secondItem="QEk-5U-N6U" secondAttribute="trailing" id="set-Nj-XYR"/>
+                <constraint firstItem="QEk-5U-N6U" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="uUH-lv-bVu"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="collectionView" destination="QEk-5U-N6U" id="bGp-RK-qf4"/>
+                <outlet property="pageView" destination="TTV-tr-rlO" id="4a6-nJ-SwK"/>
+            </connections>
+            <point key="canvasLocation" x="-477" y="22"/>
+        </collectionViewCell>
+    </objects>
+</document>
