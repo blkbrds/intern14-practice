@@ -1,5 +1,5 @@
 //
-//  ViewController_E.swift
+//  ViewController_D.swift
 //  Navigation
 //
 //  Created by MBA0217 on 9/19/19.
@@ -8,39 +8,37 @@
 
 import UIKit
 
-class ViewController_E: UIViewController {
-
-    @IBOutlet weak var dButton: UIButton!
+class DViewController: UIViewController {
+    @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var bButton: UIButton!
     @IBOutlet weak var cButton: UIButton!
     @IBOutlet weak var rootButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        title = "ViewController E"
+
+        title = "ViewController D"
     }
     
-    @IBAction func dTouchUpInside(_ sender: UIButton) {
-        for controller in navigationController!.viewControllers {
-            if controller.isKind(of: ViewController_D.self) {
-                navigationController?.popToViewController(controller, animated: true)
-            }
-        }
+    @IBAction func nextTouchUpInside(_ sender: UIButton) {
+        let controller = EViewController()
+        navigationController?.pushViewController(controller, animated: true)
     }
     
     @IBAction func bTouchUpInsidr(_ sender: UIButton) {
         for controller in navigationController!.viewControllers {
-            if controller.isKind(of: ViewController_B.self) {
+            if controller.isKind(of: BViewController.self) {
                 navigationController?.popToViewController(controller, animated: true)
+                break
             }
         }
     }
     
     @IBAction func cTouchUpInsidr(_ sender: UIButton) {
         for controller in navigationController!.viewControllers {
-            if controller.isKind(of: ViewController_C.self) {
+            if controller.isKind(of: BViewController.self) {
                 navigationController?.popToViewController(controller, animated: true)
+                break
             }
         }
     }

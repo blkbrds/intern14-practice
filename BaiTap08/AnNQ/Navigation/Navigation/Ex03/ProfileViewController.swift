@@ -9,7 +9,7 @@
 import UIKit
 import Photos
 
-protocol ProfileDelegate {
+protocol ProfileViewControllerDelegate : class {
     func changeDataInUIVIew(value: User, index: Int)
 }
 
@@ -17,11 +17,11 @@ protocol ProfileDelegate {
 
 class ProfileViewController: UIViewController {
 
-    var user = User(name: "", avatar: "")
+    var user: User?
     var index = 0
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var avatarView: UIImageView!
-    var delegate: ProfileDelegate?
+    weak var delegate: ProfileViewControllerDelegate?
     let imagePicker = UIImagePickerController()
     
     override func viewDidLoad() {
@@ -38,18 +38,22 @@ class ProfileViewController: UIViewController {
         nameTextField.layer.borderColor = UIColor.blue.cgColor
         nameTextField.setLeftPaddingPoints(10)
         nameTextField.layer.cornerRadius = 5
-        nameTextField.text = user.name
-        avatarView.image = UIImage(named: user.avatar)
-        tapGestureRecognizer(avatarView)
+        if let user = self.user {
+            nameTextField.text = user.name
+           avatarView.image = UIImage(named: user.avatar)
+           tapGestureRecognizer(avatarView)
+        } else {
+            return
+        }
     }
 
     private func tapGestureRecognizer(_ container: UIView) {
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(tapAction(_:)))
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(avatartapGestureRecognizer(_:)))
         container.addGestureRecognizer(tapGesture)
         container.isUserInteractionEnabled = true
     }
     
-    @objc private func tapAction(_ sender : UITapGestureRecognizer ) {
+    @objc private func avatartapGestureRecognizer(_ sender : UITapGestureRecognizer ) {
         guard sender.view != nil else { return }
         
         if sender.state == .ended {
@@ -63,10 +67,10 @@ class ProfileViewController: UIViewController {
     
     @objc func updateProfile () {
         if nameTextField.text != "" {
-            user.name = nameTextField.text!
+            user!.name = nameTextField.text!
         }
         if let delegate = self.delegate {
-            delegate.changeDataInUIVIew(value: user, index: self.index)
+            delegate.changeDataInUIVIew(value: user!, index: self.index)
             navigationController?.popViewController(animated: true)
         } else {
             print("Error")
@@ -78,19 +82,18 @@ class ProfileViewController: UIViewController {
 extension ProfileViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         //choose file from gallery
-                   if let pickedImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
-                       avatarView.contentMode = .scaleAspectFit
-                       avatarView.image = pickedImage
+       if let pickedImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+           avatarView.contentMode = .scaleAspectFit
+           avatarView.image = pickedImage
 
-                       //get filename
-                       if let asset = info[UIImagePickerController.InfoKey.phAsset] as? PHAsset {
-                           let assetResources = PHAssetResource.assetResources(for: asset)
+           //get filename
+           if let asset = info[UIImagePickerController.InfoKey.phAsset] as? PHAsset {
+               let assetResources = PHAssetResource.assetResources(for: asset)
 
-                           user.avatar = assetResources.first!.originalFilename
-                        print(user.avatar)
-                       }
-                    picker.dismiss(animated: true, completion: nil)
-                   }
+            user!.avatar = assetResources.first!.originalFilename
+           }
+            picker.dismiss(animated: true, completion: nil)
+       }
     }
 }
 

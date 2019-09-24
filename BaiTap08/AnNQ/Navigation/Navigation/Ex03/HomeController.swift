@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HomeController: UIViewController, ProfileDelegate {
+class HomeController: UIViewController, ProfileViewControllerDelegate {
     var listUsers: [User] = User.parsingData()
     @IBOutlet weak var uiScrollView: UIScrollView!
     var profileVC = ProfileViewController()
@@ -46,12 +46,12 @@ class HomeController: UIViewController, ProfileDelegate {
     }
     
     private func tapGestureRecognizer(_ container: UIView) {
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(tapAction(_:)))
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(userProfiletapGestureRecognizer(_:)))
         container.addGestureRecognizer(tapGesture)
         container.isUserInteractionEnabled = true
     }
     
-    @objc private func tapAction(_ sender : UITapGestureRecognizer ) {
+    @objc private func userProfiletapGestureRecognizer(_ sender : UITapGestureRecognizer ) {
         guard sender.view != nil else { return }
 
         if sender.state == .ended {

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController_B: UIViewController {
+class BViewController: UIViewController {
 
     @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var previousButton: UIButton!
@@ -19,15 +19,11 @@ class ViewController_B: UIViewController {
     }
 
     @IBAction func nextTouchUpInside(_ sender: UIButton) {
-        let controller = ViewController_C()
+        let controller = CViewController()
         navigationController?.pushViewController(controller, animated: true)
     }
     
-    @IBAction func previousTouchUpInsidr(_ sender: UIButton) {
-        for controller in navigationController!.viewControllers {
-            if controller.isKind(of: ViewController_A.self) {
-                navigationController?.popToViewController(controller, animated: true)
-            }
-        }
+    @IBAction func previousTouchUpInside(_ sender: UIButton) {
+        navigationController?.popViewController(animated: true)
     }
 }

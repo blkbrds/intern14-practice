@@ -10,16 +10,16 @@
 		D10050172333286600CDAF37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10050162333286600CDAF37 /* AppDelegate.swift */; };
 		D100501E2333286F00CDAF37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D100501D2333286F00CDAF37 /* Assets.xcassets */; };
 		D10050212333286F00CDAF37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D100501F2333286F00CDAF37 /* LaunchScreen.storyboard */; };
-		D100502B2333290200CDAF37 /* ViewController_A.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10050292333290200CDAF37 /* ViewController_A.swift */; };
-		D100502C2333290200CDAF37 /* ViewController_A.xib in Resources */ = {isa = PBXBuildFile; fileRef = D100502A2333290200CDAF37 /* ViewController_A.xib */; };
-		D100502F2333292000CDAF37 /* ViewController_B.swift in Sources */ = {isa = PBXBuildFile; fileRef = D100502D2333292000CDAF37 /* ViewController_B.swift */; };
-		D10050302333292000CDAF37 /* ViewController_B.xib in Resources */ = {isa = PBXBuildFile; fileRef = D100502E2333292000CDAF37 /* ViewController_B.xib */; };
-		D10050332333293B00CDAF37 /* ViewController_C.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10050312333293B00CDAF37 /* ViewController_C.swift */; };
-		D10050342333293B00CDAF37 /* ViewController_C.xib in Resources */ = {isa = PBXBuildFile; fileRef = D10050322333293B00CDAF37 /* ViewController_C.xib */; };
-		D10050372333298500CDAF37 /* ViewController_D.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10050352333298500CDAF37 /* ViewController_D.swift */; };
-		D10050382333298500CDAF37 /* ViewController_D.xib in Resources */ = {isa = PBXBuildFile; fileRef = D10050362333298500CDAF37 /* ViewController_D.xib */; };
-		D100503B233329A900CDAF37 /* ViewController_E.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1005039233329A900CDAF37 /* ViewController_E.swift */; };
-		D100503C233329A900CDAF37 /* ViewController_E.xib in Resources */ = {isa = PBXBuildFile; fileRef = D100503A233329A900CDAF37 /* ViewController_E.xib */; };
+		D100502B2333290200CDAF37 /* AViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10050292333290200CDAF37 /* AViewController.swift */; };
+		D100502C2333290200CDAF37 /* AViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D100502A2333290200CDAF37 /* AViewController.xib */; };
+		D100502F2333292000CDAF37 /* BViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D100502D2333292000CDAF37 /* BViewController.swift */; };
+		D10050302333292000CDAF37 /* BViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D100502E2333292000CDAF37 /* BViewController.xib */; };
+		D10050332333293B00CDAF37 /* CViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10050312333293B00CDAF37 /* CViewController.swift */; };
+		D10050342333293B00CDAF37 /* CViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D10050322333293B00CDAF37 /* CViewController.xib */; };
+		D10050372333298500CDAF37 /* DViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10050352333298500CDAF37 /* DViewController.swift */; };
+		D10050382333298500CDAF37 /* DViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D10050362333298500CDAF37 /* DViewController.xib */; };
+		D100503B233329A900CDAF37 /* EViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1005039233329A900CDAF37 /* EViewController.swift */; };
+		D100503C233329A900CDAF37 /* EViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D100503A233329A900CDAF37 /* EViewController.xib */; };
 		D194BAAB233363940001736E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D194BAA9233363940001736E /* LoginViewController.swift */; };
 		D194BAAC233363940001736E /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D194BAAA233363940001736E /* LoginViewController.xib */; };
 		D194BAAF233363A90001736E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D194BAAD233363A90001736E /* HomeViewController.swift */; };
@@ -42,16 +42,16 @@
 		D100501D2333286F00CDAF37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D10050202333286F00CDAF37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D10050222333286F00CDAF37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D10050292333290200CDAF37 /* ViewController_A.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController_A.swift; sourceTree = "<group>"; };
-		D100502A2333290200CDAF37 /* ViewController_A.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController_A.xib; sourceTree = "<group>"; };
-		D100502D2333292000CDAF37 /* ViewController_B.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController_B.swift; sourceTree = "<group>"; };
-		D100502E2333292000CDAF37 /* ViewController_B.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController_B.xib; sourceTree = "<group>"; };
-		D10050312333293B00CDAF37 /* ViewController_C.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController_C.swift; sourceTree = "<group>"; };
-		D10050322333293B00CDAF37 /* ViewController_C.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController_C.xib; sourceTree = "<group>"; };
-		D10050352333298500CDAF37 /* ViewController_D.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController_D.swift; sourceTree = "<group>"; };
-		D10050362333298500CDAF37 /* ViewController_D.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController_D.xib; sourceTree = "<group>"; };
-		D1005039233329A900CDAF37 /* ViewController_E.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController_E.swift; sourceTree = "<group>"; };
-		D100503A233329A900CDAF37 /* ViewController_E.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController_E.xib; sourceTree = "<group>"; };
+		D10050292333290200CDAF37 /* AViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AViewController.swift; sourceTree = "<group>"; };
+		D100502A2333290200CDAF37 /* AViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AViewController.xib; sourceTree = "<group>"; };
+		D100502D2333292000CDAF37 /* BViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BViewController.swift; sourceTree = "<group>"; };
+		D100502E2333292000CDAF37 /* BViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BViewController.xib; sourceTree = "<group>"; };
+		D10050312333293B00CDAF37 /* CViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CViewController.swift; sourceTree = "<group>"; };
+		D10050322333293B00CDAF37 /* CViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CViewController.xib; sourceTree = "<group>"; };
+		D10050352333298500CDAF37 /* DViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DViewController.swift; sourceTree = "<group>"; };
+		D10050362333298500CDAF37 /* DViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DViewController.xib; sourceTree = "<group>"; };
+		D1005039233329A900CDAF37 /* EViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EViewController.swift; sourceTree = "<group>"; };
+		D100503A233329A900CDAF37 /* EViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EViewController.xib; sourceTree = "<group>"; };
 		D194BAA9233363940001736E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		D194BAAA233363940001736E /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		D194BAAD233363A90001736E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -113,16 +113,16 @@
 		D1005028233328E300CDAF37 /* Ex01 */ = {
 			isa = PBXGroup;
 			children = (
-				D10050292333290200CDAF37 /* ViewController_A.swift */,
-				D100502A2333290200CDAF37 /* ViewController_A.xib */,
-				D100502D2333292000CDAF37 /* ViewController_B.swift */,
-				D100502E2333292000CDAF37 /* ViewController_B.xib */,
-				D10050312333293B00CDAF37 /* ViewController_C.swift */,
-				D10050322333293B00CDAF37 /* ViewController_C.xib */,
-				D10050352333298500CDAF37 /* ViewController_D.swift */,
-				D10050362333298500CDAF37 /* ViewController_D.xib */,
-				D1005039233329A900CDAF37 /* ViewController_E.swift */,
-				D100503A233329A900CDAF37 /* ViewController_E.xib */,
+				D10050292333290200CDAF37 /* AViewController.swift */,
+				D100502A2333290200CDAF37 /* AViewController.xib */,
+				D100502D2333292000CDAF37 /* BViewController.swift */,
+				D100502E2333292000CDAF37 /* BViewController.xib */,
+				D10050312333293B00CDAF37 /* CViewController.swift */,
+				D10050322333293B00CDAF37 /* CViewController.xib */,
+				D10050352333298500CDAF37 /* DViewController.swift */,
+				D10050362333298500CDAF37 /* DViewController.xib */,
+				D1005039233329A900CDAF37 /* EViewController.swift */,
+				D100503A233329A900CDAF37 /* EViewController.xib */,
 			);
 			path = Ex01;
 			sourceTree = "<group>";
@@ -239,15 +239,15 @@
 				D194BAAC233363940001736E /* LoginViewController.xib in Resources */,
 				D10050212333286F00CDAF37 /* LaunchScreen.storyboard in Resources */,
 				D194BAB4233363BA0001736E /* EditViewController.xib in Resources */,
-				D100503C233329A900CDAF37 /* ViewController_E.xib in Resources */,
+				D100503C233329A900CDAF37 /* EViewController.xib in Resources */,
 				D194BAC4233385EF0001736E /* HomeController.xib in Resources */,
-				D10050302333292000CDAF37 /* ViewController_B.xib in Resources */,
+				D10050302333292000CDAF37 /* BViewController.xib in Resources */,
 				D194BACC233467CB0001736E /* UsersList.plist in Resources */,
 				D100501E2333286F00CDAF37 /* Assets.xcassets in Resources */,
 				D194BABE233384700001736E /* ProfileViewController.xib in Resources */,
-				D10050342333293B00CDAF37 /* ViewController_C.xib in Resources */,
-				D100502C2333290200CDAF37 /* ViewController_A.xib in Resources */,
-				D10050382333298500CDAF37 /* ViewController_D.xib in Resources */,
+				D10050342333293B00CDAF37 /* CViewController.xib in Resources */,
+				D100502C2333290200CDAF37 /* AViewController.xib in Resources */,
+				D10050382333298500CDAF37 /* DViewController.xib in Resources */,
 				D194BAB0233363A90001736E /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,16 +260,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				D194BAAB233363940001736E /* LoginViewController.swift in Sources */,
-				D100503B233329A900CDAF37 /* ViewController_E.swift in Sources */,
-				D100502F2333292000CDAF37 /* ViewController_B.swift in Sources */,
+				D100503B233329A900CDAF37 /* EViewController.swift in Sources */,
+				D100502F2333292000CDAF37 /* BViewController.swift in Sources */,
 				D194BAAF233363A90001736E /* HomeViewController.swift in Sources */,
-				D10050372333298500CDAF37 /* ViewController_D.swift in Sources */,
+				D10050372333298500CDAF37 /* DViewController.swift in Sources */,
 				D194BABD233384700001736E /* ProfileViewController.swift in Sources */,
-				D100502B2333290200CDAF37 /* ViewController_A.swift in Sources */,
+				D100502B2333290200CDAF37 /* AViewController.swift in Sources */,
 				D1C0AE972338D11C0003365A /* Ex04ViewController.swift in Sources */,
 				D194BAC0233384860001736E /* User.swift in Sources */,
 				D194BAC3233385EF0001736E /* HomeController.swift in Sources */,
-				D10050332333293B00CDAF37 /* ViewController_C.swift in Sources */,
+				D10050332333293B00CDAF37 /* CViewController.swift in Sources */,
 				D1C0AE932338A4980003365A /* UserView.swift in Sources */,
 				D10050172333286600CDAF37 /* AppDelegate.swift in Sources */,
 				D194BAB3233363BA0001736E /* EditViewController.swift in Sources */,

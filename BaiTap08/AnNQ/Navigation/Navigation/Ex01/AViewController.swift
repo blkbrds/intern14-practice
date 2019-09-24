@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController_A: UIViewController {
+class AViewController: UIViewController {
 
     @IBOutlet weak var nextButton: UIButton!
     
@@ -18,7 +18,7 @@ class ViewController_A: UIViewController {
     }
 
     @IBAction func nextTouchUpInside(_ sender: UIButton) {
-        let bController = ViewController_B()
+        let bController = BViewController()
         navigationController?.pushViewController(bController, animated: true)
     }
 }

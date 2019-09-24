@@ -35,46 +35,11 @@ class LoginViewController: UIViewController {
         passwordTextField.layer.cornerRadius = 5
         
         errorLabel.isHidden = true
-        handleKeyBoard()
     }
     
-    func handleKeyBoard () {
-        //Looks for single or multiple taps.
-        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
-        
-        //Uncomment the line below if you want the tap not not interfere and cancel other interactions.
-        //tap.cancelsTouchesInView = false
-        
-        view.addGestureRecognizer(tap)
-        
-        usernameTextField.tag = 0
-        usernameTextField.returnKeyType = .next
-        passwordTextField.tag = 1
-        passwordTextField.returnKeyType = .go
-        
-    }
-    
-    func textFieldShouldReturn(_ textField: UITextField) {
-        let nextTag = textField.tag + 1
-        
-        if let nextResponder = textField.superview?.viewWithTag(nextTag) {
-            nextResponder.becomeFirstResponder() //Call this method when you want the current object to be the first responder
-        } else {
-            textField.resignFirstResponder() // turn off keyborad
-        }
-    }
-    
-    @IBAction func nextButtonPrimaryActionTriggered(_ sender: Any) {
-        textFieldShouldReturn(usernameTextField)
-    }
-    
-    @IBAction func doneButtonPrimaryActionTriggered(_ sender: Any) {
-        login()
-    }
-    //Calls this function when the tap is recognized.
-    @objc func dismissKeyboard() {
-        //Causes the view (or one of its embedded text fields) to resign the first responder status.
-        view.endEditing(true)
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        usernameTextField.resignFirstResponder()
+        passwordTextField.resignFirstResponder()
     }
     
     @objc func login () {
@@ -88,8 +53,31 @@ class LoginViewController: UIViewController {
         }
     }
     
+    func doLogin() {
+        if usernameTextField.text == "" || passwordTextField.text == "" {
+                   errorLabel.text = "Vui lòng nhập đầy đủ thông tin"
+                   errorLabel.isHidden = false
+               } else {
+                   let homeController = HomeViewController(nibName: "HomeViewController", bundle: nil)
+                   homeController.username = usernameTextField.text!
+                   navigationController?.pushViewController(homeController, animated: true)
+               }
+    }
+    
     @IBAction func hiddenError(_ sender: UITextField) {
         errorLabel.isHidden = true
+    }
+}
+
+extension LoginViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if textField == usernameTextField {
+            passwordTextField.becomeFirstResponder()
+        } else if textField == passwordTextField {
+            login()
+        }
+        
+        return true
     }
 }
 
