@@ -2,21 +2,21 @@
 
 import UIKit
 
-func shuffledArrNumber(arrNumber: Array<Int>) -> Array<Int> {
+func shuffledArrNumber(arrayNumber: Array<Int>) -> Array<Int> {
     
-    var swapArr:[Int] = arrNumber
-    for element in 0..<swapArr.count {
-        let randomVal: Int = Int(arc4random_uniform(UInt32(swapArr.count-1)))
-        (swapArr[element], swapArr[randomVal]) = (swapArr[randomVal], swapArr[element])
+    var swapArray:[Int] = arrayNumber
+    for element in 0..<swapArray.count {
+        let randomValue: Int = Int(arc4random_uniform(UInt32(swapArray.count-1)))
+        (swapArray[element], swapArray[randomValue]) = (swapArray[randomValue], swapArray[element])
     }
     
-    return swapArr
+    return swapArray
 }
 
-var varArr:[Int] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+var array:[Int] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 var ramdomShuffled:[Int]
 
 for index in 1...10 {
-    ramdomShuffled = shuffledArrNumber(varArr)
+    ramdomShuffled = shuffledArrNumber(arrayNumber: array)
     print("Random array : \(ramdomShuffled)")
 }
