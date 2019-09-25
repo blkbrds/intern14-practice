@@ -23,27 +23,66 @@ class Polygon {
         self.edge = edge
         self.numberOfEdge = numberEdge
     }
-    
-    func getPolygonPerimeter() -> Int {
+
+    func getPerimeter() -> Int {
         var perimeter: Int = 0
-        for index in 0..<self.edge.count {
-            perimeter += self.edge[index]
+        for val in edge {
+            perimeter += val
         }
         return perimeter
     }
     
     func displayPolygonEdges() {
-        for edge in 0..<self.edge.count {
-            print("Plygon edge : \(self.edge[edge])")
+        for edgeValue in edge {
+            print("Plygon edge : \(edgeValue)")
         }
     }
 }
 
-let particularPolygon = Polygon(numberEdge: 5, edge: [10,27,32,25,19])
-particularPolygon.displayPolygonEdges()
-print("polygon perimeter : \(particularPolygon.getPolygonPerimeter())")
 
+// Coding next practice 3.
+class Triangle : Polygon {
+    
+    override init(numberEdge: Int, edge: [Int]) {
+        super.init(numberEdge: numberEdge, edge: edge)
+    }
+    override func getPerimeter() -> Int {
+        var trialPerimeter = 0
+        for value in edge {
+            trialPerimeter += value
+        }
+        return trialPerimeter
+    }
+    
+    func getTriangleRadian() -> Int {
+        let circuit = getPerimeter()/2
+        let radian = Int(sqrt(Double(circuit * ( circuit - edge[0] ) * ( circuit - edge[1] ) * ( circuit - edge[2]))))
+        return radian
+    }
+    
+    /**
+     * function check pitago triangle
+     * Practice 4
+     */
+    func checkPitago() -> Bool {
+        let a = edge[0]
+        let b = edge[1]
+        let c = edge[2]
 
+        if ((a*a == b*b + c*c) || (b*b == a*c + c*c) || (c*c == a*a + b*b)) {
+            return true
+        }
+        return false
+    }
+}
 
-// Coding next practice.
+// Coding next practice 4
+var triangleArray: [Triangle] = []
+triangleArray.append(Triangle(numberEdge: 3, edge: [3, 4, 5]))
+triangleArray.append(Triangle(numberEdge: 3, edge: [3, 8, 6]))
 
+for triangle in triangleArray {
+    if (triangle.checkPitago()) {
+        triangle.displayPolygonEdges()
+    }
+}
