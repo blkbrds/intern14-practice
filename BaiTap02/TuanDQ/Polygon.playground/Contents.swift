@@ -43,7 +43,9 @@ class Polygon {
 // Coding next practice 3.
 class Triangle : Polygon {
     
-    override init(numberEdge: Int, edge: [Int]) {
+    let numberEdge: Int = 3
+    
+    init(edge: [Int]) {
         super.init(numberEdge: numberEdge, edge: edge)
     }
     override func getPerimeter() -> Int {
@@ -78,8 +80,8 @@ class Triangle : Polygon {
 
 // Coding next practice 4
 var triangleArray: [Triangle] = []
-triangleArray.append(Triangle(numberEdge: 3, edge: [3, 4, 5]))
-triangleArray.append(Triangle(numberEdge: 3, edge: [3, 8, 6]))
+triangleArray.append(Triangle(edge: [3, 4, 5]))
+triangleArray.append(Triangle(edge: [3, 8, 6]))
 
 for triangle in triangleArray {
     if (triangle.checkPitago()) {

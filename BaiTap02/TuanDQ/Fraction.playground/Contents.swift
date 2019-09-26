@@ -8,7 +8,11 @@ class Fraction {
     /**
     * Default constructor with parameters.
     */
-    init(numerate: Int, denominate: Int) {
+    init?(numerate: Int, denominate: Int) {
+        if (numerate == 0) {
+            return nil
+        }
+
         self.numerator = numerate
         self.denominator = denominate
     }
