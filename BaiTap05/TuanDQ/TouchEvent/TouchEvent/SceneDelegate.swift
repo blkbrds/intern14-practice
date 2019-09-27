@@ -20,7 +20,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let myView = (scene as? UIWindowScene) else { return }
         let window = UIWindow(windowScene: myView)
 //        window.rootViewController = BallMoveViewController()
-        window.rootViewController = SliderViewController()
+//        window.rootViewController = SliderViewController()
+        window.rootViewController = MonkeyViewController()
         self.window = window
         window.makeKeyAndVisible()
     }
