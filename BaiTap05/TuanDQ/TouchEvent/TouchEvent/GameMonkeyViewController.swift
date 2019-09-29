@@ -10,9 +10,10 @@ import UIKit
 
 class GameMonkeyViewController: UIViewController {
 
-    @IBOutlet weak var mainItem: UIView!
     @IBOutlet weak var startGame: UIButton!
     @IBOutlet weak var monkeyCatch: UIImageView!
+    @IBOutlet weak var ballNumber: UILabel!
+    @IBOutlet weak var displayLabel: UILabel!
     
     var itemArray: [UIView] = []
     override func viewDidLoad() {
@@ -21,17 +22,25 @@ class GameMonkeyViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    /**
+     * Click to start game button.
+     */
     @IBAction func startGameClick(_ sender: Any) {
         
         startGame.isHidden = true
         monkeyCatch.center.x = UIScreen.main.bounds.width / 2
         monkeyCatch.isHidden = false
+        displayLabel.isHidden = false
+        ballNumber.isHidden = false
         
         Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: { (nil) in
             self.start()
         })
     }
     
+    /**
+     * Move monkey catch ball.
+     */
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesMoved(touches, with: event)
         guard let touch = touches.first else { return }
@@ -69,12 +78,16 @@ class GameMonkeyViewController: UIViewController {
                 if ((itemY + itemH/2) <= (itemH + frameH)) && ((itemY + itemH/2) >= (monkeyY - monkeyH/2)) // Check y
                     && ((itemX + itemW/2) > (monkeyX - monkeyW/2)) && ((itemX + itemW/2) < (monkeyX + monkeyW/2)) // Check x
                 {
+                    ballNumber.text = String((Int(ballNumber.text ?? "0") ?? 0) + 1)
                     item.removeFromSuperview()
                 }
             }
         }
     }
 
+    /**
+     * Check catching monkey's ball.
+     */
     func checkItemType(item: UIView) -> Bool {
         for checkItem in itemArray {
             if (item == checkItem) {
@@ -84,10 +97,10 @@ class GameMonkeyViewController: UIViewController {
         return false
     }
     
+    /**
+     * Start game.
+     */
     private func start() {
-        let totalView = view.subviews.count
-        print("Total view: \(totalView)")
-        
         let index = Int.random(in: 0..<5)
         let displayIndex = index * Int(UIScreen.main.bounds.size.width) / 5
         let duration = Double.random(in: 3..<7)
@@ -99,6 +112,9 @@ class GameMonkeyViewController: UIViewController {
         run(view: item.view, time: duration)
     }
     
+    /**
+     * Animation ball.
+     */
     private func run(view moveView: UIView, time duration: TimeInterval) {
         UIView.animate(withDuration: duration) {
             moveView.center.y += UIScreen.main.bounds.size.height
