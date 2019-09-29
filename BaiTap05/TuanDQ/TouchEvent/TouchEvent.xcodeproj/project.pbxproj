@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		72A409D023410DDE007CDB9D /* DrawCanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A409CF23410DDE007CDB9D /* DrawCanvasView.swift */; };
+		72A409D2234121D1007CDB9D /* LinePoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A409D1234121D1007CDB9D /* LinePoint.swift */; };
 		72BA4CD4233E65EC0073598D /* speakclear.png in Resources */ = {isa = PBXBuildFile; fileRef = 72BA4CD3233E65EC0073598D /* speakclear.png */; };
 		72BA4CD6233E73270073598D /* CustomDraw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72BA4CD5233E73270073598D /* CustomDraw.swift */; };
 		72BA4CD9233E76130073598D /* GameMonkeyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72BA4CD7233E76130073598D /* GameMonkeyViewController.swift */; };
@@ -51,6 +53,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		72A409CF23410DDE007CDB9D /* DrawCanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawCanvasView.swift; sourceTree = "<group>"; };
+		72A409D1234121D1007CDB9D /* LinePoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinePoint.swift; sourceTree = "<group>"; };
 		72BA4CD3233E65EC0073598D /* speakclear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = speakclear.png; sourceTree = "<group>"; };
 		72BA4CD5233E73270073598D /* CustomDraw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDraw.swift; sourceTree = "<group>"; };
 		72BA4CD7233E76130073598D /* GameMonkeyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameMonkeyViewController.swift; sourceTree = "<group>"; };
@@ -154,6 +158,8 @@
 				72BA4CD8233E76130073598D /* GameMonkeyViewController.xib */,
 				72CA878C233F3B72003842E6 /* GameItemView.swift */,
 				72CA878D233F3B72003842E6 /* GameItemView.xib */,
+				72A409CF23410DDE007CDB9D /* DrawCanvasView.swift */,
+				72A409D1234121D1007CDB9D /* LinePoint.swift */,
 			);
 			path = TouchEvent;
 			sourceTree = "<group>";
@@ -316,8 +322,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72A409D2234121D1007CDB9D /* LinePoint.swift in Sources */,
 				72FC1F03233DBE72000AF466 /* AppDelegate.swift in Sources */,
 				72FAA965233E2F0C0009ED21 /* MonkeyViewController.swift in Sources */,
+				72A409D023410DDE007CDB9D /* DrawCanvasView.swift in Sources */,
 				72FC1F34233DBEE4000AF466 /* BallMoveViewController.swift in Sources */,
 				72FC1F05233DBE72000AF466 /* SceneDelegate.swift in Sources */,
 				72BA4CD6233E73270073598D /* CustomDraw.swift in Sources */,
