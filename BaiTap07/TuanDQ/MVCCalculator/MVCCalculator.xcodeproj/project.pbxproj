@@ -76,6 +76,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		72A409D32341283A007CDB9D /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				72FD07E1234091D4008C0BD2 /* CalculateViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		72A409D423412847007CDB9D /* view */ = {
+			isa = PBXGroup;
+			children = (
+				72FD07E2234091D4008C0BD2 /* CalculateViewController.xib */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
 		72FD07A1234087B7008C0BD2 = {
 			isa = PBXGroup;
 			children = (
@@ -99,13 +115,13 @@
 		72FD07AC234087B7008C0BD2 /* MVCCalculator */ = {
 			isa = PBXGroup;
 			children = (
+				72A409D423412847007CDB9D /* view */,
+				72A409D32341283A007CDB9D /* controller */,
 				72FD07AD234087B7008C0BD2 /* AppDelegate.swift */,
 				72FD07AF234087B7008C0BD2 /* SceneDelegate.swift */,
 				72FD07B6234087BA008C0BD2 /* Assets.xcassets */,
 				72FD07B8234087BA008C0BD2 /* LaunchScreen.storyboard */,
 				72FD07BB234087BA008C0BD2 /* Info.plist */,
-				72FD07E1234091D4008C0BD2 /* CalculateViewController.swift */,
-				72FD07E2234091D4008C0BD2 /* CalculateViewController.xib */,
 			);
 			path = MVCCalculator;
 			sourceTree = "<group>";
