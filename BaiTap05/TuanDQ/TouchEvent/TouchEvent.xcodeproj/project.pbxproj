@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		72BA4CD4233E65EC0073598D /* speakclear.png in Resources */ = {isa = PBXBuildFile; fileRef = 72BA4CD3233E65EC0073598D /* speakclear.png */; };
+		72BA4CD6233E73270073598D /* CustomDraw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72BA4CD5233E73270073598D /* CustomDraw.swift */; };
+		72BA4CD9233E76130073598D /* GameMonkeyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72BA4CD7233E76130073598D /* GameMonkeyViewController.swift */; };
+		72BA4CDA233E76130073598D /* GameMonkeyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72BA4CD8233E76130073598D /* GameMonkeyViewController.xib */; };
+		72CA878E233F3B72003842E6 /* GameItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CA878C233F3B72003842E6 /* GameItemView.swift */; };
+		72CA878F233F3B72003842E6 /* GameItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72CA878D233F3B72003842E6 /* GameItemView.xib */; };
 		72FAA961233E2C980009ED21 /* MyPaintViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FAA95F233E2C980009ED21 /* MyPaintViewController.swift */; };
 		72FAA962233E2C980009ED21 /* MyPaintViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72FAA960233E2C980009ED21 /* MyPaintViewController.xib */; };
 		72FAA965233E2F0C0009ED21 /* MonkeyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FAA963233E2F0C0009ED21 /* MonkeyViewController.swift */; };
@@ -14,7 +20,6 @@
 		72FAA969233E2F620009ED21 /* MonkeySpeakViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FAA967233E2F620009ED21 /* MonkeySpeakViewController.swift */; };
 		72FAA96A233E2F620009ED21 /* MonkeySpeakViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72FAA968233E2F620009ED21 /* MonkeySpeakViewController.xib */; };
 		72FAA96C233E2F860009ED21 /* monkey.png in Resources */ = {isa = PBXBuildFile; fileRef = 72FAA96B233E2F860009ED21 /* monkey.png */; };
-		72FAA96E233E2F950009ED21 /* speak.png in Resources */ = {isa = PBXBuildFile; fileRef = 72FAA96D233E2F950009ED21 /* speak.png */; };
 		72FC1F03233DBE72000AF466 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FC1F02233DBE72000AF466 /* AppDelegate.swift */; };
 		72FC1F05233DBE72000AF466 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FC1F04233DBE72000AF466 /* SceneDelegate.swift */; };
 		72FC1F0C233DBE75000AF466 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72FC1F0B233DBE75000AF466 /* Assets.xcassets */; };
@@ -46,6 +51,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		72BA4CD3233E65EC0073598D /* speakclear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = speakclear.png; sourceTree = "<group>"; };
+		72BA4CD5233E73270073598D /* CustomDraw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDraw.swift; sourceTree = "<group>"; };
+		72BA4CD7233E76130073598D /* GameMonkeyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameMonkeyViewController.swift; sourceTree = "<group>"; };
+		72BA4CD8233E76130073598D /* GameMonkeyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameMonkeyViewController.xib; sourceTree = "<group>"; };
+		72CA878C233F3B72003842E6 /* GameItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameItemView.swift; sourceTree = "<group>"; };
+		72CA878D233F3B72003842E6 /* GameItemView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameItemView.xib; sourceTree = "<group>"; };
 		72FAA95F233E2C980009ED21 /* MyPaintViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPaintViewController.swift; sourceTree = "<group>"; };
 		72FAA960233E2C980009ED21 /* MyPaintViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyPaintViewController.xib; sourceTree = "<group>"; };
 		72FAA963233E2F0C0009ED21 /* MonkeyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonkeyViewController.swift; sourceTree = "<group>"; };
@@ -53,7 +64,6 @@
 		72FAA967233E2F620009ED21 /* MonkeySpeakViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonkeySpeakViewController.swift; sourceTree = "<group>"; };
 		72FAA968233E2F620009ED21 /* MonkeySpeakViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MonkeySpeakViewController.xib; sourceTree = "<group>"; };
 		72FAA96B233E2F860009ED21 /* monkey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = monkey.png; sourceTree = "<group>"; };
-		72FAA96D233E2F950009ED21 /* speak.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = speak.png; sourceTree = "<group>"; };
 		72FC1EFF233DBE72000AF466 /* TouchEvent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TouchEvent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72FC1F02233DBE72000AF466 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		72FC1F04233DBE72000AF466 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -122,9 +132,9 @@
 			isa = PBXGroup;
 			children = (
 				72FC1F02233DBE72000AF466 /* AppDelegate.swift */,
-				72FAA96D233E2F950009ED21 /* speak.png */,
 				72FC1F04233DBE72000AF466 /* SceneDelegate.swift */,
 				72FAA96B233E2F860009ED21 /* monkey.png */,
+				72BA4CD3233E65EC0073598D /* speakclear.png */,
 				72FC1F36233DBF43000AF466 /* ball.png */,
 				72FC1F0B233DBE75000AF466 /* Assets.xcassets */,
 				72FC1F0D233DBE75000AF466 /* LaunchScreen.storyboard */,
@@ -139,6 +149,11 @@
 				72FAA964233E2F0C0009ED21 /* MonkeyViewController.xib */,
 				72FAA967233E2F620009ED21 /* MonkeySpeakViewController.swift */,
 				72FAA968233E2F620009ED21 /* MonkeySpeakViewController.xib */,
+				72BA4CD5233E73270073598D /* CustomDraw.swift */,
+				72BA4CD7233E76130073598D /* GameMonkeyViewController.swift */,
+				72BA4CD8233E76130073598D /* GameMonkeyViewController.xib */,
+				72CA878C233F3B72003842E6 /* GameItemView.swift */,
+				72CA878D233F3B72003842E6 /* GameItemView.xib */,
 			);
 			path = TouchEvent;
 			sourceTree = "<group>";
@@ -265,7 +280,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72FAA96E233E2F950009ED21 /* speak.png in Resources */,
+				72BA4CD4233E65EC0073598D /* speakclear.png in Resources */,
+				72BA4CDA233E76130073598D /* GameMonkeyViewController.xib in Resources */,
 				72FC1F35233DBEE4000AF466 /* BallMoveViewController.xib in Resources */,
 				72FC1F0F233DBE75000AF466 /* LaunchScreen.storyboard in Resources */,
 				72FC1F3B233DC69D000AF466 /* SliderViewController.xib in Resources */,
@@ -273,6 +289,7 @@
 				72FAA96A233E2F620009ED21 /* MonkeySpeakViewController.xib in Resources */,
 				72FAA962233E2C980009ED21 /* MyPaintViewController.xib in Resources */,
 				72FAA96C233E2F860009ED21 /* monkey.png in Resources */,
+				72CA878F233F3B72003842E6 /* GameItemView.xib in Resources */,
 				72FC1F37233DBF43000AF466 /* ball.png in Resources */,
 				72FC1F0C233DBE75000AF466 /* Assets.xcassets in Resources */,
 			);
@@ -303,7 +320,10 @@
 				72FAA965233E2F0C0009ED21 /* MonkeyViewController.swift in Sources */,
 				72FC1F34233DBEE4000AF466 /* BallMoveViewController.swift in Sources */,
 				72FC1F05233DBE72000AF466 /* SceneDelegate.swift in Sources */,
+				72BA4CD6233E73270073598D /* CustomDraw.swift in Sources */,
 				72FAA961233E2C980009ED21 /* MyPaintViewController.swift in Sources */,
+				72BA4CD9233E76130073598D /* GameMonkeyViewController.swift in Sources */,
+				72CA878E233F3B72003842E6 /* GameItemView.swift in Sources */,
 				72FAA969233E2F620009ED21 /* MonkeySpeakViewController.swift in Sources */,
 				72FC1F3A233DC69D000AF466 /* SliderViewController.swift in Sources */,
 			);

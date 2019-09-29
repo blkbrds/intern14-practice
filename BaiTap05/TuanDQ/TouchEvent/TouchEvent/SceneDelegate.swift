@@ -21,7 +21,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let window = UIWindow(windowScene: myView)
 //        window.rootViewController = BallMoveViewController()
 //        window.rootViewController = SliderViewController()
-        window.rootViewController = MonkeyViewController()
+//        window.rootViewController = MyPaintViewController()
+//        window.rootViewController = MonkeyViewController()
+//        window.rootViewController = MonkeySpeakViewController()
+        
+        window.rootViewController = GameMonkeyViewController()
+
         self.window = window
         window.makeKeyAndVisible()
     }

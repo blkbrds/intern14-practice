@@ -10,21 +10,30 @@ import UIKit
 
 class MyPaintViewController: UIViewController {
 
+    
+
+    
+    @IBOutlet weak var saveButton: UIButton!
+    @IBOutlet weak var resetButton: UIButton!
+    @IBOutlet weak var drawMainView: UIView!
+    @IBOutlet weak var greenBrush: UIButton!
+    @IBOutlet weak var redBrush: UIButton!
+    @IBOutlet weak var lightBlueBrush: UIButton!
+    @IBOutlet weak var yellowBrush: UIButton!
+    @IBOutlet weak var indigoBrush: UIButton!
+    @IBOutlet weak var orangeBrush: UIButton!
+    @IBOutlet weak var whiteBrush: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        let singleTapGest = UITapGestureRecognizer(target: self, action: #selector(checkSingleTap))
+        singleTapGest.numberOfTapsRequired = 1
+        
+        view.addGestureRecognizer(singleTapGest)
     }
 
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @objc func checkSingleTap() {
+        
     }
-    */
-
 }
