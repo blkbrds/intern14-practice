@@ -11,16 +11,11 @@ import UIKit
 struct BarChart {
     var month : String
     var value : Float
-    
-    init(_ month : String,_ value: Float){
-        self.month = month
-        self.value = value
-    }
 }
 
 class MyBarChartViewController: UIViewController {
 
-    var barArray: [BarChart] = []
+    var bars: [BarChart] = []
     var maxValue: Float = 22.0
 
     var frameBar: CGRect = CGRect()
@@ -30,19 +25,19 @@ class MyBarChartViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        barArray = [
-            BarChart("Jan", 20.0),
-            BarChart("Feb", 20.0),
-            BarChart("Mar", 6.0),
-            BarChart("Apr", 20.0),
-            BarChart("May", 12.0),
-            BarChart("Jun", 4.0),
-            BarChart("Jul", 4.0),
-            BarChart("Aug", 4.0),
-            BarChart("Sep", 2.0),
-            BarChart("Oct", 2.0),
-            BarChart("Nov", 5.0),
-            BarChart("Dec", 5.0)
+        bars = [
+            BarChart(month: "Jan", value: 20.0),
+            BarChart(month: "Feb", value: 20.0),
+            BarChart(month: "Mar", value: 6.0),
+            BarChart(month: "Apr", value: 20.0),
+            BarChart(month: "May", value: 12.0),
+            BarChart(month: "Jun", value: 4.0),
+            BarChart(month: "Jul", value: 4.0),
+            BarChart(month: "Aug", value: 4.0),
+            BarChart(month: "Sep", value: 2.0),
+            BarChart(month: "Oct", value: 2.0),
+            BarChart(month: "Nov", value: 5.0),
+            BarChart(month: "Dec", value: 5.0)
         ]
         let frameMeasure = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
         let frameBar = CGRect(x: CGFloat(xFrameBar), y: CGFloat(yFrameBar), width: CGFloat(Int(UIScreen.main.bounds.width) - 2 * xFrameBar), height: CGFloat(Int(UIScreen.main.bounds.height) - 2 * yFrameBar))
@@ -108,7 +103,7 @@ class MyBarChartViewController: UIViewController {
     func createBarChartView(frame: CGRect) -> UIView {
         let barContainer = UIView(frame: frame)
         
-        let imageNumber = barArray.count
+        let imageNumber = bars.count
         let w = 10
         // margin for each bar.
         let margin = (Int(barContainer.frame.size.width) - (imageNumber * w)) / imageNumber
@@ -118,7 +113,7 @@ class MyBarChartViewController: UIViewController {
         var height: Float = 0
         
         for barNo in 0..<imageNumber {
-            height = Float(barContainer.frame.size.height) * barArray[barNo].value / maxValue
+            height = Float(barContainer.frame.size.height) * bars[barNo].value / maxValue
             addComponent(container: barContainer, x: startX, y: (Float(barContainer.frame.size.height) - height), w: w, h: height)
             startX += w + margin
         }
