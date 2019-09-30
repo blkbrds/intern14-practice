@@ -10,22 +10,22 @@ import UIKit
 
 class AvatarsViewController: UIViewController {
     
-    var personsInfo: [AvatarItemView] = []
+    var personsInfo: [PersonInfo] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         personsInfo = [
-            AvatarItemView(PersonInfo(personImage: UIImage(named: "avatar.png")!, personName: "User 1", tag: 1)),
-            AvatarItemView(PersonInfo(personImage: UIImage(named: "avatar.png")!, personName: "User 2", tag: 2)),
-            AvatarItemView(PersonInfo(personImage: UIImage(named: "avatar.png")!, personName: "User 3", tag: 3)),
-            AvatarItemView(PersonInfo(personImage: UIImage(named: "avatar.png")!, personName: "User 4", tag: 4)),
-            AvatarItemView(PersonInfo(personImage: UIImage(named: "avatar.png")!, personName: "User 5", tag: 5)),
-            AvatarItemView(PersonInfo(personImage: UIImage(named: "avatar.png")!, personName: "User 6", tag: 6)),
-            AvatarItemView(PersonInfo(personImage: UIImage(named: "avatar.png")!, personName: "User 7", tag: 7)),
-            AvatarItemView(PersonInfo(personImage: UIImage(named: "avatar.png")!, personName: "User 8", tag: 8)),
-            AvatarItemView(PersonInfo(personImage: UIImage(named: "avatar.png")!, personName: "User 9", tag: 9))
+            PersonInfo(personImage: UIImage(named: "avatar.png")!, personName: "User 1", tag: 1),
+            PersonInfo(personImage: UIImage(named: "avatar.png")!, personName: "User 2", tag: 2),
+            PersonInfo(personImage: UIImage(named: "avatar.png")!, personName: "User 3", tag: 3),
+            PersonInfo(personImage: UIImage(named: "avatar.png")!, personName: "User 4", tag: 4),
+            PersonInfo(personImage: UIImage(named: "avatar.png")!, personName: "User 5", tag: 5),
+            PersonInfo(personImage: UIImage(named: "avatar.png")!, personName: "User 6", tag: 6),
+            PersonInfo(personImage: UIImage(named: "avatar.png")!, personName: "User 7", tag: 7),
+            PersonInfo(personImage: UIImage(named: "avatar.png")!, personName: "User 8", tag: 8),
+            PersonInfo(personImage: UIImage(named: "avatar.png")!, personName: "User 9", tag: 9)
         ]
         settingLayout()
     }
@@ -39,13 +39,16 @@ class AvatarsViewController: UIViewController {
         
         let maxHeight = Int(UIScreen.main.bounds.size.height)
         let maxWidth = Int(UIScreen.main.bounds.size.width)
+        let viewH = 130
+        let viewW = 100
         // Calculate to display.
         for person in personsInfo {
-            addComponent(x: x, y: y, person: person)
+            let locate = CGRect(origin: CGPoint(x: x, y: y), size: CGSize(width: viewW, height: viewH))
+            addComponent(person: person, point: locate)
             
             // Move to new point.
-            x += Int(person.frame.width) + leftMargin
-            if (x + Int(person.frame.width) > maxWidth) {
+            x += viewW + leftMargin
+            if (x + viewW > maxWidth) {
                 x = leftMargin
                 y += topMargin
             }
@@ -55,36 +58,11 @@ class AvatarsViewController: UIViewController {
         }
     }
     
-    func addComponent(x xPoint: Int, y yPoint: Int, person personInfo: AvatarItemView) {
-        personInfo.frame = CGRect(origin: CGPoint(x: xPoint, y: yPoint), size: CGSize(width: personInfo.bounds.width, height: personInfo.bounds.height))
-//        let demo: AvatarItemView = AvatarItemView(PersonInfo(personImage: UIImage(named: "avatar.png")!, personName: "User 9", tag: 9))
-        guard let nib = Bundle.main.loadNibNamed("AvatarItemView", owner: nil, options: nil)?[0] as? AvatarItemView else { return }
-        nib.frame = CGRect(origin: CGPoint(x: xPoint, y: yPoint), size: CGSize(width: 50, height: 50))
+    func addComponent(person personInfo: PersonInfo, point localtion: CGRect) {
+        let componentName = "AvatarItemView"
+        guard let nib = Bundle.main.loadNibNamed(componentName, owner: nil, options: nil)?[0] as? AvatarItemView else { return }
+        nib.setting(person: personInfo)
+        nib.frame = localtion
         self.view.addSubview(nib)
-    }
-
-    @IBAction func viewPersonInformation(_ sender: UIButton) {
-//        switch sender {
-//        case personInfo1:
-//            print("Avatar name : \(personName1.text!)")
-//        case personInfo2:
-//            print("Avatar name : \(personName2.text!)")
-//        case personInfo3:
-//            print("Avatar name : \(personName3.text!)")
-//        case personInfo4:
-//            print("Avatar name : \(personName4.text!)")
-//        case personInfo5:
-//            print("Avatar name : \(personName5.text!)")
-//        case personInfo6:
-//            print("Avatar name : \(personName6.text!)")
-//        case personInfo7:
-//            print("Avatar name : \(personName7.text!)")
-//        case personInfo8:
-//            print("Avatar name : \(personName8.text!)")
-//        case personInfo9:
-//            print("Avatar name : \(personName9.text!)")
-//        default:
-//            print("Have no information")
-//        }
     }
 }

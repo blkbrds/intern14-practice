@@ -10,11 +10,11 @@ import UIKit
 
 class LoginViewController: UIViewController, UITextFieldDelegate {
 
-    @IBOutlet weak var usernameText: UITextField!
-    @IBOutlet weak var passwordText: UITextField!
+    @IBOutlet weak var usernameTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var clearButton: UIButton!
-    @IBOutlet weak var errorMessageText: UILabel!
+    @IBOutlet weak var errorLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,12 +34,12 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
      * Setting keyboard.
      */
     private func customizeKeyboard() {
-        usernameText.delegate = self
-        usernameText.tag = 0
-        usernameText.returnKeyType = UIReturnKeyType.next
-        passwordText.delegate = self
-        passwordText.tag = 1
-        passwordText.returnKeyType = UIReturnKeyType.go
+        usernameTextField.delegate = self
+        usernameTextField.tag = 0
+        usernameTextField.returnKeyType = UIReturnKeyType.next
+        passwordTextField.delegate = self
+        passwordTextField.tag = 1
+        passwordTextField.returnKeyType = UIReturnKeyType.go
     }
     
     /**
@@ -60,8 +60,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
      * Hidden keyboard.
      */
     @objc func myviewTapped() {
-        usernameText.resignFirstResponder()
-        passwordText.resignFirstResponder()
+        usernameTextField.resignFirstResponder()
+        passwordTextField.resignFirstResponder()
     }
     
     /**
@@ -70,22 +70,21 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBAction func checkLogin(_ sender: Any) {
         myviewTapped()
         
-        guard let username = usernameText.text else {
-            errorMessageText.text = "user name invalid."
+        guard let username = usernameTextField.text else {
+            errorLabel.text = "user name invalid."
             return
         }
         
-        guard let password = passwordText.text else {
-            errorMessageText.text = "password invalid."
+        guard let password = passwordTextField.text else {
+            errorLabel.text = "password invalid."
             return
         }
         
         if (username.elementsEqual("Admin") && password.elementsEqual("Admin123")) {
-            errorMessageText.text = nil
+            errorLabel.text = ""
         } else {
-            errorMessageText.text = "Username and password invalid."
+            errorLabel.text = "Username and password invalid."
         }
-        
     }
     
     /**
@@ -93,7 +92,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
      */
     @IBAction func clearData(_ sender: Any) {
         myviewTapped()
-        usernameText.text = nil
-        passwordText.text = nil
+        usernameTextField.text = ""
+        passwordTextField.text = ""
     }
 }

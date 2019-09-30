@@ -31,8 +31,7 @@ class AvatarItemView: UIView {
     /**
      * Customize initial default.
      */
-    convenience init(_ person: PersonInfo) {
-        self.init()
+    func setting(person: PersonInfo) {
         self.personNameLabel?.text = person.personName
         self.personImageView?.image = person.personImage
         self.avatarButton?.tag = person.tag

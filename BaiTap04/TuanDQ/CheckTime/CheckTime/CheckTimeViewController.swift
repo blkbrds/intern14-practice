@@ -20,7 +20,7 @@ class CheckTimeViewController: UIViewController {
         checkTimeButton.setTitle(nil, for: .normal)
         checkTimeButton.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
         checkTimeButton.backgroundColor = .clear
-        checkTimeButton.addTarget(self, action: #selector(setCurrentDateTime), for: .touchUpInside)
+        checkTimeButton.addTarget(self, action: #selector(buttonTouchUpInside), for: .touchUpInside)
         
         currentTimeLabel.text = getCurrentDateTime()
     }
@@ -32,19 +32,11 @@ class CheckTimeViewController: UIViewController {
         return formatter.string(from: currentDateTime)
     }
     
-    
-    @objc func setCurrentDateTime(_ sender: UIButton) {
+    /**
+     * Change date and time when touch inside.
+     */
+    @objc func buttonTouchUpInside(_ sender: UIButton) {
         currentTimeLabel.text = getCurrentDateTime()
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
