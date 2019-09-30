@@ -31,8 +31,8 @@ class AvatarItemView: UIView {
     /**
      * Customize initial default.
      */
-    required init(_ person: PersonInfo) {
-        super.init(frame: CGRect.zero)
+    convenience init(_ person: PersonInfo) {
+        self.init()
         self.personNameLabel?.text = person.personName
         self.personImageView?.image = person.personImage
         self.avatarButton?.tag = person.tag
