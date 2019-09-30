@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7218569F233CB3130082BF50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7218569E233CB3130082BF50 /* AppDelegate.swift */; };
+		721856A1233CB3130082BF50 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721856A0233CB3130082BF50 /* SceneDelegate.swift */; };
+		721856A8233CB3150082BF50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 721856A7233CB3150082BF50 /* Assets.xcassets */; };
+		721856AB233CB3150082BF50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 721856A9233CB3150082BF50 /* LaunchScreen.storyboard */; };
+		721856B6233CB3160082BF50 /* YearBarChartTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721856B5233CB3160082BF50 /* YearBarChartTests.swift */; };
+		721856C1233CB3160082BF50 /* YearBarChartUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721856C0233CB3160082BF50 /* YearBarChartUITests.swift */; };
+		721856D0233CB35F0082BF50 /* MyBarChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721856CE233CB35F0082BF50 /* MyBarChartViewController.swift */; };
+		721856D1233CB35F0082BF50 /* MyBarChartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 721856CF233CB35F0082BF50 /* MyBarChartViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		721856B2233CB3160082BF50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72185693233CB3130082BF50 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7218569A233CB3130082BF50;
+			remoteInfo = YearBarChart;
+		};
+		721856BD233CB3160082BF50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72185693233CB3130082BF50 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7218569A233CB3130082BF50;
+			remoteInfo = YearBarChart;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7218569B233CB3130082BF50 /* YearBarChart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YearBarChart.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7218569E233CB3130082BF50 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		721856A0233CB3130082BF50 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		721856A7233CB3150082BF50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		721856AA233CB3150082BF50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		721856AC233CB3150082BF50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		721856B1233CB3160082BF50 /* YearBarChartTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YearBarChartTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		721856B5233CB3160082BF50 /* YearBarChartTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YearBarChartTests.swift; sourceTree = "<group>"; };
+		721856B7233CB3160082BF50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		721856BC233CB3160082BF50 /* YearBarChartUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YearBarChartUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		721856C0233CB3160082BF50 /* YearBarChartUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YearBarChartUITests.swift; sourceTree = "<group>"; };
+		721856C2233CB3160082BF50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		721856CE233CB35F0082BF50 /* MyBarChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBarChartViewController.swift; sourceTree = "<group>"; };
+		721856CF233CB35F0082BF50 /* MyBarChartViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyBarChartViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		72185698233CB3130082BF50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		721856AE233CB3160082BF50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		721856B9233CB3160082BF50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		72185692233CB3130082BF50 = {
+			isa = PBXGroup;
+			children = (
+				7218569D233CB3130082BF50 /* YearBarChart */,
+				721856B4233CB3160082BF50 /* YearBarChartTests */,
+				721856BF233CB3160082BF50 /* YearBarChartUITests */,
+				7218569C233CB3130082BF50 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7218569C233CB3130082BF50 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7218569B233CB3130082BF50 /* YearBarChart.app */,
+				721856B1233CB3160082BF50 /* YearBarChartTests.xctest */,
+				721856BC233CB3160082BF50 /* YearBarChartUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7218569D233CB3130082BF50 /* YearBarChart */ = {
+			isa = PBXGroup;
+			children = (
+				7218569E233CB3130082BF50 /* AppDelegate.swift */,
+				721856A0233CB3130082BF50 /* SceneDelegate.swift */,
+				721856A7233CB3150082BF50 /* Assets.xcassets */,
+				721856A9233CB3150082BF50 /* LaunchScreen.storyboard */,
+				721856AC233CB3150082BF50 /* Info.plist */,
+				721856CE233CB35F0082BF50 /* MyBarChartViewController.swift */,
+				721856CF233CB35F0082BF50 /* MyBarChartViewController.xib */,
+			);
+			path = YearBarChart;
+			sourceTree = "<group>";
+		};
+		721856B4233CB3160082BF50 /* YearBarChartTests */ = {
+			isa = PBXGroup;
+			children = (
+				721856B5233CB3160082BF50 /* YearBarChartTests.swift */,
+				721856B7233CB3160082BF50 /* Info.plist */,
+			);
+			path = YearBarChartTests;
+			sourceTree = "<group>";
+		};
+		721856BF233CB3160082BF50 /* YearBarChartUITests */ = {
+			isa = PBXGroup;
+			children = (
+				721856C0233CB3160082BF50 /* YearBarChartUITests.swift */,
+				721856C2233CB3160082BF50 /* Info.plist */,
+			);
+			path = YearBarChartUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7218569A233CB3130082BF50 /* YearBarChart */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 721856C5233CB3160082BF50 /* Build configuration list for PBXNativeTarget "YearBarChart" */;
+			buildPhases = (
+				72185697233CB3130082BF50 /* Sources */,
+				72185698233CB3130082BF50 /* Frameworks */,
+				72185699233CB3130082BF50 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YearBarChart;
+			productName = YearBarChart;
+			productReference = 7218569B233CB3130082BF50 /* YearBarChart.app */;
+			productType = "com.apple.product-type.application";
+		};
+		721856B0233CB3160082BF50 /* YearBarChartTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 721856C8233CB3160082BF50 /* Build configuration list for PBXNativeTarget "YearBarChartTests" */;
+			buildPhases = (
+				721856AD233CB3160082BF50 /* Sources */,
+				721856AE233CB3160082BF50 /* Frameworks */,
+				721856AF233CB3160082BF50 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				721856B3233CB3160082BF50 /* PBXTargetDependency */,
+			);
+			name = YearBarChartTests;
+			productName = YearBarChartTests;
+			productReference = 721856B1233CB3160082BF50 /* YearBarChartTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		721856BB233CB3160082BF50 /* YearBarChartUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 721856CB233CB3160082BF50 /* Build configuration list for PBXNativeTarget "YearBarChartUITests" */;
+			buildPhases = (
+				721856B8233CB3160082BF50 /* Sources */,
+				721856B9233CB3160082BF50 /* Frameworks */,
+				721856BA233CB3160082BF50 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				721856BE233CB3160082BF50 /* PBXTargetDependency */,
+			);
+			name = YearBarChartUITests;
+			productName = YearBarChartUITests;
+			productReference = 721856BC233CB3160082BF50 /* YearBarChartUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		72185693233CB3130082BF50 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = MBA0051;
+				TargetAttributes = {
+					7218569A233CB3130082BF50 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					721856B0233CB3160082BF50 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 7218569A233CB3130082BF50;
+					};
+					721856BB233CB3160082BF50 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 7218569A233CB3130082BF50;
+					};
+				};
+			};
+			buildConfigurationList = 72185696233CB3130082BF50 /* Build configuration list for PBXProject "YearBarChart" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 72185692233CB3130082BF50;
+			productRefGroup = 7218569C233CB3130082BF50 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7218569A233CB3130082BF50 /* YearBarChart */,
+				721856B0233CB3160082BF50 /* YearBarChartTests */,
+				721856BB233CB3160082BF50 /* YearBarChartUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		72185699233CB3130082BF50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				721856AB233CB3150082BF50 /* LaunchScreen.storyboard in Resources */,
+				721856A8233CB3150082BF50 /* Assets.xcassets in Resources */,
+				721856D1233CB35F0082BF50 /* MyBarChartViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		721856AF233CB3160082BF50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		721856BA233CB3160082BF50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		72185697233CB3130082BF50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7218569F233CB3130082BF50 /* AppDelegate.swift in Sources */,
+				721856A1233CB3130082BF50 /* SceneDelegate.swift in Sources */,
+				721856D0233CB35F0082BF50 /* MyBarChartViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		721856AD233CB3160082BF50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				721856B6233CB3160082BF50 /* YearBarChartTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		721856B8233CB3160082BF50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				721856C1233CB3160082BF50 /* YearBarChartUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		721856B3233CB3160082BF50 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7218569A233CB3130082BF50 /* YearBarChart */;
+			targetProxy = 721856B2233CB3160082BF50 /* PBXContainerItemProxy */;
+		};
+		721856BE233CB3160082BF50 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7218569A233CB3130082BF50 /* YearBarChart */;
+			targetProxy = 721856BD233CB3160082BF50 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		721856A9233CB3150082BF50 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				721856AA233CB3150082BF50 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		721856C3233CB3160082BF50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		721856C4233CB3160082BF50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		721856C6233CB3160082BF50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JPRQ9XJ746;
+				INFOPLIST_FILE = YearBarChart/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.asiantech.YearBarChart;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		721856C7233CB3160082BF50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JPRQ9XJ746;
+				INFOPLIST_FILE = YearBarChart/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.asiantech.YearBarChart;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		721856C9233CB3160082BF50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JPRQ9XJ746;
+				INFOPLIST_FILE = YearBarChartTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.asiantech.YearBarChartTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YearBarChart.app/YearBarChart";
+			};
+			name = Debug;
+		};
+		721856CA233CB3160082BF50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JPRQ9XJ746;
+				INFOPLIST_FILE = YearBarChartTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.asiantech.YearBarChartTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YearBarChart.app/YearBarChart";
+			};
+			name = Release;
+		};
+		721856CC233CB3160082BF50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JPRQ9XJ746;
+				INFOPLIST_FILE = YearBarChartUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.asiantech.YearBarChartUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YearBarChart;
+			};
+			name = Debug;
+		};
+		721856CD233CB3160082BF50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JPRQ9XJ746;
+				INFOPLIST_FILE = YearBarChartUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.asiantech.YearBarChartUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YearBarChart;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		72185696233CB3130082BF50 /* Build configuration list for PBXProject "YearBarChart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				721856C3233CB3160082BF50 /* Debug */,
+				721856C4233CB3160082BF50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		721856C5233CB3160082BF50 /* Build configuration list for PBXNativeTarget "YearBarChart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				721856C6233CB3160082BF50 /* Debug */,
+				721856C7233CB3160082BF50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		721856C8233CB3160082BF50 /* Build configuration list for PBXNativeTarget "YearBarChartTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				721856C9233CB3160082BF50 /* Debug */,
+				721856CA233CB3160082BF50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		721856CB233CB3160082BF50 /* Build configuration list for PBXNativeTarget "YearBarChartUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				721856CC233CB3160082BF50 /* Debug */,
+				721856CD233CB3160082BF50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 72185693233CB3130082BF50 /* Project object */;
+}
