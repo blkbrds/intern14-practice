@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CustomDraw : UIView {
+class CustomDrawView : UIView {
     
     var drawColor = UIColor.black           // A color for drawing
     var lineWidth: CGFloat = 15             // A line width

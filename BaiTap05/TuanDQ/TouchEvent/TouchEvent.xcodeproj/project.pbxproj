@@ -10,7 +10,7 @@
 		72A409D023410DDE007CDB9D /* DrawCanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A409CF23410DDE007CDB9D /* DrawCanvasView.swift */; };
 		72A409D2234121D1007CDB9D /* LinePoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A409D1234121D1007CDB9D /* LinePoint.swift */; };
 		72BA4CD4233E65EC0073598D /* speakclear.png in Resources */ = {isa = PBXBuildFile; fileRef = 72BA4CD3233E65EC0073598D /* speakclear.png */; };
-		72BA4CD6233E73270073598D /* CustomDraw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72BA4CD5233E73270073598D /* CustomDraw.swift */; };
+		72BA4CD6233E73270073598D /* CustomDrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72BA4CD5233E73270073598D /* CustomDrawView.swift */; };
 		72BA4CD9233E76130073598D /* GameMonkeyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72BA4CD7233E76130073598D /* GameMonkeyViewController.swift */; };
 		72BA4CDA233E76130073598D /* GameMonkeyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72BA4CD8233E76130073598D /* GameMonkeyViewController.xib */; };
 		72CA878E233F3B72003842E6 /* GameItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CA878C233F3B72003842E6 /* GameItemView.swift */; };
@@ -56,7 +56,7 @@
 		72A409CF23410DDE007CDB9D /* DrawCanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawCanvasView.swift; sourceTree = "<group>"; };
 		72A409D1234121D1007CDB9D /* LinePoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinePoint.swift; sourceTree = "<group>"; };
 		72BA4CD3233E65EC0073598D /* speakclear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = speakclear.png; sourceTree = "<group>"; };
-		72BA4CD5233E73270073598D /* CustomDraw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDraw.swift; sourceTree = "<group>"; };
+		72BA4CD5233E73270073598D /* CustomDrawView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDrawView.swift; sourceTree = "<group>"; };
 		72BA4CD7233E76130073598D /* GameMonkeyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameMonkeyViewController.swift; sourceTree = "<group>"; };
 		72BA4CD8233E76130073598D /* GameMonkeyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameMonkeyViewController.xib; sourceTree = "<group>"; };
 		72CA878C233F3B72003842E6 /* GameItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameItemView.swift; sourceTree = "<group>"; };
@@ -112,6 +112,65 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		72FB7FBA23420EB400196EBB /* BallScreen */ = {
+			isa = PBXGroup;
+			children = (
+				72FC1F32233DBEE4000AF466 /* BallMoveViewController.swift */,
+				72FC1F33233DBEE4000AF466 /* BallMoveViewController.xib */,
+			);
+			path = BallScreen;
+			sourceTree = "<group>";
+		};
+		72FB7FBB23420ECB00196EBB /* Monkey */ = {
+			isa = PBXGroup;
+			children = (
+				72FAA967233E2F620009ED21 /* MonkeySpeakViewController.swift */,
+				72FAA968233E2F620009ED21 /* MonkeySpeakViewController.xib */,
+			);
+			path = Monkey;
+			sourceTree = "<group>";
+		};
+		72FB7FBC23420EEA00196EBB /* ImageZoom */ = {
+			isa = PBXGroup;
+			children = (
+				72FAA963233E2F0C0009ED21 /* MonkeyViewController.swift */,
+				72FAA964233E2F0C0009ED21 /* MonkeyViewController.xib */,
+			);
+			path = ImageZoom;
+			sourceTree = "<group>";
+		};
+		72FB7FBD2342106200196EBB /* CustomSlider */ = {
+			isa = PBXGroup;
+			children = (
+				72FC1F38233DC69D000AF466 /* SliderViewController.swift */,
+				72FC1F39233DC69D000AF466 /* SliderViewController.xib */,
+			);
+			path = CustomSlider;
+			sourceTree = "<group>";
+		};
+		72FB7FBE2342107700196EBB /* Paint */ = {
+			isa = PBXGroup;
+			children = (
+				72BA4CD5233E73270073598D /* CustomDrawView.swift */,
+				72A409CF23410DDE007CDB9D /* DrawCanvasView.swift */,
+				72FAA95F233E2C980009ED21 /* MyPaintViewController.swift */,
+				72FAA960233E2C980009ED21 /* MyPaintViewController.xib */,
+				72A409D1234121D1007CDB9D /* LinePoint.swift */,
+			);
+			path = Paint;
+			sourceTree = "<group>";
+		};
+		72FB7FBF2342108F00196EBB /* GameAdvance */ = {
+			isa = PBXGroup;
+			children = (
+				72BA4CD7233E76130073598D /* GameMonkeyViewController.swift */,
+				72BA4CD8233E76130073598D /* GameMonkeyViewController.xib */,
+				72CA878C233F3B72003842E6 /* GameItemView.swift */,
+				72CA878D233F3B72003842E6 /* GameItemView.xib */,
+			);
+			path = GameAdvance;
+			sourceTree = "<group>";
+		};
 		72FC1EF6233DBE72000AF466 = {
 			isa = PBXGroup;
 			children = (
@@ -135,6 +194,12 @@
 		72FC1F01233DBE72000AF466 /* TouchEvent */ = {
 			isa = PBXGroup;
 			children = (
+				72FB7FBF2342108F00196EBB /* GameAdvance */,
+				72FB7FBE2342107700196EBB /* Paint */,
+				72FB7FBD2342106200196EBB /* CustomSlider */,
+				72FB7FBC23420EEA00196EBB /* ImageZoom */,
+				72FB7FBB23420ECB00196EBB /* Monkey */,
+				72FB7FBA23420EB400196EBB /* BallScreen */,
 				72FC1F02233DBE72000AF466 /* AppDelegate.swift */,
 				72FC1F04233DBE72000AF466 /* SceneDelegate.swift */,
 				72FAA96B233E2F860009ED21 /* monkey.png */,
@@ -143,23 +208,6 @@
 				72FC1F0B233DBE75000AF466 /* Assets.xcassets */,
 				72FC1F0D233DBE75000AF466 /* LaunchScreen.storyboard */,
 				72FC1F10233DBE75000AF466 /* Info.plist */,
-				72FC1F32233DBEE4000AF466 /* BallMoveViewController.swift */,
-				72FC1F33233DBEE4000AF466 /* BallMoveViewController.xib */,
-				72FC1F38233DC69D000AF466 /* SliderViewController.swift */,
-				72FC1F39233DC69D000AF466 /* SliderViewController.xib */,
-				72FAA95F233E2C980009ED21 /* MyPaintViewController.swift */,
-				72FAA960233E2C980009ED21 /* MyPaintViewController.xib */,
-				72FAA963233E2F0C0009ED21 /* MonkeyViewController.swift */,
-				72FAA964233E2F0C0009ED21 /* MonkeyViewController.xib */,
-				72FAA967233E2F620009ED21 /* MonkeySpeakViewController.swift */,
-				72FAA968233E2F620009ED21 /* MonkeySpeakViewController.xib */,
-				72BA4CD5233E73270073598D /* CustomDraw.swift */,
-				72BA4CD7233E76130073598D /* GameMonkeyViewController.swift */,
-				72BA4CD8233E76130073598D /* GameMonkeyViewController.xib */,
-				72CA878C233F3B72003842E6 /* GameItemView.swift */,
-				72CA878D233F3B72003842E6 /* GameItemView.xib */,
-				72A409CF23410DDE007CDB9D /* DrawCanvasView.swift */,
-				72A409D1234121D1007CDB9D /* LinePoint.swift */,
 			);
 			path = TouchEvent;
 			sourceTree = "<group>";
@@ -328,7 +376,7 @@
 				72A409D023410DDE007CDB9D /* DrawCanvasView.swift in Sources */,
 				72FC1F34233DBEE4000AF466 /* BallMoveViewController.swift in Sources */,
 				72FC1F05233DBE72000AF466 /* SceneDelegate.swift in Sources */,
-				72BA4CD6233E73270073598D /* CustomDraw.swift in Sources */,
+				72BA4CD6233E73270073598D /* CustomDrawView.swift in Sources */,
 				72FAA961233E2C980009ED21 /* MyPaintViewController.swift in Sources */,
 				72BA4CD9233E76130073598D /* GameMonkeyViewController.swift in Sources */,
 				72CA878E233F3B72003842E6 /* GameItemView.swift in Sources */,

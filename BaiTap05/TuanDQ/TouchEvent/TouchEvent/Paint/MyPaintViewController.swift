@@ -10,9 +10,6 @@ import UIKit
 
 class MyPaintViewController: UIViewController {
 
-    
-
-    
     @IBOutlet weak var saveButton: UIButton!
     @IBOutlet weak var resetButton: UIButton!
     @IBOutlet weak var drawMainView: DrawCanvasView!
