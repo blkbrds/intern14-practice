@@ -15,7 +15,10 @@
 		720F0BD5233D2F63001F4A87 /* AvatarsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720F0BD4233D2F63001F4A87 /* AvatarsUITests.swift */; };
 		720F0BE4233D2F80001F4A87 /* AvatarsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720F0BE2233D2F80001F4A87 /* AvatarsViewController.swift */; };
 		720F0BE5233D2F80001F4A87 /* AvatarsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 720F0BE3233D2F80001F4A87 /* AvatarsViewController.xib */; };
-		720F0BE7233D31CB001F4A87 /* avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = 720F0BE6233D31CA001F4A87 /* avatar.png */; };
+		722FFC0F2341B23D005B6ADB /* AvatarItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722FFC0D2341B23D005B6ADB /* AvatarItemView.swift */; };
+		722FFC102341B23D005B6ADB /* AvatarItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 722FFC0E2341B23D005B6ADB /* AvatarItemView.xib */; };
+		722FFC122341C04B005B6ADB /* PersonInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722FFC112341C04B005B6ADB /* PersonInfo.swift */; };
+		722FFC172341E433005B6ADB /* avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = 722FFC162341E433005B6ADB /* avatar.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +53,10 @@
 		720F0BD6233D2F63001F4A87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		720F0BE2233D2F80001F4A87 /* AvatarsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarsViewController.swift; sourceTree = "<group>"; };
 		720F0BE3233D2F80001F4A87 /* AvatarsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AvatarsViewController.xib; sourceTree = "<group>"; };
-		720F0BE6233D31CA001F4A87 /* avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = avatar.png; path = ../../../../../../../../Users/mba0051/Desktop/avatar.png; sourceTree = "<group>"; };
+		722FFC0D2341B23D005B6ADB /* AvatarItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarItemView.swift; sourceTree = "<group>"; };
+		722FFC0E2341B23D005B6ADB /* AvatarItemView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AvatarItemView.xib; sourceTree = "<group>"; };
+		722FFC112341C04B005B6ADB /* PersonInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonInfo.swift; sourceTree = "<group>"; };
+		722FFC162341E433005B6ADB /* avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = avatar.png; path = Avatars/avatar.png; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,14 +107,17 @@
 		720F0BB1233D2F62001F4A87 /* Avatars */ = {
 			isa = PBXGroup;
 			children = (
-				720F0BE6233D31CA001F4A87 /* avatar.png */,
 				720F0BB2233D2F62001F4A87 /* AppDelegate.swift */,
 				720F0BB4233D2F62001F4A87 /* SceneDelegate.swift */,
 				720F0BBB233D2F63001F4A87 /* Assets.xcassets */,
+				722FFC162341E433005B6ADB /* avatar.png */,
 				720F0BBD233D2F63001F4A87 /* LaunchScreen.storyboard */,
 				720F0BC0233D2F63001F4A87 /* Info.plist */,
 				720F0BE2233D2F80001F4A87 /* AvatarsViewController.swift */,
 				720F0BE3233D2F80001F4A87 /* AvatarsViewController.xib */,
+				722FFC0D2341B23D005B6ADB /* AvatarItemView.swift */,
+				722FFC0E2341B23D005B6ADB /* AvatarItemView.xib */,
+				722FFC112341C04B005B6ADB /* PersonInfo.swift */,
 			);
 			path = Avatars;
 			sourceTree = "<group>";
@@ -235,9 +244,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				720F0BE7233D31CB001F4A87 /* avatar.png in Resources */,
 				720F0BBF233D2F63001F4A87 /* LaunchScreen.storyboard in Resources */,
+				722FFC172341E433005B6ADB /* avatar.png in Resources */,
 				720F0BE5233D2F80001F4A87 /* AvatarsViewController.xib in Resources */,
+				722FFC102341B23D005B6ADB /* AvatarItemView.xib in Resources */,
 				720F0BBC233D2F63001F4A87 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,6 +273,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				722FFC0F2341B23D005B6ADB /* AvatarItemView.swift in Sources */,
+				722FFC122341C04B005B6ADB /* PersonInfo.swift in Sources */,
 				720F0BB3233D2F62001F4A87 /* AppDelegate.swift in Sources */,
 				720F0BE4233D2F80001F4A87 /* AvatarsViewController.swift in Sources */,
 				720F0BB5233D2F62001F4A87 /* SceneDelegate.swift in Sources */,
