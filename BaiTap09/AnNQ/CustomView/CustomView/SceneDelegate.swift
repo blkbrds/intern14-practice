@@ -24,7 +24,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             // Now what? How to connect the UI restored in the AppDelegate to this window?
         } else {
             // Create the initial UI if there is nothing to restore
-            let vc = SlideViewController()
+            let vc = Ex03ViewController()
             let nc = UINavigationController(rootViewController: vc)
             nc.restorationIdentifier = "RootNC"
 

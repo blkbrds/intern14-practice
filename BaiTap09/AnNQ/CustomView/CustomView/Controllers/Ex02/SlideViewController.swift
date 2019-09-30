@@ -35,11 +35,24 @@ class SlideViewController: UIViewController {
     }
     
     @IBAction func changeTextFieldValue(_ sender: UITextField) {
-        if let percent = Float(resultTextField.text!) {
-            mySliderView?.changeSliderView(value: percent)
+        if var percent = Float(sender.text!) {
+            if percent > 100 {
+                percent = 100
+            }
+            UIView.animate(
+                withDuration: 1.0,
+                delay: 0.0,
+                options: .curveEaseIn,
+                animations: {
+                    self.mySliderView?.changeSliderView(value: percent)
+
+                },
+                completion: { _ in
+                }
+            )
         }
     }
-    
+     
    
 }
 
