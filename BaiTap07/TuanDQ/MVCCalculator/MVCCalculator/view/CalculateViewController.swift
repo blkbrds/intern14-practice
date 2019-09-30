@@ -14,7 +14,10 @@ class CalculateViewController: UIViewController {
     @IBOutlet weak var acButton: UIButton!
     @IBOutlet weak var numberText: UITextField!
     
-    var isNew: Bool = true
+    var numbers: [NumberModel] = []
+    var numberValue: String = ""
+    var operand: String = ""
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,30 +25,47 @@ class CalculateViewController: UIViewController {
     }
 
     @IBAction func insertValueToText(_ sender: UIButton) {
-        if (isNew) {
-            isNew = false
-            numberText.text = nil
-        } else {
-            if (sender.currentTitle! == "+" || sender.currentTitle! == "-"
-                || sender.currentTitle! == "*" || sender.currentTitle! == "/")
-                &&  (numberText.text!.suffix(1) == "+" || numberText.text!.suffix(1) == "-"
-                || numberText.text!.suffix(1) == "*" || numberText.text!.suffix(1) == "/") {
+        if (sender.currentTitle! == "+" || sender.currentTitle! == "-"
+            || sender.currentTitle! == "*" || sender.currentTitle! == "/") {
+            // Change operand.
+            if (numberText.text!.suffix(1) == "+" || numberText.text!.suffix(1) == "-"
+            || numberText.text!.suffix(1) == "*" || numberText.text!.suffix(1) == "/") {
+
                 numberText.text = String(numberText.text!.dropLast(1))
             }
+            operand = sender.currentTitle!
+        } else {
+            // Start new.
+            if (operand == "") {
+                numberValue += sender.currentTitle!
+            } else {
+                // Add operand.
+                let number = NumberModel(number: numberValue, operand: operand)
+                numbers.append(number)
+                operand = ""
+                numberValue = sender.currentTitle!
+            }
         }
-
         numberText.text = numberText.text! + sender.currentTitle!
     }
     
     @IBAction func clearText(_ sender: UIButton) {
-        isNew = true
-        numberText.text = nil
+        numberText.text = ""
     }
     
     @IBAction func calculateTextValue(_ sender: UIButton) {
 
-        isNew = true
-        let expr = NSExpression(format: numberText.text!)
+        if (numberValue != "") {
+            let number = NumberModel(number: numberValue, operand: operand)
+            numbers.append(number)
+        }
+
+        var calculateLiterial = ""
+        for index in 0..<numbers.count {
+            calculateLiterial += numbers[index].number + numbers[index].operand
+        }
+        
+        let expr = NSExpression(format: calculateLiterial)
         let result = expr.expressionValue(with: nil, context: nil) as? Double
         numberText.text = String(result!)
     }
