@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		72B965842342434B00C1B1D5 /* ExceptionUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B965832342434B00C1B1D5 /* ExceptionUtil.swift */; };
 		72FD07AE234087B7008C0BD2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FD07AD234087B7008C0BD2 /* AppDelegate.swift */; };
 		72FD07B0234087B7008C0BD2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FD07AF234087B7008C0BD2 /* SceneDelegate.swift */; };
 		72FD07B7234087BA008C0BD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72FD07B6234087BA008C0BD2 /* Assets.xcassets */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		72B965832342434B00C1B1D5 /* ExceptionUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExceptionUtil.swift; sourceTree = "<group>"; };
 		72FD07AA234087B7008C0BD2 /* MVCCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVCCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72FD07AD234087B7008C0BD2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		72FD07AF234087B7008C0BD2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,20 +78,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		72A409D32341283A007CDB9D /* controller */ = {
-			isa = PBXGroup;
-			children = (
-				72FD07E1234091D4008C0BD2 /* CalculateViewController.swift */,
-			);
-			path = controller;
-			sourceTree = "<group>";
-		};
 		72A409D423412847007CDB9D /* view */ = {
 			isa = PBXGroup;
 			children = (
+				72FD07E1234091D4008C0BD2 /* CalculateViewController.swift */,
 				72FD07E2234091D4008C0BD2 /* CalculateViewController.xib */,
 			);
 			path = view;
+			sourceTree = "<group>";
+		};
+		72B96581234242E000C1B1D5 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		72B965822342431800C1B1D5 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				72B965832342434B00C1B1D5 /* ExceptionUtil.swift */,
+			);
+			path = controller;
 			sourceTree = "<group>";
 		};
 		72FD07A1234087B7008C0BD2 = {
@@ -115,8 +125,9 @@
 		72FD07AC234087B7008C0BD2 /* MVCCalculator */ = {
 			isa = PBXGroup;
 			children = (
+				72B965822342431800C1B1D5 /* controller */,
+				72B96581234242E000C1B1D5 /* model */,
 				72A409D423412847007CDB9D /* view */,
-				72A409D32341283A007CDB9D /* controller */,
 				72FD07AD234087B7008C0BD2 /* AppDelegate.swift */,
 				72FD07AF234087B7008C0BD2 /* SceneDelegate.swift */,
 				72FD07B6234087BA008C0BD2 /* Assets.xcassets */,
@@ -278,6 +289,7 @@
 				72FD07AE234087B7008C0BD2 /* AppDelegate.swift in Sources */,
 				72FD07E3234091D4008C0BD2 /* CalculateViewController.swift in Sources */,
 				72FD07B0234087B7008C0BD2 /* SceneDelegate.swift in Sources */,
+				72B965842342434B00C1B1D5 /* ExceptionUtil.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

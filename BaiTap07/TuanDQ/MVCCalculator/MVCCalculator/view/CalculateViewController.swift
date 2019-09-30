@@ -48,17 +48,5 @@ class CalculateViewController: UIViewController {
         let expr = NSExpression(format: numberText.text!)
         let result = expr.expressionValue(with: nil, context: nil) as? Double
         numberText.text = String(result!)
-
     }
-    private func showMessage(message content: String) {
-        // create the alert
-        let alert = UIAlertController(title: "Error message", message: content, preferredStyle: UIAlertController.Style.alert)
-
-        // add an action (button)
-        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
-
-        // show the alert
-        self.present(alert, animated: true, completion: nil)
-    }
-
 }
