@@ -17,6 +17,11 @@
 		D160C4A0233CA7080041CDD4 /* SlidersView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D160C49F233CA7080041CDD4 /* SlidersView.xib */; };
 		D1705F3A233A278A00E7D984 /* MySliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1705F39233A278A00E7D984 /* MySliderView.swift */; };
 		D1705F3C233A27A100E7D984 /* MySliderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1705F3B233A27A100E7D984 /* MySliderView.xib */; };
+		D1A912772341A47600C01E54 /* Ex04ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A912752341A47600C01E54 /* Ex04ViewController.swift */; };
+		D1A912782341A47600C01E54 /* Ex04ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1A912762341A47600C01E54 /* Ex04ViewController.xib */; };
+		D1A9127C2341A7FC00C01E54 /* Ex04EnumPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A9127B2341A7FC00C01E54 /* Ex04EnumPosition.swift */; };
+		D1A912812341A8DB00C01E54 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A912802341A8DB00C01E54 /* ButtonView.swift */; };
+		D1A912832341A8F100C01E54 /* ButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1A912822341A8F100C01E54 /* ButtonView.xib */; };
 		D1BABD3E233C9A6E008D0428 /* Ex03ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BABD3C233C9A6E008D0428 /* Ex03ViewController.swift */; };
 		D1BABD3F233C9A6E008D0428 /* Ex03ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1BABD3D233C9A6E008D0428 /* Ex03ViewController.xib */; };
 /* End PBXBuildFile section */
@@ -34,6 +39,11 @@
 		D160C49F233CA7080041CDD4 /* SlidersView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SlidersView.xib; sourceTree = "<group>"; };
 		D1705F39233A278A00E7D984 /* MySliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySliderView.swift; sourceTree = "<group>"; };
 		D1705F3B233A27A100E7D984 /* MySliderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MySliderView.xib; sourceTree = "<group>"; };
+		D1A912752341A47600C01E54 /* Ex04ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex04ViewController.swift; sourceTree = "<group>"; };
+		D1A912762341A47600C01E54 /* Ex04ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex04ViewController.xib; sourceTree = "<group>"; };
+		D1A9127B2341A7FC00C01E54 /* Ex04EnumPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex04EnumPosition.swift; sourceTree = "<group>"; };
+		D1A912802341A8DB00C01E54 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		D1A912822341A8F100C01E54 /* ButtonView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ButtonView.xib; sourceTree = "<group>"; };
 		D1BABD3C233C9A6E008D0428 /* Ex03ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex03ViewController.swift; sourceTree = "<group>"; };
 		D1BABD3D233C9A6E008D0428 /* Ex03ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex03ViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -68,6 +78,7 @@
 		D10F1422233A0C2100589E7A /* CustomView */ = {
 			isa = PBXGroup;
 			children = (
+				D1A912792341A7C600C01E54 /* Models */,
 				D10F1438233A0C3A00589E7A /* Controllers */,
 				D10F1439233A0C4500589E7A /* Views */,
 				D10F142C233A0C2200589E7A /* Assets.xcassets */,
@@ -91,6 +102,7 @@
 		D10F1438233A0C3A00589E7A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				D1A912742341A45800C01E54 /* Ex04 */,
 				D1BABD3A233C9A25008D0428 /* Ex03 */,
 				D10F1437233A0C2D00589E7A /* Ex02 */,
 			);
@@ -100,6 +112,7 @@
 		D10F1439233A0C4500589E7A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D1A9127D2341A87D00C01E54 /* Ex04 */,
 				D1BABD3B233C9A2D008D0428 /* Ex03 */,
 				D157DC36233C64EE00A14C74 /* Ex02 */,
 			);
@@ -113,6 +126,40 @@
 				D1705F3B233A27A100E7D984 /* MySliderView.xib */,
 			);
 			path = Ex02;
+			sourceTree = "<group>";
+		};
+		D1A912742341A45800C01E54 /* Ex04 */ = {
+			isa = PBXGroup;
+			children = (
+				D1A912752341A47600C01E54 /* Ex04ViewController.swift */,
+				D1A912762341A47600C01E54 /* Ex04ViewController.xib */,
+			);
+			path = Ex04;
+			sourceTree = "<group>";
+		};
+		D1A912792341A7C600C01E54 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D1A9127A2341A7DC00C01E54 /* Enums */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D1A9127A2341A7DC00C01E54 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				D1A9127B2341A7FC00C01E54 /* Ex04EnumPosition.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		D1A9127D2341A87D00C01E54 /* Ex04 */ = {
+			isa = PBXGroup;
+			children = (
+				D1A912802341A8DB00C01E54 /* ButtonView.swift */,
+				D1A912822341A8F100C01E54 /* ButtonView.xib */,
+			);
+			path = Ex04;
 			sourceTree = "<group>";
 		};
 		D1BABD3A233C9A25008D0428 /* Ex03 */ = {
@@ -196,6 +243,8 @@
 				D10F1430233A0C2200589E7A /* LaunchScreen.storyboard in Resources */,
 				D160C4A0233CA7080041CDD4 /* SlidersView.xib in Resources */,
 				D10F142D233A0C2200589E7A /* Assets.xcassets in Resources */,
+				D1A912782341A47600C01E54 /* Ex04ViewController.xib in Resources */,
+				D1A912832341A8F100C01E54 /* ButtonView.xib in Resources */,
 				D1BABD3F233C9A6E008D0428 /* Ex03ViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -207,12 +256,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1A912772341A47600C01E54 /* Ex04ViewController.swift in Sources */,
 				D1BABD3E233C9A6E008D0428 /* Ex03ViewController.swift in Sources */,
 				D160C49E233CA6F60041CDD4 /* SlidersView.swift in Sources */,
 				D10F143C233A0C5500589E7A /* SlideViewController.swift in Sources */,
+				D1A9127C2341A7FC00C01E54 /* Ex04EnumPosition.swift in Sources */,
 				D1705F3A233A278A00E7D984 /* MySliderView.swift in Sources */,
 				D10F1424233A0C2100589E7A /* AppDelegate.swift in Sources */,
 				D10F1426233A0C2100589E7A /* SceneDelegate.swift in Sources */,
+				D1A912812341A8DB00C01E54 /* ButtonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

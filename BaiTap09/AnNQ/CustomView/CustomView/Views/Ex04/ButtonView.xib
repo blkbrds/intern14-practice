@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ButtonView" customModule="CustomView" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="374" height="107"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K7N-bg-dWd">
+                    <rect key="frame" x="130" y="18" width="114" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="o8e-uP-HLq"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="Button"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dXG-7Q-wLB">
+                    <rect key="frame" x="229" y="9" width="34" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="K7N-bg-dWd" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="130" id="6r5-8y-FN3"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="K7N-bg-dWd" secondAttribute="bottom" constant="19" id="bfr-fW-XLJ"/>
+                <constraint firstItem="K7N-bg-dWd" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="hiv-um-fvn"/>
+                <constraint firstItem="K7N-bg-dWd" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="18" id="ujz-7U-F22"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="myButton" destination="K7N-bg-dWd" id="lx1-OA-ZV3"/>
+                <outlet property="myButtonLabel" destination="dXG-7Q-wLB" id="7SK-8j-GHO"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="260.15625"/>
+        </view>
+    </objects>
+</document>
