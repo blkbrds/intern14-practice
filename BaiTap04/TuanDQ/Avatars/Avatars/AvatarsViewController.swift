@@ -57,8 +57,10 @@ class AvatarsViewController: UIViewController {
     
     func addComponent(x xPoint: Int, y yPoint: Int, person personInfo: AvatarItemView) {
         personInfo.frame = CGRect(origin: CGPoint(x: xPoint, y: yPoint), size: CGSize(width: personInfo.bounds.width, height: personInfo.bounds.height))
-        let demo: AvatarItemView = AvatarItemView(PersonInfo(personImage: UIImage(named: "avatar.png")!, personName: "User 9", tag: 9))
-        self.view.addSubview(demo)
+//        let demo: AvatarItemView = AvatarItemView(PersonInfo(personImage: UIImage(named: "avatar.png")!, personName: "User 9", tag: 9))
+        guard let nib = Bundle.main.loadNibNamed("AvatarItemView", owner: nil, options: nil)?[0] as? AvatarItemView else { return }
+        nib.frame = CGRect(origin: CGPoint(x: xPoint, y: yPoint), size: CGSize(width: 50, height: 50))
+        self.view.addSubview(nib)
     }
 
     @IBAction func viewPersonInformation(_ sender: UIButton) {
