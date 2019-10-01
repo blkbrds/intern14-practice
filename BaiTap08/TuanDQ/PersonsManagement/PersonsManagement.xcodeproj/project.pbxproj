@@ -16,9 +16,11 @@
 		721A23FC2342F63E005DD9E6 /* avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = 721A23FB2342F63E005DD9E6 /* avatar.png */; };
 		721A24002342F6B3005DD9E6 /* PersonDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721A23FE2342F6B3005DD9E6 /* PersonDetailViewController.swift */; };
 		721A24012342F6B3005DD9E6 /* PersonDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 721A23FF2342F6B3005DD9E6 /* PersonDetailViewController.xib */; };
-		721A2409234304EB005DD9E6 /* IndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721A2407234304EB005DD9E6 /* IndexViewController.swift */; };
-		721A240A234304EB005DD9E6 /* IndexViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 721A2408234304EB005DD9E6 /* IndexViewController.xib */; };
-		721A240D23430738005DD9E6 /* PersonInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721A240C23430738005DD9E6 /* PersonInfo.swift */; };
+		721A240D23430738005DD9E6 /* UserDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721A240C23430738005DD9E6 /* UserDomain.swift */; };
+		721A241223432C52005DD9E6 /* UserInformation.plist in Resources */ = {isa = PBXBuildFile; fileRef = 721A241123432C52005DD9E6 /* UserInformation.plist */; };
+		725BAD0C2343320E00A96A35 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725BAD0B2343320E00A96A35 /* UserModel.swift */; };
+		725BAD10234343E100A96A35 /* BusinessController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725BAD0F234343E100A96A35 /* BusinessController.swift */; };
+		725BAD122343507300A96A35 /* CommonConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725BAD112343507300A96A35 /* CommonConstant.swift */; };
 		7262A7882342E8C200B437AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7262A7872342E8C200B437AD /* AppDelegate.swift */; };
 		7262A78A2342E8C200B437AD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7262A7892342E8C200B437AD /* SceneDelegate.swift */; };
 		7262A7912342E8C500B437AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7262A7902342E8C500B437AD /* Assets.xcassets */; };
@@ -56,9 +58,11 @@
 		721A23FB2342F63E005DD9E6 /* avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avatar.png; sourceTree = "<group>"; };
 		721A23FE2342F6B3005DD9E6 /* PersonDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailViewController.swift; sourceTree = "<group>"; };
 		721A23FF2342F6B3005DD9E6 /* PersonDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonDetailViewController.xib; sourceTree = "<group>"; };
-		721A2407234304EB005DD9E6 /* IndexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexViewController.swift; sourceTree = "<group>"; };
-		721A2408234304EB005DD9E6 /* IndexViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IndexViewController.xib; sourceTree = "<group>"; };
-		721A240C23430738005DD9E6 /* PersonInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonInfo.swift; sourceTree = "<group>"; };
+		721A240C23430738005DD9E6 /* UserDomain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDomain.swift; sourceTree = "<group>"; };
+		721A241123432C52005DD9E6 /* UserInformation.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = UserInformation.plist; sourceTree = "<group>"; };
+		725BAD0B2343320E00A96A35 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		725BAD0F234343E100A96A35 /* BusinessController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessController.swift; sourceTree = "<group>"; };
+		725BAD112343507300A96A35 /* CommonConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonConstant.swift; sourceTree = "<group>"; };
 		7262A7842342E8C200B437AD /* PersonsManagement.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonsManagement.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7262A7872342E8C200B437AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7262A7892342E8C200B437AD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -140,8 +144,6 @@
 		721A24062342F78D005DD9E6 /* ApplicationIndex */ = {
 			isa = PBXGroup;
 			children = (
-				721A2407234304EB005DD9E6 /* IndexViewController.swift */,
-				721A2408234304EB005DD9E6 /* IndexViewController.xib */,
 			);
 			path = ApplicationIndex;
 			sourceTree = "<group>";
@@ -149,9 +151,26 @@
 		721A240B2343072B005DD9E6 /* model */ = {
 			isa = PBXGroup;
 			children = (
-				721A240C23430738005DD9E6 /* PersonInfo.swift */,
+				721A240C23430738005DD9E6 /* UserDomain.swift */,
+				725BAD0B2343320E00A96A35 /* UserModel.swift */,
 			);
 			path = model;
+			sourceTree = "<group>";
+		};
+		721A240E23432BD9005DD9E6 /* dummyData */ = {
+			isa = PBXGroup;
+			children = (
+				721A241123432C52005DD9E6 /* UserInformation.plist */,
+			);
+			path = dummyData;
+			sourceTree = "<group>";
+		};
+		725BAD0E234343C400A96A35 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				725BAD0F234343E100A96A35 /* BusinessController.swift */,
+			);
+			path = controller;
 			sourceTree = "<group>";
 		};
 		7262A77B2342E8C200B437AD = {
@@ -177,6 +196,8 @@
 		7262A7862342E8C200B437AD /* PersonsManagement */ = {
 			isa = PBXGroup;
 			children = (
+				725BAD0E234343C400A96A35 /* controller */,
+				721A240E23432BD9005DD9E6 /* dummyData */,
 				721A240B2343072B005DD9E6 /* model */,
 				721A24062342F78D005DD9E6 /* ApplicationIndex */,
 				721A23FD2342F698005DD9E6 /* PersonDetail */,
@@ -189,6 +210,7 @@
 				7262A7902342E8C500B437AD /* Assets.xcassets */,
 				7262A7922342E8C500B437AD /* LaunchScreen.storyboard */,
 				7262A7952342E8C500B437AD /* Info.plist */,
+				725BAD112343507300A96A35 /* CommonConstant.swift */,
 			);
 			path = PersonsManagement;
 			sourceTree = "<group>";
@@ -324,7 +346,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				721A240A234304EB005DD9E6 /* IndexViewController.xib in Resources */,
+				721A241223432C52005DD9E6 /* UserInformation.plist in Resources */,
 				721A24012342F6B3005DD9E6 /* PersonDetailViewController.xib in Resources */,
 				7262A7942342E8C500B437AD /* LaunchScreen.storyboard in Resources */,
 				721A23FC2342F63E005DD9E6 /* avatar.png in Resources */,
@@ -359,12 +381,14 @@
 			files = (
 				721A23F82342F5BB005DD9E6 /* AvatarItemView.swift in Sources */,
 				7262A7BA2342EADA00B437AD /* LoginViewController.swift in Sources */,
+				725BAD122343507300A96A35 /* CommonConstant.swift in Sources */,
 				721A23F02342F43D005DD9E6 /* EditInformationViewController.swift in Sources */,
-				721A2409234304EB005DD9E6 /* IndexViewController.swift in Sources */,
+				725BAD10234343E100A96A35 /* BusinessController.swift in Sources */,
 				7262A7882342E8C200B437AD /* AppDelegate.swift in Sources */,
 				7262A78A2342E8C200B437AD /* SceneDelegate.swift in Sources */,
 				721A24002342F6B3005DD9E6 /* PersonDetailViewController.swift in Sources */,
-				721A240D23430738005DD9E6 /* PersonInfo.swift in Sources */,
+				721A240D23430738005DD9E6 /* UserDomain.swift in Sources */,
+				725BAD0C2343320E00A96A35 /* UserModel.swift in Sources */,
 				721A23E72342F18D005DD9E6 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

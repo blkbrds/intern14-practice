@@ -8,8 +8,21 @@
 
 import UIKit
 
+/**
+ * Person information display.
+ */
 struct PersonInfo {
+    var userId : String
     var personImage: UIImage
     var personName: String
     var tag: Int
+}
+
+/**
+ * Login information.
+ */
+struct UserInfo {
+    var userId : String
+    var username: String
+    var password: String
 }

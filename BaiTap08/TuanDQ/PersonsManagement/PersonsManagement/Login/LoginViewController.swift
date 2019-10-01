@@ -21,20 +21,19 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func validateLogin(_ sender: UIBarButtonItem) {
-        if (usernameTextField.text == "admin" && passwordTextField.text == "abcd1234") {
+
+        let userName = usernameTextField.text!
+        let pass = passwordTextField.text!
+        let (message, userId) = BusinessController.checkLogin(username: userName, password: pass)
+
+        if message == nil {
+            
+            // Storage current user for next proccess.
+            UserDefaults.standard.set(userId!, forKey: CommonConstant.USERID)
+            
             // Push home to Navigation Stack.
             let homePage = HomeViewController()
             navigationController?.pushViewController(homePage, animated: true)
         }
-    }
-    //    @IBAction func validateLogin(_ sender: Any) {
-//
-//    }
-}
-
-extension LoginViewController: UINavigationBarDelegate {
-    
-    func navigationBar(_ navigationBar: UINavigationBar, didPush item: UINavigationItem) {
-        print(123)
     }
 }
