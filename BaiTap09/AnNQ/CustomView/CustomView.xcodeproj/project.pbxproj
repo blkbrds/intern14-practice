@@ -13,6 +13,10 @@
 		D10F1430233A0C2200589E7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D10F142E233A0C2200589E7A /* LaunchScreen.storyboard */; };
 		D10F143C233A0C5500589E7A /* SlideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10F143A233A0C5500589E7A /* SlideViewController.swift */; };
 		D10F143D233A0C5500589E7A /* SlideViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D10F143B233A0C5500589E7A /* SlideViewController.xib */; };
+		D1405D4E234313F9000154E9 /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1405D4C234313F9000154E9 /* DatePickerViewController.swift */; };
+		D1405D4F234313F9000154E9 /* DatePickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1405D4D234313F9000154E9 /* DatePickerViewController.xib */; };
+		D1405D512343145B000154E9 /* DatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1405D502343145B000154E9 /* DatePickerView.swift */; };
+		D1405D5323431472000154E9 /* DatePickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1405D5223431472000154E9 /* DatePickerView.xib */; };
 		D160C49E233CA6F60041CDD4 /* SlidersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D160C49D233CA6F60041CDD4 /* SlidersView.swift */; };
 		D160C4A0233CA7080041CDD4 /* SlidersView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D160C49F233CA7080041CDD4 /* SlidersView.xib */; };
 		D1705F3A233A278A00E7D984 /* MySliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1705F39233A278A00E7D984 /* MySliderView.swift */; };
@@ -39,6 +43,10 @@
 		D10F1431233A0C2200589E7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D10F143A233A0C5500589E7A /* SlideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideViewController.swift; sourceTree = "<group>"; };
 		D10F143B233A0C5500589E7A /* SlideViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SlideViewController.xib; sourceTree = "<group>"; };
+		D1405D4C234313F9000154E9 /* DatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
+		D1405D4D234313F9000154E9 /* DatePickerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DatePickerViewController.xib; sourceTree = "<group>"; };
+		D1405D502343145B000154E9 /* DatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerView.swift; sourceTree = "<group>"; };
+		D1405D5223431472000154E9 /* DatePickerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DatePickerView.xib; sourceTree = "<group>"; };
 		D160C49D233CA6F60041CDD4 /* SlidersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlidersView.swift; sourceTree = "<group>"; };
 		D160C49F233CA7080041CDD4 /* SlidersView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SlidersView.xib; sourceTree = "<group>"; };
 		D1705F39233A278A00E7D984 /* MySliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySliderView.swift; sourceTree = "<group>"; };
@@ -177,6 +185,8 @@
 			children = (
 				D1A912862342020B00C01E54 /* PickerViewController.swift */,
 				D1A912872342020B00C01E54 /* PickerViewController.xib */,
+				D1405D4C234313F9000154E9 /* DatePickerViewController.swift */,
+				D1405D4D234313F9000154E9 /* DatePickerViewController.xib */,
 			);
 			path = Ex05;
 			sourceTree = "<group>";
@@ -186,6 +196,8 @@
 			children = (
 				D1A9128A2342041F00C01E54 /* ConvertPickerView.swift */,
 				D1A9128C2342042F00C01E54 /* ConvertPickerView.xib */,
+				D1405D502343145B000154E9 /* DatePickerView.swift */,
+				D1405D5223431472000154E9 /* DatePickerView.xib */,
 			);
 			path = Ex05;
 			sourceTree = "<group>";
@@ -271,6 +283,8 @@
 				D1A9128D2342042F00C01E54 /* ConvertPickerView.xib in Resources */,
 				D10F1430233A0C2200589E7A /* LaunchScreen.storyboard in Resources */,
 				D160C4A0233CA7080041CDD4 /* SlidersView.xib in Resources */,
+				D1405D4F234313F9000154E9 /* DatePickerViewController.xib in Resources */,
+				D1405D5323431472000154E9 /* DatePickerView.xib in Resources */,
 				D10F142D233A0C2200589E7A /* Assets.xcassets in Resources */,
 				D1A912782341A47600C01E54 /* Ex04ViewController.xib in Resources */,
 				D1A912832341A8F100C01E54 /* ButtonView.xib in Resources */,
@@ -294,6 +308,8 @@
 				D10F143C233A0C5500589E7A /* SlideViewController.swift in Sources */,
 				D1A9127C2341A7FC00C01E54 /* Ex04EnumPosition.swift in Sources */,
 				D1705F3A233A278A00E7D984 /* MySliderView.swift in Sources */,
+				D1405D4E234313F9000154E9 /* DatePickerViewController.swift in Sources */,
+				D1405D512343145B000154E9 /* DatePickerView.swift in Sources */,
 				D10F1424233A0C2100589E7A /* AppDelegate.swift in Sources */,
 				D10F1426233A0C2100589E7A /* SceneDelegate.swift in Sources */,
 				D1A912812341A8DB00C01E54 /* ButtonView.swift in Sources */,
