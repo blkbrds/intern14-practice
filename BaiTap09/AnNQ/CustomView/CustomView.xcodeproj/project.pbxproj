@@ -22,6 +22,10 @@
 		D1A9127C2341A7FC00C01E54 /* Ex04EnumPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A9127B2341A7FC00C01E54 /* Ex04EnumPosition.swift */; };
 		D1A912812341A8DB00C01E54 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A912802341A8DB00C01E54 /* ButtonView.swift */; };
 		D1A912832341A8F100C01E54 /* ButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1A912822341A8F100C01E54 /* ButtonView.xib */; };
+		D1A912882342020B00C01E54 /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A912862342020B00C01E54 /* PickerViewController.swift */; };
+		D1A912892342020B00C01E54 /* PickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1A912872342020B00C01E54 /* PickerViewController.xib */; };
+		D1A9128B2342041F00C01E54 /* ConvertPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A9128A2342041F00C01E54 /* ConvertPickerView.swift */; };
+		D1A9128D2342042F00C01E54 /* ConvertPickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1A9128C2342042F00C01E54 /* ConvertPickerView.xib */; };
 		D1BABD3E233C9A6E008D0428 /* Ex03ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BABD3C233C9A6E008D0428 /* Ex03ViewController.swift */; };
 		D1BABD3F233C9A6E008D0428 /* Ex03ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1BABD3D233C9A6E008D0428 /* Ex03ViewController.xib */; };
 /* End PBXBuildFile section */
@@ -44,6 +48,10 @@
 		D1A9127B2341A7FC00C01E54 /* Ex04EnumPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex04EnumPosition.swift; sourceTree = "<group>"; };
 		D1A912802341A8DB00C01E54 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		D1A912822341A8F100C01E54 /* ButtonView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ButtonView.xib; sourceTree = "<group>"; };
+		D1A912862342020B00C01E54 /* PickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift; sourceTree = "<group>"; };
+		D1A912872342020B00C01E54 /* PickerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PickerViewController.xib; sourceTree = "<group>"; };
+		D1A9128A2342041F00C01E54 /* ConvertPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertPickerView.swift; sourceTree = "<group>"; };
+		D1A9128C2342042F00C01E54 /* ConvertPickerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConvertPickerView.xib; sourceTree = "<group>"; };
 		D1BABD3C233C9A6E008D0428 /* Ex03ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex03ViewController.swift; sourceTree = "<group>"; };
 		D1BABD3D233C9A6E008D0428 /* Ex03ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex03ViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -102,6 +110,7 @@
 		D10F1438233A0C3A00589E7A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				D1A912842342011F00C01E54 /* Ex05 */,
 				D1A912742341A45800C01E54 /* Ex04 */,
 				D1BABD3A233C9A25008D0428 /* Ex03 */,
 				D10F1437233A0C2D00589E7A /* Ex02 */,
@@ -112,6 +121,7 @@
 		D10F1439233A0C4500589E7A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D1A912852342012A00C01E54 /* Ex05 */,
 				D1A9127D2341A87D00C01E54 /* Ex04 */,
 				D1BABD3B233C9A2D008D0428 /* Ex03 */,
 				D157DC36233C64EE00A14C74 /* Ex02 */,
@@ -160,6 +170,24 @@
 				D1A912822341A8F100C01E54 /* ButtonView.xib */,
 			);
 			path = Ex04;
+			sourceTree = "<group>";
+		};
+		D1A912842342011F00C01E54 /* Ex05 */ = {
+			isa = PBXGroup;
+			children = (
+				D1A912862342020B00C01E54 /* PickerViewController.swift */,
+				D1A912872342020B00C01E54 /* PickerViewController.xib */,
+			);
+			path = Ex05;
+			sourceTree = "<group>";
+		};
+		D1A912852342012A00C01E54 /* Ex05 */ = {
+			isa = PBXGroup;
+			children = (
+				D1A9128A2342041F00C01E54 /* ConvertPickerView.swift */,
+				D1A9128C2342042F00C01E54 /* ConvertPickerView.xib */,
+			);
+			path = Ex05;
 			sourceTree = "<group>";
 		};
 		D1BABD3A233C9A25008D0428 /* Ex03 */ = {
@@ -240,11 +268,13 @@
 			files = (
 				D10F143D233A0C5500589E7A /* SlideViewController.xib in Resources */,
 				D1705F3C233A27A100E7D984 /* MySliderView.xib in Resources */,
+				D1A9128D2342042F00C01E54 /* ConvertPickerView.xib in Resources */,
 				D10F1430233A0C2200589E7A /* LaunchScreen.storyboard in Resources */,
 				D160C4A0233CA7080041CDD4 /* SlidersView.xib in Resources */,
 				D10F142D233A0C2200589E7A /* Assets.xcassets in Resources */,
 				D1A912782341A47600C01E54 /* Ex04ViewController.xib in Resources */,
 				D1A912832341A8F100C01E54 /* ButtonView.xib in Resources */,
+				D1A912892342020B00C01E54 /* PickerViewController.xib in Resources */,
 				D1BABD3F233C9A6E008D0428 /* Ex03ViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,6 +286,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1A912882342020B00C01E54 /* PickerViewController.swift in Sources */,
+				D1A9128B2342041F00C01E54 /* ConvertPickerView.swift in Sources */,
 				D1A912772341A47600C01E54 /* Ex04ViewController.swift in Sources */,
 				D1BABD3E233C9A6E008D0428 /* Ex03ViewController.swift in Sources */,
 				D160C49E233CA6F60041CDD4 /* SlidersView.swift in Sources */,

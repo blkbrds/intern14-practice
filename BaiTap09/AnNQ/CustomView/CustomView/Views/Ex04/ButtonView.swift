@@ -30,6 +30,8 @@ class ButtonView: UIView {
                 myButtonLabel.text = "\(badge)"
             }
             if badge < 10 {
+                print(myButtonLabel.frame.origin)
+                print(myButtonLabel.center)
                 myButtonLabel.frame = CGRect(x: myButtonLabel.frame.origin.x, y: myButtonLabel.frame.origin.y, width: myButtonLabel.bounds.height, height: myButtonLabel.bounds.height)
                 myButtonLabel.layer.cornerRadius = myButtonLabel.bounds.height / 2
             } else {
