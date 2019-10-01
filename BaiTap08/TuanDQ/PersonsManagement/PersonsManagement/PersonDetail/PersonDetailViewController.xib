@@ -10,6 +10,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PersonDetailViewController" customModule="PersonsManagement" customModuleProvider="target">
             <connections>
                 <outlet property="avatarImageView" destination="7au-qg-4ld" id="bCE-qy-1zw"/>
+                <outlet property="messageTextField" destination="N1N-8l-8iQ" id="wBz-UA-l7w"/>
                 <outlet property="personNameTextField" destination="ObK-Mo-iT7" id="X3z-Nv-3Ij"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -31,7 +32,7 @@
                             </barButtonItem>
                             <barButtonItem key="rightBarButtonItem" title="Done" id="8Cu-vE-S8Z">
                                 <connections>
-                                    <action selector="doDoneButtonClick:" destination="-1" id="1c5-OH-wps"/>
+                                    <action selector="doDoneButtonClick:" destination="-1" id="Hhs-37-b1n"/>
                                 </connections>
                             </barButtonItem>
                         </navigationItem>
@@ -47,6 +48,13 @@
                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N1N-8l-8iQ">
+                    <rect key="frame" x="20" y="540" width="374" height="64"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                    <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>

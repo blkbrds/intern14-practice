@@ -85,8 +85,38 @@ class BusinessController {
         for index in 0..<userDomain.count {
             if userDomain[index].userId == updateUser.userId {
                 userDomain[index] = updateUser
-                
-                print("update user password: \(updateUser.password) \nCurrent password : \(userDomain[index].password)")
+                return true
+            }
+        }
+        return false
+    }
+    
+    /**
+     * Get list person.
+     */
+    public static func getPersonsInfo() -> [PersonInfo] {
+        return personDomain
+    }
+    
+    /**
+     * Get person information by ID
+     */
+    public static func getPersonById(id userId: String) -> PersonInfo? {
+        for person in personDomain {
+            if person.userId == userId {
+                return person
+            }
+        }
+        return nil
+    }
+    
+    /**
+     * Update person infor.
+     */
+    public static func updatePerson(person updatePerson: PersonInfo) -> Bool {
+        for index in 0..<personDomain.count {
+            if personDomain[index].userId == updatePerson.userId {
+                personDomain[index] = updatePerson
                 return true
             }
         }

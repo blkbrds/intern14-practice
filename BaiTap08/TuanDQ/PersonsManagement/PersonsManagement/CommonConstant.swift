@@ -7,5 +7,8 @@
 //
 
 class CommonConstant {
+    public static let PLIST_NAME = "UserInformation"
     public static let USERID: String = "currentUser"
+    public static let IMAGE_NAME = "AvatarItemView"
+    public static let PROFILE_ID = "UserProfile"
 }

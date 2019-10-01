@@ -141,13 +141,6 @@
 			path = PersonDetail;
 			sourceTree = "<group>";
 		};
-		721A24062342F78D005DD9E6 /* ApplicationIndex */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ApplicationIndex;
-			sourceTree = "<group>";
-		};
 		721A240B2343072B005DD9E6 /* model */ = {
 			isa = PBXGroup;
 			children = (
@@ -199,7 +192,6 @@
 				725BAD0E234343C400A96A35 /* controller */,
 				721A240E23432BD9005DD9E6 /* dummyData */,
 				721A240B2343072B005DD9E6 /* model */,
-				721A24062342F78D005DD9E6 /* ApplicationIndex */,
 				721A23FD2342F698005DD9E6 /* PersonDetail */,
 				721A23FA2342F5CE005DD9E6 /* Components */,
 				721A23ED2342F424005DD9E6 /* EditInformation */,
