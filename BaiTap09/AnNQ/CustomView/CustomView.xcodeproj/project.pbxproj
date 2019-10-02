@@ -13,10 +13,14 @@
 		D10F1430233A0C2200589E7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D10F142E233A0C2200589E7A /* LaunchScreen.storyboard */; };
 		D10F143C233A0C5500589E7A /* SlideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10F143A233A0C5500589E7A /* SlideViewController.swift */; };
 		D10F143D233A0C5500589E7A /* SlideViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D10F143B233A0C5500589E7A /* SlideViewController.xib */; };
+		D13CF5C023443D0100B0F87B /* ColumnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13CF5BF23443D0100B0F87B /* ColumnView.swift */; };
+		D13CF5C223443D1000B0F87B /* ColumnView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D13CF5C123443D1000B0F87B /* ColumnView.xib */; };
 		D1405D4E234313F9000154E9 /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1405D4C234313F9000154E9 /* DatePickerViewController.swift */; };
 		D1405D4F234313F9000154E9 /* DatePickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1405D4D234313F9000154E9 /* DatePickerViewController.xib */; };
 		D1405D512343145B000154E9 /* DatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1405D502343145B000154E9 /* DatePickerView.swift */; };
 		D1405D5323431472000154E9 /* DatePickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1405D5223431472000154E9 /* DatePickerView.xib */; };
+		D15BA2552343524F00D3B025 /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15BA2532343524F00D3B025 /* ChartViewController.swift */; };
+		D15BA2562343524F00D3B025 /* ChartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D15BA2542343524F00D3B025 /* ChartViewController.xib */; };
 		D160C49E233CA6F60041CDD4 /* SlidersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D160C49D233CA6F60041CDD4 /* SlidersView.swift */; };
 		D160C4A0233CA7080041CDD4 /* SlidersView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D160C49F233CA7080041CDD4 /* SlidersView.xib */; };
 		D1705F3A233A278A00E7D984 /* MySliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1705F39233A278A00E7D984 /* MySliderView.swift */; };
@@ -43,10 +47,14 @@
 		D10F1431233A0C2200589E7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D10F143A233A0C5500589E7A /* SlideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideViewController.swift; sourceTree = "<group>"; };
 		D10F143B233A0C5500589E7A /* SlideViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SlideViewController.xib; sourceTree = "<group>"; };
+		D13CF5BF23443D0100B0F87B /* ColumnView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColumnView.swift; sourceTree = "<group>"; };
+		D13CF5C123443D1000B0F87B /* ColumnView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ColumnView.xib; sourceTree = "<group>"; };
 		D1405D4C234313F9000154E9 /* DatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
 		D1405D4D234313F9000154E9 /* DatePickerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DatePickerViewController.xib; sourceTree = "<group>"; };
 		D1405D502343145B000154E9 /* DatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerView.swift; sourceTree = "<group>"; };
 		D1405D5223431472000154E9 /* DatePickerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DatePickerView.xib; sourceTree = "<group>"; };
+		D15BA2532343524F00D3B025 /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
+		D15BA2542343524F00D3B025 /* ChartViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChartViewController.xib; sourceTree = "<group>"; };
 		D160C49D233CA6F60041CDD4 /* SlidersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlidersView.swift; sourceTree = "<group>"; };
 		D160C49F233CA7080041CDD4 /* SlidersView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SlidersView.xib; sourceTree = "<group>"; };
 		D1705F39233A278A00E7D984 /* MySliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySliderView.swift; sourceTree = "<group>"; };
@@ -118,6 +126,7 @@
 		D10F1438233A0C3A00589E7A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				D15BA2512343522300D3B025 /* Ex06 */,
 				D1A912842342011F00C01E54 /* Ex05 */,
 				D1A912742341A45800C01E54 /* Ex04 */,
 				D1BABD3A233C9A25008D0428 /* Ex03 */,
@@ -129,6 +138,7 @@
 		D10F1439233A0C4500589E7A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D15BA2522343522F00D3B025 /* Ex06 */,
 				D1A912852342012A00C01E54 /* Ex05 */,
 				D1A9127D2341A87D00C01E54 /* Ex04 */,
 				D1BABD3B233C9A2D008D0428 /* Ex03 */,
@@ -144,6 +154,24 @@
 				D1705F3B233A27A100E7D984 /* MySliderView.xib */,
 			);
 			path = Ex02;
+			sourceTree = "<group>";
+		};
+		D15BA2512343522300D3B025 /* Ex06 */ = {
+			isa = PBXGroup;
+			children = (
+				D15BA2532343524F00D3B025 /* ChartViewController.swift */,
+				D15BA2542343524F00D3B025 /* ChartViewController.xib */,
+			);
+			path = Ex06;
+			sourceTree = "<group>";
+		};
+		D15BA2522343522F00D3B025 /* Ex06 */ = {
+			isa = PBXGroup;
+			children = (
+				D13CF5BF23443D0100B0F87B /* ColumnView.swift */,
+				D13CF5C123443D1000B0F87B /* ColumnView.xib */,
+			);
+			path = Ex06;
 			sourceTree = "<group>";
 		};
 		D1A912742341A45800C01E54 /* Ex04 */ = {
@@ -278,6 +306,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D15BA2562343524F00D3B025 /* ChartViewController.xib in Resources */,
 				D10F143D233A0C5500589E7A /* SlideViewController.xib in Resources */,
 				D1705F3C233A27A100E7D984 /* MySliderView.xib in Resources */,
 				D1A9128D2342042F00C01E54 /* ConvertPickerView.xib in Resources */,
@@ -287,6 +316,7 @@
 				D1405D5323431472000154E9 /* DatePickerView.xib in Resources */,
 				D10F142D233A0C2200589E7A /* Assets.xcassets in Resources */,
 				D1A912782341A47600C01E54 /* Ex04ViewController.xib in Resources */,
+				D13CF5C223443D1000B0F87B /* ColumnView.xib in Resources */,
 				D1A912832341A8F100C01E54 /* ButtonView.xib in Resources */,
 				D1A912892342020B00C01E54 /* PickerViewController.xib in Resources */,
 				D1BABD3F233C9A6E008D0428 /* Ex03ViewController.xib in Resources */,
@@ -301,10 +331,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1A912882342020B00C01E54 /* PickerViewController.swift in Sources */,
+				D15BA2552343524F00D3B025 /* ChartViewController.swift in Sources */,
 				D1A9128B2342041F00C01E54 /* ConvertPickerView.swift in Sources */,
 				D1A912772341A47600C01E54 /* Ex04ViewController.swift in Sources */,
 				D1BABD3E233C9A6E008D0428 /* Ex03ViewController.swift in Sources */,
 				D160C49E233CA6F60041CDD4 /* SlidersView.swift in Sources */,
+				D13CF5C023443D0100B0F87B /* ColumnView.swift in Sources */,
 				D10F143C233A0C5500589E7A /* SlideViewController.swift in Sources */,
 				D1A9127C2341A7FC00C01E54 /* Ex04EnumPosition.swift in Sources */,
 				D1705F3A233A278A00E7D984 /* MySliderView.swift in Sources */,

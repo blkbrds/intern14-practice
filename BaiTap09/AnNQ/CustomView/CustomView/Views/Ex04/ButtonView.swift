@@ -13,8 +13,6 @@ class ButtonView: UIView {
     @IBOutlet weak var myButton: UIButton!
     @IBOutlet weak var myButtonLabel: UILabel!
     
-    
-    
     func setupView(name: String, color: UIColor, backGrC: UIColor, badge: Int, position: Position) {
         myButton.setTitleColor(color, for: .normal)
         myButton.setTitle(name, for: .normal)
