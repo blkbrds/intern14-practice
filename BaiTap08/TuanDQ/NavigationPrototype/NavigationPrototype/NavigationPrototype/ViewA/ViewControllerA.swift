@@ -16,4 +16,7 @@ class ViewControllerA: UIViewController {
         // Do any additional setup after loading the view.
         title = "ViewControllerA"
     }
+    @IBAction func doNextButtonClick(_ sender: UIButton) {
+        navigationController?.pushViewController(ViewControllerB(), animated: true)
+    }
 }

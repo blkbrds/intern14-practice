@@ -15,6 +15,16 @@
 		7216F8722344319700E94506 /* NavigationPrototypeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7216F8712344319700E94506 /* NavigationPrototypeUITests.swift */; };
 		7216F881234431C100E94506 /* ViewControllerA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7216F87F234431C100E94506 /* ViewControllerA.swift */; };
 		7216F882234431C100E94506 /* ViewControllerA.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7216F880234431C100E94506 /* ViewControllerA.xib */; };
+		7216F88C2344478300E94506 /* ViewControllerC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7216F88A2344478300E94506 /* ViewControllerC.swift */; };
+		7216F88D2344478300E94506 /* ViewControllerC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7216F88B2344478300E94506 /* ViewControllerC.xib */; };
+		7216F891234447A400E94506 /* ViewControllerE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7216F88F234447A400E94506 /* ViewControllerE.swift */; };
+		7216F892234447A400E94506 /* ViewControllerE.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7216F890234447A400E94506 /* ViewControllerE.xib */; };
+		7216F8962344482600E94506 /* ViewControllerB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7216F8942344482600E94506 /* ViewControllerB.swift */; };
+		7216F8972344482600E94506 /* ViewControllerB.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7216F8952344482600E94506 /* ViewControllerB.xib */; };
+		7216F89A2344497B00E94506 /* ViewControllerD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7216F8982344497B00E94506 /* ViewControllerD.swift */; };
+		7216F89B2344497B00E94506 /* ViewControllerD.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7216F8992344497B00E94506 /* ViewControllerD.xib */; };
+		7216F8A523444D5B00E94506 /* GradientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7216F8A323444D5B00E94506 /* GradientViewController.swift */; };
+		7216F8A623444D5B00E94506 /* GradientViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7216F8A423444D5B00E94506 /* GradientViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +59,16 @@
 		7216F8732344319700E94506 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7216F87F234431C100E94506 /* ViewControllerA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerA.swift; sourceTree = "<group>"; };
 		7216F880234431C100E94506 /* ViewControllerA.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewControllerA.xib; sourceTree = "<group>"; };
+		7216F88A2344478300E94506 /* ViewControllerC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerC.swift; sourceTree = "<group>"; };
+		7216F88B2344478300E94506 /* ViewControllerC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewControllerC.xib; sourceTree = "<group>"; };
+		7216F88F234447A400E94506 /* ViewControllerE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerE.swift; sourceTree = "<group>"; };
+		7216F890234447A400E94506 /* ViewControllerE.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewControllerE.xib; sourceTree = "<group>"; };
+		7216F8942344482600E94506 /* ViewControllerB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerB.swift; sourceTree = "<group>"; };
+		7216F8952344482600E94506 /* ViewControllerB.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewControllerB.xib; sourceTree = "<group>"; };
+		7216F8982344497B00E94506 /* ViewControllerD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerD.swift; sourceTree = "<group>"; };
+		7216F8992344497B00E94506 /* ViewControllerD.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewControllerD.xib; sourceTree = "<group>"; };
+		7216F8A323444D5B00E94506 /* GradientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientViewController.swift; sourceTree = "<group>"; };
+		7216F8A423444D5B00E94506 /* GradientViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GradientViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +119,13 @@
 		7216F84E2344319500E94506 /* NavigationPrototype */ = {
 			isa = PBXGroup;
 			children = (
+				7216F8A123444D0000E94506 /* NavigationPrototype */,
+				7216F8A023444CF200E94506 /* CustomNavigation */,
 				7216F84F2344319500E94506 /* AppDelegate.swift */,
 				7216F8512344319500E94506 /* SceneDelegate.swift */,
 				7216F8582344319700E94506 /* Assets.xcassets */,
 				7216F85A2344319700E94506 /* LaunchScreen.storyboard */,
 				7216F85D2344319700E94506 /* Info.plist */,
-				7216F87F234431C100E94506 /* ViewControllerA.swift */,
-				7216F880234431C100E94506 /* ViewControllerA.xib */,
 			);
 			path = NavigationPrototype;
 			sourceTree = "<group>";
@@ -126,6 +146,72 @@
 				7216F8732344319700E94506 /* Info.plist */,
 			);
 			path = NavigationPrototypeUITests;
+			sourceTree = "<group>";
+		};
+		7216F8872344476600E94506 /* ViewA */ = {
+			isa = PBXGroup;
+			children = (
+				7216F87F234431C100E94506 /* ViewControllerA.swift */,
+				7216F880234431C100E94506 /* ViewControllerA.xib */,
+			);
+			path = ViewA;
+			sourceTree = "<group>";
+		};
+		7216F8882344476E00E94506 /* ViewB */ = {
+			isa = PBXGroup;
+			children = (
+				7216F8942344482600E94506 /* ViewControllerB.swift */,
+				7216F8952344482600E94506 /* ViewControllerB.xib */,
+			);
+			path = ViewB;
+			sourceTree = "<group>";
+		};
+		7216F8892344477300E94506 /* ViewC */ = {
+			isa = PBXGroup;
+			children = (
+				7216F88A2344478300E94506 /* ViewControllerC.swift */,
+				7216F88B2344478300E94506 /* ViewControllerC.xib */,
+			);
+			path = ViewC;
+			sourceTree = "<group>";
+		};
+		7216F88E2344479500E94506 /* ViewD */ = {
+			isa = PBXGroup;
+			children = (
+				7216F8982344497B00E94506 /* ViewControllerD.swift */,
+				7216F8992344497B00E94506 /* ViewControllerD.xib */,
+			);
+			path = ViewD;
+			sourceTree = "<group>";
+		};
+		7216F893234447AB00E94506 /* ViewE */ = {
+			isa = PBXGroup;
+			children = (
+				7216F88F234447A400E94506 /* ViewControllerE.swift */,
+				7216F890234447A400E94506 /* ViewControllerE.xib */,
+			);
+			path = ViewE;
+			sourceTree = "<group>";
+		};
+		7216F8A023444CF200E94506 /* CustomNavigation */ = {
+			isa = PBXGroup;
+			children = (
+				7216F8A323444D5B00E94506 /* GradientViewController.swift */,
+				7216F8A423444D5B00E94506 /* GradientViewController.xib */,
+			);
+			path = CustomNavigation;
+			sourceTree = "<group>";
+		};
+		7216F8A123444D0000E94506 /* NavigationPrototype */ = {
+			isa = PBXGroup;
+			children = (
+				7216F893234447AB00E94506 /* ViewE */,
+				7216F88E2344479500E94506 /* ViewD */,
+				7216F8892344477300E94506 /* ViewC */,
+				7216F8882344476E00E94506 /* ViewB */,
+				7216F8872344476600E94506 /* ViewA */,
+			);
+			path = NavigationPrototype;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,8 +318,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7216F8A623444D5B00E94506 /* GradientViewController.xib in Resources */,
+				7216F892234447A400E94506 /* ViewControllerE.xib in Resources */,
 				7216F882234431C100E94506 /* ViewControllerA.xib in Resources */,
+				7216F89B2344497B00E94506 /* ViewControllerD.xib in Resources */,
 				7216F85C2344319700E94506 /* LaunchScreen.storyboard in Resources */,
+				7216F8972344482600E94506 /* ViewControllerB.xib in Resources */,
+				7216F88D2344478300E94506 /* ViewControllerC.xib in Resources */,
 				7216F8592344319700E94506 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,6 +351,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				7216F8502344319500E94506 /* AppDelegate.swift in Sources */,
+				7216F891234447A400E94506 /* ViewControllerE.swift in Sources */,
+				7216F89A2344497B00E94506 /* ViewControllerD.swift in Sources */,
+				7216F88C2344478300E94506 /* ViewControllerC.swift in Sources */,
+				7216F8A523444D5B00E94506 /* GradientViewController.swift in Sources */,
+				7216F8962344482600E94506 /* ViewControllerB.swift in Sources */,
 				7216F881234431C100E94506 /* ViewControllerA.swift in Sources */,
 				7216F8522344319500E94506 /* SceneDelegate.swift in Sources */,
 			);
