@@ -31,7 +31,7 @@ class EditInformationViewController: UIViewController {
     }
     @IBAction func doDoneButtonClick(_ sender: Any) {
         
-        validatePassword()
+        if (!validatePassword()) { return }
         
         guard let currentUser = BusinessController.getCurrentUser() else {
             messageTextField.text = "Can't get current user."
@@ -51,19 +51,20 @@ class EditInformationViewController: UIViewController {
     /**
      * Validate new password.
      */
-    fileprivate func validatePassword() {
+    fileprivate func validatePassword() -> Bool {
         guard !newPasswordTextField.text!.isEmpty && !confirmPasswordTextField.text!.isEmpty else {
             messageTextField.text = "Password couldn't empty."
-            return
+            return false
         }
         guard newPasswordTextField.text!.count <= 32 && newPasswordTextField.text!.count >= 6 else {
             messageTextField.text = "Password invalid length."
-            return
+            return false
         }
         guard confirmPasswordTextField.text!.count <= 32 && confirmPasswordTextField.text!.count >= 6 else {
             messageTextField.text = "Confirm password invalid length."
-            return
+            return false
         }
+        return true
     }
 
     fileprivate func goBackToHomePage() {

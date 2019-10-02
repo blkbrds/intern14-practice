@@ -38,7 +38,7 @@ class BusinessController {
         var personTag = 0
         for item in users {
             userDomain.append(UserInfo(userId: item.userId, username: item.username, password: item.password))
-            personDomain.append(PersonInfo(userId: item.userId, personImage: UIImage(named: item.personImage)!, personName: item.personName, tag: personTag))
+            personDomain.append(PersonInfo(userId: item.userId, personImage: UIImage(named: item.personImage)!, personName: item.personName))
             personTag += 1
         }
     }

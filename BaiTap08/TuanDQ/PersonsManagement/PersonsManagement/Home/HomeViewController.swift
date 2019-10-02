@@ -44,7 +44,7 @@ class HomeViewController: UIViewController {
      */
     private func settingLayout() {
         let persons = BusinessController.getPersonsInfo()
-        guard !persons.isEmpty else {
+        if persons.isEmpty {
             return
         }
         
@@ -67,9 +67,6 @@ class HomeViewController: UIViewController {
                 x = leftMargin
                 y += topMargin
             }
-//            if (y > maxHeight - topMargin + leftMargin) {
-//                break
-//            }
         }
     }
 
@@ -81,7 +78,6 @@ class HomeViewController: UIViewController {
         guard let nib = Bundle.main.loadNibNamed(CommonConstant.IMAGE_NAME, owner: nil, options: nil)?[0] as? AvatarItemView else { return }
         nib.setting(person: personInfo)
         nib.frame = localtion
-        nib.tag = personInfo.tag
         nib.delegate = self
         personInfoView.addSubview(nib)
     }
@@ -89,11 +85,8 @@ class HomeViewController: UIViewController {
 
 extension HomeViewController: AvatarItemViewDelegate {
     
-    func view(_ view: AvatarItemView, needPerformAction action: AvatarItemView.Action) {
-        switch action {
-        case .goToProfile(let userId):
-            UserDefaults.standard.set(userId, forKey: CommonConstant.PROFILE_ID)
+    func view(_ view: AvatarItemView, didSelect index: String?) {
+            UserDefaults.standard.set(index, forKey: CommonConstant.PROFILE_ID)
             navigationController?.pushViewController(PersonDetailViewController(), animated: true)
-        }
     }
 }

@@ -36,7 +36,8 @@ class PersonDetailViewController: UIViewController {
      * Update information.
      */
     @IBAction func doDoneButtonClick(_ sender: Any) {
-        if (!validateData()) {
+        guard let personName = personNameTextField.text, !personName.isEmpty else {
+            messageTextField.text = "Username can not empty"
             return
         }
         
@@ -48,7 +49,7 @@ class PersonDetailViewController: UIViewController {
             messageTextField.text = "Can't get person information."
             return
         }
-        let updatePerson = PersonInfo(userId: currentPerson.userId, personImage: currentPerson.personImage, personName: personNameTextField.text!, tag: currentPerson.tag)
+        let updatePerson = PersonInfo(userId: currentPerson.userId, personImage: currentPerson.personImage, personName: personNameTextField.text!)
         
         if !BusinessController.updatePerson(person: updatePerson) {
             messageTextField.text = "Can't update current user."
@@ -61,14 +62,6 @@ class PersonDetailViewController: UIViewController {
     
     @IBAction func doBackButtonClick(_ sender: Any) {
         navigationController?.popViewController(animated: true)
-    }
-    
-    private func validateData() -> Bool {
-        guard !personNameTextField.text!.isEmpty else {
-            messageTextField.text = "Name invalid"
-            return false
-        }
-        return true
     }
     
     private func goBackToHomePage() {

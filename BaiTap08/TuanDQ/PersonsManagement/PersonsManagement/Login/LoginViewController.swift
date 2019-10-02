@@ -12,6 +12,7 @@ class LoginViewController: UIViewController {
 
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var messageTextField: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,8 +23,16 @@ class LoginViewController: UIViewController {
     
     @IBAction func validateLogin(_ sender: UIBarButtonItem) {
 
-        let userName = usernameTextField.text!
-        let pass = passwordTextField.text!
+        guard let userName = usernameTextField.text, !userName.isEmpty else {
+            messageTextField.text = "Username can not empty"
+            return
+        }
+        
+        guard let pass = passwordTextField.text, !pass.isEmpty else {
+            passwordTextField.text = "password can not empty"
+            return
+        }
+
         let (message, userId) = BusinessController.checkLogin(username: userName, password: pass)
 
         if message == nil {

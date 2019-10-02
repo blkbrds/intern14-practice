@@ -9,7 +9,7 @@
 import UIKit
 
 protocol AvatarItemViewDelegate: class {
-    func view(_ view: AvatarItemView, needPerformAction action: AvatarItemView.Action)
+    func view(_ view: AvatarItemView, didSelect index: String?)
 }
 
 class AvatarItemView: UIView {
@@ -22,12 +22,8 @@ class AvatarItemView: UIView {
     
     weak var delegate: AvatarItemViewDelegate?
     
-    enum Action {
-        case goToProfile(id: String)
-    }
-    
     @IBAction func avatarButtonClick(_ sender: Any) {
-        delegate?.view(self, needPerformAction: .goToProfile(id: userId))
+        delegate?.view(self, didSelect: userId)
     }
     
     override init(frame: CGRect) {
@@ -44,7 +40,6 @@ class AvatarItemView: UIView {
     func setting(person: PersonInfo) {
         self.personNameLabel?.text = person.personName
         self.personImageView?.image = person.personImage
-        self.avatarButton?.tag = person.tag
         userId = person.userId
     }
 }
