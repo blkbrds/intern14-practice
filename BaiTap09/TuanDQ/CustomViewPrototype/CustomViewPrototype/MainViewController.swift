@@ -15,7 +15,12 @@ class MainViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         title = "MainViewController"
-        loadComponent()
+//        loadComponent()
+        // Add view
+        let frame = CGRect(x: 100, y: 200, width: 200, height: 200)
+        let ballView = DegreeView(frame: frame)
+        //ballView.color = .red
+        view.addSubview(ballView)
     }
 
     private func loadComponent() {

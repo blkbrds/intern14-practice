@@ -18,6 +18,8 @@
 		7216F8EB23448A8500E94506 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7216F8E923448A8500E94506 /* MainViewController.swift */; };
 		7216F8EC23448A8500E94506 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7216F8EA23448A8500E94506 /* MainViewController.xib */; };
 		7216F8F023449CA500E94506 /* value.png in Resources */ = {isa = PBXBuildFile; fileRef = 7216F8EF23449CA500E94506 /* value.png */; };
+		7216F8F82344C20600E94506 /* DegreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7216F8F62344C20600E94506 /* DegreeView.swift */; };
+		7216F8F92344C20600E94506 /* DegreeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7216F8F72344C20600E94506 /* DegreeView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		7216F8E923448A8500E94506 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		7216F8EA23448A8500E94506 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		7216F8EF23449CA500E94506 /* value.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = value.png; sourceTree = "<group>"; };
+		7216F8F62344C20600E94506 /* DegreeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DegreeView.swift; sourceTree = "<group>"; };
+		7216F8F72344C20600E94506 /* DegreeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DegreeView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,11 +150,21 @@
 		7216F8E423448A4200E94506 /* Slider */ = {
 			isa = PBXGroup;
 			children = (
+				7216F8F12344A95E00E94506 /* bubble */,
 				7216F8EF23449CA500E94506 /* value.png */,
 				7216F8E523448A6700E94506 /* MySliderView.swift */,
 				7216F8E623448A6700E94506 /* MySliderView.xib */,
 			);
 			path = Slider;
+			sourceTree = "<group>";
+		};
+		7216F8F12344A95E00E94506 /* bubble */ = {
+			isa = PBXGroup;
+			children = (
+				7216F8F62344C20600E94506 /* DegreeView.swift */,
+				7216F8F72344C20600E94506 /* DegreeView.xib */,
+			);
+			path = bubble;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +273,7 @@
 			files = (
 				7216F8C023448A1F00E94506 /* LaunchScreen.storyboard in Resources */,
 				7216F8BD23448A1F00E94506 /* Assets.xcassets in Resources */,
+				7216F8F92344C20600E94506 /* DegreeView.xib in Resources */,
 				7216F8E823448A6700E94506 /* MySliderView.xib in Resources */,
 				7216F8F023449CA500E94506 /* value.png in Resources */,
 				7216F8EC23448A8500E94506 /* MainViewController.xib in Resources */,
@@ -286,6 +301,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7216F8F82344C20600E94506 /* DegreeView.swift in Sources */,
 				7216F8E723448A6700E94506 /* MySliderView.swift in Sources */,
 				7216F8B423448A1D00E94506 /* AppDelegate.swift in Sources */,
 				7216F8B623448A1D00E94506 /* SceneDelegate.swift in Sources */,
