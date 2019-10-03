@@ -5,7 +5,6 @@ enum Equation {
     case noSolution
     case oneSolution(Double)
     case twoSolutions(Double, Double)
-    case countlessSolutions
 }
 
 /**
@@ -18,11 +17,7 @@ enum Equation {
 func calculateTheEquation(a: Double, b: Double, c: Double) -> Equation {
     if a == 0 {
         if b == 0 {
-            if c == 0 {
-                return Equation.countlessSolutions
-            } else {
-                return Equation.noSolution
-            }
+            return Equation.noSolution
         } else {
             let x = -c / b
             return Equation.oneSolution(x)
@@ -43,7 +38,13 @@ func calculateTheEquation(a: Double, b: Double, c: Double) -> Equation {
 }
 
 // Test
-print("Equation 1:", calculateTheEquation(a: 2, b: 0, c: 4))
-print("Equation 2:", calculateTheEquation(a: 0, b: 8, c: 4))
-print("Equation 3:", calculateTheEquation(a: 2, b: 8, c: 0))
-print("Equation 4:", calculateTheEquation(a: 0, b: 0, c: 0))
+switch calculateTheEquation(a: 2, b: 0, c: 4) {
+case Equation.oneSolution(let x):
+    print("One solution: x = \(x)")
+    break
+case Equation.twoSolutions(let x1, let x2):
+    print("Tow solution: x1 = \(x1), x2 = \(x2)")
+    break
+default:
+    print("No solution")
+}

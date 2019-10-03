@@ -3,29 +3,17 @@ import UIKit
 let pi = Double.pi
 
 /**
- *  Caculate area of sphere
+ *  Caculate area and volume of sphere
  *
  *  @param Int r [Radius]
  *
- *  @return area
+ *  @return area,volume
  */
-func areaOfSphere(r: Int) -> (Double) {
+func areaAndVolumeOfSphere(r: Int) -> (area: Double, volume: Double) {
     let area = Double( pow(Double(r), 2) * 4) * pi
-    return area
-}
-
-/**
- *  Caculate volume of sphere
- *
- *  @param Int r [Radius]
- *
- *  @return volume
- */
-func volumeOfShere(r:Int) -> (Double) {
     let volume = Double( pow(Double(r), 3) * (4/3) ) * pi
-    return volume
+    return (area, volume)
 }
 
 // Test
-print(areaOfSphere(r: 3))
-print(volumeOfShere(r: 5))
+print(areaAndVolumeOfSphere(r: 6))
