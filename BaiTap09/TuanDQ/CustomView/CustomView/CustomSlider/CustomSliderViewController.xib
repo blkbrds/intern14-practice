@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomSliderViewController" customModule="CustomView" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="CustomSliderViewController" customModule="CustomView" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="173" height="93"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DHY-gX-Pyn">
+                    <rect key="frame" x="16" y="25" width="46" height="30"/>
+                    <state key="normal" title="Button"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Nf-sh-Tsv">
+                    <rect key="frame" x="101" y="30" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="DHY-gX-Pyn" secondAttribute="bottom" constant="38" id="GCF-f9-eQm"/>
+                <constraint firstAttribute="bottom" secondItem="2Nf-sh-Tsv" secondAttribute="bottom" constant="42" id="Ovj-PL-1zV"/>
+                <constraint firstItem="2Nf-sh-Tsv" firstAttribute="leading" secondItem="DHY-gX-Pyn" secondAttribute="trailing" constant="39" id="S73-kq-SR6"/>
+                <constraint firstItem="DHY-gX-Pyn" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="TPy-9V-Kzg"/>
+                <constraint firstItem="2Nf-sh-Tsv" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="30" id="k5a-QO-kGb"/>
+                <constraint firstAttribute="trailing" secondItem="2Nf-sh-Tsv" secondAttribute="trailing" constant="30" id="mhu-OD-JwQ"/>
+                <constraint firstItem="2Nf-sh-Tsv" firstAttribute="leading" secondItem="DHY-gX-Pyn" secondAttribute="trailing" constant="39" id="sgx-10-cwE"/>
+                <constraint firstItem="DHY-gX-Pyn" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="25" id="xf6-Dq-8Bc"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-42.753623188405797" y="-142.29910714285714"/>
+        </view>
+    </objects>
+</document>

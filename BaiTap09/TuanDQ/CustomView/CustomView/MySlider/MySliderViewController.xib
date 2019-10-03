@@ -7,8 +7,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MySliderViewController" customModule="CustomView" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner">
             <connections>
+                <outlet property="customView" destination="gqY-DN-kPO" id="kOV-vz-8Er"/>
                 <outlet property="mySlider" destination="puR-hG-TxC" id="XYN-K9-1vU"/>
                 <outlet property="sliderContainerView" destination="hUv-3r-3Jp" id="nPi-IU-StP"/>
                 <outlet property="sliderPercentView" destination="Eeb-aP-6nO" id="2JE-my-rZm"/>
@@ -44,6 +45,11 @@
                         </view>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gqY-DN-kPO">
+                    <rect key="frame" x="34" y="563" width="240" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

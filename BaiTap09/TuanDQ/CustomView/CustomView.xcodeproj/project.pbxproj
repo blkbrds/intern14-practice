@@ -19,6 +19,10 @@
 		721170482344F88500D0F413 /* MySliderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 721170462344F88500D0F413 /* MySliderViewController.xib */; };
 		721170532345041F00D0F413 /* DegreeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721170522345041F00D0F413 /* DegreeItem.swift */; };
 		7211705723450B8A00D0F413 /* DegreeItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7211705623450B8A00D0F413 /* DegreeItem.xib */; };
+		72D4FE7523457FEB00055F09 /* CustomSliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D4FE7323457FEB00055F09 /* CustomSliderViewController.swift */; };
+		72D4FE7623457FEB00055F09 /* CustomSliderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72D4FE7423457FEB00055F09 /* CustomSliderViewController.xib */; };
+		72D4FE79234584BC00055F09 /* NewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D4FE78234584BC00055F09 /* NewView.swift */; };
+		72D4FE7B234584C700055F09 /* NewView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72D4FE7A234584C700055F09 /* NewView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +61,10 @@
 		721170462344F88500D0F413 /* MySliderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MySliderViewController.xib; sourceTree = "<group>"; };
 		721170522345041F00D0F413 /* DegreeItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DegreeItem.swift; sourceTree = "<group>"; };
 		7211705623450B8A00D0F413 /* DegreeItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DegreeItem.xib; sourceTree = "<group>"; };
+		72D4FE7323457FEB00055F09 /* CustomSliderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSliderViewController.swift; sourceTree = "<group>"; };
+		72D4FE7423457FEB00055F09 /* CustomSliderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomSliderViewController.xib; sourceTree = "<group>"; };
+		72D4FE78234584BC00055F09 /* NewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewView.swift; sourceTree = "<group>"; };
+		72D4FE7A234584C700055F09 /* NewView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +115,8 @@
 		7211700E2344F78500D0F413 /* CustomView */ = {
 			isa = PBXGroup;
 			children = (
+				72D4FE77234584A600055F09 /* New */,
+				72D4FE7223457FBC00055F09 /* CustomSlider */,
 				721170492344F91A00D0F413 /* CustomView */,
 				721170402344F7B100D0F413 /* Main */,
 				7211703F2344F7A700D0F413 /* MySlider */,
@@ -162,6 +172,24 @@
 				7211705623450B8A00D0F413 /* DegreeItem.xib */,
 			);
 			path = CustomView;
+			sourceTree = "<group>";
+		};
+		72D4FE7223457FBC00055F09 /* CustomSlider */ = {
+			isa = PBXGroup;
+			children = (
+				72D4FE7323457FEB00055F09 /* CustomSliderViewController.swift */,
+				72D4FE7423457FEB00055F09 /* CustomSliderViewController.xib */,
+			);
+			path = CustomSlider;
+			sourceTree = "<group>";
+		};
+		72D4FE77234584A600055F09 /* New */ = {
+			isa = PBXGroup;
+			children = (
+				72D4FE78234584BC00055F09 /* NewView.swift */,
+				72D4FE7A234584C700055F09 /* NewView.xib */,
+			);
+			path = New;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,8 +296,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72D4FE7623457FEB00055F09 /* CustomSliderViewController.xib in Resources */,
 				7211701C2344F78700D0F413 /* LaunchScreen.storyboard in Resources */,
 				721170442344F7C000D0F413 /* MainViewController.xib in Resources */,
+				72D4FE7B234584C700055F09 /* NewView.xib in Resources */,
 				721170192344F78700D0F413 /* Assets.xcassets in Resources */,
 				721170482344F88500D0F413 /* MySliderViewController.xib in Resources */,
 				7211705723450B8A00D0F413 /* DegreeItem.xib in Resources */,
@@ -299,7 +329,9 @@
 			files = (
 				721170432344F7C000D0F413 /* MainViewController.swift in Sources */,
 				721170532345041F00D0F413 /* DegreeItem.swift in Sources */,
+				72D4FE7523457FEB00055F09 /* CustomSliderViewController.swift in Sources */,
 				721170102344F78500D0F413 /* AppDelegate.swift in Sources */,
+				72D4FE79234584BC00055F09 /* NewView.swift in Sources */,
 				721170122344F78500D0F413 /* SceneDelegate.swift in Sources */,
 				721170472344F88500D0F413 /* MySliderViewController.swift in Sources */,
 			);
