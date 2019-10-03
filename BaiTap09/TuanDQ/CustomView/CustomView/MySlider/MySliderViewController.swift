@@ -19,6 +19,8 @@ class MySliderViewController: UIViewController {
         
         guard let nib = Bundle.main.loadNibNamed("SliderItem", owner: self, options: nil)?[0] as? SliderItem else { return }
         nib.frame = sliderContainerView.bounds
+        nib.delegate = self
+        degreeValueTextField.text = nib.getCurrentPercent()
         sliderContainerView.addSubview(nib)
     }
 }
@@ -34,13 +36,7 @@ extension UIViewController {
 }
 
 extension MySliderViewController: SliderItemDelegate {
-    
     func getValueChange(view: SliderItem, value: String) {
         degreeValueTextField.text = value
     }
-//
-//    func view(_ view: AvatarItemView, didSelect index: String?) {
-//            UserDefaults.standard.set(index, forKey: CommonConstant.PROFILE_ID)
-//            navigationController?.pushViewController(PersonDetailViewController(), animated: true)
-//    }
 }

@@ -10,12 +10,12 @@ import UIKit
 
 class DegreeItem: ParentView {
 
-    var bubbleColor: UIColor = .green {
+    var bubbleColor: UIColor = .red {
            didSet {
                setNeedsDisplay()
            }
        }
-    var degreeValueLabel: UILabel = UILabel()
+    private var degreeValueLabel: UILabel = UILabel()
     
     /**
      * Reference inheritent solution.
@@ -43,10 +43,10 @@ class DegreeItem: ParentView {
 //        view.frame = bounds
 //        view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
 //        view.backgroundColor = .clear
-//
+
         degreeValueLabel.frame = self.bounds
-//        degreeValueLabel.text = "check text"
         degreeValueLabel.textAlignment = .center
+        degreeValueLabel.font = UIFont.boldSystemFont(ofSize: 20)
         degreeValueLabel.frame.size.height = 3 * self.bounds.size.height / 4
         degreeValueLabel.textColor = .white
         addSubview(degreeValueLabel)

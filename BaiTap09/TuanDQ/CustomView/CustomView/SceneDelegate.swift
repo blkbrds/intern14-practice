@@ -19,7 +19,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let myView = (scene as? UIWindowScene) else { return }
         let window = UIWindow(windowScene: myView)
-        window.rootViewController = UINavigationController(rootViewController: MySliderViewController())
+        window.rootViewController = UINavigationController(rootViewController: MainViewController())
         self.window = window
         window.makeKeyAndVisible()
     }

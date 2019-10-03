@@ -22,6 +22,12 @@
 		72D4FE7F2345951400055F09 /* SliderItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D4FE7E2345951400055F09 /* SliderItem.swift */; };
 		72D4FE812345952000055F09 /* SliderItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72D4FE802345952000055F09 /* SliderItem.xib */; };
 		72D4FE832345A4FB00055F09 /* ParentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D4FE822345A4FB00055F09 /* ParentView.swift */; };
+		72D4FE8B2345D62300055F09 /* AdvanceSliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D4FE892345D62300055F09 /* AdvanceSliderViewController.swift */; };
+		72D4FE8C2345D62300055F09 /* AdvanceSliderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72D4FE8A2345D62300055F09 /* AdvanceSliderViewController.xib */; };
+		72D4FE8F2345F2F100055F09 /* BadgeButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D4FE8E2345F2F100055F09 /* BadgeButtonItem.swift */; };
+		72D4FE912345F2FA00055F09 /* BadgeButtonItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72D4FE902345F2FA00055F09 /* BadgeButtonItem.xib */; };
+		72D4FE992346055F00055F09 /* MyBadgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D4FE972346055F00055F09 /* MyBadgeViewController.swift */; };
+		72D4FE9A2346055F00055F09 /* MyBadgeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72D4FE982346055F00055F09 /* MyBadgeViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +69,12 @@
 		72D4FE7E2345951400055F09 /* SliderItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderItem.swift; sourceTree = "<group>"; };
 		72D4FE802345952000055F09 /* SliderItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SliderItem.xib; sourceTree = "<group>"; };
 		72D4FE822345A4FB00055F09 /* ParentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentView.swift; sourceTree = "<group>"; };
+		72D4FE892345D62300055F09 /* AdvanceSliderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvanceSliderViewController.swift; sourceTree = "<group>"; };
+		72D4FE8A2345D62300055F09 /* AdvanceSliderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdvanceSliderViewController.xib; sourceTree = "<group>"; };
+		72D4FE8E2345F2F100055F09 /* BadgeButtonItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeButtonItem.swift; sourceTree = "<group>"; };
+		72D4FE902345F2FA00055F09 /* BadgeButtonItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BadgeButtonItem.xib; sourceTree = "<group>"; };
+		72D4FE972346055F00055F09 /* MyBadgeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBadgeViewController.swift; sourceTree = "<group>"; };
+		72D4FE982346055F00055F09 /* MyBadgeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyBadgeViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +125,8 @@
 		7211700E2344F78500D0F413 /* CustomView */ = {
 			isa = PBXGroup;
 			children = (
+				72D4FE962346054000055F09 /* MyBadge */,
+				72D4FE842345D5E600055F09 /* AdvanceSlider */,
 				721170492344F91A00D0F413 /* CustomView */,
 				721170402344F7B100D0F413 /* Main */,
 				7211703F2344F7A700D0F413 /* MySlider */,
@@ -164,6 +178,7 @@
 		721170492344F91A00D0F413 /* CustomView */ = {
 			isa = PBXGroup;
 			children = (
+				72D4FE8D2345F2C100055F09 /* BadgeButton */,
 				721170522345041F00D0F413 /* DegreeItem.swift */,
 				7211705623450B8A00D0F413 /* DegreeItem.xib */,
 				72D4FE7E2345951400055F09 /* SliderItem.swift */,
@@ -171,6 +186,33 @@
 				72D4FE822345A4FB00055F09 /* ParentView.swift */,
 			);
 			path = CustomView;
+			sourceTree = "<group>";
+		};
+		72D4FE842345D5E600055F09 /* AdvanceSlider */ = {
+			isa = PBXGroup;
+			children = (
+				72D4FE892345D62300055F09 /* AdvanceSliderViewController.swift */,
+				72D4FE8A2345D62300055F09 /* AdvanceSliderViewController.xib */,
+			);
+			path = AdvanceSlider;
+			sourceTree = "<group>";
+		};
+		72D4FE8D2345F2C100055F09 /* BadgeButton */ = {
+			isa = PBXGroup;
+			children = (
+				72D4FE8E2345F2F100055F09 /* BadgeButtonItem.swift */,
+				72D4FE902345F2FA00055F09 /* BadgeButtonItem.xib */,
+			);
+			path = BadgeButton;
+			sourceTree = "<group>";
+		};
+		72D4FE962346054000055F09 /* MyBadge */ = {
+			isa = PBXGroup;
+			children = (
+				72D4FE972346055F00055F09 /* MyBadgeViewController.swift */,
+				72D4FE982346055F00055F09 /* MyBadgeViewController.xib */,
+			);
+			path = MyBadge;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,7 +321,10 @@
 			files = (
 				7211701C2344F78700D0F413 /* LaunchScreen.storyboard in Resources */,
 				72D4FE812345952000055F09 /* SliderItem.xib in Resources */,
+				72D4FE912345F2FA00055F09 /* BadgeButtonItem.xib in Resources */,
 				721170442344F7C000D0F413 /* MainViewController.xib in Resources */,
+				72D4FE8C2345D62300055F09 /* AdvanceSliderViewController.xib in Resources */,
+				72D4FE9A2346055F00055F09 /* MyBadgeViewController.xib in Resources */,
 				721170192344F78700D0F413 /* Assets.xcassets in Resources */,
 				721170482344F88500D0F413 /* MySliderViewController.xib in Resources */,
 				7211705723450B8A00D0F413 /* DegreeItem.xib in Resources */,
@@ -308,7 +353,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				721170432344F7C000D0F413 /* MainViewController.swift in Sources */,
+				72D4FE8F2345F2F100055F09 /* BadgeButtonItem.swift in Sources */,
+				72D4FE992346055F00055F09 /* MyBadgeViewController.swift in Sources */,
 				721170532345041F00D0F413 /* DegreeItem.swift in Sources */,
+				72D4FE8B2345D62300055F09 /* AdvanceSliderViewController.swift in Sources */,
 				721170102344F78500D0F413 /* AppDelegate.swift in Sources */,
 				721170122344F78500D0F413 /* SceneDelegate.swift in Sources */,
 				72D4FE832345A4FB00055F09 /* ParentView.swift in Sources */,
