@@ -7,12 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MySliderViewController" customModule="CustomView" customModuleProvider="target">
             <connections>
-                <outlet property="customView" destination="gqY-DN-kPO" id="kOV-vz-8Er"/>
-                <outlet property="mySlider" destination="puR-hG-TxC" id="XYN-K9-1vU"/>
+                <outlet property="degreeValueTextField" destination="Ywr-Kd-NyL" id="kty-Jq-bAD"/>
                 <outlet property="sliderContainerView" destination="hUv-3r-3Jp" id="nPi-IU-StP"/>
-                <outlet property="sliderPercentView" destination="Eeb-aP-6nO" id="2JE-my-rZm"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -21,36 +19,17 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sHg-UR-lDV">
-                    <rect key="frame" x="159" y="152" width="97" height="34"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                    <textInputTraits key="textInputTraits"/>
-                </textField>
                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hUv-3r-3Jp">
-                    <rect key="frame" x="20" y="281" width="374" height="178"/>
+                    <rect key="frame" x="20" y="291" width="374" height="314"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <subviews>
-                        <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="puR-hG-TxC">
-                            <rect key="frame" x="6" y="115" width="370" height="30"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <connections>
-                                <action selector="changeValueSlider:" destination="-1" eventType="valueChanged" id="Xtb-1C-ojq"/>
-                            </connections>
-                        </slider>
-                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Eeb-aP-6nO" customClass="DegreeItem" customModule="CustomView" customModuleProvider="target">
-                            <rect key="frame" x="46" y="24" width="91" height="83"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        </view>
-                    </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                 </view>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gqY-DN-kPO">
-                    <rect key="frame" x="34" y="563" width="240" height="128"/>
+                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ywr-Kd-NyL">
+                    <rect key="frame" x="159" y="156" width="97" height="34"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                </view>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>

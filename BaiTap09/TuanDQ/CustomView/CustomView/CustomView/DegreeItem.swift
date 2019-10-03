@@ -8,44 +8,48 @@
 
 import UIKit
 
-class DegreeItem: UIView {
+class DegreeItem: ParentView {
 
     var bubbleColor: UIColor = .green {
            didSet {
                setNeedsDisplay()
            }
        }
-    var degreeValueLabel: UILabel!
+    var degreeValueLabel: UILabel = UILabel()
+    
+    /**
+     * Reference inheritent solution.
+     */
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        loadViewFromNib()
+    }
 
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-    }
+    // OLD Solution
+//    override init(frame: CGRect) {
+//        super.init(frame: frame)
+//    }
+//    
+//    required init?(coder: NSCoder) {
+//        super.init(coder: coder)
+////        let _ = loadViewFromLib()
+//        backgroundColor = .clear
+//    }
     
-    required init?(coder: NSCoder) {
-        super.init(coder: coder)
-        let _ = loadViewFromLib()
-        backgroundColor = .clear
-    }
-    
-    func loadViewFromLib() -> UIView {
-        let bundle = Bundle.init(for: type(of: self))
-        let nib = UINib(nibName: "DegreeItem", bundle: bundle)
-        let view = nib.instantiate(withOwner: self, options: nil)[0] as! UIView
-        view.frame = bounds
-        view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-        view.backgroundColor = .clear
-        
-        let degreeValue = UILabel(frame: self.bounds)
-        degreeValue.text = "Test value"
-        degreeValue.textAlignment = .center
-        degreeValue.frame.size.height = 3 * self.bounds.size.height / 4
-        degreeValue.textColor = .white
-        
-        degreeValueLabel = degreeValue
-        view.addSubview(degreeValueLabel)
-        addSubview(view)
-        
-        return view
+    func loadViewFromNib() {
+//        let bundle = Bundle.init(for: type(of: self))
+//        let nib = UINib(nibName: "DegreeItem", bundle: bundle)
+//        let view = nib.instantiate(withOwner: self, options: nil)[0] as! UIView
+//        view.frame = bounds
+//        view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+//        view.backgroundColor = .clear
+//
+        degreeValueLabel.frame = self.bounds
+//        degreeValueLabel.text = "check text"
+        degreeValueLabel.textAlignment = .center
+        degreeValueLabel.frame.size.height = 3 * self.bounds.size.height / 4
+        degreeValueLabel.textColor = .white
+        addSubview(degreeValueLabel)
     }
     
     override func draw(_ rect: CGRect) {
@@ -70,21 +74,8 @@ class DegreeItem: UIView {
         bubbleColor.setFill()
         path.fill()
     }
-
-    private var min: Float = 0.0
-    private var max: Float = 0.0
-    private var degreeLocation: CGRect = .zero
-    func setting(sliderPosition: CGRect) {
-//        min = minX
-//        max = maxX
-        degreeLocation = sliderPosition
-    }
     
     func changeDegreeValue(value sliderValue: Float) {
-        let percent = Int(sliderValue * 100)
-        degreeValueLabel.text = String(percent)
-        
-        // Setting value.
-        self.center.y = CGFloat((max - min) * sliderValue)
+        degreeValueLabel.text = String(Int(sliderValue * 100)) + "%"
     }
 }
