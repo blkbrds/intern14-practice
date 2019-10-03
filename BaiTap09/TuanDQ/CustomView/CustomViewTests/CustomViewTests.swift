@@ -1,15 +1,15 @@
 //
-//  CustomViewPrototypeTests.swift
-//  CustomViewPrototypeTests
+//  CustomViewTests.swift
+//  CustomViewTests
 //
 //  Created by MBA0051 on 10/2/19.
 //  Copyright © 2019 MBA0051. All rights reserved.
 //
 
 import XCTest
-@testable import CustomViewPrototype
+@testable import CustomView
 
-class CustomViewPrototypeTests: XCTestCase {
+class CustomViewTests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.

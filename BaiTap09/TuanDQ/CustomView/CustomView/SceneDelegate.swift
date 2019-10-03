@@ -1,6 +1,6 @@
 //
 //  SceneDelegate.swift
-//  CustomViewPrototype
+//  CustomView
 //
 //  Created by MBA0051 on 10/2/19.
 //  Copyright © 2019 MBA0051. All rights reserved.
@@ -18,11 +18,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let myView = (scene as? UIWindowScene) else { return }
-        let windows = UIWindow(windowScene: myView)
-        let navigation = UINavigationController(rootViewController: MainViewController())
-        windows.rootViewController = navigation
-        self.window = windows
-        windows.makeKeyAndVisible()
+        let window = UIWindow(windowScene: myView)
+        window.rootViewController = UINavigationController(rootViewController: MySliderViewController())
+        self.window = window
+        window.makeKeyAndVisible()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
