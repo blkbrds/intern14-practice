@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7202230D2346513200718A43 /* BadgetItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7202230C2346513200718A43 /* BadgetItem.swift */; };
+		7202230F2346513800718A43 /* BadgetItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7202230E2346513800718A43 /* BadgetItem.xib */; };
 		721170102344F78500D0F413 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7211700F2344F78500D0F413 /* AppDelegate.swift */; };
 		721170122344F78500D0F413 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721170112344F78500D0F413 /* SceneDelegate.swift */; };
 		721170192344F78700D0F413 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 721170182344F78700D0F413 /* Assets.xcassets */; };
@@ -24,8 +26,6 @@
 		72D4FE832345A4FB00055F09 /* ParentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D4FE822345A4FB00055F09 /* ParentView.swift */; };
 		72D4FE8B2345D62300055F09 /* AdvanceSliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D4FE892345D62300055F09 /* AdvanceSliderViewController.swift */; };
 		72D4FE8C2345D62300055F09 /* AdvanceSliderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72D4FE8A2345D62300055F09 /* AdvanceSliderViewController.xib */; };
-		72D4FE8F2345F2F100055F09 /* BadgeButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D4FE8E2345F2F100055F09 /* BadgeButtonItem.swift */; };
-		72D4FE912345F2FA00055F09 /* BadgeButtonItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72D4FE902345F2FA00055F09 /* BadgeButtonItem.xib */; };
 		72D4FE992346055F00055F09 /* MyBadgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D4FE972346055F00055F09 /* MyBadgeViewController.swift */; };
 		72D4FE9A2346055F00055F09 /* MyBadgeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72D4FE982346055F00055F09 /* MyBadgeViewController.xib */; };
 /* End PBXBuildFile section */
@@ -48,6 +48,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7202230C2346513200718A43 /* BadgetItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgetItem.swift; sourceTree = "<group>"; };
+		7202230E2346513800718A43 /* BadgetItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BadgetItem.xib; sourceTree = "<group>"; };
 		7211700C2344F78500D0F413 /* CustomView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7211700F2344F78500D0F413 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		721170112344F78500D0F413 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,8 +73,6 @@
 		72D4FE822345A4FB00055F09 /* ParentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentView.swift; sourceTree = "<group>"; };
 		72D4FE892345D62300055F09 /* AdvanceSliderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvanceSliderViewController.swift; sourceTree = "<group>"; };
 		72D4FE8A2345D62300055F09 /* AdvanceSliderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdvanceSliderViewController.xib; sourceTree = "<group>"; };
-		72D4FE8E2345F2F100055F09 /* BadgeButtonItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeButtonItem.swift; sourceTree = "<group>"; };
-		72D4FE902345F2FA00055F09 /* BadgeButtonItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BadgeButtonItem.xib; sourceTree = "<group>"; };
 		72D4FE972346055F00055F09 /* MyBadgeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBadgeViewController.swift; sourceTree = "<group>"; };
 		72D4FE982346055F00055F09 /* MyBadgeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyBadgeViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -200,8 +200,8 @@
 		72D4FE8D2345F2C100055F09 /* BadgeButton */ = {
 			isa = PBXGroup;
 			children = (
-				72D4FE8E2345F2F100055F09 /* BadgeButtonItem.swift */,
-				72D4FE902345F2FA00055F09 /* BadgeButtonItem.xib */,
+				7202230C2346513200718A43 /* BadgetItem.swift */,
+				7202230E2346513800718A43 /* BadgetItem.xib */,
 			);
 			path = BadgeButton;
 			sourceTree = "<group>";
@@ -321,7 +321,7 @@
 			files = (
 				7211701C2344F78700D0F413 /* LaunchScreen.storyboard in Resources */,
 				72D4FE812345952000055F09 /* SliderItem.xib in Resources */,
-				72D4FE912345F2FA00055F09 /* BadgeButtonItem.xib in Resources */,
+				7202230F2346513800718A43 /* BadgetItem.xib in Resources */,
 				721170442344F7C000D0F413 /* MainViewController.xib in Resources */,
 				72D4FE8C2345D62300055F09 /* AdvanceSliderViewController.xib in Resources */,
 				72D4FE9A2346055F00055F09 /* MyBadgeViewController.xib in Resources */,
@@ -352,8 +352,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7202230D2346513200718A43 /* BadgetItem.swift in Sources */,
 				721170432344F7C000D0F413 /* MainViewController.swift in Sources */,
-				72D4FE8F2345F2F100055F09 /* BadgeButtonItem.swift in Sources */,
 				72D4FE992346055F00055F09 /* MyBadgeViewController.swift in Sources */,
 				721170532345041F00D0F413 /* DegreeItem.swift in Sources */,
 				72D4FE8B2345D62300055F09 /* AdvanceSliderViewController.swift in Sources */,
