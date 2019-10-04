@@ -33,12 +33,12 @@
 		72D8556F2346E7F3000C0664 /* MyChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D8556D2346E7F3000C0664 /* MyChartViewController.swift */; };
 		72D855702346E7F3000C0664 /* MyChartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72D8556E2346E7F3000C0664 /* MyChartViewController.xib */; };
 		72D855732346E934000C0664 /* BarChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D855722346E934000C0664 /* BarChart.swift */; };
-		72D8557B2346F73C000C0664 /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D855752346F73B000C0664 /* DatePickerViewController.swift */; };
-		72D8557C2346F73C000C0664 /* MyDatePickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72D855762346F73B000C0664 /* MyDatePickerView.xib */; };
-		72D8557D2346F73C000C0664 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D855772346F73B000C0664 /* TestViewController.swift */; };
-		72D8557E2346F73C000C0664 /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72D855782346F73C000C0664 /* TestViewController.xib */; };
-		72D8557F2346F73C000C0664 /* DatePickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72D855792346F73C000C0664 /* DatePickerViewController.xib */; };
-		72D855802346F73C000C0664 /* MyDatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D8557A2346F73C000C0664 /* MyDatePickerView.swift */; };
+		72D85584234747C1000C0664 /* MyPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D85582234747C1000C0664 /* MyPickerViewController.swift */; };
+		72D85585234747C1000C0664 /* MyPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72D85583234747C1000C0664 /* MyPickerViewController.xib */; };
+		72D8558A234748C8000C0664 /* PickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72D85589234748C8000C0664 /* PickerView.xib */; };
+		72D8558C23474904000C0664 /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D8558B23474904000C0664 /* PickerView.swift */; };
+		72D8558E23474B5F000C0664 /* DatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D8558D23474B5F000C0664 /* DatePickerView.swift */; };
+		72D8559023474B6D000C0664 /* DatePickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72D8558F23474B6D000C0664 /* DatePickerView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,12 +91,12 @@
 		72D8556D2346E7F3000C0664 /* MyChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyChartViewController.swift; sourceTree = "<group>"; };
 		72D8556E2346E7F3000C0664 /* MyChartViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyChartViewController.xib; sourceTree = "<group>"; };
 		72D855722346E934000C0664 /* BarChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChart.swift; sourceTree = "<group>"; };
-		72D855752346F73B000C0664 /* DatePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
-		72D855762346F73B000C0664 /* MyDatePickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyDatePickerView.xib; sourceTree = "<group>"; };
-		72D855772346F73B000C0664 /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
-		72D855782346F73C000C0664 /* TestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
-		72D855792346F73C000C0664 /* DatePickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DatePickerViewController.xib; sourceTree = "<group>"; };
-		72D8557A2346F73C000C0664 /* MyDatePickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyDatePickerView.swift; sourceTree = "<group>"; };
+		72D85582234747C1000C0664 /* MyPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPickerViewController.swift; sourceTree = "<group>"; };
+		72D85583234747C1000C0664 /* MyPickerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyPickerViewController.xib; sourceTree = "<group>"; };
+		72D85589234748C8000C0664 /* PickerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PickerView.xib; sourceTree = "<group>"; };
+		72D8558B23474904000C0664 /* PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
+		72D8558D23474B5F000C0664 /* DatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerView.swift; sourceTree = "<group>"; };
+		72D8558F23474B6D000C0664 /* DatePickerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DatePickerView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,6 +203,8 @@
 		721170492344F91A00D0F413 /* CustomView */ = {
 			isa = PBXGroup;
 			children = (
+				72D85586234748A2000C0664 /* PickerItem */,
+				72D8558123474763000C0664 /* DatePickerItem */,
 				72D855652346E611000C0664 /* ChartView */,
 				72D8556A2346E794000C0664 /* SliderView */,
 				72D4FE8D2345F2C100055F09 /* BadgeButtonView */,
@@ -278,14 +280,28 @@
 		72D855742346F729000C0664 /* Datepicker */ = {
 			isa = PBXGroup;
 			children = (
-				72D855752346F73B000C0664 /* DatePickerViewController.swift */,
-				72D855792346F73C000C0664 /* DatePickerViewController.xib */,
-				72D8557A2346F73C000C0664 /* MyDatePickerView.swift */,
-				72D855762346F73B000C0664 /* MyDatePickerView.xib */,
-				72D855772346F73B000C0664 /* TestViewController.swift */,
-				72D855782346F73C000C0664 /* TestViewController.xib */,
+				72D85582234747C1000C0664 /* MyPickerViewController.swift */,
+				72D85583234747C1000C0664 /* MyPickerViewController.xib */,
 			);
 			path = Datepicker;
+			sourceTree = "<group>";
+		};
+		72D8558123474763000C0664 /* DatePickerItem */ = {
+			isa = PBXGroup;
+			children = (
+				72D8558D23474B5F000C0664 /* DatePickerView.swift */,
+				72D8558F23474B6D000C0664 /* DatePickerView.xib */,
+			);
+			path = DatePickerItem;
+			sourceTree = "<group>";
+		};
+		72D85586234748A2000C0664 /* PickerItem */ = {
+			isa = PBXGroup;
+			children = (
+				72D8558B23474904000C0664 /* PickerView.swift */,
+				72D85589234748C8000C0664 /* PickerView.xib */,
+			);
+			path = PickerItem;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -396,15 +412,15 @@
 				72D4FE812345952000055F09 /* SliderItem.xib in Resources */,
 				7202230F2346513800718A43 /* BadgetItem.xib in Resources */,
 				72D855692346E67A000C0664 /* ChartView.xib in Resources */,
-				72D8557E2346F73C000C0664 /* TestViewController.xib in Resources */,
 				721170442344F7C000D0F413 /* MainViewController.xib in Resources */,
 				72D4FE8C2345D62300055F09 /* AdvanceSliderViewController.xib in Resources */,
-				72D8557C2346F73C000C0664 /* MyDatePickerView.xib in Resources */,
+				72D85585234747C1000C0664 /* MyPickerViewController.xib in Resources */,
 				72D4FE9A2346055F00055F09 /* MyBadgeViewController.xib in Resources */,
+				72D8559023474B6D000C0664 /* DatePickerView.xib in Resources */,
 				72D855702346E7F3000C0664 /* MyChartViewController.xib in Resources */,
 				721170192344F78700D0F413 /* Assets.xcassets in Resources */,
+				72D8558A234748C8000C0664 /* PickerView.xib in Resources */,
 				721170482344F88500D0F413 /* MySliderViewController.xib in Resources */,
-				72D8557F2346F73C000C0664 /* DatePickerViewController.xib in Resources */,
 				7211705723450B8A00D0F413 /* DegreeItem.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -432,19 +448,19 @@
 			files = (
 				7202230D2346513200718A43 /* BadgetItem.swift in Sources */,
 				721170432344F7C000D0F413 /* MainViewController.swift in Sources */,
-				72D8557B2346F73C000C0664 /* DatePickerViewController.swift in Sources */,
 				72D4FE992346055F00055F09 /* MyBadgeViewController.swift in Sources */,
 				721170532345041F00D0F413 /* DegreeItem.swift in Sources */,
 				72D4FE8B2345D62300055F09 /* AdvanceSliderViewController.swift in Sources */,
 				72D8556F2346E7F3000C0664 /* MyChartViewController.swift in Sources */,
+				72D8558E23474B5F000C0664 /* DatePickerView.swift in Sources */,
 				721170102344F78500D0F413 /* AppDelegate.swift in Sources */,
 				72D855732346E934000C0664 /* BarChart.swift in Sources */,
+				72D8558C23474904000C0664 /* PickerView.swift in Sources */,
 				721170122344F78500D0F413 /* SceneDelegate.swift in Sources */,
-				72D8557D2346F73C000C0664 /* TestViewController.swift in Sources */,
 				72D855672346E63D000C0664 /* ChartView.swift in Sources */,
+				72D85584234747C1000C0664 /* MyPickerViewController.swift in Sources */,
 				72D4FE832345A4FB00055F09 /* ParentView.swift in Sources */,
 				721170472344F88500D0F413 /* MySliderViewController.swift in Sources */,
-				72D855802346F73C000C0664 /* MyDatePickerView.swift in Sources */,
 				72D4FE7F2345951400055F09 /* SliderItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
