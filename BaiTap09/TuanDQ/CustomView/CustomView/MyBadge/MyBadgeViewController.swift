@@ -20,8 +20,8 @@ class MyBadgeViewController: UIViewController {
         // Do any additional setup after loading the view.
         title = "MySliderViewController"
         
-        loadNibToView(view: emailButton, color: .blue, title: "Email", numberOfNotification: 10, tag: 1, localtion: 1)
-        loadNibToView(view: friendsButton, color: .green, title: "Friends", numberOfNotification: 2, tag: 2, localtion: 2)
+        loadNibToView(view: emailButton, color: .blue, title: "Email", numberOfNotification: 10, tag: 1, localtion: 7)
+        loadNibToView(view: friendsButton, color: .green, title: "Friends", numberOfNotification: 2, tag: 2, localtion: 8)
         loadNibToView(view: photosButton, color: .orange, title: "Photos", numberOfNotification: 3, tag: 3, localtion: 3)
     }
 

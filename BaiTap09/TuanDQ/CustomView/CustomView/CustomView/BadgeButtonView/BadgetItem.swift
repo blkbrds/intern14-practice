@@ -29,37 +29,48 @@ class BadgetItem: ParentView {
         super.awakeFromNib()
     }
     
+    /**
+     * Auto change size - Supported by Tuan Mai.
+     */
     override func layoutMarginsDidChange() {
         super.layoutMarginsDidChange()
-        print(bounds)
-        badgetTypeButton.layer.cornerRadius = 20
+        badgetTypeButton.layer.cornerRadius = 15
         badgetTypeButton.layer.masksToBounds = true
-        badgetNumberLabel.layer.cornerRadius = 20
+        badgetNumberLabel.layer.cornerRadius = 15
         badgetNumberLabel.layer.masksToBounds = true
 
         switch currentPosition {
-        case 1:
-            badgetTypeButton.frame = CGRect(x: 0, y: bounds.size.height / 4, width: bounds.width, height: bounds.size.height - bounds.size.height / 4)
+        case 1: // Top left
+            badgetTypeButton.frame = CGRect(x: 0, y: bounds.size.height / 4, width: bounds.width, height: bounds.size.height * 3 / 4)
             badgetNumberLabel.frame = CGRect(x: 0 / 2, y: badgetTypeButton.frame.origin.y - bounds.height / 8, width: bounds.height / 2, height: bounds.height / 4)
-        case 2:
-            badgetTypeButton.frame = CGRect(x: 0, y: bounds.size.height / 4, width: bounds.width, height: bounds.size.height - bounds.size.height / 4)
+        case 2: // Top center
+            badgetTypeButton.frame = CGRect(x: 0, y: bounds.size.height / 4, width: bounds.width, height: bounds.size.height * 3 / 4)
             badgetNumberLabel.frame = CGRect(x: bounds.width / 2 - bounds.height / 8, y: badgetTypeButton.frame.origin.y - bounds.height / 8, width: bounds.height / 4, height: bounds.height / 4)
             badgetNumberLabel.layer.cornerRadius = badgetNumberLabel.frame.width / 2
-        case 3:
-            badgetTypeButton.frame = CGRect(x: 0, y: bounds.size.height / 4, width: bounds.width, height: bounds.size.height - bounds.size.height / 4)
+        case 3: // Top right
+            badgetTypeButton.frame = CGRect(x: 0, y: bounds.size.height / 4, width: bounds.width, height: bounds.size.height * 3 / 4)
             badgetNumberLabel.frame = CGRect(x: bounds.width - bounds.height / 2, y: badgetTypeButton.frame.origin.y - bounds.height / 8, width: bounds.height / 2, height: bounds.height / 4)
-        case 4:
-            badgetTypeButton.frame = CGRect(x: 0, y: 0, width: bounds.width, height: bounds.size.height - bounds.size.height / 4)
+        case 4: // Bot right
+            badgetTypeButton.frame = CGRect(x: 0, y: 0, width: bounds.width, height: bounds.size.height * 3 / 4)
             badgetNumberLabel.frame = CGRect(x: bounds.width - bounds.height / 2, y: badgetTypeButton.frame.height - bounds.height / 8, width: bounds.height / 2, height: bounds.height / 4)
-        case 5:
-            badgetTypeButton.frame = CGRect(x: 0, y: 0, width: bounds.width, height: bounds.size.height - bounds.size.height / 4)
+        case 5: // Bot center
+            badgetTypeButton.frame = CGRect(x: 0, y: 0, width: bounds.width, height: bounds.size.height * 3 / 4)
             badgetNumberLabel.frame = CGRect(x: bounds.width / 2 - bounds.height / 8, y: badgetTypeButton.frame.height - bounds.height / 8, width: bounds.height / 4, height: bounds.height / 4)
             badgetNumberLabel.layer.cornerRadius = badgetNumberLabel.frame.width / 2
-        case 6:
-            badgetTypeButton.frame = CGRect(x: 0, y: 0, width: bounds.width, height: bounds.size.height - bounds.size.height / 4)
+        case 6: // Bot left
+            badgetTypeButton.frame = CGRect(x: 0, y: 0, width: bounds.width, height: bounds.size.height * 3 / 4)
             badgetNumberLabel.frame = CGRect(x: 0, y: badgetTypeButton.frame.height - bounds.height / 8, width: bounds.height / 2, height: bounds.height / 4)
+        case 7: // Midle left
+            badgetTypeButton.frame = CGRect(x: 0, y: bounds.size.height / 8, width: bounds.width, height: bounds.size.height * 3 / 4)
+            badgetNumberLabel.frame = CGRect(x: badgetTypeButton.frame.origin.x - bounds.height / 8, y: badgetTypeButton.frame.height / 2 - bounds.height / 16, width: bounds.height / 4, height: bounds.height / 4)
+            badgetNumberLabel.layer.cornerRadius = badgetNumberLabel.frame.width / 2
+        case 8: // Midle right
+            badgetTypeButton.frame = CGRect(x: 0, y: bounds.size.height / 8, width: bounds.width, height: bounds.size.height * 3 / 4)
+            badgetNumberLabel.frame = CGRect(x: badgetTypeButton.frame.width - bounds.height / 8, y: badgetTypeButton.frame.height / 2 - bounds.height / 16, width: bounds.height / 4, height: bounds.height / 4)
+            badgetNumberLabel.layer.cornerRadius = badgetNumberLabel.frame.width / 2
         default:
-            badgetNumberLabel.frame = CGRect(x: bounds.width - bounds.height / 2, y: badgetTypeButton.frame.origin.y - bounds.height / 8, width: bounds.height / 2, height: bounds.height / 4)
+            badgetTypeButton.frame = CGRect(x: 0, y: 0, width: bounds.width, height: bounds.size.height * 3 / 4)
+            badgetNumberLabel.frame = CGRect(x: bounds.width - bounds.height / 2, y: badgetTypeButton.frame.height - bounds.height / 8, width: bounds.height / 2, height: bounds.height / 4)
         }
     }
     

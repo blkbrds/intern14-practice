@@ -29,7 +29,8 @@ class AdvanceSliderViewController: UIViewController {
     
     private func loadNibToView(view itemView: UIView, text uiTextField: UITextField, color minColor: UIColor, start startValue: Float, tag viewTag: Int) {
         guard let nib = Bundle.main.loadNibNamed("SliderItem", owner: self, options: nil)?[0] as? SliderItem else { return }
-        print(itemView.bounds.maxX)
+
+        // Event change size with current bounds. - Understanding it is.
         nib.layoutMargins = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         nib.setting(color: minColor, start: startValue)
         nib.tag = viewTag
@@ -43,6 +44,9 @@ class AdvanceSliderViewController: UIViewController {
     }
 }
 
+/**
+ * Get Delegate events handle.
+ */
 extension AdvanceSliderViewController: SliderItemDelegate {
     func getValueChange(view: SliderItem, value: String) {
         switch view.tag {

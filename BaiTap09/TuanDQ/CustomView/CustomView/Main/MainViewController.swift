@@ -25,4 +25,12 @@ class MainViewController: UIViewController {
     @IBAction func badgeButtonClick(_ sender: UIButton) {
         navigationController?.pushViewController(MyBadgeViewController(), animated: true)
     }
+    
+    @IBAction func datePickerButtonClick(_ sender: UIButton) {
+        navigationController?.pushViewController(DatePickerViewController(), animated: true)
+    }
+    
+    @IBAction func chartViewButtonClick(_ sender: UIButton) {
+        navigationController?.pushViewController(MyChartViewController(), animated: true)
+    }
 }
