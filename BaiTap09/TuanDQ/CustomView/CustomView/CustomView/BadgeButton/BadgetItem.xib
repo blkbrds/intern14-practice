@@ -12,8 +12,9 @@
             <rect key="frame" x="0.0" y="0.0" width="86" height="56"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ffK-7w-ZVJ">
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ffK-7w-ZVJ">
                     <rect key="frame" x="0.0" y="16" width="86" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                     <state key="normal" title="Message">
@@ -33,11 +34,6 @@
                 </label>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-            <constraints>
-                <constraint firstItem="ffK-7w-ZVJ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="2lS-qd-GHQ"/>
-                <constraint firstAttribute="trailing" secondItem="ffK-7w-ZVJ" secondAttribute="trailing" id="Alm-OF-Rxs"/>
-                <constraint firstAttribute="bottom" secondItem="ffK-7w-ZVJ" secondAttribute="bottom" id="OJ5-z3-qCX"/>
-            </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="badgetNumberLabel" destination="zqT-Db-0Tn" id="NYR-8Y-FWu"/>

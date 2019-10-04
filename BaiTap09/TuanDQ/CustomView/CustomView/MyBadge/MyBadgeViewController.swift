@@ -20,16 +20,17 @@ class MyBadgeViewController: UIViewController {
         // Do any additional setup after loading the view.
         title = "MySliderViewController"
         
-        loadNibToView(view: emailButton, color: .blue, title: "Email", numberOfNotification: 10, tag: 1)
-        loadNibToView(view: friendsButton, color: .green, title: "Friends", numberOfNotification: 2, tag: 2)
-        loadNibToView(view: photosButton, color: .orange, title: "Photos", numberOfNotification: 0, tag: 3)
+        loadNibToView(view: emailButton, color: .blue, title: "Email", numberOfNotification: 10, tag: 1, localtion: 1)
+        loadNibToView(view: friendsButton, color: .green, title: "Friends", numberOfNotification: 2, tag: 2, localtion: 2)
+        loadNibToView(view: photosButton, color: .orange, title: "Photos", numberOfNotification: 3, tag: 3, localtion: 3)
     }
 
 
-    private func loadNibToView(view itemView: UIView, color badgetColor: UIColor, title: String, numberOfNotification: Int, tag viewTag: Int) {
+    private func loadNibToView(view itemView: UIView, color badgetColor: UIColor, title: String, numberOfNotification: Int, tag viewTag: Int, localtion: Int) {
         guard let nib = Bundle.main.loadNibNamed("BadgetItem", owner: self, options: nil)?[0] as? BadgetItem else { return }
         nib.frame = itemView.bounds
-        nib.setting(color: badgetColor, type: title, number: numberOfNotification)
+        nib.setting(color: badgetColor, type: title, number: numberOfNotification, location: localtion)
+        nib.layoutMargins = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         nib.tag = viewTag
         nib.delegate = self
         itemView.addSubview(nib)
