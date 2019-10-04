@@ -72,24 +72,27 @@ class ChartView: ParentView {
         let chartWidth = measurementView.frame.size.width
         let chartHeight = barchartView.frame.size.height
         
+        // Draw the first label.
         var locateLeft = CGRect(x: leftX, y: chartHeight, width: constantW, height: constantH)
-        measurementView.addSubview(
-            createLabel(position: locateLeft, content: "0", orient: .left)
-        )
+        measurementView.addSubview(createLabel(position: locateLeft, content: "0", orient: .left))
         var locateRight = CGRect(x: chartWidth - constantW, y: chartHeight, width: constantW, height: constantH)
-        measurementView.addSubview(
-            createLabel(position: locateRight, content: "0", orient: .right)
-        )
+        measurementView.addSubview(createLabel(position: locateRight, content: "0", orient: .right))
         
         
         
+        
+        // Draw other label.
+        let margin = (Int(barchartView.frame.size.width) - (bars.count * 10)) / bars.count
         let partValue = getPartHeight()
-        let partHeight = Float(chartHeight) / Float(partValue)
-        print("Part value: \(partValue)")
-        print("Part height: \(partHeight)")
-        
-        for index in 1...4 {
-            locateLeft = CGRect(x: leftX, y: (Float(chartHeight) - Float(index * 2) * partHeight), width: constantW, height: constantH)
+        let partHeight = (Float(chartHeight) - Float(margin)) / 11
+        var yPosition: Float = 0.0
+        for index in 1...5 {
+            yPosition = Float(chartHeight) - (Float(index) * 2.0 * partHeight)
+            locateLeft = CGRect(x: leftX, y: CGFloat(yPosition), width: constantW, height: constantH)
+            measurementView.addSubview(
+                createLabel(position: locateLeft, content: String(index * 2 * partValue), orient: .left))
+            locateRight = CGRect(x: chartWidth - constantW, y: CGFloat(yPosition), width: constantW, height: constantH)
+            measurementView.addSubview(createLabel(position: locateRight, content: "0", orient: .right))
         }
     }
     
@@ -103,7 +106,7 @@ class ChartView: ParentView {
                 max = item.value
             }
         }
-        
+
         let number = Int(max / 10)
         if Float(number * 10) < max {
             return number
@@ -118,5 +121,18 @@ class ChartView: ParentView {
         firstItem.textAlignment = orient
         firstItem.font = UIFont.boldSystemFont(ofSize: 15)
         return firstItem
+    }
+    
+    func drawLine(from fromPoint: CGPoint, to toPoint: CGPoint) {
+        let context = UIGraphicsGetCurrentContext()
+        context?.setFillColor(UIColor.black.cgColor)
+        context?.move(to: fromPoint)
+        context?.addLine(to: toPoint)
+    }
+    
+    override func draw(_ rect: CGRect) {
+        super.draw(rect)
+        
+        drawLine(from: CGPoint(x: 100.0, y: 100.0), to: CGPoint(x: 150.0, y: 200.0))
     }
 }
