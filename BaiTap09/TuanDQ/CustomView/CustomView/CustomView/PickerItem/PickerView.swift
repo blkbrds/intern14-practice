@@ -8,12 +8,17 @@
 
 import UIKit
 
+protocol PickerViewDelegate: class {
+    func pickerView(view: PickerView, component: Int, value: String)
+}
+
 class PickerView: ParentView {
     
-    let data: [String] = ["1","2","3"]
+    let data: [String] = ["Inche", "Centimeter", "foot", "meter"]
 
     @IBOutlet weak var fromPicker: UIPickerView!
     @IBOutlet weak var toPicker: UIPickerView!
+    weak var delegate: PickerViewDelegate?
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -25,32 +30,26 @@ class PickerView: ParentView {
         fromPicker.dataSource = self
         fromPicker.delegate = self
     }
+    @IBAction func convertCalculate(_ sender: UIButton) {
+//        delegate?.getValueChange(view: self, component: 1, value: "data")
+    }
 }
 
 extension PickerView: UIPickerViewDataSource {
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        return 3
+        return 2
      }
+
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return data.count
      }
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        if component == 0 {
-            return data[row]
-        }
-        if component == 1 {
-            return data[row]
-        }
-        if component == 2 {
-            return data[row]
-        }
-        return nil
-      }
-    
+        return data[row]
+    }
 }
 
 extension PickerView: UIPickerViewDelegate {
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        print("-->\(row)")
-     }
+        delegate?.pickerView(view: self, component: 0, value: "12")
+    }
 }

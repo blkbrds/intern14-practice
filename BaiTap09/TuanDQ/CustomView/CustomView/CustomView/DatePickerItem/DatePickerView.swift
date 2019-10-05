@@ -10,4 +10,15 @@ import UIKit
 
 class DatePickerView: ParentView {
 
+    @IBOutlet weak var datePickerItem: UIPickerView!
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+    }
+
+    override func layoutMarginsDidChange() {
+        super.layoutMarginsDidChange()
+        datePickerItem.dataSource = self
+        datePickerItem.delegate = self
+    }
 }

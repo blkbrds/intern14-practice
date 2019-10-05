@@ -9,25 +9,32 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PickerView" customModule="CustomView" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="326" height="154"/>
+            <rect key="frame" x="0.0" y="0.0" width="326" height="234"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1ga-o1-IJJ">
                     <rect key="frame" x="0.0" y="0.0" width="326" height="162"/>
                 </pickerView>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jMK-Cn-25F">
+                    <rect key="frame" x="67" y="170" width="193" height="64"/>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="convertCalculate:" destination="iN0-l3-epB" eventType="touchUpInside" id="Geg-60-nti"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="1ga-o1-IJJ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Qrt-rx-MSf"/>
-                <constraint firstItem="1ga-o1-IJJ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="l6F-1F-zDV"/>
-                <constraint firstAttribute="trailing" secondItem="1ga-o1-IJJ" secondAttribute="trailing" id="meu-H1-sC4"/>
-                <constraint firstAttribute="bottom" secondItem="1ga-o1-IJJ" secondAttribute="bottom" constant="-8" id="thK-RJ-CMw"/>
+                <constraint firstAttribute="bottom" secondItem="jMK-Cn-25F" secondAttribute="bottom" id="1fx-jx-4UB"/>
+                <constraint firstAttribute="trailing" secondItem="1ga-o1-IJJ" secondAttribute="trailing" id="2H1-nU-d2F"/>
+                <constraint firstItem="1ga-o1-IJJ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="tDg-2N-OvX"/>
+                <constraint firstItem="1ga-o1-IJJ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="zGp-DG-Ehf"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="fromPicker" destination="1ga-o1-IJJ" id="JrE-GE-Gsk"/>
             </connections>
-            <point key="canvasLocation" x="68.115942028985515" y="-121.875"/>
+            <point key="canvasLocation" x="68.115942028985515" y="-95.089285714285708"/>
         </view>
     </objects>
 </document>
