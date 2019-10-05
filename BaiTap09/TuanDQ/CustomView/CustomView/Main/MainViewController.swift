@@ -27,7 +27,7 @@ class MainViewController: UIViewController {
     }
     
     @IBAction func datePickerButtonClick(_ sender: UIButton) {
-        navigationController?.pushViewController(MyPickerViewController(), animated: true)
+        navigationController?.pushViewController(AdvancePickerViewController(), animated: true)
     }
     
     @IBAction func chartViewButtonClick(_ sender: UIButton) {

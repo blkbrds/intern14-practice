@@ -9,22 +9,31 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DatePickerView" customModule="CustomView" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="414" height="177"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ConvertPickerItem" customModule="CustomView" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="361"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ssO-Sg-6sy">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="177"/>
+                <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UGR-MM-FXE">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="273"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                 </pickerView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i6D-cL-k1y">
+                    <rect key="frame" x="145" y="281" width="125" height="60"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="convertCalculate:" destination="iN0-l3-epB" eventType="touchUpInside" id="EAv-bT-T5F"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
-                <outlet property="datePickerItem" destination="ssO-Sg-6sy" id="z5H-Lg-rqG"/>
+                <outlet property="convertButton" destination="i6D-cL-k1y" id="qaP-aA-YrY"/>
+                <outlet property="mainPicker" destination="UGR-MM-FXE" id="cse-1a-5X7"/>
             </connections>
-            <point key="canvasLocation" x="131.8840579710145" y="-114.17410714285714"/>
+            <point key="canvasLocation" x="131.8840579710145" y="-47.209821428571423"/>
         </view>
     </objects>
 </document>
