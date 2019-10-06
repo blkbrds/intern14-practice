@@ -10,14 +10,16 @@ import UIKit
 
 class BusinessController {
     
-    private static var users: [UserModel] = []
-    private static var userDomain: [UserInfo] = []
-    private static var personDomain: [PersonInfo] = []
+    static let share = BusinessController()
+    private var users: [UserModel] = []
+    private var userDomain: [UserInfo] = []
+    private var personDomain: [PersonInfo] = []
     
+    private init() { }
     /**
      * Initial data.
      */
-    public static func loadDataFromPlistFile(name plistName: String) {
+    func loadDataFromPlistFile(name plistName: String) {
         
         var user: UserModel
         clearOldData()
@@ -43,7 +45,7 @@ class BusinessController {
         }
     }
     
-    private static func clearOldData() {
+    func clearOldData() {
         users = []
         userDomain = []
         personDomain = []
@@ -51,9 +53,9 @@ class BusinessController {
     /**
      * Check login information.
      */
-    public static func checkLogin(username: String, password: String) -> (String?, String?) {
+    func checkLogin(username: String, password: String) -> (String?, String?) {
         
-        guard validateUserAndPasswordFormat(username: username, password: password) else {
+        if !validateUserAndPasswordFormat(username: username, password: password) {
             return ("Username and password invalid format.", nil)
         }
         
@@ -68,7 +70,7 @@ class BusinessController {
     /**
      * Get current user based on Standard user default.
      */
-    public static func getCurrentUser() -> UserInfo? {
+    func getCurrentUser() -> UserInfo? {
         let userId = UserDefaults.standard.object(forKey: CommonConstant.USERID) as! String
         for user in userDomain {
             if user.userId == userId {
@@ -81,7 +83,7 @@ class BusinessController {
     /**
      * Update user.
      */
-    public static func updateUser(updateUser: UserInfo) -> Bool {
+    func updateUser(updateUser: UserInfo) -> Bool {
         for index in 0..<userDomain.count {
             if userDomain[index].userId == updateUser.userId {
                 userDomain[index] = updateUser
@@ -94,14 +96,14 @@ class BusinessController {
     /**
      * Get list person.
      */
-    public static func getPersonsInfo() -> [PersonInfo] {
+    func getPersonsInfo() -> [PersonInfo] {
         return personDomain
     }
     
     /**
      * Get person information by ID
      */
-    public static func getPersonById(id userId: String) -> PersonInfo? {
+    func getPersonById(id userId: String) -> PersonInfo? {
         for person in personDomain {
             if person.userId == userId {
                 return person
@@ -113,7 +115,7 @@ class BusinessController {
     /**
      * Update person infor.
      */
-    public static func updatePerson(person updatePerson: PersonInfo) -> Bool {
+    func updatePerson(person updatePerson: PersonInfo) -> Bool {
         for index in 0..<personDomain.count {
             if personDomain[index].userId == updatePerson.userId {
                 personDomain[index] = updatePerson
@@ -126,7 +128,7 @@ class BusinessController {
     /**
      * Validate format and character type.
      */
-    private static func validateUserAndPasswordFormat(username: String, password: String) -> Bool {
+    func validateUserAndPasswordFormat(username: String, password: String) -> Bool {
         guard username.count <= 32 && username.count >= 6 else {
             return false
         }

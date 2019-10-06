@@ -25,7 +25,7 @@ class PersonDetailViewController: UIViewController {
         guard let userId = UserDefaults.standard.object(forKey: CommonConstant.PROFILE_ID) else {
             return
         }
-        guard let person = BusinessController.getPersonById(id: userId as! String) else {
+        guard let person = BusinessController.share.getPersonById(id: userId as! String) else {
             return
         }
         avatarImageView.image = person.personImage
@@ -45,13 +45,13 @@ class PersonDetailViewController: UIViewController {
             return
         }
         
-        guard let currentPerson = BusinessController.getPersonById(id: userId as! String) else {
+        guard let currentPerson = BusinessController.share.getPersonById(id: userId as! String) else {
             messageTextField.text = "Can't get person information."
             return
         }
         let updatePerson = PersonInfo(userId: currentPerson.userId, personImage: currentPerson.personImage, personName: personNameTextField.text!)
         
-        if !BusinessController.updatePerson(person: updatePerson) {
+        if !BusinessController.share.updatePerson(person: updatePerson) {
             messageTextField.text = "Can't update current user."
             return
         }

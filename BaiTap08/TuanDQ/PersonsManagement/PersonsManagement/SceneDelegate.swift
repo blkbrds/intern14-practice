@@ -20,7 +20,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let myScene = (scene as? UIWindowScene) else { return }
         
         // Load data from Plist and add to List data.
-        BusinessController.loadDataFromPlistFile(name: CommonConstant.PLIST_NAME)
+        BusinessController.share.loadDataFromPlistFile(name: CommonConstant.PLIST_NAME)
         
         let windows = UIWindow(windowScene: myScene)
         let navigation = UINavigationController(rootViewController: LoginViewController())
