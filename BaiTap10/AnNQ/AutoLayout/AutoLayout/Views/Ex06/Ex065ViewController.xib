@@ -30,7 +30,7 @@
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8vx-eV-Fne">
-                    <rect key="frame" x="227.66666666666666" y="423" width="34.666666666666657" height="50"/>
+                    <rect key="frame" x="227.66666666666663" y="423" width="34.666666666666657" height="50"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="E8Y-Eg-RDa"/>
                     </constraints>
@@ -42,7 +42,7 @@
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EZg-ME-EgH">
-                    <rect key="frame" x="379.66666666666669" y="423" width="34.333333333333314" height="50"/>
+                    <rect key="frame" x="379.66666666666674" y="423" width="34.333333333333314" height="50"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="RS7-f1-hr0"/>
                     </constraints>
@@ -55,28 +55,28 @@
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BqR-T3-1jC">
                     <rect key="frame" x="34.666666666666657" y="427.33333333333331" width="41.333333333333343" height="41.333333333333314"/>
-                    <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="BqR-T3-1jC" secondAttribute="height" multiplier="1:1" id="fVJ-Ko-S90"/>
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aYc-py-Xsh">
-                    <rect key="frame" x="110.33333333333333" y="427.33333333333331" width="41.333333333333329" height="41.333333333333314"/>
-                    <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <rect key="frame" x="110.33333333333331" y="427.33333333333331" width="41.333333333333329" height="41.333333333333314"/>
+                    <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="aYc-py-Xsh" secondAttribute="height" multiplier="1:1" id="nyE-u6-N9V"/>
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7DM-Zj-Wng">
-                    <rect key="frame" x="186.33333333333334" y="427.33333333333331" width="41.333333333333343" height="41.333333333333314"/>
-                    <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <rect key="frame" x="186.33333333333337" y="427.33333333333331" width="41.333333333333343" height="41.333333333333314"/>
+                    <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="7DM-Zj-Wng" secondAttribute="height" multiplier="1:1" id="6p5-kA-kHu"/>
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GO3-0n-Qrn">
                     <rect key="frame" x="262.33333333333331" y="427.33333333333331" width="41.333333333333314" height="41.333333333333314"/>
-                    <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="GO3-0n-Qrn" secondAttribute="height" multiplier="1:1" id="WeK-LR-kDs"/>
                     </constraints>
