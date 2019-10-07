@@ -7,14 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7203F350234ACBD7006ED2DE /* ApplicationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7203F34E234ACBD7006ED2DE /* ApplicationViewController.swift */; };
+		7203F351234ACBD7006ED2DE /* ApplicationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7203F34F234ACBD7006ED2DE /* ApplicationViewController.xib */; };
+		7203F355234ACC8A006ED2DE /* PracticeOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7203F353234ACC8A006ED2DE /* PracticeOneViewController.swift */; };
+		7203F356234ACC8A006ED2DE /* PracticeOneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7203F354234ACC8A006ED2DE /* PracticeOneViewController.xib */; };
+		7203F35A234ACFF3006ED2DE /* PracticeTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7203F358234ACFF3006ED2DE /* PracticeTwoViewController.swift */; };
+		7203F35B234ACFF3006ED2DE /* PracticeTwoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7203F359234ACFF3006ED2DE /* PracticeTwoViewController.xib */; };
+		7203F35F234AD114006ED2DE /* PracticeThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7203F35D234AD114006ED2DE /* PracticeThreeViewController.swift */; };
+		7203F360234AD114006ED2DE /* PracticeThreeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7203F35E234AD114006ED2DE /* PracticeThreeViewController.xib */; };
 		72AE92D72349914400C00F18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AE92D62349914400C00F18 /* AppDelegate.swift */; };
 		72AE92D92349914400C00F18 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AE92D82349914400C00F18 /* SceneDelegate.swift */; };
 		72AE92E02349914500C00F18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72AE92DF2349914500C00F18 /* Assets.xcassets */; };
 		72AE92E32349914500C00F18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72AE92E12349914500C00F18 /* LaunchScreen.storyboard */; };
 		72AE92EE2349914500C00F18 /* AutoLayoutsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AE92ED2349914500C00F18 /* AutoLayoutsTests.swift */; };
 		72AE92F92349914500C00F18 /* AutoLayoutsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AE92F82349914500C00F18 /* AutoLayoutsUITests.swift */; };
-		72AE93092349965E00C00F18 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AE93072349965E00C00F18 /* MainViewController.swift */; };
-		72AE930A2349965E00C00F18 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72AE93082349965E00C00F18 /* MainViewController.xib */; settings = {ASSET_TAGS = (1, ); }; };
 		72AE930E2349975100C00F18 /* CenterSquareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AE930C2349975100C00F18 /* CenterSquareViewController.swift */; };
 		72AE930F2349975100C00F18 /* CenterSquareViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72AE930D2349975100C00F18 /* CenterSquareViewController.xib */; };
 		72AE93172349D8BD00C00F18 /* CenterSquareAutoSizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AE93152349D8BD00C00F18 /* CenterSquareAutoSizeViewController.swift */; };
@@ -47,6 +53,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7203F34E234ACBD7006ED2DE /* ApplicationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationViewController.swift; sourceTree = "<group>"; };
+		7203F34F234ACBD7006ED2DE /* ApplicationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ApplicationViewController.xib; sourceTree = "<group>"; };
+		7203F353234ACC8A006ED2DE /* PracticeOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeOneViewController.swift; sourceTree = "<group>"; };
+		7203F354234ACC8A006ED2DE /* PracticeOneViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PracticeOneViewController.xib; sourceTree = "<group>"; };
+		7203F358234ACFF3006ED2DE /* PracticeTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeTwoViewController.swift; sourceTree = "<group>"; };
+		7203F359234ACFF3006ED2DE /* PracticeTwoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PracticeTwoViewController.xib; sourceTree = "<group>"; };
+		7203F35D234AD114006ED2DE /* PracticeThreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeThreeViewController.swift; sourceTree = "<group>"; };
+		7203F35E234AD114006ED2DE /* PracticeThreeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PracticeThreeViewController.xib; sourceTree = "<group>"; };
 		72AE92D32349914400C00F18 /* AutoLayouts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoLayouts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72AE92D62349914400C00F18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		72AE92D82349914400C00F18 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,8 +73,6 @@
 		72AE92F42349914500C00F18 /* AutoLayoutsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutoLayoutsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		72AE92F82349914500C00F18 /* AutoLayoutsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoLayoutsUITests.swift; sourceTree = "<group>"; };
 		72AE92FA2349914500C00F18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		72AE93072349965E00C00F18 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		72AE93082349965E00C00F18 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		72AE930C2349975100C00F18 /* CenterSquareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterSquareViewController.swift; sourceTree = "<group>"; };
 		72AE930D2349975100C00F18 /* CenterSquareViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CenterSquareViewController.xib; sourceTree = "<group>"; };
 		72AE93152349D8BD00C00F18 /* CenterSquareAutoSizeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterSquareAutoSizeViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +112,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7203F352234ACC6C006ED2DE /* PracticeOne */ = {
+			isa = PBXGroup;
+			children = (
+				72AE931023499A6400C00F18 /* CenterSquareAutosize */,
+				72AE930B2349973C00C00F18 /* CenterSquare */,
+				7203F353234ACC8A006ED2DE /* PracticeOneViewController.swift */,
+				7203F354234ACC8A006ED2DE /* PracticeOneViewController.xib */,
+			);
+			path = PracticeOne;
+			sourceTree = "<group>";
+		};
+		7203F357234ACFCE006ED2DE /* PracticeTwo */ = {
+			isa = PBXGroup;
+			children = (
+				72AE931E2349DB4B00C00F18 /* RectangleAutoSize */,
+				72AE93192349DADF00C00F18 /* RectangleFixSize */,
+				7203F358234ACFF3006ED2DE /* PracticeTwoViewController.swift */,
+				7203F359234ACFF3006ED2DE /* PracticeTwoViewController.xib */,
+			);
+			path = PracticeTwo;
+			sourceTree = "<group>";
+		};
+		7203F35C234AD0E1006ED2DE /* PracticeThree */ = {
+			isa = PBXGroup;
+			children = (
+				72AE93282349E03600C00F18 /* SquaresAlignCenterAutoSize */,
+				72AE93232349DE2F00C00F18 /* SquaresAlignCenter */,
+				7203F35D234AD114006ED2DE /* PracticeThreeViewController.swift */,
+				7203F35E234AD114006ED2DE /* PracticeThreeViewController.xib */,
+			);
+			path = PracticeThree;
+			sourceTree = "<group>";
+		};
 		72AE92CA2349914400C00F18 = {
 			isa = PBXGroup;
 			children = (
@@ -123,12 +168,9 @@
 		72AE92D52349914400C00F18 /* AutoLayouts */ = {
 			isa = PBXGroup;
 			children = (
-				72AE93282349E03600C00F18 /* SquaresAlignCenterAutoSize */,
-				72AE93232349DE2F00C00F18 /* SquaresAlignCenter */,
-				72AE931E2349DB4B00C00F18 /* RectangleAutoSize */,
-				72AE93192349DADF00C00F18 /* RectangleFixSize */,
-				72AE931023499A6400C00F18 /* CenterSquareAutosize */,
-				72AE930B2349973C00C00F18 /* CenterSquare */,
+				7203F35C234AD0E1006ED2DE /* PracticeThree */,
+				7203F357234ACFCE006ED2DE /* PracticeTwo */,
+				7203F352234ACC6C006ED2DE /* PracticeOne */,
 				72AE93062349964B00C00F18 /* Main */,
 				72AE92D62349914400C00F18 /* AppDelegate.swift */,
 				72AE92D82349914400C00F18 /* SceneDelegate.swift */,
@@ -160,8 +202,8 @@
 		72AE93062349964B00C00F18 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				72AE93072349965E00C00F18 /* MainViewController.swift */,
-				72AE93082349965E00C00F18 /* MainViewController.xib */,
+				7203F34E234ACBD7006ED2DE /* ApplicationViewController.swift */,
+				7203F34F234ACBD7006ED2DE /* ApplicationViewController.xib */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -328,13 +370,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				72AE93182349D8BD00C00F18 /* CenterSquareAutoSizeViewController.xib in Resources */,
+				7203F356234ACC8A006ED2DE /* PracticeOneViewController.xib in Resources */,
+				7203F360234AD114006ED2DE /* PracticeThreeViewController.xib in Resources */,
 				72AE931D2349DB0100C00F18 /* RectangleFixSizeViewController.xib in Resources */,
 				72AE93222349DB5E00C00F18 /* RectangleAutoSizeViewController.xib in Resources */,
+				7203F351234ACBD7006ED2DE /* ApplicationViewController.xib in Resources */,
 				72AE932C2349E05900C00F18 /* SquaresAlignCenterAutoSizeViewController.xib in Resources */,
 				72AE930F2349975100C00F18 /* CenterSquareViewController.xib in Resources */,
+				7203F35B234ACFF3006ED2DE /* PracticeTwoViewController.xib in Resources */,
 				72AE93272349DE4400C00F18 /* SquaresAlignCenterViewController.xib in Resources */,
 				72AE92E32349914500C00F18 /* LaunchScreen.storyboard in Resources */,
-				72AE930A2349965E00C00F18 /* MainViewController.xib in Resources */,
 				72AE92E02349914500C00F18 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -362,12 +407,15 @@
 			files = (
 				72AE93262349DE4400C00F18 /* SquaresAlignCenterViewController.swift in Sources */,
 				72AE93172349D8BD00C00F18 /* CenterSquareAutoSizeViewController.swift in Sources */,
+				7203F35F234AD114006ED2DE /* PracticeThreeViewController.swift in Sources */,
 				72AE932B2349E05900C00F18 /* SquaresAlignCenterAutoSizeViewController.swift in Sources */,
+				7203F35A234ACFF3006ED2DE /* PracticeTwoViewController.swift in Sources */,
 				72AE931C2349DB0100C00F18 /* RectangleFixSizeViewController.swift in Sources */,
 				72AE930E2349975100C00F18 /* CenterSquareViewController.swift in Sources */,
+				7203F350234ACBD7006ED2DE /* ApplicationViewController.swift in Sources */,
 				72AE93212349DB5E00C00F18 /* RectangleAutoSizeViewController.swift in Sources */,
-				72AE93092349965E00C00F18 /* MainViewController.swift in Sources */,
 				72AE92D72349914400C00F18 /* AppDelegate.swift in Sources */,
+				7203F355234ACC8A006ED2DE /* PracticeOneViewController.swift in Sources */,
 				72AE92D92349914400C00F18 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

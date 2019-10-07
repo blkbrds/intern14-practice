@@ -17,16 +17,19 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="0DV-E8-LIT">
-                    <rect key="frame" x="57" y="356" width="261" height="100"/>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="0DV-E8-LIT">
+                    <rect key="frame" x="57" y="360.66666666666669" width="261" height="100.66666666666669"/>
                     <subviews>
-                        <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wlV-e4-swa">
-                            <rect key="frame" x="0.0" y="0.0" width="100.66666666666667" height="100"/>
-                            <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wlV-e4-swa">
+                            <rect key="frame" x="0.0" y="0.0" width="100.66666666666667" height="100.66666666666667"/>
+                            <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="wlV-e4-swa" secondAttribute="height" multiplier="1:1" id="49Y-Jk-U72"/>
+                            </constraints>
                         </view>
-                        <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CjG-tz-2NW">
-                            <rect key="frame" x="160.66666666666666" y="0.0" width="100.33333333333334" height="100"/>
-                            <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CjG-tz-2NW">
+                            <rect key="frame" x="160.66666666666666" y="0.0" width="100.33333333333334" height="100.66666666666667"/>
+                            <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </view>
                     </subviews>
                     <constraints>
