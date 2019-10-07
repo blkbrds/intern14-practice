@@ -17,33 +17,29 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <stackView opaque="NO" contentMode="scaleToFill" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="0DV-E8-LIT">
-                    <rect key="frame" x="57" y="360.66666666666669" width="261" height="100.66666666666669"/>
-                    <subviews>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wlV-e4-swa">
-                            <rect key="frame" x="0.0" y="0.0" width="100.66666666666667" height="100.66666666666667"/>
-                            <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <constraints>
-                                <constraint firstAttribute="width" secondItem="wlV-e4-swa" secondAttribute="height" multiplier="1:1" id="49Y-Jk-U72"/>
-                            </constraints>
-                        </view>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CjG-tz-2NW">
-                            <rect key="frame" x="160.66666666666666" y="0.0" width="100.33333333333334" height="100.66666666666667"/>
-                            <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        </view>
-                    </subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wlV-e4-swa">
+                    <rect key="frame" x="231.33333333333337" y="361" width="100" height="100"/>
+                    <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
-                        <constraint firstItem="wlV-e4-swa" firstAttribute="width" secondItem="CjG-tz-2NW" secondAttribute="width" id="Agx-y7-ydY"/>
-                        <constraint firstItem="wlV-e4-swa" firstAttribute="height" secondItem="CjG-tz-2NW" secondAttribute="height" id="bCf-Md-Hza"/>
+                        <constraint firstAttribute="height" secondItem="wlV-e4-swa" secondAttribute="width" multiplier="100:100" id="sPG-TA-Ump"/>
+                        <constraint firstAttribute="width" constant="100" id="tnU-kW-Pn5"/>
                     </constraints>
-                </stackView>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CjG-tz-2NW">
+                    <rect key="frame" x="44" y="361.33333333333331" width="99.666666666666686" height="99.666666666666686"/>
+                    <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" secondItem="CjG-tz-2NW" secondAttribute="width" multiplier="100:100" id="fl7-5H-juA"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="0DV-E8-LIT" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="E8b-Ra-5Ys"/>
-                <constraint firstItem="0DV-E8-LIT" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="RQL-zJ-c1g"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="0DV-E8-LIT" secondAttribute="trailing" constant="57" id="Saq-QL-USe"/>
-                <constraint firstItem="0DV-E8-LIT" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="57" id="lOy-V8-f6h"/>
+                <constraint firstItem="CjG-tz-2NW" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="BlI-9n-ND6"/>
+                <constraint firstItem="wlV-e4-swa" firstAttribute="leading" secondItem="CjG-tz-2NW" secondAttribute="trailing" constant="87.666666666666714" id="XzL-Xs-ns9"/>
+                <constraint firstItem="wlV-e4-swa" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="aab-r3-nZb"/>
+                <constraint firstItem="wlV-e4-swa" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" multiplier="3:2" id="sHp-8x-lzh"/>
+                <constraint firstItem="CjG-tz-2NW" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" multiplier="1:2" id="xjO-Iq-ygE"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="132" y="131.52709359605913"/>

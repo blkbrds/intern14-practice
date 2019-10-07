@@ -15,6 +15,12 @@
 		7203F35B234ACFF3006ED2DE /* PracticeTwoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7203F359234ACFF3006ED2DE /* PracticeTwoViewController.xib */; };
 		7203F35F234AD114006ED2DE /* PracticeThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7203F35D234AD114006ED2DE /* PracticeThreeViewController.swift */; };
 		7203F360234AD114006ED2DE /* PracticeThreeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7203F35E234AD114006ED2DE /* PracticeThreeViewController.xib */; };
+		720F3FC2234B93E200EFE86C /* PracticeFourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720F3FC0234B93E200EFE86C /* PracticeFourViewController.swift */; };
+		720F3FC3234B93E200EFE86C /* PracticeFourViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 720F3FC1234B93E200EFE86C /* PracticeFourViewController.xib */; };
+		720F3FC7234B947100EFE86C /* AlignThreeSquareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720F3FC5234B947100EFE86C /* AlignThreeSquareViewController.swift */; };
+		720F3FC8234B947100EFE86C /* AlignThreeSquareViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 720F3FC6234B947100EFE86C /* AlignThreeSquareViewController.xib */; };
+		720F3FCC234BA45700EFE86C /* AlignThreeSquareAutosizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720F3FCA234BA45700EFE86C /* AlignThreeSquareAutosizeViewController.swift */; };
+		720F3FCD234BA45700EFE86C /* AlignThreeSquareAutosizeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 720F3FCB234BA45700EFE86C /* AlignThreeSquareAutosizeViewController.xib */; };
 		72AE92D72349914400C00F18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AE92D62349914400C00F18 /* AppDelegate.swift */; };
 		72AE92D92349914400C00F18 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AE92D82349914400C00F18 /* SceneDelegate.swift */; };
 		72AE92E02349914500C00F18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72AE92DF2349914500C00F18 /* Assets.xcassets */; };
@@ -61,6 +67,12 @@
 		7203F359234ACFF3006ED2DE /* PracticeTwoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PracticeTwoViewController.xib; sourceTree = "<group>"; };
 		7203F35D234AD114006ED2DE /* PracticeThreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeThreeViewController.swift; sourceTree = "<group>"; };
 		7203F35E234AD114006ED2DE /* PracticeThreeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PracticeThreeViewController.xib; sourceTree = "<group>"; };
+		720F3FC0234B93E200EFE86C /* PracticeFourViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeFourViewController.swift; sourceTree = "<group>"; };
+		720F3FC1234B93E200EFE86C /* PracticeFourViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PracticeFourViewController.xib; sourceTree = "<group>"; };
+		720F3FC5234B947100EFE86C /* AlignThreeSquareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlignThreeSquareViewController.swift; sourceTree = "<group>"; };
+		720F3FC6234B947100EFE86C /* AlignThreeSquareViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlignThreeSquareViewController.xib; sourceTree = "<group>"; };
+		720F3FCA234BA45700EFE86C /* AlignThreeSquareAutosizeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlignThreeSquareAutosizeViewController.swift; sourceTree = "<group>"; };
+		720F3FCB234BA45700EFE86C /* AlignThreeSquareAutosizeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlignThreeSquareAutosizeViewController.xib; sourceTree = "<group>"; };
 		72AE92D32349914400C00F18 /* AutoLayouts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoLayouts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72AE92D62349914400C00F18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		72AE92D82349914400C00F18 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -145,6 +157,35 @@
 			path = PracticeThree;
 			sourceTree = "<group>";
 		};
+		720F3FBF234B93C400EFE86C /* PracticeFour */ = {
+			isa = PBXGroup;
+			children = (
+				720F3FC9234BA44000EFE86C /* AlignThreeSquareAutosize */,
+				720F3FC4234B945500EFE86C /* AlignThreeSquare */,
+				720F3FC0234B93E200EFE86C /* PracticeFourViewController.swift */,
+				720F3FC1234B93E200EFE86C /* PracticeFourViewController.xib */,
+			);
+			path = PracticeFour;
+			sourceTree = "<group>";
+		};
+		720F3FC4234B945500EFE86C /* AlignThreeSquare */ = {
+			isa = PBXGroup;
+			children = (
+				720F3FC5234B947100EFE86C /* AlignThreeSquareViewController.swift */,
+				720F3FC6234B947100EFE86C /* AlignThreeSquareViewController.xib */,
+			);
+			path = AlignThreeSquare;
+			sourceTree = "<group>";
+		};
+		720F3FC9234BA44000EFE86C /* AlignThreeSquareAutosize */ = {
+			isa = PBXGroup;
+			children = (
+				720F3FCA234BA45700EFE86C /* AlignThreeSquareAutosizeViewController.swift */,
+				720F3FCB234BA45700EFE86C /* AlignThreeSquareAutosizeViewController.xib */,
+			);
+			path = AlignThreeSquareAutosize;
+			sourceTree = "<group>";
+		};
 		72AE92CA2349914400C00F18 = {
 			isa = PBXGroup;
 			children = (
@@ -168,6 +209,7 @@
 		72AE92D52349914400C00F18 /* AutoLayouts */ = {
 			isa = PBXGroup;
 			children = (
+				720F3FBF234B93C400EFE86C /* PracticeFour */,
 				7203F35C234AD0E1006ED2DE /* PracticeThree */,
 				7203F357234ACFCE006ED2DE /* PracticeTwo */,
 				7203F352234ACC6C006ED2DE /* PracticeOne */,
@@ -374,10 +416,13 @@
 				7203F360234AD114006ED2DE /* PracticeThreeViewController.xib in Resources */,
 				72AE931D2349DB0100C00F18 /* RectangleFixSizeViewController.xib in Resources */,
 				72AE93222349DB5E00C00F18 /* RectangleAutoSizeViewController.xib in Resources */,
+				720F3FCD234BA45700EFE86C /* AlignThreeSquareAutosizeViewController.xib in Resources */,
+				720F3FC3234B93E200EFE86C /* PracticeFourViewController.xib in Resources */,
 				7203F351234ACBD7006ED2DE /* ApplicationViewController.xib in Resources */,
 				72AE932C2349E05900C00F18 /* SquaresAlignCenterAutoSizeViewController.xib in Resources */,
 				72AE930F2349975100C00F18 /* CenterSquareViewController.xib in Resources */,
 				7203F35B234ACFF3006ED2DE /* PracticeTwoViewController.xib in Resources */,
+				720F3FC8234B947100EFE86C /* AlignThreeSquareViewController.xib in Resources */,
 				72AE93272349DE4400C00F18 /* SquaresAlignCenterViewController.xib in Resources */,
 				72AE92E32349914500C00F18 /* LaunchScreen.storyboard in Resources */,
 				72AE92E02349914500C00F18 /* Assets.xcassets in Resources */,
@@ -405,11 +450,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				720F3FC2234B93E200EFE86C /* PracticeFourViewController.swift in Sources */,
+				720F3FCC234BA45700EFE86C /* AlignThreeSquareAutosizeViewController.swift in Sources */,
 				72AE93262349DE4400C00F18 /* SquaresAlignCenterViewController.swift in Sources */,
 				72AE93172349D8BD00C00F18 /* CenterSquareAutoSizeViewController.swift in Sources */,
 				7203F35F234AD114006ED2DE /* PracticeThreeViewController.swift in Sources */,
 				72AE932B2349E05900C00F18 /* SquaresAlignCenterAutoSizeViewController.swift in Sources */,
 				7203F35A234ACFF3006ED2DE /* PracticeTwoViewController.swift in Sources */,
+				720F3FC7234B947100EFE86C /* AlignThreeSquareViewController.swift in Sources */,
 				72AE931C2349DB0100C00F18 /* RectangleFixSizeViewController.swift in Sources */,
 				72AE930E2349975100C00F18 /* CenterSquareViewController.swift in Sources */,
 				7203F350234ACBD7006ED2DE /* ApplicationViewController.swift in Sources */,

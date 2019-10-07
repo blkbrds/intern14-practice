@@ -23,7 +23,7 @@ class PracticeThreeViewController: UIViewController {
         case 2:
             navigationController?.pushViewController(SquaresAlignCenterAutoSizeViewController(), animated: true)
         default:
-            <#code#>
+            navigationController?.pushViewController(SquaresAlignCenterViewController(), animated: true)
         }
     }
 
