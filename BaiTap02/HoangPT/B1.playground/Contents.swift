@@ -1,5 +1,8 @@
 import UIKit
 
+/**
+ *  Fraction class
+ **/
 class Fraction {
     var numerator: Int
     var denominator: Int
@@ -41,30 +44,22 @@ class Fraction {
     }
 }
 
+// Test
 let firstFraction = Fraction(5, 2)
 let secondFraction = Fraction(4, 2)
 
 if let f = firstFraction, let s = secondFraction {
-    if let plusResult = f.summation(fraction: s) {
-        print("Summation: \(plusResult.numerator), \(plusResult.denominator)")
+    if let summationResult = f.summation(fraction: s) {
+        print("Summation: \(summationResult.numerator), \(summationResult.denominator)")
     }
-}
-
-if let f = firstFraction, let s = secondFraction {
-    if let plusResult = f.subtraction(fraction: s) {
-        print("Subtraction: \(plusResult.numerator), \(plusResult.denominator)")
+    if let subtractionResult = f.subtraction(fraction: s) {
+        print("Subtraction: \(subtractionResult.numerator), \(subtractionResult.denominator)")
     }
-}
-
-if let f = firstFraction, let s = secondFraction {
-    if let plusResult = f.multiplication(fraction: s) {
-        print("Multiplication \(plusResult.numerator), \(plusResult.denominator)")
+    if let multiplicationResult = f.multiplication(fraction: s) {
+        print("Multiplication \(multiplicationResult.numerator), \(multiplicationResult.denominator)")
     }
-}
-
-if let f = firstFraction, let s = secondFraction {
-    if let plusResult = f.division(fraction: s) {
-        print("Division: \(plusResult.numerator), \(plusResult.denominator)")
+    if let divisionResult = f.division(fraction: s) {
+        print("Division: \(divisionResult.numerator), \(divisionResult.denominator)")
     }
 }
 
