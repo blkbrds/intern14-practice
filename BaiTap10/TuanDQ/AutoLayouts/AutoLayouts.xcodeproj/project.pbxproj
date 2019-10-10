@@ -39,6 +39,36 @@
 		72AE93272349DE4400C00F18 /* SquaresAlignCenterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72AE93252349DE4400C00F18 /* SquaresAlignCenterViewController.xib */; };
 		72AE932B2349E05900C00F18 /* SquaresAlignCenterAutoSizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AE93292349E05900C00F18 /* SquaresAlignCenterAutoSizeViewController.swift */; };
 		72AE932C2349E05900C00F18 /* SquaresAlignCenterAutoSizeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72AE932A2349E05900C00F18 /* SquaresAlignCenterAutoSizeViewController.xib */; };
+		72C0FB24234F15C20010EFF1 /* SquaresEqualRangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C0FB22234F15C20010EFF1 /* SquaresEqualRangeViewController.swift */; };
+		72C0FB25234F15C20010EFF1 /* SquaresEqualRangeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72C0FB23234F15C20010EFF1 /* SquaresEqualRangeViewController.xib */; };
+		72C0FB29234F1A140010EFF1 /* SquaresFixRangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C0FB27234F1A140010EFF1 /* SquaresFixRangeViewController.swift */; };
+		72C0FB2A234F1A140010EFF1 /* SquaresFixRangeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72C0FB28234F1A140010EFF1 /* SquaresFixRangeViewController.xib */; };
+		72C0FB2E234F1C060010EFF1 /* SquaresAutoRangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C0FB2C234F1C060010EFF1 /* SquaresAutoRangeViewController.swift */; };
+		72C0FB2F234F1C060010EFF1 /* SquaresAutoRangeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72C0FB2D234F1C060010EFF1 /* SquaresAutoRangeViewController.xib */; };
+		72C0FB37234F1FC60010EFF1 /* PracticeFiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C0FB35234F1FC60010EFF1 /* PracticeFiveViewController.swift */; };
+		72C0FB38234F1FC60010EFF1 /* PracticeFiveViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72C0FB36234F1FC60010EFF1 /* PracticeFiveViewController.xib */; };
+		72C0FB3C234F22CC0010EFF1 /* FivePartOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C0FB3A234F22CC0010EFF1 /* FivePartOneViewController.swift */; };
+		72C0FB3D234F22CC0010EFF1 /* FivePartOneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72C0FB3B234F22CC0010EFF1 /* FivePartOneViewController.xib */; };
+		72C0FB41234F25410010EFF1 /* FivePartTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C0FB3F234F25410010EFF1 /* FivePartTwoViewController.swift */; };
+		72C0FB42234F25410010EFF1 /* FivePartTwoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72C0FB40234F25410010EFF1 /* FivePartTwoViewController.xib */; };
+		72C0FB46234F2B940010EFF1 /* FivePartThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C0FB44234F2B940010EFF1 /* FivePartThreeViewController.swift */; };
+		72C0FB47234F2B940010EFF1 /* FivePartThreeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72C0FB45234F2B940010EFF1 /* FivePartThreeViewController.xib */; };
+		72C0FB4B234F2E850010EFF1 /* FivePartFourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C0FB49234F2E850010EFF1 /* FivePartFourViewController.swift */; };
+		72C0FB4C234F2E850010EFF1 /* FivePartFourViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72C0FB4A234F2E850010EFF1 /* FivePartFourViewController.xib */; };
+		72C0FB50234F315A0010EFF1 /* FivePartFiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C0FB4E234F315A0010EFF1 /* FivePartFiveViewController.swift */; };
+		72C0FB51234F315A0010EFF1 /* FivePartFiveViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72C0FB4F234F315A0010EFF1 /* FivePartFiveViewController.xib */; };
+		72C0FB56234F377A0010EFF1 /* PracticeSixViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C0FB54234F377A0010EFF1 /* PracticeSixViewController.swift */; };
+		72C0FB57234F377A0010EFF1 /* PracticeSixViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72C0FB55234F377A0010EFF1 /* PracticeSixViewController.xib */; };
+		72C0FB5A234F37F40010EFF1 /* SixPartOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C0FB58234F37F40010EFF1 /* SixPartOneViewController.swift */; };
+		72C0FB5B234F37F40010EFF1 /* SixPartOneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72C0FB59234F37F40010EFF1 /* SixPartOneViewController.xib */; };
+		72C0FB5F234F3AD80010EFF1 /* SixPartTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C0FB5D234F3AD80010EFF1 /* SixPartTwoViewController.swift */; };
+		72C0FB60234F3AD80010EFF1 /* SixPartTwoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72C0FB5E234F3AD80010EFF1 /* SixPartTwoViewController.xib */; };
+		72C0FB64234F3DB50010EFF1 /* SixPartThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C0FB62234F3DB50010EFF1 /* SixPartThreeViewController.swift */; };
+		72C0FB65234F3DB50010EFF1 /* SixPartThreeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72C0FB63234F3DB50010EFF1 /* SixPartThreeViewController.xib */; };
+		72C0FB69234F3F0E0010EFF1 /* SixPartFourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C0FB67234F3F0E0010EFF1 /* SixPartFourViewController.swift */; };
+		72C0FB6A234F3F0E0010EFF1 /* SixPartFourViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72C0FB68234F3F0E0010EFF1 /* SixPartFourViewController.xib */; };
+		72C0FB6E234F3FC10010EFF1 /* SixPartFiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C0FB6C234F3FC10010EFF1 /* SixPartFiveViewController.swift */; };
+		72C0FB6F234F3FC10010EFF1 /* SixPartFiveViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72C0FB6D234F3FC10010EFF1 /* SixPartFiveViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +127,36 @@
 		72AE93252349DE4400C00F18 /* SquaresAlignCenterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SquaresAlignCenterViewController.xib; sourceTree = "<group>"; };
 		72AE93292349E05900C00F18 /* SquaresAlignCenterAutoSizeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquaresAlignCenterAutoSizeViewController.swift; sourceTree = "<group>"; };
 		72AE932A2349E05900C00F18 /* SquaresAlignCenterAutoSizeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SquaresAlignCenterAutoSizeViewController.xib; sourceTree = "<group>"; };
+		72C0FB22234F15C20010EFF1 /* SquaresEqualRangeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquaresEqualRangeViewController.swift; sourceTree = "<group>"; };
+		72C0FB23234F15C20010EFF1 /* SquaresEqualRangeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SquaresEqualRangeViewController.xib; sourceTree = "<group>"; };
+		72C0FB27234F1A140010EFF1 /* SquaresFixRangeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquaresFixRangeViewController.swift; sourceTree = "<group>"; };
+		72C0FB28234F1A140010EFF1 /* SquaresFixRangeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SquaresFixRangeViewController.xib; sourceTree = "<group>"; };
+		72C0FB2C234F1C060010EFF1 /* SquaresAutoRangeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquaresAutoRangeViewController.swift; sourceTree = "<group>"; };
+		72C0FB2D234F1C060010EFF1 /* SquaresAutoRangeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SquaresAutoRangeViewController.xib; sourceTree = "<group>"; };
+		72C0FB35234F1FC60010EFF1 /* PracticeFiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeFiveViewController.swift; sourceTree = "<group>"; };
+		72C0FB36234F1FC60010EFF1 /* PracticeFiveViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PracticeFiveViewController.xib; sourceTree = "<group>"; };
+		72C0FB3A234F22CC0010EFF1 /* FivePartOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FivePartOneViewController.swift; sourceTree = "<group>"; };
+		72C0FB3B234F22CC0010EFF1 /* FivePartOneViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FivePartOneViewController.xib; sourceTree = "<group>"; };
+		72C0FB3F234F25410010EFF1 /* FivePartTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FivePartTwoViewController.swift; sourceTree = "<group>"; };
+		72C0FB40234F25410010EFF1 /* FivePartTwoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FivePartTwoViewController.xib; sourceTree = "<group>"; };
+		72C0FB44234F2B940010EFF1 /* FivePartThreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FivePartThreeViewController.swift; sourceTree = "<group>"; };
+		72C0FB45234F2B940010EFF1 /* FivePartThreeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FivePartThreeViewController.xib; sourceTree = "<group>"; };
+		72C0FB49234F2E850010EFF1 /* FivePartFourViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FivePartFourViewController.swift; sourceTree = "<group>"; };
+		72C0FB4A234F2E850010EFF1 /* FivePartFourViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FivePartFourViewController.xib; sourceTree = "<group>"; };
+		72C0FB4E234F315A0010EFF1 /* FivePartFiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FivePartFiveViewController.swift; sourceTree = "<group>"; };
+		72C0FB4F234F315A0010EFF1 /* FivePartFiveViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FivePartFiveViewController.xib; sourceTree = "<group>"; };
+		72C0FB54234F377A0010EFF1 /* PracticeSixViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeSixViewController.swift; sourceTree = "<group>"; };
+		72C0FB55234F377A0010EFF1 /* PracticeSixViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PracticeSixViewController.xib; sourceTree = "<group>"; };
+		72C0FB58234F37F40010EFF1 /* SixPartOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SixPartOneViewController.swift; sourceTree = "<group>"; };
+		72C0FB59234F37F40010EFF1 /* SixPartOneViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SixPartOneViewController.xib; sourceTree = "<group>"; };
+		72C0FB5D234F3AD80010EFF1 /* SixPartTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SixPartTwoViewController.swift; sourceTree = "<group>"; };
+		72C0FB5E234F3AD80010EFF1 /* SixPartTwoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SixPartTwoViewController.xib; sourceTree = "<group>"; };
+		72C0FB62234F3DB50010EFF1 /* SixPartThreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SixPartThreeViewController.swift; sourceTree = "<group>"; };
+		72C0FB63234F3DB50010EFF1 /* SixPartThreeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SixPartThreeViewController.xib; sourceTree = "<group>"; };
+		72C0FB67234F3F0E0010EFF1 /* SixPartFourViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SixPartFourViewController.swift; sourceTree = "<group>"; };
+		72C0FB68234F3F0E0010EFF1 /* SixPartFourViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SixPartFourViewController.xib; sourceTree = "<group>"; };
+		72C0FB6C234F3FC10010EFF1 /* SixPartFiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SixPartFiveViewController.swift; sourceTree = "<group>"; };
+		72C0FB6D234F3FC10010EFF1 /* SixPartFiveViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SixPartFiveViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +220,9 @@
 		720F3FBF234B93C400EFE86C /* PracticeFour */ = {
 			isa = PBXGroup;
 			children = (
+				72C0FB2B234F1BF20010EFF1 /* SquaresAutoRange */,
+				72C0FB26234F1A040010EFF1 /* SquaresFixRange */,
+				72C0FB21234F15450010EFF1 /* AlignThreeSquaresEqualRange */,
 				720F3FC9234BA44000EFE86C /* AlignThreeSquareAutosize */,
 				720F3FC4234B945500EFE86C /* AlignThreeSquare */,
 				720F3FC0234B93E200EFE86C /* PracticeFourViewController.swift */,
@@ -209,6 +272,8 @@
 		72AE92D52349914400C00F18 /* AutoLayouts */ = {
 			isa = PBXGroup;
 			children = (
+				72C0FB52234F37500010EFF1 /* PracticeSix */,
+				72C0FB30234F1EFA0010EFF1 /* PracticeFive */,
 				720F3FBF234B93C400EFE86C /* PracticeFour */,
 				7203F35C234AD0E1006ED2DE /* PracticeThree */,
 				7203F357234ACFCE006ED2DE /* PracticeTwo */,
@@ -302,6 +367,152 @@
 				72AE932A2349E05900C00F18 /* SquaresAlignCenterAutoSizeViewController.xib */,
 			);
 			path = SquaresAlignCenterAutoSize;
+			sourceTree = "<group>";
+		};
+		72C0FB21234F15450010EFF1 /* AlignThreeSquaresEqualRange */ = {
+			isa = PBXGroup;
+			children = (
+				72C0FB22234F15C20010EFF1 /* SquaresEqualRangeViewController.swift */,
+				72C0FB23234F15C20010EFF1 /* SquaresEqualRangeViewController.xib */,
+			);
+			path = AlignThreeSquaresEqualRange;
+			sourceTree = "<group>";
+		};
+		72C0FB26234F1A040010EFF1 /* SquaresFixRange */ = {
+			isa = PBXGroup;
+			children = (
+				72C0FB27234F1A140010EFF1 /* SquaresFixRangeViewController.swift */,
+				72C0FB28234F1A140010EFF1 /* SquaresFixRangeViewController.xib */,
+			);
+			path = SquaresFixRange;
+			sourceTree = "<group>";
+		};
+		72C0FB2B234F1BF20010EFF1 /* SquaresAutoRange */ = {
+			isa = PBXGroup;
+			children = (
+				72C0FB2C234F1C060010EFF1 /* SquaresAutoRangeViewController.swift */,
+				72C0FB2D234F1C060010EFF1 /* SquaresAutoRangeViewController.xib */,
+			);
+			path = SquaresAutoRange;
+			sourceTree = "<group>";
+		};
+		72C0FB30234F1EFA0010EFF1 /* PracticeFive */ = {
+			isa = PBXGroup;
+			children = (
+				72C0FB4D234F31490010EFF1 /* FivePartFive */,
+				72C0FB48234F2E740010EFF1 /* FivePartFour */,
+				72C0FB43234F2B830010EFF1 /* FivePartThree */,
+				72C0FB3E234F25300010EFF1 /* FivePartTwo */,
+				72C0FB39234F22B80010EFF1 /* FivePartOne */,
+				72C0FB35234F1FC60010EFF1 /* PracticeFiveViewController.swift */,
+				72C0FB36234F1FC60010EFF1 /* PracticeFiveViewController.xib */,
+			);
+			path = PracticeFive;
+			sourceTree = "<group>";
+		};
+		72C0FB39234F22B80010EFF1 /* FivePartOne */ = {
+			isa = PBXGroup;
+			children = (
+				72C0FB3A234F22CC0010EFF1 /* FivePartOneViewController.swift */,
+				72C0FB3B234F22CC0010EFF1 /* FivePartOneViewController.xib */,
+			);
+			path = FivePartOne;
+			sourceTree = "<group>";
+		};
+		72C0FB3E234F25300010EFF1 /* FivePartTwo */ = {
+			isa = PBXGroup;
+			children = (
+				72C0FB3F234F25410010EFF1 /* FivePartTwoViewController.swift */,
+				72C0FB40234F25410010EFF1 /* FivePartTwoViewController.xib */,
+			);
+			name = FivePartTwo;
+			path = "FivePartTưo";
+			sourceTree = "<group>";
+		};
+		72C0FB43234F2B830010EFF1 /* FivePartThree */ = {
+			isa = PBXGroup;
+			children = (
+				72C0FB44234F2B940010EFF1 /* FivePartThreeViewController.swift */,
+				72C0FB45234F2B940010EFF1 /* FivePartThreeViewController.xib */,
+			);
+			path = FivePartThree;
+			sourceTree = "<group>";
+		};
+		72C0FB48234F2E740010EFF1 /* FivePartFour */ = {
+			isa = PBXGroup;
+			children = (
+				72C0FB49234F2E850010EFF1 /* FivePartFourViewController.swift */,
+				72C0FB4A234F2E850010EFF1 /* FivePartFourViewController.xib */,
+			);
+			path = FivePartFour;
+			sourceTree = "<group>";
+		};
+		72C0FB4D234F31490010EFF1 /* FivePartFive */ = {
+			isa = PBXGroup;
+			children = (
+				72C0FB4E234F315A0010EFF1 /* FivePartFiveViewController.swift */,
+				72C0FB4F234F315A0010EFF1 /* FivePartFiveViewController.xib */,
+			);
+			path = FivePartFive;
+			sourceTree = "<group>";
+		};
+		72C0FB52234F37500010EFF1 /* PracticeSix */ = {
+			isa = PBXGroup;
+			children = (
+				72C0FB6B234F3FB00010EFF1 /* SixPartFive */,
+				72C0FB66234F3EF70010EFF1 /* SixPartFour */,
+				72C0FB61234F3D2A0010EFF1 /* SixPartThree */,
+				72C0FB5C234F3AC90010EFF1 /* SixPartTwo */,
+				72C0FB53234F375D0010EFF1 /* SixPartOne */,
+				72C0FB54234F377A0010EFF1 /* PracticeSixViewController.swift */,
+				72C0FB55234F377A0010EFF1 /* PracticeSixViewController.xib */,
+			);
+			path = PracticeSix;
+			sourceTree = "<group>";
+		};
+		72C0FB53234F375D0010EFF1 /* SixPartOne */ = {
+			isa = PBXGroup;
+			children = (
+				72C0FB58234F37F40010EFF1 /* SixPartOneViewController.swift */,
+				72C0FB59234F37F40010EFF1 /* SixPartOneViewController.xib */,
+			);
+			path = SixPartOne;
+			sourceTree = "<group>";
+		};
+		72C0FB5C234F3AC90010EFF1 /* SixPartTwo */ = {
+			isa = PBXGroup;
+			children = (
+				72C0FB5D234F3AD80010EFF1 /* SixPartTwoViewController.swift */,
+				72C0FB5E234F3AD80010EFF1 /* SixPartTwoViewController.xib */,
+			);
+			path = SixPartTwo;
+			sourceTree = "<group>";
+		};
+		72C0FB61234F3D2A0010EFF1 /* SixPartThree */ = {
+			isa = PBXGroup;
+			children = (
+				72C0FB62234F3DB50010EFF1 /* SixPartThreeViewController.swift */,
+				72C0FB63234F3DB50010EFF1 /* SixPartThreeViewController.xib */,
+			);
+			path = SixPartThree;
+			sourceTree = "<group>";
+		};
+		72C0FB66234F3EF70010EFF1 /* SixPartFour */ = {
+			isa = PBXGroup;
+			children = (
+				72C0FB67234F3F0E0010EFF1 /* SixPartFourViewController.swift */,
+				72C0FB68234F3F0E0010EFF1 /* SixPartFourViewController.xib */,
+			);
+			path = SixPartFour;
+			sourceTree = "<group>";
+		};
+		72C0FB6B234F3FB00010EFF1 /* SixPartFive */ = {
+			isa = PBXGroup;
+			children = (
+				72C0FB6C234F3FC10010EFF1 /* SixPartFiveViewController.swift */,
+				72C0FB6D234F3FC10010EFF1 /* SixPartFiveViewController.xib */,
+			);
+			path = SixPartFive;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -413,19 +624,34 @@
 			files = (
 				72AE93182349D8BD00C00F18 /* CenterSquareAutoSizeViewController.xib in Resources */,
 				7203F356234ACC8A006ED2DE /* PracticeOneViewController.xib in Resources */,
+				72C0FB2F234F1C060010EFF1 /* SquaresAutoRangeViewController.xib in Resources */,
 				7203F360234AD114006ED2DE /* PracticeThreeViewController.xib in Resources */,
 				72AE931D2349DB0100C00F18 /* RectangleFixSizeViewController.xib in Resources */,
 				72AE93222349DB5E00C00F18 /* RectangleAutoSizeViewController.xib in Resources */,
 				720F3FCD234BA45700EFE86C /* AlignThreeSquareAutosizeViewController.xib in Resources */,
+				72C0FB6A234F3F0E0010EFF1 /* SixPartFourViewController.xib in Resources */,
+				72C0FB60234F3AD80010EFF1 /* SixPartTwoViewController.xib in Resources */,
 				720F3FC3234B93E200EFE86C /* PracticeFourViewController.xib in Resources */,
+				72C0FB3D234F22CC0010EFF1 /* FivePartOneViewController.xib in Resources */,
+				72C0FB51234F315A0010EFF1 /* FivePartFiveViewController.xib in Resources */,
 				7203F351234ACBD7006ED2DE /* ApplicationViewController.xib in Resources */,
 				72AE932C2349E05900C00F18 /* SquaresAlignCenterAutoSizeViewController.xib in Resources */,
+				72C0FB65234F3DB50010EFF1 /* SixPartThreeViewController.xib in Resources */,
 				72AE930F2349975100C00F18 /* CenterSquareViewController.xib in Resources */,
+				72C0FB42234F25410010EFF1 /* FivePartTwoViewController.xib in Resources */,
+				72C0FB2A234F1A140010EFF1 /* SquaresFixRangeViewController.xib in Resources */,
+				72C0FB6F234F3FC10010EFF1 /* SixPartFiveViewController.xib in Resources */,
+				72C0FB5B234F37F40010EFF1 /* SixPartOneViewController.xib in Resources */,
+				72C0FB47234F2B940010EFF1 /* FivePartThreeViewController.xib in Resources */,
 				7203F35B234ACFF3006ED2DE /* PracticeTwoViewController.xib in Resources */,
 				720F3FC8234B947100EFE86C /* AlignThreeSquareViewController.xib in Resources */,
+				72C0FB25234F15C20010EFF1 /* SquaresEqualRangeViewController.xib in Resources */,
+				72C0FB57234F377A0010EFF1 /* PracticeSixViewController.xib in Resources */,
 				72AE93272349DE4400C00F18 /* SquaresAlignCenterViewController.xib in Resources */,
+				72C0FB4C234F2E850010EFF1 /* FivePartFourViewController.xib in Resources */,
 				72AE92E32349914500C00F18 /* LaunchScreen.storyboard in Resources */,
 				72AE92E02349914500C00F18 /* Assets.xcassets in Resources */,
+				72C0FB38234F1FC60010EFF1 /* PracticeFiveViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,21 +676,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72C0FB56234F377A0010EFF1 /* PracticeSixViewController.swift in Sources */,
+				72C0FB41234F25410010EFF1 /* FivePartTwoViewController.swift in Sources */,
+				72C0FB64234F3DB50010EFF1 /* SixPartThreeViewController.swift in Sources */,
 				720F3FC2234B93E200EFE86C /* PracticeFourViewController.swift in Sources */,
+				72C0FB50234F315A0010EFF1 /* FivePartFiveViewController.swift in Sources */,
+				72C0FB4B234F2E850010EFF1 /* FivePartFourViewController.swift in Sources */,
 				720F3FCC234BA45700EFE86C /* AlignThreeSquareAutosizeViewController.swift in Sources */,
 				72AE93262349DE4400C00F18 /* SquaresAlignCenterViewController.swift in Sources */,
+				72C0FB46234F2B940010EFF1 /* FivePartThreeViewController.swift in Sources */,
 				72AE93172349D8BD00C00F18 /* CenterSquareAutoSizeViewController.swift in Sources */,
 				7203F35F234AD114006ED2DE /* PracticeThreeViewController.swift in Sources */,
 				72AE932B2349E05900C00F18 /* SquaresAlignCenterAutoSizeViewController.swift in Sources */,
 				7203F35A234ACFF3006ED2DE /* PracticeTwoViewController.swift in Sources */,
 				720F3FC7234B947100EFE86C /* AlignThreeSquareViewController.swift in Sources */,
+				72C0FB3C234F22CC0010EFF1 /* FivePartOneViewController.swift in Sources */,
+				72C0FB69234F3F0E0010EFF1 /* SixPartFourViewController.swift in Sources */,
+				72C0FB29234F1A140010EFF1 /* SquaresFixRangeViewController.swift in Sources */,
+				72C0FB24234F15C20010EFF1 /* SquaresEqualRangeViewController.swift in Sources */,
+				72C0FB2E234F1C060010EFF1 /* SquaresAutoRangeViewController.swift in Sources */,
 				72AE931C2349DB0100C00F18 /* RectangleFixSizeViewController.swift in Sources */,
 				72AE930E2349975100C00F18 /* CenterSquareViewController.swift in Sources */,
 				7203F350234ACBD7006ED2DE /* ApplicationViewController.swift in Sources */,
 				72AE93212349DB5E00C00F18 /* RectangleAutoSizeViewController.swift in Sources */,
+				72C0FB5A234F37F40010EFF1 /* SixPartOneViewController.swift in Sources */,
 				72AE92D72349914400C00F18 /* AppDelegate.swift in Sources */,
 				7203F355234ACC8A006ED2DE /* PracticeOneViewController.swift in Sources */,
+				72C0FB5F234F3AD80010EFF1 /* SixPartTwoViewController.swift in Sources */,
 				72AE92D92349914400C00F18 /* SceneDelegate.swift in Sources */,
+				72C0FB6E234F3FC10010EFF1 /* SixPartFiveViewController.swift in Sources */,
+				72C0FB37234F1FC60010EFF1 /* PracticeFiveViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
