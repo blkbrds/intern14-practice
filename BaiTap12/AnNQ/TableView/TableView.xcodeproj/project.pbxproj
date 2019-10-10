@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		D18451CF234DD65300846D47 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18451CE234DD65300846D47 /* User.swift */; };
+		D1935EDD234EDF770087E3B5 /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1935EDC234EDF770087E3B5 /* Animal.swift */; };
+		D1935EDF234EE2220087E3B5 /* Creature.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1935EDE234EE2220087E3B5 /* Creature.swift */; };
 		D1C2F59A234C234C00589DF8 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C2F592234C234C00589DF8 /* Exercise.swift */; };
 		D1C2F59B234C234C00589DF8 /* DataManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C2F594234C234C00589DF8 /* DataManagement.swift */; };
 		D1C2F59C234C234C00589DF8 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C2F598234C234C00589DF8 /* HomeCell.swift */; };
@@ -53,6 +55,8 @@
 
 /* Begin PBXFileReference section */
 		D18451CE234DD65300846D47 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		D1935EDC234EDF770087E3B5 /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
+		D1935EDE234EE2220087E3B5 /* Creature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Creature.swift; sourceTree = "<group>"; };
 		D1C2F592234C234C00589DF8 /* Exercise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
 		D1C2F594234C234C00589DF8 /* DataManagement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManagement.swift; sourceTree = "<group>"; };
 		D1C2F598234C234C00589DF8 /* HomeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
@@ -123,6 +127,8 @@
 			children = (
 				D1C2F592234C234C00589DF8 /* Exercise.swift */,
 				D18451CE234DD65300846D47 /* User.swift */,
+				D1935EDC234EDF770087E3B5 /* Animal.swift */,
+				D1935EDE234EE2220087E3B5 /* Creature.swift */,
 			);
 			path = Objects;
 			sourceTree = "<group>";
@@ -459,6 +465,8 @@
 				D18451CF234DD65300846D47 /* User.swift in Sources */,
 				D1E799F9234B465E00E40199 /* BaseViewController.swift in Sources */,
 				D1E799F3234B465E00E40199 /* Ex3ViewController.swift in Sources */,
+				D1935EDD234EDF770087E3B5 /* Animal.swift in Sources */,
+				D1935EDF234EE2220087E3B5 /* Creature.swift in Sources */,
 				D1E799A9234B3B4200E40199 /* SceneDelegate.swift in Sources */,
 				D1E799FA234B465E00E40199 /* BaseNavigationController.swift in Sources */,
 				D1E799E4234B465E00E40199 /* HomeViewController.swift in Sources */,
