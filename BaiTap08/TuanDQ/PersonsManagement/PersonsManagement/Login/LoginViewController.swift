@@ -33,12 +33,13 @@ class LoginViewController: UIViewController {
             return
         }
 
-        let (message, userId) = BusinessController.checkLogin(username: userName, password: pass)
+        let (message, userId) = BusinessController.share.checkLogin(username: userName, password: pass)
 
         if message == nil {
             
             // Storage current user for next proccess.
             UserDefaults.standard.set(userId!, forKey: CommonConstant.USERID)
+            UserDefaults.standard.synchronize()
             
             // Push home to Navigation Stack.
             let homePage = HomeViewController()

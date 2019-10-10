@@ -43,7 +43,7 @@ class HomeViewController: UIViewController {
      * Setting layout avatar.
      */
     private func settingLayout() {
-        let persons = BusinessController.getPersonsInfo()
+        let persons = BusinessController.share.getPersonsInfo()
         if persons.isEmpty {
             return
         }
@@ -87,6 +87,7 @@ extension HomeViewController: AvatarItemViewDelegate {
     
     func view(_ view: AvatarItemView, didSelect index: String?) {
             UserDefaults.standard.set(index, forKey: CommonConstant.PROFILE_ID)
+            UserDefaults.standard.synchronize()
             navigationController?.pushViewController(PersonDetailViewController(), animated: true)
     }
 }

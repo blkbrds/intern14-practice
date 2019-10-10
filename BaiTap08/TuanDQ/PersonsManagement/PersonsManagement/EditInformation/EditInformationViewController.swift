@@ -23,7 +23,7 @@ class EditInformationViewController: UIViewController {
     }
 
     fileprivate func loadCurrentUserInformation() {
-        currentUserTextField.text = BusinessController.getCurrentUser()!.username
+        currentUserTextField.text = BusinessController.share.getCurrentUser()!.username
     }
 
     @IBAction func doCancelButtonClick(_ sender: Any) {
@@ -33,13 +33,13 @@ class EditInformationViewController: UIViewController {
         
         if (!validatePassword()) { return }
         
-        guard let currentUser = BusinessController.getCurrentUser() else {
+        guard let currentUser = BusinessController.share.getCurrentUser() else {
             messageTextField.text = "Can't get current user."
             return
         }
         let updateUser = UserInfo(userId: currentUser.userId, username: currentUserTextField.text!, password: newPasswordTextField.text!)
         
-        if !BusinessController.updateUser(updateUser: updateUser) {
+        if !BusinessController.share.updateUser(updateUser: updateUser) {
             messageTextField.text = "Can't update current user."
             return
         }
