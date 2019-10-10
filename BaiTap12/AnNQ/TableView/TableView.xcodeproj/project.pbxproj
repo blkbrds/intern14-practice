@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D18451CF234DD65300846D47 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18451CE234DD65300846D47 /* User.swift */; };
 		D1C2F59A234C234C00589DF8 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C2F592234C234C00589DF8 /* Exercise.swift */; };
 		D1C2F59B234C234C00589DF8 /* DataManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C2F594234C234C00589DF8 /* DataManagement.swift */; };
 		D1C2F59C234C234C00589DF8 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C2F598234C234C00589DF8 /* HomeCell.swift */; };
@@ -44,9 +45,14 @@
 		D1E799F8234B465E00E40199 /* Ex5ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1E799DF234B465E00E40199 /* Ex5ViewController.xib */; };
 		D1E799F9234B465E00E40199 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E799E1234B465E00E40199 /* BaseViewController.swift */; };
 		D1E799FA234B465E00E40199 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E799E2234B465E00E40199 /* BaseNavigationController.swift */; };
+		D1ECAFC0234DE26B006BD6AC /* users.plist in Resources */ = {isa = PBXBuildFile; fileRef = D1ECAFBF234DE26B006BD6AC /* users.plist */; };
+		D1ECAFC2234DE35A006BD6AC /* animals.plist in Resources */ = {isa = PBXBuildFile; fileRef = D1ECAFC1234DE35A006BD6AC /* animals.plist */; };
+		D1ECAFCC234DE9FF006BD6AC /* Ex09TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1ECAFCA234DE9FF006BD6AC /* Ex09TableViewCell.swift */; };
+		D1ECAFCD234DE9FF006BD6AC /* Ex09TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1ECAFCB234DE9FF006BD6AC /* Ex09TableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D18451CE234DD65300846D47 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		D1C2F592234C234C00589DF8 /* Exercise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
 		D1C2F594234C234C00589DF8 /* DataManagement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManagement.swift; sourceTree = "<group>"; };
 		D1C2F598234C234C00589DF8 /* HomeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
@@ -86,6 +92,10 @@
 		D1E799DF234B465E00E40199 /* Ex5ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Ex5ViewController.xib; sourceTree = "<group>"; };
 		D1E799E1234B465E00E40199 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		D1E799E2234B465E00E40199 /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		D1ECAFBF234DE26B006BD6AC /* users.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = users.plist; sourceTree = "<group>"; };
+		D1ECAFC1234DE35A006BD6AC /* animals.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = animals.plist; sourceTree = "<group>"; };
+		D1ECAFCA234DE9FF006BD6AC /* Ex09TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex09TableViewCell.swift; sourceTree = "<group>"; };
+		D1ECAFCB234DE9FF006BD6AC /* Ex09TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ex09TableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				D1C2F592234C234C00589DF8 /* Exercise.swift */,
+				D18451CE234DD65300846D47 /* User.swift */,
 			);
 			path = Objects;
 			sourceTree = "<group>";
@@ -127,6 +138,7 @@
 		D1C2F595234C234C00589DF8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D1ECAFC3234DE977006BD6AC /* Ex09 */,
 				D1C2F5A0234C389B00589DF8 /* Ex03 */,
 				D1C2F596234C234C00589DF8 /* Cells */,
 			);
@@ -206,6 +218,8 @@
 				D1E799BC234B463800E40199 /* exercises.plist */,
 				D1C2F59E234C34BD00589DF8 /* contacts.plist */,
 				D1C2F5A5234C3E2E00589DF8 /* skypes.plist */,
+				D1ECAFBF234DE26B006BD6AC /* users.plist */,
+				D1ECAFC1234DE35A006BD6AC /* animals.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -336,6 +350,15 @@
 			path = Core;
 			sourceTree = "<group>";
 		};
+		D1ECAFC3234DE977006BD6AC /* Ex09 */ = {
+			isa = PBXGroup;
+			children = (
+				D1ECAFCA234DE9FF006BD6AC /* Ex09TableViewCell.swift */,
+				D1ECAFCB234DE9FF006BD6AC /* Ex09TableViewCell.xib */,
+			);
+			path = Ex09;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -398,6 +421,7 @@
 				D1C2F5A6234C3E2E00589DF8 /* skypes.plist in Resources */,
 				D1E799F4234B465E00E40199 /* Ex3ViewController.xib in Resources */,
 				D1E799B3234B3B4400E40199 /* LaunchScreen.storyboard in Resources */,
+				D1ECAFC0234DE26B006BD6AC /* users.plist in Resources */,
 				D1E799E8234B465E00E40199 /* Ex7ViewController.xib in Resources */,
 				D1C2F59D234C234C00589DF8 /* HomeCell.xib in Resources */,
 				D1E799B0234B3B4400E40199 /* Assets.xcassets in Resources */,
@@ -409,7 +433,9 @@
 				D1E799BD234B463800E40199 /* exercises.plist in Resources */,
 				D1E799E5234B465E00E40199 /* Ex9ViewController.xib in Resources */,
 				D1E799F8234B465E00E40199 /* Ex5ViewController.xib in Resources */,
+				D1ECAFC2234DE35A006BD6AC /* animals.plist in Resources */,
 				D1C2F5A4234C38DE00589DF8 /* Ex03ViewController.xib in Resources */,
+				D1ECAFCD234DE9FF006BD6AC /* Ex09TableViewCell.xib in Resources */,
 				D1E799F6234B465E00E40199 /* Ex2ViewController.xib in Resources */,
 				D1E799E3234B465E00E40199 /* HomeViewController.xib in Resources */,
 			);
@@ -430,6 +456,7 @@
 				D1E799A7234B3B4200E40199 /* AppDelegate.swift in Sources */,
 				D1E799EF234B465E00E40199 /* Ex10ViewController.swift in Sources */,
 				D1E799F5234B465E00E40199 /* Ex2ViewController.swift in Sources */,
+				D18451CF234DD65300846D47 /* User.swift in Sources */,
 				D1E799F9234B465E00E40199 /* BaseViewController.swift in Sources */,
 				D1E799F3234B465E00E40199 /* Ex3ViewController.swift in Sources */,
 				D1E799A9234B3B4200E40199 /* SceneDelegate.swift in Sources */,
@@ -437,6 +464,7 @@
 				D1E799E4234B465E00E40199 /* HomeViewController.swift in Sources */,
 				D1E799E6234B465E00E40199 /* Ex9ViewController.swift in Sources */,
 				D1E799F7234B465E00E40199 /* Ex5ViewController.swift in Sources */,
+				D1ECAFCC234DE9FF006BD6AC /* Ex09TableViewCell.swift in Sources */,
 				D1E799EE234B465E00E40199 /* Ex8ViewController.swift in Sources */,
 				D1E799F1234B465E00E40199 /* Ex4ViewController.swift in Sources */,
 				D1C2F59C234C234C00589DF8 /* HomeCell.swift in Sources */,

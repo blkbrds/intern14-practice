@@ -41,4 +41,16 @@ class DataManagement {
         let array = NSArray(contentsOfFile: path) as! [String]
         return array
     }
+    
+    func getUser(fileName: String, type: String) -> [User] {
+        let array = NSArray(contentsOfFile: getFileDocumentPath(fileName: fileName, type: type))
+        var users: [User] = []
+        for item in array! {
+            let dict = item as! NSDictionary
+            let usr = User(name: dict.object(forKey: "name") as! String, subTitle: dict.object(forKey: "sub_title") as! String, avatar: dict.object(forKey: "avatar") as! String)
+            users.append(usr)
+        }
+        
+        return users
+    }
 }
