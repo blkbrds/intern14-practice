@@ -53,7 +53,6 @@ class Ex5ViewController: BaseViewController {
     func search(keyword: String) {
         dataSearch = getContact(keyword: keyword)
         tableView.reloadData()
-        print(dataSearch)
     }
     
     func getContact(keyword: String) -> [String] {
@@ -106,7 +105,6 @@ extension Ex5ViewController: UITableViewDataSource, UITableViewDelegate, UISearc
         }
         
         let keyword = (currentText as NSString).replacingCharacters(in: range, with: text)
-        print(keyword)
         search(keyword: keyword)
         return true
     }
