@@ -8,11 +8,17 @@
 
 import UIKit
 
+struct TableViewCell {
+    static func loadNibCell(_ nibName: String,_ tableView: UITableView) {
+        let nib = UINib(nibName: nibName, bundle: .main)
+        tableView.register(nib, forCellReuseIdentifier: nibName)
+    }
+}
 class Ex9ViewController: BaseViewController {
 
     var exercise: Exercise?
     @IBOutlet weak var tableView: UITableView!
-    var creature: [[Creature]] = []
+    var creature: [String: [Creature]] = [:]
     var createIndex: [String] = []
 
 
@@ -32,14 +38,15 @@ class Ex9ViewController: BaseViewController {
         let users = DataManagement.share.getUser(fileName: "users", type: "plist")
         
         createIndex = ["U", "A"]
-        creature.append(users)
-        creature.append(animals)
+        creature = ["users":users, "animals": animals]
+        print(creature)
     }
     
     func configTableView () {
+        TableViewCell.loadNibCell("UserCell", self.tableView)
+        TableViewCell.loadNibCell("AnimalCell", self.tableView)
+
         //register table
-        let nib = UINib(nibName: "Ex09TableViewCell", bundle: .main)
-        tableView.register(nib, forCellReuseIdentifier: "Ex09TableViewCell")
         tableView.dataSource = self
         tableView.delegate = self
     }
@@ -53,29 +60,42 @@ extension Ex9ViewController: UITableViewDataSource, UITableViewDelegate {
 
     //amount of rows in section
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return creature[section].count
+        switch section {
+        case 0:
+            return creature["users"]!.count
+        default:
+            return creature["animals"]!.count
+
+        }
     }
 
     //constructor and change return value in cell of table
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Ex09TableViewCell", for: indexPath) as? Ex09TableViewCell
-        
-        let value = creature[indexPath.section][indexPath.row]
-        cell?.nameLabel.text = value.name
-        cell?.subTitleLabel.text = value.subTitle
-        cell?.avatarImageView.image = UIImage(named: value.avatar)
-        
         switch indexPath.section {
         case 0:
-            cell?.callButton.isHidden = false
-            cell?.heartButton.isHidden = true
+            let userCell = tableView.dequeueReusableCell(withIdentifier: "UserCell", for: indexPath) as? UserCell
+            
+            let value = creature["users"]![indexPath.row]
+            userCell?.nameLabel.text = value.name
+            userCell?.titleLabel.text = value.subTitle
+            userCell?.avatarImageView.image = UIImage(named: value.avatar)
+            
+            userCell?.delegate = self
+            
+            return userCell!
         default:
-            cell?.callButton.isHidden = true
-            cell?.heartButton.isHidden = false
+            let animalCell = tableView.dequeueReusableCell(withIdentifier: "AnimalCell", for: indexPath) as? AnimalCell
+            
+            let value = creature["animals"]![indexPath.row]
+            animalCell?.nameLabel.text = value.name
+            animalCell?.titleLabel.text = value.subTitle
+            animalCell?.avatarImageView.image = UIImage(named: value.avatar)
+            
+            animalCell?.delegate = self
+            
+            return animalCell!
         }
-        cell?.delegate = self
         
-        return cell!
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
@@ -100,23 +120,34 @@ extension Ex9ViewController: UITableViewDataSource, UITableViewDelegate {
     }
 }
 
-extension Ex9ViewController: Ex09TableViewCellDelegate {
-    func loveAnimal(_ ex09TableViewCell: Ex09TableViewCell) {
-        var animalName = ""
-        if let name = ex09TableViewCell.nameLabel.text {
-            animalName = name
-        }
-        
-        print("Love a \(animalName)")
+extension Ex9ViewController: UserCellDelegate {
+    func userCell(cell: UserCell, needPerforms action: UserCell.Action) {
+        print("Call \(cell.nameLabel.text)")
     }
     
-    func callMe(_ ex09TableViewCell: Ex09TableViewCell) {
-        var userName = ""
-        if let name = ex09TableViewCell.nameLabel.text {
-            userName = name
+}
+
+extension Ex9ViewController: AnimalCellDelegate {
+    func animalCell(cell: AnimalCell, needsPerform action: AnimalCell.Action) {
+        switch cell.checkStatus {
+        case true:
+            UIView.animate(
+               withDuration: 1.0,
+               delay: 0.0,
+               options: .curveEaseIn,
+               animations: {
+                   cell.iconButton.setImage(UIImage(named: "love_icon"), for: .normal)
+               }
+            )
+        default:
+            UIView.animate(
+               withDuration: 1.0,
+               delay: 0.0,
+               options: .curveEaseIn,
+               animations: {
+                   cell.iconButton.setImage(UIImage(named: "heart_icon"), for: .normal)
+               }
+            )
         }
-        
-        print("Call \(userName)")
     }
-    
 }

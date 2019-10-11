@@ -10,18 +10,6 @@
 	</dict>
     <dict>
         <key>name</key>
-        <string>exercise 02</string>
-        <key>description</key>
-        <string>Simple tableview</string>
-    </dict>
-    <dict>
-        <key>name</key>
-        <string>exercise 03</string>
-        <key>description</key>
-        <string>Simple tableview</string>
-    </dict>
-    <dict>
-        <key>name</key>
         <string>exercise 04</string>
         <key>description</key>
         <string>Simple tableview</string>
@@ -34,39 +22,9 @@
     </dict>
     <dict>
         <key>name</key>
-        <string>exercise 06</string>
-        <key>description</key>
-        <string>Simple tableview</string>
-    </dict>
-    <dict>
-        <key>name</key>
-        <string>exercise 07</string>
-        <key>description</key>
-        <string>Simple tableview</string>
-    </dict>
-    <dict>
-        <key>name</key>
-        <string>exercise 08</string>
-        <key>description</key>
-        <string>Simple tableview</string>
-    </dict>
-    <dict>
-        <key>name</key>
         <string>exercise 09</string>
         <key>description</key>
         <string>Simple tableview</string>
-    </dict>
-    <dict>
-        <key>name</key>
-        <string>exercise 10</string>
-        <key>description</key>
-        <string>Simple tableview</string>
-    </dict>
-    <dict>
-        <key>name</key>
-        <string>exercise 11</string>
-        <key>description</key>
-        <string>Search tableview</string>
     </dict>
 </array>
 </plist>
