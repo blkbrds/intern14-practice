@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D135A7FC2350239500CB9014 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D135A7FB2350239500CB9014 /* TableViewCell.swift */; };
 		D18451CF234DD65300846D47 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18451CE234DD65300846D47 /* User.swift */; };
 		D1935EDD234EDF770087E3B5 /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1935EDC234EDF770087E3B5 /* Animal.swift */; };
 		D1935EDF234EE2220087E3B5 /* Creature.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1935EDE234EE2220087E3B5 /* Creature.swift */; };
@@ -44,6 +45,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D135A7FB2350239500CB9014 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		D18451CE234DD65300846D47 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		D1935EDC234EDF770087E3B5 /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
 		D1935EDE234EE2220087E3B5 /* Creature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Creature.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				D18451CE234DD65300846D47 /* User.swift */,
 				D1935EDC234EDF770087E3B5 /* Animal.swift */,
 				D1935EDE234EE2220087E3B5 /* Creature.swift */,
+				D135A7FB2350239500CB9014 /* TableViewCell.swift */,
 			);
 			path = Objects;
 			sourceTree = "<group>";
@@ -375,6 +378,7 @@
 				D1C2F59A234C234C00589DF8 /* Exercise.swift in Sources */,
 				D1C2F5A3234C38DE00589DF8 /* Ex03ViewController.swift in Sources */,
 				D1E799A7234B3B4200E40199 /* AppDelegate.swift in Sources */,
+				D135A7FC2350239500CB9014 /* TableViewCell.swift in Sources */,
 				D1935F15234F343E0087E3B5 /* UserCell.swift in Sources */,
 				D18451CF234DD65300846D47 /* User.swift in Sources */,
 				D1E799F9234B465E00E40199 /* BaseViewController.swift in Sources */,

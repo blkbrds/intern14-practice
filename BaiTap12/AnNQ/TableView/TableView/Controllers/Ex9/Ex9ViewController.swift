@@ -8,12 +8,6 @@
 
 import UIKit
 
-struct TableViewCell {
-    static func loadNibCell(_ nibName: String,_ tableView: UITableView) {
-        let nib = UINib(nibName: nibName, bundle: .main)
-        tableView.register(nib, forCellReuseIdentifier: nibName)
-    }
-}
 class Ex9ViewController: BaseViewController {
 
     var exercise: Exercise?
@@ -39,7 +33,6 @@ class Ex9ViewController: BaseViewController {
         
         createIndex = ["U", "A"]
         creature = ["users":users, "animals": animals]
-        print(creature)
     }
     
     func configTableView () {
