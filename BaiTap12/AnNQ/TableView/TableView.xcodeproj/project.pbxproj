@@ -95,6 +95,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D135A7FD235024B700CB9014 /* Ex09 */ = {
+			isa = PBXGroup;
+			children = (
+				D1ECAFBF234DE26B006BD6AC /* users.plist */,
+				D1ECAFC1234DE35A006BD6AC /* animals.plist */,
+			);
+			path = Ex09;
+			sourceTree = "<group>";
+		};
+		D135A7FE235024CB00CB9014 /* Ex01-5 */ = {
+			isa = PBXGroup;
+			children = (
+				D1C2F59E234C34BD00589DF8 /* contacts.plist */,
+				D1C2F5A5234C3E2E00589DF8 /* skypes.plist */,
+			);
+			path = "Ex01-5";
+			sourceTree = "<group>";
+		};
 		D1C2F590234C234C00589DF8 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -202,13 +220,11 @@
 		D1E799BB234B45DC00E40199 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D135A7FE235024CB00CB9014 /* Ex01-5 */,
+				D135A7FD235024B700CB9014 /* Ex09 */,
 				D1E799AF234B3B4400E40199 /* Assets.xcassets */,
 				D1E799B1234B3B4400E40199 /* LaunchScreen.storyboard */,
 				D1E799BC234B463800E40199 /* exercises.plist */,
-				D1C2F59E234C34BD00589DF8 /* contacts.plist */,
-				D1C2F5A5234C3E2E00589DF8 /* skypes.plist */,
-				D1ECAFBF234DE26B006BD6AC /* users.plist */,
-				D1ECAFC1234DE35A006BD6AC /* animals.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
