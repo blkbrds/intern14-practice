@@ -21,6 +21,19 @@
 		720F3FC8234B947100EFE86C /* AlignThreeSquareViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 720F3FC6234B947100EFE86C /* AlignThreeSquareViewController.xib */; };
 		720F3FCC234BA45700EFE86C /* AlignThreeSquareAutosizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720F3FCA234BA45700EFE86C /* AlignThreeSquareAutosizeViewController.swift */; };
 		720F3FCD234BA45700EFE86C /* AlignThreeSquareAutosizeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 720F3FCB234BA45700EFE86C /* AlignThreeSquareAutosizeViewController.xib */; };
+		729BD8AC23546E4E00C7E3BB /* tenth.png in Resources */ = {isa = PBXBuildFile; fileRef = 729BD8A223546E4C00C7E3BB /* tenth.png */; };
+		729BD8AD23546E4E00C7E3BB /* ninethImg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 729BD8A323546E4C00C7E3BB /* ninethImg.jpg */; };
+		729BD8AE23546E4E00C7E3BB /* eighth.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 729BD8A423546E4C00C7E3BB /* eighth.jpeg */; };
+		729BD8AF23546E4E00C7E3BB /* secondImg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 729BD8A523546E4D00C7E3BB /* secondImg.jpg */; };
+		729BD8B023546E4E00C7E3BB /* thirthImg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 729BD8A623546E4D00C7E3BB /* thirthImg.jpg */; };
+		729BD8B123546E4E00C7E3BB /* sixthImg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 729BD8A723546E4D00C7E3BB /* sixthImg.jpg */; };
+		729BD8B223546E4E00C7E3BB /* seventh.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 729BD8A823546E4D00C7E3BB /* seventh.jpg */; };
+		729BD8B323546E4E00C7E3BB /* firstImg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 729BD8A923546E4D00C7E3BB /* firstImg.jpg */; };
+		729BD8B423546E4E00C7E3BB /* fourthImg.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 729BD8AA23546E4E00C7E3BB /* fourthImg.jpeg */; };
+		729BD8B523546E4E00C7E3BB /* fifthImg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 729BD8AB23546E4E00C7E3BB /* fifthImg.jpg */; };
+		729BD8B72354763400C7E3BB /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729BD8B62354763400C7E3BB /* Animal.swift */; };
+		729BD8BB2354837B00C7E3BB /* PracticeTenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729BD8B92354837B00C7E3BB /* PracticeTenViewController.swift */; };
+		729BD8BC2354837B00C7E3BB /* PracticeTenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 729BD8BA2354837B00C7E3BB /* PracticeTenViewController.xib */; };
 		72AE92D72349914400C00F18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AE92D62349914400C00F18 /* AppDelegate.swift */; };
 		72AE92D92349914400C00F18 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AE92D82349914400C00F18 /* SceneDelegate.swift */; };
 		72AE92E02349914500C00F18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72AE92DF2349914500C00F18 /* Assets.xcassets */; };
@@ -141,6 +154,19 @@
 		720F3FC6234B947100EFE86C /* AlignThreeSquareViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlignThreeSquareViewController.xib; sourceTree = "<group>"; };
 		720F3FCA234BA45700EFE86C /* AlignThreeSquareAutosizeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlignThreeSquareAutosizeViewController.swift; sourceTree = "<group>"; };
 		720F3FCB234BA45700EFE86C /* AlignThreeSquareAutosizeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlignThreeSquareAutosizeViewController.xib; sourceTree = "<group>"; };
+		729BD8A223546E4C00C7E3BB /* tenth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tenth.png; sourceTree = "<group>"; };
+		729BD8A323546E4C00C7E3BB /* ninethImg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ninethImg.jpg; sourceTree = "<group>"; };
+		729BD8A423546E4C00C7E3BB /* eighth.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = eighth.jpeg; sourceTree = "<group>"; };
+		729BD8A523546E4D00C7E3BB /* secondImg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = secondImg.jpg; sourceTree = "<group>"; };
+		729BD8A623546E4D00C7E3BB /* thirthImg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thirthImg.jpg; sourceTree = "<group>"; };
+		729BD8A723546E4D00C7E3BB /* sixthImg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sixthImg.jpg; sourceTree = "<group>"; };
+		729BD8A823546E4D00C7E3BB /* seventh.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = seventh.jpg; sourceTree = "<group>"; };
+		729BD8A923546E4D00C7E3BB /* firstImg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = firstImg.jpg; sourceTree = "<group>"; };
+		729BD8AA23546E4E00C7E3BB /* fourthImg.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fourthImg.jpeg; sourceTree = "<group>"; };
+		729BD8AB23546E4E00C7E3BB /* fifthImg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fifthImg.jpg; sourceTree = "<group>"; };
+		729BD8B62354763400C7E3BB /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
+		729BD8B92354837B00C7E3BB /* PracticeTenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeTenViewController.swift; sourceTree = "<group>"; };
+		729BD8BA2354837B00C7E3BB /* PracticeTenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PracticeTenViewController.xib; sourceTree = "<group>"; };
 		72AE92D32349914400C00F18 /* AutoLayouts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoLayouts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72AE92D62349914400C00F18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		72AE92D82349914400C00F18 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -325,6 +351,15 @@
 			path = AlignThreeSquareAutosize;
 			sourceTree = "<group>";
 		};
+		729BD8B82354836700C7E3BB /* PracticeTen */ = {
+			isa = PBXGroup;
+			children = (
+				729BD8B92354837B00C7E3BB /* PracticeTenViewController.swift */,
+				729BD8BA2354837B00C7E3BB /* PracticeTenViewController.xib */,
+			);
+			path = PracticeTen;
+			sourceTree = "<group>";
+		};
 		72AE92CA2349914400C00F18 = {
 			isa = PBXGroup;
 			children = (
@@ -348,6 +383,7 @@
 		72AE92D52349914400C00F18 /* AutoLayouts */ = {
 			isa = PBXGroup;
 			children = (
+				729BD8B82354836700C7E3BB /* PracticeTen */,
 				72FCA1342351B6F8008044ED /* PracticeNine */,
 				72FCA12F2351ACE0008044ED /* PracticeEight */,
 				72CF28CC23501A8000C93E8C /* PracticeSeven */,
@@ -769,6 +805,7 @@
 				72FCA1392351B73B008044ED /* ImagesDisplay */,
 				72FCA1352351B717008044ED /* PracticeNineViewController.swift */,
 				72FCA1362351B717008044ED /* PracticeNineViewController.xib */,
+				729BD8B62354763400C7E3BB /* Animal.swift */,
 			);
 			path = PracticeNine;
 			sourceTree = "<group>";
@@ -776,6 +813,16 @@
 		72FCA1392351B73B008044ED /* ImagesDisplay */ = {
 			isa = PBXGroup;
 			children = (
+				729BD8A423546E4C00C7E3BB /* eighth.jpeg */,
+				729BD8AB23546E4E00C7E3BB /* fifthImg.jpg */,
+				729BD8A923546E4D00C7E3BB /* firstImg.jpg */,
+				729BD8AA23546E4E00C7E3BB /* fourthImg.jpeg */,
+				729BD8A323546E4C00C7E3BB /* ninethImg.jpg */,
+				729BD8A523546E4D00C7E3BB /* secondImg.jpg */,
+				729BD8A823546E4D00C7E3BB /* seventh.jpg */,
+				729BD8A723546E4D00C7E3BB /* sixthImg.jpg */,
+				729BD8A223546E4C00C7E3BB /* tenth.png */,
+				729BD8A623546E4D00C7E3BB /* thirthImg.jpg */,
 				72FCA13B2351B8EE008044ED /* Screen Shot 2019-10-12 at 2.30.45 PM.png */,
 				72FCA13A2351B8EE008044ED /* Screen Shot 2019-10-12 at 2.30.54 PM.png */,
 			);
@@ -889,6 +936,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				729BD8B323546E4E00C7E3BB /* firstImg.jpg in Resources */,
+				729BD8B123546E4E00C7E3BB /* sixthImg.jpg in Resources */,
 				72AE93182349D8BD00C00F18 /* CenterSquareAutoSizeViewController.xib in Resources */,
 				72FCA0F723518132008044ED /* SevenPartFourViewController.xib in Resources */,
 				7203F356234ACC8A006ED2DE /* PracticeOneViewController.xib in Resources */,
@@ -899,7 +948,9 @@
 				72CF28D023501A9E00C93E8C /* PracticeSevenViewController.xib in Resources */,
 				72FCA1332351AD09008044ED /* PracticeEightViewController.xib in Resources */,
 				72AE931D2349DB0100C00F18 /* RectangleFixSizeViewController.xib in Resources */,
+				729BD8BC2354837B00C7E3BB /* PracticeTenViewController.xib in Resources */,
 				72AE93222349DB5E00C00F18 /* RectangleAutoSizeViewController.xib in Resources */,
+				729BD8AC23546E4E00C7E3BB /* tenth.png in Resources */,
 				72FCA13D2351B8EE008044ED /* Screen Shot 2019-10-12 at 2.30.45 PM.png in Resources */,
 				72FCA110235191D0008044ED /* SevenPartNineViewController.xib in Resources */,
 				720F3FCD234BA45700EFE86C /* AlignThreeSquareAutosizeViewController.xib in Resources */,
@@ -907,6 +958,7 @@
 				72FCA11523519491008044ED /* SevenPartTenViewController.xib in Resources */,
 				72FCA12923519CD2008044ED /* SevenPartFourthTeenViewController.xib in Resources */,
 				72C0FB6A234F3F0E0010EFF1 /* SixPartFourViewController.xib in Resources */,
+				729BD8B423546E4E00C7E3BB /* fourthImg.jpeg in Resources */,
 				72C0FB60234F3AD80010EFF1 /* SixPartTwoViewController.xib in Resources */,
 				720F3FC3234B93E200EFE86C /* PracticeFourViewController.xib in Resources */,
 				72C0FB3D234F22CC0010EFF1 /* FivePartOneViewController.xib in Resources */,
@@ -915,23 +967,29 @@
 				72AE932C2349E05900C00F18 /* SquaresAlignCenterAutoSizeViewController.xib in Resources */,
 				72FCA11A23519587008044ED /* SevenPartElevenViewController.xib in Resources */,
 				72C0FB65234F3DB50010EFF1 /* SixPartThreeViewController.xib in Resources */,
+				729BD8AD23546E4E00C7E3BB /* ninethImg.jpg in Resources */,
 				72FCA12423519985008044ED /* SevenPartThirteenViewController.xib in Resources */,
 				72AE930F2349975100C00F18 /* CenterSquareViewController.xib in Resources */,
 				72C0FB42234F25410010EFF1 /* FivePartTwoViewController.xib in Resources */,
+				729BD8AF23546E4E00C7E3BB /* secondImg.jpg in Resources */,
 				72C0FB2A234F1A140010EFF1 /* SquaresFixRangeViewController.xib in Resources */,
 				72CF28DB235022B700C93E8C /* SevenPartTwoViewController.xib in Resources */,
 				72C0FB6F234F3FC10010EFF1 /* SixPartFiveViewController.xib in Resources */,
 				72FCA12E2351A1CC008044ED /* SevenPartFifthTeenViewController.xib in Resources */,
 				72C0FB5B234F37F40010EFF1 /* SixPartOneViewController.xib in Resources */,
 				72C0FB47234F2B940010EFF1 /* FivePartThreeViewController.xib in Resources */,
+				729BD8B523546E4E00C7E3BB /* fifthImg.jpg in Resources */,
+				729BD8B023546E4E00C7E3BB /* thirthImg.jpg in Resources */,
 				72FCA0FC23518335008044ED /* SevenPartFiveViewController.xib in Resources */,
 				72FCA13C2351B8EE008044ED /* Screen Shot 2019-10-12 at 2.30.54 PM.png in Resources */,
 				72CF28E02350609300C93E8C /* SevenPartThreeViewController.xib in Resources */,
 				7203F35B234ACFF3006ED2DE /* PracticeTwoViewController.xib in Resources */,
+				729BD8AE23546E4E00C7E3BB /* eighth.jpeg in Resources */,
 				720F3FC8234B947100EFE86C /* AlignThreeSquareViewController.xib in Resources */,
 				72C0FB25234F15C20010EFF1 /* SquaresEqualRangeViewController.xib in Resources */,
 				72C0FB57234F377A0010EFF1 /* PracticeSixViewController.xib in Resources */,
 				72FCA11F235196FA008044ED /* SevenPartTweleViewController.xib in Resources */,
+				729BD8B223546E4E00C7E3BB /* seventh.jpg in Resources */,
 				72FCA10B23518B97008044ED /* SevenPartEightViewController.xib in Resources */,
 				72AE93272349DE4400C00F18 /* SquaresAlignCenterViewController.xib in Resources */,
 				72FCA1012351861F008044ED /* SevenPartSixViewController.xib in Resources */,
@@ -981,6 +1039,7 @@
 				72CF28DF2350609300C93E8C /* SevenPartThreeViewController.swift in Sources */,
 				72FCA12D2351A1CC008044ED /* SevenPartFifthTeenViewController.swift in Sources */,
 				72AE93172349D8BD00C00F18 /* CenterSquareAutoSizeViewController.swift in Sources */,
+				729BD8B72354763400C7E3BB /* Animal.swift in Sources */,
 				72CF28DA235022B700C93E8C /* SevenPartTwoViewController.swift in Sources */,
 				72FCA11923519587008044ED /* SevenPartElevenViewController.swift in Sources */,
 				7203F35F234AD114006ED2DE /* PracticeThreeViewController.swift in Sources */,
@@ -989,6 +1048,7 @@
 				720F3FC7234B947100EFE86C /* AlignThreeSquareViewController.swift in Sources */,
 				72C0FB3C234F22CC0010EFF1 /* FivePartOneViewController.swift in Sources */,
 				72C0FB69234F3F0E0010EFF1 /* SixPartFourViewController.swift in Sources */,
+				729BD8BB2354837B00C7E3BB /* PracticeTenViewController.swift in Sources */,
 				72C0FB29234F1A140010EFF1 /* SquaresFixRangeViewController.swift in Sources */,
 				72C0FB24234F15C20010EFF1 /* SquaresEqualRangeViewController.swift in Sources */,
 				72C0FB2E234F1C060010EFF1 /* SquaresAutoRangeViewController.swift in Sources */,
