@@ -26,12 +26,14 @@ class HomeViewController: UIViewController {
         loadDataFromPlist()
     }
     
+    // MARK: Navigation
     func configNavigation() {
         self.title = "Home"
         let rightButton = UIBarButtonItem(image: UIImage(named: "table"), style: .plain, target: self, action: #selector(changeToCollectionView))
         navigationItem.rightBarButtonItem = rightButton
     }
 
+    // MARK: objc change to collection view
     @objc func changeToCollectionView() {
         let rightButton = UIBarButtonItem(image: UIImage(named: "collection"), style: .plain, target: self, action: #selector(changeToTableViewView))
         navigationItem.rightBarButtonItem = rightButton
@@ -40,6 +42,7 @@ class HomeViewController: UIViewController {
         collectionView.reloadData()
     }
     
+    // MARK: objc change to table view
     @objc func changeToTableViewView() {
         let rightButton = UIBarButtonItem(image: UIImage(named: "table"), style: .plain, target: self, action: #selector(changeToCollectionView))
         navigationItem.rightBarButtonItem = rightButton
@@ -48,16 +51,19 @@ class HomeViewController: UIViewController {
         tableView.reloadData()
     }
     
+    // MARK: load plist
     func loadDataFromPlist() {
         places = DataManagement.share.getPlaces(fileName: "Places", type: "plist")
     }
     
+    // MARK: loadNibTableView
     func loadNibTableView() {
         NibName.loadNibTabelCell(nibName: "PlaceTableViewCell", tableView: tableView)
         tableView.dataSource = self
         tableView.delegate = self
     }
     
+    // MARK: loadNibCollectionView
     func loadNibCollectionView() {
            NibName.loadNibCollectionCell(nibName: "PlaceCollectionViewCell", collectionView: collectionView)
            collectionView.dataSource = self
@@ -96,6 +102,7 @@ class HomeViewController: UIViewController {
     }
 }
 
+// MARK: UITableVIew
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return places.count
@@ -112,6 +119,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     }
 }
 
+// MARK: UICollectionView
 extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return places.count
@@ -125,12 +133,14 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
     }
 }
 
+// MARK: UICollectionViewDelegateFlowLayout
 extension HomeViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: 180, height: 185)
     }
 }
 
+// MARK: PlaceTableViewCell
 extension HomeViewController: PlaceTableViewCellDelegate {
     func favorite(cell: PlaceTableViewCell, perform: PlaceTableViewCell.Action) {
         guard let indexPath = tableView.indexPath(for: cell) else { return }
@@ -158,6 +168,7 @@ extension HomeViewController: PlaceTableViewCellDelegate {
     }
 }
 
+// MARK: PlaceCollectionViewCell
 extension HomeViewController: PlaceCollectionViewCellDelegate {
     func favorite(cell: PlaceCollectionViewCell, perform: PlaceCollectionViewCell.Action) {
         guard let indexPath = collectionView.indexPath(for: cell) else { return }
