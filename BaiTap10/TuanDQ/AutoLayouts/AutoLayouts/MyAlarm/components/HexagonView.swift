@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HexagonView: UIView {
+class HexagonView: ParentView {
 
     @IBOutlet weak var alarmLabel: UILabel!
     @IBOutlet weak var mainImageView: UIImageView!
@@ -31,5 +31,12 @@ class HexagonView: UIView {
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
+    }
+
+    override func layoutMarginsDidChange() {
+        super.layoutMarginsDidChange()
+        mainImageView.frame.size = self.frame.size
+        self.backgroundColor = .clear
+        mainImageView.backgroundColor = .clear
     }
 }

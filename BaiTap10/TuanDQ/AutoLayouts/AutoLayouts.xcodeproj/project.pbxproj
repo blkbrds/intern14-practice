@@ -36,6 +36,7 @@
 		7231BAF52355C211007E485A /* PracticeFourteenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7231BAF32355C211007E485A /* PracticeFourteenViewController.swift */; };
 		7231BAF62355C211007E485A /* PracticeFourteenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7231BAF42355C211007E485A /* PracticeFourteenViewController.xib */; };
 		7231BAF82355C284007E485A /* avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = 7231BAF72355C284007E485A /* avatar.png */; };
+		7231BAFA2355D17D007E485A /* ParentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7231BAF92355D17D007E485A /* ParentView.swift */; };
 		729BD8AC23546E4E00C7E3BB /* tenth.png in Resources */ = {isa = PBXBuildFile; fileRef = 729BD8A223546E4C00C7E3BB /* tenth.png */; };
 		729BD8AD23546E4E00C7E3BB /* ninethImg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 729BD8A323546E4C00C7E3BB /* ninethImg.jpg */; };
 		729BD8AE23546E4E00C7E3BB /* eighth.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 729BD8A423546E4C00C7E3BB /* eighth.jpeg */; };
@@ -192,6 +193,7 @@
 		7231BAF32355C211007E485A /* PracticeFourteenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeFourteenViewController.swift; sourceTree = "<group>"; };
 		7231BAF42355C211007E485A /* PracticeFourteenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PracticeFourteenViewController.xib; sourceTree = "<group>"; };
 		7231BAF72355C284007E485A /* avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avatar.png; sourceTree = "<group>"; };
+		7231BAF92355D17D007E485A /* ParentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentView.swift; sourceTree = "<group>"; };
 		729BD8A223546E4C00C7E3BB /* tenth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tenth.png; sourceTree = "<group>"; };
 		729BD8A323546E4C00C7E3BB /* ninethImg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ninethImg.jpg; sourceTree = "<group>"; };
 		729BD8A423546E4C00C7E3BB /* eighth.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = eighth.jpeg; sourceTree = "<group>"; };
@@ -509,6 +511,7 @@
 				72AE92DF2349914500C00F18 /* Assets.xcassets */,
 				72AE92E12349914500C00F18 /* LaunchScreen.storyboard */,
 				72AE92E42349914500C00F18 /* Info.plist */,
+				7231BAF92355D17D007E485A /* ParentView.swift */,
 			);
 			path = AutoLayouts;
 			sourceTree = "<group>";
@@ -1185,6 +1188,7 @@
 				72FCA12D2351A1CC008044ED /* SevenPartFifthTeenViewController.swift in Sources */,
 				72AE93172349D8BD00C00F18 /* CenterSquareAutoSizeViewController.swift in Sources */,
 				729BD8B72354763400C7E3BB /* Animal.swift in Sources */,
+				7231BAFA2355D17D007E485A /* ParentView.swift in Sources */,
 				72CF28DA235022B700C93E8C /* SevenPartTwoViewController.swift in Sources */,
 				72FCA11923519587008044ED /* SevenPartElevenViewController.swift in Sources */,
 				7203F35F234AD114006ED2DE /* PracticeThreeViewController.swift in Sources */,

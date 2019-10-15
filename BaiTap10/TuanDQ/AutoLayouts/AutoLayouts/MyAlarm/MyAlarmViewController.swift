@@ -24,5 +24,15 @@ class MyAlarmViewController: UIViewController {
         navigationController?.isToolbarHidden = true
         // Do any additional setup after loading the view.
         alarmContentLabel.adjustsFontSizeToFitWidth = true
+
+        guard let nib = Bundle.main.loadNibNamed("HexagonView", owner: self, options: nil)?[0] as? HexagonView else { return }
+        nib.frame = alarmInformationView.bounds
+        nib.layoutMargins = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+        alarmInformationView.addSubview(nib)
+        
+        guard let contentNib = Bundle.main.loadNibNamed("CircleView", owner: self, options: nil)?[0] as? CircleView else { return }
+        contentNib.frame = alarmInformationView.bounds
+        contentNib.layoutMargins = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+        minuteRemainView.addSubview(contentNib)
     }
 }

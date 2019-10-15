@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CircleView: UIView {
+class CircleView: ParentView {
     
     @IBOutlet weak var mainImageView: UIImageView!
     @IBOutlet weak var contentLabel: UILabel!
@@ -33,5 +33,12 @@ class CircleView: UIView {
         self.contentLabel.text = content
         self.mainImageView.isHidden = true
         self.layer.cornerRadius = self.bounds.height / 2
+    }
+    
+    override func layoutMarginsDidChange() {
+        super.layoutMarginsDidChange()
+        mainImageView.frame.size = self.frame.size
+        self.backgroundColor = .clear
+        mainImageView.backgroundColor = .clear
     }
 }
