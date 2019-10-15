@@ -9,6 +9,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PracticeTenViewController" customModule="AutoLayouts" customModuleProvider="target">
             <connections>
+                <outlet property="blueButton" destination="WIV-gy-kAa" id="NjZ-Ly-FDn"/>
+                <outlet property="browButton" destination="bAM-AO-oa8" id="KJi-8x-XyY"/>
+                <outlet property="greenButton" destination="WDX-kE-TNn" id="QFR-do-oXC"/>
+                <outlet property="orangeButton" destination="fOJ-vF-53L" id="gTM-1Z-glH"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -17,48 +21,64 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FcV-BQ-6Dk">
-                    <rect key="frame" x="157" y="157" width="100" height="100"/>
-                    <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WDX-kE-TNn">
+                    <rect key="frame" x="143" y="87" width="128" height="128"/>
+                    <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
-                        <constraint firstAttribute="width" secondItem="FcV-BQ-6Dk" secondAttribute="height" id="dCR-YE-7Wb"/>
+                        <constraint firstAttribute="width" secondItem="WDX-kE-TNn" secondAttribute="height" id="Mmi-tx-Lmj"/>
                     </constraints>
-                </view>
-                <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GCA-GH-YDm">
-                    <rect key="frame" x="157" y="311" width="100" height="100"/>
-                    <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <action selector="changeZoomButtonClick:" destination="-1" eventType="touchUpInside" id="Vou-o2-6BP"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WIV-gy-kAa">
+                    <rect key="frame" x="143" y="288.5" width="128" height="128"/>
+                    <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
-                        <constraint firstAttribute="width" secondItem="GCA-GH-YDm" secondAttribute="height" id="47Z-7u-o9b"/>
+                        <constraint firstAttribute="width" secondItem="WIV-gy-kAa" secondAttribute="height" id="yT2-cp-tJw"/>
                     </constraints>
-                </view>
-                <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="47A-7l-Vo0">
-                    <rect key="frame" x="157" y="475" width="100" height="100"/>
-                    <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <action selector="changeZoomButtonClick:" destination="-1" eventType="touchUpInside" id="txd-0e-vZE"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fOJ-vF-53L">
+                    <rect key="frame" x="143" y="489.5" width="128" height="128"/>
+                    <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="100" id="P1I-bk-662"/>
-                        <constraint firstAttribute="height" constant="100" id="Xhl-8I-X3M"/>
-                        <constraint firstAttribute="width" secondItem="47A-7l-Vo0" secondAttribute="height" id="kJR-Gb-bzv"/>
+                        <constraint firstAttribute="width" secondItem="fOJ-vF-53L" secondAttribute="height" id="fIy-XI-Xyv"/>
                     </constraints>
-                </view>
-                <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nix-uJ-4eB">
-                    <rect key="frame" x="157" y="639" width="100" height="100"/>
-                    <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <action selector="changeZoomButtonClick:" destination="-1" eventType="touchUpInside" id="GGf-Ox-Lrz"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bAM-AO-oa8">
+                    <rect key="frame" x="143" y="691" width="128" height="128"/>
+                    <color key="backgroundColor" systemColor="systemBrownColor" red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
-                        <constraint firstAttribute="width" secondItem="nix-uJ-4eB" secondAttribute="height" id="ZR5-kr-8WN"/>
-                        <constraint firstAttribute="height" constant="100" id="ift-Vp-9IL"/>
-                        <constraint firstAttribute="width" constant="100" id="pYD-b1-aln"/>
+                        <constraint firstAttribute="width" secondItem="bAM-AO-oa8" secondAttribute="height" id="VV0-lb-Zi1"/>
                     </constraints>
-                </view>
+                    <connections>
+                        <action selector="changeZoomButtonClick:" destination="-1" eventType="touchUpInside" id="EnT-xE-L0Y"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="GCA-GH-YDm" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="1:7" id="YUp-aQ-cc6"/>
-                <constraint firstItem="47A-7l-Vo0" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="1:7" id="fup-9N-hkS"/>
-                <constraint firstItem="nix-uJ-4eB" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="1:7" id="sON-qL-aph"/>
-                <constraint firstItem="FcV-BQ-6Dk" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="1:7" id="sVO-Kv-VcG"/>
+                <constraint firstItem="bAM-AO-oa8" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="1:7" id="5hM-ik-Oo9"/>
+                <constraint firstItem="bAM-AO-oa8" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" multiplier="15:9" id="BnE-JD-FPZ"/>
+                <constraint firstItem="WDX-kE-TNn" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="1:7" id="H5q-S1-mQ4"/>
+                <constraint firstItem="WIV-gy-kAa" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="1:7" identifier="test" id="I5v-eS-kai"/>
+                <constraint firstItem="WDX-kE-TNn" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="JIH-X0-BJc"/>
+                <constraint firstItem="fOJ-vF-53L" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="Tnt-Hv-Hab"/>
+                <constraint firstItem="bAM-AO-oa8" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="Xoz-O4-AGf"/>
+                <constraint firstItem="fOJ-vF-53L" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" multiplier="11:9" id="edv-gs-7SO"/>
+                <constraint firstItem="WIV-gy-kAa" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="gXS-PQ-mob"/>
+                <constraint firstItem="WDX-kE-TNn" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" multiplier="1:3" id="i6D-cF-Hog"/>
+                <constraint firstItem="WIV-gy-kAa" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" multiplier="7:9" id="vdw-dQ-VcY"/>
+                <constraint firstItem="fOJ-vF-53L" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="1:7" id="zut-nf-x2j"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="132" y="154"/>
+            <point key="canvasLocation" x="131.8840579710145" y="153.34821428571428"/>
         </view>
     </objects>
 </document>

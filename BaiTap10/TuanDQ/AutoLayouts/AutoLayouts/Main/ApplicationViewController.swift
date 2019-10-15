@@ -36,6 +36,12 @@ class ApplicationViewController: UIViewController {
             navigationController?.pushViewController(PracticeEightViewController(), animated: true)
         case 9:
             navigationController?.pushViewController(PracticeNineViewController(), animated: true)
+        case 10:
+            navigationController?.pushViewController(PracticeTenViewController(), animated: true)
+        case 11:
+            navigationController?.pushViewController(PracticeElevenViewController(), animated: true)
+        case 12:
+            navigationController?.pushViewController(PracticeTweleViewController(), animated: true)
         default:
             print("Please re-view your actions.")
         }
