@@ -110,12 +110,19 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let tableCell = tableView.dequeueReusableCell(withIdentifier: "PlaceTableViewCell", for: indexPath) as! PlaceTableViewCell
-        tableCell.updateTableCell(image: places[indexPath.row].image, name: places[indexPath.row].name, address: places[indexPath.row].address, point: places[indexPath.row].point, distance: places[indexPath.row].distance, favorite: places[indexPath.row].favorite)
+        tableCell.updateTableCell(place: places[indexPath.row])
         tableCell.delegate = self
         return tableCell
     }
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 80
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let controller = DetailViewController()
+        controller.placeDetail = places[indexPath.row]
+        navigationController?.pushViewController(controller, animated: true)
     }
 }
 
@@ -127,9 +134,15 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let collectionCell = collectionView.dequeueReusableCell(withReuseIdentifier: "PlaceCollectionViewCell", for: indexPath) as! PlaceCollectionViewCell
-        collectionCell.updateCollectionCell(image: places[indexPath.item].image, name: places[indexPath.item].name, address: places[indexPath.item].address, point: places[indexPath.item].point, distance: places[indexPath.item].distance, favorite: places[indexPath.item].favorite)
+        collectionCell.updateCollectionCell(place: places[indexPath.item])
         collectionCell.delegate = self
         return collectionCell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let controller = DetailViewController()
+        controller.placeDetail = places[indexPath.item]
+        navigationController?.pushViewController(controller, animated: true)
     }
 }
 

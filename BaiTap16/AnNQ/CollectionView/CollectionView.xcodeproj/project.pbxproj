@@ -27,6 +27,8 @@
 		D198A0BF2354735000D54448 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D198A0AA2354735000D54448 /* ProfileViewController.xib */; };
 		D198A0C02354735000D54448 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D198A0AB2354735000D54448 /* ProfileViewController.swift */; };
 		D198A0C32354735000D54448 /* DataManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = D198A0B32354735000D54448 /* DataManagement.swift */; };
+		D1ECA42C2355D17400EEACDD /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1ECA42A2355D17400EEACDD /* DetailViewController.swift */; };
+		D1ECA42D2355D17400EEACDD /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1ECA42B2355D17400EEACDD /* DetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +54,8 @@
 		D198A0AA2354735000D54448 /* ProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
 		D198A0AB2354735000D54448 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		D198A0B32354735000D54448 /* DataManagement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManagement.swift; sourceTree = "<group>"; };
+		D1ECA42A2355D17400EEACDD /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		D1ECA42B2355D17400EEACDD /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +121,7 @@
 		D198A0992354735000D54448 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				D1ECA4292355D14800EEACDD /* Detail */,
 				D198A09A2354735000D54448 /* Home */,
 				D198A09D2354735000D54448 /* Friend */,
 				D198A0A32354735000D54448 /* Message */,
@@ -209,6 +214,15 @@
 			path = CollectionView/Core;
 			sourceTree = SOURCE_ROOT;
 		};
+		D1ECA4292355D14800EEACDD /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				D1ECA42A2355D17400EEACDD /* DetailViewController.swift */,
+				D1ECA42B2355D17400EEACDD /* DetailViewController.xib */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -274,6 +288,7 @@
 				D198A08D23546DF100D54448 /* Assets.xcassets in Resources */,
 				D15D48312355897900678F3C /* PlaceCollectionViewCell.xib in Resources */,
 				D198A0B52354735000D54448 /* HomeViewController.xib in Resources */,
+				D1ECA42D2355D17400EEACDD /* DetailViewController.xib in Resources */,
 				D15D482523555E4B00678F3C /* Places.plist in Resources */,
 				D15D482B23557B8500678F3C /* PlaceTableViewCell.xib in Resources */,
 			);
@@ -289,6 +304,7 @@
 				D198A0C32354735000D54448 /* DataManagement.swift in Sources */,
 				D198A0B82354735000D54448 /* FriendViewController.swift in Sources */,
 				D15D482D235581A200678F3C /* NibName.swift in Sources */,
+				D1ECA42C2355D17400EEACDD /* DetailViewController.swift in Sources */,
 				D15D482A23557B8500678F3C /* PlaceTableViewCell.swift in Sources */,
 				D198A08423546DF000D54448 /* AppDelegate.swift in Sources */,
 				D15D482723555F6A00678F3C /* Place.swift in Sources */,

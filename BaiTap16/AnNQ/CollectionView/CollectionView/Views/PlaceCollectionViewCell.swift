@@ -32,13 +32,13 @@ class PlaceCollectionViewCell: UICollectionViewCell {
         // Initialization code
     }
 
-    func updateCollectionCell(image: String, name: String, address: String, point: Int, distance: Int, favorite: Bool) {
-        placeImageView.image = UIImage(named: image)
-        nameLabel.text = name
-        addressLabel.text = address
-        pointLabel.text = "\(point)/10"
-        distanceLabel.text = "\(distance)Km"
-        if favorite == true {
+    func updateCollectionCell(place: Place) {
+        placeImageView.image = UIImage(named: place.image)
+        nameLabel.text = place.name
+        addressLabel.text = place.address
+        pointLabel.text = "\(place.point)/10"
+        distanceLabel.text = "\(place.distance)Km"
+        if place.favorite == true {
             favoriteButton.setImage(UIImage(named: "favorite"), for: .normal)
         } else {
             favoriteButton.setImage(UIImage(named: "star"), for: .normal)

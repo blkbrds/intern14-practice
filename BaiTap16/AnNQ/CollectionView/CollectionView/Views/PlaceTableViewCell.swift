@@ -26,7 +26,6 @@ class PlaceTableViewCell: UITableViewCell {
     @IBOutlet weak var favoriteButton: UIButton!
     
     weak var delegate: PlaceTableViewCellDelegate?
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -38,13 +37,13 @@ class PlaceTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func updateTableCell(image: String, name: String, address: String, point: Int, distance: Int, favorite: Bool) {
-        placeImageView.image = UIImage(named: image)
-        nameLabel.text = name
-        addressLabel.text = address
-        pointLabel.text = "\(point)/10"
-        distanceLabel.text = "\(distance)Km"
-        if favorite == true {
+    func updateTableCell(place: Place) {
+        placeImageView.image = UIImage(named: place.image)
+        nameLabel.text = place.name
+        addressLabel.text = place.address
+        pointLabel.text = "\(place.point)/10"
+        distanceLabel.text = "\(place.distance)Km"
+        if place.favorite == true {
             favoriteButton.setImage(UIImage(named: "favorite"), for: .normal)
         } else {
             favoriteButton.setImage(UIImage(named: "star"), for: .normal)
@@ -56,4 +55,5 @@ class PlaceTableViewCell: UITableViewCell {
             delegate.favorite(cell: self, perform: .favorite)
         }
     }
+    
 }
