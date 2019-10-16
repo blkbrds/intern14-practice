@@ -77,16 +77,18 @@ class LoadDataFromPlist {
                 } catch let err {
                     print("Fail to enum contact:", err)
                 }
-                
-                
-                
-                
             } else {
                 print("Access deny")
             }
-            
-            
         }
         return []
+    }
+
+    func getListComments() -> [String] {
+        var comments: [String] = []
+        comments.append("Hiển thị các đoạn text khác nhau Cell tự đông co giãn để hiển thị hết các đoạn text đó")
+        comments.append("Hiển thị danh sách comment Yêu cầu Hiển thị các đoạn text khác nhau Cell tự đông co giãn để hiển thị hết các đoạn text đó Kiến thức Sử dụng AutoLayout")
+        comments.append("Hiển thị danh bạ điện thoại trong iPhone Yêu cầu Thực hiện lại bài tập 7 Dữ liệu lấy từ Contact trong iPhone Các section theo chữ cái đầu của tên Index cho các section Có search bar để tìm kiếm và thu gọn danh sách Kiến thức Thao tác với AddressBook trong iPhone")
+        return comments
     }
 }

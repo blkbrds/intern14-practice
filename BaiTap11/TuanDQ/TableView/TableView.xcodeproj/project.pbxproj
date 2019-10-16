@@ -33,6 +33,10 @@
 		72CAAFCA23576D7700520FF5 /* PhoneContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CAAFC823576D7700520FF5 /* PhoneContactsViewController.swift */; };
 		72CAAFCB23576D7700520FF5 /* PhoneContactsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72CAAFC923576D7700520FF5 /* PhoneContactsViewController.xib */; };
 		72CAAFCD23577E2300520FF5 /* CommonStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CAAFCC23577E2300520FF5 /* CommonStruct.swift */; };
+		72CAAFD12357854400520FF5 /* AutosizeTextCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CAAFCF2357854400520FF5 /* AutosizeTextCellViewController.swift */; };
+		72CAAFD22357854400520FF5 /* AutosizeTextCellViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72CAAFD02357854400520FF5 /* AutosizeTextCellViewController.xib */; };
+		72CAAFD5235787D900520FF5 /* AutoSizeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CAAFD3235787D900520FF5 /* AutoSizeTableViewCell.swift */; };
+		72CAAFD6235787D900520FF5 /* AutoSizeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72CAAFD4235787D900520FF5 /* AutoSizeTableViewCell.xib */; };
 		72D988CD2357137C004DAB08 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D988CB2357137C004DAB08 /* CustomTableViewCell.swift */; };
 		72D988CE2357137C004DAB08 /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72D988CC2357137C004DAB08 /* CustomTableViewCell.xib */; };
 		72D988D2235717A1004DAB08 /* CustomCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D988D0235717A1004DAB08 /* CustomCellViewController.swift */; };
@@ -92,6 +96,10 @@
 		72CAAFC823576D7700520FF5 /* PhoneContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneContactsViewController.swift; sourceTree = "<group>"; };
 		72CAAFC923576D7700520FF5 /* PhoneContactsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhoneContactsViewController.xib; sourceTree = "<group>"; };
 		72CAAFCC23577E2300520FF5 /* CommonStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonStruct.swift; sourceTree = "<group>"; };
+		72CAAFCF2357854400520FF5 /* AutosizeTextCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutosizeTextCellViewController.swift; sourceTree = "<group>"; };
+		72CAAFD02357854400520FF5 /* AutosizeTextCellViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AutosizeTextCellViewController.xib; sourceTree = "<group>"; };
+		72CAAFD3235787D900520FF5 /* AutoSizeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoSizeTableViewCell.swift; sourceTree = "<group>"; };
+		72CAAFD4235787D900520FF5 /* AutoSizeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AutoSizeTableViewCell.xib; sourceTree = "<group>"; };
 		72D988CB2357137C004DAB08 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		72D988CC2357137C004DAB08 /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
 		72D988D0235717A1004DAB08 /* CustomCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCellViewController.swift; sourceTree = "<group>"; };
@@ -149,6 +157,7 @@
 		72AB35A12356AF02007EDF8D /* TableView */ = {
 			isa = PBXGroup;
 			children = (
+				72CAAFCE2357852000520FF5 /* PracticeEleven */,
 				72CAAFC52357674C00520FF5 /* commonDao */,
 				72CAAFC02357670800520FF5 /* PracticeTen */,
 				72D988CF23571777004DAB08 /* PracticeNine */,
@@ -253,6 +262,17 @@
 				72CAAFCC23577E2300520FF5 /* CommonStruct.swift */,
 			);
 			path = commonDao;
+			sourceTree = "<group>";
+		};
+		72CAAFCE2357852000520FF5 /* PracticeEleven */ = {
+			isa = PBXGroup;
+			children = (
+				72CAAFCF2357854400520FF5 /* AutosizeTextCellViewController.swift */,
+				72CAAFD02357854400520FF5 /* AutosizeTextCellViewController.xib */,
+				72CAAFD3235787D900520FF5 /* AutoSizeTableViewCell.swift */,
+				72CAAFD4235787D900520FF5 /* AutoSizeTableViewCell.xib */,
+			);
+			path = PracticeEleven;
 			sourceTree = "<group>";
 		};
 		72D988CF23571777004DAB08 /* PracticeNine */ = {
@@ -378,7 +398,9 @@
 				72AB35E12356B314007EDF8D /* UserFromPlistViewController.xib in Resources */,
 				72D988D3235717A1004DAB08 /* CustomCellViewController.xib in Resources */,
 				72AB35E52356B393007EDF8D /* MainApplicationViewController.xib in Resources */,
+				72CAAFD6235787D900520FF5 /* AutoSizeTableViewCell.xib in Resources */,
 				72AB35FA2356D4C8007EDF8D /* SearchUsersViewController.xib in Resources */,
+				72CAAFD22357854400520FF5 /* AutosizeTextCellViewController.xib in Resources */,
 				72CAAFCB23576D7700520FF5 /* PhoneContactsViewController.xib in Resources */,
 				72AB35F32356C717007EDF8D /* DisplaySectionViewController.xib in Resources */,
 				72AB35F52356C73F007EDF8D /* animalClassificate.plist in Resources */,
@@ -414,10 +436,12 @@
 				72CAAFCA23576D7700520FF5 /* PhoneContactsViewController.swift in Sources */,
 				72AB35ED2356BF16007EDF8D /* UserDetailViewController.swift in Sources */,
 				72AB35E42356B393007EDF8D /* MainApplicationViewController.swift in Sources */,
+				72CAAFD5235787D900520FF5 /* AutoSizeTableViewCell.swift in Sources */,
 				72D988D82357198E004DAB08 /* CustomCellTableViewCell.swift in Sources */,
 				72AB35E92356BC91007EDF8D /* UsersViewController.swift in Sources */,
 				72D988D2235717A1004DAB08 /* CustomCellViewController.swift in Sources */,
 				72AB35F22356C717007EDF8D /* DisplaySectionViewController.swift in Sources */,
+				72CAAFD12357854400520FF5 /* AutosizeTextCellViewController.swift in Sources */,
 				72AB35D52356AFA1007EDF8D /* SimpleTableViewController.swift in Sources */,
 				72AB35A32356AF02007EDF8D /* AppDelegate.swift in Sources */,
 				72D988CD2357137C004DAB08 /* CustomTableViewCell.swift in Sources */,

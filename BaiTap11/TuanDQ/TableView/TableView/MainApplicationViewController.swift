@@ -32,6 +32,8 @@ class MainApplicationViewController: UIViewController {
             navigationController?.pushViewController(CustomCellViewController(), animated: true)
         case 7:
             navigationController?.pushViewController(PhoneContactsViewController(), animated: true)
+        case 8:
+            navigationController?.pushViewController(AutosizeTextCellViewController(), animated: true)
         default:
             navigationController?.pushViewController(UserFromPlistViewController(), animated: true)
         }
