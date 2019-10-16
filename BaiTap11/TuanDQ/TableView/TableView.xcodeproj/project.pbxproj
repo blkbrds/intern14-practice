@@ -29,6 +29,13 @@
 		72AB35F52356C73F007EDF8D /* animalClassificate.plist in Resources */ = {isa = PBXBuildFile; fileRef = 72AB35F42356C73F007EDF8D /* animalClassificate.plist */; };
 		72AB35F92356D4C8007EDF8D /* SearchUsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AB35F72356D4C8007EDF8D /* SearchUsersViewController.swift */; };
 		72AB35FA2356D4C8007EDF8D /* SearchUsersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72AB35F82356D4C8007EDF8D /* SearchUsersViewController.xib */; };
+		72D988CD2357137C004DAB08 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D988CB2357137C004DAB08 /* CustomTableViewCell.swift */; };
+		72D988CE2357137C004DAB08 /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72D988CC2357137C004DAB08 /* CustomTableViewCell.xib */; };
+		72D988D2235717A1004DAB08 /* CustomCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D988D0235717A1004DAB08 /* CustomCellViewController.swift */; };
+		72D988D3235717A1004DAB08 /* CustomCellViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72D988D1235717A1004DAB08 /* CustomCellViewController.xib */; };
+		72D988D523571911004DAB08 /* userImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 72D988D423571911004DAB08 /* userImage.png */; };
+		72D988D82357198E004DAB08 /* CustomCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D988D62357198E004DAB08 /* CustomCellTableViewCell.swift */; };
+		72D988D92357198E004DAB08 /* CustomCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72D988D72357198E004DAB08 /* CustomCellTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +84,13 @@
 		72AB35F42356C73F007EDF8D /* animalClassificate.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = animalClassificate.plist; sourceTree = "<group>"; };
 		72AB35F72356D4C8007EDF8D /* SearchUsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUsersViewController.swift; sourceTree = "<group>"; };
 		72AB35F82356D4C8007EDF8D /* SearchUsersViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchUsersViewController.xib; sourceTree = "<group>"; };
+		72D988CB2357137C004DAB08 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		72D988CC2357137C004DAB08 /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
+		72D988D0235717A1004DAB08 /* CustomCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCellViewController.swift; sourceTree = "<group>"; };
+		72D988D1235717A1004DAB08 /* CustomCellViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCellViewController.xib; sourceTree = "<group>"; };
+		72D988D423571911004DAB08 /* userImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = userImage.png; sourceTree = "<group>"; };
+		72D988D62357198E004DAB08 /* CustomCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCellTableViewCell.swift; sourceTree = "<group>"; };
+		72D988D72357198E004DAB08 /* CustomCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCellTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +141,7 @@
 		72AB35A12356AF02007EDF8D /* TableView */ = {
 			isa = PBXGroup;
 			children = (
+				72D988CF23571777004DAB08 /* PracticeNine */,
 				72AB35F62356D4AE007EDF8D /* PracticeFive */,
 				72AB35EF2356C6F1007EDF8D /* PracticeFour */,
 				72AB35E62356BC7A007EDF8D /* PracticeThree */,
@@ -197,6 +212,8 @@
 				72AB35F02356C717007EDF8D /* DisplaySectionViewController.swift */,
 				72AB35F12356C717007EDF8D /* DisplaySectionViewController.xib */,
 				72AB35F42356C73F007EDF8D /* animalClassificate.plist */,
+				72D988CB2357137C004DAB08 /* CustomTableViewCell.swift */,
+				72D988CC2357137C004DAB08 /* CustomTableViewCell.xib */,
 			);
 			path = PracticeFour;
 			sourceTree = "<group>";
@@ -208,6 +225,18 @@
 				72AB35F82356D4C8007EDF8D /* SearchUsersViewController.xib */,
 			);
 			path = PracticeFive;
+			sourceTree = "<group>";
+		};
+		72D988CF23571777004DAB08 /* PracticeNine */ = {
+			isa = PBXGroup;
+			children = (
+				72D988D423571911004DAB08 /* userImage.png */,
+				72D988D0235717A1004DAB08 /* CustomCellViewController.swift */,
+				72D988D1235717A1004DAB08 /* CustomCellViewController.xib */,
+				72D988D62357198E004DAB08 /* CustomCellTableViewCell.swift */,
+				72D988D72357198E004DAB08 /* CustomCellTableViewCell.xib */,
+			);
+			path = PracticeNine;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -314,15 +343,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72D988D523571911004DAB08 /* userImage.png in Resources */,
 				72AB35EA2356BC91007EDF8D /* UsersViewController.xib in Resources */,
 				72AB35D62356AFA1007EDF8D /* SimpleTableViewController.xib in Resources */,
+				72D988CE2357137C004DAB08 /* CustomTableViewCell.xib in Resources */,
 				72AB35E12356B314007EDF8D /* UserFromPlistViewController.xib in Resources */,
+				72D988D3235717A1004DAB08 /* CustomCellViewController.xib in Resources */,
 				72AB35E52356B393007EDF8D /* MainApplicationViewController.xib in Resources */,
 				72AB35FA2356D4C8007EDF8D /* SearchUsersViewController.xib in Resources */,
 				72AB35F32356C717007EDF8D /* DisplaySectionViewController.xib in Resources */,
 				72AB35F52356C73F007EDF8D /* animalClassificate.plist in Resources */,
 				72AB35D82356B254007EDF8D /* userData.plist in Resources */,
 				72AB35AF2356AF05007EDF8D /* LaunchScreen.storyboard in Resources */,
+				72D988D92357198E004DAB08 /* CustomCellTableViewCell.xib in Resources */,
 				72AB35EE2356BF16007EDF8D /* UserDetailViewController.xib in Resources */,
 				72AB35AC2356AF05007EDF8D /* Assets.xcassets in Resources */,
 			);
@@ -351,10 +384,13 @@
 			files = (
 				72AB35ED2356BF16007EDF8D /* UserDetailViewController.swift in Sources */,
 				72AB35E42356B393007EDF8D /* MainApplicationViewController.swift in Sources */,
+				72D988D82357198E004DAB08 /* CustomCellTableViewCell.swift in Sources */,
 				72AB35E92356BC91007EDF8D /* UsersViewController.swift in Sources */,
+				72D988D2235717A1004DAB08 /* CustomCellViewController.swift in Sources */,
 				72AB35F22356C717007EDF8D /* DisplaySectionViewController.swift in Sources */,
 				72AB35D52356AFA1007EDF8D /* SimpleTableViewController.swift in Sources */,
 				72AB35A32356AF02007EDF8D /* AppDelegate.swift in Sources */,
+				72D988CD2357137C004DAB08 /* CustomTableViewCell.swift in Sources */,
 				72AB35E02356B314007EDF8D /* UserFromPlistViewController.swift in Sources */,
 				72AB35A52356AF02007EDF8D /* SceneDelegate.swift in Sources */,
 				72AB35F92356D4C8007EDF8D /* SearchUsersViewController.swift in Sources */,

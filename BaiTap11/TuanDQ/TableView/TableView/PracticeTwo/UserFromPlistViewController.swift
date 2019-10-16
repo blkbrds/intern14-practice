@@ -52,6 +52,4 @@ extension UserFromPlistViewController: UITableViewDataSource {
         cell.textLabel?.text = "\(listUser[indexPath.row])"
         return cell
     }
-    
-    
 }

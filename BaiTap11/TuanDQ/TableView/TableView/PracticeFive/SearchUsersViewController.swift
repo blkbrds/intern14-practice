@@ -30,6 +30,7 @@ class SearchUsersViewController: UIViewController {
         guard let path = Bundle.main.url(forResource: fileName, withExtension: ext) else { return }
         guard let userData = NSArray(contentsOf: path) as? [String] else { return }
         originUsers = userData
+        searchUser = originUsers
     }
     
     private func configTableView() {
@@ -42,12 +43,12 @@ class SearchUsersViewController: UIViewController {
 extension SearchUsersViewController: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return originUsers.count
+        return searchUser.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: myIdentity, for: indexPath)
-        cell.textLabel?.text = originUsers[indexPath.row]
+        cell.textLabel?.text = searchUser[indexPath.row]
         return cell
     }
     
@@ -55,8 +56,57 @@ extension SearchUsersViewController: UITableViewDataSource {
         return 1
     }
     
+    private func search(keyword: String) {
+        searchUser = searchUserByKeyword(keyword: keyword)
+        usersTableView.reloadData()
+    }
+    
+    private func searchUserByKeyword(keyword: String) -> [String] {
+        if keyword.trimmingCharacters(in: CharacterSet(charactersIn: " ")) == "" {
+            return originUsers
+        } else {
+            var searchData: [String] = []
+            for user in originUsers {
+                if let _ = user.range(of: keyword) {
+                    searchData.append(user)
+                }
+            }
+            return searchData
+        }
+    }
 }
 
 extension SearchUsersViewController: UISearchBarDelegate {
+
+    /**
+     * Event when text change.
+     */
+    func searchBar(_ searchBar: UISearchBar, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
+        var currentText = ""
+        if let searchBarText = userSearchBar.text {
+            currentText = searchBarText
+        }
+        let keyword = (currentText as NSString).replacingCharacters(in: range, with: text)
+        search(keyword: keyword)
+
+        return true
+    }
+    /**
+     * Function click search button.
+     */
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        guard let keyword = userSearchBar.text else {
+            search(keyword: "") // Search all.
+            return
+        }
+        search(keyword: keyword)
+    }
     
+    /**
+     * Function click cancel button.
+     */
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        userSearchBar.text = ""
+        search(keyword: "")
+    }
 }

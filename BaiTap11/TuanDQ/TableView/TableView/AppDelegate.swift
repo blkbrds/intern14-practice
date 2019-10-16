@@ -3,7 +3,7 @@
 //  TableView
 //
 //  Created by MBA0051 on 10/16/19.
-//  Copyright © 2019 MBA0051. All rights reserved.
+//  Copyright © 2019 MBA0051. All rightsanimalTableView reserved.
 //
 
 import UIKit

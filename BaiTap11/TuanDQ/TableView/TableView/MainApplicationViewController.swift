@@ -26,6 +26,10 @@ class MainApplicationViewController: UIViewController {
             navigationController?.pushViewController(UsersViewController(), animated: true)
         case 4:
             navigationController?.pushViewController(DisplaySectionViewController(), animated: true)
+        case 5:
+            navigationController?.pushViewController(SearchUsersViewController(), animated: true)
+        case 6:
+            navigationController?.pushViewController(CustomCellViewController(), animated: true)
         default:
             navigationController?.pushViewController(UserFromPlistViewController(), animated: true)
         }
