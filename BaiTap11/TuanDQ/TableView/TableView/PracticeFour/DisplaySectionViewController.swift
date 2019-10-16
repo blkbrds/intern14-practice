@@ -13,7 +13,6 @@ class DisplaySectionViewController: UIViewController {
     var animals: [[String]] = [[]]
     var animalsIndex: [String] = []
     let plistName = "animalClassificate"
-    let ext = "plist"
     let myIdentity = "myTableView"
     let customCellName = "CustomTableViewCell"
 
@@ -23,7 +22,7 @@ class DisplaySectionViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        loadDataFromPlist()
+        animals = LoadDataFromPlist.share.loadGroupArrayFromPlist(plistName: plistName)
         
         // Custom cell
         let nix = UINib(nibName: customCellName, bundle: nil)
@@ -31,50 +30,7 @@ class DisplaySectionViewController: UIViewController {
         animalTableView.dataSource = self
         
         // Create animal index
-        animalsIndex.append("Home")
-        animalsIndex.append("Reptiles")
-        animalsIndex.append("Pantheras")
-        animalsIndex.append("Herbivores")
-//        createAnimalsIndex()
-    }
-    
-    private func loadDataFromPlist() {
-        guard let path = Bundle.main.url(forResource: plistName, withExtension: ext) else { return }
-        guard let animalsPlist = NSArray(contentsOf: path) as? [Any]  else { return }
-        
-        for index in 0..<animalsPlist.count {
-            guard let myArray = animalsPlist[index] as? [String] else { return }
-            animals.append(myArray)
-        }
-        animals.remove(at: 0)
-    }
-    
-    /**
-     * Sort by animal name. => Not complete yet.
-     */
-    private func createAnimalsIndex() {
-        var tempData: [[String]] = [[]]
-        var tempIndex: [String] = []
-        // Create index by prefix animal name.
-        for animalArray in animals {
-            for animalName in animalArray {
-                var foundPrefix = false
-                for prefix in 0..<animalsIndex.count {
-                    if animalName.prefix(1).elementsEqual(animalsIndex[prefix]) {
-                        tempData[prefix].append(animalName)
-                        foundPrefix = true
-                        break
-                    }
-                }
-                if foundPrefix == false {
-                    animalsIndex.append(String(animalName.prefix(1)))
-                    tempIndex = []
-                    tempIndex.append(animalName)
-                    tempData.append(tempIndex)
-                }
-            }
-        }
-        animals = tempData
+        animalsIndex = LoadDataFromPlist.share.loadDefaultAnimalIndex()
     }
 }
 
@@ -106,7 +62,6 @@ extension DisplaySectionViewController: UITableViewDataSource {
             return UITableViewCell(style: .default, reuseIdentifier: myIdentity)
         }
         cell.mainContentLabel.text = animals[indexPath.section][indexPath.row]
-//        cell.textLabel?.text = animals[indexPath.section][indexPath.row]
         return cell
     }
     

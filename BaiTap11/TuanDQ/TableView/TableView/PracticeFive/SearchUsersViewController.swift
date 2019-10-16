@@ -15,7 +15,6 @@ class SearchUsersViewController: UIViewController {
     var originUsers: [String] = []
     var searchUser: [String] = []
     let fileName = "userData"
-    let ext = "plist"
     let myIdentity = "searchUser"
     
     override func viewDidLoad() {
@@ -27,9 +26,7 @@ class SearchUsersViewController: UIViewController {
     }
     
     private func loadDataFromPlist() {
-        guard let path = Bundle.main.url(forResource: fileName, withExtension: ext) else { return }
-        guard let userData = NSArray(contentsOf: path) as? [String] else { return }
-        originUsers = userData
+        originUsers = LoadDataFromPlist.share.loadArrayFromPlist(plistName: fileName)
         searchUser = originUsers
     }
     

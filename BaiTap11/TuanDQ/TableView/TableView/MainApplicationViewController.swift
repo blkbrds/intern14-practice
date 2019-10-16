@@ -30,6 +30,8 @@ class MainApplicationViewController: UIViewController {
             navigationController?.pushViewController(SearchUsersViewController(), animated: true)
         case 6:
             navigationController?.pushViewController(CustomCellViewController(), animated: true)
+        case 7:
+            navigationController?.pushViewController(PhoneContactsViewController(), animated: true)
         default:
             navigationController?.pushViewController(UserFromPlistViewController(), animated: true)
         }

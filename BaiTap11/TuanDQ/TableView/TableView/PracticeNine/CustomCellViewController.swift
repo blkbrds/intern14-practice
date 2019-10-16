@@ -14,8 +14,6 @@ class CustomCellViewController: UIViewController {
     var animals: [[String]] = [[]]
     var animalsIndex: [String] = []
     let plistName = "animalClassificate"
-    let ext = "plist"
-
     let identityName = "myIdentity"
     let nibFileName = "CustomCellTableViewCell"
 
@@ -28,20 +26,9 @@ class CustomCellViewController: UIViewController {
     }
 
     private func loadDataFromPlist() {
-        guard let path = Bundle.main.url(forResource: plistName, withExtension: ext) else { return }
-        guard let animalsPlist = NSArray(contentsOf: path) as? [Any]  else { return }
-        
-        for index in 0..<animalsPlist.count {
-            guard let myArray = animalsPlist[index] as? [String] else { return }
-            animals.append(myArray)
-        }
-        animals.remove(at: 0)
-        
+        animals = LoadDataFromPlist.share.loadGroupArrayFromPlist(plistName: plistName)
         // Create animal index
-        animalsIndex.append("Home")
-        animalsIndex.append("Reptiles")
-        animalsIndex.append("Pantheras")
-        animalsIndex.append("Herbivores")
+        animalsIndex = LoadDataFromPlist.share.loadDefaultAnimalIndex()
     }
 
     private func configTableView() {
