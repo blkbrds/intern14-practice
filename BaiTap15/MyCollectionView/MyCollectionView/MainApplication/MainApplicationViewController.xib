@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainApplicationViewController" customModule="MyCollectionView" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="mOB-UG-TBt">
+                    <rect key="frame" x="83" y="180.5" width="248" height="545"/>
+                    <subviews>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uaM-ee-ITb">
+                            <rect key="frame" x="0.0" y="0.0" width="248" height="74"/>
+                            <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="Collect view number">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="collectionViewButtonClick:" destination="-1" eventType="touchUpInside" id="Nfn-ec-DJD"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wwH-3D-5L5">
+                            <rect key="frame" x="0.0" y="94" width="248" height="74.5"/>
+                            <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="Collect rectangle multiple size">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="collectionViewButtonClick:" destination="-1" eventType="touchUpInside" id="y3u-CR-daX"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lWO-FM-M4P">
+                            <rect key="frame" x="0.0" y="188.5" width="248" height="74"/>
+                            <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="Collect view Image album">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="collectionViewButtonClick:" destination="-1" eventType="touchUpInside" id="yFQ-Uu-Fzf"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6s6-tB-0Yd">
+                            <rect key="frame" x="0.0" y="282.5" width="248" height="74"/>
+                            <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="Collect view with header">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="collectionViewButtonClick:" destination="-1" eventType="touchUpInside" id="1PQ-BW-l33"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i2C-3y-dph">
+                            <rect key="frame" x="0.0" y="376.5" width="248" height="74.5"/>
+                            <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="Collect view Drag and Drop">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="collectionViewButtonClick:" destination="-1" eventType="touchUpInside" id="RPP-3n-Ugs"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0nm-Ts-xIt">
+                            <rect key="frame" x="0.0" y="471" width="248" height="74"/>
+                            <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="Multiple collect view">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="collectionViewButtonClick:" destination="-1" eventType="touchUpInside" id="pIf-7y-RNB"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="i2C-3y-dph" firstAttribute="height" secondItem="6s6-tB-0Yd" secondAttribute="height" id="JR4-7b-9J5"/>
+                        <constraint firstItem="wwH-3D-5L5" firstAttribute="height" secondItem="uaM-ee-ITb" secondAttribute="height" id="KUa-fU-jWq"/>
+                        <constraint firstItem="6s6-tB-0Yd" firstAttribute="height" secondItem="lWO-FM-M4P" secondAttribute="height" id="R0V-aP-xKN"/>
+                        <constraint firstItem="lWO-FM-M4P" firstAttribute="height" secondItem="wwH-3D-5L5" secondAttribute="height" id="mEO-4P-dMz"/>
+                        <constraint firstItem="0nm-Ts-xIt" firstAttribute="height" secondItem="i2C-3y-dph" secondAttribute="height" id="vqC-pR-RUN"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="mOB-UG-TBt" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="KQw-5G-toX"/>
+                <constraint firstItem="mOB-UG-TBt" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="ah9-qq-Dbh"/>
+                <constraint firstItem="mOB-UG-TBt" firstAttribute="height" secondItem="fnl-2z-Ty3" secondAttribute="height" multiplier="2:3" id="nDp-gK-pdp"/>
+                <constraint firstItem="mOB-UG-TBt" firstAttribute="width" secondItem="fnl-2z-Ty3" secondAttribute="width" multiplier="3:5" id="rMJ-3C-0AL"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="131.8840579710145" y="130.58035714285714"/>
+        </view>
+    </objects>
+</document>
