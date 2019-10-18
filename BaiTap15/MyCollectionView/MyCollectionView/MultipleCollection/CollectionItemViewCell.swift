@@ -1,33 +1,41 @@
 //
-//  CollectViewNumbersViewController.swift
+//  CollectionItemViewCell.swift
 //  MyCollectionView
 //
-//  Created by MBA0051 on 10/17/19.
+//  Created by MBA0051 on 10/18/19.
 //  Copyright © 2019 MBA0051. All rights reserved.
 //
 
 import UIKit
 
-class CollectViewNumbersViewController: UIViewController {
+class CollectionItemViewCell: UITableViewCell {
 
-    @IBOutlet weak var collectNumbersView: UICollectionView!
+    @IBOutlet weak var mainCollectionView: UICollectionView!
     let myIdentity = "MyIdentity"
-
     var numbers: [String] = []
-    override func viewDidLoad() {
-        super.viewDidLoad()
 
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        // Do any additional setup after loading the view.
+        
         // Set item size.
-        let layout = collectNumbersView.collectionViewLayout as! UICollectionViewFlowLayout
-        layout.itemSize = CGSize(width: view.frame.width / 6, height: view.frame.width / 6)
+        let layout = mainCollectionView.collectionViewLayout as! UICollectionViewFlowLayout
+        layout.itemSize = CGSize(width: contentView.frame.width / 6, height: contentView.frame.width / 6)
 
         // Regist view collection.
-        collectNumbersView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: myIdentity)
-        collectNumbersView.dataSource = self
+        mainCollectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: myIdentity)
+        mainCollectionView.dataSource = self
     }
+
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+
+        // Configure the view for the selected state
+    }
+    
 }
 
-extension CollectViewNumbersViewController: UICollectionViewDataSource, UICollectionViewDelegate {
+extension CollectionItemViewCell: UICollectionViewDataSource {
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
@@ -42,6 +50,15 @@ extension CollectViewNumbersViewController: UICollectionViewDataSource, UICollec
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: myIdentity, for: indexPath)
         cell.backgroundColor = .blue
         
+        // Setting for re-use item.
+        let subViews = cell.contentView.subviews
+        for view in subViews where view is UILabel {
+            if let view = view as? UILabel {
+                view.text = String(numbers[indexPath.row])
+                return cell
+            }
+        }
+
         // Setting to label.
         let label = UILabel(frame: CGRect(x: 0, y: 0, width: cell.contentView.frame.width, height: cell.contentView.frame.height))
         label.text = String(numbers[indexPath.row])

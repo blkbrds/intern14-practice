@@ -24,8 +24,10 @@ class MainApplicationViewController: UIViewController {
             navigationController?.pushViewController(DynamicSizeViewController(), animated: true)
         case 3:
             navigationController?.pushViewController(CollectionAlbumsViewController(), animated: true)
+        case 4:
+            navigationController?.pushViewController(CollectionSectionsViewController(), animated: true)
         default:
-            navigationController?.pushViewController(CollectViewNumbersViewController(), animated: true)
+            navigationController?.pushViewController(MultipleCollectionViewController(), animated: true)
         }
     }
 }

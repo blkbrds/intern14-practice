@@ -11,6 +11,7 @@ import UIKit
 class CommonLogic {
     
     static let share: CommonLogic = CommonLogic()
+    private let ext: String = "plist"
     
     private init() {}
     
@@ -27,16 +28,26 @@ class CommonLogic {
         ]
     }
     
-    func getUsersInformation() -> [PersonInfo] {
-        return [
-            PersonInfo(personImage: UIImage(named: "favorite.png")!, personName: "favorite"),
-            PersonInfo(personImage: UIImage(named: "favorite_selected.png")!, personName: "favorite selected"),
-            PersonInfo(personImage: UIImage(named: "home.png")!, personName: "home"),
-            PersonInfo(personImage: UIImage(named: "home_selected.png")!, personName: "home selected"),
-            PersonInfo(personImage: UIImage(named: "map.png")!, personName: "map"),
-            PersonInfo(personImage: UIImage(named: "map_selected.png")!, personName: "map selected"),
-            PersonInfo(personImage: UIImage(named: "profile.png")!, personName: "profile"),
-            PersonInfo(personImage: UIImage(named: "profile_selected.png")!, personName: "profile selected")
-        ]
+    func loadGroupArrayFromPlist(plistName: String) -> [[String]] {
+        var groupArray: [[String]] = [[]]
+        guard let path = Bundle.main.url(forResource: plistName, withExtension: ext) else { return groupArray }
+        guard let animalsPlist = NSArray(contentsOf: path) as? [Any]  else { return groupArray }
+
+        for index in 0..<animalsPlist.count {
+            guard let myArray = animalsPlist[index] as? [String] else { return groupArray }
+            groupArray.append(myArray)
+        }
+        groupArray.remove(at: 0)
+        return groupArray
+    }
+    
+    func loadDefaultAnimalIndex() -> [String] {
+        var animalsIndex: [String] = []
+        // Create animal index
+        animalsIndex.append("Home")
+        animalsIndex.append("Reptiles")
+        animalsIndex.append("Pantheras")
+        animalsIndex.append("Herbivores")
+        return animalsIndex
     }
 }

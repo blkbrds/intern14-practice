@@ -26,6 +26,7 @@ class DynamicSizeViewController: UIViewController {
 
         // Initial long press even.
         longPress = UILongPressGestureRecognizer(target: self, action: #selector(self.longPressMoveItem(gesture:)))
+        dynamicSizeCollectionView.addGestureRecognizer(longPress)
 
         // Regist view collection.
         dynamicSizeCollectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: myIdentity)
@@ -39,18 +40,14 @@ class DynamicSizeViewController: UIViewController {
     @objc func longPressMoveItem(gesture: UILongPressGestureRecognizer) {
         switch gesture.state {
         case .began:
-            print("begin long press.")
             guard let itemPath = dynamicSizeCollectionView.indexPathForItem(at: gesture.location(in: dynamicSizeCollectionView))
                 else { return }
             dynamicSizeCollectionView.beginInteractiveMovementForItem(at: itemPath)
         case .changed:
-            print("begin change long press.")
             dynamicSizeCollectionView.updateInteractiveMovementTargetPosition(gesture.location(in: dynamicSizeCollectionView))
         case .ended:
-            print("begin end long press.")
             dynamicSizeCollectionView.endInteractiveMovement()
         default:
-            print("begin cancel long press.")
             dynamicSizeCollectionView.cancelInteractiveMovement()
         }
     }
