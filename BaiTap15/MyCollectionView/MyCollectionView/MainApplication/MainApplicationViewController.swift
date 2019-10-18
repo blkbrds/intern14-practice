@@ -22,6 +22,8 @@ class MainApplicationViewController: UIViewController {
             navigationController?.pushViewController(CollectViewNumbersViewController(), animated: true)
         case 2:
             navigationController?.pushViewController(DynamicSizeViewController(), animated: true)
+        case 3:
+            navigationController?.pushViewController(CollectionAlbumsViewController(), animated: true)
         default:
             navigationController?.pushViewController(CollectViewNumbersViewController(), animated: true)
         }
