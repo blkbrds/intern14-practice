@@ -17,6 +17,10 @@
 		7217F328235E13DC00D505D3 /* ScheduleHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7217F326235E13DC00D505D3 /* ScheduleHomeViewController.xib */; };
 		7217F32B235E13F800D505D3 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7217F329235E13F800D505D3 /* MyPageViewController.swift */; };
 		7217F32C235E13F800D505D3 /* MyPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7217F32A235E13F800D505D3 /* MyPageViewController.xib */; };
+		7217F331235E1E3300D505D3 /* ScheduleObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7217F330235E1E3300D505D3 /* ScheduleObject.swift */; };
+		7217F333235E20A000D505D3 /* NSObjectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7217F332235E20A000D505D3 /* NSObjectExtension.swift */; };
+		7217F336235E214B00D505D3 /* MapDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7217F334235E214B00D505D3 /* MapDetailViewController.swift */; };
+		7217F337235E214B00D505D3 /* MapDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7217F335235E214B00D505D3 /* MapDetailViewController.xib */; };
 		72C24B26235AC089003D3DDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C24B25235AC089003D3DDD /* AppDelegate.swift */; };
 		72C24B28235AC089003D3DDD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C24B27235AC089003D3DDD /* SceneDelegate.swift */; };
 		72C24B2F235AC08A003D3DDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72C24B2E235AC08A003D3DDD /* Assets.xcassets */; };
@@ -69,6 +73,10 @@
 		7217F326235E13DC00D505D3 /* ScheduleHomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScheduleHomeViewController.xib; sourceTree = "<group>"; };
 		7217F329235E13F800D505D3 /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
 		7217F32A235E13F800D505D3 /* MyPageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyPageViewController.xib; sourceTree = "<group>"; };
+		7217F330235E1E3300D505D3 /* ScheduleObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleObject.swift; sourceTree = "<group>"; };
+		7217F332235E20A000D505D3 /* NSObjectExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObjectExtension.swift; sourceTree = "<group>"; };
+		7217F334235E214B00D505D3 /* MapDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapDetailViewController.swift; sourceTree = "<group>"; };
+		7217F335235E214B00D505D3 /* MapDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapDetailViewController.xib; sourceTree = "<group>"; };
 		72C24B22235AC089003D3DDD /* DatingMessenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DatingMessenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72C24B25235AC089003D3DDD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		72C24B27235AC089003D3DDD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -137,11 +145,12 @@
 		7217F30B235E0BA800D505D3 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				7217F322235E13BA00D505D3 /* 3.Schedule */,
-				7217F317235E12FA00D505D3 /* 2.Contact */,
-				72C24B55235AC0BF003D3DDD /* Index */,
+				7217F32D235E1BF200D505D3 /* 5.Map */,
 				72C24B5D235AC1CF003D3DDD /* 1.Message */,
+				7217F317235E12FA00D505D3 /* 2.Contact */,
+				7217F322235E13BA00D505D3 /* 3.Schedule */,
 				72C24B5A235AC1B6003D3DDD /* 4.MyPage */,
+				72C24B55235AC0BF003D3DDD /* Index */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -160,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				7217F315235E11D800D505D3 /* AppConstants.swift */,
+				7217F332235E20A000D505D3 /* NSObjectExtension.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -219,6 +229,31 @@
 			children = (
 			);
 			path = Detail;
+			sourceTree = "<group>";
+		};
+		7217F32D235E1BF200D505D3 /* 5.Map */ = {
+			isa = PBXGroup;
+			children = (
+				7217F32F235E1C1F00D505D3 /* Search */,
+				7217F32E235E1C1400D505D3 /* Detail */,
+			);
+			path = 5.Map;
+			sourceTree = "<group>";
+		};
+		7217F32E235E1C1400D505D3 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				7217F334235E214B00D505D3 /* MapDetailViewController.swift */,
+				7217F335235E214B00D505D3 /* MapDetailViewController.xib */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		7217F32F235E1C1F00D505D3 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Search;
 			sourceTree = "<group>";
 		};
 		72C24B19235AC089003D3DDD = {
@@ -356,6 +391,7 @@
 			children = (
 				72C24B77235AD9B4003D3DDD /* Friends.swift */,
 				72C24B79235AD9C0003D3DDD /* Messages.swift */,
+				7217F330235E1E3300D505D3 /* ScheduleObject.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -474,6 +510,7 @@
 				72C24B67235AC20A003D3DDD /* MessageDetailViewController.xib in Resources */,
 				7217F328235E13DC00D505D3 /* ScheduleHomeViewController.xib in Resources */,
 				72C24B59235AC0D6003D3DDD /* IndexPageViewController.xib in Resources */,
+				7217F337235E214B00D505D3 /* MapDetailViewController.xib in Resources */,
 				72C24B63235AC1F2003D3DDD /* MessageHomeViewController.xib in Resources */,
 				7217F32C235E13F800D505D3 /* MyPageViewController.xib in Resources */,
 			);
@@ -511,7 +548,10 @@
 				72C24B78235AD9B4003D3DDD /* Friends.swift in Sources */,
 				72C24B6B235AC64B003D3DDD /* MessengerCollectionViewCell.swift in Sources */,
 				7217F311235E0E7F00D505D3 /* MainPageViewController.swift in Sources */,
+				7217F336235E214B00D505D3 /* MapDetailViewController.swift in Sources */,
+				7217F333235E20A000D505D3 /* NSObjectExtension.swift in Sources */,
 				72C24B66235AC20A003D3DDD /* MessageDetailViewController.swift in Sources */,
+				7217F331235E1E3300D505D3 /* ScheduleObject.swift in Sources */,
 				72C24B7D235ADAAD003D3DDD /* CommonSettingData.swift in Sources */,
 				72C24B58235AC0D6003D3DDD /* IndexPageViewController.swift in Sources */,
 				72C24B62235AC1F2003D3DDD /* MessageHomeViewController.swift in Sources */,

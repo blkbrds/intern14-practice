@@ -18,6 +18,7 @@ class IndexPageViewController: UIViewController {
 
 
     @IBAction func goHomeButtonClick(_ sender: UIButton) {
-        navigationController?.pushViewController(MessageHomeViewController(), animated: true)
+//        navigationController?.pushViewController(MessageHomeViewController(), animated: true)
+        UIApplication.shared.windows.filter{$0.isKeyWindow}.first?.rootViewController = MainPageViewController()
     }
 }

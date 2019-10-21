@@ -20,6 +20,10 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+    <key>NSLocationAlwaysUsageDescription</key>
+    <string>Do you want to DatingMessage access your local?</string>
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string></string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
