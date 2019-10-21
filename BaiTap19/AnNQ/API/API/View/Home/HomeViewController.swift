@@ -21,6 +21,8 @@ class HomeViewController: UIViewController {
     private func configureUI() {
         title = "Home"
         TableView.loadNibName(nibName: "HomeTableViewCell", tableView: tableView)
+        tableView.dataSource = self
+        tableView.delegate = self
     }
 }
 
