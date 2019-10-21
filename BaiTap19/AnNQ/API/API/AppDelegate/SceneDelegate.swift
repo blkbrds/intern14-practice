@@ -25,6 +25,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         } else {
            // Create the initial UI if there is nothing to restore
            let homeVC = HomeViewController()
+           let homeViewModel = HomeViewModel()
+            homeVC.viewModel = homeViewModel
            let homeNC = UINavigationController(rootViewController: homeVC)
            homeNC.tabBarItem = UITabBarItem(title: "Home ", image: UIImage(named: "home"), tag: 0)
 

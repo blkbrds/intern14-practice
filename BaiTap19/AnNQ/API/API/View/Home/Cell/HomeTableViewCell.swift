@@ -17,6 +17,22 @@ class HomeTableViewCell: UITableViewCell {
     @IBOutlet weak var distanceLabel: UILabel!
     @IBOutlet weak var iconImageView: UIImageView!
     
+    var viewCellModel: HomeCellViewModel? {
+        didSet {
+            updateUI()
+        }
+    }
+    
+    func updateUI() {
+        if let viewCellModel = viewCellModel {
+            avatarImageView.image = UIImage(named: viewCellModel.avatar)
+            nameLabel.text = viewCellModel.name
+            addressLabel.text = viewCellModel.address
+            scoreLabel.text = "\(viewCellModel.rating)/10"
+            distanceLabel.text = "\(viewCellModel.distance)Km"
+        }
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

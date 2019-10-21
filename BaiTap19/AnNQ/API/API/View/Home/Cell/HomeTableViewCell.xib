@@ -28,15 +28,15 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hn0-J0-alv">
-                        <rect key="frame" x="88" y="55" width="36" height="17"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M9T-aL-s9f">
                         <rect key="frame" x="88" y="37" width="31" height="15"/>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hn0-J0-alv">
+                        <rect key="frame" x="88" y="55" width="36" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -72,9 +72,12 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="addressLabel" destination="M9T-aL-s9f" id="Bv0-v4-xvM"/>
                 <outlet property="avatarImageView" destination="qBh-EU-KU6" id="q8y-3e-Dy8"/>
+                <outlet property="distanceLabel" destination="OJv-i9-r73" id="qZ9-xy-Esv"/>
                 <outlet property="iconImageView" destination="0O6-5t-Wo7" id="M9v-E3-53d"/>
                 <outlet property="nameLabel" destination="fKk-cc-1Rf" id="8hx-T8-bbc"/>
+                <outlet property="scoreLabel" destination="Hn0-J0-alv" id="aXg-bD-avD"/>
             </connections>
             <point key="canvasLocation" x="137.68115942028987" y="164.73214285714286"/>
         </tableViewCell>

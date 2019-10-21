@@ -8,21 +8,46 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class HomeViewController: BaseViewController {
 
     @IBOutlet weak var tableView: UITableView!
+    
+    var viewModel: HomeViewModel?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         configureUI()
+        loadData()
     }
 
     // MARK: - Configuration UI
     private func configureUI() {
         title = "Home"
-        TableView.loadNibName(nibName: "HomeTableViewCell", tableView: tableView)
+       
+        let nib = UINib(nibName: "HomeTableViewCell", bundle: .main)
+        tableView.register(nib, forCellReuseIdentifier: "HomeTableViewCell")
         tableView.dataSource = self
         tableView.delegate = self
+    }
+    
+    //Update UI
+    func updateUI() {
+        tableView.reloadData()
+    }
+    
+    //Data
+    func loadData() {
+        //API
+        viewModel?.loadData(completion: { (done) in
+            if done {
+                updateUI()
+            } else {
+                //show alertview controller --> bao loix cho ng dung thay
+                if let viewModel = self.viewModel {
+                    viewModel.delegate = self
+                }
+            }
+        })
     }
 }
 
@@ -34,15 +59,28 @@ extension HomeViewController: UITableViewDelegate {
 // MARK: - UITableViewDataSource
 extension HomeViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return (viewModel?.getNumberSection())!
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "HomeTableViewCell", for: indexPath) as! HomeTableViewCell
+        let item = viewModel?.getItem(indexPath: indexPath)
+        
+        if let item = item {
+            cell.viewCellModel = HomeCellViewModel(place: item)
+        }
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 80
+        return (viewModel?.getHeightForRow())!
     }
+}
+
+extension HomeViewController: HomeViewModelDelegate {
+    func showErrorMessage(_ errorMessage: String) {
+        self.showAlertMessage(title: "Call API falure", message: errorMessage)
+    }
+    
+    
 }
