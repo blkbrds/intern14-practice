@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PracticeTenViewController" customModule="AutoLayouts" customModuleProvider="target">
+            <connections>
+                <outlet property="blueButton" destination="WIV-gy-kAa" id="NjZ-Ly-FDn"/>
+                <outlet property="browButton" destination="bAM-AO-oa8" id="KJi-8x-XyY"/>
+                <outlet property="greenButton" destination="WDX-kE-TNn" id="QFR-do-oXC"/>
+                <outlet property="orangeButton" destination="fOJ-vF-53L" id="gTM-1Z-glH"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WDX-kE-TNn">
+                    <rect key="frame" x="143" y="87" width="128" height="128"/>
+                    <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="WDX-kE-TNn" secondAttribute="height" id="Mmi-tx-Lmj"/>
+                    </constraints>
+                    <connections>
+                        <action selector="changeZoomButtonClick:" destination="-1" eventType="touchUpInside" id="Vou-o2-6BP"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WIV-gy-kAa">
+                    <rect key="frame" x="143" y="288.5" width="128" height="128"/>
+                    <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="WIV-gy-kAa" secondAttribute="height" id="yT2-cp-tJw"/>
+                    </constraints>
+                    <connections>
+                        <action selector="changeZoomButtonClick:" destination="-1" eventType="touchUpInside" id="txd-0e-vZE"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fOJ-vF-53L">
+                    <rect key="frame" x="143" y="489.5" width="128" height="128"/>
+                    <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="fOJ-vF-53L" secondAttribute="height" id="fIy-XI-Xyv"/>
+                    </constraints>
+                    <connections>
+                        <action selector="changeZoomButtonClick:" destination="-1" eventType="touchUpInside" id="GGf-Ox-Lrz"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bAM-AO-oa8">
+                    <rect key="frame" x="143" y="691" width="128" height="128"/>
+                    <color key="backgroundColor" systemColor="systemBrownColor" red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="bAM-AO-oa8" secondAttribute="height" id="VV0-lb-Zi1"/>
+                    </constraints>
+                    <connections>
+                        <action selector="changeZoomButtonClick:" destination="-1" eventType="touchUpInside" id="EnT-xE-L0Y"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="bAM-AO-oa8" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="1:7" id="5hM-ik-Oo9"/>
+                <constraint firstItem="bAM-AO-oa8" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" multiplier="15:9" id="BnE-JD-FPZ"/>
+                <constraint firstItem="WDX-kE-TNn" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="1:7" id="H5q-S1-mQ4"/>
+                <constraint firstItem="WIV-gy-kAa" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="1:7" identifier="test" id="I5v-eS-kai"/>
+                <constraint firstItem="WDX-kE-TNn" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="JIH-X0-BJc"/>
+                <constraint firstItem="fOJ-vF-53L" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="Tnt-Hv-Hab"/>
+                <constraint firstItem="bAM-AO-oa8" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="Xoz-O4-AGf"/>
+                <constraint firstItem="fOJ-vF-53L" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" multiplier="11:9" id="edv-gs-7SO"/>
+                <constraint firstItem="WIV-gy-kAa" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="gXS-PQ-mob"/>
+                <constraint firstItem="WDX-kE-TNn" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" multiplier="1:3" id="i6D-cF-Hog"/>
+                <constraint firstItem="WIV-gy-kAa" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" multiplier="7:9" id="vdw-dQ-VcY"/>
+                <constraint firstItem="fOJ-vF-53L" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="1:7" id="zut-nf-x2j"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="131.8840579710145" y="153.34821428571428"/>
+        </view>
+    </objects>
+</document>
