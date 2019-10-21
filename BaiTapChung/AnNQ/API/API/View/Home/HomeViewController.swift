@@ -18,6 +18,9 @@ class HomeViewController: BaseViewController {
         super.viewDidLoad()
         configureUI()
         loadData()
+        if let viewModel = self.viewModel {
+           viewModel.delegate = self
+        }
     }
 
     // MARK: - Configuration UI
@@ -41,11 +44,6 @@ class HomeViewController: BaseViewController {
         viewModel?.loadData(completion: { (done) in
             if done {
                 updateUI()
-            } else {
-                //show alertview controller --> bao loix cho ng dung thay
-                if let viewModel = self.viewModel {
-                    viewModel.delegate = self
-                }
             }
         })
     }
