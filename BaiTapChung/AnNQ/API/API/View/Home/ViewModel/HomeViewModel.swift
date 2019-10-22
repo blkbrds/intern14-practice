@@ -16,27 +16,27 @@ protocol HomeViewModelDelegate : class {
 class HomeViewModel {
     
     var places: [Place] = []
+    var page: Int = 1
+    
     weak var delegate: HomeViewModelDelegate?
     
     //Data
-    func loadData(completion: (Bool) -> Void) {
+    func loadData(limit: Int = 10, offset:Int = 0, completion: @escaping (Bool) -> Void) {
         //goi api
-        places = [
-            Place(avatar: "coffee", name: "Coffee đèn mờ", address: "01 Bạch Đằng", rating: 8, distance: 3),
-            Place(avatar: "coffee", name: "Coffee đèn mờ", address: "01 Bạch Đằng", rating: 8, distance: 3),
-            Place(avatar: "coffee", name: "Coffee đèn mờ", address: "01 Bạch Đằng", rating: 8, distance: 3),
-            Place(avatar: "coffee", name: "Coffee đèn mờ", address: "01 Bạch Đằng", rating: 8, distance: 3),
-            Place(avatar: "coffee", name: "Coffee đèn mờ", address: "01 Bạch Đằng", rating: 8, distance: 3),
-            Place(avatar: "coffee", name: "Coffee đèn mờ", address: "01 Bạch Đằng", rating: 8, distance: 3),
-            Place(avatar: "coffee", name: "Coffee đèn mờ", address: "01 Bạch Đằng", rating: 8, distance: 3),
-        ]
-        if places.count > 0 {
-            // completion
-            completion(true)
-        } else {
-            completion(false)
-            if let delegate = self.delegate {
-                delegate.showErrorMessage("Error Message")
+       
+        ApiManager.Location.getListInLocation(oauth_token: "3IHPZFJ0LWOKCHTHQMWAOZMX40VQV0S3PMZKNUMYZGHUP4WJ", v: "20160524", lat: 16.070531, long: 108.224599, limit: limit, offset: offset) { (result) in
+            switch result {
+            case .failure(let error):
+                completion(false)
+                if let delegate = self.delegate {
+                    delegate.showErrorMessage(error.localizedDescription)
+                }
+            case .success(let results):
+                for place in results.places {
+                    self.places.append(place)
+                }
+                self.page = results.page
+                completion(true)
             }
         }
     }

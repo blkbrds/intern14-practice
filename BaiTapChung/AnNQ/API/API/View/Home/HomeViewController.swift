@@ -43,7 +43,7 @@ class HomeViewController: BaseViewController {
         //API
         viewModel?.loadData(completion: { (done) in
             if done {
-                updateUI()
+                self.updateUI()
             }
         })
     }
