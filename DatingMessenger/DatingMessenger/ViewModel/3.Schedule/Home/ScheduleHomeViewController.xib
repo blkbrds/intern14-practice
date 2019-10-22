@@ -9,7 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ScheduleHomeViewController" customModule="DatingMessenger" customModuleProvider="target">
             <connections>
-                <outlet property="schedulesCollectionView" destination="212-cY-1CV" id="qbr-S6-Aid"/>
+                <outlet property="scheduleTableView" destination="k7V-jP-GmX" id="Rhl-Qa-F40"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,23 +18,17 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="212-cY-1CV">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="k7V-jP-GmX">
                     <rect key="frame" x="0.0" y="5" width="414" height="896"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="LRd-S4-ZFd">
-                        <size key="itemSize" width="50" height="50"/>
-                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                    </collectionViewFlowLayout>
-                </collectionView>
+                </tableView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="212-cY-1CV" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="2Pl-YY-oBc"/>
-                <constraint firstItem="212-cY-1CV" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="B4X-GY-yfZ"/>
-                <constraint firstItem="212-cY-1CV" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" id="E6T-kV-T93"/>
-                <constraint firstItem="212-cY-1CV" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="jL4-Ij-Tdb"/>
+                <constraint firstItem="k7V-jP-GmX" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="3oB-SM-Mn3"/>
+                <constraint firstItem="k7V-jP-GmX" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="YTS-Fu-uNy"/>
+                <constraint firstItem="k7V-jP-GmX" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="bfx-Dz-p2N"/>
+                <constraint firstItem="k7V-jP-GmX" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" id="fkk-Ta-Z0H"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="132" y="127"/>
