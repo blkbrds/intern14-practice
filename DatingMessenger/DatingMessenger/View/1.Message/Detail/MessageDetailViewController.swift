@@ -18,14 +18,12 @@ class MessageDetailViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        title = "Message home page."
+        title = "Message detail page."
         
         let nib = UINib(nibName: "MessageDetailCollectionViewCell", bundle: nil)
         friendsMessageCollectionView.register(nib, forCellWithReuseIdentifier: myIdentity)
         friendsMessageCollectionView.dataSource = self
         friendsMessageCollectionView.delegate = self
-        
-        listMessengers = CommonSettingData.shared.createDummyMessages()
     }
 }
 

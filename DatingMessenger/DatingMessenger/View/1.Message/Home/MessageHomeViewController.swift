@@ -12,7 +12,7 @@ class MessageHomeViewController: UIViewController {
     
     @IBOutlet weak var friendsMessageCollectionView: UICollectionView!
     let myIdentity = "MessageChat"
-    var listMessengers: [Messages]?
+    var messageModel = MessageViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,7 +25,9 @@ class MessageHomeViewController: UIViewController {
         friendsMessageCollectionView.dataSource = self
         friendsMessageCollectionView.delegate = self
         
-        listMessengers = CommonSettingData.shared.createDummyMessages()
+        messageModel.getMessages {
+            friendsMessageCollectionView.reloadData()
+        }
     }
 
 }
@@ -33,14 +35,11 @@ class MessageHomeViewController: UIViewController {
 extension MessageHomeViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 1
+        return messageModel.numberOfSections()
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        if let number = listMessengers?.count {
-            return number
-        }
-        return 0
+        messageModel.messageData.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -48,11 +47,6 @@ extension MessageHomeViewController: UICollectionViewDelegate, UICollectionViewD
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: myIdentity, for: indexPath) as? MessengerCollectionViewCell else {
             return UICollectionViewCell()
         }
-        
-        if let message = listMessengers?[indexPath.item] {
-            cell.message = message
-        }
-
         cell.backgroundColor = .brown
         return cell
     }

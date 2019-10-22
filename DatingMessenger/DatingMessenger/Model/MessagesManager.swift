@@ -1,19 +1,15 @@
 //
-//  CommonSettingData.swift
+//  MessagesManager.swift
 //  DatingMessenger
 //
-//  Created by MBA0051 on 10/19/19.
+//  Created by MBA0051 on 10/22/19.
 //  Copyright © 2019 MBA0051. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
-class CommonSettingData {
-    static let shared = CommonSettingData()
-    
-    private init() {}
-    
-    func createDummyMessages() -> [Messages] {
+class MessagesManager {
+    class func getMessages(completion: ([Messages]) -> Void) {
         var friends: [Messages] = []
         
         let mark = Friends()
@@ -34,6 +30,6 @@ class CommonSettingData {
         trumbMessage.friend = mark
         friends.append(trumbMessage)
         
-        return friends
+        completion(friends)
     }
 }
