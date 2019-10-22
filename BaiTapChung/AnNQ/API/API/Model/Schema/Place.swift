@@ -10,13 +10,13 @@ import Foundation
 
 
 final class Place {
-    var avatar: String
+    var avatar: String?
     var name: String
-    var address: String
-    var rating: Int
-    var distance: Int
+    var address: String?
+    var rating: Int?
+    var distance: Int?
     
-    init(avatar: String, name: String, address: String, rating: Int, distance: Int) {
+    init(avatar: String?, name: String, address: String?, rating: Int?, distance: Int?) {
         self.avatar = avatar
         self.name = name
         self.address = address

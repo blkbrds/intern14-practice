@@ -50,8 +50,8 @@ extension ApiManager.Location {
                             }
                             
                             let location = venue["location"] as! [String: Any]
-                            let formattedAddress = location["formattedAddress"] as! [String]
-                            let address = formattedAddress[0]
+                            let formattedAddress = location["formattedAddress"] as? [String]
+                            let address = formattedAddress?[0]
                             let distance = location["distance"] as! Int
                             let rating = venue["rating"] as! Double
  

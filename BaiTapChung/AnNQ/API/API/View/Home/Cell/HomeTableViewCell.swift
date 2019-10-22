@@ -26,14 +26,14 @@ class HomeTableViewCell: UITableViewCell {
     func updateUI() {
         if let viewCellModel = viewCellModel {
             avatarImageView.image = UIImage(named: "")
-            if let url = URL(string: viewCellModel.avatar) {
+            if let url = URL(string: viewCellModel.avatar ?? "") {
                 let image = try? Data(contentsOf: url)
                 avatarImageView.image = UIImage(data: image!)
             }
             nameLabel.text = viewCellModel.name
             addressLabel.text = viewCellModel.address
-            scoreLabel.text = "\(viewCellModel.rating)/10"
-            distanceLabel.text = "\(viewCellModel.distance)Km"
+            scoreLabel.text = "\(viewCellModel.rating ?? 0)/10"
+            distanceLabel.text = "\(viewCellModel.distance ?? 0)Km"
         }
     }
     

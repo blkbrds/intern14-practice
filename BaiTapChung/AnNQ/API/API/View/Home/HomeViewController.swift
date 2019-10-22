@@ -41,11 +41,11 @@ class HomeViewController: BaseViewController {
     //Data
     func loadData() {
         //API
-        viewModel?.loadData(completion: { (done) in
+        viewModel?.loadData(limit: 30, offset: 0) { (done) in
             if done {
                 self.updateUI()
             }
-        })
+        }
     }
 }
 
@@ -77,7 +77,7 @@ extension HomeViewController: UITableViewDataSource {
 
 extension HomeViewController: HomeViewModelDelegate {
     func showErrorMessage(_ errorMessage: String) {
-        self.showAlertMessage(title: "Call API falure", message: errorMessage)
+        self.showAlertMessage(title: "Call API fail", message: errorMessage)
     }
     
     

@@ -9,11 +9,11 @@
 import Foundation
 
 final class HomeCellViewModel {
-    var avatar: String
+    var avatar: String?
     var name: String
-    var address: String
-    var rating: Int
-    var distance: Int
+    var address: String?
+    var rating: Int?
+    var distance: Int?
     
     init(place: Place) {
         self.avatar = place.avatar
