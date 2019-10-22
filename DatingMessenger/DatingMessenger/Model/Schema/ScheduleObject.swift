@@ -17,13 +17,13 @@ enum AcceptStatus: String {
 
 struct ScheduleObject {
     let id: Int
-    let scheduleDate: NSDate
+    let scheduleDate: Date
     let scheduleTime: String
     let scheduleTitle: String
     let scheduleContent: String
     let acceptStatus: AcceptStatus
     
-    init(id: Int, scheduleDate: NSDate, scheduleTime: String, scheduleTitle: String, scheduleContent: String, acceptStatus: AcceptStatus) {
+    init(id: Int, scheduleDate: Date, scheduleTime: String, scheduleTitle: String, scheduleContent: String, acceptStatus: AcceptStatus) {
         self.id = id
         self.scheduleDate = scheduleDate
         self.scheduleTime = scheduleTime
