@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="gTV-IL-0wX" customClass="MessengerCollectionViewCell" customModule="DatingMessenger" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="343" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="343" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar.png" translatesAutoresizingMaskIntoConstraints="NO" id="Olf-Ow-OmG">
+                        <rect key="frame" x="5" y="0.0" width="50" height="50"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Olf-Ow-OmG" secondAttribute="height" multiplier="1:1" id="shu-hb-zF4"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rFx-7e-p51">
+                        <rect key="frame" x="60" y="0.0" width="278" height="50"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NEa-Dd-D6d">
+                                <rect key="frame" x="8" y="-1" width="79" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message content" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bHC-D0-Sv0">
+                                <rect key="frame" x="8" y="24" width="228" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="12:05 PM" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0WC-Ef-8vN">
+                                <rect key="frame" x="200" y="0.0" width="70" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar.png" translatesAutoresizingMaskIntoConstraints="NO" id="Gpt-JL-ihL">
+                                <rect key="frame" x="244" y="22" width="26" height="26"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Gpt-JL-ihL" secondAttribute="height" multiplier="1:1" id="DxR-0H-DyY"/>
+                                    <constraint firstAttribute="height" constant="26" id="USm-sQ-Xkg"/>
+                                    <constraint firstAttribute="width" constant="26" id="lQT-TN-aSF"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bHC-D0-Sv0" firstAttribute="leading" secondItem="NEa-Dd-D6d" secondAttribute="leading" id="49j-FA-oSm"/>
+                            <constraint firstItem="Gpt-JL-ihL" firstAttribute="leading" secondItem="bHC-D0-Sv0" secondAttribute="trailing" constant="8" id="LAd-x9-5tz"/>
+                            <constraint firstItem="bHC-D0-Sv0" firstAttribute="centerY" secondItem="Gpt-JL-ihL" secondAttribute="centerY" id="NHt-8P-b5g"/>
+                            <constraint firstAttribute="bottom" secondItem="Gpt-JL-ihL" secondAttribute="bottom" constant="2" id="Nvy-Zb-j0h"/>
+                            <constraint firstAttribute="trailing" secondItem="Gpt-JL-ihL" secondAttribute="trailing" constant="8" id="hUU-eO-MjR"/>
+                            <constraint firstItem="bHC-D0-Sv0" firstAttribute="top" secondItem="NEa-Dd-D6d" secondAttribute="bottom" constant="4" id="rA2-fI-bve"/>
+                            <constraint firstAttribute="bottom" secondItem="bHC-D0-Sv0" secondAttribute="bottom" constant="4" id="tHC-EL-AWJ"/>
+                        </constraints>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar.png" translatesAutoresizingMaskIntoConstraints="NO" id="W3z-gk-ShN">
+                        <rect key="frame" x="34" y="22" width="26" height="26"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="W3z-gk-ShN" secondAttribute="height" multiplier="1:1" id="8yE-Qc-6wI"/>
+                            <constraint firstAttribute="height" constant="26" id="QVc-mP-QfN"/>
+                            <constraint firstAttribute="width" constant="26" id="bZJ-RJ-Loy"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="rFx-7e-p51" firstAttribute="leading" secondItem="W3z-gk-ShN" secondAttribute="trailing" id="1CJ-4n-ixs"/>
+                <constraint firstItem="Olf-Ow-OmG" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="BiJ-Zh-dBh"/>
+                <constraint firstAttribute="trailing" secondItem="rFx-7e-p51" secondAttribute="trailing" constant="5" id="Cf6-MT-aXe"/>
+                <constraint firstItem="Olf-Ow-OmG" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="H5J-dk-Tf9"/>
+                <constraint firstItem="Olf-Ow-OmG" firstAttribute="top" secondItem="rFx-7e-p51" secondAttribute="top" id="Hzc-Bu-KOZ"/>
+                <constraint firstItem="bHC-D0-Sv0" firstAttribute="leading" secondItem="Olf-Ow-OmG" secondAttribute="trailing" constant="13" id="JP8-fV-po2"/>
+                <constraint firstItem="rFx-7e-p51" firstAttribute="centerY" secondItem="Olf-Ow-OmG" secondAttribute="centerY" id="KiT-Pe-vVC"/>
+                <constraint firstItem="rFx-7e-p51" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" id="fpS-ZT-gfM"/>
+                <constraint firstItem="rFx-7e-p51" firstAttribute="leading" secondItem="Olf-Ow-OmG" secondAttribute="trailing" constant="5" id="tde-s9-MWB"/>
+                <constraint firstAttribute="bottom" secondItem="W3z-gk-ShN" secondAttribute="bottom" constant="2" id="xyv-FN-6Ga"/>
+            </constraints>
+            <size key="customSize" width="343" height="50"/>
+            <connections>
+                <outlet property="avatarImage" destination="Olf-Ow-OmG" id="Z1b-kZ-ECn"/>
+                <outlet property="lastTimeLabel" destination="0WC-Ef-8vN" id="Kwe-r6-qx9"/>
+                <outlet property="messageContentLabel" destination="bHC-D0-Sv0" id="ccy-SM-NoA"/>
+                <outlet property="statusImageView" destination="W3z-gk-ShN" id="SDa-3b-5Lw"/>
+                <outlet property="usernameLabel" destination="NEa-Dd-D6d" id="pge-6N-x0d"/>
+                <outlet property="viewedImageView" destination="Gpt-JL-ihL" id="VOc-PV-gxV"/>
+            </connections>
+            <point key="canvasLocation" x="344.20289855072468" y="126.5625"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="avatar.png" width="225" height="225"/>
+    </resources>
+</document>

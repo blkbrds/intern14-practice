@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MultipleCollectionViewController" customModule="MyCollectionView" customModuleProvider="target">
+            <connections>
+                <outlet property="containerCollectionView" destination="kNJ-dE-G5K" id="5Mj-jL-OmA"/>
+                <outlet property="mainCollectionView" destination="IQW-jZ-ZRq" id="TIf-e2-0Vh"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oom-ul-Je4">
+                    <rect key="frame" x="20" y="44" width="374" height="224"/>
+                    <subviews>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="IQW-jZ-ZRq">
+                            <rect key="frame" x="26" y="0.0" width="322" height="224"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="m6e-FF-uXK">
+                                <size key="itemSize" width="50" height="50"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                        </collectionView>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eWf-Pa-Wl0">
+                            <rect key="frame" x="0.0" y="74" width="26" height="76"/>
+                            <state key="normal" image="left.png"/>
+                            <connections>
+                                <action selector="changeCollectionItem:" destination="-1" eventType="touchUpInside" id="ZLY-vA-hhH"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oHu-wy-yzL">
+                            <rect key="frame" x="348" y="80" width="26" height="70"/>
+                            <state key="normal" image="right.png"/>
+                            <connections>
+                                <action selector="changeCollectionItem:" destination="-1" eventType="touchUpInside" id="paq-Vu-MoX"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="eWf-Pa-Wl0" firstAttribute="bottom" secondItem="oHu-wy-yzL" secondAttribute="bottom" id="0df-cM-NCR"/>
+                        <constraint firstItem="IQW-jZ-ZRq" firstAttribute="centerX" secondItem="Oom-ul-Je4" secondAttribute="centerX" id="6sQ-Ez-btR"/>
+                        <constraint firstItem="eWf-Pa-Wl0" firstAttribute="centerY" secondItem="IQW-jZ-ZRq" secondAttribute="centerY" id="BRm-lK-UmJ"/>
+                        <constraint firstItem="IQW-jZ-ZRq" firstAttribute="centerY" secondItem="Oom-ul-Je4" secondAttribute="centerY" id="CBR-za-dL4"/>
+                        <constraint firstItem="IQW-jZ-ZRq" firstAttribute="height" secondItem="Oom-ul-Je4" secondAttribute="height" id="RIA-20-Pff"/>
+                        <constraint firstAttribute="trailing" secondItem="oHu-wy-yzL" secondAttribute="trailing" id="UQZ-f3-jsl"/>
+                        <constraint firstItem="eWf-Pa-Wl0" firstAttribute="width" secondItem="oHu-wy-yzL" secondAttribute="width" id="ewb-g2-3xu"/>
+                        <constraint firstItem="eWf-Pa-Wl0" firstAttribute="leading" secondItem="Oom-ul-Je4" secondAttribute="leading" id="pWg-GY-T9b"/>
+                        <constraint firstItem="IQW-jZ-ZRq" firstAttribute="leading" secondItem="eWf-Pa-Wl0" secondAttribute="trailing" id="tz7-2I-Pbi"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kNJ-dE-G5K">
+                    <rect key="frame" x="20" y="278" width="374" height="594"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Oom-ul-Je4" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="1:4" id="3sP-1x-ENI"/>
+                <constraint firstItem="kNJ-dE-G5K" firstAttribute="top" secondItem="Oom-ul-Je4" secondAttribute="bottom" constant="10" id="JjK-LJ-Gg2"/>
+                <constraint firstItem="kNJ-dE-G5K" firstAttribute="trailing" secondItem="Oom-ul-Je4" secondAttribute="trailing" id="TUw-Xn-OPY"/>
+                <constraint firstItem="kNJ-dE-G5K" firstAttribute="leading" secondItem="Oom-ul-Je4" secondAttribute="leading" id="dzM-fg-Mof"/>
+                <constraint firstItem="Oom-ul-Je4" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="gre-xD-gkq"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="kNJ-dE-G5K" secondAttribute="trailing" constant="20" id="lRY-fG-b7q"/>
+                <constraint firstItem="kNJ-dE-G5K" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" constant="10" id="lsu-Bp-6vD"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Oom-ul-Je4" secondAttribute="trailing" constant="20" id="srt-iO-Nby"/>
+                <constraint firstItem="Oom-ul-Je4" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="tD6-jn-TEl"/>
+                <constraint firstItem="kNJ-dE-G5K" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="x6O-6U-jmQ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="131.8840579710145" y="130.58035714285714"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="left.png" width="26" height="76"/>
+        <image name="right.png" width="24" height="70"/>
+    </resources>
+</document>

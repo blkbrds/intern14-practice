@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+   animalClassificate.plist
+   MyCollectionView
+
+   Created by MBA0051 on 10/18/19.
+   Copyright (c) 2019 MBA0051. All rights reserved.
+-->
+<plist version="1.0">
+    <array>
+        <array>
+            <string>Trâu</string>
+            <string>Bò</string>
+            <string>Lợn</string>
+            <string>Gà</string>
+        </array>
+        <array>
+            <string>Rắn</string>
+            <string>Tắc kè</string>
+            <string>Kỳ nhông</string>
+        </array>
+        <array>
+            <string>Hổ</string>
+            <string>Báo</string>
+            <string>Chó sói</string>
+            <string>Cá sấu</string>
+            <string>Sư tử</string>
+        </array>
+        <array>
+            <string>Linh dương</string>
+            <string>Bò rừng</string>
+            <string>Voi</string>
+        </array>
+    </array>
+</plist>
