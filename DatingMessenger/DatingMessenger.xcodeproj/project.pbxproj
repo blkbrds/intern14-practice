@@ -41,9 +41,6 @@
 		72C24B81235AE808003D3DDD /* MessageDetailCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72C24B7F235AE808003D3DDD /* MessageDetailCollectionViewCell.xib */; };
 		72F653EC235F4152006BC812 /* TabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F653EA235F4152006BC812 /* TabbarViewController.swift */; };
 		72F653ED235F4152006BC812 /* TabbarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72F653EB235F4152006BC812 /* TabbarViewController.xib */; };
-		72F653EF235F4167006BC812 /* TabbarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F653EE235F4167006BC812 /* TabbarViewModel.swift */; };
-		72F653F1235F4173006BC812 /* TabbarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F653F0235F4173006BC812 /* TabbarModel.swift */; };
-		72F653F3235F41FF006BC812 /* TabbarManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F653F2235F41FF006BC812 /* TabbarManager.swift */; };
 		72F653F5235F4938006BC812 /* MessageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F653F4235F4938006BC812 /* MessageViewModel.swift */; };
 		72F653F7235F4951006BC812 /* MessagesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F653F6235F4951006BC812 /* MessagesManager.swift */; };
 		72F653F9235F4E89006BC812 /* MessageCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F653F8235F4E89006BC812 /* MessageCellViewModel.swift */; };
@@ -113,9 +110,6 @@
 		72C24B7F235AE808003D3DDD /* MessageDetailCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageDetailCollectionViewCell.xib; sourceTree = "<group>"; };
 		72F653EA235F4152006BC812 /* TabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarViewController.swift; sourceTree = "<group>"; };
 		72F653EB235F4152006BC812 /* TabbarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabbarViewController.xib; sourceTree = "<group>"; };
-		72F653EE235F4167006BC812 /* TabbarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarViewModel.swift; sourceTree = "<group>"; };
-		72F653F0235F4173006BC812 /* TabbarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarModel.swift; sourceTree = "<group>"; };
-		72F653F2235F41FF006BC812 /* TabbarManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarManager.swift; sourceTree = "<group>"; };
 		72F653F4235F4938006BC812 /* MessageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewModel.swift; sourceTree = "<group>"; };
 		72F653F6235F4951006BC812 /* MessagesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesManager.swift; sourceTree = "<group>"; };
 		72F653F8235F4E89006BC812 /* MessageCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCellViewModel.swift; sourceTree = "<group>"; };
@@ -414,7 +408,6 @@
 			isa = PBXGroup;
 			children = (
 				72F653FA235F530A006BC812 /* Schema */,
-				72F653F2235F41FF006BC812 /* TabbarManager.swift */,
 				72F653F6235F4951006BC812 /* MessagesManager.swift */,
 				72F653FF235F57DC006BC812 /* ScheduleManager.swift */,
 			);
@@ -426,8 +419,6 @@
 			children = (
 				72F653EA235F4152006BC812 /* TabbarViewController.swift */,
 				72F653EB235F4152006BC812 /* TabbarViewController.xib */,
-				72F653EE235F4167006BC812 /* TabbarViewModel.swift */,
-				72F653F0235F4173006BC812 /* TabbarModel.swift */,
 			);
 			path = Tabbar;
 			sourceTree = "<group>";
@@ -586,7 +577,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				72C24B26235AC089003D3DDD /* AppDelegate.swift in Sources */,
-				72F653F1235F4173006BC812 /* TabbarModel.swift in Sources */,
 				72F653F9235F4E89006BC812 /* MessageCellViewModel.swift in Sources */,
 				7217F32B235E13F800D505D3 /* MyPageViewController.swift in Sources */,
 				72F653EC235F4152006BC812 /* TabbarViewController.swift in Sources */,
@@ -594,7 +584,6 @@
 				72C24B28235AC089003D3DDD /* SceneDelegate.swift in Sources */,
 				7217F316235E11D800D505D3 /* AppConstants.swift in Sources */,
 				72F653FC235F5328006BC812 /* Messages.swift in Sources */,
-				72F653EF235F4167006BC812 /* TabbarViewModel.swift in Sources */,
 				72F653F5235F4938006BC812 /* MessageViewModel.swift in Sources */,
 				72C24B72235ACEFF003D3DDD /* CommonReusable.swift in Sources */,
 				72F65400235F57DC006BC812 /* ScheduleManager.swift in Sources */,
@@ -605,7 +594,6 @@
 				72A7AB7F235F6A2B00A9E838 /* ScheduleCell.swift in Sources */,
 				7217F333235E20A000D505D3 /* NSObjectExtension.swift in Sources */,
 				72C24B66235AC20A003D3DDD /* MessageDetailViewController.swift in Sources */,
-				72F653F3235F41FF006BC812 /* TabbarManager.swift in Sources */,
 				7217F331235E1E3300D505D3 /* ScheduleObject.swift in Sources */,
 				72C24B58235AC0D6003D3DDD /* IndexPageViewController.swift in Sources */,
 				72C24B62235AC1F2003D3DDD /* MessageHomeViewController.swift in Sources */,

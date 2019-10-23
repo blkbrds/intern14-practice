@@ -12,7 +12,7 @@ class MessageHomeViewController: UIViewController {
     
     @IBOutlet weak var friendsMessageCollectionView: UICollectionView!
     let myIdentity = "MessageChat"
-    var messageModel = MessageViewModel()
+    var viewModel: MessageViewModel?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,21 +25,28 @@ class MessageHomeViewController: UIViewController {
         friendsMessageCollectionView.dataSource = self
         friendsMessageCollectionView.delegate = self
         
-        messageModel.getMessages {
-            friendsMessageCollectionView.reloadData()
+        if let viewModel = viewModel {
+            viewModel.getMessages {
+                friendsMessageCollectionView.reloadData()
+            }
         }
     }
-
 }
 
 extension MessageHomeViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return messageModel.numberOfSections()
+        if let viewModel = viewModel {
+            return viewModel.numberOfSections()
+        }
+        return 0
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        messageModel.messageData.count
+        if let viewModel = viewModel {
+            return viewModel.numberOfItemsInSection()
+        }
+        return 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {

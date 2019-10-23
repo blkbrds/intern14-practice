@@ -14,7 +14,7 @@ class ScheduleHomeViewController: UIViewController {
     let collectionIdentity = "collectionIdentity"
     @IBOutlet weak var scheduleTableView: UITableView!
     @IBOutlet weak var scheduleCollectionView: UICollectionView!
-    var scheduleModel = ScheduleHomeViewModel()
+    var viewModel: ScheduleHomeViewModel?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,10 +32,13 @@ class ScheduleHomeViewController: UIViewController {
         scheduleCollectionView.delegate = self
 
         // reload data.
-        scheduleModel.getSchedules {
-            scheduleTableView.reloadData()
-            scheduleCollectionView.reloadData()
+        if let viewModel = viewModel {
+            viewModel.getSchedules {
+                scheduleTableView.reloadData()
+                scheduleCollectionView.reloadData()
+            }
         }
+        
         scheduleCollectionView.isHidden = true
         scheduleTableView.isHidden = false
     }
@@ -54,17 +57,25 @@ class ScheduleHomeViewController: UIViewController {
 extension ScheduleHomeViewController: UITableViewDataSource, UITableViewDelegate {
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return scheduleModel.numberOfSections()
+        if let viewModel = viewModel {
+            return viewModel.numberOfSections()
+        }
+        return 0
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return scheduleModel.schedules.count
+        if let viewModel = viewModel {
+            return viewModel.numberOfRowsInSection()
+        }
+        return 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: myIdentity, for: indexPath) as? ScheduleTableViewCell else {
             return UITableViewCell()
         }
-        cell.viewModel = scheduleModel.cellViewModel(at: indexPath)
+        if let viewModel = viewModel {
+            cell.viewModel = viewModel.cellViewModel(at: indexPath)
+        }
         return cell
     }
 }
@@ -72,10 +83,16 @@ extension ScheduleHomeViewController: UITableViewDataSource, UITableViewDelegate
 extension ScheduleHomeViewController: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return scheduleModel.numberOfSections()
+        if let viewModel = viewModel {
+            return viewModel.numberOfSections()
+        }
+        return 0
     }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return scheduleModel.numberOfSections()
+        if let viewModel = viewModel {
+            return viewModel.numberOfRowsInSection()
+        }
+        return 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -84,7 +101,9 @@ extension ScheduleHomeViewController: UICollectionViewDataSource, UICollectionVi
         }
 
         cell.backgroundColor = .brown
-        cell.viewModel = scheduleModel.cellViewModel(at: indexPath)
+        if let viewModel = viewModel {
+            cell.viewModel = viewModel.cellViewModel(at: indexPath)
+        }
         return cell
     }
     
