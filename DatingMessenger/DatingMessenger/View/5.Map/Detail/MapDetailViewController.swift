@@ -33,8 +33,8 @@ class MapDetailViewController: UIViewController {
 
 extension MapDetailViewController: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        let current = locations.last
-        let region = MKCoordinateRegion(center: current!.coordinate, span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01)) // Zoom
+        let current = locations.first
+        let region = MKCoordinateRegion(center: current!.coordinate, span: MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)) // Zoom
         mainMapDetail.setRegion(region, animated: true)
     }
     

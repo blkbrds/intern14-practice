@@ -19,7 +19,7 @@ class TabbarViewController: UITabBarController {
         let messageNavi = UINavigationController(rootViewController: messageHomeViewController)
         messageNavi.tabBarItem = UITabBarItem(title: "Message home", image: UIImage(named: "favorite_selected" )!.withRenderingMode(.alwaysOriginal), selectedImage: UIImage(named: "favorite"))
         
-        let contactHomeViewController = ContactHomeViewController()
+        let contactHomeViewController = SearchMapViewController()
         let contactNavi = UINavigationController(rootViewController: contactHomeViewController)
         contactNavi.tabBarItem = UITabBarItem(title: "Contact home", image: UIImage(named: "home_selected" )!.withRenderingMode(.alwaysOriginal), selectedImage: UIImage(named: "home"))
 
