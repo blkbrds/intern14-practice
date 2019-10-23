@@ -20,6 +20,8 @@
 		7217F333235E20A000D505D3 /* NSObjectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7217F332235E20A000D505D3 /* NSObjectExtension.swift */; };
 		7217F336235E214B00D505D3 /* MapDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7217F334235E214B00D505D3 /* MapDetailViewController.swift */; };
 		7217F337235E214B00D505D3 /* MapDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7217F335235E214B00D505D3 /* MapDetailViewController.xib */; };
+		725B62782360597F005743F8 /* SearchMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725B62762360597F005743F8 /* SearchMapViewController.swift */; };
+		725B62792360597F005743F8 /* SearchMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 725B62772360597F005743F8 /* SearchMapViewController.xib */; };
 		727F9CCD23604FD0005373FB /* ScheduleDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727F9CCC23604FD0005373FB /* ScheduleDetailViewModel.swift */; };
 		72A7AB7F235F6A2B00A9E838 /* ScheduleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A7AB7D235F6A2B00A9E838 /* ScheduleCell.swift */; };
 		72A7AB80235F6A2B00A9E838 /* ScheduleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72A7AB7E235F6A2B00A9E838 /* ScheduleCell.xib */; };
@@ -86,6 +88,8 @@
 		7217F332235E20A000D505D3 /* NSObjectExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObjectExtension.swift; sourceTree = "<group>"; };
 		7217F334235E214B00D505D3 /* MapDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapDetailViewController.swift; sourceTree = "<group>"; };
 		7217F335235E214B00D505D3 /* MapDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapDetailViewController.xib; sourceTree = "<group>"; };
+		725B62762360597F005743F8 /* SearchMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMapViewController.swift; sourceTree = "<group>"; };
+		725B62772360597F005743F8 /* SearchMapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchMapViewController.xib; sourceTree = "<group>"; };
 		727F9CCC23604FD0005373FB /* ScheduleDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleDetailViewModel.swift; sourceTree = "<group>"; };
 		72A7AB7D235F6A2B00A9E838 /* ScheduleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleCell.swift; sourceTree = "<group>"; };
 		72A7AB7E235F6A2B00A9E838 /* ScheduleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScheduleCell.xib; sourceTree = "<group>"; };
@@ -277,6 +281,8 @@
 		7217F32F235E1C1F00D505D3 /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				725B62762360597F005743F8 /* SearchMapViewController.swift */,
+				725B62772360597F005743F8 /* SearchMapViewController.xib */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -546,6 +552,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				725B62792360597F005743F8 /* SearchMapViewController.xib in Resources */,
 				7204747823603EC30060FEFA /* ScheduleDetailViewController.xib in Resources */,
 				72C24B32235AC08A003D3DDD /* LaunchScreen.storyboard in Resources */,
 				72C24B75235AD6CB003D3DDD /* avatar.png in Resources */,
@@ -603,6 +610,7 @@
 				72C24B6B235AC64B003D3DDD /* MessengerCollectionViewCell.swift in Sources */,
 				72F653F7235F4951006BC812 /* MessagesManager.swift in Sources */,
 				7217F336235E214B00D505D3 /* MapDetailViewController.swift in Sources */,
+				725B62782360597F005743F8 /* SearchMapViewController.swift in Sources */,
 				72A7AB7F235F6A2B00A9E838 /* ScheduleCell.swift in Sources */,
 				7217F333235E20A000D505D3 /* NSObjectExtension.swift in Sources */,
 				72C24B66235AC20A003D3DDD /* MessageDetailViewController.swift in Sources */,
