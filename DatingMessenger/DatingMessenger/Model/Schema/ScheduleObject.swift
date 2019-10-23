@@ -30,6 +30,7 @@ struct ScheduleObject {
         self.scheduleTitle = scheduleTitle
         self.scheduleContent = scheduleContent
         self.acceptStatus = acceptStatus
+        
     }
     
     // TODO: Not yet implements json convert.

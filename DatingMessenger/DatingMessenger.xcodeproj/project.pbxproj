@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7204747723603EC30060FEFA /* ScheduleDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7204747523603EC30060FEFA /* ScheduleDetailViewController.swift */; };
+		7204747823603EC30060FEFA /* ScheduleDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7204747623603EC30060FEFA /* ScheduleDetailViewController.xib */; };
 		7217F316235E11D800D505D3 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7217F315235E11D800D505D3 /* AppConstants.swift */; };
 		7217F31C235E133B00D505D3 /* ContactHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7217F31A235E133B00D505D3 /* ContactHomeViewController.swift */; };
 		7217F31D235E133B00D505D3 /* ContactHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7217F31B235E133B00D505D3 /* ContactHomeViewController.xib */; };
@@ -18,6 +20,7 @@
 		7217F333235E20A000D505D3 /* NSObjectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7217F332235E20A000D505D3 /* NSObjectExtension.swift */; };
 		7217F336235E214B00D505D3 /* MapDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7217F334235E214B00D505D3 /* MapDetailViewController.swift */; };
 		7217F337235E214B00D505D3 /* MapDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7217F335235E214B00D505D3 /* MapDetailViewController.xib */; };
+		727F9CCD23604FD0005373FB /* ScheduleDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727F9CCC23604FD0005373FB /* ScheduleDetailViewModel.swift */; };
 		72A7AB7F235F6A2B00A9E838 /* ScheduleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A7AB7D235F6A2B00A9E838 /* ScheduleCell.swift */; };
 		72A7AB80235F6A2B00A9E838 /* ScheduleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72A7AB7E235F6A2B00A9E838 /* ScheduleCell.xib */; };
 		72C24B26235AC089003D3DDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C24B25235AC089003D3DDD /* AppDelegate.swift */; };
@@ -70,6 +73,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7204747523603EC30060FEFA /* ScheduleDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleDetailViewController.swift; sourceTree = "<group>"; };
+		7204747623603EC30060FEFA /* ScheduleDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScheduleDetailViewController.xib; sourceTree = "<group>"; };
 		7217F315235E11D800D505D3 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 		7217F31A235E133B00D505D3 /* ContactHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactHomeViewController.swift; sourceTree = "<group>"; };
 		7217F31B235E133B00D505D3 /* ContactHomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactHomeViewController.xib; sourceTree = "<group>"; };
@@ -81,6 +86,7 @@
 		7217F332235E20A000D505D3 /* NSObjectExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObjectExtension.swift; sourceTree = "<group>"; };
 		7217F334235E214B00D505D3 /* MapDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapDetailViewController.swift; sourceTree = "<group>"; };
 		7217F335235E214B00D505D3 /* MapDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapDetailViewController.xib; sourceTree = "<group>"; };
+		727F9CCC23604FD0005373FB /* ScheduleDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleDetailViewModel.swift; sourceTree = "<group>"; };
 		72A7AB7D235F6A2B00A9E838 /* ScheduleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleCell.swift; sourceTree = "<group>"; };
 		72A7AB7E235F6A2B00A9E838 /* ScheduleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScheduleCell.xib; sourceTree = "<group>"; };
 		72C24B22235AC089003D3DDD /* DatingMessenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DatingMessenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -243,6 +249,9 @@
 		7217F324235E13CB00D505D3 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
+				7204747523603EC30060FEFA /* ScheduleDetailViewController.swift */,
+				7204747623603EC30060FEFA /* ScheduleDetailViewController.xib */,
+				727F9CCC23604FD0005373FB /* ScheduleDetailViewModel.swift */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -537,6 +546,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7204747823603EC30060FEFA /* ScheduleDetailViewController.xib in Resources */,
 				72C24B32235AC08A003D3DDD /* LaunchScreen.storyboard in Resources */,
 				72C24B75235AD6CB003D3DDD /* avatar.png in Resources */,
 				7217F31D235E133B00D505D3 /* ContactHomeViewController.xib in Resources */,
@@ -579,6 +589,8 @@
 				72C24B26235AC089003D3DDD /* AppDelegate.swift in Sources */,
 				72F653F9235F4E89006BC812 /* MessageCellViewModel.swift in Sources */,
 				7217F32B235E13F800D505D3 /* MyPageViewController.swift in Sources */,
+				7204747723603EC30060FEFA /* ScheduleDetailViewController.swift in Sources */,
+				727F9CCD23604FD0005373FB /* ScheduleDetailViewModel.swift in Sources */,
 				72F653EC235F4152006BC812 /* TabbarViewController.swift in Sources */,
 				7217F327235E13DC00D505D3 /* ScheduleHomeViewController.swift in Sources */,
 				72C24B28235AC089003D3DDD /* SceneDelegate.swift in Sources */,

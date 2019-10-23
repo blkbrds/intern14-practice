@@ -88,6 +88,17 @@ extension ScheduleHomeViewController: UITableViewDataSource, UITableViewDelegate
         }
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let detailViewController = ScheduleDetailViewController()
+
+        if let viewModel = viewModel {
+            let detailModelView = viewModel.detailViewModel(at: indexPath)
+            detailViewController.viewModel = detailModelView
+        }
+        
+        navigationController?.pushViewController(detailViewController, animated: true)
+    }
 }
 
 extension ScheduleHomeViewController: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {

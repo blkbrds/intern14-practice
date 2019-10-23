@@ -31,4 +31,8 @@ class ScheduleHomeViewModel {
     func numberOfRowsInSection() -> Int {
         return schedules.count
     }
+    
+    func detailViewModel(at indexPath: IndexPath) -> ScheduleDetailViewModel {
+        return ScheduleDetailViewModel(schedule: schedules[indexPath.row])
+    }
 }
