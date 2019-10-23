@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7217F311235E0E7F00D505D3 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7217F30F235E0E7F00D505D3 /* MainPageViewController.swift */; };
-		7217F312235E0E7F00D505D3 /* MainPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7217F310235E0E7F00D505D3 /* MainPageViewController.xib */; };
-		7217F314235E112D00D505D3 /* TabBarItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7217F313235E112D00D505D3 /* TabBarItemController.swift */; };
 		7217F316235E11D800D505D3 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7217F315235E11D800D505D3 /* AppConstants.swift */; };
 		7217F31C235E133B00D505D3 /* ContactHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7217F31A235E133B00D505D3 /* ContactHomeViewController.swift */; };
 		7217F31D235E133B00D505D3 /* ContactHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7217F31B235E133B00D505D3 /* ContactHomeViewController.xib */; };
@@ -35,14 +32,22 @@
 		72C24B67235AC20A003D3DDD /* MessageDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72C24B65235AC20A003D3DDD /* MessageDetailViewController.xib */; };
 		72C24B6B235AC64B003D3DDD /* MessengerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C24B69235AC64B003D3DDD /* MessengerCollectionViewCell.swift */; };
 		72C24B6C235AC64B003D3DDD /* MessengerCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72C24B6A235AC64B003D3DDD /* MessengerCollectionViewCell.xib */; };
-		72C24B6E235ACC0C003D3DDD /* BaseUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C24B6D235ACC0C003D3DDD /* BaseUIView.swift */; };
 		72C24B72235ACEFF003D3DDD /* CommonReusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C24B71235ACEFF003D3DDD /* CommonReusable.swift */; };
 		72C24B75235AD6CB003D3DDD /* avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = 72C24B74235AD6CB003D3DDD /* avatar.png */; };
 		72C24B78235AD9B4003D3DDD /* Friends.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C24B77235AD9B4003D3DDD /* Friends.swift */; };
-		72C24B7A235AD9C0003D3DDD /* Messages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C24B79235AD9C0003D3DDD /* Messages.swift */; };
-		72C24B7D235ADAAD003D3DDD /* CommonSettingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C24B7C235ADAAD003D3DDD /* CommonSettingData.swift */; };
 		72C24B80235AE808003D3DDD /* MessageDetailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C24B7E235AE808003D3DDD /* MessageDetailCollectionViewCell.swift */; };
 		72C24B81235AE808003D3DDD /* MessageDetailCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72C24B7F235AE808003D3DDD /* MessageDetailCollectionViewCell.xib */; };
+		72F653EC235F4152006BC812 /* TabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F653EA235F4152006BC812 /* TabbarViewController.swift */; };
+		72F653ED235F4152006BC812 /* TabbarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72F653EB235F4152006BC812 /* TabbarViewController.xib */; };
+		72F653EF235F4167006BC812 /* TabbarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F653EE235F4167006BC812 /* TabbarViewModel.swift */; };
+		72F653F1235F4173006BC812 /* TabbarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F653F0235F4173006BC812 /* TabbarModel.swift */; };
+		72F653F3235F41FF006BC812 /* TabbarManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F653F2235F41FF006BC812 /* TabbarManager.swift */; };
+		72F653F5235F4938006BC812 /* MessageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F653F4235F4938006BC812 /* MessageViewModel.swift */; };
+		72F653F7235F4951006BC812 /* MessagesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F653F6235F4951006BC812 /* MessagesManager.swift */; };
+		72F653F9235F4E89006BC812 /* MessageCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F653F8235F4E89006BC812 /* MessageCellViewModel.swift */; };
+		72F653FC235F5328006BC812 /* Messages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F653FB235F5328006BC812 /* Messages.swift */; };
+		72F653FE235F5795006BC812 /* ScheduleHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F653FD235F5795006BC812 /* ScheduleHomeViewModel.swift */; };
+		72F65400235F57DC006BC812 /* ScheduleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F653FF235F57DC006BC812 /* ScheduleManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,9 +68,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		7217F30F235E0E7F00D505D3 /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
-		7217F310235E0E7F00D505D3 /* MainPageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainPageViewController.xib; sourceTree = "<group>"; };
-		7217F313235E112D00D505D3 /* TabBarItemController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItemController.swift; sourceTree = "<group>"; };
 		7217F315235E11D800D505D3 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 		7217F31A235E133B00D505D3 /* ContactHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactHomeViewController.swift; sourceTree = "<group>"; };
 		7217F31B235E133B00D505D3 /* ContactHomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactHomeViewController.xib; sourceTree = "<group>"; };
@@ -97,14 +99,22 @@
 		72C24B65235AC20A003D3DDD /* MessageDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageDetailViewController.xib; sourceTree = "<group>"; };
 		72C24B69235AC64B003D3DDD /* MessengerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessengerCollectionViewCell.swift; sourceTree = "<group>"; };
 		72C24B6A235AC64B003D3DDD /* MessengerCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessengerCollectionViewCell.xib; sourceTree = "<group>"; };
-		72C24B6D235ACC0C003D3DDD /* BaseUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUIView.swift; sourceTree = "<group>"; };
 		72C24B71235ACEFF003D3DDD /* CommonReusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonReusable.swift; sourceTree = "<group>"; };
 		72C24B74235AD6CB003D3DDD /* avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avatar.png; sourceTree = "<group>"; };
 		72C24B77235AD9B4003D3DDD /* Friends.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friends.swift; sourceTree = "<group>"; };
-		72C24B79235AD9C0003D3DDD /* Messages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Messages.swift; sourceTree = "<group>"; };
-		72C24B7C235ADAAD003D3DDD /* CommonSettingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonSettingData.swift; sourceTree = "<group>"; };
 		72C24B7E235AE808003D3DDD /* MessageDetailCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDetailCollectionViewCell.swift; sourceTree = "<group>"; };
 		72C24B7F235AE808003D3DDD /* MessageDetailCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageDetailCollectionViewCell.xib; sourceTree = "<group>"; };
+		72F653EA235F4152006BC812 /* TabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarViewController.swift; sourceTree = "<group>"; };
+		72F653EB235F4152006BC812 /* TabbarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabbarViewController.xib; sourceTree = "<group>"; };
+		72F653EE235F4167006BC812 /* TabbarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarViewModel.swift; sourceTree = "<group>"; };
+		72F653F0235F4173006BC812 /* TabbarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarModel.swift; sourceTree = "<group>"; };
+		72F653F2235F41FF006BC812 /* TabbarManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarManager.swift; sourceTree = "<group>"; };
+		72F653F4235F4938006BC812 /* MessageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewModel.swift; sourceTree = "<group>"; };
+		72F653F6235F4951006BC812 /* MessagesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesManager.swift; sourceTree = "<group>"; };
+		72F653F8235F4E89006BC812 /* MessageCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCellViewModel.swift; sourceTree = "<group>"; };
+		72F653FB235F5328006BC812 /* Messages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Messages.swift; sourceTree = "<group>"; };
+		72F653FD235F5795006BC812 /* ScheduleHomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleHomeViewModel.swift; sourceTree = "<group>"; };
+		72F653FF235F57DC006BC812 /* ScheduleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,9 +145,12 @@
 		7217F30A235E0B9E00D505D3 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				72C24B7C235ADAAD003D3DDD /* CommonSettingData.swift */,
-				72C24B6D235ACC0C003D3DDD /* BaseUIView.swift */,
-				72C24B71235ACEFF003D3DDD /* CommonReusable.swift */,
+				72F653E9235F412D006BC812 /* Tabbar */,
+				72C24B5D235AC1CF003D3DDD /* 1.Message */,
+				7217F317235E12FA00D505D3 /* 2.Contact */,
+				7217F322235E13BA00D505D3 /* 3.Schedule */,
+				72C24B5A235AC1B6003D3DDD /* 4.MyPage */,
+				7217F32D235E1BF200D505D3 /* 5.Map */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -145,11 +158,6 @@
 		7217F30B235E0BA800D505D3 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				7217F32D235E1BF200D505D3 /* 5.Map */,
-				72C24B5D235AC1CF003D3DDD /* 1.Message */,
-				7217F317235E12FA00D505D3 /* 2.Contact */,
-				7217F322235E13BA00D505D3 /* 3.Schedule */,
-				72C24B5A235AC1B6003D3DDD /* 4.MyPage */,
 				72C24B55235AC0BF003D3DDD /* Index */,
 			);
 			path = ViewModel;
@@ -158,9 +166,6 @@
 		7217F30C235E0D1F00D505D3 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				7217F30F235E0E7F00D505D3 /* MainPageViewController.swift */,
-				7217F310235E0E7F00D505D3 /* MainPageViewController.xib */,
-				7217F313235E112D00D505D3 /* TabBarItemController.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -177,6 +182,7 @@
 		7217F30E235E0D5300D505D3 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				72C24B71235ACEFF003D3DDD /* CommonReusable.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -220,6 +226,7 @@
 			children = (
 				7217F325235E13DC00D505D3 /* ScheduleHomeViewController.swift */,
 				7217F326235E13DC00D505D3 /* ScheduleHomeViewController.xib */,
+				72F653FD235F5795006BC812 /* ScheduleHomeViewModel.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -363,6 +370,8 @@
 				72C24B61235AC1F2003D3DDD /* MessageHomeViewController.xib */,
 				72C24B69235AC64B003D3DDD /* MessengerCollectionViewCell.swift */,
 				72C24B6A235AC64B003D3DDD /* MessengerCollectionViewCell.xib */,
+				72F653F4235F4938006BC812 /* MessageViewModel.swift */,
+				72F653F8235F4E89006BC812 /* MessageCellViewModel.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -389,11 +398,33 @@
 		72C24B76235AD9A0003D3DDD /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				72C24B77235AD9B4003D3DDD /* Friends.swift */,
-				72C24B79235AD9C0003D3DDD /* Messages.swift */,
-				7217F330235E1E3300D505D3 /* ScheduleObject.swift */,
+				72F653FA235F530A006BC812 /* Schema */,
+				72F653F2235F41FF006BC812 /* TabbarManager.swift */,
+				72F653F6235F4951006BC812 /* MessagesManager.swift */,
+				72F653FF235F57DC006BC812 /* ScheduleManager.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		72F653E9235F412D006BC812 /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				72F653EA235F4152006BC812 /* TabbarViewController.swift */,
+				72F653EB235F4152006BC812 /* TabbarViewController.xib */,
+				72F653EE235F4167006BC812 /* TabbarViewModel.swift */,
+				72F653F0235F4173006BC812 /* TabbarModel.swift */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		72F653FA235F530A006BC812 /* Schema */ = {
+			isa = PBXGroup;
+			children = (
+				7217F330235E1E3300D505D3 /* ScheduleObject.swift */,
+				72C24B77235AD9B4003D3DDD /* Friends.swift */,
+				72F653FB235F5328006BC812 /* Messages.swift */,
+			);
+			path = Schema;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -504,8 +535,8 @@
 				72C24B75235AD6CB003D3DDD /* avatar.png in Resources */,
 				7217F31D235E133B00D505D3 /* ContactHomeViewController.xib in Resources */,
 				72C24B2F235AC08A003D3DDD /* Assets.xcassets in Resources */,
+				72F653ED235F4152006BC812 /* TabbarViewController.xib in Resources */,
 				72C24B81235AE808003D3DDD /* MessageDetailCollectionViewCell.xib in Resources */,
-				7217F312235E0E7F00D505D3 /* MainPageViewController.xib in Resources */,
 				72C24B6C235AC64B003D3DDD /* MessengerCollectionViewCell.xib in Resources */,
 				72C24B67235AC20A003D3DDD /* MessageDetailViewController.xib in Resources */,
 				7217F328235E13DC00D505D3 /* ScheduleHomeViewController.xib in Resources */,
@@ -538,26 +569,31 @@
 			buildActionMask = 2147483647;
 			files = (
 				72C24B26235AC089003D3DDD /* AppDelegate.swift in Sources */,
+				72F653F1235F4173006BC812 /* TabbarModel.swift in Sources */,
+				72F653F9235F4E89006BC812 /* MessageCellViewModel.swift in Sources */,
 				7217F32B235E13F800D505D3 /* MyPageViewController.swift in Sources */,
+				72F653EC235F4152006BC812 /* TabbarViewController.swift in Sources */,
 				7217F327235E13DC00D505D3 /* ScheduleHomeViewController.swift in Sources */,
 				72C24B28235AC089003D3DDD /* SceneDelegate.swift in Sources */,
-				72C24B6E235ACC0C003D3DDD /* BaseUIView.swift in Sources */,
-				72C24B7A235AD9C0003D3DDD /* Messages.swift in Sources */,
 				7217F316235E11D800D505D3 /* AppConstants.swift in Sources */,
+				72F653FC235F5328006BC812 /* Messages.swift in Sources */,
+				72F653EF235F4167006BC812 /* TabbarViewModel.swift in Sources */,
+				72F653F5235F4938006BC812 /* MessageViewModel.swift in Sources */,
 				72C24B72235ACEFF003D3DDD /* CommonReusable.swift in Sources */,
+				72F65400235F57DC006BC812 /* ScheduleManager.swift in Sources */,
 				72C24B78235AD9B4003D3DDD /* Friends.swift in Sources */,
 				72C24B6B235AC64B003D3DDD /* MessengerCollectionViewCell.swift in Sources */,
-				7217F311235E0E7F00D505D3 /* MainPageViewController.swift in Sources */,
+				72F653F7235F4951006BC812 /* MessagesManager.swift in Sources */,
 				7217F336235E214B00D505D3 /* MapDetailViewController.swift in Sources */,
 				7217F333235E20A000D505D3 /* NSObjectExtension.swift in Sources */,
 				72C24B66235AC20A003D3DDD /* MessageDetailViewController.swift in Sources */,
+				72F653F3235F41FF006BC812 /* TabbarManager.swift in Sources */,
 				7217F331235E1E3300D505D3 /* ScheduleObject.swift in Sources */,
-				72C24B7D235ADAAD003D3DDD /* CommonSettingData.swift in Sources */,
 				72C24B58235AC0D6003D3DDD /* IndexPageViewController.swift in Sources */,
 				72C24B62235AC1F2003D3DDD /* MessageHomeViewController.swift in Sources */,
-				7217F314235E112D00D505D3 /* TabBarItemController.swift in Sources */,
 				7217F31C235E133B00D505D3 /* ContactHomeViewController.swift in Sources */,
 				72C24B80235AE808003D3DDD /* MessageDetailCollectionViewCell.swift in Sources */,
+				72F653FE235F5795006BC812 /* ScheduleHomeViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

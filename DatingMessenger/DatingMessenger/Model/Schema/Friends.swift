@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Friends: NSObject {
+class Friends {
     var username: String?
     var profileImage: String?
 }
