@@ -90,7 +90,7 @@
             </constraints>
             <size key="customSize" width="343" height="50"/>
             <connections>
-                <outlet property="avatarImage" destination="Olf-Ow-OmG" id="Z1b-kZ-ECn"/>
+                <outlet property="avatarImageView" destination="Olf-Ow-OmG" id="7JV-F1-Erh"/>
                 <outlet property="lastTimeLabel" destination="0WC-Ef-8vN" id="Kwe-r6-qx9"/>
                 <outlet property="messageContentLabel" destination="bHC-D0-Sv0" id="ccy-SM-NoA"/>
                 <outlet property="statusImageView" destination="W3z-gk-ShN" id="SDa-3b-5Lw"/>

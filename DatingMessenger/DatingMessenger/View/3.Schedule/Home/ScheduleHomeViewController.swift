@@ -8,10 +8,20 @@
 
 import UIKit
 
+enum ScheduleIdentity: String {
+    case table
+    case collection
+    
+    var identityName: String {
+        switch self {
+        case .table: return "TableIdentity"
+        case .collection: return "CollectionIdentity"
+        }
+    }
+}
+    
 class ScheduleHomeViewController: UIViewController {
 
-    let myIdentity = "identity"
-    let collectionIdentity = "collectionIdentity"
     @IBOutlet weak var scheduleTableView: UITableView!
     @IBOutlet weak var scheduleCollectionView: UICollectionView!
     var viewModel: ScheduleHomeViewModel?
@@ -22,12 +32,12 @@ class ScheduleHomeViewController: UIViewController {
         navigationController?.isToolbarHidden = true
         // Do any additional setup after loading the view.
         let scheduleCell = UINib(nibName: "ScheduleTableViewCell", bundle: nil)
-        scheduleTableView.register(scheduleCell, forCellReuseIdentifier: myIdentity)
+        scheduleTableView.register(scheduleCell, forCellReuseIdentifier: ScheduleIdentity.table.identityName)
         scheduleTableView.dataSource = self
         scheduleTableView.delegate = self
         
         let scheduleCollectionCell = UINib(nibName: "ScheduleCell", bundle: nil)
-        scheduleCollectionView.register(scheduleCollectionCell.self, forCellWithReuseIdentifier: collectionIdentity)
+        scheduleCollectionView.register(scheduleCollectionCell.self, forCellWithReuseIdentifier: ScheduleIdentity.collection.identityName)
         scheduleCollectionView.dataSource = self
         scheduleCollectionView.delegate = self
 
@@ -70,7 +80,7 @@ extension ScheduleHomeViewController: UITableViewDataSource, UITableViewDelegate
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: myIdentity, for: indexPath) as? ScheduleTableViewCell else {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: ScheduleIdentity.table.identityName, for: indexPath) as? ScheduleTableViewCell else {
             return UITableViewCell()
         }
         if let viewModel = viewModel {
@@ -96,7 +106,7 @@ extension ScheduleHomeViewController: UICollectionViewDataSource, UICollectionVi
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: collectionIdentity, for: indexPath) as? ScheduleCell else {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ScheduleIdentity.collection.identityName, for: indexPath) as? ScheduleCell else {
             return UICollectionViewCell()
         }
 
