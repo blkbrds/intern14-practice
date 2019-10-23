@@ -6,18 +6,7 @@
 //  Copyright © 2019 MBA0051. All rights reserved.
 //
 
-import Foundation
 import UIKit
-
-extension NSObject {
-    
-    // Name Of class
-    class var stringRepresentation: String {
-        let name = String(describing: self)
-        return name
-    }
-}
-
 
 extension UITableView {
     /// Register a XIB file with UITableView

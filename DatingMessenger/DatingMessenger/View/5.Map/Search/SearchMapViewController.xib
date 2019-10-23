@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchMapViewController" customModule="DatingMessenger" customModuleProvider="target">
+            <connections>
+                <outlet property="localtionMapView" destination="mwo-8C-fgC" id="g2l-4W-YPJ"/>
+                <outlet property="locationSearchBar" destination="yUu-cS-OPh" id="1Ok-sf-sVS"/>
+                <outlet property="locationSearchTable" destination="mQP-Wt-bzE" id="A1D-Te-092"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="yUu-cS-OPh">
+                    <rect key="frame" x="0.0" y="44" width="414" height="56"/>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
+                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="mwo-8C-fgC">
+                    <rect key="frame" x="0.0" y="100" width="414" height="762"/>
+                </mapView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mQP-Wt-bzE">
+                    <rect key="frame" x="20" y="100" width="374" height="180"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="180" id="aIY-oN-BaY"/>
+                    </constraints>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="mQP-Wt-bzE" firstAttribute="top" secondItem="yUu-cS-OPh" secondAttribute="bottom" id="2Bh-BV-K0x"/>
+                <constraint firstItem="yUu-cS-OPh" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="2N2-8d-m6V"/>
+                <constraint firstItem="mwo-8C-fgC" firstAttribute="top" secondItem="yUu-cS-OPh" secondAttribute="bottom" id="37J-i0-tbc"/>
+                <constraint firstItem="mwo-8C-fgC" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="EId-ox-pIS"/>
+                <constraint firstItem="mwo-8C-fgC" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="HK1-IC-cp5"/>
+                <constraint firstItem="yUu-cS-OPh" firstAttribute="trailing" secondItem="mwo-8C-fgC" secondAttribute="trailing" id="Pp4-Zp-o82"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="mwo-8C-fgC" secondAttribute="bottom" id="Tf1-yr-GLg"/>
+                <constraint firstItem="mQP-Wt-bzE" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="UfO-BE-CvW"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="mQP-Wt-bzE" secondAttribute="trailing" constant="20" id="qhn-NX-gF4"/>
+                <constraint firstItem="yUu-cS-OPh" firstAttribute="leading" secondItem="mwo-8C-fgC" secondAttribute="leading" id="r5A-Q2-nLY"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="131.8840579710145" y="102.45535714285714"/>
+        </view>
+    </objects>
+</document>

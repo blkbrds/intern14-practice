@@ -18,6 +18,7 @@ class IndexPageViewController: UIViewController {
 
 
     @IBAction func goHomeButtonClick(_ sender: UIButton) {
-        UIApplication.shared.windows.filter{$0.isKeyWindow}.first?.rootViewController = TabbarViewController()
+        //UIApplication.shared.windows.filter{$0.isKeyWindow}.first?.rootViewController = TabbarViewController()
+        SceneDelegate.shared.window?.rootViewController = TabbarViewController()
     }
 }

@@ -10,7 +10,7 @@ import Foundation
 
 class MessageViewModel {
 
-    var messageData: [Messages] = []
+    var messages: [Messages] = []
     
     init() { }
     
@@ -19,12 +19,16 @@ class MessageViewModel {
      */
     func getMessages(completion: () -> Void) {
         MessagesManager.getMessages { (datas) in
-            self.messageData = datas
+            self.messages = datas
             completion()
         }
     }
     
     func numberOfSections() -> Int {
         return 1
+    }
+    
+    func numberOfItemsInSection() -> Int {
+        return messages.count
     }
 }
