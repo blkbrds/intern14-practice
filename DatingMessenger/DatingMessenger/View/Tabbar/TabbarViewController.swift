@@ -28,7 +28,7 @@ class TabbarViewController: UITabBarController {
         let scheduleNavi = UINavigationController(rootViewController: scheduleHomeViewController)
         scheduleNavi.tabBarItem = UITabBarItem(title: "Schedule home", image: UIImage(named: "map_selected" )!.withRenderingMode(.alwaysOriginal), selectedImage: UIImage(named: "map"))
         
-        let myPageViewController = MapDetailViewController()
+        let myPageViewController = MyPageViewController()
         let mypageNavi = UINavigationController(rootViewController: myPageViewController)
         mypageNavi.tabBarItem = UITabBarItem(title: "Mypage home", image: UIImage(named: "profile_selected" )!.withRenderingMode(.alwaysOriginal), selectedImage: UIImage(named: "profile"))
         

@@ -59,7 +59,11 @@ class ScheduleDetailViewController: UIViewController {
     }
     
     @IBAction func changeScheduleStatusButtonClick(_ sender: UIButton) {
-        print("Click to button : \(sender.tag)")
+        
+        let mapDetailViewController = MapDetailViewController()
+        mapDetailViewController.latitude = 16.0472484
+        mapDetailViewController.longitude = 108.1716005
+        navigationController?.pushViewController(mapDetailViewController, animated: true)
     }
     
     @IBAction func viewMapButtonClick(_ sender: UIButton) {
