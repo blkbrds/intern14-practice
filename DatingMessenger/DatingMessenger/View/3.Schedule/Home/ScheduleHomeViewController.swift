@@ -26,31 +26,33 @@ class ScheduleHomeViewController: UIViewController {
     @IBOutlet weak var scheduleCollectionView: UICollectionView!
     var viewModel: ScheduleHomeViewModel?
     
+    let scheduleTableNib = "ScheduleTableViewCell"
+    let scheduleCollectionNib = "ScheduleCell"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         navigationController?.isToolbarHidden = true
         // Do any additional setup after loading the view.
-        let scheduleCell = UINib(nibName: "ScheduleTableViewCell", bundle: nil)
+        let scheduleCell = UINib(nibName: scheduleTableNib, bundle: nil)
         scheduleTableView.register(scheduleCell, forCellReuseIdentifier: ScheduleIdentity.table.identityName)
         scheduleTableView.dataSource = self
         scheduleTableView.delegate = self
         
-        let scheduleCollectionCell = UINib(nibName: "ScheduleCell", bundle: nil)
+        let scheduleCollectionCell = UINib(nibName: scheduleCollectionNib, bundle: nil)
         scheduleCollectionView.register(scheduleCollectionCell.self, forCellWithReuseIdentifier: ScheduleIdentity.collection.identityName)
         scheduleCollectionView.dataSource = self
         scheduleCollectionView.delegate = self
 
         // reload data.
         if let viewModel = viewModel {
-            viewModel.getSchedules {
-                scheduleTableView.reloadData()
-                scheduleCollectionView.reloadData()
+            viewModel.getSchedules { _ in
+                self.scheduleTableView.reloadData()
             }
         }
         
-        scheduleCollectionView.isHidden = true
-        scheduleTableView.isHidden = false
+//        scheduleCollectionView.isHidden = true
+//        scheduleTableView.isHidden = false
     }
 
     @IBAction func switchDisplayButtonClick(_ sender: UIBarButtonItem) {

@@ -72,4 +72,8 @@ class APIManager {
         }
         task.resume()
     }
+    
+    func postRequest() {
+        
+    }
 }

@@ -15,22 +15,56 @@ enum AcceptStatus: String {
     case Expired
 }
 
-struct ScheduleObject {
-    let id: Int
-    let scheduleDate: Date
-    let scheduleTime: String
-    let scheduleTitle: String
-    let scheduleContent: String
-    let acceptStatus: AcceptStatus
+final class ScheduleObject: Codable {
+    var id: String?
+    var scheduleStartDate: String?
+    var scheduleStartTime: String?
+    var scheduleEndDate: String?
+    var scheduleEndTime: String?
+    var scheduleTitle: String?
+    var scheduleContent: String?
+    var acceptStatus: AcceptStatus = .New
     
-    init(id: Int, scheduleDate: Date, scheduleTime: String, scheduleTitle: String, scheduleContent: String, acceptStatus: AcceptStatus) {
+    init() { }
+    
+    init(id: String, startDate: String, startTime: String, endDate: String, endTime: String, scheduleTitle: String, scheduleContent: String, acceptStatus: AcceptStatus) {
         self.id = id
-        self.scheduleDate = scheduleDate
-        self.scheduleTime = scheduleTime
+        self.scheduleStartDate = startDate
+        self.scheduleStartTime = startTime
+        self.scheduleEndDate = endDate
+        self.scheduleEndTime = endTime
         self.scheduleTitle = scheduleTitle
         self.scheduleContent = scheduleContent
         self.acceptStatus = acceptStatus
-        
+    }
+    
+    init(json: [String: Any]) {
+        if let id = json["id"] as? String {
+            self.id = id
+        }
+        if let title = json["title"] as? String {
+            self.scheduleTitle = title
+        }
+        // Start time.
+        if let timeStart = json["time_start"] as? String {
+            if let beginTime = DateTimeUtils.shared.convertStringToComponents(from: timeStart) {
+                self.scheduleStartDate = String(beginTime.day!) + "/" + String(beginTime.month!)
+                self.scheduleStartTime = String(beginTime.hour!) + ":" + String(beginTime.minute!)
+            }
+        }
+        // End time.
+        if let timeEnd = json["time_end"] as? String {
+            if let endTime = DateTimeUtils.shared.convertStringToComponents(from: timeEnd) {
+                self.scheduleEndDate = String(endTime.day!) + "/" + String(endTime.month!)
+                self.scheduleEndTime = String(endTime.hour!) + ":" + String(endTime.minute!)
+            }
+        }
+        if let content = json["content"] as? String {
+            self.scheduleContent = content
+        }
+//        if let status = json["status"] as? String {
+            self.acceptStatus = AcceptStatus.New
+//        }
     }
     
     // TODO: Not yet implements json convert.

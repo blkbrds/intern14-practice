@@ -14,7 +14,7 @@ class ScheduleCellViewModel {
     var status: AcceptStatus
     
     init(schedule: ScheduleObject) {
-        self.timeSchedule = schedule.scheduleTime
+        self.timeSchedule = schedule.scheduleStartTime
         self.contentSchedule = schedule.scheduleContent
         self.status = schedule.acceptStatus
     }

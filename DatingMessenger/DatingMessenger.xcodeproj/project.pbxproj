@@ -11,6 +11,10 @@
 		7204747823603EC30060FEFA /* ScheduleDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7204747623603EC30060FEFA /* ScheduleDetailViewController.xib */; };
 		720DA6832361695E00966675 /* DateTimeUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720DA6822361695E00966675 /* DateTimeUtils.swift */; };
 		720DA6852361899000966675 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720DA6842361899000966675 /* APIManager.swift */; };
+		720DA68823618BA900966675 /* APIServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720DA68723618BA900966675 /* APIServiceManager.swift */; };
+		720DA68A23618C3D00966675 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720DA68923618C3D00966675 /* API.swift */; };
+		720DA68D23618C7A00966675 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720DA68C23618C7A00966675 /* APIRequest.swift */; };
+		720DA68F23618CAB00966675 /* JsonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720DA68E23618CAB00966675 /* JsonData.swift */; };
 		7217F316235E11D800D505D3 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7217F315235E11D800D505D3 /* AppConstants.swift */; };
 		7217F31C235E133B00D505D3 /* ContactHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7217F31A235E133B00D505D3 /* ContactHomeViewController.swift */; };
 		7217F31D235E133B00D505D3 /* ContactHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7217F31B235E133B00D505D3 /* ContactHomeViewController.xib */; };
@@ -25,6 +29,7 @@
 		727F9CCD23604FD0005373FB /* ScheduleDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727F9CCC23604FD0005373FB /* ScheduleDetailViewModel.swift */; };
 		72A7AB7F235F6A2B00A9E838 /* ScheduleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A7AB7D235F6A2B00A9E838 /* ScheduleCell.swift */; };
 		72A7AB80235F6A2B00A9E838 /* ScheduleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72A7AB7E235F6A2B00A9E838 /* ScheduleCell.xib */; };
+		72BE403C236201B80078A0E8 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72BE403B236201B80078A0E8 /* APIRequest.swift */; };
 		72C24B26235AC089003D3DDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C24B25235AC089003D3DDD /* AppDelegate.swift */; };
 		72C24B28235AC089003D3DDD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C24B27235AC089003D3DDD /* SceneDelegate.swift */; };
 		72C24B2F235AC08A003D3DDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72C24B2E235AC08A003D3DDD /* Assets.xcassets */; };
@@ -79,6 +84,10 @@
 		7204747623603EC30060FEFA /* ScheduleDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScheduleDetailViewController.xib; sourceTree = "<group>"; };
 		720DA6822361695E00966675 /* DateTimeUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTimeUtils.swift; sourceTree = "<group>"; };
 		720DA6842361899000966675 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		720DA68723618BA900966675 /* APIServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceManager.swift; sourceTree = "<group>"; };
+		720DA68923618C3D00966675 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		720DA68C23618C7A00966675 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		720DA68E23618CAB00966675 /* JsonData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonData.swift; sourceTree = "<group>"; };
 		7217F315235E11D800D505D3 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 		7217F31A235E133B00D505D3 /* ContactHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactHomeViewController.swift; sourceTree = "<group>"; };
 		7217F31B235E133B00D505D3 /* ContactHomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactHomeViewController.xib; sourceTree = "<group>"; };
@@ -93,6 +102,7 @@
 		727F9CCC23604FD0005373FB /* ScheduleDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleDetailViewModel.swift; sourceTree = "<group>"; };
 		72A7AB7D235F6A2B00A9E838 /* ScheduleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleCell.swift; sourceTree = "<group>"; };
 		72A7AB7E235F6A2B00A9E838 /* ScheduleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScheduleCell.xib; sourceTree = "<group>"; };
+		72BE403B236201B80078A0E8 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
 		72C24B22235AC089003D3DDD /* DatingMessenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DatingMessenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72C24B25235AC089003D3DDD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		72C24B27235AC089003D3DDD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -156,6 +166,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		720DA68623618AEE00966675 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				720DA68B23618C6600966675 /* Core */,
+				720DA68723618BA900966675 /* APIServiceManager.swift */,
+				72F653F6235F4951006BC812 /* MessagesManager.swift */,
+				72F653FF235F57DC006BC812 /* ScheduleManager.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		720DA68B23618C6600966675 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				720DA68923618C3D00966675 /* API.swift */,
+				720DA68C23618C7A00966675 /* APIRequest.swift */,
+				720DA68E23618CAB00966675 /* JsonData.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
 		7217F30A235E0B9E00D505D3 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -422,9 +453,9 @@
 			isa = PBXGroup;
 			children = (
 				720DA6842361899000966675 /* APIManager.swift */,
+				720DA68623618AEE00966675 /* API */,
 				72F653FA235F530A006BC812 /* Schema */,
-				72F653F6235F4951006BC812 /* MessagesManager.swift */,
-				72F653FF235F57DC006BC812 /* ScheduleManager.swift */,
+				72BE403B236201B80078A0E8 /* APIRequest.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -599,6 +630,8 @@
 				727F9CCD23604FD0005373FB /* ScheduleDetailViewModel.swift in Sources */,
 				72F653EC235F4152006BC812 /* TabbarViewController.swift in Sources */,
 				7217F327235E13DC00D505D3 /* ScheduleHomeViewController.swift in Sources */,
+				720DA68D23618C7A00966675 /* APIRequest.swift in Sources */,
+				72BE403C236201B80078A0E8 /* APIRequest.swift in Sources */,
 				72C24B28235AC089003D3DDD /* SceneDelegate.swift in Sources */,
 				7217F316235E11D800D505D3 /* AppConstants.swift in Sources */,
 				72F653FC235F5328006BC812 /* Messages.swift in Sources */,
@@ -608,10 +641,12 @@
 				72F65400235F57DC006BC812 /* ScheduleManager.swift in Sources */,
 				72C24B78235AD9B4003D3DDD /* Friends.swift in Sources */,
 				72C24B6B235AC64B003D3DDD /* MessengerCollectionViewCell.swift in Sources */,
+				720DA68F23618CAB00966675 /* JsonData.swift in Sources */,
 				72F653F7235F4951006BC812 /* MessagesManager.swift in Sources */,
 				7217F336235E214B00D505D3 /* MapDetailViewController.swift in Sources */,
 				72A7AB7F235F6A2B00A9E838 /* ScheduleCell.swift in Sources */,
 				7217F333235E20A000D505D3 /* NSObjectExtension.swift in Sources */,
+				720DA68823618BA900966675 /* APIServiceManager.swift in Sources */,
 				72C24B66235AC20A003D3DDD /* MessageDetailViewController.swift in Sources */,
 				7217F331235E1E3300D505D3 /* ScheduleObject.swift in Sources */,
 				72C24B58235AC0D6003D3DDD /* IndexPageViewController.swift in Sources */,
@@ -621,6 +656,7 @@
 				72C24B80235AE808003D3DDD /* MessageDetailCollectionViewCell.swift in Sources */,
 				72F653FE235F5795006BC812 /* ScheduleHomeViewModel.swift in Sources */,
 				72F65403235F6055006BC812 /* ScheduleTableViewCell.swift in Sources */,
+				720DA68A23618C3D00966675 /* API.swift in Sources */,
 				720DA6832361695E00966675 /* DateTimeUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

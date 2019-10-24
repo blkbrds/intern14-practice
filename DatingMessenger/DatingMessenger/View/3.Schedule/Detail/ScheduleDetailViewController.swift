@@ -56,7 +56,7 @@ class ScheduleDetailViewController: UIViewController {
             scheduleTitle?.text = viewModel.scheduleTitle
             scheduleDayLabel?.text = "10"
             scheduleMonthLabel?.text = "11"
-            scheduleTimeLabel?.text = viewModel.timeSchedule
+            scheduleTimeLabel?.text = viewModel.startTime
             meridiemLabel?.text = "PM"
             scheduleContentLabel?.text = viewModel.contentSchedule
         }

@@ -17,10 +17,17 @@ class ScheduleHomeViewModel {
         return 1
     }
     
-    func getSchedules(completion: () -> Void) {
-        ScheduleManager.getSchedules { (schedules) in
-            self.schedules = schedules
-            completion()
+    func getSchedules(completion: @escaping (APIError?) -> Void) {
+        APIServiceManager.Schedule.getSchedules { (result) in
+            switch result {
+            case .failure(let error):
+                completion(error)
+            case .success(let scheduleResult):
+                for schedule in scheduleResult.schedules {
+                    self.schedules.append(schedule)
+                }
+                completion(nil)
+            }
         }
     }
     

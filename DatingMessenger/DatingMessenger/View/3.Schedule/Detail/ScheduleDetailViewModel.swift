@@ -11,16 +11,20 @@ import Foundation
 class ScheduleDetailViewModel {
     
     var scheduleTitle: String?
-    var scheduleDate: Date?
-    var timeSchedule: String?
+    var startDate: String?
+    var startTime: String?
+    var endDate: String?
+    var endTime: String?
     var contentSchedule: String?
     var status: AcceptStatus
     
     init(schedule: ScheduleObject) {
         
         self.scheduleTitle = schedule.scheduleTitle
-        self.scheduleDate = schedule.scheduleDate
-        self.timeSchedule = schedule.scheduleTime
+        self.startDate = schedule.scheduleStartDate
+        self.startTime = schedule.scheduleStartTime
+        self.endDate = schedule.scheduleEndDate
+        self.endTime = schedule.scheduleEndTime
         self.contentSchedule = schedule.scheduleContent
         self.status = schedule.acceptStatus
     }

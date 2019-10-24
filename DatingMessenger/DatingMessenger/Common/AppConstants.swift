@@ -13,6 +13,14 @@ struct AppConstants {
     // Call to API.
     static let protocolo    : String = "http://"
     static let apiVersion   : String = "/api"
-    static let domain       : String = "whoami.website"
-    static let baseUrl      : String = AppConstants.protocolo + AppConstants.domain + AppConstants.apiVersion
+    static let domain       : String = "localhost:8080"
+    static let baseUrl      : String = AppConstants.protocolo + AppConstants.domain
+    
+    static let schedule     : String = "/schedule"
+
+    var defaultHTTPHeaders: [String: String] {
+        var headers: [String: String] = [:]
+        headers["Content-Type"] = "application/json"
+        return headers
+    }
 }
