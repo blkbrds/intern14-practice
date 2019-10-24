@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		7204747723603EC30060FEFA /* ScheduleDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7204747523603EC30060FEFA /* ScheduleDetailViewController.swift */; };
 		7204747823603EC30060FEFA /* ScheduleDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7204747623603EC30060FEFA /* ScheduleDetailViewController.xib */; };
+		720DA6832361695E00966675 /* DateTimeUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720DA6822361695E00966675 /* DateTimeUtils.swift */; };
+		720DA6852361899000966675 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720DA6842361899000966675 /* APIManager.swift */; };
 		7217F316235E11D800D505D3 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7217F315235E11D800D505D3 /* AppConstants.swift */; };
 		7217F31C235E133B00D505D3 /* ContactHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7217F31A235E133B00D505D3 /* ContactHomeViewController.swift */; };
 		7217F31D235E133B00D505D3 /* ContactHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7217F31B235E133B00D505D3 /* ContactHomeViewController.xib */; };
@@ -75,6 +77,8 @@
 /* Begin PBXFileReference section */
 		7204747523603EC30060FEFA /* ScheduleDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleDetailViewController.swift; sourceTree = "<group>"; };
 		7204747623603EC30060FEFA /* ScheduleDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScheduleDetailViewController.xib; sourceTree = "<group>"; };
+		720DA6822361695E00966675 /* DateTimeUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTimeUtils.swift; sourceTree = "<group>"; };
+		720DA6842361899000966675 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		7217F315235E11D800D505D3 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 		7217F31A235E133B00D505D3 /* ContactHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactHomeViewController.swift; sourceTree = "<group>"; };
 		7217F31B235E133B00D505D3 /* ContactHomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactHomeViewController.xib; sourceTree = "<group>"; };
@@ -185,6 +189,7 @@
 			children = (
 				7217F315235E11D800D505D3 /* AppConstants.swift */,
 				7217F332235E20A000D505D3 /* NSObjectExtension.swift */,
+				720DA6822361695E00966675 /* DateTimeUtils.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -416,6 +421,7 @@
 		72C24B76235AD9A0003D3DDD /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				720DA6842361899000966675 /* APIManager.swift */,
 				72F653FA235F530A006BC812 /* Schema */,
 				72F653F6235F4951006BC812 /* MessagesManager.swift */,
 				72F653FF235F57DC006BC812 /* ScheduleManager.swift */,
@@ -598,6 +604,7 @@
 				72F653FC235F5328006BC812 /* Messages.swift in Sources */,
 				72F653F5235F4938006BC812 /* MessageViewModel.swift in Sources */,
 				72C24B72235ACEFF003D3DDD /* CommonReusable.swift in Sources */,
+				720DA6852361899000966675 /* APIManager.swift in Sources */,
 				72F65400235F57DC006BC812 /* ScheduleManager.swift in Sources */,
 				72C24B78235AD9B4003D3DDD /* Friends.swift in Sources */,
 				72C24B6B235AC64B003D3DDD /* MessengerCollectionViewCell.swift in Sources */,
@@ -614,6 +621,7 @@
 				72C24B80235AE808003D3DDD /* MessageDetailCollectionViewCell.swift in Sources */,
 				72F653FE235F5795006BC812 /* ScheduleHomeViewModel.swift in Sources */,
 				72F65403235F6055006BC812 /* ScheduleTableViewCell.swift in Sources */,
+				720DA6832361695E00966675 /* DateTimeUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

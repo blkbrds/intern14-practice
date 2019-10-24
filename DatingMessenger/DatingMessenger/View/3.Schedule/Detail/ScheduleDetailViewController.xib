@@ -10,6 +10,10 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ScheduleDetailViewController" customModule="DatingMessenger" customModuleProvider="target">
             <connections>
                 <outlet property="confirmDatingButton" destination="7gq-33-AvB" id="N3c-3R-Rqs"/>
+                <outlet property="endDayLabel" destination="34A-Zb-veJ" id="ymI-Ox-8kb"/>
+                <outlet property="endMeridiemLabel" destination="DYN-Y8-lOd" id="ao7-eE-Maq"/>
+                <outlet property="endMonthLabel" destination="l4b-lM-OIZ" id="FoR-j6-V9q"/>
+                <outlet property="endTimeLabel" destination="A0H-yF-KuF" id="DR2-Tb-JOJ"/>
                 <outlet property="joinDatingButton" destination="WiC-a4-SKQ" id="Wnh-4q-37b"/>
                 <outlet property="meridiemLabel" destination="eq7-Qo-2ZS" id="f4V-zZ-xZi"/>
                 <outlet property="rejectDatingButton" destination="zB0-d6-AVd" id="cJ9-jI-7Z5"/>

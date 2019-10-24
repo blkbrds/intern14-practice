@@ -37,6 +37,10 @@ class ScheduleDetailViewController: UIViewController {
     @IBOutlet weak var rejectDatingButton: UIButton!
     @IBOutlet weak var confirmDatingButton: UIButton!
     @IBOutlet weak var viewMapButton: UIButton!
+    @IBOutlet weak var endDayLabel: UILabel!
+    @IBOutlet weak var endMonthLabel: UILabel!
+    @IBOutlet weak var endTimeLabel: UILabel!
+    @IBOutlet weak var endMeridiemLabel: UILabel!
     
     var viewModel: ScheduleDetailViewModel?
 
