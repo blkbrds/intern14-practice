@@ -12,8 +12,10 @@ import MapKit
 class MapDetailViewController: UIViewController {
 
     @IBOutlet weak var mainMapDetail: MKMapView!
-    var locationmanager = CLLocationManager()
-    
+    let locationmanager = CLLocationManager()
+    var latitude: CLLocationDegrees?
+    var longitude: CLLocationDegrees?
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -33,9 +35,12 @@ class MapDetailViewController: UIViewController {
 
 extension MapDetailViewController: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        let current = locations.last
-        let region = MKCoordinateRegion(center: current!.coordinate, span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01)) // Zoom
-        mainMapDetail.setRegion(region, animated: true)
+        if let latitude = latitude, let longitude = longitude {
+            let center = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+            let span = MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01)
+            let region = MKCoordinateRegion(center: center, span: span) // Zoom
+            mainMapDetail.setRegion(region, animated: true)
+        }
     }
     
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
