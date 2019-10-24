@@ -16,5 +16,6 @@ struct ApiManager {
     
     struct Location {
         static let size = "80x80"
+        static let oath_token: String = "3IHPZFJ0LWOKCHTHQMWAOZMX40VQV0S3PMZKNUMYZGHUP4WJ"
     }
 }

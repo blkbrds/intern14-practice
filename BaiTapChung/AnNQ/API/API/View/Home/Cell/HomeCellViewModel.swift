@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 final class HomeCellViewModel {
     var avatar: String?
@@ -21,5 +22,12 @@ final class HomeCellViewModel {
         self.address = place.address
         self.rating = place.rating
         self.distance = place.distance
+    }
+    
+    func updateAvatar(imageView: UIImageView) {
+        if let url = URL(string: self.avatar ?? "") {
+            let image = try? Data(contentsOf: url)
+            imageView.image = UIImage(data: image!)
+        }
     }
 }

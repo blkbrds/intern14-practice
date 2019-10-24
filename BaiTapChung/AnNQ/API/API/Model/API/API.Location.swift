@@ -23,7 +23,7 @@ extension ApiManager.Location {
     static func getListInLocation(oauth_token: String, v: String, lat: Float, long: Float, limit: Int = 10, offset: Int = 0, completion: @escaping APICompletion<LocationResult>) {
         let urlString = QueryParam().getListInLocation(oauth_token: oauth_token, v: v, lat: lat, long: long, limit: limit, offset: offset)
         
-        API.shared().request(urlString: urlString) { (result) in
+        API.shared.request(urlString: urlString) { (result) in
             switch result {
             case .failure(let error):
                 completion(.failure(error))

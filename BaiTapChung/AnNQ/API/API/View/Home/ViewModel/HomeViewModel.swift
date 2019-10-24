@@ -17,14 +17,16 @@ class HomeViewModel {
     
     var places: [Place] = []
     var page: Int = 1
+    var limit: Int = 10
+    var offset: Int = 0
     
     weak var delegate: HomeViewModelDelegate?
     
     //Data
-    func loadData(limit: Int = 10, offset:Int = 0, completion: @escaping (Bool) -> Void) {
+    func loadData(completion: @escaping (Bool) -> Void) {
         //goi api
        
-        ApiManager.Location.getListInLocation(oauth_token: "3IHPZFJ0LWOKCHTHQMWAOZMX40VQV0S3PMZKNUMYZGHUP4WJ", v: "20160524", lat: 16.070531, long: 108.224599, limit: limit, offset: offset) { (result) in
+        ApiManager.Location.getListInLocation(oauth_token: ApiManager.Location.oath_token, v: "20160524", lat: 16.070531, long: 108.224599, limit: limit, offset: offset) { (result) in
             switch result {
             case .failure(let error):
                 completion(false)
@@ -32,6 +34,7 @@ class HomeViewModel {
                     delegate.showErrorMessage(error.localizedDescription)
                 }
             case .success(let results):
+                self.offset += 1
                 for place in results.places {
                     self.places.append(place)
                 }

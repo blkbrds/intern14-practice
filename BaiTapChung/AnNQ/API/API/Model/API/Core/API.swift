@@ -32,15 +32,11 @@ enum APIResult {
 
 struct API {
     //singleton
-    private static var shareAPI: API = {
+    static var shared: API = {
         let shareAPI = API()
         return shareAPI
     }()
-    
-    static func shared() -> API {
-        return shareAPI
-    }
-    
+  
     //init
     private init() {}
 }

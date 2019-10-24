@@ -41,7 +41,7 @@ class HomeViewController: BaseViewController {
     //Data
     func loadData() {
         //API
-        viewModel?.loadData(limit: 30, offset: 0) { (done) in
+        viewModel?.loadData() { (done) in
             if done {
                 self.updateUI()
             }
