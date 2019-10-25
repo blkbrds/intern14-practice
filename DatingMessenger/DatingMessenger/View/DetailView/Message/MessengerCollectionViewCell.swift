@@ -22,13 +22,13 @@ class MessengerCollectionViewCell: UICollectionViewCell {
         didSet {
             if let message = message {
                 if let avatar = message.profileImage {
-                    CommonReusable.shared.createCircleImage(view: avatarImageView, named: avatar)
+                    createCircleImage(view: avatarImageView, named: avatar)
                 }
                 if let status = message.profileImage {
-                    CommonReusable.shared.createCircleImage(view: statusImageView, named: status)
+                    createCircleImage(view: statusImageView, named: status)
                 }
                 if let viewed = message.profileImage {
-                    CommonReusable.shared.createCircleImage(view: viewedImageView, named: viewed)
+                    createCircleImage(view: viewedImageView, named: viewed)
                 }
                 usernameLabel.text = message.username
                 messageContentLabel.text = message.messageText
@@ -45,5 +45,12 @@ class MessengerCollectionViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+    }
+    
+    private func createCircleImage(view: UIImageView, named: String) {
+        view.image = UIImage(named: named)
+        view.contentMode = .scaleAspectFill
+        view.layer.cornerRadius = 40
+        view.layer.masksToBounds = true
     }
 }

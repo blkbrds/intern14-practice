@@ -27,7 +27,7 @@ class ScheduleHomeViewController: UIViewController {
     var viewModel: ScheduleHomeViewModel?
     
     let scheduleTableNib = "ScheduleTableViewCell"
-    let scheduleCollectionNib = "ScheduleCell"
+//    let scheduleCollectionNib = "ScheduleCell"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,13 +36,14 @@ class ScheduleHomeViewController: UIViewController {
         // Do any additional setup after loading the view.
         let scheduleCell = UINib(nibName: scheduleTableNib, bundle: nil)
         scheduleTableView.register(scheduleCell, forCellReuseIdentifier: ScheduleIdentity.table.identityName)
+//        scheduleTableView.register(UITableViewCell.self, forCellReuseIdentifier: ScheduleIdentity.table.identityName)
         scheduleTableView.dataSource = self
         scheduleTableView.delegate = self
         
-        let scheduleCollectionCell = UINib(nibName: scheduleCollectionNib, bundle: nil)
-        scheduleCollectionView.register(scheduleCollectionCell.self, forCellWithReuseIdentifier: ScheduleIdentity.collection.identityName)
-        scheduleCollectionView.dataSource = self
-        scheduleCollectionView.delegate = self
+//        let scheduleCollectionCell = UINib(nibName: scheduleCollectionNib, bundle: nil)
+//        scheduleCollectionView.register(scheduleCollectionCell.self, forCellWithReuseIdentifier: ScheduleIdentity.collection.identityName)
+//        scheduleCollectionView.dataSource = self
+//        scheduleCollectionView.delegate = self
 
         // reload data.
         if let viewModel = viewModel {
@@ -103,34 +104,34 @@ extension ScheduleHomeViewController: UITableViewDataSource, UITableViewDelegate
     }
 }
 
-extension ScheduleHomeViewController: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
-    
-    func numberOfSections(in collectionView: UICollectionView) -> Int {
-        if let viewModel = viewModel {
-            return viewModel.numberOfSections()
-        }
-        return 0
-    }
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        if let viewModel = viewModel {
-            return viewModel.numberOfRowsInSection()
-        }
-        return 0
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ScheduleIdentity.collection.identityName, for: indexPath) as? ScheduleCell else {
-            return UICollectionViewCell()
-        }
-
-        cell.backgroundColor = .brown
-        if let viewModel = viewModel {
-            cell.viewModel = viewModel.cellViewModel(at: indexPath)
-        }
-        return cell
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: collectionView.frame.width, height: 100)
-    }
-}
+//extension ScheduleHomeViewController: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+//
+//    func numberOfSections(in collectionView: UICollectionView) -> Int {
+//        if let viewModel = viewModel {
+//            return viewModel.numberOfSections()
+//        }
+//        return 0
+//    }
+//    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+//        if let viewModel = viewModel {
+//            return viewModel.numberOfRowsInSection()
+//        }
+//        return 0
+//    }
+//
+//    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+//        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ScheduleIdentity.collection.identityName, for: indexPath) as? ScheduleCell else {
+//            return UICollectionViewCell()
+//        }
+//
+//        cell.backgroundColor = .brown
+//        if let viewModel = viewModel {
+//            cell.viewModel = viewModel.cellViewModel(at: indexPath)
+//        }
+//        return cell
+//    }
+//
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+//        return CGSize(width: collectionView.frame.width, height: 100)
+//    }
+//}

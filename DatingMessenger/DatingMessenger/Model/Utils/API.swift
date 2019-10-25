@@ -12,6 +12,9 @@ import Foundation
 enum APIError: Error {
     case error(String)
     case errorURL
+    case responseProblem
+    case decodingProblem
+    case otherProblem
     
     var localizedDescription: String {
         switch self {
@@ -19,6 +22,12 @@ enum APIError: Error {
             return string
         case .errorURL:
             return "URL String is error."
+        case .responseProblem:
+            return "response error"
+        case .decodingProblem:
+            return "decoding error"
+        case .otherProblem:
+            return "other error"
         }
     }
 }
@@ -43,4 +52,11 @@ struct API {
     
     //init
     private init() {}
+}
+
+enum RequestType: String {
+    case POST
+    case GET
+    case PUT
+    case DELETE
 }
