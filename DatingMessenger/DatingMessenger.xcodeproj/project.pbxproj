@@ -9,11 +9,19 @@
 /* Begin PBXBuildFile section */
 		7204747723603EC30060FEFA /* ScheduleDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7204747523603EC30060FEFA /* ScheduleDetailViewController.swift */; };
 		7204747823603EC30060FEFA /* ScheduleDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7204747623603EC30060FEFA /* ScheduleDetailViewController.xib */; };
-		720DA6832361695E00966675 /* DateTimeUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720DA6822361695E00966675 /* DateTimeUtils.swift */; };
-		720DA6852361899000966675 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720DA6842361899000966675 /* APIManager.swift */; };
+		720C27412362EB1700BBE05B /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720C27402362EB1700BBE05B /* BaseViewController.swift */; };
+		720C27442362EC5900BBE05B /* Commons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720C27432362EC5900BBE05B /* Commons.swift */; };
+		720C274A2362F11C00BBE05B /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720C27492362F11C00BBE05B /* App.swift */; };
+		720C274C2362F51400BBE05B /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720C274B2362F51400BBE05B /* String.swift */; };
+		720C274E2362F53700BBE05B /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720C274D2362F53700BBE05B /* Color.swift */; };
+		720C27502362F54B00BBE05B /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720C274F2362F54B00BBE05B /* Font.swift */; };
+		720C27522362F57900BBE05B /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720C27512362F57900BBE05B /* ApiManager.swift */; };
+		720C27542362F59500BBE05B /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720C27532362F59500BBE05B /* Error.swift */; };
+		720C27562362F5B300BBE05B /* RequestSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720C27552362F5B300BBE05B /* RequestSerializer.swift */; };
+		720C27582362F5CA00BBE05B /* ResponseSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720C27572362F5CA00BBE05B /* ResponseSerializer.swift */; };
+		720DA6832361695E00966675 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720DA6822361695E00966675 /* Helper.swift */; };
 		720DA68A23618C3D00966675 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720DA68923618C3D00966675 /* API.swift */; };
-		720DA68D23618C7A00966675 /* RequestUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720DA68C23618C7A00966675 /* RequestUtils.swift */; };
-		720DA68F23618CAB00966675 /* JsonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720DA68E23618CAB00966675 /* JsonData.swift */; };
+		720DA68F23618CAB00966675 /* JsonExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720DA68E23618CAB00966675 /* JsonExt.swift */; };
 		7217F31C235E133B00D505D3 /* ContactHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7217F31A235E133B00D505D3 /* ContactHomeViewController.swift */; };
 		7217F31D235E133B00D505D3 /* ContactHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7217F31B235E133B00D505D3 /* ContactHomeViewController.xib */; };
 		7217F327235E13DC00D505D3 /* ScheduleHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7217F325235E13DC00D505D3 /* ScheduleHomeViewController.swift */; };
@@ -21,7 +29,7 @@
 		7217F32B235E13F800D505D3 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7217F329235E13F800D505D3 /* MyPageViewController.swift */; };
 		7217F32C235E13F800D505D3 /* MyPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7217F32A235E13F800D505D3 /* MyPageViewController.xib */; };
 		7217F331235E1E3300D505D3 /* ScheduleObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7217F330235E1E3300D505D3 /* ScheduleObject.swift */; };
-		7217F333235E20A000D505D3 /* UIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7217F332235E20A000D505D3 /* UIExtension.swift */; };
+		7217F333235E20A000D505D3 /* UIExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7217F332235E20A000D505D3 /* UIExt.swift */; };
 		7217F336235E214B00D505D3 /* MapDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7217F334235E214B00D505D3 /* MapDetailViewController.swift */; };
 		7217F337235E214B00D505D3 /* MapDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7217F335235E214B00D505D3 /* MapDetailViewController.xib */; };
 		727F9CCD23604FD0005373FB /* ScheduleDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727F9CCC23604FD0005373FB /* ScheduleDetailViewModel.swift */; };
@@ -47,11 +55,11 @@
 		72F653EC235F4152006BC812 /* TabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F653EA235F4152006BC812 /* TabbarViewController.swift */; };
 		72F653ED235F4152006BC812 /* TabbarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72F653EB235F4152006BC812 /* TabbarViewController.xib */; };
 		72F653F5235F4938006BC812 /* MessageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F653F4235F4938006BC812 /* MessageViewModel.swift */; };
-		72F653F7235F4951006BC812 /* MessagesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F653F6235F4951006BC812 /* MessagesAPI.swift */; };
+		72F653F7235F4951006BC812 /* API.Messages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F653F6235F4951006BC812 /* API.Messages.swift */; };
 		72F653F9235F4E89006BC812 /* MessageCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F653F8235F4E89006BC812 /* MessageCellViewModel.swift */; };
-		72F653FC235F5328006BC812 /* Messages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F653FB235F5328006BC812 /* Messages.swift */; };
+		72F653FC235F5328006BC812 /* MessageObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F653FB235F5328006BC812 /* MessageObject.swift */; };
 		72F653FE235F5795006BC812 /* ScheduleHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F653FD235F5795006BC812 /* ScheduleHomeViewModel.swift */; };
-		72F65400235F57DC006BC812 /* ScheduleAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F653FF235F57DC006BC812 /* ScheduleAPI.swift */; };
+		72F65400235F57DC006BC812 /* API.Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F653FF235F57DC006BC812 /* API.Schedule.swift */; };
 		72F65403235F6055006BC812 /* ScheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F65401235F6055006BC812 /* ScheduleTableViewCell.swift */; };
 		72F65404235F6055006BC812 /* ScheduleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72F65402235F6055006BC812 /* ScheduleTableViewCell.xib */; };
 		72F65406235F63C5006BC812 /* ScheduleCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F65405235F63C5006BC812 /* ScheduleCellViewModel.swift */; };
@@ -77,11 +85,19 @@
 /* Begin PBXFileReference section */
 		7204747523603EC30060FEFA /* ScheduleDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleDetailViewController.swift; sourceTree = "<group>"; };
 		7204747623603EC30060FEFA /* ScheduleDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScheduleDetailViewController.xib; sourceTree = "<group>"; };
-		720DA6822361695E00966675 /* DateTimeUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTimeUtils.swift; sourceTree = "<group>"; };
-		720DA6842361899000966675 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		720C27402362EB1700BBE05B /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		720C27432362EC5900BBE05B /* Commons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commons.swift; sourceTree = "<group>"; };
+		720C27492362F11C00BBE05B /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		720C274B2362F51400BBE05B /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		720C274D2362F53700BBE05B /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		720C274F2362F54B00BBE05B /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		720C27512362F57900BBE05B /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		720C27532362F59500BBE05B /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		720C27552362F5B300BBE05B /* RequestSerializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestSerializer.swift; sourceTree = "<group>"; };
+		720C27572362F5CA00BBE05B /* ResponseSerializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseSerializer.swift; sourceTree = "<group>"; };
+		720DA6822361695E00966675 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		720DA68923618C3D00966675 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
-		720DA68C23618C7A00966675 /* RequestUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestUtils.swift; sourceTree = "<group>"; };
-		720DA68E23618CAB00966675 /* JsonData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonData.swift; sourceTree = "<group>"; };
+		720DA68E23618CAB00966675 /* JsonExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonExt.swift; sourceTree = "<group>"; };
 		7217F31A235E133B00D505D3 /* ContactHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactHomeViewController.swift; sourceTree = "<group>"; };
 		7217F31B235E133B00D505D3 /* ContactHomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactHomeViewController.xib; sourceTree = "<group>"; };
 		7217F325235E13DC00D505D3 /* ScheduleHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleHomeViewController.swift; sourceTree = "<group>"; };
@@ -89,7 +105,7 @@
 		7217F329235E13F800D505D3 /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
 		7217F32A235E13F800D505D3 /* MyPageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyPageViewController.xib; sourceTree = "<group>"; };
 		7217F330235E1E3300D505D3 /* ScheduleObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleObject.swift; sourceTree = "<group>"; };
-		7217F332235E20A000D505D3 /* UIExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExtension.swift; sourceTree = "<group>"; };
+		7217F332235E20A000D505D3 /* UIExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExt.swift; sourceTree = "<group>"; };
 		7217F334235E214B00D505D3 /* MapDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapDetailViewController.swift; sourceTree = "<group>"; };
 		7217F335235E214B00D505D3 /* MapDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapDetailViewController.xib; sourceTree = "<group>"; };
 		727F9CCC23604FD0005373FB /* ScheduleDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleDetailViewModel.swift; sourceTree = "<group>"; };
@@ -121,11 +137,11 @@
 		72F653EA235F4152006BC812 /* TabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarViewController.swift; sourceTree = "<group>"; };
 		72F653EB235F4152006BC812 /* TabbarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabbarViewController.xib; sourceTree = "<group>"; };
 		72F653F4235F4938006BC812 /* MessageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewModel.swift; sourceTree = "<group>"; };
-		72F653F6235F4951006BC812 /* MessagesAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesAPI.swift; sourceTree = "<group>"; };
+		72F653F6235F4951006BC812 /* API.Messages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.Messages.swift; sourceTree = "<group>"; };
 		72F653F8235F4E89006BC812 /* MessageCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCellViewModel.swift; sourceTree = "<group>"; };
-		72F653FB235F5328006BC812 /* Messages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Messages.swift; sourceTree = "<group>"; };
+		72F653FB235F5328006BC812 /* MessageObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageObject.swift; sourceTree = "<group>"; };
 		72F653FD235F5795006BC812 /* ScheduleHomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleHomeViewModel.swift; sourceTree = "<group>"; };
-		72F653FF235F57DC006BC812 /* ScheduleAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleAPI.swift; sourceTree = "<group>"; };
+		72F653FF235F57DC006BC812 /* API.Schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.Schedule.swift; sourceTree = "<group>"; };
 		72F65401235F6055006BC812 /* ScheduleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleTableViewCell.swift; sourceTree = "<group>"; };
 		72F65402235F6055006BC812 /* ScheduleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScheduleTableViewCell.xib; sourceTree = "<group>"; };
 		72F65405235F63C5006BC812 /* ScheduleCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleCellViewModel.swift; sourceTree = "<group>"; };
@@ -169,23 +185,14 @@
 			path = HomeView;
 			sourceTree = "<group>";
 		};
-		720C27392362A57900BBE05B /* DetailView */ = {
-			isa = PBXGroup;
-			children = (
-				720C273B2362A60800BBE05B /* Message */,
-				720C273A2362A5FD00BBE05B /* Schedule */,
-			);
-			path = DetailView;
-			sourceTree = "<group>";
-		};
 		720C273A2362A5FD00BBE05B /* Schedule */ = {
 			isa = PBXGroup;
 			children = (
-				72F65401235F6055006BC812 /* ScheduleTableViewCell.swift */,
-				72F65402235F6055006BC812 /* ScheduleTableViewCell.xib */,
 				72A7AB7D235F6A2B00A9E838 /* ScheduleCell.swift */,
 				72A7AB7E235F6A2B00A9E838 /* ScheduleCell.xib */,
 				72F65405235F63C5006BC812 /* ScheduleCellViewModel.swift */,
+				72F65401235F6055006BC812 /* ScheduleTableViewCell.swift */,
+				72F65402235F6055006BC812 /* ScheduleTableViewCell.xib */,
 			);
 			path = Schedule;
 			sourceTree = "<group>";
@@ -205,6 +212,7 @@
 		720C273C2362A6CC00BBE05B /* BaseView */ = {
 			isa = PBXGroup;
 			children = (
+				720C27402362EB1700BBE05B /* BaseViewController.swift */,
 			);
 			path = BaseView;
 			sourceTree = "<group>";
@@ -212,40 +220,84 @@
 		720C273D2362A70700BBE05B /* BusinessAPI */ = {
 			isa = PBXGroup;
 			children = (
-				72F653F6235F4951006BC812 /* MessagesAPI.swift */,
-				72F653FF235F57DC006BC812 /* ScheduleAPI.swift */,
+				72F653F6235F4951006BC812 /* API.Messages.swift */,
+				72F653FF235F57DC006BC812 /* API.Schedule.swift */,
 			);
 			path = BusinessAPI;
 			sourceTree = "<group>";
 		};
-		720C273E2362A82000BBE05B /* Utils */ = {
+		720C273F2362EA7E00BBE05B /* Ext */ = {
 			isa = PBXGroup;
 			children = (
-				720DA68E23618CAB00966675 /* JsonData.swift */,
+				720DA68E23618CAB00966675 /* JsonExt.swift */,
+				7217F332235E20A000D505D3 /* UIExt.swift */,
+				720DA6822361695E00966675 /* Helper.swift */,
+				720C27432362EC5900BBE05B /* Commons.swift */,
+			);
+			path = Ext;
+			sourceTree = "<group>";
+		};
+		720C27422362EB3100BBE05B /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				720C273B2362A60800BBE05B /* Message */,
+				720C273A2362A5FD00BBE05B /* Schedule */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		720C27462362F01A00BBE05B /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				72C24B25235AC089003D3DDD /* AppDelegate.swift */,
+				72C24B27235AC089003D3DDD /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		720C27472362F02A00BBE05B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				72C24B33235AC08A003D3DDD /* Info.plist */,
+				72C24B2E235AC08A003D3DDD /* Assets.xcassets */,
+				72C24B30235AC08A003D3DDD /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		720C27482362F03E00BBE05B /* Define */ = {
+			isa = PBXGroup;
+			children = (
+				720C27492362F11C00BBE05B /* App.swift */,
+				720C274B2362F51400BBE05B /* String.swift */,
+				720C274D2362F53700BBE05B /* Color.swift */,
+				720C274F2362F54B00BBE05B /* Font.swift */,
+			);
+			name = Define;
+			path = "Dèine";
+			sourceTree = "<group>";
+		};
+		720DA68623618AEE00966675 /* Core */ = {
+			isa = PBXGroup;
+			children = (
 				720DA68923618C3D00966675 /* API.swift */,
-				7217F332235E20A000D505D3 /* UIExtension.swift */,
-				720DA6822361695E00966675 /* DateTimeUtils.swift */,
-				720DA68C23618C7A00966675 /* RequestUtils.swift */,
+				720C27512362F57900BBE05B /* ApiManager.swift */,
+				720C27532362F59500BBE05B /* Error.swift */,
+				720C27552362F5B300BBE05B /* RequestSerializer.swift */,
+				720C27572362F5CA00BBE05B /* ResponseSerializer.swift */,
 			);
-			path = Utils;
+			path = Core;
 			sourceTree = "<group>";
 		};
-		720DA68623618AEE00966675 /* LogicAPI */ = {
+		7217F30A235E0B9E00D505D3 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-			);
-			path = LogicAPI;
-			sourceTree = "<group>";
-		};
-		7217F30A235E0B9E00D505D3 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				720C273C2362A6CC00BBE05B /* BaseView */,
-				720C27392362A57900BBE05B /* DetailView */,
-				720C27382362A56A00BBE05B /* HomeView */,
 				72C24B55235AC0BF003D3DDD /* welcome */,
+				720C27422362EB3100BBE05B /* Cell */,
+				720C273C2362A6CC00BBE05B /* BaseView */,
+				720C27382362A56A00BBE05B /* HomeView */,
 			);
-			path = View;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		7217F317235E12FA00D505D3 /* 2.Contact */ = {
@@ -350,13 +402,11 @@
 		72C24B24235AC089003D3DDD /* DatingMessenger */ = {
 			isa = PBXGroup;
 			children = (
+				720C27482362F03E00BBE05B /* Define */,
+				720C27472362F02A00BBE05B /* Resources */,
+				720C27462362F01A00BBE05B /* AppDelegate */,
 				72C24B76235AD9A0003D3DDD /* Model */,
-				7217F30A235E0B9E00D505D3 /* View */,
-				72C24B33235AC08A003D3DDD /* Info.plist */,
-				72C24B25235AC089003D3DDD /* AppDelegate.swift */,
-				72C24B27235AC089003D3DDD /* SceneDelegate.swift */,
-				72C24B2E235AC08A003D3DDD /* Assets.xcassets */,
-				72C24B30235AC08A003D3DDD /* LaunchScreen.storyboard */,
+				7217F30A235E0B9E00D505D3 /* Controllers */,
 			);
 			path = DatingMessenger;
 			sourceTree = "<group>";
@@ -444,11 +494,10 @@
 		72C24B76235AD9A0003D3DDD /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				720DA6842361899000966675 /* APIManager.swift */,
+				720C273F2362EA7E00BBE05B /* Ext */,
 				720C273D2362A70700BBE05B /* BusinessAPI */,
-				720DA68623618AEE00966675 /* LogicAPI */,
+				720DA68623618AEE00966675 /* Core */,
 				72F653FA235F530A006BC812 /* Schema */,
-				720C273E2362A82000BBE05B /* Utils */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -467,7 +516,7 @@
 			children = (
 				7217F330235E1E3300D505D3 /* ScheduleObject.swift */,
 				72C24B77235AD9B4003D3DDD /* Friends.swift */,
-				72F653FB235F5328006BC812 /* Messages.swift */,
+				72F653FB235F5328006BC812 /* MessageObject.swift */,
 			);
 			path = Schema;
 			sourceTree = "<group>";
@@ -619,33 +668,41 @@
 				72F653F9235F4E89006BC812 /* MessageCellViewModel.swift in Sources */,
 				7217F32B235E13F800D505D3 /* MyPageViewController.swift in Sources */,
 				7204747723603EC30060FEFA /* ScheduleDetailViewController.swift in Sources */,
+				720C27442362EC5900BBE05B /* Commons.swift in Sources */,
 				727F9CCD23604FD0005373FB /* ScheduleDetailViewModel.swift in Sources */,
 				72F653EC235F4152006BC812 /* TabbarViewController.swift in Sources */,
 				7217F327235E13DC00D505D3 /* ScheduleHomeViewController.swift in Sources */,
-				720DA68D23618C7A00966675 /* RequestUtils.swift in Sources */,
 				72C24B28235AC089003D3DDD /* SceneDelegate.swift in Sources */,
-				72F653FC235F5328006BC812 /* Messages.swift in Sources */,
+				72F653FC235F5328006BC812 /* MessageObject.swift in Sources */,
 				72F653F5235F4938006BC812 /* MessageViewModel.swift in Sources */,
-				720DA6852361899000966675 /* APIManager.swift in Sources */,
-				72F65400235F57DC006BC812 /* ScheduleAPI.swift in Sources */,
+				72F65400235F57DC006BC812 /* API.Schedule.swift in Sources */,
+				720C27412362EB1700BBE05B /* BaseViewController.swift in Sources */,
+				720C274C2362F51400BBE05B /* String.swift in Sources */,
 				72C24B78235AD9B4003D3DDD /* Friends.swift in Sources */,
 				72C24B6B235AC64B003D3DDD /* MessengerCollectionViewCell.swift in Sources */,
-				720DA68F23618CAB00966675 /* JsonData.swift in Sources */,
-				72F653F7235F4951006BC812 /* MessagesAPI.swift in Sources */,
+				720DA68F23618CAB00966675 /* JsonExt.swift in Sources */,
+				72F653F7235F4951006BC812 /* API.Messages.swift in Sources */,
 				7217F336235E214B00D505D3 /* MapDetailViewController.swift in Sources */,
 				72A7AB7F235F6A2B00A9E838 /* ScheduleCell.swift in Sources */,
-				7217F333235E20A000D505D3 /* UIExtension.swift in Sources */,
+				7217F333235E20A000D505D3 /* UIExt.swift in Sources */,
 				72C24B66235AC20A003D3DDD /* MessageDetailViewController.swift in Sources */,
+				720C274E2362F53700BBE05B /* Color.swift in Sources */,
 				7217F331235E1E3300D505D3 /* ScheduleObject.swift in Sources */,
 				72C24B58235AC0D6003D3DDD /* IndexPageViewController.swift in Sources */,
+				720C274A2362F11C00BBE05B /* App.swift in Sources */,
 				72C24B62235AC1F2003D3DDD /* MessageHomeViewController.swift in Sources */,
 				7217F31C235E133B00D505D3 /* ContactHomeViewController.swift in Sources */,
+				720C27522362F57900BBE05B /* ApiManager.swift in Sources */,
 				72F65406235F63C5006BC812 /* ScheduleCellViewModel.swift in Sources */,
 				72C24B80235AE808003D3DDD /* MessageDetailCollectionViewCell.swift in Sources */,
 				72F653FE235F5795006BC812 /* ScheduleHomeViewModel.swift in Sources */,
+				720C27542362F59500BBE05B /* Error.swift in Sources */,
+				720C27502362F54B00BBE05B /* Font.swift in Sources */,
 				72F65403235F6055006BC812 /* ScheduleTableViewCell.swift in Sources */,
+				720C27582362F5CA00BBE05B /* ResponseSerializer.swift in Sources */,
+				720C27562362F5B300BBE05B /* RequestSerializer.swift in Sources */,
 				720DA68A23618C3D00966675 /* API.swift in Sources */,
-				720DA6832361695E00966675 /* DateTimeUtils.swift in Sources */,
+				720DA6832361695E00966675 /* Helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -812,7 +869,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JPRQ9XJ746;
-				INFOPLIST_FILE = DatingMessenger/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/DatingMessenger/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -830,7 +887,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JPRQ9XJ746;
-				INFOPLIST_FILE = DatingMessenger/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/DatingMessenger/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

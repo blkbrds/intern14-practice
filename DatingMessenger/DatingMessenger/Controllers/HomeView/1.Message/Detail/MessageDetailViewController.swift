@@ -12,7 +12,7 @@ class MessageDetailViewController: UIViewController {
 
     @IBOutlet weak var friendsMessageCollectionView: UICollectionView!
     let myIdentity = "MessageChat"
-    var listMessengers: [Messages]?
+    var listMessengers: [MessageObject]?
     
     override func viewDidLoad() {
         super.viewDidLoad()

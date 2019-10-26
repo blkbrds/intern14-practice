@@ -18,7 +18,7 @@ class ScheduleHomeViewModel {
     }
     
     func getSchedules(completion: @escaping (APIError?) -> Void) {
-        APIServiceManager.Schedule.getSchedules { (result) in
+        APIServices.Schedule.getSchedules { (result) in
             switch result {
             case .failure(let error):
                 completion(error)

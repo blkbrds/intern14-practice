@@ -8,9 +8,9 @@
 
 import Foundation
 
-class DateTimeUtils {
+class Helper {
     
-    static let shared = DateTimeUtils()
+    static let shared = Helper()
  
     let YYYYMMDDThhmmssZ = "YYYY-MM-DDThh:mm:ssZ"
     let YYYYMMDDThhmmssZNew = "yyyy-MM-dd'T'HH:mm:ss'Z'"

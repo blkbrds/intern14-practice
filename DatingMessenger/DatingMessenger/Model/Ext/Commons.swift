@@ -1,15 +1,15 @@
 //
-//  APIManager.swift
+//  Commons.swift
 //  DatingMessenger
 //
-//  Created by MBA0051 on 10/24/19.
+//  Created by MBA0051 on 10/25/19.
 //  Copyright © 2019 MBA0051. All rights reserved.
 //
 
 import Foundation
-import UIKit
 
-class APIManager {
+final class Commons {
+
     // Call to API.
     static let protocolo    : String = "http://"
     static let apiVersion   : String = "/api"
@@ -23,10 +23,4 @@ class APIManager {
         headers["Content-Type"] = "application/json"
         return headers
     }
-}
-
-struct APIServiceManager {
-    struct Schedule { }
-    struct Message { }
-    struct Contact { }
 }

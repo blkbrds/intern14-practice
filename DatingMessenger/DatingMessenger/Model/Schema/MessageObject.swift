@@ -8,7 +8,7 @@
 
 import Foundation
 
-final class Messages {
+final class MessageObject {
     var messageText: String?
     var messageLastTime: NSDate?
     var friend: Friends?

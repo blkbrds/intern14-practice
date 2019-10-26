@@ -15,7 +15,7 @@ class MessageCellViewModel {
     var username: String?
     var profileImage: String?
     
-    init(message: Messages) {
+    init(message: MessageObject) {
         self.messageText = message.messageText
         self.messageLastTime = message.messageLastTime
         self.username = message.friend?.username

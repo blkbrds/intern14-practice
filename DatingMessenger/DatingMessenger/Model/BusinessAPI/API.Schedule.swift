@@ -8,16 +8,16 @@
 
 import Foundation
 
-extension APIServiceManager.Schedule {
+extension APIServices.Schedule {
     
     struct QueryString {
         
         func getScheduleById(limit: Int) -> String {
-            return APIManager.baseUrl + APIManager.schedule + "/" + String(limit)
+            return Commons.baseUrl + Commons.schedule + "/" + String(limit)
         }
         
         func getUserSchedules() -> String {
-            return APIManager.baseUrl + APIManager.schedule
+            return Commons.baseUrl + Commons.schedule
         }
     }
     

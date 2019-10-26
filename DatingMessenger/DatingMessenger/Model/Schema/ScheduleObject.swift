@@ -48,15 +48,14 @@ final class ScheduleObject {
                         self.scheduleTitle = title
                     }
                     // Start time.
-                    if let timeStart = data["time_start"] as? String {
-                        if let beginTime = DateTimeUtils.shared.convertStringToComponents(from: timeStart) {
+                         if let beginTime = Helper.shared.convertStringToComponents(from: timeStart) {
                             self.scheduleStartDate = String(beginTime.day!) + "/" + String(beginTime.month!)
                             self.scheduleStartTime = String(beginTime.hour!) + ":" + String(beginTime.minute!)
                         }
                     }
                     // End time.
                     if let timeEnd = data["time_end"] as? String {
-                        if let endTime = DateTimeUtils.shared.convertStringToComponents(from: timeEnd) {
+                        if let endTime = Helper.shared.convertStringToComponents(from: timeEnd) {
                             self.scheduleEndDate = String(endTime.day!) + "/" + String(endTime.month!)
                             self.scheduleEndTime = String(endTime.hour!) + ":" + String(endTime.minute!)
                         }
