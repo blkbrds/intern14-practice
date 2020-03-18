@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="120" id="KGk-i7-Jjw" customClass="HomeCell" customModule="ExTabbar" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="99.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Pdz-SW-HJM">
+                        <rect key="frame" x="0.0" y="0.0" width="150" height="99.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="150" id="Mj7-4Z-P1f"/>
+                            <constraint firstAttribute="height" constant="99.5" id="ede-vc-13m"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't Call Me Angel (Charlie's Angels)" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HfA-AQ-gQ2">
+                        <rect key="frame" x="158" y="8" width="248" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="eeA-iI-9ma"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ariana Grande, Miley Cyrus &amp; Lana Del Rey" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d6j-EV-C2B">
+                        <rect key="frame" x="158" y="50" width="248" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="Csx-Tw-Vgf"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="10"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2019-09-13" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q5t-7z-wyf">
+                        <rect key="frame" x="158" y="71" width="248" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" red="0.12500002407204544" green="0.24024944591687247" blue="0.77944538464162438" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Pdz-SW-HJM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="9Gx-0y-81C"/>
+                    <constraint firstAttribute="trailing" secondItem="q5t-7z-wyf" secondAttribute="trailing" constant="8" id="A2P-8u-8Hk"/>
+                    <constraint firstItem="q5t-7z-wyf" firstAttribute="leading" secondItem="Pdz-SW-HJM" secondAttribute="trailing" constant="8" id="BeI-Km-lk0"/>
+                    <constraint firstItem="q5t-7z-wyf" firstAttribute="top" secondItem="HfA-AQ-gQ2" secondAttribute="bottom" constant="23" id="Rq3-I8-S1J"/>
+                    <constraint firstAttribute="bottom" secondItem="q5t-7z-wyf" secondAttribute="bottom" constant="8" id="Srt-gM-d4x"/>
+                    <constraint firstAttribute="trailing" secondItem="d6j-EV-C2B" secondAttribute="trailing" constant="8" id="T8h-VE-5fT"/>
+                    <constraint firstItem="Pdz-SW-HJM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="W7q-J7-2Vg"/>
+                    <constraint firstAttribute="trailing" secondItem="HfA-AQ-gQ2" secondAttribute="trailing" constant="8" id="fpu-cd-FdT"/>
+                    <constraint firstItem="HfA-AQ-gQ2" firstAttribute="leading" secondItem="Pdz-SW-HJM" secondAttribute="trailing" constant="8" id="mUU-UN-SsG"/>
+                    <constraint firstItem="d6j-EV-C2B" firstAttribute="leading" secondItem="Pdz-SW-HJM" secondAttribute="trailing" constant="8" id="rpq-MQ-4tT"/>
+                    <constraint firstItem="HfA-AQ-gQ2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="wbg-HM-z7m"/>
+                    <constraint firstItem="d6j-EV-C2B" firstAttribute="top" secondItem="HfA-AQ-gQ2" secondAttribute="bottom" constant="2" id="yRE-6G-IdE"/>
+                    <constraint firstAttribute="bottom" secondItem="Pdz-SW-HJM" secondAttribute="bottom" id="yym-di-CFq"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="artistNameLabel" destination="d6j-EV-C2B" id="fcC-2O-sbb"/>
+                <outlet property="artworkImage" destination="Pdz-SW-HJM" id="v8r-N8-GWw"/>
+                <outlet property="dateLabel" destination="q5t-7z-wyf" id="MBv-RG-gFa"/>
+                <outlet property="nameLabel" destination="HfA-AQ-gQ2" id="wLz-td-j0l"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="123.88392857142857"/>
+        </tableViewCell>
+    </objects>
+</document>
